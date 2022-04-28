@@ -256,3 +256,27 @@
  pmca_hundred_acot_phanon_attack_dog_desc:0 "$acot_phanon_attack_dog_desc$"
  pmca_hundred_acot_phanon_operative:0 "x100 $acot_phanon_operative$"
  pmca_hundred_acot_phanon_operative_desc:0 "$acot_phanon_operative_desc$"
+
+ ######################################
+ ### ACOT: SECRETS BEYOND THE GATES ###
+ ######################################
+
+ #Times x10 Armies
+ pmca_ten_origin_assault_guardian:0 "x10 $origin_assault_guardian$"
+ pmca_ten_origin_assault_guardian_desc:0 "$origin_assault_guardian_desc$"
+ pmca_ten_origin_autarch_guardian:0 "x10 $origin_autarch_guardian$"
+ pmca_ten_origin_autarch_guardian_desc:0 "$origin_autarch_guardian_desc$"
+ pmca_ten_sofe_psionic_dark_archon:0 "x10 $sofe_psionic_dark_archon$"
+ pmca_ten_sofe_psionic_dark_archon_desc:0 "$sofe_psionic_dark_archon_desc$"
+ pmca_ten_sofe_omega_mech:0 "x10 $sofe_omega_mech$"
+ pmca_ten_sofe_omega_mech_desc:0 "$sofe_omega_mech_desc$"
+
+ #Times x100 Armies
+ pmca_hundred_origin_assault_guardian:0 "x100 $origin_assault_guardian$"
+ pmca_hundred_origin_assault_guardian_desc:0 "$origin_assault_guardian_desc$"
+ pmca_hundred_origin_autarch_guardian:0 "x100 $origin_autarch_guardian$"
+ pmca_hundred_origin_autarch_guardian_desc:0 "$origin_autarch_guardian_desc$"
+ pmca_hundred_sofe_psionic_dark_archon:0 "x100 $sofe_psionic_dark_archon$"
+ pmca_hundred_sofe_psionic_dark_archon_desc:0 "$sofe_psionic_dark_archon_desc$"
+ pmca_hundred_sofe_omega_mech:0 "x100 $sofe_omega_mech$"
+ pmca_hundred_sofe_omega_mech_desc:0 "$sofe_omega_mech_desc$"

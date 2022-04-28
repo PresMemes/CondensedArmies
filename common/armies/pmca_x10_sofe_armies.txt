@@ -1,0 +1,129 @@
+pmca_ten_origin_assault_guardian = {
+	use_armynames_from = origin_assault_guardian
+	damage = 500
+	health = 500
+	has_morale = no
+	morale_damage = 4.5
+	collateral_damage = 30
+	war_exhaustion = 0
+	time = 5
+	icon = GFX_army_type_psionic
+	resources = {
+		category = armies
+		cost = {
+		}
+	}
+	prerequisites = {
+		"tech_celestial_guardian"
+	}
+	potential = {
+		from = {
+			has_trait = "trait_bionic_implants"
+			has_trait = "trait_ancient_race"
+			has_trait = "trait_ancient_knowledge"
+			has_trait = "trait_master_mind"
+		}
+		owner = {
+			has_policy_flag = pmca_times_ten_set
+		}
+	}
+}
+
+pmca_ten_origin_autarch_guardian = {
+	use_armynames_from = origin_autarch_guardian
+	damage = 2500
+	health = 1500
+	has_morale = no
+	morale_damage = 20
+	collateral_damage = 1000
+	war_exhaustion = 0
+	time = 10
+	icon = GFX_army_type_psionic
+	resources = {
+		category = armies
+		cost = {
+		}
+	}
+	prerequisites = {
+		"tech_celestial_guardian"
+	}
+	potential = {
+		from = {
+			has_trait = "trait_bionic_implants"
+			has_trait = "trait_ancient_race"
+			has_trait = "trait_ancient_knowledge"
+			has_trait = "trait_master_mind"
+		}
+		owner = {
+			has_policy_flag = pmca_times_ten_set
+		}
+	}
+}
+
+pmca_ten_sofe_psionic_dark_archon = {
+	use_armynames_from = sofe_psionic_dark_archon
+	damage = 400
+	health = 100
+	has_morale = no
+	has_species = no
+	morale_damage = 20
+	collateral_damage = 15
+	war_exhaustion = 0
+	time = 800
+	icon = GFX_army_type_psionic
+	resources = {
+		category = armies
+		cost = {
+			influence = 2500
+			unity = 250000
+		}
+		upkeep = {
+			unity = 2500
+		}
+	}
+	prerequisites = {
+		"tech_psionic_archon"
+	}
+	potential = {
+		owner = {
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 2500
+			}
+			has_policy_flag = pmca_times_ten_set
+		}
+	}
+}
+
+pmca_ten_sofe_omega_mech = {
+	use_armynames_from = sofe_omega_mech
+	damage = 300
+	health = 300
+	has_morale = no
+	has_species = no
+	morale_damage = 10
+	collateral_damage = 45
+	war_exhaustion = 0
+	time = 500
+	icon = GFX_army_type_psionic
+	resources = {
+		category = armies
+		cost = {
+			acot_sr_light_matter = 1000
+		}
+		upkeep = {
+		}
+	}
+	prerequisites = {
+		"tech_omega_warmech"
+	}
+	potential = {
+		owner = {
+			resource_stockpile_compare = {
+				resource = acot_sr_light_matter
+				value >= 1000
+			}
+			has_policy_flag = pmca_times_ten_set
+		}
+	}
+}
