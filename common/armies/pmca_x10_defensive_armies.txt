@@ -24,8 +24,53 @@ pmca_ten_defense_army = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
+				has_trait = "trait_lithoid"
 				is_sapient = no
 			}
+		}
+		owner = {
+			is_primitive = no
+			OR = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_valid_civic = civic_reanimated_armies
+				}
+				has_valid_civic = civic_machine_assimilator
+			}
+			has_policy_flag = pmca_times_ten_set
+		}
+	}
+}
+
+pmca_ten_defense_army_lithoid = {
+	defensive = yes
+	use_armynames_from = defense_army
+	health = 12.5
+	damage = 15
+	morale = 12.5
+	collateral_damage = 0
+	war_exhaustion = 0	# No WE from defense armies
+	time = 30
+	icon = GFX_army_type_defensive
+	has_species = yes
+	resources = {
+		category = armies
+		cost = {
+			minerals = 750
+		}
+		upkeep = {
+			energy = 10
+			minerals = 10
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+			has_trait = "trait_lithoid"
 		}
 		owner = {
 			is_primitive = no
@@ -58,8 +103,7 @@ pmca_ten_undead_defense_army = {
 			energy = 750
 		}
 		upkeep = {
-			energy = 5
-			food = 10
+			energy = 12.5
 		}
 	}
 	potential = {

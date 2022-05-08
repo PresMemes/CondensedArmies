@@ -23,14 +23,59 @@ pmca_hundred_defense_army = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
+				has_trait = "trait_lithoid"
 				is_sapient = no
 			}
 		}
 		owner = {
 			is_primitive = no
 			OR = {
-				NOT = {
+				NOR = {
 					has_authority = auth_machine_intelligence
+					has_valid_civic = civic_reanimated_armies
+				}
+				has_valid_civic = civic_machine_assimilator
+			}
+			has_policy_flag = pmca_times_hundred_set
+		}
+	}
+}
+
+pmca_hundred_defense_army_lithoid = {
+	defensive = yes
+	use_armynames_from = defense_army
+	health = 125
+	damage = 150
+	morale = 125
+	collateral_damage = 0
+	war_exhaustion = 0	# No WE from defense armies
+	time = 30
+	icon = GFX_army_type_defensive
+	resources = {
+		category = armies
+		cost = {
+			minerals = 7500
+		}
+		upkeep = {
+			energy = 100
+			minerals = 100
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+			has_trait = "trait_lithoid"
+		}
+		owner = {
+			is_primitive = no
+			OR = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_valid_civic = civic_reanimated_armies
 				}
 				has_valid_civic = civic_machine_assimilator
 			}
@@ -56,8 +101,7 @@ pmca_hundred_undead_defense_army = {
 			energy = 7500
 		}
 		upkeep = {
-			energy = 50
-			food = 100
+			energy = 125
 		}
 	}
 	potential = {

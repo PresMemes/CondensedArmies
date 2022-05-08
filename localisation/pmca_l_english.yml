@@ -26,6 +26,8 @@
 
  pmca_ten_defense_army:0 "$pmca_ten$ $defense_army$"
  pmca_ten_defense_army_desc:0 "Condensed defense armies are extremely powerful, but require correspondingly powerful logistics to keep them well fed and supplied."
+ pmca_ten_defense_army_lithoid:0 "$pmca_ten_defense_army$"
+ pmca_ten_defense_army_lithoid_desc:0 "$pmca_ten_defense_army_desc$"
  pmca_ten_undead_defense_army:0 "$pmca_ten$ $undead_defense_army$"
  pmca_ten_undead_defense_army_desc:0 "While your generals are off-put by the idea of packing a large amount of undead together, they cannot deny its effectiveness."
  pmca_ten_robotic_defense_army:0 "$pmca_ten$ $robotic_defense_army$"
@@ -35,6 +37,8 @@
 
  pmca_hundred_defense_army:0 "$pmca_hundred$ $defense_army$"
  pmca_hundred_defense_army_desc:0 "$pmca_ten_defense_army_desc$"
+ pmca_hundred_defense_army_lithoid:0 "$pmca_hundred_defense_army$"
+ pmca_hundred_defense_army_lithoid_desc:0 "$pmca_hundred_defense_army_desc$"
  pmca_hundred_undead_defense_army:0 "$pmca_hundred$ $undead_defense_army$"
  pmca_hundred_undead_defense_army_desc:0 "$pmca_ten_undead_defense_army_desc$"
  pmca_hundred_robotic_defense_army:0 "$pmca_hundred$ $robotic_defense_army$"
