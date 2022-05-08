@@ -17,6 +17,7 @@ pmca_hundred_origin_assault_guardian = {
 		"tech_celestial_guardian"
 	}
 	potential = {
+		has_global_flag = sofe_activated
 		from = {
 			has_trait = "trait_bionic_implants"
 			has_trait = "trait_ancient_race"
@@ -48,6 +49,7 @@ pmca_hundred_origin_autarch_guardian = {
 		"tech_celestial_guardian"
 	}
 	potential = {
+		has_global_flag = sofe_activated
 		from = {
 			has_trait = "trait_bionic_implants"
 			has_trait = "trait_ancient_race"
@@ -85,6 +87,7 @@ pmca_hundred_sofe_psionic_dark_archon = {
 		"tech_psionic_archon"
 	}
 	potential = {
+		has_global_flag = sofe_activated
 		owner = {
 			resource_stockpile_compare = {
 				resource = influence
@@ -118,6 +121,7 @@ pmca_hundred_sofe_omega_mech = {
 		"tech_omega_warmech"
 	}
 	potential = {
+		has_global_flag = sofe_activated
 		owner = {
 			resource_stockpile_compare = {
 				resource = acot_sr_light_matter

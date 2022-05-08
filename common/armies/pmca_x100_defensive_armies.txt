@@ -1,0 +1,157 @@
+pmca_hundred_defense_army = {
+	defensive = yes
+	use_armynames_from = defense_army
+	health = 125
+	damage = 150
+	morale = 125
+	collateral_damage = 0
+	war_exhaustion = 0	# No WE from defense armies
+	time = 30
+	icon = GFX_army_type_defensive
+	resources = {
+		category = armies
+		cost = {
+			minerals = 7500
+		}
+		upkeep = {
+			energy = 100
+			food = 50
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+		owner = {
+			is_primitive = no
+			OR = {
+				NOT = {
+					has_authority = auth_machine_intelligence
+				}
+				has_valid_civic = civic_machine_assimilator
+			}
+			has_policy_flag = pmca_times_hundred_set
+		}
+	}
+}
+
+pmca_hundred_undead_defense_army = {
+	defensive = yes
+	health = 175
+	damage = 150
+	collateral_damage = 0
+	has_morale = no
+	morale_damage = 1.75
+	war_exhaustion = 0
+	time = 30
+	icon = GFX_army_type_undead_defensive
+	use_armynames_from = undead_army
+	resources = {
+		category = armies
+		cost = {
+			energy = 7500
+		}
+		upkeep = {
+			energy = 50
+			food = 100
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+		planet = {
+			has_active_building = building_dread_encampment
+			num_assigned_jobs = {
+				job = necromancer
+				value >= 1
+			}
+		}
+		owner = {
+			has_valid_civic = civic_reanimated_armies
+			has_policy_flag = pmca_times_hundred_set
+		}
+	}
+}
+
+pmca_hundred_robotic_defense_army = {
+	defensive = yes
+	damage = 100
+	health = 125
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 0
+	war_exhaustion = 0	# No WE from defense armies
+	time = 30
+	icon = GFX_army_type_robot
+	has_species = yes
+	use_armynames_from = robotic_defense_army
+	resources = {
+		category = armies
+		cost = {
+			energy = 10000
+		}
+		upkeep = {
+			energy = 100
+			alloys = 5
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_mechanical"
+		}
+		owner = {
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
+			has_policy_flag = pmca_times_hundred_set
+		}
+	}
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}
+		}
+	}
+}
+
+pmca_hundred_machine_defense = {
+	defensive = yes
+	use_armynames_from = machine_defense
+	health = 110
+	damage = 110
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 0
+	war_exhaustion = 0	# No WE from defense armies
+	time = 30
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+		cost = {
+			minerals = 8000
+		}
+		upkeep = {
+			energy = 100
+			alloys = 5
+		}
+	}
+	potential = {
+		owner = {
+			has_authority = auth_machine_intelligence
+			has_policy_flag = pmca_times_hundred_set
+		}
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+}

@@ -29,6 +29,7 @@ pmca_ten_fe_army = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -89,6 +90,7 @@ pmca_ten_ae_army = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -139,6 +141,7 @@ pmca_ten_stellarite_army = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -179,6 +182,7 @@ pmca_ten_fe_spmdroid_army = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -229,6 +233,7 @@ pmca_ten_fe_spmdroid_army_ae = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -275,6 +280,7 @@ pmca_ten_fe_spmdroid_army_se = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -325,6 +331,7 @@ pmca_ten_fe_omnidroid_army = {
 		"tech_omnidroid"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -379,6 +386,7 @@ pmca_ten_fe_omnidroid_army_ae = {
 		"tech_omnidroid_ae"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -431,6 +439,7 @@ pmca_ten_fe_omnidroid_army_se = {
 		"tech_omnidroid_se"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -484,6 +493,7 @@ pmca_ten_stellarite_bomberman = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -523,6 +533,7 @@ pmca_ten_fe_tank = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -567,6 +578,7 @@ pmca_ten_fe_hercules_tank = {
 		"tech_dark_matter_megatank"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -639,6 +651,7 @@ pmca_ten_fe_inquisitor_army = {
 		"tech_inquisitor"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -690,6 +703,7 @@ pmca_ten_fe_living_saint = {
 		"tech_living_saint"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -772,6 +786,7 @@ pmca_ten_fe_deathbringer_army = {
 		"tech_soul_purifier"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -823,6 +838,7 @@ pmca_ten_fe_xenoartillery = {
 		"tech_xenoartillery"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -892,6 +908,7 @@ pmca_ten_fe_sniper_army = {
 		"tech_shadow_sniper"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -950,6 +967,7 @@ pmca_ten_fe_hero_blackwidow = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1026,6 +1044,7 @@ pmca_ten_fe_gunship = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1070,6 +1089,7 @@ pmca_ten_fe_libertyprime = {
 		"tech_liberty_prime"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1139,6 +1159,7 @@ pmca_ten_fe_enforcer_army = {
 		"tech_enforcer"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1199,6 +1220,7 @@ pmca_ten_fe_hero_lordcommissar = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1281,6 +1303,7 @@ pmca_ten_fe_peacekeeper_army = {
 		"tech_peacekeeper"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1343,6 +1366,7 @@ pmca_ten_fe_hero_captainpacifist = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1425,6 +1449,7 @@ pmca_ten_fe_heavy_army = {
 		"tech_heavy_trooper"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1483,6 +1508,7 @@ pmca_ten_fe_hero_godofwar = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1560,6 +1586,7 @@ pmca_ten_fe_omnimech = {
 	}
 	icon = GFX_army_type_machine_assault
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1608,6 +1635,7 @@ pmca_ten_fe_godmech = {
 		has_building = building_ae_machine_dome
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1677,6 +1705,7 @@ pmca_ten_fe_mastermind = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1721,6 +1750,7 @@ pmca_ten_fe_terror_beyond = {
 		has_building = building_ae_hive_evochamber
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1796,6 +1826,7 @@ pmca_ten_fe_synthsoldier = {
 		"tech_synthtrooper"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1845,6 +1876,7 @@ pmca_ten_fe_synthcommando_army = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1918,6 +1950,7 @@ pmca_ten_fe_disciple_army = {
 		"tech_dark_templar"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -1979,6 +2012,7 @@ pmca_ten_fe_hero_psion = {
 		"tech_dark_psion"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -2065,6 +2099,7 @@ pmca_ten_fe_clone_army = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -2112,6 +2147,7 @@ pmca_ten_fe_gene_warrior = {
 		"tech_elite_genetrooper"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -2169,6 +2205,7 @@ pmca_ten_fe_doomguy = {
 		"tech_doom_hero"
 	}
 	potential = {
+		has_global_flag = acot_activated
 		NOT = {
 			has_global_flag = acot_army_forbidden
 		}
@@ -2245,6 +2282,7 @@ pmca_ten_acot_phanon_army = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		OR = {
 			is_planet_class = pc_acot_pmc_vault
 			owner = {
@@ -2289,6 +2327,7 @@ pmca_ten_acot_phanon_attack_dog = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		OR = {
 			is_planet_class = pc_acot_pmc_vault
 			owner = {
@@ -2333,6 +2372,7 @@ pmca_ten_acot_phanon_operative = {
 		}
 	}
 	potential = {
+		has_global_flag = acot_activated
 		OR = {
 			is_planet_class = pc_acot_pmc_vault
 			owner = {
