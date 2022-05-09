@@ -1,0 +1,291 @@
+############################################################
+###                      ESC armies                      ###
+############################################################
+
+### Psionic Avatar : Psionic weapons' subtree
+pmca_hundred_esc_psionic_avatar_army = {
+	damage = 500
+	health = 700
+	morale_damage = 2.0
+	war_exhaustion = 500
+	time = 25
+	has_species = no
+	has_morale = no
+	use_armynames_from = esc_psionic_avatar_army
+
+	icon = GFX_esc_army_psi_avatar
+
+	resources = {
+		category = armies
+		cost = {
+			energy = 250000
+			sr_zro = 10000
+		}
+	}
+
+	show_tech_unlock_if = {
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
+	}
+
+	potential = {
+		has_global_flag = Extra_Ship_Components_NEXT
+		custom_tooltip = {
+			planet = { is_capital = yes }
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
+		}
+		owner = {
+			has_policy_flag = pmca_times_hundred_set
+			resource_stockpile_compare = {
+				resource = minerals
+				value >= 250000
+			}
+		}
+	}
+
+	prerequisites = { esc_tech_psi_avatar_army }
+}
+
+### Erasure Squad : Chrono-spatial weapons' subtree
+pmca_hundred_esc_erasure_squad_army = {
+	damage = 700
+	health = 200
+	morale = 200
+	morale_damage = 3.0
+	war_exhaustion = 30
+	time = 360
+	use_armynames_from = esc_erasure_squad_army
+
+	icon = GFX_esc_army_chrono_trooper
+
+	resources = {
+		category = armies
+		cost = {
+			energy = 25000
+			minerals = 50000
+			sr_dark_matter = 1000
+		}
+		upkeep = {
+			energy = 200
+		}
+	}
+
+	show_tech_unlock_if = {
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
+		OR = {
+			NOT = { has_authority = auth_machine_intelligence }
+			has_valid_civic = civic_machine_assimilator
+		}
+	}
+
+	potential = {
+		has_global_flag = Extra_Ship_Components_NEXT
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
+		from = { is_sapient = yes }
+		owner = {
+			OR = {
+				NOT = { has_authority = auth_machine_intelligence }
+				has_civic = civic_machine_assimilator
+			}
+			has_policy_flag = pmca_times_hundred_set
+			resource_stockpile_compare = {
+				resource = minerals
+				value >= 50000
+			}
+		}
+	}
+
+	prerequisites = { esc_tech_chrono_spatial_weapons }
+}
+
+### Eradicator Droids : mechanical verions of Erasure Squads
+pmca_hundred_esc_eradicator_droids_army = {
+	damage = 700
+	health = 200
+	morale_damage = 3.0
+	war_exhaustion = 300
+	time = 360
+	has_morale = no
+	has_species = no
+	use_armynames_from = esc_eradicator_droids_army
+
+	icon = GFX_esc_army_chrono_trooper
+
+	resources = {
+		category = armies
+		cost = {
+			energy = 25000
+			alloys = 20000
+			sr_dark_matter = 1000
+		}
+		upkeep = {
+			energy = 200
+		}
+	}
+
+	show_tech_unlock_if = {
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
+		has_authority = auth_machine_intelligence
+	}
+
+	potential = {
+		has_global_flag = Extra_Ship_Components_NEXT
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
+		owner = { 
+			has_authority = auth_machine_intelligence
+			has_policy_flag = pmca_times_hundred_set
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= 20000
+			} 
+		}
+		from = {
+			OR = {
+				has_trait = trait_machine_unit
+				has_trait = trait_mechanical
+			}
+		}
+	}
+
+	prerequisites = { esc_tech_chrono_spatial_weapons }
+}
+
+### Tesla Troopers : organic tesla armies
+pmca_hundred_esc_tesla_troopers_army = {
+	damage = 350
+	health = 400
+	morale = 200
+	morale_damage = 2.0
+	war_exhaustion = 150
+	time = 360
+	use_armynames_from = esc_tesla_troopers_army
+
+	icon = GFX_esc_army_tesla_trooper
+
+	resources = {
+		category = armies
+		cost = {
+			energy = 15000
+			minerals = 40000
+		}
+		upkeep = {
+			energy = 100
+		}
+	}
+
+	show_tech_unlock_if = {
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
+		OR = {
+			NOT = { has_authority = auth_machine_intelligence }
+			has_valid_civic = civic_machine_assimilator
+		}
+	}
+
+	potential = {
+		has_global_flag = Extra_Ship_Components_NEXT
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
+		from = { is_sapient = yes }
+		owner = {
+			OR = {
+				NOT = { has_authority = auth_machine_intelligence }
+				has_civic = civic_machine_assimilator
+			}
+			has_policy_flag = pmca_times_hundred_set
+			resource_stockpile_compare = {
+				resource = minerals
+				value >= 4000
+			}
+		}
+	}
+
+	prerequisites = { esc_tech_tesla_weapons }
+}
+
+### Tesla Droids : mechanical tesla armies
+pmca_hundred_esc_tesla_droids_army = {
+	damage = 350
+	health = 400
+	morale_damage = 2.0
+	war_exhaustion = 150
+	time = 360
+	has_morale = no
+	has_species = no
+	use_armynames_from = esc_tesla_droids_army
+
+	icon = GFX_esc_army_tesla_trooper
+
+	resources = {
+		category = armies
+		cost = {
+			energy = 15000
+			alloys = 10000
+		}
+		upkeep = {
+			energy = 100
+		}
+	}
+
+	show_tech_unlock_if = {
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
+		has_authority = auth_machine_intelligence
+	}
+
+	potential = {
+		has_global_flag = Extra_Ship_Components_NEXT
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
+		owner = { 
+			has_authority = auth_machine_intelligence
+			has_policy_flag = pmca_times_hundred_set
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= 10000
+			}
+		}
+		from = {
+			OR = {
+				has_trait = trait_machine_unit
+				has_trait = trait_mechanical
+			}
+		}
+	}
+
+	prerequisites = { esc_tech_tesla_weapons }
+}
+
+### Bio-Horror Horde : advanced bio-ascension army
+pmca_hundred_esc_biohorror_army = {
+	health = 400
+	damage = 400
+	morale_damage = 2.5
+	collateral_damage = 400
+	war_exhaustion = 25
+	time = 100
+	has_morale = no
+	has_species = no
+	use_armynames_from = esc_biohorror_army
+
+	icon = GFX_army_type_xenomorph
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35000
+		}
+		upkeep = {
+			energy = 200
+		}
+	}
+
+	potential = {
+		has_global_flag = Extra_Ship_Components_NEXT
+		owner = {
+			ESC_TRIGGER_may_research_biological_weapons_advanced = yes
+			has_policy_flag = pmca_times_hundred_set
+			resource_stockpile_compare = {
+				resource = minerals
+				value >= 35000
+			}
+		}
+	}
+
+	prerequisites = { esc_tech_bio_horror_army }
+}

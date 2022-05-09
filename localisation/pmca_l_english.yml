@@ -313,3 +313,35 @@
  pmca_hundred_sofe_psionic_dark_archon_desc:0 "$sofe_psionic_dark_archon_desc$"
  pmca_hundred_sofe_omega_mech:0 "$pmca_hundred$ $sofe_omega_mech$"
  pmca_hundred_sofe_omega_mech_desc:0 "$sofe_omega_mech_desc$"
+
+ ##########################################
+ ### EXTRA SHIP COMPONENTS: NEXT ARMIES ###
+ ##########################################
+
+ #Times x10 Armies
+ pmca_ten_esc_psionic_avatar_army:0 "$pmca_ten$ $esc_psionic_avatar_army$"
+ pmca_ten_esc_psionic_avatar_army_desc:0 "$esc_psionic_avatar_army_desc$"
+ pmca_ten_esc_erasure_squad_army:0 "$pmca_ten$ $esc_erasure_squad_army$"
+ pmca_ten_esc_erasure_squad_army_desc:0 "$esc_erasure_squad_army_desc$"
+ pmca_ten_esc_eradicator_droids_army:0 "$pmca_ten$ $esc_eradicator_droids_army$"
+ pmca_ten_esc_eradicator_droids_army_desc:0 "$esc_eradicator_droids_army_desc$"
+ pmca_ten_esc_tesla_troopers_army:0 "$pmca_ten$ $esc_tesla_troopers_army$"
+ pmca_ten_esc_tesla_troopers_army_desc:0 "$esc_tesla_troopers_army_desc$"
+ pmca_ten_esc_tesla_droids_army:0 "$pmca_ten$ $esc_tesla_droids_army$"
+ pmca_ten_esc_tesla_droids_army_desc:0 "$esc_tesla_droids_army_desc$"
+ pmca_ten_esc_biohorror_army:0 "$pmca_ten$ $esc_biohorror_army$"
+ pmca_ten_esc_biohorror_army_desc:0 "$esc_biohorror_army_desc$"
+
+ #Times x100 Armies
+ pmca_hundred_esc_psionic_avatar_army:0 "$pmca_hundred$ $esc_psionic_avatar_army$"
+ pmca_hundred_esc_psionic_avatar_army_desc:0 "$esc_psionic_avatar_army_desc$"
+ pmca_hundred_esc_erasure_squad_army:0 "$pmca_hundred$ $esc_erasure_squad_army$"
+ pmca_hundred_esc_erasure_squad_army_desc:0 "$esc_erasure_squad_army_desc$"
+ pmca_hundred_esc_eradicator_droids_army:0 "$pmca_hundred$ $esc_eradicator_droids_army$"
+ pmca_hundred_esc_eradicator_droids_army_desc:0 "$esc_eradicator_droids_army_desc$"
+ pmca_hundred_esc_tesla_troopers_army:0 "$pmca_hundred$ $esc_tesla_troopers_army$"
+ pmca_hundred_esc_tesla_troopers_army_desc:0 "$esc_tesla_troopers_army_desc$"
+ pmca_hundred_esc_tesla_droids_army:0 "$pmca_hundred$ $esc_tesla_droids_army$"
+ pmca_hundred_esc_tesla_droids_army_desc:0 "$esc_tesla_droids_army_desc$"
+ pmca_hundred_esc_biohorror_army:0 "$pmca_hundred$ $esc_biohorror_army$"
+ pmca_hundred_esc_biohorror_army_desc:0 "$esc_biohorror_army_desc$"
