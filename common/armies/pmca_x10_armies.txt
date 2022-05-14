@@ -588,7 +588,7 @@ pmca_ten_machine_assault_3 = {
 		}
 	}
 	ai_weight = {
-		base = 51
+		base = 75
 	}
 }
 

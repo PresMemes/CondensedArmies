@@ -50,6 +50,35 @@ pmca_hundred_assault_army = {
 			}
 		}
 	}
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				is_fallen_empire = yes
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				AND = {
+					is_militarist = yes
+					has_technology = tech_gene_banks
+				}
+			}
+		}
+		modifier = {
+			factor = 0.01 #cannot guarantee that they actually have slaves/robots to get armies from
+			OR = {
+				AND = {
+					has_ai_personality_behaviour = slaver
+					has_technology = tech_neural_implants
+				}
+				AND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+				has_valid_civic = civic_reanimated_armies
+			}
+		}
+	}
 }
 
 # x100 Slave Armies
@@ -100,6 +129,26 @@ pmca_hundred_slave_army = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
+			}
+		}
+	}
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				is_fallen_empire = yes
+				NOT = { has_ai_personality_behaviour = slaver }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				AND = {
+					is_militarist = yes
+					has_technology = tech_gene_banks
+				}
+				AND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
 			}
 		}
 	}
@@ -154,6 +203,25 @@ pmca_hundred_clone_army = {
 			}
 		}
 	}
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				is_fallen_empire = yes
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					is_militarist = yes
+					has_technology = tech_gene_banks
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			has_origin = origin_clone_army
+		}
+	}
 }
 
 # x100 Robotic Armies
@@ -201,6 +269,27 @@ pmca_hundred_robotic_army = {
 			NOT = {
 				has_policy_flag = robots_outlawed
 			}
+		}
+	}
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
 		}
 	}
 }
@@ -254,6 +343,21 @@ pmca_hundred_psionic_army = {
 			}
 		}
 	}
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_technology = tech_telepathy }
+				has_technology = tech_gene_seed_purification
+			}
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+		}
+	}
 }
 
 # x100 Xenomorph Armies
@@ -286,6 +390,21 @@ pmca_hundred_xenomorph_army = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 20000
+		}
+	}
+	ai_weight = {
+		base = 20
+		modifier = {
+			factor = 10
+			is_fallen_empire = yes
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			set = 0
+			OR = {
+				is_pacifist = yes
+				is_xenophile = yes
+			}
 		}
 	}
 }
@@ -328,6 +447,14 @@ pmca_hundred_gene_warrior_army = {
 				has_trait = "trait_machine_unit"
 				is_sapient = no
 			}
+		}
+	}
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_xenophile }
 		}
 	}
 }
@@ -376,6 +503,13 @@ pmca_hundred_machine_assault_1 = {
 			has_trait = "trait_machine_unit"
 		}
 	}
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			has_technology = tech_adaptive_combat_algorithms
+		}
+	}
 }
 
 # x100 Battle Frames
@@ -415,6 +549,9 @@ pmca_hundred_machine_assault_2 = {
 	prerequisites = {
 		"tech_adaptive_combat_algorithms"
 	}
+	ai_weight = {
+		base = 200
+	}
 }
 
 # x100 Mega-Warform
@@ -448,6 +585,9 @@ pmca_hundred_machine_assault_3 = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 80000
 		}
+	}
+	ai_weight = {
+		base = 100
 	}
 }
 
@@ -502,5 +642,8 @@ pmca_hundred_undead_army = {
 				value >= 1
 			}
 		}
+	}
+	ai_weight = {
+		base = 200
 	}
 }
