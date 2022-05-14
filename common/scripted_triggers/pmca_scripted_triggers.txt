@@ -1,0 +1,23 @@
+pmca_materiel_policy_check = {
+	has_policy_flag = pmca_times_$PMCA_MULT$_set	#PM: PMCA_MULT is either ten or hundred
+	resource_stockpile_compare = {
+		resource = $PMCA_RESOURCE$		#PM: PMCA_RESOURCE should be literally any resource, modded or not. Try to use the hardest to get resource in the case of multiple.
+		value >= $PMCA_VALUE$		#PM: PMCA_VALUE should be how much of PMCARESOURCE you need to see this army
+	}
+}
+
+pmca_acot_check = {
+	#PM: This checks for either: A) ACOT is NOT activated and the army should always be shown or B) ACOT is activated and the army should be hidden if you've researched the dark matter tech
+	OR = {
+		NOT = {
+			has_global_flag = acot_activated
+		}
+		AND = {
+			is_ai = no
+			NOT = {
+				has_technology = $PMCA_ACOT_TECH$
+			}
+		}
+		is_ai = yes
+	}
+}

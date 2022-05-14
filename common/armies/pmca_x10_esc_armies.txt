@@ -27,18 +27,19 @@ pmca_ten_esc_psionic_avatar_army = {
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
 	}
 
-	potential = {
+	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = sr_zro
+			PMCA_VALUE = 1000
+		}
+	}
+
+	potential = {
 		custom_tooltip = {
 			planet = { is_capital = yes }
 			NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
-		}
-		owner = {
-			has_policy_flag = pmca_times_ten_set
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 25000
-			}
 		}
 	}
 
@@ -72,26 +73,27 @@ pmca_ten_esc_erasure_squad_army = {
 	show_tech_unlock_if = {
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
 
-	potential = {
+	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
-		from = { is_sapient = yes }
-		owner = {
-			OR = {
-				NOT = { has_authority = auth_machine_intelligence }
-				has_civic = civic_machine_assimilator
-			}
-			has_policy_flag = pmca_times_ten_set
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 5000
-			}
+		OR = {
+			is_machine_empire = no
+			has_civic = civic_machine_assimilator
 		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = sr_dark_matter
+			PMCA_VALUE = 100
+		}
+	}
+
+	potential = {
+		from = { is_sapient = yes }
 	}
 
 	prerequisites = { esc_tech_chrono_spatial_weapons }
@@ -124,20 +126,21 @@ pmca_ten_esc_eradicator_droids_army = {
 
 	show_tech_unlock_if = {
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
-		has_authority = auth_machine_intelligence
+		is_machine_empire = yes
+	}
+
+	potential_country = {
+		has_global_flag = Extra_Ship_Components_NEXT
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = sr_dark_matter
+			PMCA_VALUE = 100
+		}
 	}
 
 	potential = {
-		has_global_flag = Extra_Ship_Components_NEXT
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
-		owner = { 
-			has_authority = auth_machine_intelligence
-			has_policy_flag = pmca_times_ten_set
-			resource_stockpile_compare = {
-				resource = alloys
-				value >= 2000
-			} 
-		}
 		from = {
 			OR = {
 				has_trait = trait_machine_unit
@@ -175,26 +178,27 @@ pmca_ten_esc_tesla_troopers_army = {
 	show_tech_unlock_if = {
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
 
-	potential = {
+	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		from = { is_sapient = yes }
-		owner = {
-			OR = {
-				NOT = { has_authority = auth_machine_intelligence }
-				has_civic = civic_machine_assimilator
-			}
-			has_policy_flag = pmca_times_ten_set
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 4000
-			}
+		OR = {
+			is_machine_empire = no
+			has_civic = civic_machine_assimilator
 		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 4000
+		}
+	}
+
+	potential = {
+		from = { is_sapient = yes }
 	}
 
 	prerequisites = { esc_tech_tesla_weapons }
@@ -226,20 +230,21 @@ pmca_ten_esc_tesla_droids_army = {
 
 	show_tech_unlock_if = {
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		has_authority = auth_machine_intelligence
+		is_machine_empire = yes
+	}
+
+	potential_country = {
+		has_global_flag = Extra_Ship_Components_NEXT
+		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = alloys
+			PMCA_VALUE = 1000
+		}
 	}
 
 	potential = {
-		has_global_flag = Extra_Ship_Components_NEXT
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		owner = { 
-			has_authority = auth_machine_intelligence
-			has_policy_flag = pmca_times_ten_set
-			resource_stockpile_compare = {
-				resource = alloys
-				value >= 1000
-			}
-		}
 		from = {
 			OR = {
 				has_trait = trait_machine_unit
@@ -275,15 +280,13 @@ pmca_ten_esc_biohorror_army = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		owner = {
-			ESC_TRIGGER_may_research_biological_weapons_advanced = yes
-			has_policy_flag = pmca_times_ten_set
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 3500
-			}
+		ESC_TRIGGER_may_research_biological_weapons_advanced = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 3500
 		}
 	}
 

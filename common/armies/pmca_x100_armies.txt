@@ -23,10 +23,22 @@ pmca_hundred_assault_army = {
 	}
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
+		}
+	}
+	potential_country = {
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
+		}
+		pmca_acot_check = {
+			PMCA_ACOT_TECH = tech_dark_matter_army
+		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 10000
 		}
 	}
 	potential = {
@@ -36,32 +48,6 @@ pmca_hundred_assault_army = {
 				has_trait = "trait_machine_unit"
 				is_sapient = no
 			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 10000
-			}
-			#ACOT
-			OR = {
-				NOT = {
-					has_global_flag = acot_activated
-				}
-				AND = {
-					is_ai = no
-					NOT = {
-						has_technology = tech_dark_matter_army
-					}
-				}
-				is_ai = yes
-			}
-			OR = {
-				NOT = {
-					has_authority = auth_machine_intelligence
-				}
-				has_valid_civic = civic_machine_assimilator
-			}
-			has_policy_flag = pmca_times_hundred_set
 		}
 	}
 }
@@ -95,30 +81,26 @@ pmca_hundred_slave_army = {
 			is_pop_category = slave
 		}
 	}
-	potential = {
-		owner = {
-			any_owned_pop = {
-				is_pop_category = slave
-				is_same_species = from
-			}
+	potential_country = {
+		has_policy_flag = slavery_allowed
+		is_machine_empire = no
+		any_owned_pop = {
+			is_pop_category = slave
+			is_same_species = from
 		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 5000
+		}
+	}
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
 			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 5000
-			}
-			has_policy_flag = slavery_allowed
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-			has_policy_flag = pmca_times_hundred_set
 		}
 	}
 }
@@ -148,10 +130,19 @@ pmca_hundred_clone_army = {
 	}
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_civic = civic_machine_assimilator
+		}
+	}
+	potential_country = {
+		OR = {
+			is_machine_empire = no
+			has_civic = civic_machine_assimilator
+		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 7500
 		}
 	}
 	potential = {
@@ -161,19 +152,6 @@ pmca_hundred_clone_army = {
 				has_trait = "trait_machine_unit"
 				is_sapient = no
 			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 7500
-			}
-			OR = {
-				NOT = {
-					has_authority = auth_machine_intelligence
-				}
-				has_civic = civic_machine_assimilator
-			}
-			has_policy_flag = pmca_times_hundred_set
 		}
 	}
 }
@@ -199,36 +177,24 @@ pmca_hundred_robotic_army = {
 			energy = 150
 		}
 	}
+	prerequisites = {
+		"tech_droid_workers"
+	}
+	potential_country = {
+		is_machine_empire = no
+		pmca_acot_check = {
+			PMCA_ACOT_TECH = tech_omnidroid
+		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 15000
+		}
+	}
 	potential = {
 		from = {
 			has_trait = "trait_mechanical"
 		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 15000
-			}
-			#ACOT Check
-			OR = {
-				NOT = {
-					has_global_flag = acot_activated
-				}
-				AND = {
-					is_ai = no
-					NOT = {
-						has_technology = tech_omnidroid
-					}
-				}
-				is_ai = yes
-			}
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-			has_policy_flag = pmca_times_hundred_set
-		}
-	}
-	prerequisites = {
-		"tech_droid_workers"
 	}
 	allow = {
 		owner = {
@@ -262,6 +228,14 @@ pmca_hundred_psionic_army = {
 	prerequisites = {
 		"tech_telepathy"
 	}
+	potential_country = {
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 25000
+		}
+	}
 	potential = {
 		from = {
 			OR = {
@@ -278,16 +252,6 @@ pmca_hundred_psionic_army = {
 				has_trait = "trait_machine_unit"
 				is_sapient = no
 			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 25000
-			}
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-			has_policy_flag = pmca_times_hundred_set
 		}
 	}
 }
@@ -313,20 +277,16 @@ pmca_hundred_xenomorph_army = {
 			energy = 200
 		}
 	}
-	potential = {
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 20000
-			}
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-			has_policy_flag = pmca_times_hundred_set
-		}
-	}
 	prerequisites = {
-		"tech_morphogenetic_field_mastery"
+		"tech_gene_seed_purification"
+	}
+	potential_country = {
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 20000
+		}
 	}
 }
 
@@ -353,6 +313,14 @@ pmca_hundred_gene_warrior_army = {
 	prerequisites = {
 		"tech_gene_seed_purification"
 	}
+	potential_country = {
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 30000
+		}
+	}
 	potential = {
 		from = {
 			NOR = {
@@ -360,16 +328,6 @@ pmca_hundred_gene_warrior_army = {
 				has_trait = "trait_machine_unit"
 				is_sapient = no
 			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 30000
-			}
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-			has_policy_flag = pmca_times_hundred_set
 		}
 	}
 }
@@ -396,24 +354,27 @@ pmca_hundred_machine_assault_1 = {
 			energy = 100
 		}
 	}
-	potential = {
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 10000
-			}
-			has_authority = auth_machine_intelligence
-			has_policy_flag = pmca_times_hundred_set
+	prerequisites = {
+		"tech_assault_armies"
+	}
+	show_tech_unlock_if = {
+		is_machine_empire = yes
+	}
+	potential_country = {
+		is_machine_empire = yes
+		pmca_acot_check = {
+			PMCA_ACOT_TECH = tech_spm_battledroid
 		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 10000
+		}
+	}
+	potential = {
 		from = {
 			has_trait = "trait_machine_unit"
 		}
-	}
-	show_tech_unlock_if = {
-		has_authority = auth_machine_intelligence
-	}
-	prerequisites = {
-		"tech_assault_armies"
 	}
 }
 
@@ -438,15 +399,15 @@ pmca_hundred_machine_assault_2 = {
 			energy = 200
 		}
 	}
-	potential = {
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 20000
-			}
-			has_authority = auth_machine_intelligence
-			has_policy_flag = pmca_times_hundred_set
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 20000
 		}
+	}
+	potential = {
 		from = {
 			has_trait = "trait_machine_unit"
 		}
@@ -456,7 +417,7 @@ pmca_hundred_machine_assault_2 = {
 	}
 }
 
-# Mega-Warform
+# x100 Mega-Warform
 pmca_hundred_machine_assault_3 = {
 	use_armynames_from = machine_assault_3
 	damage = 400
@@ -477,18 +438,16 @@ pmca_hundred_machine_assault_3 = {
 			energy = 800
 		}
 	}
-	potential = {
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 80000
-			}
-			has_authority = auth_machine_intelligence
-			has_policy_flag = pmca_times_hundred_set
-		}
-	}
 	prerequisites = {
 		"tech_biomechanics"
+	}
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 80000
+		}
 	}
 }
 
@@ -520,6 +479,14 @@ pmca_hundred_undead_army = {
 	show_tech_unlock_if = {
 		has_valid_civic = civic_reanimated_armies
 	}
+	potential_country = {
+		has_valid_civic = civic_reanimated_armies
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = energy
+			PMCA_VALUE = 10000
+		}
+	}
 	potential = {
 		from = {
 			NOR = {
@@ -534,14 +501,6 @@ pmca_hundred_undead_army = {
 				job = necromancer
 				value >= 1
 			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 10000
-			}
-			has_valid_civic = civic_reanimated_armies
-			has_policy_flag = pmca_times_hundred_set
 		}
 	}
 }

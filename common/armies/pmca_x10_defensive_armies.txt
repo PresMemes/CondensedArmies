@@ -19,6 +19,21 @@ pmca_ten_defense_army = {
 			food = 5
 		}
 	}
+	potential_country = {
+		is_primitive = no
+		OR = {
+			NOR = {
+				has_authority = auth_machine_intelligence
+				has_valid_civic = civic_reanimated_armies
+			}
+			has_valid_civic = civic_machine_assimilator
+		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 750
+		}
+	}
 	potential = {
 		from = {
 			NOR = {
@@ -27,17 +42,6 @@ pmca_ten_defense_army = {
 				has_trait = "trait_lithoid"
 				is_sapient = no
 			}
-		}
-		owner = {
-			is_primitive = no
-			OR = {
-				NOR = {
-					has_authority = auth_machine_intelligence
-					has_valid_civic = civic_reanimated_armies
-				}
-				has_valid_civic = civic_machine_assimilator
-			}
-			has_policy_flag = pmca_times_ten_set
 		}
 	}
 }
@@ -63,6 +67,21 @@ pmca_ten_defense_army_lithoid = {
 			minerals = 10
 		}
 	}
+	potential_country = {
+		is_primitive = no
+		OR = {
+			NOR = {
+				has_authority = auth_machine_intelligence
+				has_valid_civic = civic_reanimated_armies
+			}
+			has_valid_civic = civic_machine_assimilator
+		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 750
+		}
+	}
 	potential = {
 		from = {
 			NOR = {
@@ -71,17 +90,6 @@ pmca_ten_defense_army_lithoid = {
 				is_sapient = no
 			}
 			has_trait = "trait_lithoid"
-		}
-		owner = {
-			is_primitive = no
-			OR = {
-				NOR = {
-					has_authority = auth_machine_intelligence
-					has_valid_civic = civic_reanimated_armies
-				}
-				has_valid_civic = civic_machine_assimilator
-			}
-			has_policy_flag = pmca_times_ten_set
 		}
 	}
 }
@@ -106,6 +114,14 @@ pmca_ten_undead_defense_army = {
 			energy = 12.5
 		}
 	}
+	potential_country = {
+		has_valid_civic = civic_reanimated_armies
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 750
+		}
+	}
 	potential = {
 		from = {
 			NOR = {
@@ -120,10 +136,6 @@ pmca_ten_undead_defense_army = {
 				job = necromancer
 				value >= 1
 			}
-		}
-		owner = {
-			has_valid_civic = civic_reanimated_armies
-			has_policy_flag = pmca_times_ten_set
 		}
 	}
 }
@@ -143,22 +155,24 @@ pmca_ten_robotic_defense_army = {
 	resources = {
 		category = armies
 		cost = {
-			energy = 1000
+			minerals = 1000
 		}
 		upkeep = {
 			energy = 10
 			alloys = 0.5
 		}
 	}
+	potential_country = {
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1000
+		}
+	}
 	potential = {
 		from = {
 			has_trait = "trait_mechanical"
-		}
-		owner = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-			has_policy_flag = pmca_times_ten_set
 		}
 	}
 	allow = {
@@ -192,11 +206,15 @@ pmca_ten_machine_defense = {
 			alloys = 0.5
 		}
 	}
-	potential = {
-		owner = {
-			has_authority = auth_machine_intelligence
-			has_policy_flag = pmca_times_ten_set
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 800
 		}
+	}
+	potential = {
 		from = {
 			has_trait = "trait_machine_unit"
 		}
