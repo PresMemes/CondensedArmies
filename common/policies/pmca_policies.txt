@@ -20,7 +20,7 @@ pmca_condensed_policies = {
 			weight = 10
 			modifier = {
 				factor = 2
-				resource_revenue_compare = {
+				resource_income_compare = {
 					resource = minerals
 					value < 100
 				}
@@ -36,7 +36,7 @@ pmca_condensed_policies = {
 			weight = 10
 			modifier = {
 				factor = 2
-				resource_revenue_compare = {
+				resource_income_compare = {
 					resource = minerals
 					value >= 150
 				}
@@ -52,7 +52,7 @@ pmca_condensed_policies = {
 			weight = 10
 			modifier = {
 				factor = 3
-				resource_revenue_compare = {
+				resource_income_compare = {
 					resource = minerals
 					value >= 1000
 				}
