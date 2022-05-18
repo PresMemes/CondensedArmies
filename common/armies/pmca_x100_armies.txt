@@ -343,6 +343,7 @@ pmca_hundred_psionic_army = {
 			}
 		}
 	}
+	
 	ai_weight = {
 		base = 200
 		modifier = {
@@ -617,10 +618,10 @@ pmca_hundred_undead_army = {
 		}
 	}
 	show_tech_unlock_if = {
-		has_valid_civic = civic_reanimated_armies
+		pmca_can_build_undead_armies = yes
 	}
 	potential_country = {
-		has_valid_civic = civic_reanimated_armies
+		pmca_can_build_undead_armies = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = energy
@@ -637,9 +638,15 @@ pmca_hundred_undead_army = {
 		}
 		planet = {
 			has_active_building = building_dread_encampment
-			num_assigned_jobs = {
-				job = necromancer
-				value >= 1
+			OR = {
+				num_assigned_jobs = {
+					job = necromancer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = hive_necromancer
+					value >= 1
+				}
 			}
 		}
 	}

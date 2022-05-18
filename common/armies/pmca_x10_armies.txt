@@ -618,10 +618,15 @@ pmca_ten_undead_army = {
 		}
 	}
 	show_tech_unlock_if = {
-		has_valid_civic = civic_reanimated_armies
+		pmca_can_build_undead_armies = yes
 	}
 	potential_country = {
-		has_valid_civic = civic_reanimated_armies
+		pmca_can_build_undead_armies = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = energy
+			PMCA_VALUE = 1000
+		}
 	}
 	potential = {
 		from = {
@@ -633,16 +638,15 @@ pmca_ten_undead_army = {
 		}
 		planet = {
 			has_active_building = building_dread_encampment
-			num_assigned_jobs = {
-				job = necromancer
-				value >= 1
-			}
-		}
-		owner = {
-			has_policy_flag = pmca_times_ten_set
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 1000
+			OR = {
+				num_assigned_jobs = {
+					job = necromancer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = hive_necromancer
+					value >= 1
+				}
 			}
 		}
 	}

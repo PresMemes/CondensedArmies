@@ -34,6 +34,8 @@
  pmca_ten_robotic_defense_army_desc:0 "$robotic_army_desc$"
  pmca_ten_machine_defense:0 "$pmca_ten$ $machine_defense$"
  pmca_ten_machine_defense_desc:0 "$machine_defense_desc$"
+ pmca_ten_offspring_defense:0 "$pmca_ten$ $offspring_defense$"
+ pmca_ten_offspring_defense_desc:0 "$offspring_defense_desc$"
 
  pmca_hundred_defense_army:0 "$pmca_hundred$ $defense_army$"
  pmca_hundred_defense_army_desc:0 "$pmca_ten_defense_army_desc$"
@@ -45,6 +47,9 @@
  pmca_hundred_robotic_defense_army_desc:0 "$robotic_army_desc$"
  pmca_hundred_machine_defense:0 "$pmca_hundred$ $machine_defense_2$"
  pmca_hundred_machine_defense_desc:0 "$machine_defense_2_desc$"
+ pmca_hundred_offspring_defense:0 "$pmca_hundred$ $offspring_defense$"
+ pmca_hundred_offspring_defense_desc:0 "$offspring_defense_desc$"
+
 
  ######################
  ### VANILLA ARMIES ###
