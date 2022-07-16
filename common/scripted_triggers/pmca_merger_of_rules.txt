@@ -1,0 +1,17 @@
+# Irony this is a placeholder file please ignore it
+#PM: Copy + Pasted this from Merger of Rules for compat purposes
+merg_is_standard_empire = {
+	OR = {
+		is_country_type = default
+		is_country_type = fallen_empire
+		is_country_type = awakened_fallen_empire
+		# ZOFE
+		is_zofe_country = yes
+		# The Empty Vagrant
+		is_country_type = default_ev
+		is_country_type = fallen_empire_ev
+		is_country_type = awakened_fallen_empire_ev
+		# Darkspace
+		is_country_type = ds_nomads
+	}
+}
