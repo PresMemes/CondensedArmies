@@ -1,0 +1,50 @@
+pmca_get_gigas_status = {
+	name = GetGigastructuresInstallInfo
+	random = no
+
+	text = {
+		localization_key = pmca_gigas_not_installed
+		trigger = { NOT = { has_global_flag = gigastructures_enabled } }
+	}
+
+	default = pmca_gigas_installed
+}
+
+pmca_get_esc_status = {
+	name = GetESCInstallInfo
+	random = no
+
+	text = {
+		localization_key = pmca_ESC_not_installed
+		trigger = { NOT = { has_global_flag = Extra_Ship_Components_NEXT } }
+	}
+
+	default = pmca_ESC_installed
+}
+
+pmca_get_acot_status = {
+	name = GetACOTInstallInfo
+	random = no
+
+	text = {
+		localization_key = pmca_ACOT_not_installed
+		trigger = { NOT = { has_global_flag = acot_activated } }
+	}
+
+	default = pmca_ACOT_installed
+}
+
+pmca_get_sbtg_status = {
+	name = GetSBTGInstallInfo
+	random = no
+
+	text = {
+		localization_key = pmca_SBTG_not_installed
+		trigger = { NOT = { has_global_flag = sofe_activated } }
+	}
+
+	default = pmca_SBTG_installed
+}
+
+
+

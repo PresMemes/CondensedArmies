@@ -1,0 +1,34 @@
+# Irony this is a placeholder file please ignore it
+#PM: All this does is reduce the amount of error messages and should be overwritten by their repsective mods
+giga_tech_katzen_panzers = {
+	cost = 10000000000000000
+	area = society
+	tier = 5
+	category = { military_theory }
+	is_rare = yes
+	weight = 0
+
+	potential = { has_global_flag = gigastructures_enabled }
+}
+
+giga_tech_thaumaturgic_weaponry = {
+	cost = 10000000000000000
+	area = physics
+	tier = 5
+	category = { particles }
+	is_rare = yes
+	weight = 0
+
+	potential = { has_global_flag = gigastructures_enabled }
+}
+
+giga_tech_psychic_hypersiphon_3 = {
+	cost = 10000000000000000
+	area = society
+	tier = 5
+	category = { psionics }
+	is_rare = yes
+	weight = 0
+
+	potential = { has_global_flag = gigastructures_enabled }
+}
