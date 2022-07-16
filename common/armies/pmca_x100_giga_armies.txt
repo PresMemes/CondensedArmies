@@ -7,10 +7,10 @@ pmca_hundred_riesigerkatzenpanzer_assault = {
 	war_exhaustion = 500
 	time = 750
 	has_species = no
-	prerequisites = {
-		"giga_tech_katzen_panzers"
-	}
+	prerequisites = { "giga_tech_katzen_panzers" }
+
 	icon = GFX_army_type_katzen_panzer
+
 	resources = {
 		category = armies
 		cost = {
@@ -23,6 +23,7 @@ pmca_hundred_riesigerkatzenpanzer_assault = {
 			energy = 1000
 		}
 	}
+
 	potential_country = {
 		has_global_flag = gigastructures_enabled
 		pmca_materiel_policy_check = {
@@ -43,9 +44,8 @@ pmca_hundred_giga_eaw_crystal_army = {
 	war_exhaustion = 100
 	time = 90
 	icon = GFX_army_type_psionic
-	prerequisites = {
-		"giga_tech_thaumaturgic_weaponry"
-	}
+	prerequisites = { "giga_tech_thaumaturgic_weaponry" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -57,9 +57,9 @@ pmca_hundred_giga_eaw_crystal_army = {
 			rare_crystals = 10
 		}
 	}
-	show_tech_unlock_if = {
-		is_machine_empire = no
-	}
+
+	show_tech_unlock_if = { is_machine_empire = no }
+
 	potential_country = {
 		has_global_flag = gigastructures_enabled
 		is_machine_empire = no
@@ -81,9 +81,8 @@ pmca_hundred_giga_eaw_crystal_army_drone = {
 	war_exhaustion = 100
 	time = 90
 	icon = GFX_army_type_psionic
-	prerequisites = {
-		"giga_tech_thaumaturgic_weaponry"
-	}
+	prerequisites = { "giga_tech_thaumaturgic_weaponry" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -95,9 +94,9 @@ pmca_hundred_giga_eaw_crystal_army_drone = {
 			rare_crystals = 25
 		}
 	}
-	show_tech_unlock_if = {
-		is_machine_empire = yes
-	}
+
+	show_tech_unlock_if = { is_machine_empire = yes }
+
 	potential_country = {
 		has_global_flag = gigastructures_enabled
 		is_machine_empire = yes
@@ -119,9 +118,8 @@ pmca_hundred_shroud_summoned_army = {
 	war_exhaustion = 100
 	time = 100
 	icon = GFX_army_type_psionic
-	prerequisites = {
-		"giga_tech_psychic_hypersiphon_3"
-	}
+	prerequisites = { "giga_tech_psychic_hypersiphon_3" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -132,8 +130,10 @@ pmca_hundred_shroud_summoned_army = {
 			energy = 100
 		}
 	}
+
 	potential_country = {
 		has_global_flag = gigastructures_enabled
+		is_primitive = no
 		OR = {
 			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
@@ -144,6 +144,7 @@ pmca_hundred_shroud_summoned_army = {
 			PMCA_VALUE = 10000
 		}
 	}
+
 	potential = {
 		from = {
 			NOR = {

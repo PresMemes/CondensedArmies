@@ -29,6 +29,11 @@ pmca_hundred_esc_psionic_avatar_army = {
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
+		OR = {
+			is_machine_empire = no
+			has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
+			has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
+		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_zro
@@ -39,11 +44,19 @@ pmca_hundred_esc_psionic_avatar_army = {
 	potential = {
 		custom_tooltip = {
 			planet = { is_capital = yes }
-			NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
 		}
 	}
 
 	prerequisites = { esc_tech_psi_avatar_army }
+
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+		}
+	}
 }
 
 ### Erasure Squad : Chrono-spatial weapons' subtree
@@ -80,11 +93,7 @@ pmca_hundred_esc_erasure_squad_army = {
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
-		}
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_dark_matter
@@ -97,6 +106,10 @@ pmca_hundred_esc_erasure_squad_army = {
 	}
 
 	prerequisites = { esc_tech_chrono_spatial_weapons }
+
+	ai_weight = {
+		base = 150
+	}
 }
 
 ### Eradicator Droids : mechanical verions of Erasure Squads
@@ -131,8 +144,10 @@ pmca_hundred_esc_eradicator_droids_army = {
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
-		is_machine_empire = yes
+		OR = {
+			is_machine_empire = yes
+			has_country_flag = synthetic_age
+		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_dark_matter
@@ -140,16 +155,11 @@ pmca_hundred_esc_eradicator_droids_army = {
 		}
 	}
 
-	potential = {
-		from = {
-			OR = {
-				has_trait = trait_machine_unit
-				has_trait = trait_mechanical
-			}
-		}
-	}
-
 	prerequisites = { esc_tech_chrono_spatial_weapons }
+
+	ai_weight = {
+		base = 200
+	}
 }
 
 ### Tesla Troopers : organic tesla armies
@@ -177,19 +187,12 @@ pmca_hundred_esc_tesla_troopers_army = {
 
 	show_tech_unlock_if = {
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		OR = {
-			is_machine_empire = no
-			has_valid_civic = civic_machine_assimilator
-		}
+		is_machine_empire = no
 	}
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
-		}
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
@@ -197,11 +200,11 @@ pmca_hundred_esc_tesla_troopers_army = {
 		}
 	}
 
-	potential = {
-		from = { is_sapient = yes }
-	}
-
 	prerequisites = { esc_tech_tesla_weapons }
+
+	ai_weight = {
+		base = 200
+	}
 }
 
 ### Tesla Droids : mechanical tesla armies
@@ -235,8 +238,10 @@ pmca_hundred_esc_tesla_droids_army = {
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		is_machine_empire = yes
+		OR = {
+			is_machine_empire = yes
+			has_country_flag = synthetic_age
+		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
@@ -244,16 +249,11 @@ pmca_hundred_esc_tesla_droids_army = {
 		}
 	}
 
-	potential = {
-		from = {
-			OR = {
-				has_trait = trait_machine_unit
-				has_trait = trait_mechanical
-			}
-		}
-	}
-
 	prerequisites = { esc_tech_tesla_weapons }
+
+	ai_weight = {
+		base = 200
+	}
 }
 
 ### Bio-Horror Horde : advanced bio-ascension army
@@ -291,4 +291,24 @@ pmca_hundred_esc_biohorror_army = {
 	}
 
 	prerequisites = { esc_tech_bio_horror_army }
+
+	ai_weight = {
+		base = 20
+		modifier = {
+			factor = 10
+			is_xenophobe = yes
+		}
+		modifier = {
+			set = 0
+			OR = {
+				is_pacifist = yes
+				is_xenophile = yes
+			}
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_xenophobe }
+		}
+	}
 }

@@ -8,31 +8,42 @@ pmca_hundred_fe_army = {
 	war_exhaustion = 100
 	time = 90
 	icon = GFX_army_type_primitive
-	prerequisites = {
-		"tech_dark_matter_army"
-	}
+
+	prerequisites = { "tech_dark_matter_army" }
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 12500
+			minerals = 11000
 		}
 		upkeep = {
-			energy = 125
+			energy = 100
 		}
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
 		}
+		NOT = { has_technology = tech_dark_matter_army_ae }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 11000
+		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -40,20 +51,20 @@ pmca_hundred_fe_army = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 12500
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_technology = tech_dark_matter_army_ae
-			}
+	}
+
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
 			OR = {
-				NOT = {
-					has_authority = auth_machine_intelligence
+				is_fallen_empire = yes
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				AND = {
+					is_militarist = yes
+					has_technology = tech_gene_banks
 				}
-				has_valid_civic = civic_machine_assimilator
 			}
 		}
 	}
@@ -69,31 +80,41 @@ pmca_hundred_ae_army = {
 	war_exhaustion = 100
 	time = 90
 	icon = GFX_army_type_primitive
-	prerequisites = {
-		"tech_dark_matter_army_ae"
-	}
+
+	prerequisites = { "tech_dark_matter_army_ae" }
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 15000
+			minerals = 12000
 		}
 		upkeep = {
-			energy = 150
+			energy = 100
 		}
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
 		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 12000
+		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -101,17 +122,20 @@ pmca_hundred_ae_army = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 15000
-			}
-			has_policy_flag = pmca_times_hundred_set
+	}
+
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
 			OR = {
-				NOT = {
-					has_authority = auth_machine_intelligence
+				is_fallen_empire = yes
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				AND = {
+					is_militarist = yes
+					has_technology = tech_gene_banks
 				}
-				has_valid_civic = civic_machine_assimilator
 			}
 		}
 	}
@@ -127,35 +151,47 @@ pmca_hundred_stellarite_army = {
 	war_exhaustion = 100
 	time = 135
 	icon = GFX_army_type_primitive
-	prerequisites = {
-		"tech_stellarite_army"
-	}
+	prerequisites = { "tech_stellarite_army" }
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 20000
-			acot_sr_stellarite = 200
+			minerals = 13000
 		}
 		upkeep = {
-			energy = 200
+			energy = 100
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 13000
 		}
+	}
+
+	potential = {
 		from = {
-			NOR = {
-				is_sapient = no
-			}
+			is_sapient = yes
 		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 20000
+	}
+
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				is_fallen_empire = yes
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				AND = {
+					is_militarist = yes
+					has_technology = tech_gene_banks
+				}
 			}
-			has_policy_flag = pmca_times_hundred_set
 		}
 	}
 }
@@ -172,42 +208,43 @@ pmca_hundred_fe_spmdroid_army = {
 	has_species = yes
 	pop_limited = no
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 12500
+			minerals = 10000
 		}
 		upkeep = {
 			energy = 125
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			has_authority = auth_machine_intelligence
-		}
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 12500
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_technology = tech_spm_battledroid_ae
-			}
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = yes
+		has_technology = tech_spm_battledroid_ae
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 10000
 		}
 	}
+
+	potential = {
+		from = { has_trait = "trait_machine_unit" }
+	}
+
 	show_tech_unlock_if = {
-		has_authority = auth_machine_intelligence
+		is_machine_empire = yes
 	}
+
 	prerequisites = {
 		"tech_spm_battledroid"
+	}
+
+	ai_weight = {
+		base = 200
 	}
 }
 
@@ -223,37 +260,38 @@ pmca_hundred_fe_spmdroid_army_ae = {
 	has_species = yes
 	pop_limited = no
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 15000
+			minerals = 11000
 		}
 		upkeep = {
 			energy = 150
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 15000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			has_authority = auth_machine_intelligence
-		}
-		from = {
-			has_trait = "trait_machine_unit"
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 10000
 		}
 	}
-	show_tech_unlock_if = {
-		has_authority = auth_machine_intelligence
+
+	potential = {
+		from = { has_trait = "trait_machine_unit" }
 	}
-	prerequisites = {
-		"tech_spm_battledroid_ae"
+
+	show_tech_unlock_if = { is_machine_empire = yes }
+
+	prerequisites = { "tech_spm_battledroid_ae" }
+
+	ai_weight = {
+		base = 200
 	}
 }
 
@@ -269,39 +307,35 @@ pmca_hundred_fe_spmdroid_army_se = {
 	has_species = yes
 	pop_limited = no
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 20000
-			acot_sr_stellarite = 200
+			minerals = 12000
 		}
 		upkeep = {
-			energy = 200
+			energy = 175
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 20000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			has_authority = auth_machine_intelligence
-		}
-		from = {
-			has_trait = "trait_machine_unit"
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 12000
 		}
 	}
-	show_tech_unlock_if = {
-		has_authority = auth_machine_intelligence
+
+	potential = {
+		from = { has_trait = "trait_machine_unit" }
 	}
-	prerequisites = {
-		"tech_spm_battledroid_se"
-	}
+
+	show_tech_unlock_if = { is_machine_empire = yes }
+
+	prerequisites = { "tech_spm_battledroid_se" }
 }
 
 # Synthetic Omnic Armies
@@ -316,45 +350,58 @@ pmca_hundred_fe_omnidroid_army = {
 	time = 160
 	icon = GFX_army_type_machine_assault
 	has_species = yes
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 25000
-			sr_dark_matter = 250
-			acot_sr_dark_energy = 250
+			minerals = 16000
 		}
 		upkeep = {
-			energy = 250
+			energy = 200
 		}
 	}
-	prerequisites = {
-		"tech_omnidroid"
-	}
-	potential = {
+
+	prerequisites = { "tech_omnidroid" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		from = {
-			has_trait = "trait_mechanical"
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 25000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOR = {
-				has_authority = auth_machine_intelligence
-				has_technology = tech_omnidroid_ae
-			}
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		NOT = { has_technology = tech_omnidroid_ae }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 16000
 		}
 	}
+
+	potential = {
+		from = { has_trait = "trait_mechanical" }
+	}
+
 	allow = {
-		owner = {
-			NOT = {
-				has_policy_flag = robots_outlawed
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
 			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
 		}
 	}
 }
@@ -371,44 +418,57 @@ pmca_hundred_fe_omnidroid_army_ae = {
 	time = 160
 	icon = GFX_army_type_machine_assault
 	has_species = yes
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 30000
-			sr_dark_matter = 300
-			acot_sr_dark_energy = 300
+			minerals = 17000
 		}
 		upkeep = {
-			energy = 300
+			energy = 200
 		}
 	}
-	prerequisites = {
-		"tech_omnidroid_ae"
-	}
-	potential = {
+
+	prerequisites = { "tech_omnidroid_ae" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		from = {
-			has_trait = "trait_mechanical"
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 3000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 17000
 		}
 	}
+
+	potential = {
+		from = { has_trait = "trait_mechanical" }
+	}
+
 	allow = {
-		owner = {
-			NOT = {
-				has_policy_flag = robots_outlawed
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
 			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
 		}
 	}
 }
@@ -425,43 +485,57 @@ pmca_hundred_fe_omnidroid_army_se = {
 	time = 160
 	icon = GFX_army_type_machine_assault
 	has_species = yes
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 50000
-			acot_sr_stellarite = 500
+			minerals = 18000
 		}
 		upkeep = {
-			energy = 500
+			energy = 200
 		}
 	}
-	prerequisites = {
-		"tech_omnidroid_se"
-	}
-	potential = {
+
+	prerequisites = { "tech_omnidroid_se" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		from = {
-			has_trait = "trait_mechanical"
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 5000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 18000
 		}
 	}
+
+	potential = {
+		from = { has_trait = "trait_mechanical" }
+	}
+
 	allow = {
-		owner = {
-			NOT = {
-				has_policy_flag = robots_outlawed
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
 			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
 		}
 	}
 }
@@ -470,40 +544,40 @@ pmca_hundred_fe_omnidroid_army_se = {
 # SE Michael Bay Lord
 pmca_hundred_stellarite_bomberman = {
 	use_armynames_from = stellarite_bomberman
-	damage = 6500
-	health = 10
+	damage = 3000
+	health = 50
 	has_morale = no
-	morale_damage = 100
-	collateral_damage = 80000
+	morale_damage = 1
+	collateral_damage = 20000
 	war_exhaustion = 100
-	time = 450
+	time = 300
 	icon = GFX_army_type_xenomorph
-	prerequisites = {
-		"tech_stellarite_bomberman"
-	}
+	prerequisites = { "tech_stellarite_bomberman" }
 	has_species = no
+
 	resources = {
 		category = armies
 		cost = {
-			energy = 2000000
-			acot_sr_stellarite = 50000
+			energy = 100000
+			acot_sr_stellarite = 20000
 		}
 		upkeep = {
-			energy = 50000
+			acot_sr_stellarite = 1000
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = acot_sr_stellarite
+			PMCA_VALUE = 20000
 		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 2000000
-			}
-			has_policy_flag = pmca_times_hundred_set
-		}
+	}
+
+	ai_weight = {
+		base = 100
 	}
 }
 
@@ -519,10 +593,10 @@ pmca_hundred_fe_tank = {
 	war_exhaustion = 350
 	time = 350
 	has_species = no
-	prerequisites = {
-		"tech_dark_matter_tank"
-	}
+	prerequisites = { "tech_dark_matter_tank" }
+
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
@@ -532,19 +606,17 @@ pmca_hundred_fe_tank = {
 			unity = 10000
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 100000
-			}
-			has_policy_flag = pmca_times_hundred_set
+		NOT = { has_global_flag = acot_army_forbidden }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundreds
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 100000
 		}
 	}
+
 	allow = {
 		has_advanced_fort = yes
 	}
@@ -562,6 +634,7 @@ pmca_hundred_fe_hercules_tank = {
 	time = 1150
 	has_species = no
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
@@ -574,29 +647,27 @@ pmca_hundred_fe_hercules_tank = {
 			physics_research = 2500
 		}
 	}
-	prerequisites = {
-		"tech_dark_matter_megatank"
-	}
-	potential = {
+
+	prerequisites = { "tech_dark_matter_megatank" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = {
+			which = megatank_count
+			value >= 1
 		}
-		owner = {
-			check_variable = {
-				which = megatank_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 25000
-			}
-			has_policy_flag = pmca_times_hundred_set
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 25000
 		}
 	}
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -605,6 +676,7 @@ pmca_hundred_fe_hercules_tank = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -627,6 +699,7 @@ pmca_hundred_fe_inquisitor_army = {
 	war_exhaustion = 225
 	time = 110
 	icon = GFX_army_type_primitive
+
 	resources = {
 		category = armies
 		cost = {
@@ -636,40 +709,37 @@ pmca_hundred_fe_inquisitor_army = {
 			unity = 5000
 		}
 	}
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	prerequisites = {
-		"tech_inquisitor"
-	}
-	potential = {
+
+	prerequisites = { "tech_inquisitor" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 25000
 		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
-			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 250
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
 			}
 		}
 	}
@@ -685,10 +755,13 @@ pmca_hundred_fe_living_saint = {
 	has_morale = no
 	war_exhaustion = 1600
 	time = 650
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
@@ -699,14 +772,25 @@ pmca_hundred_fe_living_saint = {
 			influence = 50
 		}
 	}
-	prerequisites = {
-		"tech_living_saint"
-	}
-	potential = {
+
+	prerequisites = { "tech_living_saint" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
 		}
+		check_variable = { which = saint_count value >= 1 }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 25000
+		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -714,24 +798,8 @@ pmca_hundred_fe_living_saint = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			check_variable = {
-				which = saint_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 25000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			OR = {
-				NOT = {
-					has_authority = auth_machine_intelligence
-				}
-				has_valid_civic = civic_machine_assimilator
-			}
-		}
 	}
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -740,6 +808,7 @@ pmca_hundred_fe_living_saint = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -762,6 +831,7 @@ pmca_hundred_fe_deathbringer_army = {
 	war_exhaustion = 225
 	time = 150
 	icon = GFX_army_type_primitive
+
 	resources = {
 		category = armies
 		cost = {
@@ -771,40 +841,37 @@ pmca_hundred_fe_deathbringer_army = {
 			unity = 5000
 		}
 	}
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	prerequisites = {
-		"tech_soul_purifier"
-	}
-	potential = {
+
+	prerequisites = { "tech_soul_purifier" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 35000
 		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
-			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 35000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
 			}
 		}
 	}
@@ -821,10 +888,13 @@ pmca_hundred_fe_xenoartillery = {
 	war_exhaustion = 2000
 	time = 990
 	has_species = no
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		produces = {
@@ -834,26 +904,20 @@ pmca_hundred_fe_xenoartillery = {
 			influence = 25000
 		}
 	}
-	prerequisites = {
-		"tech_xenoartillery"
-	}
-	potential = {
+
+	prerequisites = { "tech_xenoartillery" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			check_variable = {
-				which = xenoart_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 25000
-			}
-			has_policy_flag = pmca_times_hundred_set
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = { which = xenoart_count value >= 1 }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 25000
 		}
 	}
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -862,6 +926,7 @@ pmca_hundred_fe_xenoartillery = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -880,10 +945,11 @@ pmca_hundred_fe_sniper_army = {
 	health = 110
 	morale = 1000
 	morale_damage = 3.5
-	collateral_damage = 0	#PM: :(
+	collateral_damage = 0
 	war_exhaustion = 125
 	time = 110
 	icon = GFX_army_type_primitive
+
 	resources = {
 		category = armies
 		cost = {
@@ -893,40 +959,37 @@ pmca_hundred_fe_sniper_army = {
 			unity = 5000
 		}
 	}
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	prerequisites = {
-		"tech_shadow_sniper"
-	}
-	potential = {
+	
+	prerequisites = { "tech_shadow_sniper" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 20000
 		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
-			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 20000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
 			}
 		}
 	}
@@ -943,12 +1006,13 @@ pmca_hundred_fe_hero_blackwidow = {
 	war_exhaustion = 1000
 	time = 600
 	icon = GFX_army_type_gene_warrior
+
 	allow = {
 		has_advanced_fort = yes
 	}
-	prerequisites = {
-		"tech_black_widow"
-	}
+
+	prerequisites = { "tech_black_widow" }
+
 	resources = {
 		category = armies
 		produces = {
@@ -958,19 +1022,32 @@ pmca_hundred_fe_hero_blackwidow = {
 			influence = 25000
 		}
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
 		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 25000
+		}
+		custom_tooltip = {
+			owner = { check_variable = { which = blackwidow_count value >= 1 } }
+		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -978,28 +1055,8 @@ pmca_hundred_fe_hero_blackwidow = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 25000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			OR = {
-				NOT = {
-					has_authority = auth_machine_intelligence
-				}
-				has_valid_civic = civic_machine_assimilator
-			}
-		}
-		custom_tooltip = {
-			owner = {
-				check_variable = {
-					which = blackwidow_count
-					value >= 1
-				}
-			}
-		}
 	}
+	
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -1008,6 +1065,7 @@ pmca_hundred_fe_hero_blackwidow = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -1030,10 +1088,13 @@ pmca_hundred_fe_gunship = {
 	war_exhaustion = 650
 	time = 500
 	has_species = no
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
@@ -1043,19 +1104,17 @@ pmca_hundred_fe_gunship = {
 			unity = 20000
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 125000
-			}
-			has_policy_flag = pmca_times_hundred_set
+		NOT = { has_global_flag = acot_army_forbidden }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 125000
 		}
 	}
+
 	prerequisites = {
 		"tech_liberty_gunship"
 	}
@@ -1073,6 +1132,7 @@ pmca_hundred_fe_libertyprime = {
 	time = 1100
 	has_species = no
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		produces = {
@@ -1082,29 +1142,24 @@ pmca_hundred_fe_libertyprime = {
 			influence = 35000
 		}
 	}
+
 	allow = {
 		has_advanced_fort = yes
 	}
-	prerequisites = {
-		"tech_liberty_prime"
-	}
-	potential = {
+
+	prerequisites = { "tech_liberty_prime" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			check_variable = {
-				which = prime_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 35000
-			}
-			has_policy_flag = pmca_times_hundred_set
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = { which = prime_count value >= 1 }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 35000
 		}
 	}
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -1113,6 +1168,7 @@ pmca_hundred_fe_libertyprime = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -1135,6 +1191,7 @@ pmca_hundred_fe_enforcer_army = {
 	war_exhaustion = 200
 	time = 110
 	icon = GFX_army_type_primitive
+
 	resources = {
 		category = armies
 		cost = {
@@ -1144,40 +1201,37 @@ pmca_hundred_fe_enforcer_army = {
 			unity = 5000
 		}
 	}
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	prerequisites = {
-		"tech_enforcer"
-	}
-	potential = {
+
+	prerequisites = { "tech_enforcer" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 22000
 		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
-			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 22000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
 			}
 		}
 	}
@@ -1279,6 +1333,7 @@ pmca_hundred_fe_peacekeeper_army = {
 	war_exhaustion = 200
 	time = 110
 	icon = GFX_army_type_primitive
+
 	resources = {
 		category = armies
 		cost = {
@@ -1288,40 +1343,37 @@ pmca_hundred_fe_peacekeeper_army = {
 			unity = 5000
 		}
 	}
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	prerequisites = {
-		"tech_peacekeeper"
-	}
-	potential = {
+
+	prerequisites = { "tech_peacekeeper" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 22000
 		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
-			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 22000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
 			}
 		}
 	}
@@ -1338,12 +1390,13 @@ pmca_hundred_fe_hero_captainpacifist = {
 	war_exhaustion = 1000
 	time = 550
 	icon = GFX_army_type_gene_warrior
+
 	allow = {
 		has_advanced_fort = yes
 	}
-	prerequisites = {
-		"tech_captain_pacifist"
-	}
+
+	prerequisites = { "tech_captain_pacifist" }
+
 	resources = {
 		category = armies
 		produces = {
@@ -1357,19 +1410,30 @@ pmca_hundred_fe_hero_captainpacifist = {
 			influence = 20000
 		}
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = { which = captain_count value >= 1 }
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
 		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 20000
+		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -1377,24 +1441,8 @@ pmca_hundred_fe_hero_captainpacifist = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			check_variable = {
-				which = captain_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 20000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			OR = {
-				NOT = {
-					has_authority = auth_machine_intelligence
-				}
-				has_valid_civic = civic_machine_assimilator
-			}
-		}
 	}
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -1403,6 +1451,7 @@ pmca_hundred_fe_hero_captainpacifist = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -1425,6 +1474,7 @@ pmca_hundred_fe_heavy_army = {
 	war_exhaustion = 120
 	time = 100
 	icon = GFX_army_type_primitive
+
 	resources = {
 		category = armies
 		cost = {
@@ -1434,40 +1484,37 @@ pmca_hundred_fe_heavy_army = {
 			unity = 5000
 		}
 	}
+
 	allow = {
 		has_advanced_fort = yes
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	prerequisites = {
-		"tech_heavy_trooper"
-	}
-	potential = {
+
+	prerequisites = { "tech_heavy_trooper" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 15000
 		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
-			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 15000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
 			}
 		}
 	}
@@ -1484,12 +1531,13 @@ pmca_hundred_fe_hero_godofwar = {
 	war_exhaustion = 1000
 	time = 650
 	icon = GFX_army_type_gene_warrior
+
 	allow = {
 		has_advanced_fort = yes
 	}
-	prerequisites = {
-		"tech_godofwar"
-	}
+
+	prerequisites = { "tech_godofwar" }
+
 	resources = {
 		category = armies
 		produces = {
@@ -1499,19 +1547,30 @@ pmca_hundred_fe_hero_godofwar = {
 			influence = 25000
 		}
 	}
+
 	show_tech_unlock_if = {
 		OR = {
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = { which = god_count value >= 1 }
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
 		}
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 25000
+		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -1519,24 +1578,8 @@ pmca_hundred_fe_hero_godofwar = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			check_variable = {
-				which = god_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 25000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			OR = {
-				NOT = {
-					has_authority = auth_machine_intelligence
-				}
-				has_valid_civic = civic_machine_assimilator
-			}
-		}
 	}
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -1545,6 +1588,7 @@ pmca_hundred_fe_hero_godofwar = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -1567,6 +1611,7 @@ pmca_hundred_fe_omnimech = {
 	war_exhaustion = 150
 	time = 160
 	has_species = yes
+
 	resources = {
 		category = armies
 		cost = {
@@ -1578,33 +1623,35 @@ pmca_hundred_fe_omnimech = {
 			energy = 35
 		}
 	}
+
 	allow = {
 		OR = {
 			has_building = building_fe_machine_dome
 			has_district = district_acot_enigmapolis_fortress
 		}
 	}
+
 	icon = GFX_army_type_machine_assault
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 35000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			has_authority = auth_machine_intelligence
-		}
-		from = {
-			has_trait = "trait_machine_unit"
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 35000
 		}
 	}
+
+	potential = {
+		from = { has_trait = "trait_machine_unit" }
+	}
+
 	show_tech_unlock_if = {
-		has_authority = auth_machine_intelligence
+		is_machine_empire = yes
 	}
+
 	prerequisites = {
 		"tech_omni_warmech"
 	}
@@ -1622,6 +1669,7 @@ pmca_hundred_fe_godmech = {
 	time = 1100
 	has_species = yes
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		produces = {
@@ -1631,33 +1679,29 @@ pmca_hundred_fe_godmech = {
 			influence = 32500
 		}
 	}
+
 	allow = {
 		has_building = building_ae_machine_dome
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			check_variable = {
-				which = godmech_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 32500
-			}
-			has_policy_flag = pmca_times_hundred_set
-			has_authority = auth_machine_intelligence
-		}
-		from = {
-			has_trait = "trait_machine_unit"
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = { which = godmech_count value >= 1 }
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 32500
 		}
 	}
-	prerequisites = {
-		"tech_godmech"
+
+	potential = {
+		from = { has_trait = "trait_machine_unit" }
 	}
+
+	prerequisites = { "tech_godmech" }
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -1666,6 +1710,7 @@ pmca_hundred_fe_godmech = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -1689,6 +1734,7 @@ pmca_hundred_fe_mastermind = {
 	time = 85
 	icon = GFX_army_type_xenomorph
 	has_species = no
+
 	resources = {
 		category = armies
 		cost = {
@@ -1698,31 +1744,26 @@ pmca_hundred_fe_mastermind = {
 			unity = 5000
 		}
 	}
+
 	allow = {
 		OR = {
 			has_building = building_fe_hive_evochamber
 			has_district = district_acot_enigmapolis_fortress
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 25000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 25000
 		}
 	}
-	prerequisites = {
-		"tech_controller"
-	}
+
+	prerequisites = { "tech_controller" }
 }
 
 # FE Hive Mind Terror From Beyond
@@ -1736,6 +1777,7 @@ pmca_hundred_fe_terror_beyond = {
 	war_exhaustion = 1800
 	time = 850
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		produces = {
@@ -1746,14 +1788,24 @@ pmca_hundred_fe_terror_beyond = {
 			influence = 25000
 		}
 	}
+
 	allow = {
 		has_building = building_ae_hive_evochamber
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = { which = terror_count value >= 1 }
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 25000
 		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -1761,27 +1813,10 @@ pmca_hundred_fe_terror_beyond = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			check_variable = {
-				which = terror_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 25000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			OR = {
-				NOT = {
-					has_authority = auth_machine_intelligence
-				}
-				has_valid_civic = civic_machine_assimilator
-			}
-		}
 	}
-	prerequisites = {
-		"tech_terror_beyond"
-	}
+
+	prerequisites = { "tech_terror_beyond" }
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -1790,6 +1825,7 @@ pmca_hundred_fe_terror_beyond = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -1813,6 +1849,7 @@ pmca_hundred_fe_synthsoldier = {
 	time = 220
 	icon = GFX_army_type_machine_assault
 	has_species = yes
+
 	resources = {
 		category = armies
 		cost = {
@@ -1822,28 +1859,24 @@ pmca_hundred_fe_synthsoldier = {
 			unity = 50000
 		}
 	}
-	prerequisites = {
-		"tech_synthtrooper"
-	}
-	potential = {
+
+	prerequisites = { "tech_synthtrooper" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		from = {
-			has_trait = "trait_mechanical"
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 50000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 50000
 		}
 	}
+
+	potential = {
+		from = { has_trait = "trait_mechanical" }
+	}
+
 	allow = {
 		OR = {
 			has_building = building_fe_synt_center
@@ -1865,6 +1898,7 @@ pmca_hundred_fe_synthcommando_army = {
 	time = 1000
 	icon = GFX_army_type_machine_assault
 	has_species = yes
+
 	resources = {
 		category = armies
 		cost = {
@@ -1875,32 +1909,25 @@ pmca_hundred_fe_synthcommando_army = {
 			engineering_research = 10000
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		from = {
-			has_trait = "trait_mechanical"
-		}
-		owner = {
-			check_variable = {
-				which = synthmando_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 50000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = { which = synthmando_count value >= 1 }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 50000
 		}
 	}
-	prerequisites = {
-		"tech_omnisynth"
+
+	potential = {
+		from = { has_trait = "trait_mechanical" }
 	}
+
+	prerequisites = { "tech_omnisynth" }
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -1909,6 +1936,7 @@ pmca_hundred_fe_synthcommando_army = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -1917,6 +1945,7 @@ pmca_hundred_fe_synthcommando_army = {
 			}
 		}
 	}
+
 	allow = {
 		OR = {
 			has_building = building_ae_synt_center
@@ -1937,6 +1966,7 @@ pmca_hundred_fe_disciple_army = {
 	war_exhaustion = 250
 	time = 260
 	icon = GFX_army_type_psionic
+
 	resources = {
 		category = armies
 		cost = {
@@ -1946,19 +1976,24 @@ pmca_hundred_fe_disciple_army = {
 			unity = 50000
 		}
 	}
-	prerequisites = {
-		"tech_dark_templar"
-	}
-	potential = {
+
+	prerequisites = { "tech_dark_templar" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 50000
 		}
+	}
+
+	potential = {
 		from = {
 			OR = {
-				NOT = {
-					host_has_dlc = "Utopia"
-				}
+				NOT = { host_has_dlc = "Utopia" }
 				has_trait = trait_psionic
 			}
 			NOR = {
@@ -1967,17 +2002,8 @@ pmca_hundred_fe_disciple_army = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 50000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-		}
 	}
+
 	allow = {
 		OR = {
 			has_building = building_fe_psi_altar
@@ -1998,6 +2024,7 @@ pmca_hundred_fe_hero_psion = {
 	war_exhaustion = 1500
 	time = 1000
 	icon = GFX_army_type_psionic
+
 	resources = {
 		category = armies
 		cost = {
@@ -2008,19 +2035,25 @@ pmca_hundred_fe_hero_psion = {
 			society_research = 10000
 		}
 	}
-	prerequisites = {
-		"tech_dark_psion"
-	}
-	potential = {
+
+	prerequisites = { "tech_dark_psion" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = { which = psion_count value >= 1 }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 50000
 		}
+	}
+
+	potential = {
 		from = {
 			OR = {
-				NOT = {
-					host_has_dlc = "Utopia"
-				}
+				NOT = { host_has_dlc = "Utopia" }
 				has_trait = trait_psionic
 			}
 			NOR = {
@@ -2028,21 +2061,8 @@ pmca_hundred_fe_hero_psion = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			check_variable = {
-				which = psion_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 50000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-		}
 	}
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -2051,6 +2071,7 @@ pmca_hundred_fe_hero_psion = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -2059,6 +2080,7 @@ pmca_hundred_fe_hero_psion = {
 			}
 		}
 	}
+	
 	allow = {
 		OR = {
 			has_building = building_ae_psi_altar
@@ -2079,6 +2101,7 @@ pmca_hundred_fe_clone_army = {
 	time = 30
 	icon = GFX_army_type_clone
 	pop_limited = no
+
 	resources = {
 		category = armies
 		cost = {
@@ -2090,34 +2113,30 @@ pmca_hundred_fe_clone_army = {
 			energy = 50
 		}
 	}
-	prerequisites = {
-		"tech_elite_clone"
-	}
+
+	prerequisites = { "tech_elite_clone" }
+
 	show_tech_unlock_if = {
-		NOT = {
-			has_authority = auth_machine_intelligence
+		is_machine_empire = no
+	}
+
+	potential_country = {
+		has_global_flag = acot_activated
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = sr_dark_matter
+			PMCA_VALUE = 500
 		}
 	}
+
 	potential = {
-		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
-			}
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 5000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
 			}
 		}
 	}
@@ -2134,6 +2153,7 @@ pmca_hundred_fe_gene_warrior = {
 	war_exhaustion = 250
 	time = 260
 	icon = GFX_army_type_gene_warrior
+
 	resources = {
 		category = armies
 		cost = {
@@ -2143,14 +2163,21 @@ pmca_hundred_fe_gene_warrior = {
 			unity = 50000
 		}
 	}
-	prerequisites = {
-		"tech_elite_genetrooper"
-	}
-	potential = {
+
+	prerequisites = { "tech_elite_genetrooper" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = sr_dark_matter
+			PMCA_VALUE = 5000
 		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -2158,17 +2185,8 @@ pmca_hundred_fe_gene_warrior = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 50000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-		}
 	}
+
 	allow = {
 		OR = {
 			has_building = building_fe_clone_vats
@@ -2191,24 +2209,33 @@ pmca_hundred_fe_doomguy = {
 	war_exhaustion = 1500
 	time = 1000
 	icon = GFX_army_type_gene_warrior
+
 	resources = {
 		category = armies
 		cost = {
-			influence = 50000
+			influence = 5000
 		}
 		produces = {
-			influence = 100
-			physics_research = 10000
+			influence = 10
+			physics_research = 1000
 		}
 	}
-	prerequisites = {
-		"tech_doom_hero"
-	}
-	potential = {
+
+	prerequisites = { "tech_doom_hero" }
+
+	potential_country = {
 		has_global_flag = acot_activated
-		NOT = {
-			has_global_flag = acot_army_forbidden
+		NOT = { has_global_flag = acot_army_forbidden }
+		check_variable = { which = doomguy_count value >= 1 }
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 5000
 		}
+	}
+
+	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -2216,21 +2243,8 @@ pmca_hundred_fe_doomguy = {
 				is_sapient = no
 			}
 		}
-		owner = {
-			check_variable = {
-				which = doomguy_count
-				value >= 1
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 50000
-			}
-			has_policy_flag = pmca_times_hundred_set
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
-		}
 	}
+
 	on_queued = {
 		owner = {
 			subtract_variable = {
@@ -2239,6 +2253,7 @@ pmca_hundred_fe_doomguy = {
 			}
 		}
 	}
+
 	on_unqueued = {
 		owner = {
 			change_variable = {
@@ -2247,6 +2262,7 @@ pmca_hundred_fe_doomguy = {
 			}
 		}
 	}
+
 	allow = {
 		OR = {
 			has_building = building_ae_clone_vats
@@ -2268,9 +2284,9 @@ pmca_hundred_acot_phanon_army = {
 	war_exhaustion = 200
 	time = 150
 	icon = GFX_army_type_primitive
-	prerequisites = {
-		"tech_phanon_army"
-	}
+
+	prerequisites = { "tech_phanon_army" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -2281,23 +2297,21 @@ pmca_hundred_acot_phanon_army = {
 			energy = 1000
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
+		NOT = { has_global_flag = acot_army_forbidden }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = energy
+			PMCA_VALUE = 100000
+		}
+	}
+
+	potential = {
 		OR = {
 			is_planet_class = pc_acot_pmc_vault
-			owner = {
-				is_country_type = acot_phanon_base
-			}
-		}
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 100000
-			}
-			has_policy_flag = pmca_times_hundred_set
+			owner = { is_country_type = acot_phanon_base }
 		}
 	}
 }
@@ -2314,35 +2328,35 @@ pmca_hundred_acot_phanon_attack_dog = {
 	has_species = no
 	time = 150
 	icon = GFX_army_type_xenomorph
-	prerequisites = {
-		"tech_phanon_attack_dog"
-	}
+
+	prerequisites = { "tech_phanon_attack_dog" }
+
 	resources = {
 		category = armies
 		cost = {
-			energy = 8500
+			energy = 85000
 		}
 		upkeep = {
-			energy = 80
+			energy = 800
 		}
 	}
-	potential = {
+
+	potential_country = {
 		has_global_flag = acot_activated
+		NOT = { has_global_flag = acot_army_forbidden }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = energy
+			PMCA_VALUE = 85000
+		}
+	}
+
+	potential = {
 		OR = {
 			is_planet_class = pc_acot_pmc_vault
 			owner = {
 				is_country_type = acot_phanon_base
 			}
-		}
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 85000
-			}
-			has_policy_flag = pmca_times_hundred_set
 		}
 	}
 }
@@ -2359,35 +2373,33 @@ pmca_hundred_acot_phanon_operative = {
 	time = 800
 	icon = GFX_army_type_psionic
 	has_species = no
-	prerequisites = {
-		tech_phanon_operative
-	}
+
+	prerequisites = { tech_phanon_operative }
+
 	resources = {
 		category = armies
 		cost = {
-			energy = 50000000			#PM: 50m EC lmao
+			energy = 50000000
 			influence = 100000
 		}
-		upkeep = {
+	}
+
+	potential_country = {
+		has_global_flag = acot_activated
+		NOT = { has_global_flag = acot_army_forbidden }
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = energy
+			PMCA_VALUE = 50000000
 		}
 	}
+
 	potential = {
-		has_global_flag = acot_activated
 		OR = {
 			is_planet_class = pc_acot_pmc_vault
 			owner = {
 				is_country_type = acot_phanon_base
 			}
-		}
-		NOT = {
-			has_global_flag = acot_army_forbidden
-		}
-		owner = {
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 50000000
-			}
-			has_policy_flag = pmca_times_hundred_set
 		}
 	}
 }

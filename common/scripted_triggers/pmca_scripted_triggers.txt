@@ -2,7 +2,7 @@ pmca_materiel_policy_check = {
 	optimize_memory
 	has_policy_flag = pmca_times_$PMCA_MULT$_set	#PM: PMCA_MULT is either ten or hundred
 	resource_stockpile_compare = {
-		resource = $PMCA_RESOURCE$		#PM: PMCA_RESOURCE should be literally any resource, modded or not. Try to use the hardest to get resource in the case of multiple.
+		resource = $PMCA_RESOURCE$		#PM: PMCA_RESOURCE should be literally any resource, modded or not.
 		value >= $PMCA_VALUE$		#PM: PMCA_VALUE should be how much of PMCA_RESOURCE you need to see this army. Should be equal to PMCA_RESOURCE cost
 	}
 }
