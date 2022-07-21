@@ -1,6 +1,6 @@
 pmca_condensed_policies = {
 	potential = {
-		merg_is_standard_empire = yes
+		always = yes
 	}
 	allow = {
 		always = yes
