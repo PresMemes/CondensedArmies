@@ -1,17 +1,11 @@
 ﻿l_english:
 
  #Event Stuff
- pmca_menu_events.1.title:0 "Condensed Armies"
- pmca_menu_events.1.desc:0 "§YIntegrated Patches:§!\n    §BMajor Mods:§!\n        [this.GetGigastructuresInstallInfo]\n        [this.GetESCInstallInfo]\n        [this.GetACOTInstallInfo]\n        [this.GetSBTGInstallInfo]"
+ pmca_menu_events.1.title:0 "Condensed Armies Mod Menu"
+ pmca_menu_events.1.desc:0 "Welcome to Condensed Armies mod menu, please determine whether or not you want the AI to use Condensed Armies then press §WExit§!.\n\nSupported Mods:\n§PGigastructural Engineering & More§!\n§BAncient Cache of Technologies§!\n  §YACOT: Secrets Beyond the Gates§!\n§HExtra Ship Components NEXT§!\nAnd others."
 
- pmca_gigas_not_installed:0 "§LGigastructural Engineering & More...§! §RNot detected.§!"
- pmca_gigas_installed:0 "§WGigastructural Engineering & More...§! §GDetected.§!"
- pmca_ESC_not_installed:0 "§LExtra Ship Components: NEXT...§! §RNot detected.§!"
- pmca_ESC_installed:0 "§WExtra Ship Components: NEXT...§! §GDetected.§!"
- pmca_ACOT_not_installed:0 "§LAncient Cache of Technologies...§! §RNot detected.§!"
- pmca_ACOT_installed:0 "§WAncient Cache of Technologies...§! §GDetected.§!"
- pmca_SBTG_not_installed:0 "§LACOT: Secrets Beyond The Gates...§! §RNot detected.§!"
- pmca_SBTG_installed:0 "§WACOT: Secrets Beyond The Gates...§! §GDetected.§!"
+ pmca_menu_events.1.disable:0 "§RDisable§! AI Usage"
+ pmca_menu_events.1.enable:0 "§GEnable§! AI Usage"
 
  #Common Stuff
  pmca_ten:0 "§Mx10§!"

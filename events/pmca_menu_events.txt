@@ -7,6 +7,15 @@ event = {
 
 	immediate = {
 		set_global_flag = condensed_armies_installed
+		if = {
+			limit = {
+				NAND = {
+					has_global_flag = pmca_ai_allowed
+					has_global_flag = pmca_ai_banned
+				}
+			}
+			set_global_flag = pmca_ai_allowed
+		}
 	}
 }
 
@@ -20,6 +29,26 @@ country_event = {
 	show_sound = event_space_battle
 
 	option = {
-		name = OK
+		name = pmca_menu_events.1.disable
+		trigger = { has_global_flag = pmca_ai_allowed }
+		hidden_effect = {
+			remove_global_flag = pmca_ai_allowed
+			set_global_flag = pmca_ai_banned
+			country_event = { id = pmca_menu_events.1 }
+		}
+	}
+
+	option = {
+		name = pmca_menu_events.1.enable
+		trigger = { has_global_flag =  pmca_ai_banned }
+		hidden_effect = {
+			set_global_flag = pmca_ai_allowed
+			remove_global_flag = pmca_ai_banned
+			country_event = { id = pmca_menu_events.1 }
+		}
+	}
+
+	option = {
+		name = EXIT
 	}
 }
