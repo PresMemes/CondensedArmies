@@ -9,7 +9,7 @@ event = {
 		set_global_flag = condensed_armies_installed
 		if = {
 			limit = {
-				NAND = {
+				NOR = {
 					has_global_flag = pmca_ai_allowed
 					has_global_flag = pmca_ai_banned
 				}
