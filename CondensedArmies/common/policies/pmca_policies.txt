@@ -1,0 +1,56 @@
+pmca_condensed_policies = {
+	potential = {
+		always = yes
+	}
+	allow = {
+		always = yes
+	}
+	option = {
+		name = pmca_vanilla_policy
+		policy_flags = {
+			pmca_vanilla_set
+		}
+		AI_weight = {
+			weight = 10
+			modifier = {
+				factor = 2
+				resource_income_compare = {
+					resource = minerals
+					value < 100
+				}
+			}
+		}
+	}
+	option = {
+		name = pmca_times_ten_policy
+		policy_flags = {
+			pmca_times_ten_set
+		}
+		AI_weight = {
+			weight = 10
+			modifier = {
+				factor = 2
+				resource_income_compare = {
+					resource = minerals
+					value >= 150
+				}
+			}
+		}
+	}
+	option = {
+		name = pmca_times_hundred_policy
+		policy_flags = {
+			pmca_times_hundred_set
+		}
+		AI_weight = {
+			weight = 10
+			modifier = {
+				factor = 3
+				resource_income_compare = {
+					resource = minerals
+					value >= 1000
+				}
+			}
+		}
+	}
+}

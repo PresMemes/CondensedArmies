@@ -1,0 +1,297 @@
+pmca_ten_defense_army = {
+	defensive = yes
+	use_armynames_from = defense_army
+	health = 12.5
+	damage = 15
+	morale = 12.5
+	collateral_damage = 0
+	war_exhaustion = 0	# No WE from defense armies
+	time = 30
+	icon = GFX_army_type_defensive
+	has_species = yes
+	resources = {
+		category = armies
+		cost = {
+			minerals = 750
+		}
+		upkeep = {
+			energy = 10
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_lithoid_empire = no }
+			}
+			food = 5
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_lithoid_empire = yes }
+			}
+			minerals = 5
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 5
+		}
+	}
+	potential_country = {
+		is_primitive = no
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
+		}
+		pmca_can_build_undead_armies = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 750
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+	}
+}
+
+pmca_ten_undead_defense_army = {
+	defensive = yes
+	health = 17.5
+	damage = 15
+	collateral_damage = 0
+	has_morale = no
+	morale_damage = 1.75
+	war_exhaustion = 0
+	time = 30
+	icon = GFX_army_type_undead_defensive
+	use_armynames_from = undead_army
+	resources = {
+		category = armies
+		cost = {
+			energy = 750
+		}
+		upkeep = {
+			energy = 12.5
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 5
+		}
+	}
+	potential_country = {
+		pmca_can_build_undead_armies = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = energy
+			PMCA_VALUE = 750
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+		planet = {
+			has_active_building = building_dread_encampment
+			OR = {
+				num_assigned_jobs = {
+					job = necromancer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = hive_necromancer
+					value >= 1
+				}
+			}
+		}
+	}
+}
+
+pmca_ten_robotic_defense_army = {
+	defensive = yes
+	damage = 10
+	health = 12.5
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 0
+	war_exhaustion = 0	# No WE from defense armies
+	time = 30
+	icon = GFX_army_type_robot
+	has_species = yes
+	use_armynames_from = robotic_defense_army
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 10
+			alloys = 0.5
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 5
+		}
+	}
+	potential_country = {
+		is_machine_empire = no
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1000
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_mechanical"
+		}
+	}
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}
+		}
+	}
+}
+
+pmca_ten_machine_defense = {
+	defensive = yes
+	use_armynames_from = machine_defense
+	health = 11
+	damage = 11
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 0
+	war_exhaustion = 0	# No WE from defense armies
+	time = 30
+	icon = GFX_army_type_machine_defensive
+	has_species = yes
+	resources = {
+		category = armies
+		cost = {
+			minerals = 800
+		}
+		upkeep = {
+			energy = 10
+			alloys = 0.5
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 5
+		}
+	}
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 800
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+}
+
+pmca_ten_offspring_defense = {
+	defensive = yes
+	use_armynames_from = offspring_defense
+	health = 20
+	damage = 17.5
+	has_morale = no
+	morale_damage = 1.30
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_xenomorph
+	time = 30
+	has_species = yes
+
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = energy
+			PMCA_VALUE = 500
+		}
+	}
+
+	potential = {
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = armies
+		cost = {
+			energy = 500
+			minerals = 500
+		}
+		upkeep = {
+			energy = 5
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_lithoid_empire = no }
+			}
+			food = 10
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_lithoid_empire = yes }
+			}
+			minerals = 10
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 5
+		}
+	}
+}

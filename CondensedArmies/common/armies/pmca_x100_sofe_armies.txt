@@ -1,0 +1,129 @@
+pmca_hundred_origin_assault_guardian = {
+	use_armynames_from = origin_assault_guardian
+	damage = 5000
+	health = 5000
+	has_morale = no
+	morale_damage = 4.5
+	collateral_damage = 300
+	war_exhaustion = 0
+	time = 5
+	icon = GFX_army_type_psionic
+
+	resources = {
+		category = armies
+	}
+
+	prerequisites = { "tech_celestial_guardian" }
+
+	potential_country = {
+		has_global_flag = sofe_activated
+		has_policy_flag = pmca_times_hundred_set
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_bionic_implants"
+			has_trait = "trait_ancient_race"
+			has_trait = "trait_ancient_knowledge"
+			has_trait = "trait_master_mind"
+		}
+	}
+}
+
+pmca_hundred_origin_autarch_guardian = {
+	use_armynames_from = origin_autarch_guardian
+	damage = 25000
+	health = 15000
+	has_morale = no
+	morale_damage = 20
+	collateral_damage = 10000
+	war_exhaustion = 0
+	time = 10
+	icon = GFX_army_type_psionic
+
+	resources = {
+		category = armies
+	}
+
+	prerequisites = { "tech_celestial_guardian" }
+
+	potential_country = {
+		has_global_flag = sofe_activated
+		has_policy_flag = pmca_times_hundred_set
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_bionic_implants"
+			has_trait = "trait_ancient_race"
+			has_trait = "trait_ancient_knowledge"
+			has_trait = "trait_master_mind"
+		}
+	}
+}
+
+pmca_hundred_sofe_psionic_dark_archon = {
+	use_armynames_from = sofe_psionic_dark_archon
+	damage = 4000
+	health = 1000
+	has_morale = no
+	has_species = no
+	morale_damage = 20
+	collateral_damage = 150
+	war_exhaustion = 0
+	time = 800
+	icon = GFX_army_type_psionic
+	
+	resources = {
+		category = armies
+		cost = {
+			influence = 25000
+			unity = 2500000
+		}
+		upkeep = {
+			unity = 25000
+		}
+	}
+
+	prerequisites = { "tech_psionic_archon" }
+
+	potential_country = {
+		has_global_flag = sofe_activated
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 25000
+		}
+	}
+}
+
+pmca_hundred_sofe_omega_mech = {
+	use_armynames_from = sofe_omega_mech
+	damage = 3000
+	health = 3000
+	has_morale = no
+	has_species = no
+	morale_damage = 10
+	collateral_damage = 450
+	war_exhaustion = 0
+	time = 500
+	icon = GFX_army_type_psionic
+
+	resources = {
+		category = armies
+		cost = {
+			acot_sr_light_matter = 10000
+		}
+	}
+
+	prerequisites = { "tech_omega_warmech" }
+
+	potential_country = {
+		has_global_flag = sofe_activated
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = acot_sr_light_matter
+			PMCA_VALUE = 10000
+		}
+	}
+}
