@@ -611,7 +611,7 @@ pmca_hundred_fe_tank = {
 		has_global_flag = acot_activated
 		NOT = { has_global_flag = acot_army_forbidden }
 		pmca_materiel_policy_check = {
-			PMCA_MULT = hundreds
+			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 100000
 		}
