@@ -1,0 +1,11 @@
+namespace = pmca_events
+event = {
+	id = pmca_events.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = pmca_installed # Mod flag
+		set_global_flag = pmca_ai_allowed
+	}
+}

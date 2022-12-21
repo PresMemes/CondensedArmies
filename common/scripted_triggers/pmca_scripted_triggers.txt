@@ -23,19 +23,6 @@ pmca_materiel_policy_check = {
 	}
 }
 
-pmca_acot_check = {
-	optimize_memory
-	#PM: This checks for either: A) ACOT is NOT activated and the army should always be shown or B) ACOT is activated and the army should be hidden if you've researched a better tech tier
-	OR = {
-		NOT = { has_global_flag = acot_activated }
-		AND = {
-			is_ai = no
-			NOT = { has_technology = $PMCA_ACOT_TECH$ }
-		}
-		is_ai = yes
-	}
-}
-
 pmca_can_build_undead_armies = {
 	optimize_memory
 	OR = {

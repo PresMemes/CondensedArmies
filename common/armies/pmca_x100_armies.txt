@@ -32,9 +32,6 @@ pmca_hundred_assault_army = {
 			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
-		pmca_acot_check = {
-			PMCA_ACOT_TECH = tech_dark_matter_army
-		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
@@ -250,9 +247,6 @@ pmca_hundred_robotic_army = {
 	}
 	potential_country = {
 		is_machine_empire = no
-		pmca_acot_check = {
-			PMCA_ACOT_TECH = tech_omnidroid
-		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
@@ -490,9 +484,6 @@ pmca_hundred_machine_assault_1 = {
 	}
 	potential_country = {
 		is_machine_empire = yes
-		pmca_acot_check = {
-			PMCA_ACOT_TECH = tech_spm_battledroid
-		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals

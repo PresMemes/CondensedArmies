@@ -1,0 +1,20 @@
+pmca_ai_toggle = {
+	length = 0
+	icon = "GFX_text_ship_size_military_station"
+
+	resources = {
+		category = edicts
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { has_global_flag = pmca_ai_allowed }
+				remove_global_flag = pmca_ai_allowed
+			}
+			else = {
+				set_global_flag = pmca_ai_allowed
+			}
+		}
+	}
+}
