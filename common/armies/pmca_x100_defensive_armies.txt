@@ -91,7 +91,7 @@ pmca_hundred_undead_defense_army = {
 		}
 	}
 	potential_country = {
-		pmca_can_build_undead_armies = yes
+		has_valid_civic = civic_reanimated_armies
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = energy

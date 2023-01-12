@@ -22,11 +22,3 @@ pmca_materiel_policy_check = {
 		}
 	}
 }
-
-pmca_can_build_undead_armies = {
-	optimize_memory
-	OR = {
-		has_valid_civic = civic_reanimated_armies
-		has_valid_civic = civic_hive_reanimated_armies #PM: Hive Reanimators
-	}
-}
