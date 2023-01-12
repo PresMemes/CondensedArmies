@@ -108,15 +108,9 @@ pmca_ten_undead_defense_army = {
 		}
 		planet = {
 			has_active_building = building_dread_encampment
-			OR = {
-				num_assigned_jobs = {
-					job = necromancer
-					value >= 1
-				}
-				num_assigned_jobs = {
-					job = hive_necromancer
-					value >= 1
-				}
+			num_assigned_jobs = {
+				job = necromancer
+				value >= 1
 			}
 		}
 	}
