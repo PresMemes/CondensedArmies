@@ -45,7 +45,7 @@ pmca_ten_defense_army = {
 			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
-		pmca_can_build_undead_armies = no
+		NOT = { has_valid_civic = civic_reanimated_armies }
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
