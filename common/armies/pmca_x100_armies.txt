@@ -377,7 +377,7 @@ pmca_hundred_xenomorph_army = {
 		}
 	}
 	prerequisites = {
-		"tech_gene_seed_purification"
+		"tech_morphogenetic_field_mastery"
 	}
 	potential_country = {
 		is_machine_empire = no
