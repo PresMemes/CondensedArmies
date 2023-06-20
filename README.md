@@ -8,3 +8,4 @@ Supported Mods:
 
 External Patches:
 - [Ancient Cache of Technologies (and ACOT: Secrets Beyond The Gates)](https://github.com/PresMemes/CondensedArmiesPatches)
+- [Space Marine Forces](https://github.com/PresMemes/CondensedArmiesPatches)
