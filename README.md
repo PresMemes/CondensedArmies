@@ -6,6 +6,7 @@ Supported Mods:
 - Hive Reanimators
 
 
-External Patches:
-- [Ancient Cache of Technologies (and ACOT: Secrets Beyond The Gates)](https://github.com/PresMemes/CondensedArmiesPatches)
-- [Space Marine Forces](https://github.com/PresMemes/CondensedArmiesPatches)
+[External Patches:]((https://github.com/PresMemes/CondensedArmiesPatches))
+- Ancient Cache of Technologies (and ACOT: Secrets Beyond The Gates)
+- Space Marine Forces
+- Ground Command
