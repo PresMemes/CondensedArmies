@@ -3,23 +3,22 @@
 ############################################################
 
 ### Psionic Avatar : Psionic weapons' subtree
-pmca_hundred_esc_psionic_avatar_army = {
-	damage = 500
-	health = 700
+pmca_hundred_esc_psionic_avatar_army = { # PMCA_GEN: Inserted prefix
+	damage = 500.0
+	health = 700.0
 	morale_damage = 2.0
-	war_exhaustion = 500
+	war_exhaustion = 500.0
 	time = 25
 	has_species = no
 	has_morale = no
-	use_armynames_from = esc_psionic_avatar_army
 
 	icon = GFX_esc_army_psi_avatar
 
 	resources = {
 		category = armies
 		cost = {
-			energy = 250000
-			sr_zro = 10000
+			energy = 250000.0
+			sr_zro = 10000.0
 		}
 	}
 
@@ -29,18 +28,18 @@ pmca_hundred_esc_psionic_avatar_army = {
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = sr_zro
+			PMCA_VALUE = 10000.0
+		}
+
 		OR = {
 			is_machine_empire = no
 			has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
 			has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = sr_zro
-			PMCA_VALUE = 10000
-		}
 	}
-	
 	potential = {
 		custom_tooltip = {
 			planet = { is_capital = yes }
@@ -50,36 +49,36 @@ pmca_hundred_esc_psionic_avatar_army = {
 	prerequisites = { esc_tech_psi_avatar_army }
 
 	ai_weight = {
-		base = 200
+		base = 200.0
 		modifier = {
 			set = 0
 			is_fallen_empire = yes
 			NOT = { has_ethic = ethic_fanatic_spiritualist }
 		}
 	}
+	use_armynames_from = esc_psionic_avatar_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
 ### Erasure Squad : Chrono-spatial weapons' subtree
-pmca_hundred_esc_erasure_squad_army = {
-	damage = 700
-	health = 200
-	morale = 200
+pmca_hundred_esc_erasure_squad_army = { # PMCA_GEN: Inserted prefix
+	damage = 700.0
+	health = 200.0
+	morale = 200.0
 	morale_damage = 3.0
-	war_exhaustion = 30
+	war_exhaustion = 300.0
 	time = 360
-	use_armynames_from = esc_erasure_squad_army
 
 	icon = GFX_esc_army_chrono_trooper
 
 	resources = {
 		category = armies
 		cost = {
-			energy = 25000
-			minerals = 50000
-			sr_dark_matter = 1000
+			energy = 25000.0
+			minerals = 50000.0
+			sr_dark_matter = 1000.0
 		}
 		upkeep = {
-			energy = 200
+			energy = 200.0
 		}
 	}
 
@@ -87,53 +86,60 @@ pmca_hundred_esc_erasure_squad_army = {
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
 		OR = {
 			is_machine_empire = no
-			has_valid_civic = civic_machine_assimilator
 		}
 	}
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_dark_matter
-			PMCA_VALUE = 1000
+			PMCA_VALUE = 1000.0
+		}
+
+		OR = {
+			is_machine_empire = no
 		}
 	}
-
 	potential = {
-		from = { is_sapient = yes }
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
 	}
 
 	prerequisites = { esc_tech_chrono_spatial_weapons }
 
 	ai_weight = {
-		base = 150
+		base = 200.0
 	}
+	use_armynames_from = esc_erasure_squad_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
 ### Eradicator Droids : mechanical verions of Erasure Squads
-pmca_hundred_esc_eradicator_droids_army = {
-	damage = 700
-	health = 200
+pmca_hundred_esc_eradicator_droids_army = { # PMCA_GEN: Inserted prefix
+	damage = 700.0
+	health = 200.0
 	morale_damage = 3.0
-	war_exhaustion = 300
+	war_exhaustion = 300.0
 	time = 360
 	has_morale = no
 	has_species = no
-	use_armynames_from = esc_eradicator_droids_army
 
 	icon = GFX_esc_army_chrono_trooper
 
 	resources = {
 		category = armies
 		cost = {
-			energy = 25000
-			alloys = 20000
-			sr_dark_matter = 1000
+			energy = 25000.0
+			alloys = 20000.0
+			sr_dark_matter = 1000.0
 		}
 		upkeep = {
-			energy = 200
+			energy = 200.0
 		}
 	}
 
@@ -144,90 +150,103 @@ pmca_hundred_esc_eradicator_droids_army = {
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		OR = {
-			is_machine_empire = yes
-			has_country_flag = synthetic_age
-		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_dark_matter
-			PMCA_VALUE = 1000
+			PMCA_VALUE = 1000.0
+		}
+
+		OR = {
+			is_machine_empire = yes
+			has_tradition = tr_synthetics_synthetic_age
 		}
 	}
 
 	prerequisites = { esc_tech_chrono_spatial_weapons }
 
 	ai_weight = {
-		base = 200
+		base = 200.0
 	}
+	use_armynames_from = esc_eradicator_droids_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
 ### Tesla Troopers : organic tesla armies
-pmca_hundred_esc_tesla_troopers_army = {
-	damage = 350
-	health = 400
-	morale = 200
+pmca_hundred_esc_tesla_troopers_army = { # PMCA_GEN: Inserted prefix
+	damage = 350.0
+	health = 400.0
+	morale = 200.0
 	morale_damage = 2.0
-	war_exhaustion = 150
+	war_exhaustion = 150.0
 	time = 360
-	use_armynames_from = esc_tesla_troopers_army
 
 	icon = GFX_esc_army_tesla_trooper
 
 	resources = {
 		category = armies
 		cost = {
-			energy = 15000
-			minerals = 40000
+			energy = 15000.0
+			minerals = 40000.0
 		}
 		upkeep = {
-			energy = 100
+			energy = 100.0
 		}
 	}
 
 	show_tech_unlock_if = {
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		is_machine_empire = no
+		OR = {
+			is_machine_empire = no
+		}
 	}
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 40000
+			PMCA_VALUE = 40000.0
+		}
+
+		is_machine_empire = no
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
 		}
 	}
 
 	prerequisites = { esc_tech_tesla_weapons }
 
 	ai_weight = {
-		base = 200
+		base = 200.0
 	}
+	use_armynames_from = esc_tesla_troopers_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
 ### Tesla Droids : mechanical tesla armies
-pmca_hundred_esc_tesla_droids_army = {
-	damage = 350
-	health = 400
+pmca_hundred_esc_tesla_droids_army = { # PMCA_GEN: Inserted prefix
+	damage = 350.0
+	health = 400.0
 	morale_damage = 2.0
-	war_exhaustion = 150
+	war_exhaustion = 150.0
 	time = 360
 	has_morale = no
 	has_species = no
-	use_armynames_from = esc_tesla_droids_army
 
 	icon = GFX_esc_army_tesla_trooper
 
 	resources = {
 		category = armies
 		cost = {
-			energy = 15000
-			alloys = 10000
+			energy = 15000.0
+			alloys = 10000.0
 		}
 		upkeep = {
-			energy = 100
+			energy = 100.0
 		}
 	}
 
@@ -238,62 +257,64 @@ pmca_hundred_esc_tesla_droids_army = {
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		OR = {
-			is_machine_empire = yes
-			has_country_flag = synthetic_age
-		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 10000
+			PMCA_VALUE = 10000.0
+		}
+
+		OR = {
+			is_machine_empire = yes
+			has_tradition = tr_synthetics_synthetic_age
 		}
 	}
 
 	prerequisites = { esc_tech_tesla_weapons }
 
 	ai_weight = {
-		base = 200
+		base = 200.0
 	}
+	use_armynames_from = esc_tesla_droids_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
 ### Bio-Horror Horde : advanced bio-ascension army
-pmca_hundred_esc_biohorror_army = {
-	health = 400
-	damage = 400
+pmca_hundred_esc_biohorror_army = { # PMCA_GEN: Inserted prefix
+	health = 400.0
+	damage = 400.0
 	morale_damage = 2.5
-	collateral_damage = 400
-	war_exhaustion = 25
+	collateral_damage = 400.0
+	war_exhaustion = 25.0
 	time = 100
 	has_morale = no
 	has_species = no
-	use_armynames_from = esc_biohorror_army
 
 	icon = GFX_army_type_xenomorph
 
 	resources = {
 		category = armies
 		cost = {
-			minerals = 35000
+			minerals = 35000.0
 		}
 		upkeep = {
-			energy = 200
+			energy = 200.0
 		}
 	}
 
 	potential_country = {
 		has_global_flag = Extra_Ship_Components_NEXT
-		ESC_TRIGGER_may_research_biological_weapons_advanced = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 35000
+			PMCA_VALUE = 35000.0
 		}
+
+		ESC_TRIGGER_may_research_biological_weapons_advanced = yes
 	}
 
 	prerequisites = { esc_tech_bio_horror_army }
 
 	ai_weight = {
-		base = 20
+		base = 20.0
 		modifier = {
 			factor = 10
 			is_xenophobe = yes
@@ -311,4 +332,5 @@ pmca_hundred_esc_biohorror_army = {
 			NOT = { has_ethic = ethic_fanatic_xenophobe }
 		}
 	}
+	use_armynames_from = esc_biohorror_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }

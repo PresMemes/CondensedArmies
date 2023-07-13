@@ -1,26 +1,32 @@
-# x100 Assault Armies
-pmca_hundred_assault_army = {
-	use_armynames_from = assault_army
-	damage = 100
-	health = 100
-	morale = 100
-	morale_damage = 1
-	collateral_damage = 100
-	war_exhaustion = 100
+# PMCA_GEN: Army definitions patched using python, please check for errors
+#Defensive armies can't transport of the planet
+#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+#ai_weight: as standard, but note that it pre-filters by whether the country can recruit this army (measuring by whether it is an assault army, whether it has the tech prereqs, and whether it passes potential_country)
+
+# Assault Armies
+pmca_hundred_assault_army = { # PMCA_GEN: Inserted prefix
+	damage = 100.0
+	health = 100.0
+	morale = 100.0
+	morale_damage = 1.00
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
 	time = 90
 	icon = GFX_army_type_assault
-	prerequisites = {
-		"tech_assault_armies"
-	}
+	prerequisites = { "tech_assault_armies" }
 	resources = {
 		category = armies
 		cost = {
-			minerals = 10000
+			minerals = 10000.0
 		}
+
 		upkeep = {
-			energy = 100
+			energy = 100.0
 		}
 	}
+
 	show_tech_unlock_if = {
 		OR = {
 			is_machine_empire = no
@@ -28,14 +34,15 @@ pmca_hundred_assault_army = {
 		}
 	}
 	potential_country = {
-		OR = {
-			is_machine_empire = no
-			has_valid_civic = civic_machine_assimilator
-		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 10000
+			PMCA_VALUE = 10000.0
+		}
+
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
 		}
 	}
 	potential = {
@@ -47,8 +54,9 @@ pmca_hundred_assault_army = {
 			}
 		}
 	}
+
 	ai_weight = {
-		base = 200
+		base = 200.0
 		modifier = {
 			set = 0
 			OR = {
@@ -56,7 +64,10 @@ pmca_hundred_assault_army = {
 				has_technology = tech_telepathy
 				has_technology = tech_gene_seed_purification
 				AND = {
-					is_militarist = yes
+					OR = {
+						has_ethic = ethic_militarist
+						has_ethic = ethic_fanatic_militarist
+					}
 					has_technology = tech_gene_banks
 				}
 			}
@@ -76,51 +87,68 @@ pmca_hundred_assault_army = {
 			}
 		}
 	}
+	use_armynames_from = assault_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-# x100 Slave Armies
-pmca_hundred_slave_army = {
-	use_armynames_from = slave_army
-	damage = 100
-	health = 100
-	morale = 75
-	morale_damage = 1
-	collateral_damage = 150
-	war_exhaustion = 50
+# Slave Armies
+pmca_hundred_slave_army = { # PMCA_GEN: Inserted prefix
+	damage = 100.0
+	health = 100.0
+	morale = 75.0
+	morale_damage = 0.75
+	collateral_damage = 150.0
+	war_exhaustion = 50.0
 	time = 60
 	icon = GFX_army_type_slave
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 5000
+			minerals = 5000.0
 		}
+
 		upkeep = {
-			energy = 50
+			energy = 50.0
 		}
 	}
-	prerequisites = {
-		"tech_neural_implants"
-	}
+
+	prerequisites = { "tech_neural_implants" }
+
 	allow = {
-		has_building = building_slave_processing
-		any_owned_pop = {
-			is_pop_category = slave
+		custom_tooltip = {
+			fail_text = "requires_slave_processing_facility"
+			OR = {
+				has_building = building_slave_processing
+				AND = {
+					exists = orbital_defence
+					orbital_defence = {
+						exists = starbase
+						starbase = {
+							has_starbase_building = ring_slave_processing_facility
+						}
+					}
+				}
+			}
 		}
+		any_owned_pop = { is_pop_category = slave }
 	}
 	potential_country = {
-		has_policy_flag = slavery_allowed
-		is_machine_empire = no
-		any_owned_pop = {
-			is_pop_category = slave
-			is_same_species = from
-		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 5000
+			PMCA_VALUE = 5000.0
 		}
+
+		has_policy_flag = slavery_allowed
+		is_machine_empire = no
 	}
 	potential = {
+		owner = {
+			any_owned_pop = {
+				is_pop_category = slave
+				is_same_species = from
+			}
+		}
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -129,8 +157,9 @@ pmca_hundred_slave_army = {
 			}
 		}
 	}
+
 	ai_weight = {
-		base = 200
+		base = 200.0
 		modifier = {
 			set = 0
 			OR = {
@@ -139,7 +168,10 @@ pmca_hundred_slave_army = {
 				has_technology = tech_telepathy
 				has_technology = tech_gene_seed_purification
 				AND = {
-					is_militarist = yes
+					OR = {
+						has_ethic = ethic_militarist
+						has_ethic = ethic_fanatic_militarist
+					}
 					has_technology = tech_gene_banks
 				}
 				AND = {
@@ -149,46 +181,50 @@ pmca_hundred_slave_army = {
 			}
 		}
 	}
+	use_armynames_from = slave_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-# x100 Clone Armies
-pmca_hundred_clone_army = {
-	use_armynames_from = clone_army
-	damage = 100
-	health = 100
-	morale = 100
-	collateral_damage = 125
-	war_exhaustion = 50
+# Clone Armies
+pmca_hundred_clone_army = { # PMCA_GEN: Inserted prefix
+	damage = 100.0
+	health = 100.0
+	morale = 100.0
+	collateral_damage = 125.0
+	war_exhaustion = 50.0
 	time = 30
 	icon = GFX_army_type_clone
 	pop_limited = no
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 7500
+			minerals = 7500.0
 		}
+
 		upkeep = {
-			energy = 75
+			energy = 75.0
 		}
 	}
-	prerequisites = {
-		"tech_gene_banks"
-	}
+
+	prerequisites = { "tech_gene_banks" }
+
 	show_tech_unlock_if = {
 		OR = {
 			is_machine_empire = no
 			has_civic = civic_machine_assimilator
 		}
 	}
+
 	potential_country = {
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
-		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 7500
+			PMCA_VALUE = 7500.0
+		}
+
+		OR = {
+			is_machine_empire = no
+			has_civic = civic_machine_assimilator
 		}
 	}
 	potential = {
@@ -200,8 +236,9 @@ pmca_hundred_clone_army = {
 			}
 		}
 	}
+
 	ai_weight = {
-		base = 200
+		base = 200.0
 		modifier = {
 			set = 0
 			OR = {
@@ -209,7 +246,10 @@ pmca_hundred_clone_army = {
 				has_technology = tech_telepathy
 				has_technology = tech_gene_seed_purification
 				NAND = {
-					is_militarist = yes
+					OR = {
+						has_ethic = ethic_militarist
+						has_ethic = ethic_fanatic_militarist
+					}
 					has_technology = tech_gene_banks
 				}
 			}
@@ -219,54 +259,53 @@ pmca_hundred_clone_army = {
 			has_origin = origin_clone_army
 		}
 	}
+	use_armynames_from = clone_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-# x100 Robotic Armies
-pmca_hundred_robotic_army = {
-	use_armynames_from = robotic_army
-	damage = 100
-	health = 200
-	morale_damage = 1
-	collateral_damage = 150
-	war_exhaustion = 50
+# Robotic Armies
+pmca_hundred_robotic_army = { # PMCA_GEN: Inserted prefix
+	damage = 100.0
+	health = 200.0
+	morale_damage = 1.00
+	collateral_damage = 150.0
+	war_exhaustion = 50.0
 	has_morale = no
 	time = 90
 	icon = GFX_army_type_robot
 	has_species = yes
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 15000
+			minerals = 15000.0
 		}
+
 		upkeep = {
-			energy = 150
+			energy = 150.0
 		}
 	}
-	prerequisites = {
-		"tech_droid_workers"
-	}
+
 	potential_country = {
-		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 15000
+			PMCA_VALUE = 15000.0
 		}
+
+		is_machine_empire = no
 	}
 	potential = {
-		from = {
-			has_trait = "trait_mechanical"
-		}
+		from = { has_trait = "trait_mechanical" }
 	}
+
+	prerequisites = { "tech_droid_workers" }
+
 	allow = {
-		owner = {
-			NOT = {
-				has_policy_flag = robots_outlawed
-			}
-		}
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
 	}
+
 	ai_weight = {
-		base = 200
+		base = 200.0
 		modifier = {
 			set = 0
 			OR = {
@@ -286,45 +325,45 @@ pmca_hundred_robotic_army = {
 			NOT = { has_ethic = ethic_fanatic_materialist }
 		}
 	}
+	use_armynames_from = robotic_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-# x100 Psionic Armies
-pmca_hundred_psionic_army = {
-	use_armynames_from = psionic_army
-	damage = 200
-	morale_damage = 1
-	health = 175
-	morale = 250
-	collateral_damage = 5
-	war_exhaustion = 300
+# Psionic Armies
+pmca_hundred_psionic_army = { # PMCA_GEN: Inserted prefix
+	damage = 200.0
+	morale_damage = 1.5
+	health = 175.0
+	morale = 250.0
+	collateral_damage = 50.0
+	war_exhaustion = 300.0
 	time = 120
 	icon = GFX_army_type_psionic
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 25000
+			minerals = 25000.0
 		}
+
 		upkeep = {
-			energy = 250
+			energy = 250.0
 		}
 	}
-	prerequisites = {
-		"tech_telepathy"
-	}
+
+	prerequisites = { "tech_telepathy" }
 	potential_country = {
-		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 25000
+			PMCA_VALUE = 25000.0
 		}
+
+		is_machine_empire = no
 	}
 	potential = {
 		from = {
 			OR = {
-				NOT = {
-					host_has_dlc = "Utopia"
-				}
+				NOT = { host_has_dlc = "Utopia" }
 				OR = {
 					has_trait = trait_latent_psionic
 					has_trait = trait_psionic
@@ -337,9 +376,9 @@ pmca_hundred_psionic_army = {
 			}
 		}
 	}
-	
+
 	ai_weight = {
-		base = 200
+		base = 200.0
 		modifier = {
 			set = 0
 			OR = {
@@ -353,42 +392,46 @@ pmca_hundred_psionic_army = {
 			NOT = { has_ethic = ethic_fanatic_spiritualist }
 		}
 	}
+	use_armynames_from = psionic_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-# x100 Xenomorph Armies
-pmca_hundred_xenomorph_army = {
-	use_armynames_from = xenomorph_army
-	damage = 200
-	morale_damage = 1
-	collateral_damage = 500
-	war_exhaustion = 25
-	health = 200
+# Xenomorph Armies
+pmca_hundred_xenomorph_army = { # PMCA_GEN: Inserted prefix
+	damage = 200.0
+	morale_damage = 2.0
+	collateral_damage = 500.0
+	war_exhaustion = 25.0
+	health = 200.0
 	has_morale = no
 	time = 100
 	icon = GFX_army_type_xenomorph
 	has_species = no
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 20000
+			minerals = 20000.0
 		}
+
 		upkeep = {
-			energy = 200
+			energy = 200.0
 		}
 	}
-	prerequisites = {
-		"tech_morphogenetic_field_mastery"
-	}
+
 	potential_country = {
-		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 20000
+			PMCA_VALUE = 20000.0
 		}
+
+		is_machine_empire = no
 	}
+
+	prerequisites = { "tech_morphogenetic_field_mastery" }
+
 	ai_weight = {
-		base = 20
+		base = 20.0
 		modifier = {
 			factor = 10
 			is_fallen_empire = yes
@@ -402,38 +445,40 @@ pmca_hundred_xenomorph_army = {
 			}
 		}
 	}
+	use_armynames_from = xenomorph_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-# x100 Gene Warrior Armies
-pmca_hundred_gene_warrior_army = {
-	use_armynames_from = gene_warrior_army
-	damage = 200
-	health = 250
-	morale = 250
-	morale_damage = 1
-	collateral_damage = 75
-	war_exhaustion = 300
+# Gene Warrior Armies
+pmca_hundred_gene_warrior_army = { # PMCA_GEN: Inserted prefix
+	damage = 200.0
+	health = 250.0
+	morale = 250.0
+	morale_damage = 1.0
+	collateral_damage = 75.0
+	war_exhaustion = 300.0
 	time = 150
 	icon = GFX_army_type_gene_warrior
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 30000
+			minerals = 30000.0
 		}
+
 		upkeep = {
-			energy = 300
+			energy = 300.0
 		}
 	}
-	prerequisites = {
-		"tech_gene_seed_purification"
-	}
+
+	prerequisites = { "tech_gene_seed_purification" }
 	potential_country = {
-		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 30000
+			PMCA_VALUE = 30000.0
 		}
+
+		is_machine_empire = no
 	}
 	potential = {
 		from = {
@@ -444,180 +489,199 @@ pmca_hundred_gene_warrior_army = {
 			}
 		}
 	}
+
 	ai_weight = {
-		base = 200
+		base = 200.0
 		modifier = {
 			set = 0
 			is_fallen_empire = yes
 			NOT = { has_ethic = ethic_fanatic_xenophile }
 		}
 	}
+	use_armynames_from = gene_warrior_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
 ### Machine Empire Armies
-# x100 Hunter-Killer Armies
-pmca_hundred_machine_assault_1 = {
-	use_armynames_from = machine_assault_1
-	damage = 100
-	health = 100
+
+# Hunter-Killer Armies
+pmca_hundred_machine_assault_1 = { # PMCA_GEN: Inserted prefix
+	damage = 100.0
+	health = 100.0
 	has_morale = no
-	morale_damage = 1
-	collateral_damage = 200
-	war_exhaustion = 50
+	morale_damage = 1.00
+	collateral_damage = 200.0
+	war_exhaustion = 50.0
 	time = 90
 	has_species = yes
+
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 10000
+			minerals = 10000.0
 		}
+
 		upkeep = {
-			energy = 100
+			energy = 100.0
 		}
 	}
-	prerequisites = {
-		"tech_assault_armies"
-	}
-	show_tech_unlock_if = {
-		is_machine_empire = yes
-	}
-	potential_country = {
-		is_machine_empire = yes
+
+	potential_country = { # PMCA_GEN: Modified trigger block, probably was a nested 1-line statement
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 10000
+			PMCA_VALUE = 10000.0
 		}
+
+		is_machine_empire = yes
 	}
 	potential = {
 		from = {
 			has_trait = "trait_machine_unit"
 		}
 	}
+
+	show_tech_unlock_if = { is_machine_empire = yes }
+
+	prerequisites = { "tech_assault_armies" }
+
 	ai_weight = {
-		base = 200
+		base = 200.0
 		modifier = {
 			set = 0
 			has_technology = tech_adaptive_combat_algorithms
 		}
 	}
+	use_armynames_from = machine_assault_1 # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-# x100 Battle Frames
-pmca_hundred_machine_assault_2 = {
-	use_armynames_from = machine_assault_2
-	damage = 150
-	health = 250
+# Battle Frames
+pmca_hundred_machine_assault_2 = { # PMCA_GEN: Inserted prefix
+	damage = 150.0
+	health = 250.0
 	has_morale = no
-	morale_damage = 1
-	collateral_damage = 200
-	war_exhaustion = 100
+	morale_damage = 1.5
+	collateral_damage = 200.0
+	war_exhaustion = 100.0
 	time = 120
 	has_species = yes
+
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 20000
+			minerals = 20000.0
 		}
+
 		upkeep = {
-			energy = 200
+			energy = 200.0
 		}
 	}
-	potential_country = {
-		is_machine_empire = yes
+
+	potential_country = { # PMCA_GEN: Modified trigger block, probably was a nested 1-line statement
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 20000
+			PMCA_VALUE = 20000.0
 		}
+
+		is_machine_empire = yes
 	}
 	potential = {
 		from = {
 			has_trait = "trait_machine_unit"
 		}
 	}
-	prerequisites = {
-		"tech_adaptive_combat_algorithms"
-	}
+
+	prerequisites = { "tech_adaptive_combat_algorithms" }
+
 	ai_weight = {
-		base = 200
+		base = 200.0
 	}
+	use_armynames_from = machine_assault_2 # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-# x100 Mega-Warform
-pmca_hundred_machine_assault_3 = {
-	use_armynames_from = machine_assault_3
-	damage = 400
-	health = 600
+# Mega-Warform
+pmca_hundred_machine_assault_3 = { # PMCA_GEN: Inserted prefix
+	damage = 400.0
+	health = 600.0
 	has_morale = no
-	morale_damage = 1
-	collateral_damage = 400
-	war_exhaustion = 400
+	morale_damage = 1.5
+	collateral_damage = 400.0
+	war_exhaustion = 400.0
 	time = 500
 	has_species = no
+
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
 		cost = {
-			minerals = 80000			#PM: Lmao
+			minerals = 80000.0
 		}
+
 		upkeep = {
-			energy = 800
+			energy = 800.0
 		}
 	}
-	prerequisites = {
-		"tech_biomechanics"
-	}
-	potential_country = {
-		is_machine_empire = yes
+
+	potential_country = { # PMCA_GEN: Modified trigger block, probably was a nested 1-line statement
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 80000
+			PMCA_VALUE = 80000.0
 		}
+
+		is_machine_empire = yes
 	}
+
+	prerequisites = { "tech_biomechanics" }
+
 	ai_weight = {
-		base = 100
+		base = 100.0
 	}
+	use_armynames_from = machine_assault_3 # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
 # Undead Armies
-pmca_hundred_undead_army = {
-	use_armynames_from = undead_army
-	damage = 100
-	health = 100
+pmca_hundred_undead_army = { # PMCA_GEN: Inserted prefix
+	damage = 100.0
+	health = 100.0
 	has_morale = no
-	collateral_damage = 125
-	morale_damage = 1
-	war_exhaustion = 50
+	collateral_damage = 125.0
+	morale_damage = 1.75
+	war_exhaustion = 50.0
 	time = 60
 	icon = GFX_army_type_undead
 	pop_limited = no
-	disband_if_species_lacks_rights = no	#i.e. if you resurrect your enemies, you get to keep these armies, even if you are a purifier
-	prerequisites = {
-		"tech_assault_armies"
-	}
+	disband_if_species_lacks_rights = no #i.e. if you resurrect your enemies, you get to keep these armies, even if you are a purifier
+	prerequisites = { "tech_assault_armies" }
+
 	resources = {
 		category = armies
 		cost = {
-			energy = 10000
+			energy = 10000.0
 		}
+
 		upkeep = {
-			energy = 75
+			energy = 75.0
 		}
 	}
+
 	show_tech_unlock_if = {
 		has_valid_civic = civic_reanimated_armies
 	}
-	potential_country = {
-		has_valid_civic = civic_reanimated_armies
+
+	potential_country = { # PMCA_GEN: Modified trigger block, probably was a nested 1-line statement
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = energy
-			PMCA_VALUE = 10000
+			PMCA_VALUE = 10000.0
 		}
+
+		has_valid_civic = civic_reanimated_armies
 	}
 	potential = {
 		from = {
@@ -635,7 +699,9 @@ pmca_hundred_undead_army = {
 			}
 		}
 	}
+
 	ai_weight = {
-		base = 200
+		base = 200.0
 	}
+	use_armynames_from = undead_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
