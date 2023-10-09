@@ -1,5 +1,5 @@
 pmca_ai_toggle = {
-	length = 0
+	length = 1
 	icon = "GFX_text_ship_size_military_station"
 
 	resources = {
