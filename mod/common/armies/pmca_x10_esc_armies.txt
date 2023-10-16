@@ -1,19 +1,17 @@
-############################################################
-###                      ESC armies                      ###
-############################################################
+# x10 army definitions generated using Python
 
-### Psionic Avatar : Psionic weapons' subtree
-pmca_ten_esc_psionic_avatar_army = { # PMCA_GEN: Inserted prefix
+pmca_ten_esc_psionic_avatar_army = {
+	use_armynames_from = esc_psionic_avatar_army
 	damage = 50.0
 	health = 70.0
+	has_morale = no
 	morale_damage = 2.0
+	collateral_damage = 10.0
 	war_exhaustion = 50.0
 	time = 25
-	has_species = no
-	has_morale = no
-
 	icon = GFX_esc_army_psi_avatar
-
+	has_species  = no
+	prerequisites = { "esc_tech_psi_avatar_army" }
 	resources = {
 		category = armies
 		cost = {
@@ -40,13 +38,12 @@ pmca_ten_esc_psionic_avatar_army = { # PMCA_GEN: Inserted prefix
 			has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
 		}
 	}
+
 	potential = {
 		custom_tooltip = {
 			planet = { is_capital = yes }
 		}
 	}
-
-	prerequisites = { esc_tech_psi_avatar_army }
 
 	ai_weight = {
 		base = 150.0
@@ -56,20 +53,19 @@ pmca_ten_esc_psionic_avatar_army = { # PMCA_GEN: Inserted prefix
 			NOT = { has_ethic = ethic_fanatic_spiritualist }
 		}
 	}
-	use_armynames_from = esc_psionic_avatar_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-### Erasure Squad : Chrono-spatial weapons' subtree
-pmca_ten_esc_erasure_squad_army = { # PMCA_GEN: Inserted prefix
+pmca_ten_esc_erasure_squad_army = {
+	use_armynames_from = esc_erasure_squad_army
 	damage = 70.0
 	health = 20.0
 	morale = 20.0
 	morale_damage = 3.0
+	collateral_damage = 10.0
 	war_exhaustion = 30.0
 	time = 360
-
 	icon = GFX_esc_army_chrono_trooper
-
+	prerequisites = { "esc_tech_chrono_spatial_weapons" }
 	resources = {
 		category = armies
 		cost = {
@@ -101,6 +97,7 @@ pmca_ten_esc_erasure_squad_army = { # PMCA_GEN: Inserted prefix
 			is_machine_empire = no
 		}
 	}
+
 	potential = {
 		from = {
 			NOR = {
@@ -111,26 +108,23 @@ pmca_ten_esc_erasure_squad_army = { # PMCA_GEN: Inserted prefix
 		}
 	}
 
-	prerequisites = { esc_tech_chrono_spatial_weapons }
-
 	ai_weight = {
 		base = 150.0
 	}
-	use_armynames_from = esc_erasure_squad_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-### Eradicator Droids : mechanical verions of Erasure Squads
-pmca_ten_esc_eradicator_droids_army = { # PMCA_GEN: Inserted prefix
+pmca_ten_esc_eradicator_droids_army = {
+	use_armynames_from = esc_eradicator_droids_army
 	damage = 70.0
 	health = 20.0
+	has_morale = no
 	morale_damage = 3.0
+	collateral_damage = 10.0
 	war_exhaustion = 30.0
 	time = 360
-	has_morale = no
-	has_species = no
-
 	icon = GFX_esc_army_chrono_trooper
-
+	has_species  = no
+	prerequisites = { "esc_tech_chrono_spatial_weapons" }
 	resources = {
 		category = armies
 		cost = {
@@ -162,25 +156,22 @@ pmca_ten_esc_eradicator_droids_army = { # PMCA_GEN: Inserted prefix
 		}
 	}
 
-	prerequisites = { esc_tech_chrono_spatial_weapons }
-
 	ai_weight = {
 		base = 150.0
 	}
-	use_armynames_from = esc_eradicator_droids_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-### Tesla Troopers : organic tesla armies
-pmca_ten_esc_tesla_troopers_army = { # PMCA_GEN: Inserted prefix
+pmca_ten_esc_tesla_troopers_army = {
+	use_armynames_from = esc_tesla_troopers_army
 	damage = 35.0
 	health = 40.0
 	morale = 20.0
 	morale_damage = 2.0
+	collateral_damage = 10.0
 	war_exhaustion = 15.0
 	time = 360
-
 	icon = GFX_esc_army_tesla_trooper
-
+	prerequisites = { "esc_tech_tesla_weapons" }
 	resources = {
 		category = armies
 		cost = {
@@ -209,6 +200,7 @@ pmca_ten_esc_tesla_troopers_army = { # PMCA_GEN: Inserted prefix
 
 		is_machine_empire = no
 	}
+
 	potential = {
 		from = {
 			NOR = {
@@ -219,26 +211,23 @@ pmca_ten_esc_tesla_troopers_army = { # PMCA_GEN: Inserted prefix
 		}
 	}
 
-	prerequisites = { esc_tech_tesla_weapons }
-
 	ai_weight = {
 		base = 150.0
 	}
-	use_armynames_from = esc_tesla_troopers_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-### Tesla Droids : mechanical tesla armies
-pmca_ten_esc_tesla_droids_army = { # PMCA_GEN: Inserted prefix
+pmca_ten_esc_tesla_droids_army = {
+	use_armynames_from = esc_tesla_droids_army
 	damage = 35.0
 	health = 40.0
+	has_morale = no
 	morale_damage = 2.0
+	collateral_damage = 10.0
 	war_exhaustion = 15.0
 	time = 360
-	has_morale = no
-	has_species = no
-
 	icon = GFX_esc_army_tesla_trooper
-
+	has_species  = no
+	prerequisites = { "esc_tech_tesla_weapons" }
 	resources = {
 		category = armies
 		cost = {
@@ -269,27 +258,23 @@ pmca_ten_esc_tesla_droids_army = { # PMCA_GEN: Inserted prefix
 		}
 	}
 
-	prerequisites = { esc_tech_tesla_weapons }
-
 	ai_weight = {
 		base = 150.0
 	}
-	use_armynames_from = esc_tesla_droids_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
 
-### Bio-Horror Horde : advanced bio-ascension army
-pmca_ten_esc_biohorror_army = { # PMCA_GEN: Inserted prefix
-	health = 40.0
+pmca_ten_esc_biohorror_army = {
+	use_armynames_from = esc_biohorror_army
 	damage = 40.0
+	health = 40.0
+	has_morale = no
 	morale_damage = 2.5
 	collateral_damage = 40.0
 	war_exhaustion = 2.5
 	time = 100
-	has_morale = no
-	has_species = no
-
 	icon = GFX_army_type_xenomorph
-
+	has_species  = no
+	prerequisites = { "esc_tech_bio_horror_army" }
 	resources = {
 		category = armies
 		cost = {
@@ -311,8 +296,6 @@ pmca_ten_esc_biohorror_army = { # PMCA_GEN: Inserted prefix
 		ESC_TRIGGER_may_research_biological_weapons_advanced = yes
 	}
 
-	prerequisites = { esc_tech_bio_horror_army }
-
 	ai_weight = {
 		base = 15.0
 		modifier = {
@@ -332,5 +315,5 @@ pmca_ten_esc_biohorror_army = { # PMCA_GEN: Inserted prefix
 			NOT = { has_ethic = ethic_fanatic_xenophobe }
 		}
 	}
-	use_armynames_from = esc_biohorror_army # PMCA_GEN: No use_armynames_from detected, inserted best guess
 }
+

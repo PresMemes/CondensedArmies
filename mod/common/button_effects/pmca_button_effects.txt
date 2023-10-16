@@ -1,0 +1,123 @@
+#####################
+### TOOLTIP MAKER ###
+#####################
+
+#################
+### AI TOGGLE ###
+#################
+# On
+pmca_button_ai_enabled = {
+    potential = { is_same_value = from has_global_flag = pmca_ai_allowed }
+    allow = {
+        custom_tooltip = {
+            fail_text = "pmca_not_host"
+            has_country_flag = pmca_host
+        }
+    }
+    effect = {
+        hidden_effect = {
+            remove_global_flag = pmca_ai_allowed
+        }
+    }
+}
+
+# Off
+pmca_button_ai_disabled = {
+    potential = { is_same_value = from NOT = { has_global_flag = pmca_ai_allowed } }
+    allow = {
+        custom_tooltip = {
+            fail_text = "pmca_not_host"
+            has_country_flag = pmca_host
+        }
+    }
+    effect = {
+        hidden_effect = {
+            set_global_flag = pmca_ai_allowed
+        }
+    }
+}
+
+###################
+### ARMY TOGGLE ###
+###################
+# x0 Armies (Disabled)
+# On
+pmca_button_condense_x0_enabled = {
+    potential = {
+        is_same_value = from
+        NOR = {
+            has_country_flag = pmca_times_ten_set
+            has_country_flag = pmca_times_hundred_set
+        }
+    }
+    allow = { always = yes }
+    effect = {
+        hidden_effect = {
+        }
+    }
+}
+
+# Off
+pmca_button_condense_x0_disabled = {
+    potential = {
+        is_same_value = from
+        OR = {
+            has_country_flag = pmca_times_ten_set
+            has_country_flag = pmca_times_hundred_set
+        }
+    }
+    allow = { always = yes }
+    effect = {
+        hidden_effect = {
+            remove_country_flag = pmca_times_hundred_set
+            remove_country_flag = pmca_times_ten_set
+        }
+    }
+}
+
+
+# X10 Armies
+# On
+pmca_button_condense_x10_enabled = {
+    potential = { is_same_value = from has_country_flag = pmca_times_ten_set }
+    allow = { always = yes }
+    effect = {
+        hidden_effect = {
+            remove_country_flag = pmca_times_ten_set
+        }
+    }
+}
+
+# Off
+pmca_button_condense_x10_disabled = {
+    potential = { is_same_value = from NOT = { has_country_flag = pmca_times_ten_set } }
+    allow = { always = yes }
+    effect = {
+        hidden_effect = {
+            set_country_flag = pmca_times_ten_set
+        }
+    }
+}
+
+# X100 Armies
+# On
+pmca_button_condense_x100_enabled = {
+    potential = { is_same_value = from has_country_flag = pmca_times_hundred_set }
+    allow = { always = yes }
+    effect = {
+        hidden_effect = {
+            remove_country_flag = pmca_times_hundred_set
+        }
+    }
+}
+
+# Off
+pmca_button_condense_x100_disabled = {
+    potential = { is_same_value = from NOT = { has_country_flag = pmca_times_hundred_set } }
+    allow = { always = yes }
+    effect = {
+        hidden_effect = {
+            set_country_flag = pmca_times_hundred_set
+        }
+    }
+}

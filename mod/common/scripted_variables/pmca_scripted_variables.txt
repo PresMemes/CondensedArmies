@@ -1,0 +1,2 @@
+# ID Variable
+@has_condensed_armies = 1

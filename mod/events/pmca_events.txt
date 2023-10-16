@@ -1,4 +1,6 @@
 namespace = pmca_events
+
+# Set ID flag
 event = {
 	id = pmca_events.1
 	hide_window = yes
@@ -7,5 +9,122 @@ event = {
 	immediate = {
 		set_global_flag = pmca_installed # Mod flag
 		set_global_flag = pmca_ai_allowed
+	}
+}
+
+# Get host
+country_event = {
+	id = pmca_events.2
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		NOT = { has_country_flag = pmca_host }
+	}
+
+	immediate = {
+		set_country_flag = pmca_host
+	}
+}
+
+# DMM
+event = {
+	id = pmca_events.50
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		dmm_register_mod = {
+			DMM_NAME = edict_pmca_logistics_manager
+			DMM_FLAG = pmca_installed
+		}
+	}
+}
+
+country_event = {
+	id = pmca_events.51
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			has_leader_flag = pmca_installed
+		}
+	}
+	immediate = {
+		country_event = { id = pmca_events.999 }
+	}
+}
+
+# AI shenanigans
+event = {
+	id = pmca_events.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = pmca_ai_allowed
+	}
+
+	immediate = {
+		every_playable_country = {
+			limit = { is_ai = yes }
+			country_event = { id = pmca_events.101 days = 14 random = 59 } # Delay for some better performance
+		}
+	}
+}
+
+country_event = {
+	id = pmca_events.101
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				count_owned_army = {
+					count >= @armies_for_declaring_war
+					limit = { is_defensive_army = no }
+				}
+			}
+			if = {
+				limit = {
+					resource_income_compare = {
+						resource = minerals
+						value >= 1000
+					}
+				}
+				set_country_flag = pmca_times_hundred_set
+			}
+			else_if = {
+				limit = {
+					resource_income_compare = {
+						resource = minerals
+						value >= 150
+					}
+				}
+				set_country_flag = pmca_times_ten_set
+			}
+		}
+		else = {
+			remove_country_flag = pmca_times_ten_set
+			remove_country_flag = pmca_times_hundred_set
+		}
+	}
+}
+
+# Custom GUI
+country_event = {
+	id = pmca_events.999
+	title = BLANK_STRING
+	desc = pmca_calm_body_text
+
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "pmca_calm_window"
+
+	option = {
+		name = OK
 	}
 }

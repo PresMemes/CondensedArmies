@@ -1,24 +1,21 @@
+# ID Trigger
+has_condensed_armies = {
+	always = yes
+}
+
 # This bit of script allows me to check for various conditions so I can hide condensed armies, preventing them from cluttering the army screen
 # This is also used to keep the AI from spamming nothing but condensed armies and for the mod menu
 # Scope: this = country
 # Parameters: PMCA_MULT (ten, hundred), PMCA_RESOURCE, PMCA_VALUE
 pmca_materiel_policy_check = {
 	optimize_memory
-	has_policy_flag = pmca_times_$PMCA_MULT$_set
+	OR = {
+		is_ai = no
+		has_global_flag = pmca_ai_allowed
+	}
+	has_country_flag = pmca_times_$PMCA_MULT$_set
 	resource_stockpile_compare = {
 		resource = $PMCA_RESOURCE$
 		value >= $PMCA_VALUE$
-	}
-	OR = {
-		is_ai = no
-		AND = {
-			has_global_flag = pmca_ai_allowed
-			count_owned_army = {
-				count >= @armies_for_declaring_war #PM: Make sure the AI has enough regular armies before looking for condensed ones
-				limit = {
-					is_defensive_army = no
-				}
-			}
-		}
 	}
 }

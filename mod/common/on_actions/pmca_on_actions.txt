@@ -1,5 +1,30 @@
 on_game_start = {
 	events = {
 		pmca_events.1
+		pmca_events.50
+	}
+}
+
+on_game_start_country = {
+	events = {
+		pmca_events.2
+	}
+}
+
+on_single_player_save_game_load = {
+	events = {
+		pmca_events.50
+	}
+}
+
+dmm_mod_selected = {
+	events = {
+		pmca_events.51
+	}
+}
+
+on_five_year_pulse = {
+	events = {
+		pmca_events.100
 	}
 }

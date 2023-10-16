@@ -1,20 +1,16 @@
-pmca_ai_toggle = {
+pmca_logistics_manager = {
 	length = 1
-	icon = "GFX_text_ship_size_military_station"
+	icon = "GFX_text_army_ship"
 
 	resources = {
 		category = edicts
 	}
 
+	potential = {
+		NOT = { has_global_flag = dmm_installed }
+	}
+
 	effect = {
-		hidden_effect = {
-			if = {
-				limit = { has_global_flag = pmca_ai_allowed }
-				remove_global_flag = pmca_ai_allowed
-			}
-			else = {
-				set_global_flag = pmca_ai_allowed
-			}
-		}
+		hidden_effect = { country_event = { id = pmca_events.999 } }
 	}
 }

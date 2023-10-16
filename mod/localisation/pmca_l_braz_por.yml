@@ -1,28 +1,34 @@
 ﻿l_braz_por:
 
- #Edict Stuff
- edict_pmca_ai_toggle:0 "Condensed Armies AI Toggle"
- edict_pmca_ai_toggle_desc:0 "Toggles AI usage of Condensed Armies!\n\nActivate to §Rdisable§! AI usage, deactivate to §Genable§! AI usage!"
+ # Edict Stuff
+ edict_pmca_ai_toggle:0 "Condensed Armies Logistics Manager"
+ edict_pmca_ai_toggle_desc:0 "Enter the C.A.L.M. Menu, where you can enable/disable AI usage and allow x10/x100 armies."
 
- #Common Stuff
+ # Condensed Armies Logistics Manager
+ pmca_calm_header_text: "C.A.L.M."
+ pmca_calm_body_text: "$pmca_calm_intro_text$\n\n$pmca_calm_notice_text$\n\n$pmca_calm_leaving_text$"
+ pmca_calm_intro_text: "Welcome to the Condensed Armies Logistics System§! (§SC.A.L.M.§!). Here you can find the toggles for AI usage and army condensing."
+ pmca_calm_notice_text: "Please keep in mind that the condensed armies will only show up if you have enough £basic_resources£ §HResources§! to afford them."
+ pmca_calm_leaving_text: "§SC.A.L.M.§! exists for all customers."
+
+ pmca_calm_ai_toggle_header_text: "AI Usage"
+ pmca_calm_ai_toggle_tooltip: "§LDetermines if the AI can use the mod's features.§!"
+ pmca_calm_ai_toggle_tooltip_delayed: "§L$TRIGGER_PASS$ = AI can use mod.\n\n$TRIGGER_FAIL$ = AI cannot use mod.§!"
+ pmca_calm_condensed_toggle_header_text: "Armies"
+ pmca_calm_condensed_toggle_header_tooltip: "§LHover over the OFF/x10/x100 text to see more details.§!"
+ pmca_calm_condensed_toggle_x0_text: "OFF"
+ pmca_calm_condensed_toggle_x0_tooltip: "§LControls construction of condensed armies.§!"
+ pmca_calm_condensed_toggle_x0_tooltip_delayed: "§L$TRIGGER_PASS$ = Condensed Armies are disabled.\n\n$TRIGGER_FAIL$ = Condensed Armies are enabled.§!"
+ pmca_calm_condensed_toggle_x10_text: "x10"
+ pmca_calm_condensed_toggle_x10_tooltip: "§LControls construction of x10 armies.§!"
+ pmca_calm_condensed_toggle_x10_tooltip_delayed: "§L$TRIGGER_PASS$ = x10 armies are enabled.\n\n$TRIGGER_FAIL$ = x10 armies are disabled.§!"
+ pmca_calm_condensed_toggle_x100_text: "x100"
+ pmca_calm_condensed_toggle_x100_tooltip: "§LControls construction of x100 armies.§!"
+ pmca_calm_condensed_toggle_x100_tooltip_delayed: "§L$TRIGGER_PASS$ = x100 armies are enabled.\n\n$TRIGGER_FAIL$ = x100 armies are disabled.§!"
+
+ # Common Stuff
  pmca_ten:0 "§Mx10§!"
  pmca_hundred: "§Mx100§!"
-
- #Policies
- policy_pmca_condensed_policies:0 "PMCA Condensed Armies"
- policy_pmca_condensed_policies_desc:0 "While space-borne ships continue to grow in complexity and lethality, our ground-based military has been left twisting in the wind. This must be rectified immediately.\n\n§RNotice:§! The armies will ONLY show up if you have enough £economy£§YResources§! to afford them!\n"
-
- pmca_vanilla_policy:0 "Condensed Armies - Off"
- pmca_times_ten_policy:0 "Condensed Armies - x10"
- pmca_times_hundred_policy:0 "Condensed Armies - x100"
-
- pmca_vanilla_policy_desc:0 "We do not need such dangerous weapons of war. Think about the economy!"
- pmca_times_ten_policy_desc:0 "We must turn to more, §Pefficient§!, methods of raising an army."
- pmca_times_hundred_policy_desc:0 "Do you think that God stays in heaven because he too lives in fear of what he has created?"
-
- pmca_vanilla_set_name:0 "Vanilla/Modded Armies Only"
- pmca_times_ten_set_name:0 "x10 and Vanilla/Modded"
- pmca_times_hundred_set_name:0 "x100 and Vanilla/Modded"
 
  ####################
  ### ASSAULT_ARMY ###
@@ -133,6 +139,16 @@
  pmca_hundred_undead_army: "$pmca_hundred$ $undead_army$"
  pmca_hundred_undead_army_plural: "$undead_army_plural$"
  pmca_hundred_undead_army_desc: "$undead_army_desc$"
+
+ ######################
+ ### CYBREX_WARFORM ###
+ ######################
+ pmca_ten_cybrex_warform: "$pmca_ten$ $cybrex_warform$"
+ pmca_ten_cybrex_warform_plural: "$cybrex_warform_plural$"
+ pmca_ten_cybrex_warform_desc: "$cybrex_warform_desc$"
+ pmca_hundred_cybrex_warform: "$pmca_hundred$ $cybrex_warform$"
+ pmca_hundred_cybrex_warform_plural: "$cybrex_warform_plural$"
+ pmca_hundred_cybrex_warform_desc: "$cybrex_warform_desc$"
 
  #############################
  ### GIGA_EAW_CRYSTAL_ARMY ###
