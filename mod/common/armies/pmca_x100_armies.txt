@@ -5,12 +5,13 @@ pmca_hundred_assault_army = {
 	damage = 100.0
 	health = 100.0
 	morale = 100.0
-	morale_damage = 1.00
+	morale_damage = 1.0
 	collateral_damage = 100.0
 	war_exhaustion = 100.0
 	time = 90
 	icon = GFX_army_type_assault
 	prerequisites = { "tech_assault_armies" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -96,6 +97,7 @@ pmca_hundred_slave_army = {
 	time = 60
 	icon = GFX_army_type_slave
 	prerequisites = { "tech_neural_implants" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -189,6 +191,7 @@ pmca_hundred_clone_army = {
 	icon = GFX_army_type_clone
 	pop_limited = no
 	prerequisites = { "tech_gene_banks" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -258,12 +261,13 @@ pmca_hundred_robotic_army = {
 	damage = 100.0
 	health = 200.0
 	has_morale = no
-	morale_damage = 1.00
+	morale_damage = 1.0
 	collateral_damage = 150.0
 	war_exhaustion = 50.0
 	time = 90
 	icon = GFX_army_type_robot
 	prerequisites = { "tech_droid_workers" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -326,6 +330,7 @@ pmca_hundred_psionic_army = {
 	time = 120
 	icon = GFX_army_type_psionic
 	prerequisites = { "tech_telepathy" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -392,6 +397,7 @@ pmca_hundred_xenomorph_army = {
 	icon = GFX_army_type_xenomorph
 	has_species  = no
 	prerequisites = { "tech_morphogenetic_field_mastery" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -440,6 +446,7 @@ pmca_hundred_gene_warrior_army = {
 	time = 150
 	icon = GFX_army_type_gene_warrior
 	prerequisites = { "tech_gene_seed_purification" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -485,12 +492,13 @@ pmca_hundred_machine_assault_1 = {
 	damage = 100.0
 	health = 100.0
 	has_morale = no
-	morale_damage = 1.00
+	morale_damage = 1.0
 	collateral_damage = 200.0
 	war_exhaustion = 50.0
 	time = 90
 	icon = GFX_army_type_machine_assault
 	prerequisites = { "tech_assault_armies" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -541,6 +549,7 @@ pmca_hundred_machine_assault_2 = {
 	time = 120
 	icon = GFX_army_type_machine_assault
 	prerequisites = { "tech_adaptive_combat_algorithms" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -584,6 +593,7 @@ pmca_hundred_machine_assault_3 = {
 	icon = GFX_army_type_machine_assault
 	has_species  = no
 	prerequisites = { "tech_biomechanics" }
+
 	resources = {
 		category = armies
 		cost = {
@@ -622,6 +632,7 @@ pmca_hundred_undead_army = {
 	pop_limited = no
 	disband_if_species_lacks_rights = no
 	prerequisites = { "tech_assault_armies" }
+
 	resources = {
 		category = armies
 		cost = {

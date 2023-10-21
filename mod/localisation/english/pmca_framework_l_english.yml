@@ -1,0 +1,36 @@
+﻿l_english:
+
+ # Localized Flags (Only for debugging, never seen in-game)
+ pmca_times_ten_set: "§SPMCA§! $pmca_ten$"
+ pmca_times_hundred_set: "§SPMCA§! $pmca_hundred$"
+
+ # Edicts
+ edict_pmca_logistics_manager:0 "Condensed Armies Logistics Manager"
+ edict_pmca_logistics_manager_desc:0 "Enter the C.A.L.M. Menu, where you can control AI usage of the mod and enable/disable $pmca_ten$/$pmca_hundred$ armies for your empire."
+
+ # Condensed Armies Logistics Manager
+ pmca_calm_header_text: "Condensed Armies Logistics Manager"
+ pmca_calm_body_text: "$pmca_calm_intro_text$\n\n$pmca_calm_notice_text$\n\n$pmca_calm_leaving_text$"
+ pmca_calm_intro_text: "Welcome to the Condensed Armies Logistics Manager§! (§SC.A.L.M.§!). Here you can find the toggles for AI usage and army condensing."
+ pmca_calm_notice_text: "Please keep in mind that Condensed Armies will only show up if you have enough £basic_resources£ §HResources§! to afford them."
+ pmca_calm_leaving_text: "§SC.A.L.M.§! exists for all customers."
+
+ pmca_calm_ai_toggle_header_text: "AI Usage"
+ pmca_calm_ai_toggle_tooltip: "§LDetermines if the AI can use the mod's features.§!"
+ pmca_calm_ai_toggle_tooltip_delayed: "§L$TRIGGER_PASS$= AI can use mod.\n\n$TRIGGER_FAIL$= AI cannot use mod.§!"
+ pmca_not_host: "$TRIGGER_FAIL$§ROnly the §YHost§! can change this setting!§!"
+ pmca_calm_condensed_toggle_header_text: "Armies"
+ pmca_calm_condensed_toggle_header_tooltip: "§LHover over the OFF/x10/x100 text to see more details.§!"
+ pmca_calm_condensed_toggle_x0_text: "OFF"
+ pmca_calm_condensed_toggle_x0_tooltip: "§LEnable/disable the construction of Condensed Armies in your empire.§!"
+ pmca_calm_condensed_toggle_x0_tooltip_delayed: "§L$TRIGGER_PASS$= Condensed Armies are §Rdisabled.§!\n\n$TRIGGER_FAIL$= Condensed Armies are §Genabled.§!§!"
+ pmca_calm_condensed_toggle_x10_text: "x10"
+ pmca_calm_condensed_toggle_x10_tooltip: "§LEnable/disable construction of $pmca_ten$ Condensed Armies in your empire.§!"
+ pmca_calm_condensed_toggle_x10_tooltip_delayed: "§L$TRIGGER_PASS$= x10 armies are §Genabled.§!\n\n$TRIGGER_FAIL$= x10 armies are §Rdisabled.§!§!"
+ pmca_calm_condensed_toggle_x100_text: "x100"
+ pmca_calm_condensed_toggle_x100_tooltip: "§LEnable/disable construction of $pmca_hundred$ Condensed Armies in your empire.§!"
+ pmca_calm_condensed_toggle_x100_tooltip_delayed: "§L$TRIGGER_PASS$= x100 armies are §Genabled.§!\n\n$TRIGGER_FAIL$= x100 armies are §Rdisabled.§!§!"
+
+ # Common Stuff
+ pmca_ten:0 "§Mx10§!"
+ pmca_hundred: "§Mx100§!"
