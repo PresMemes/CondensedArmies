@@ -93,6 +93,14 @@ country_event = {
 			}
 			if = {
 				limit = {
+					#PM: AI budgets very little energy for army upkeep.
+					# R = C / (B / S), where:
+					# R = Resource income (or storage), C = Cost (or upkeep), B = Weight of one budget, S = Sum of all active budget weights
+					# R = 100 / (0.05 / 1.56), R = 3,120 EC/Month for the AI to consider building a x100 assault army.
+					resource_income_compare = {
+						resource = energy
+						value >= 3000
+					}
 					resource_income_compare = {
 						resource = minerals
 						value >= 1000
@@ -102,6 +110,10 @@ country_event = {
 			}
 			else_if = {
 				limit = {
+					resource_income_compare = {
+						resource = energy
+						value >= 200
+					}
 					resource_income_compare = {
 						resource = minerals
 						value >= 150
