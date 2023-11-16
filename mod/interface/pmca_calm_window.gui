@@ -20,8 +20,8 @@ guiTypes = {
 
         iconType = {
             name = "empire_header_line"
-            quadTextureSprite = "GFX_line_long"
-            position = { x = 6 y = 22 }
+            quadTextureSprite = "GFX_line"
+            position = { x = 6 y = 32 }
             alwaysTransparent = yes
         }
 
@@ -77,18 +77,18 @@ guiTypes = {
 
             effectButtonType = {
                 name = "pmca_calm_ai_button_enabled"
-                position = { x = 250 y = 0 }
+                position = { x = 250 y = 5 }
                 effect = pmca_button_ai_enabled
-                quadTextureSprite = "GFX_alliance_vote_status"
+                quadTextureSprite = "GFX_button_20_20_accept"
                 frame = 3
             }
 
             effectButtonType = {
                 name = "pmca_calm_ai_button_disabled"
-                position = { x = 250 y = 0 }
+                position = { x = 250 y = 5 }
                 effect = pmca_button_ai_disabled
-                quadTextureSprite = "GFX_alliance_vote_status"
-                frame = 2
+                quadTextureSprite = "GFX_button_20_20_reject"
+                frame = 3
             }
         }
 
@@ -146,50 +146,50 @@ guiTypes = {
 
             effectButtonType = {
                 name = "pmca_calm_x0_button_enabled"
-                position = { x = 150 y = 0 }
+                position = { x = 150 y = 5 }
                 effect = pmca_button_condense_x0_enabled
-                quadTextureSprite = "GFX_alliance_vote_status"
+                quadTextureSprite = "GFX_button_20_20_accept"
                 frame = 3
             }
 
             effectButtonType = {
                 name = "pmca_calm_x0_button_disabled"
-                position = { x = 150 y = 0 }
+                position = { x = 150 y = 5 }
                 effect = pmca_button_condense_x0_disabled
-                quadTextureSprite = "GFX_alliance_vote_status"
-                frame = 2
+                quadTextureSprite = "GFX_button_20_20_reject"
+                frame = 3
             }
 
             effectButtonType = {
                 name = "pmca_calm_x10_button_enabled"
-                position = { x = 250 y = 0 }
+                position = { x = 250 y = 5 }
                 effect = pmca_button_condense_x10_enabled
-                quadTextureSprite = "GFX_alliance_vote_status"
+                quadTextureSprite = "GFX_button_20_20_accept"
                 frame = 3
             }
 
             effectButtonType = {
                 name = "pmca_calm_x10_button_disabled"
-                position = { x = 250 y = 0 }
+                position = { x = 250 y = 5 }
                 effect = pmca_button_condense_x10_disabled
-                quadTextureSprite = "GFX_alliance_vote_status"
-                frame = 2
+                quadTextureSprite = "GFX_button_20_20_reject"
+                frame = 3
             }
 
             effectButtonType = {
                 name = "pmca_calm_x100_button_enabled"
-                position = { x = 350 y = 0 }
+                position = { x = 350 y = 5 }
                 effect = pmca_button_condense_x100_enabled
-                quadTextureSprite = "GFX_alliance_vote_status"
+                quadTextureSprite = "GFX_button_20_20_accept"
                 frame = 3
             }
 
             effectButtonType = {
                 name = "pmca_calm_x100_button_disabled"
-                position = { x = 350 y = 0 }
+                position = { x = 350 y = 5 }
                 effect = pmca_button_condense_x100_disabled
-                quadTextureSprite = "GFX_alliance_vote_status"
-                frame = 2
+                quadTextureSprite = "GFX_button_20_20_reject"
+                frame = 3
             }
         }
 
@@ -200,7 +200,7 @@ guiTypes = {
         buttonType = {
             name = "alien_message_background"
             size = { x = 485 y = 135 }
-            position = { x = 11 y = 39 }
+            position = { x = 11 y = 55 }
             spriteType = "GFX_tiles_dark_area_cut_8"
             no_clicksound = yes
             oversound = no_sound
@@ -278,7 +278,7 @@ guiTypes = {
         instantTextBoxType = {
             name = "alien_message"
             font = "cg_16b"
-            position = { x = 20 y = 50 }
+            position = { x = 20 y = 66 }
             maxWidth = 465
             maxHeight = 120
             format = left
