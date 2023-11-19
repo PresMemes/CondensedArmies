@@ -1,0 +1,3 @@
+pmca_$MULT$_$ARMY_NAME$ = {
+	$CONTENT$
+}

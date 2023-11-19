@@ -1,4 +1,0 @@
-# Irony this is a placeholder file please ignore it
-
-is_giga_maginot_world = { always = no }
-ESC_TRIGGER_may_research_biological_weapons_advanced = { always = no }

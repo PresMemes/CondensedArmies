@@ -9,13 +9,13 @@ has_condensed_armies = {
 # Parameters: PMCA_MULT (ten, hundred), PMCA_RESOURCE, PMCA_VALUE
 pmca_materiel_policy_check = {
 	optimize_memory
+	OR = {
+		is_ai = no
+		has_global_flag = pmca_ai_allowed
+	}
 	has_country_flag = pmca_times_$PMCA_MULT$_set
 	resource_stockpile_compare = {
 		resource = $PMCA_RESOURCE$
 		value >= $PMCA_VALUE$
-	}
-	OR = {
-		is_ai = no
-		has_global_flag = pmca_ai_allowed
 	}
 }

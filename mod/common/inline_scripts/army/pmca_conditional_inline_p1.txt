@@ -1,0 +1,10 @@
+# Credit to TTFTCUTS and MrRoAdd for letting their intrusive thoughts win
+
+inline_script = {
+	script = army/pmca_conditional_inline_p2
+
+	CASE = $MOD_VARIABLE$
+	MULT = "$MULT$"
+	ARMY_NAME = "$ARMY_NAME$"
+	CONTENT = "$CONTENT$"
+}

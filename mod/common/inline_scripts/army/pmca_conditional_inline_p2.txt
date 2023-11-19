@@ -1,0 +1,7 @@
+inline_script = {
+	script = army/pmca_conditional_inline_p3_case_$CASE$
+
+	MULT = "$MULT$"
+	ARMY_NAME = "$ARMY_NAME$"
+	CONTENT = "$CONTENT$"
+}
