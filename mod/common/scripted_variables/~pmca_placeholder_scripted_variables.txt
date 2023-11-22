@@ -1,4 +1,10 @@
 # Irony this is a placeholder file please ignore it
 
+# Gigastuctures
 @has_gigastructures = 0
-@ESC_WEAPON_crystalline_s_t6_cost_crystals = 0 # Why doesn't ESC have an ID Variable???
+
+# ESC: NEXT 
+@ESC_WEAPON_crystalline_s_t6_cost_crystals = 0
+
+# Ancient Cache of Technologies
+@has_ancient_caches = 0 #

@@ -53,6 +53,31 @@ guiTypes = {
             spriteType = "GFX_line_horizontal"
         }
 
+        # Patches
+        containerWindowType = {
+            name = "pmca_calm_patches_containter"
+            position = { x = 0 y = 0 }
+
+            buttonType = { # Hacky way to get around the always = no greying out the border
+                name = "text_background"
+                position = { x = 345 y = 16 }
+                size = { x = 90 y = 35 }
+                spriteType = "GFX_tiles_frame_light"
+                oversound = no_sound
+                no_clicksound = yes
+            }
+
+            effectButtonType = {
+                name = "pmca_calm_patches_tooltip"
+                font = "malgun_goth_24"
+                text = "pmca_calm_patches_text"
+                position = { x = 350 y = 18 }
+                size = { x = 80 y = 30 }
+                effect = pmca_button_patches_tooltip
+                spriteType = "GFX_tiled_window_transparent"
+            }
+        }
+
         # AI Toggle
         containerWindowType = {
             name = "pmca_calm_ai_toggle_oontainer"
@@ -73,6 +98,8 @@ guiTypes = {
                 text = "pmca_calm_ai_toggle_header_text"
                 pdx_tooltip = "pmca_calm_ai_toggle_tooltip"
                 pdx_tooltip_delayed = "pmca_calm_ai_toggle_tooltip_delayed"
+                maxWidth = 150
+                maxHeight = 50
             }
 
             effectButtonType = {

@@ -1,0 +1,157 @@
+﻿l_braz_por:
+
+ # Localisation generated using Python
+
+ ####################
+ ### ASSAULT_ARMY ###
+ ####################
+ pmca_ten_assault_army: "$pmca_ten$ $assault_army$"
+ pmca_ten_assault_army_plural: "$assault_army_plural$"
+ pmca_ten_assault_army_desc: "$assault_army_desc$"
+ pmca_hundred_assault_army: "$pmca_hundred$ $assault_army$"
+ pmca_hundred_assault_army_plural: "$assault_army_plural$"
+ pmca_hundred_assault_army_desc: "$assault_army_desc$"
+
+
+ ##################
+ ### SLAVE_ARMY ###
+ ##################
+ pmca_ten_slave_army: "$pmca_ten$ $slave_army$"
+ pmca_ten_slave_army_plural: "$slave_army_plural$"
+ pmca_ten_slave_army_desc: "$slave_army_desc$"
+ pmca_hundred_slave_army: "$pmca_hundred$ $slave_army$"
+ pmca_hundred_slave_army_plural: "$slave_army_plural$"
+ pmca_hundred_slave_army_desc: "$slave_army_desc$"
+
+
+ ##################
+ ### CLONE_ARMY ###
+ ##################
+ pmca_ten_clone_army: "$pmca_ten$ $clone_army$"
+ pmca_ten_clone_army_plural: "$clone_army_plural$"
+ pmca_ten_clone_army_desc: "$clone_army_desc$"
+ pmca_hundred_clone_army: "$pmca_hundred$ $clone_army$"
+ pmca_hundred_clone_army_plural: "$clone_army_plural$"
+ pmca_hundred_clone_army_desc: "$clone_army_desc$"
+
+
+ ####################
+ ### ROBOTIC_ARMY ###
+ ####################
+ pmca_ten_robotic_army: "$pmca_ten$ $robotic_army$"
+ pmca_ten_robotic_army_plural: "$robotic_army_plural$"
+ pmca_ten_robotic_army_desc: "$robotic_army_desc$"
+ pmca_hundred_robotic_army: "$pmca_hundred$ $robotic_army$"
+ pmca_hundred_robotic_army_plural: "$robotic_army_plural$"
+ pmca_hundred_robotic_army_desc: "$robotic_army_desc$"
+
+
+ ####################
+ ### PSIONIC_ARMY ###
+ ####################
+ pmca_ten_psionic_army: "$pmca_ten$ $psionic_army$"
+ pmca_ten_psionic_army_plural: "$psionic_army_plural$"
+ pmca_ten_psionic_army_desc: "$psionic_army_desc$"
+ pmca_hundred_psionic_army: "$pmca_hundred$ $psionic_army$"
+ pmca_hundred_psionic_army_plural: "$psionic_army_plural$"
+ pmca_hundred_psionic_army_desc: "$psionic_army_desc$"
+
+
+ ######################
+ ### XENOMORPH_ARMY ###
+ ######################
+ pmca_ten_xenomorph_army: "$pmca_ten$ $xenomorph_army$"
+ pmca_ten_xenomorph_army_plural: "$xenomorph_army_plural$"
+ pmca_ten_xenomorph_army_desc: "$xenomorph_army_desc$"
+ pmca_hundred_xenomorph_army: "$pmca_hundred$ $xenomorph_army$"
+ pmca_hundred_xenomorph_army_plural: "$xenomorph_army_plural$"
+ pmca_hundred_xenomorph_army_desc: "$xenomorph_army_desc$"
+
+
+ #########################
+ ### GENE_WARRIOR_ARMY ###
+ #########################
+ pmca_ten_gene_warrior_army: "$pmca_ten$ $gene_warrior_army$"
+ pmca_ten_gene_warrior_army_plural: "$gene_warrior_army_plural$"
+ pmca_ten_gene_warrior_army_desc: "$gene_warrior_army_desc$"
+ pmca_hundred_gene_warrior_army: "$pmca_hundred$ $gene_warrior_army$"
+ pmca_hundred_gene_warrior_army_plural: "$gene_warrior_army_plural$"
+ pmca_hundred_gene_warrior_army_desc: "$gene_warrior_army_desc$"
+
+
+ #########################
+ ### MACHINE_ASSAULT_1 ###
+ #########################
+ pmca_ten_machine_assault_1: "$pmca_ten$ $machine_assault_1$"
+ pmca_ten_machine_assault_1_plural: "$machine_assault_1_plural$"
+ pmca_ten_machine_assault_1_desc: "$machine_assault_1_desc$"
+ pmca_hundred_machine_assault_1: "$pmca_hundred$ $machine_assault_1$"
+ pmca_hundred_machine_assault_1_plural: "$machine_assault_1_plural$"
+ pmca_hundred_machine_assault_1_desc: "$machine_assault_1_desc$"
+
+
+ #########################
+ ### MACHINE_ASSAULT_2 ###
+ #########################
+ pmca_ten_machine_assault_2: "$pmca_ten$ $machine_assault_2$"
+ pmca_ten_machine_assault_2_plural: "$machine_assault_2_plural$"
+ pmca_ten_machine_assault_2_desc: "$machine_assault_2_desc$"
+ pmca_hundred_machine_assault_2: "$pmca_hundred$ $machine_assault_2$"
+ pmca_hundred_machine_assault_2_plural: "$machine_assault_2_plural$"
+ pmca_hundred_machine_assault_2_desc: "$machine_assault_2_desc$"
+
+
+ #########################
+ ### MACHINE_ASSAULT_3 ###
+ #########################
+ pmca_ten_machine_assault_3: "$pmca_ten$ $machine_assault_3$"
+ pmca_ten_machine_assault_3_plural: "$machine_assault_3_plural$"
+ pmca_ten_machine_assault_3_desc: "$machine_assault_3_desc$"
+ pmca_hundred_machine_assault_3: "$pmca_hundred$ $machine_assault_3$"
+ pmca_hundred_machine_assault_3_plural: "$machine_assault_3_plural$"
+ pmca_hundred_machine_assault_3_desc: "$machine_assault_3_desc$"
+
+
+ ###################
+ ### UNDEAD_ARMY ###
+ ###################
+ pmca_ten_undead_army: "$pmca_ten$ $undead_army$"
+ pmca_ten_undead_army_plural: "$undead_army_plural$"
+ pmca_ten_undead_army_desc: "$undead_army_desc$"
+ pmca_hundred_undead_army: "$pmca_hundred$ $undead_army$"
+ pmca_hundred_undead_army_plural: "$undead_army_plural$"
+ pmca_hundred_undead_army_desc: "$undead_army_desc$"
+
+
+ #####################
+ ### WARPLING_ARMY ###
+ #####################
+ pmca_ten_warpling_army: "$pmca_ten$ $warpling_army$"
+ pmca_ten_warpling_army_plural: "$warpling_army_plural$"
+ pmca_ten_warpling_army_desc: "$warpling_army_desc$"
+ pmca_hundred_warpling_army: "$pmca_hundred$ $warpling_army$"
+ pmca_hundred_warpling_army_plural: "$warpling_army_plural$"
+ pmca_hundred_warpling_army_desc: "$warpling_army_desc$"
+
+
+ ################################
+ ### FLAMESTORM_TROOPERS_ARMY ###
+ ################################
+ pmca_ten_flamestorm_troopers_army: "$pmca_ten$ $flamestorm_troopers_army$"
+ pmca_ten_flamestorm_troopers_army_plural: "$flamestorm_troopers_army_plural$"
+ pmca_ten_flamestorm_troopers_army_desc: "$flamestorm_troopers_army_desc$"
+ pmca_hundred_flamestorm_troopers_army: "$pmca_hundred$ $flamestorm_troopers_army$"
+ pmca_hundred_flamestorm_troopers_army_plural: "$flamestorm_troopers_army_plural$"
+ pmca_hundred_flamestorm_troopers_army_desc: "$flamestorm_troopers_army_desc$"
+
+
+ ######################
+ ### CYBREX_WARFORM ###
+ ######################
+ pmca_ten_cybrex_warform: "$pmca_ten$ $cybrex_warform$"
+ pmca_ten_cybrex_warform_plural: "$cybrex_warform_plural$"
+ pmca_ten_cybrex_warform_desc: "$cybrex_warform_desc$"
+ pmca_hundred_cybrex_warform: "$pmca_hundred$ $cybrex_warform$"
+ pmca_hundred_cybrex_warform_plural: "$cybrex_warform_plural$"
+ pmca_hundred_cybrex_warform_desc: "$cybrex_warform_desc$"
+

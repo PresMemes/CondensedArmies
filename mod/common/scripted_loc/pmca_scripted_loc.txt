@@ -1,0 +1,41 @@
+defined_text = {
+	name = pmca_get_gigas_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @has_gigastructures
+				value = 0 # Since my placeholders will always be 0, I only need to care if it changes
+			}
+		}
+		localization_key = pmca_gigas_not_loaded
+	}
+	default = pmca_gigas_loaded
+}
+
+defined_text = {
+	name = pmca_get_esc_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @ESC_WEAPON_crystalline_s_t6_cost_crystals
+				value = 0
+			}
+		}
+		localization_key = pmca_esc_not_loaded
+	}
+	default = pmca_esc_loaded
+}
+
+defined_text = {
+	name = pmca_get_acot_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @has_ancient_caches
+				value = 0
+			}
+		}
+		localization_key = pmca_acot_not_loaded
+	}
+	default = pmca_acot_loaded
+}

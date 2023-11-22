@@ -1,0 +1,58 @@
+﻿l_japanese:
+
+ # Localisation generated using Python
+
+ #############################
+ ### GIGA_EAW_CRYSTAL_ARMY ###
+ #############################
+ pmca_ten_giga_eaw_crystal_army: "$pmca_ten$ $giga_eaw_crystal_army$"
+ pmca_ten_giga_eaw_crystal_army_plural: "$giga_eaw_crystal_army_plural$"
+ pmca_ten_giga_eaw_crystal_army_desc: "$giga_eaw_crystal_army_desc$"
+ pmca_hundred_giga_eaw_crystal_army: "$pmca_hundred$ $giga_eaw_crystal_army$"
+ pmca_hundred_giga_eaw_crystal_army_plural: "$giga_eaw_crystal_army_plural$"
+ pmca_hundred_giga_eaw_crystal_army_desc: "$giga_eaw_crystal_army_desc$"
+
+
+ ###################################
+ ### GIGA_EAW_CRYSTAL_ARMY_DRONE ###
+ ###################################
+ pmca_ten_giga_eaw_crystal_army_drone: "$pmca_ten$ $giga_eaw_crystal_army_drone$"
+ pmca_ten_giga_eaw_crystal_army_drone_plural: "$giga_eaw_crystal_army_drone_plural$"
+ pmca_ten_giga_eaw_crystal_army_drone_desc: "$giga_eaw_crystal_army_drone_desc$"
+ pmca_hundred_giga_eaw_crystal_army_drone: "$pmca_hundred$ $giga_eaw_crystal_army_drone$"
+ pmca_hundred_giga_eaw_crystal_army_drone_plural: "$giga_eaw_crystal_army_drone_plural$"
+ pmca_hundred_giga_eaw_crystal_army_drone_desc: "$giga_eaw_crystal_army_drone_desc$"
+
+
+ ############################
+ ### SHROUD_SUMMONED_ARMY ###
+ ############################
+ pmca_ten_shroud_summoned_army: "$pmca_ten$ $shroud_summoned_army$"
+ pmca_ten_shroud_summoned_army_plural: "$shroud_summoned_army_plural$"
+ pmca_ten_shroud_summoned_army_desc: "$shroud_summoned_army_desc$"
+ pmca_hundred_shroud_summoned_army: "$pmca_hundred$ $shroud_summoned_army$"
+ pmca_hundred_shroud_summoned_army_plural: "$shroud_summoned_army_plural$"
+ pmca_hundred_shroud_summoned_army_desc: "$shroud_summoned_army_desc$"
+
+
+ ############################
+ ### MAGINOT_ASSAULT_UNIT ###
+ ############################
+ pmca_ten_maginot_assault_unit: "$pmca_ten$ $maginot_assault_unit$"
+ pmca_ten_maginot_assault_unit_plural: "$maginot_assault_unit_plural$"
+ pmca_ten_maginot_assault_unit_desc: "$maginot_assault_unit_desc$"
+ pmca_hundred_maginot_assault_unit: "$pmca_hundred$ $maginot_assault_unit$"
+ pmca_hundred_maginot_assault_unit_plural: "$maginot_assault_unit_plural$"
+ pmca_hundred_maginot_assault_unit_desc: "$maginot_assault_unit_desc$"
+
+
+ ####################################
+ ### MAGINOT_MACHINE_ASSAULT_UNIT ###
+ ####################################
+ pmca_ten_maginot_machine_assault_unit: "$pmca_ten$ $maginot_machine_assault_unit$"
+ pmca_ten_maginot_machine_assault_unit_plural: "$maginot_machine_assault_unit_plural$"
+ pmca_ten_maginot_machine_assault_unit_desc: "$maginot_machine_assault_unit_desc$"
+ pmca_hundred_maginot_machine_assault_unit: "$pmca_hundred$ $maginot_machine_assault_unit$"
+ pmca_hundred_maginot_machine_assault_unit_plural: "$maginot_machine_assault_unit_plural$"
+ pmca_hundred_maginot_machine_assault_unit_desc: "$maginot_machine_assault_unit_desc$"
+

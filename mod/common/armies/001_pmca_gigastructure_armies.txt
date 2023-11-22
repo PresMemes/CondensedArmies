@@ -1,11 +1,11 @@
 # x10 and x100 army definition generated via Python
+# NOTE: Yes i'm aware the army definition should be indented, I just don't want to bludgeon python into doing it.
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "ten"
-	ARMY_NAME = "riesigerkatzenpanzer_assault"
 	CONTENT = "
+	pmca_ten_riesigerkatzenpanzer_assault = {
 	use_armynames_from = riesigerkatzenpanzer_assault
 	damage = 100.0
 	health = 50.0
@@ -37,9 +37,11 @@ inline_script = {
 			PMCA_RESOURCE = exotic_gases
 			PMCA_VALUE = 500.0
 		}
+		
 	}
 	ai_weight = {
 		base = 0.0
+	}
 	}
 	"
 }
@@ -47,9 +49,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "ten"
-	ARMY_NAME = "giga_eaw_crystal_army"
 	CONTENT = "
+	pmca_ten_giga_eaw_crystal_army = {
 	use_armynames_from = giga_eaw_crystal_army
 	damage = 20.0
 	health = 9.0
@@ -75,7 +76,7 @@ inline_script = {
 		is_machine_empire = no
 	}
 	potential = {
-		owner = {
+		owner = { 
 			has_technology = giga_tech_thaumaturgic_weaponry
 			is_machine_empire = no
 		}
@@ -86,9 +87,11 @@ inline_script = {
 			PMCA_RESOURCE = rare_crystals
 			PMCA_VALUE = 100.0
 		}
+		
 	}
 	ai_weight = {
 		base = 0.0
+	}
 	}
 	"
 }
@@ -96,9 +99,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "ten"
-	ARMY_NAME = "giga_eaw_crystal_army_drone"
 	CONTENT = "
+	pmca_ten_giga_eaw_crystal_army_drone = {
 	use_armynames_from = giga_eaw_crystal_army_drone
 	damage = 20.0
 	health = 14.0
@@ -124,7 +126,7 @@ inline_script = {
 		is_machine_empire = yes
 	}
 	potential = {
-		owner = {
+		owner = { 
 			has_technology = giga_tech_thaumaturgic_weaponry
 			is_machine_empire = yes
 		}
@@ -135,9 +137,11 @@ inline_script = {
 			PMCA_RESOURCE = rare_crystals
 			PMCA_VALUE = 100.0
 		}
+		
 	}
 	ai_weight = {
 		base = 0.0
+	}
 	}
 	"
 }
@@ -145,9 +149,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "ten"
-	ARMY_NAME = "shroud_summoned_army"
 	CONTENT = "
+	pmca_ten_shroud_summoned_army = {
 	use_armynames_from = shroud_summoned_army
 	damage = 20.0
 	health = 7.5
@@ -181,9 +184,11 @@ inline_script = {
 			PMCA_RESOURCE = sr_zro
 			PMCA_VALUE = 100.0
 		}
+		
 	}
 	ai_weight = {
 		base = 0.0
+	}
 	}
 	"
 }
@@ -191,9 +196,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "ten"
-	ARMY_NAME = "cybrex_warform"
 	CONTENT = "
+	pmca_ten_cybrex_warform = {
 	use_armynames_from = cybrex_warform
 	damage = 50.0
 	health = 70.0
@@ -223,9 +227,14 @@ inline_script = {
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
 		}
+		OR = {
+			has_relic = r_war_forge
+			has_relic = r_ehof_war_forge
+		}
 	}
 	ai_weight = {
 		base = 75.0
+	}
 	}
 	"
 }
@@ -233,9 +242,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "ten"
-	ARMY_NAME = "maginot_assault_unit"
 	CONTENT = "
+	pmca_ten_maginot_assault_unit = {
 	use_armynames_from = maginot_assault_unit
 	damage = 50.0
 	health = 70.0
@@ -269,9 +277,11 @@ inline_script = {
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
 		}
+		has_country_flag = has_built_or_repaired_gigastructure
 	}
 	ai_weight = {
 		base = 76.5
+	}
 	}
 	"
 }
@@ -279,9 +289,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "ten"
-	ARMY_NAME = "maginot_machine_assault_unit"
 	CONTENT = "
+	pmca_ten_maginot_machine_assault_unit = {
 	use_armynames_from = maginot_machine_assault_unit
 	damage = 50.0
 	health = 70.0
@@ -315,9 +324,12 @@ inline_script = {
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
 		}
+		is_machine_empire = yes
+		has_country_flag = has_built_or_repaired_gigastructure
 	}
 	ai_weight = {
 		base = 76.5
+	}
 	}
 	"
 }
@@ -325,9 +337,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "hundred"
-	ARMY_NAME = "riesigerkatzenpanzer_assault"
 	CONTENT = "
+	pmca_hundred_riesigerkatzenpanzer_assault = {
 	use_armynames_from = riesigerkatzenpanzer_assault
 	damage = 1000.0
 	health = 500.0
@@ -357,11 +368,13 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = exotic_gases
-			PMCA_VALUE = 5000.0
+			PMCA_VALUE = 500.0
 		}
+		
 	}
 	ai_weight = {
 		base = 0.0
+	}
 	}
 	"
 }
@@ -369,9 +382,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "hundred"
-	ARMY_NAME = "giga_eaw_crystal_army"
 	CONTENT = "
+	pmca_hundred_giga_eaw_crystal_army = {
 	use_armynames_from = giga_eaw_crystal_army
 	damage = 200.0
 	health = 90.0
@@ -397,7 +409,7 @@ inline_script = {
 		is_machine_empire = no
 	}
 	potential = {
-		owner = {
+		owner = { 
 			has_technology = giga_tech_thaumaturgic_weaponry
 			is_machine_empire = no
 		}
@@ -406,11 +418,13 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = rare_crystals
-			PMCA_VALUE = 1000.0
+			PMCA_VALUE = 100.0
 		}
+		
 	}
 	ai_weight = {
 		base = 0.0
+	}
 	}
 	"
 }
@@ -418,9 +432,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "hundred"
-	ARMY_NAME = "giga_eaw_crystal_army_drone"
 	CONTENT = "
+	pmca_hundred_giga_eaw_crystal_army_drone = {
 	use_armynames_from = giga_eaw_crystal_army_drone
 	damage = 200.0
 	health = 140.0
@@ -446,7 +459,7 @@ inline_script = {
 		is_machine_empire = yes
 	}
 	potential = {
-		owner = {
+		owner = { 
 			has_technology = giga_tech_thaumaturgic_weaponry
 			is_machine_empire = yes
 		}
@@ -455,11 +468,13 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = rare_crystals
-			PMCA_VALUE = 1000.0
+			PMCA_VALUE = 100.0
 		}
+		
 	}
 	ai_weight = {
 		base = 0.0
+	}
 	}
 	"
 }
@@ -467,9 +482,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "hundred"
-	ARMY_NAME = "shroud_summoned_army"
 	CONTENT = "
+	pmca_hundred_shroud_summoned_army = {
 	use_armynames_from = shroud_summoned_army
 	damage = 200.0
 	health = 75.0
@@ -501,11 +515,13 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_zro
-			PMCA_VALUE = 1000.0
+			PMCA_VALUE = 100.0
 		}
+		
 	}
 	ai_weight = {
 		base = 0.0
+	}
 	}
 	"
 }
@@ -513,9 +529,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "hundred"
-	ARMY_NAME = "cybrex_warform"
 	CONTENT = "
+	pmca_hundred_cybrex_warform = {
 	use_armynames_from = cybrex_warform
 	damage = 500.0
 	health = 700.0
@@ -543,11 +558,16 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 25000.0
+			PMCA_VALUE = 2500.0
+		}
+		OR = {
+			has_relic = r_war_forge
+			has_relic = r_ehof_war_forge
 		}
 	}
 	ai_weight = {
 		base = 100.0
+	}
 	}
 	"
 }
@@ -555,9 +575,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "hundred"
-	ARMY_NAME = "maginot_assault_unit"
 	CONTENT = "
+	pmca_hundred_maginot_assault_unit = {
 	use_armynames_from = maginot_assault_unit
 	damage = 500.0
 	health = 700.0
@@ -589,11 +608,13 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 25000.0
+			PMCA_VALUE = 2500.0
 		}
+		has_country_flag = has_built_or_repaired_gigastructure
 	}
 	ai_weight = {
 		base = 102.0
+	}
 	}
 	"
 }
@@ -601,9 +622,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
-	MULT = "hundred"
-	ARMY_NAME = "maginot_machine_assault_unit"
 	CONTENT = "
+	pmca_hundred_maginot_machine_assault_unit = {
 	use_armynames_from = maginot_machine_assault_unit
 	damage = 500.0
 	health = 700.0
@@ -635,11 +655,14 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 25000.0
+			PMCA_VALUE = 2500.0
 		}
+		is_machine_empire = yes
+		has_country_flag = has_built_or_repaired_gigastructure
 	}
 	ai_weight = {
 		base = 102.0
+	}
 	}
 	"
 }

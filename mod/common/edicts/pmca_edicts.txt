@@ -8,6 +8,7 @@ pmca_logistics_manager = {
 
 	potential = {
 		NOT = { has_global_flag = dmm_installed }
+		is_ai = no # AI have an event to simulate using this menu
 	}
 
 	effect = {

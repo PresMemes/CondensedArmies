@@ -1,6 +1,20 @@
-#####################
-### TOOLTIP MAKER ###
-#####################
+#######################
+#### TOOLTIP MAKER ####
+#######################
+
+###########################
+### PATCHES WORK-AROUND ###
+###########################
+
+pmca_button_patches_tooltip = {
+    potential = { is_same_value = from }
+    allow = {
+        custom_tooltip = {
+            always = no
+            fail_text = pmca_calm_patches_tooltip
+        }
+    }
+}
 
 #################
 ### AI TOGGLE ###

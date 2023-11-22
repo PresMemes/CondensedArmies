@@ -1,11 +1,11 @@
 # x10 and x100 army definition generated via Python
+# NOTE: Yes i'm aware the army definition should be indented, I just don't want to bludgeon python into doing it.
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "ten"
-	ARMY_NAME = "esc_psionic_avatar_army"
 	CONTENT = "
+	pmca_ten_esc_psionic_avatar_army = {
 	use_armynames_from = esc_psionic_avatar_army
 	damage = 50.0
 	health = 70.0
@@ -37,6 +37,11 @@ inline_script = {
 			PMCA_RESOURCE = sr_zro
 			PMCA_VALUE = 1000.0
 		}
+		OR = {
+			is_machine_empire = no
+			has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
+			has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
+		}
 	}
 	ai_weight = {
 		base = 150.0
@@ -46,15 +51,15 @@ inline_script = {
 			NOT = { has_ethic = ethic_fanatic_spiritualist }
 		}
 	}
+	}
 	"
 }
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "ten"
-	ARMY_NAME = "esc_erasure_squad_army"
 	CONTENT = "
+	pmca_ten_esc_erasure_squad_army = {
 	use_armynames_from = esc_erasure_squad_army
 	damage = 70.0
 	health = 20.0
@@ -97,9 +102,13 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 100.0
 		}
+		OR = {
+			is_machine_empire = no
+		}
 	}
 	ai_weight = {
 		base = 150.0
+	}
 	}
 	"
 }
@@ -107,9 +116,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "ten"
-	ARMY_NAME = "esc_eradicator_droids_army"
 	CONTENT = "
+	pmca_ten_esc_eradicator_droids_army = {
 	use_armynames_from = esc_eradicator_droids_army
 	damage = 70.0
 	health = 20.0
@@ -141,9 +149,14 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 100.0
 		}
+		OR = {
+			is_machine_empire = yes
+			has_tradition = tr_synthetics_synthetic_age
+		}
 	}
 	ai_weight = {
 		base = 150.0
+	}
 	}
 	"
 }
@@ -151,9 +164,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "ten"
-	ARMY_NAME = "esc_tesla_troopers_army"
 	CONTENT = "
+	pmca_ten_esc_tesla_troopers_army = {
 	use_armynames_from = esc_tesla_troopers_army
 	damage = 35.0
 	health = 40.0
@@ -195,9 +207,11 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 4000.0
 		}
+		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 150.0
+	}
 	}
 	"
 }
@@ -205,9 +219,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "ten"
-	ARMY_NAME = "esc_tesla_droids_army"
 	CONTENT = "
+	pmca_ten_esc_tesla_droids_army = {
 	use_armynames_from = esc_tesla_droids_army
 	damage = 35.0
 	health = 40.0
@@ -238,9 +251,14 @@ inline_script = {
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 1000.0
 		}
+		OR = {
+			is_machine_empire = yes
+			has_tradition = tr_synthetics_synthetic_age
+		}
 	}
 	ai_weight = {
 		base = 150.0
+	}
 	}
 	"
 }
@@ -248,9 +266,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "ten"
-	ARMY_NAME = "esc_biohorror_army"
 	CONTENT = "
+	pmca_ten_esc_biohorror_army = {
 	use_armynames_from = esc_biohorror_army
 	damage = 40.0
 	health = 40.0
@@ -276,6 +293,7 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3500.0
 		}
+		ESC_TRIGGER_may_research_biological_weapons_advanced = yes
 	}
 	ai_weight = {
 		base = 15.0
@@ -296,15 +314,15 @@ inline_script = {
 			NOT = { has_ethic = ethic_fanatic_xenophobe }
 		}
 	}
+	}
 	"
 }
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "hundred"
-	ARMY_NAME = "esc_psionic_avatar_army"
 	CONTENT = "
+	pmca_hundred_esc_psionic_avatar_army = {
 	use_armynames_from = esc_psionic_avatar_army
 	damage = 500.0
 	health = 700.0
@@ -334,7 +352,12 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_zro
-			PMCA_VALUE = 10000.0
+			PMCA_VALUE = 1000.0
+		}
+		OR = {
+			is_machine_empire = no
+			has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
+			has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
 		}
 	}
 	ai_weight = {
@@ -345,15 +368,15 @@ inline_script = {
 			NOT = { has_ethic = ethic_fanatic_spiritualist }
 		}
 	}
+	}
 	"
 }
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "hundred"
-	ARMY_NAME = "esc_erasure_squad_army"
 	CONTENT = "
+	pmca_hundred_esc_erasure_squad_army = {
 	use_armynames_from = esc_erasure_squad_army
 	damage = 700.0
 	health = 200.0
@@ -394,11 +417,15 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_dark_matter
-			PMCA_VALUE = 1000.0
+			PMCA_VALUE = 100.0
+		}
+		OR = {
+			is_machine_empire = no
 		}
 	}
 	ai_weight = {
 		base = 200.0
+	}
 	}
 	"
 }
@@ -406,9 +433,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "hundred"
-	ARMY_NAME = "esc_eradicator_droids_army"
 	CONTENT = "
+	pmca_hundred_esc_eradicator_droids_army = {
 	use_armynames_from = esc_eradicator_droids_army
 	damage = 700.0
 	health = 200.0
@@ -438,11 +464,16 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_dark_matter
-			PMCA_VALUE = 1000.0
+			PMCA_VALUE = 100.0
+		}
+		OR = {
+			is_machine_empire = yes
+			has_tradition = tr_synthetics_synthetic_age
 		}
 	}
 	ai_weight = {
 		base = 200.0
+	}
 	}
 	"
 }
@@ -450,9 +481,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "hundred"
-	ARMY_NAME = "esc_tesla_troopers_army"
 	CONTENT = "
+	pmca_hundred_esc_tesla_troopers_army = {
 	use_armynames_from = esc_tesla_troopers_army
 	damage = 350.0
 	health = 400.0
@@ -492,11 +522,13 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 40000.0
+			PMCA_VALUE = 4000.0
 		}
+		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 200.0
+	}
 	}
 	"
 }
@@ -504,9 +536,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "hundred"
-	ARMY_NAME = "esc_tesla_droids_army"
 	CONTENT = "
+	pmca_hundred_esc_tesla_droids_army = {
 	use_armynames_from = esc_tesla_droids_army
 	damage = 350.0
 	health = 400.0
@@ -535,11 +566,16 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 10000.0
+			PMCA_VALUE = 1000.0
+		}
+		OR = {
+			is_machine_empire = yes
+			has_tradition = tr_synthetics_synthetic_age
 		}
 	}
 	ai_weight = {
 		base = 200.0
+	}
 	}
 	"
 }
@@ -547,9 +583,8 @@ inline_script = {
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	MULT = "hundred"
-	ARMY_NAME = "esc_biohorror_army"
 	CONTENT = "
+	pmca_hundred_esc_biohorror_army = {
 	use_armynames_from = esc_biohorror_army
 	damage = 400.0
 	health = 400.0
@@ -573,8 +608,9 @@ inline_script = {
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 35000.0
+			PMCA_VALUE = 3500.0
 		}
+		ESC_TRIGGER_may_research_biological_weapons_advanced = yes
 	}
 	ai_weight = {
 		base = 20.0
@@ -594,6 +630,7 @@ inline_script = {
 			is_fallen_empire = yes
 			NOT = { has_ethic = ethic_fanatic_xenophobe }
 		}
+	}
 	}
 	"
 }
