@@ -41,14 +41,14 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
+		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
-		}
-		OR = {
-			is_machine_empire = no
-			has_valid_civic = civic_machine_assimilator
 		}
 	}
 	ai_weight = {
@@ -127,13 +127,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_policy_flag = slavery_allowed
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 500.0
 		}
-		has_policy_flag = slavery_allowed
-		is_machine_empire = no
 	}
 	allow = {
 		custom_tooltip = {
@@ -220,14 +220,14 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		OR = {
+			is_machine_empire = no
+			has_civic = civic_machine_assimilator
+		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 750.0
-		}
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
 		}
 	}
 	ai_weight = {
@@ -284,12 +284,12 @@ inline_script = {
 		from = { has_trait = trait_mechanical }
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_machine_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -360,12 +360,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 150.0
@@ -411,12 +411,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 15.0
@@ -471,12 +471,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3000.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 150.0
@@ -523,12 +523,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -571,12 +571,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -610,12 +610,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 8000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 75.0
@@ -668,12 +668,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_reanimated_armies
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = energy
 			PMCA_VALUE = 1000.0
 		}
-		has_valid_civic = civic_reanimated_armies
 	}
 	ai_weight = {
 		base = 150.0
@@ -703,13 +703,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_astral_planes_dlc = yes
+		has_country_flag = unlocked_warplings
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = astral_threads
 			PMCA_VALUE = 100.0
 		}
-		has_astral_planes_dlc = yes
-		has_country_flag = unlocked_warplings
 	}
 	ai_weight = {
 		base = 150.0
@@ -742,13 +742,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_astral_planes_dlc = yes
+		has_country_flag = unlocked_flamestorm_troopers
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = astral_threads
 			PMCA_VALUE = 1000.0
 		}
-		has_astral_planes_dlc = yes
-		has_country_flag = unlocked_flamestorm_troopers
 	}
 	ai_weight = {
 		base = 150.0
@@ -790,12 +790,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_relic = r_war_forge
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
 		}
-		has_relic = r_war_forge
 	}
 	ai_weight = {
 		base = 75.0
@@ -844,14 +844,14 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
+		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
-		}
-		OR = {
-			is_machine_empire = no
-			has_valid_civic = civic_machine_assimilator
 		}
 	}
 	ai_weight = {
@@ -930,13 +930,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_policy_flag = slavery_allowed
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 500.0
 		}
-		has_policy_flag = slavery_allowed
-		is_machine_empire = no
 	}
 	allow = {
 		custom_tooltip = {
@@ -1023,14 +1023,14 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		OR = {
+			is_machine_empire = no
+			has_civic = civic_machine_assimilator
+		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 750.0
-		}
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
 		}
 	}
 	ai_weight = {
@@ -1087,12 +1087,12 @@ inline_script = {
 		from = { has_trait = trait_mechanical }
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_machine_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1163,12 +1163,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 200.0
@@ -1214,12 +1214,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 20.0
@@ -1274,12 +1274,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3000.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 200.0
@@ -1326,12 +1326,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -1374,12 +1374,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -1413,12 +1413,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 8000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 100.0
@@ -1471,12 +1471,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_reanimated_armies
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = energy
 			PMCA_VALUE = 1000.0
 		}
-		has_valid_civic = civic_reanimated_armies
 	}
 	ai_weight = {
 		base = 200.0
@@ -1506,13 +1506,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_astral_planes_dlc = yes
+		has_country_flag = unlocked_warplings
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = astral_threads
 			PMCA_VALUE = 100.0
 		}
-		has_astral_planes_dlc = yes
-		has_country_flag = unlocked_warplings
 	}
 	ai_weight = {
 		base = 200.0
@@ -1545,13 +1545,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_astral_planes_dlc = yes
+		has_country_flag = unlocked_flamestorm_troopers
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = astral_threads
 			PMCA_VALUE = 1000.0
 		}
-		has_astral_planes_dlc = yes
-		has_country_flag = unlocked_flamestorm_troopers
 	}
 	ai_weight = {
 		base = 200.0
@@ -1593,12 +1593,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_relic = r_war_forge
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
 		}
-		has_relic = r_war_forge
 	}
 	ai_weight = {
 		base = 100.0

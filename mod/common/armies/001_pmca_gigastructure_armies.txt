@@ -37,7 +37,6 @@ inline_script = {
 			PMCA_RESOURCE = exotic_gases
 			PMCA_VALUE = 500.0
 		}
-		
 	}
 	ai_weight = {
 		base = 0.0
@@ -76,7 +75,7 @@ inline_script = {
 		is_machine_empire = no
 	}
 	potential = {
-		owner = { 
+		owner = {
 			has_technology = giga_tech_thaumaturgic_weaponry
 			is_machine_empire = no
 		}
@@ -87,7 +86,6 @@ inline_script = {
 			PMCA_RESOURCE = rare_crystals
 			PMCA_VALUE = 100.0
 		}
-		
 	}
 	ai_weight = {
 		base = 0.0
@@ -126,7 +124,7 @@ inline_script = {
 		is_machine_empire = yes
 	}
 	potential = {
-		owner = { 
+		owner = {
 			has_technology = giga_tech_thaumaturgic_weaponry
 			is_machine_empire = yes
 		}
@@ -137,7 +135,6 @@ inline_script = {
 			PMCA_RESOURCE = rare_crystals
 			PMCA_VALUE = 100.0
 		}
-		
 	}
 	ai_weight = {
 		base = 0.0
@@ -184,7 +181,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_zro
 			PMCA_VALUE = 100.0
 		}
-		
 	}
 	ai_weight = {
 		base = 0.0
@@ -222,14 +218,14 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		OR = {
+			has_relic = r_war_forge
+			has_relic = r_ehof_war_forge
+		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
-		}
-		OR = {
-			has_relic = r_war_forge
-			has_relic = r_ehof_war_forge
 		}
 	}
 	ai_weight = {
@@ -272,12 +268,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_country_flag = has_built_or_repaired_gigastructure
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
 		}
-		has_country_flag = has_built_or_repaired_gigastructure
 	}
 	ai_weight = {
 		base = 76.5
@@ -319,13 +315,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
+		has_country_flag = has_built_or_repaired_gigastructure
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
 		}
-		is_machine_empire = yes
-		has_country_flag = has_built_or_repaired_gigastructure
 	}
 	ai_weight = {
 		base = 76.5
@@ -370,7 +366,6 @@ inline_script = {
 			PMCA_RESOURCE = exotic_gases
 			PMCA_VALUE = 500.0
 		}
-		
 	}
 	ai_weight = {
 		base = 0.0
@@ -409,7 +404,7 @@ inline_script = {
 		is_machine_empire = no
 	}
 	potential = {
-		owner = { 
+		owner = {
 			has_technology = giga_tech_thaumaturgic_weaponry
 			is_machine_empire = no
 		}
@@ -420,7 +415,6 @@ inline_script = {
 			PMCA_RESOURCE = rare_crystals
 			PMCA_VALUE = 100.0
 		}
-		
 	}
 	ai_weight = {
 		base = 0.0
@@ -459,7 +453,7 @@ inline_script = {
 		is_machine_empire = yes
 	}
 	potential = {
-		owner = { 
+		owner = {
 			has_technology = giga_tech_thaumaturgic_weaponry
 			is_machine_empire = yes
 		}
@@ -470,7 +464,6 @@ inline_script = {
 			PMCA_RESOURCE = rare_crystals
 			PMCA_VALUE = 100.0
 		}
-		
 	}
 	ai_weight = {
 		base = 0.0
@@ -517,7 +510,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_zro
 			PMCA_VALUE = 100.0
 		}
-		
 	}
 	ai_weight = {
 		base = 0.0
@@ -555,14 +547,14 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		OR = {
+			has_relic = r_war_forge
+			has_relic = r_ehof_war_forge
+		}
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
-		}
-		OR = {
-			has_relic = r_war_forge
-			has_relic = r_ehof_war_forge
 		}
 	}
 	ai_weight = {
@@ -605,12 +597,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_country_flag = has_built_or_repaired_gigastructure
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
 		}
-		has_country_flag = has_built_or_repaired_gigastructure
 	}
 	ai_weight = {
 		base = 102.0
@@ -652,13 +644,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
+		has_country_flag = has_built_or_repaired_gigastructure
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2500.0
 		}
-		is_machine_empire = yes
-		has_country_flag = has_built_or_repaired_gigastructure
 	}
 	ai_weight = {
 		base = 102.0

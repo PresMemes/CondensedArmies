@@ -58,23 +58,14 @@ guiTypes = {
             name = "pmca_calm_patches_containter"
             position = { x = 0 y = 0 }
 
-            buttonType = { # Hacky way to get around the always = no greying out the border
-                name = "text_background"
-                position = { x = 345 y = 16 }
-                size = { x = 90 y = 35 }
-                spriteType = "GFX_tiles_frame_light"
-                oversound = no_sound
-                no_clicksound = yes
-            }
-
             effectButtonType = {
                 name = "pmca_calm_patches_tooltip"
                 font = "malgun_goth_24"
                 text = "pmca_calm_patches_text"
-                position = { x = 350 y = 18 }
-                size = { x = 80 y = 30 }
+                position = { x = 350 y = 16 }
+                size = { x = 85 y = 35 }
                 effect = pmca_button_patches_tooltip
-                spriteType = "GFX_tiled_window_transparent"
+                spriteType = "GFX_tiles_frame_light"
             }
         }
 

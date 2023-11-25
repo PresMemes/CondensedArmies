@@ -8,16 +8,19 @@
  edict_pmca_logistics_manager:0 "Condensed Armies Logistics Manager"
  edict_pmca_logistics_manager_desc:0 "Enter the C.A.L.M. Menu, where you can control AI usage of the mod and enable/disable $pmca_ten$/$pmca_hundred$ armies for your empire."
 
+ # Decisions
+ decision_pmca_acot_rebuild_condensed_armies: "Rebuild/Repair/Hatch $pmca_ten$/$pmca_hundred$ Armies"
+ decision_pmca_acot_rebuild_condensed_armies_desc: "All-in-one decision that simulates ACOT's decisions for regular armies. Costs nothing, but takes twice as long due to logistical constraints."
+
  # Condensed Armies Logistics Manager
  pmca_calm_header_text: "Condensed Armies Logistics Manager"
  pmca_calm_patches_text: "§BPATCHES§!"
- pmca_calm_patches_tooltip: "§LIntegrated Patch Data:\n\n$pmca_calm_patches_main$\n$pmca_calm_patches_gigas$\n$pmca_calm_patches_esc$\n$pmca_calm_patches_acot$§!\n$pmca_calm_patches_acot_sbtg$\n$pmca_calm_patches_space_marine_forces$\n$pmca_calm_patches_ground_command$"
+ pmca_calm_patches_tooltip: "§LIntegrated Patch Data:\n\n$pmca_calm_patches_main$\n$pmca_calm_patches_gigas$\n$pmca_calm_patches_esc$\n$pmca_calm_patches_acot$§!\n$pmca_calm_patches_acot_sbtg$\n$pmca_calm_patches_ground_command$"
  pmca_calm_patches_main: "§BCondensed Armies:§! §GActive§!"
  pmca_calm_patches_gigas: "§EGigastructural Engineering & More:§! [root.pmca_get_gigas_status]"
  pmca_calm_patches_esc: "§HExtra Ship Components NEXT:§! [root.pmca_get_esc_status]"
  pmca_calm_patches_acot: "§MAncient Cache of Technologies:§! [root.pmca_get_acot_status]"
  pmca_calm_patches_acot_sbtg: "§M$t$- Secrets Beyond The Gates:§! §YPending Integration...§!"
- pmca_calm_patches_space_marine_forces: "§PSpace Marine Forces:§! §YPending Integration...§!"
  pmca_calm_patches_ground_command: "§VGround Command:§! §YPending Integration...§!"
  pmca_calm_body_text: "$pmca_calm_intro_text$\n\n$pmca_calm_notice_text$\n\n$pmca_calm_leaving_text$\n\n$pmca_calm_integrated_patches$"
  pmca_calm_intro_text: "Welcome to the Condensed Armies Logistics Manager§! (§SC.A.L.M.§!). Here you can find the toggles for AI usage and army condensing."
@@ -40,12 +43,8 @@
  pmca_calm_condensed_toggle_x100_tooltip: "§LEnable/disable construction of $pmca_hundred$ Condensed Armies in your empire.§!"
  pmca_calm_condensed_toggle_x100_tooltip_delayed: "§L$TRIGGER_PASS$= x100 armies are §Genabled.§!\n\n$TRIGGER_FAIL$= x100 armies are §Rdisabled.§!§!"
 
- pmca_gigas_loaded: "§GActive§!"
- pmca_gigas_not_loaded: "§RInactive§!"
- pmca_esc_loaded: "§GActive§!"
- pmca_esc_not_loaded: "§RInactive§!"
- pmca_acot_loaded: "§GActive§!"
- pmca_acot_not_loaded: "§RInactive§!"
+ pmca_active: "§GActive§!"
+ pmca_inactive: "§RInactive§!"
 
  # Common Stuff
  pmca_ten:0 "§Mx10§!"

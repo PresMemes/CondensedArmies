@@ -1,0 +1,88 @@
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	decision_pmca_acot_rebuild_condensed_armies = {
+		owned_planets_only = yes
+		icon = decision_acot_rebuild_piloted_vehicle
+
+		enactment_time = 60
+
+		resources = {
+			category = armies
+		}
+
+		potential = {
+			exists = owner
+			any_planet_army = {
+				OR = {
+					has_army_flag = pmca_times_ten_army
+					has_army_flag = pmca_times_hundred_army
+				}
+				OR = {
+					pmca_is_condensed_acot_pilot = yes
+					pmca_is_condensed_acot_robot_torso = yes
+					pmca_is_condensed_acot_machine_torso = yes
+					pmca_is_condensed_acot_hive_cocoon = yes
+				}
+			}
+		}
+
+		allow = {
+			has_ground_combat = no
+		}
+
+		effect = {
+			if = {
+				limit = { owner = { is_regular_empire = yes } }
+				custom_tooltip = decision_acot_rebuild_piloted_vehicle_tooltip
+				custom_tooltip = decision_acot_repair_damaged_robot_tooltip
+				hidden_effect = {
+					owner = { save_event_target_as = pilot_planet }
+					create_message = {
+						type = ACOT_VEHICLE_PILOT_REPLACE
+						localization = message_acot_vehicle_pilot_replace
+						days = 10
+					}
+					create_message = {
+						type = ACOT_ARMY_MACHINE_REPAIR
+						localization = message_acot_army_machine_repair
+						days = 10
+					}
+					planet_event = { id = pmca_acot_army.400 }
+					planet_event = { id = pmca_acot_army.401 }
+				}
+			}
+			else_if = {
+				limit = { owner = { is_machine_empire = yes } }
+				custom_tooltip = decision_acot_repair_damaged_machine_tooltip
+				hidden_effect = {
+					owner = { save_event_target_as = pilot_planet }
+					create_message = {
+						type = ACOT_ARMY_MACHINE_REPAIR
+						localization = message_acot_army_machine_repair
+						days = 10
+					}
+					planet_event = { id = pmca_acot_army.402 }
+				}
+			}
+			else = {
+				custom_tooltip = decision_acot_hatch_cocoon_tooltip
+				hidden_effect = {
+					owner = { save_event_target_as = pilot_planet }
+					create_message = {
+						type = ACOT_ARMY_COCOON_HATCH
+						localization = message_acot_army_cocoon_hatch
+						days = 10
+					}
+					planet_event = { id = pmca_acot_army.403 }
+				}
+			}
+		}
+
+		ai_weight = {
+			base = 500 # they should really do this if possible
+		}
+	}
+	"
+}

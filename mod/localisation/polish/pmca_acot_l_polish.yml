@@ -35,6 +35,72 @@
  pmca_hundred_acot_infantry_se_desc: "$acot_infantry_se_desc$"
 
 
+ ###############################
+ ### ACOT_INFANTRY_AUTOARMOR ###
+ ###############################
+ pmca_ten_acot_infantry_autoarmor: "$pmca_ten$ $acot_infantry_autoarmor$"
+ pmca_ten_acot_infantry_autoarmor_plural: "$acot_infantry_autoarmor_plural$"
+ pmca_ten_acot_infantry_autoarmor_desc: "$acot_infantry_autoarmor_desc$"
+ pmca_hundred_acot_infantry_autoarmor: "$pmca_hundred$ $acot_infantry_autoarmor$"
+ pmca_hundred_acot_infantry_autoarmor_plural: "$acot_infantry_autoarmor_plural$"
+ pmca_hundred_acot_infantry_autoarmor_desc: "$acot_infantry_autoarmor_desc$"
+
+
+ ##################################
+ ### ACOT_INFANTRY_AUTOARMOR_SE ###
+ ##################################
+ pmca_ten_acot_infantry_autoarmor_se: "$pmca_ten$ $acot_infantry_autoarmor_se$"
+ pmca_ten_acot_infantry_autoarmor_se_plural: "$acot_infantry_autoarmor_se_plural$"
+ pmca_ten_acot_infantry_autoarmor_se_desc: "$acot_infantry_autoarmor_se_desc$"
+ pmca_hundred_acot_infantry_autoarmor_se: "$pmca_hundred$ $acot_infantry_autoarmor_se$"
+ pmca_hundred_acot_infantry_autoarmor_se_plural: "$acot_infantry_autoarmor_se_plural$"
+ pmca_hundred_acot_infantry_autoarmor_se_desc: "$acot_infantry_autoarmor_se_desc$"
+
+
+ ######################################
+ ### ACOT_INFANTRY_MEDIUM_AUTOARMOR ###
+ ######################################
+ pmca_ten_acot_infantry_medium_autoarmor: "$pmca_ten$ $acot_infantry_medium_autoarmor$"
+ pmca_ten_acot_infantry_medium_autoarmor_plural: "$acot_infantry_medium_autoarmor_plural$"
+ pmca_ten_acot_infantry_medium_autoarmor_desc: "$acot_infantry_medium_autoarmor_desc$"
+ pmca_hundred_acot_infantry_medium_autoarmor: "$pmca_hundred$ $acot_infantry_medium_autoarmor$"
+ pmca_hundred_acot_infantry_medium_autoarmor_plural: "$acot_infantry_medium_autoarmor_plural$"
+ pmca_hundred_acot_infantry_medium_autoarmor_desc: "$acot_infantry_medium_autoarmor_desc$"
+
+
+ #########################################
+ ### ACOT_INFANTRY_MEDIUM_AUTOARMOR_SE ###
+ #########################################
+ pmca_ten_acot_infantry_medium_autoarmor_se: "$pmca_ten$ $acot_infantry_medium_autoarmor_se$"
+ pmca_ten_acot_infantry_medium_autoarmor_se_plural: "$acot_infantry_medium_autoarmor_se_plural$"
+ pmca_ten_acot_infantry_medium_autoarmor_se_desc: "$acot_infantry_medium_autoarmor_se_desc$"
+ pmca_hundred_acot_infantry_medium_autoarmor_se: "$pmca_hundred$ $acot_infantry_medium_autoarmor_se$"
+ pmca_hundred_acot_infantry_medium_autoarmor_se_plural: "$acot_infantry_medium_autoarmor_se_plural$"
+ pmca_hundred_acot_infantry_medium_autoarmor_se_desc: "$acot_infantry_medium_autoarmor_se_desc$"
+
+
+ #####################################
+ ### ACOT_INFANTRY_HEAVY_AUTOARMOR ###
+ #####################################
+ pmca_ten_acot_infantry_heavy_autoarmor: "$pmca_ten$ $acot_infantry_heavy_autoarmor$"
+ pmca_ten_acot_infantry_heavy_autoarmor_plural: "$acot_infantry_heavy_autoarmor_plural$"
+ pmca_ten_acot_infantry_heavy_autoarmor_desc: "$acot_infantry_heavy_autoarmor_desc$"
+ pmca_hundred_acot_infantry_heavy_autoarmor: "$pmca_hundred$ $acot_infantry_heavy_autoarmor$"
+ pmca_hundred_acot_infantry_heavy_autoarmor_plural: "$acot_infantry_heavy_autoarmor_plural$"
+ pmca_hundred_acot_infantry_heavy_autoarmor_desc: "$acot_infantry_heavy_autoarmor_desc$"
+
+
+ ########################################
+ ### ACOT_INFANTRY_HEAVY_AUTOARMOR_SE ###
+ ########################################
+ pmca_ten_acot_infantry_heavy_autoarmor_se: "$pmca_ten$ $acot_infantry_heavy_autoarmor_se$"
+ pmca_ten_acot_infantry_heavy_autoarmor_se_plural: "$acot_infantry_heavy_autoarmor_se_plural$"
+ pmca_ten_acot_infantry_heavy_autoarmor_se_desc: "$acot_infantry_heavy_autoarmor_se_desc$"
+ pmca_hundred_acot_infantry_heavy_autoarmor_se: "$pmca_hundred$ $acot_infantry_heavy_autoarmor_se$"
+ pmca_hundred_acot_infantry_heavy_autoarmor_se_plural: "$acot_infantry_heavy_autoarmor_se_plural$"
+ pmca_hundred_acot_infantry_heavy_autoarmor_se_desc: "$acot_infantry_heavy_autoarmor_se_desc$"
+
+
  ##########################
  ### ACOT_SLAVE_ARMY_DM ###
  ##########################
@@ -68,6 +134,17 @@
  pmca_hundred_acot_light_armor_desc: "$acot_light_armor_desc$"
 
 
+ ##############################
+ ### ACOT_LIGHT_ARMOR_PILOT ###
+ ##############################
+ pmca_ten_acot_light_armor_pilot: "$pmca_ten$ $acot_light_armor_pilot$"
+ pmca_ten_acot_light_armor_pilot_plural: "$acot_light_armor_pilot_plural$"
+ pmca_ten_acot_light_armor_pilot_desc: "$acot_light_armor_pilot_desc$"
+ pmca_hundred_acot_light_armor_pilot: "$pmca_hundred$ $acot_light_armor_pilot$"
+ pmca_hundred_acot_light_armor_pilot_plural: "$acot_light_armor_pilot_plural$"
+ pmca_hundred_acot_light_armor_pilot_desc: "$acot_light_armor_pilot_desc$"
+
+
  ###########################
  ### ACOT_LIGHT_ARMOR_DM ###
  ###########################
@@ -77,6 +154,17 @@
  pmca_hundred_acot_light_armor_dm: "$pmca_hundred$ $acot_light_armor_dm$"
  pmca_hundred_acot_light_armor_dm_plural: "$acot_light_armor_dm_plural$"
  pmca_hundred_acot_light_armor_dm_desc: "$acot_light_armor_dm_desc$"
+
+
+ #################################
+ ### ACOT_LIGHT_ARMOR_PILOT_DM ###
+ #################################
+ pmca_ten_acot_light_armor_pilot_dm: "$pmca_ten$ $acot_light_armor_pilot_dm$"
+ pmca_ten_acot_light_armor_pilot_dm_plural: "$acot_light_armor_pilot_dm_plural$"
+ pmca_ten_acot_light_armor_pilot_dm_desc: "$acot_light_armor_pilot_dm_desc$"
+ pmca_hundred_acot_light_armor_pilot_dm: "$pmca_hundred$ $acot_light_armor_pilot_dm$"
+ pmca_hundred_acot_light_armor_pilot_dm_plural: "$acot_light_armor_pilot_dm_plural$"
+ pmca_hundred_acot_light_armor_pilot_dm_desc: "$acot_light_armor_pilot_dm_desc$"
 
 
  ###########################
@@ -90,6 +178,17 @@
  pmca_hundred_acot_light_armor_ae_desc: "$acot_light_armor_ae_desc$"
 
 
+ #################################
+ ### ACOT_LIGHT_ARMOR_PILOT_AE ###
+ #################################
+ pmca_ten_acot_light_armor_pilot_ae: "$pmca_ten$ $acot_light_armor_pilot_ae$"
+ pmca_ten_acot_light_armor_pilot_ae_plural: "$acot_light_armor_pilot_ae_plural$"
+ pmca_ten_acot_light_armor_pilot_ae_desc: "$acot_light_armor_pilot_ae_desc$"
+ pmca_hundred_acot_light_armor_pilot_ae: "$pmca_hundred$ $acot_light_armor_pilot_ae$"
+ pmca_hundred_acot_light_armor_pilot_ae_plural: "$acot_light_armor_pilot_ae_plural$"
+ pmca_hundred_acot_light_armor_pilot_ae_desc: "$acot_light_armor_pilot_ae_desc$"
+
+
  ###########################
  ### ACOT_LIGHT_ARMOR_SE ###
  ###########################
@@ -99,6 +198,17 @@
  pmca_hundred_acot_light_armor_se: "$pmca_hundred$ $acot_light_armor_se$"
  pmca_hundred_acot_light_armor_se_plural: "$acot_light_armor_se_plural$"
  pmca_hundred_acot_light_armor_se_desc: "$acot_light_armor_se_desc$"
+
+
+ #################################
+ ### ACOT_LIGHT_ARMOR_PILOT_SE ###
+ #################################
+ pmca_ten_acot_light_armor_pilot_se: "$pmca_ten$ $acot_light_armor_pilot_se$"
+ pmca_ten_acot_light_armor_pilot_se_plural: "$acot_light_armor_pilot_se_plural$"
+ pmca_ten_acot_light_armor_pilot_se_desc: "$acot_light_armor_pilot_se_desc$"
+ pmca_hundred_acot_light_armor_pilot_se: "$pmca_hundred$ $acot_light_armor_pilot_se$"
+ pmca_hundred_acot_light_armor_pilot_se_plural: "$acot_light_armor_pilot_se_plural$"
+ pmca_hundred_acot_light_armor_pilot_se_desc: "$acot_light_armor_pilot_se_desc$"
 
 
  ########################
@@ -112,6 +222,17 @@
  pmca_hundred_acot_heavy_armor_desc: "$acot_heavy_armor_desc$"
 
 
+ ##############################
+ ### ACOT_HEAVY_ARMOR_PILOT ###
+ ##############################
+ pmca_ten_acot_heavy_armor_pilot: "$pmca_ten$ $acot_heavy_armor_pilot$"
+ pmca_ten_acot_heavy_armor_pilot_plural: "$acot_heavy_armor_pilot_plural$"
+ pmca_ten_acot_heavy_armor_pilot_desc: "$acot_heavy_armor_pilot_desc$"
+ pmca_hundred_acot_heavy_armor_pilot: "$pmca_hundred$ $acot_heavy_armor_pilot$"
+ pmca_hundred_acot_heavy_armor_pilot_plural: "$acot_heavy_armor_pilot_plural$"
+ pmca_hundred_acot_heavy_armor_pilot_desc: "$acot_heavy_armor_pilot_desc$"
+
+
  ###########################
  ### ACOT_HEAVY_ARMOR_DM ###
  ###########################
@@ -121,6 +242,17 @@
  pmca_hundred_acot_heavy_armor_dm: "$pmca_hundred$ $acot_heavy_armor_dm$"
  pmca_hundred_acot_heavy_armor_dm_plural: "$acot_heavy_armor_dm_plural$"
  pmca_hundred_acot_heavy_armor_dm_desc: "$acot_heavy_armor_dm_desc$"
+
+
+ #################################
+ ### ACOT_HEAVY_ARMOR_PILOT_DM ###
+ #################################
+ pmca_ten_acot_heavy_armor_pilot_dm: "$pmca_ten$ $acot_heavy_armor_pilot_dm$"
+ pmca_ten_acot_heavy_armor_pilot_dm_plural: "$acot_heavy_armor_pilot_dm_plural$"
+ pmca_ten_acot_heavy_armor_pilot_dm_desc: "$acot_heavy_armor_pilot_dm_desc$"
+ pmca_hundred_acot_heavy_armor_pilot_dm: "$pmca_hundred$ $acot_heavy_armor_pilot_dm$"
+ pmca_hundred_acot_heavy_armor_pilot_dm_plural: "$acot_heavy_armor_pilot_dm_plural$"
+ pmca_hundred_acot_heavy_armor_pilot_dm_desc: "$acot_heavy_armor_pilot_dm_desc$"
 
 
  ###########################
@@ -134,6 +266,17 @@
  pmca_hundred_acot_heavy_armor_ae_desc: "$acot_heavy_armor_ae_desc$"
 
 
+ #################################
+ ### ACOT_HEAVY_ARMOR_PILOT_AE ###
+ #################################
+ pmca_ten_acot_heavy_armor_pilot_ae: "$pmca_ten$ $acot_heavy_armor_pilot_ae$"
+ pmca_ten_acot_heavy_armor_pilot_ae_plural: "$acot_heavy_armor_pilot_ae_plural$"
+ pmca_ten_acot_heavy_armor_pilot_ae_desc: "$acot_heavy_armor_pilot_ae_desc$"
+ pmca_hundred_acot_heavy_armor_pilot_ae: "$pmca_hundred$ $acot_heavy_armor_pilot_ae$"
+ pmca_hundred_acot_heavy_armor_pilot_ae_plural: "$acot_heavy_armor_pilot_ae_plural$"
+ pmca_hundred_acot_heavy_armor_pilot_ae_desc: "$acot_heavy_armor_pilot_ae_desc$"
+
+
  ###########################
  ### ACOT_HEAVY_ARMOR_SE ###
  ###########################
@@ -143,6 +286,17 @@
  pmca_hundred_acot_heavy_armor_se: "$pmca_hundred$ $acot_heavy_armor_se$"
  pmca_hundred_acot_heavy_armor_se_plural: "$acot_heavy_armor_se_plural$"
  pmca_hundred_acot_heavy_armor_se_desc: "$acot_heavy_armor_se_desc$"
+
+
+ #################################
+ ### ACOT_HEAVY_ARMOR_PILOT_SE ###
+ #################################
+ pmca_ten_acot_heavy_armor_pilot_se: "$pmca_ten$ $acot_heavy_armor_pilot_se$"
+ pmca_ten_acot_heavy_armor_pilot_se_plural: "$acot_heavy_armor_pilot_se_plural$"
+ pmca_ten_acot_heavy_armor_pilot_se_desc: "$acot_heavy_armor_pilot_se_desc$"
+ pmca_hundred_acot_heavy_armor_pilot_se: "$pmca_hundred$ $acot_heavy_armor_pilot_se$"
+ pmca_hundred_acot_heavy_armor_pilot_se_plural: "$acot_heavy_armor_pilot_se_plural$"
+ pmca_hundred_acot_heavy_armor_pilot_se_desc: "$acot_heavy_armor_pilot_se_desc$"
 
 
  #######################
@@ -220,6 +374,50 @@
  pmca_hundred_acot_droid_army_se: "$pmca_hundred$ $acot_droid_army_se$"
  pmca_hundred_acot_droid_army_se_plural: "$acot_droid_army_se_plural$"
  pmca_hundred_acot_droid_army_se_desc: "$acot_droid_army_se_desc$"
+
+
+ #############################
+ ### ACOT_DROID_ARMY_TORSO ###
+ #############################
+ pmca_ten_acot_droid_army_torso: "$pmca_ten$ $acot_droid_army_torso$"
+ pmca_ten_acot_droid_army_torso_plural: "$acot_droid_army_torso_plural$"
+ pmca_ten_acot_droid_army_torso_desc: "$acot_droid_army_torso_desc$"
+ pmca_hundred_acot_droid_army_torso: "$pmca_hundred$ $acot_droid_army_torso$"
+ pmca_hundred_acot_droid_army_torso_plural: "$acot_droid_army_torso_plural$"
+ pmca_hundred_acot_droid_army_torso_desc: "$acot_droid_army_torso_desc$"
+
+
+ ################################
+ ### ACOT_DROID_ARMY_TORSO_DM ###
+ ################################
+ pmca_ten_acot_droid_army_torso_dm: "$pmca_ten$ $acot_droid_army_torso_dm$"
+ pmca_ten_acot_droid_army_torso_dm_plural: "$acot_droid_army_torso_dm_plural$"
+ pmca_ten_acot_droid_army_torso_dm_desc: "$acot_droid_army_torso_dm_desc$"
+ pmca_hundred_acot_droid_army_torso_dm: "$pmca_hundred$ $acot_droid_army_torso_dm$"
+ pmca_hundred_acot_droid_army_torso_dm_plural: "$acot_droid_army_torso_dm_plural$"
+ pmca_hundred_acot_droid_army_torso_dm_desc: "$acot_droid_army_torso_dm_desc$"
+
+
+ ################################
+ ### ACOT_DROID_ARMY_TORSO_AE ###
+ ################################
+ pmca_ten_acot_droid_army_torso_ae: "$pmca_ten$ $acot_droid_army_torso_ae$"
+ pmca_ten_acot_droid_army_torso_ae_plural: "$acot_droid_army_torso_ae_plural$"
+ pmca_ten_acot_droid_army_torso_ae_desc: "$acot_droid_army_torso_ae_desc$"
+ pmca_hundred_acot_droid_army_torso_ae: "$pmca_hundred$ $acot_droid_army_torso_ae$"
+ pmca_hundred_acot_droid_army_torso_ae_plural: "$acot_droid_army_torso_ae_plural$"
+ pmca_hundred_acot_droid_army_torso_ae_desc: "$acot_droid_army_torso_ae_desc$"
+
+
+ ################################
+ ### ACOT_DROID_ARMY_TORSO_SE ###
+ ################################
+ pmca_ten_acot_droid_army_torso_se: "$pmca_ten$ $acot_droid_army_torso_se$"
+ pmca_ten_acot_droid_army_torso_se_plural: "$acot_droid_army_torso_se_plural$"
+ pmca_ten_acot_droid_army_torso_se_desc: "$acot_droid_army_torso_se_desc$"
+ pmca_hundred_acot_droid_army_torso_se: "$pmca_hundred$ $acot_droid_army_torso_se$"
+ pmca_hundred_acot_droid_army_torso_se_plural: "$acot_droid_army_torso_se_plural$"
+ pmca_hundred_acot_droid_army_torso_se_desc: "$acot_droid_army_torso_se_desc$"
 
 
  #######################
@@ -321,6 +519,17 @@
  pmca_hundred_acot_army_mat_desc: "$acot_army_mat_desc$"
 
 
+ ###########################
+ ### ACOT_ARMY_MAT_PILOT ###
+ ###########################
+ pmca_ten_acot_army_mat_pilot: "$pmca_ten$ $acot_army_mat_pilot$"
+ pmca_ten_acot_army_mat_pilot_plural: "$acot_army_mat_pilot_plural$"
+ pmca_ten_acot_army_mat_pilot_desc: "$acot_army_mat_pilot_desc$"
+ pmca_hundred_acot_army_mat_pilot: "$pmca_hundred$ $acot_army_mat_pilot$"
+ pmca_hundred_acot_army_mat_pilot_plural: "$acot_army_mat_pilot_plural$"
+ pmca_hundred_acot_army_mat_pilot_desc: "$acot_army_mat_pilot_desc$"
+
+
  ########################
  ### ACOT_ARMY_MAT_SE ###
  ########################
@@ -330,6 +539,17 @@
  pmca_hundred_acot_army_mat_se: "$pmca_hundred$ $acot_army_mat_se$"
  pmca_hundred_acot_army_mat_se_plural: "$acot_army_mat_se_plural$"
  pmca_hundred_acot_army_mat_se_desc: "$acot_army_mat_se_desc$"
+
+
+ ##############################
+ ### ACOT_ARMY_MAT_PILOT_SE ###
+ ##############################
+ pmca_ten_acot_army_mat_pilot_se: "$pmca_ten$ $acot_army_mat_pilot_se$"
+ pmca_ten_acot_army_mat_pilot_se_plural: "$acot_army_mat_pilot_se_plural$"
+ pmca_ten_acot_army_mat_pilot_se_desc: "$acot_army_mat_pilot_se_desc$"
+ pmca_hundred_acot_army_mat_pilot_se: "$pmca_hundred$ $acot_army_mat_pilot_se$"
+ pmca_hundred_acot_army_mat_pilot_se_plural: "$acot_army_mat_pilot_se_plural$"
+ pmca_hundred_acot_army_mat_pilot_se_desc: "$acot_army_mat_pilot_se_desc$"
 
 
  ########################
@@ -409,6 +629,17 @@
  pmca_hundred_acot_army_ega_desc: "$acot_army_ega_desc$"
 
 
+ ###########################
+ ### ACOT_ARMY_EGA_PILOT ###
+ ###########################
+ pmca_ten_acot_army_ega_pilot: "$pmca_ten$ $acot_army_ega_pilot$"
+ pmca_ten_acot_army_ega_pilot_plural: "$acot_army_ega_pilot_plural$"
+ pmca_ten_acot_army_ega_pilot_desc: "$acot_army_ega_pilot_desc$"
+ pmca_hundred_acot_army_ega_pilot: "$pmca_hundred$ $acot_army_ega_pilot$"
+ pmca_hundred_acot_army_ega_pilot_plural: "$acot_army_ega_pilot_plural$"
+ pmca_hundred_acot_army_ega_pilot_desc: "$acot_army_ega_pilot_desc$"
+
+
  ########################
  ### ACOT_ARMY_EGA_SE ###
  ########################
@@ -418,6 +649,17 @@
  pmca_hundred_acot_army_ega_se: "$pmca_hundred$ $acot_army_ega_se$"
  pmca_hundred_acot_army_ega_se_plural: "$acot_army_ega_se_plural$"
  pmca_hundred_acot_army_ega_se_desc: "$acot_army_ega_se_desc$"
+
+
+ ##############################
+ ### ACOT_ARMY_EGA_PILOT_SE ###
+ ##############################
+ pmca_ten_acot_army_ega_pilot_se: "$pmca_ten$ $acot_army_ega_pilot_se$"
+ pmca_ten_acot_army_ega_pilot_se_plural: "$acot_army_ega_pilot_se_plural$"
+ pmca_ten_acot_army_ega_pilot_se_desc: "$acot_army_ega_pilot_se_desc$"
+ pmca_hundred_acot_army_ega_pilot_se: "$pmca_hundred$ $acot_army_ega_pilot_se$"
+ pmca_hundred_acot_army_ega_pilot_se_plural: "$acot_army_ega_pilot_se_plural$"
+ pmca_hundred_acot_army_ega_pilot_se_desc: "$acot_army_ega_pilot_se_desc$"
 
 
  ######################
@@ -508,6 +750,28 @@
  pmca_hundred_acot_army_cyborg_se_desc: "$acot_army_cyborg_se_desc$"
 
 
+ ##############################
+ ### ACOT_ARMY_CYBORG_TORSO ###
+ ##############################
+ pmca_ten_acot_army_cyborg_torso: "$pmca_ten$ $acot_army_cyborg_torso$"
+ pmca_ten_acot_army_cyborg_torso_plural: "$acot_army_cyborg_torso_plural$"
+ pmca_ten_acot_army_cyborg_torso_desc: "$acot_army_cyborg_torso_desc$"
+ pmca_hundred_acot_army_cyborg_torso: "$pmca_hundred$ $acot_army_cyborg_torso$"
+ pmca_hundred_acot_army_cyborg_torso_plural: "$acot_army_cyborg_torso_plural$"
+ pmca_hundred_acot_army_cyborg_torso_desc: "$acot_army_cyborg_torso_desc$"
+
+
+ #################################
+ ### ACOT_ARMY_CYBORG_TORSO_SE ###
+ #################################
+ pmca_ten_acot_army_cyborg_torso_se: "$pmca_ten$ $acot_army_cyborg_torso_se$"
+ pmca_ten_acot_army_cyborg_torso_se_plural: "$acot_army_cyborg_torso_se_plural$"
+ pmca_ten_acot_army_cyborg_torso_se_desc: "$acot_army_cyborg_torso_se_desc$"
+ pmca_hundred_acot_army_cyborg_torso_se: "$pmca_hundred$ $acot_army_cyborg_torso_se$"
+ pmca_hundred_acot_army_cyborg_torso_se_plural: "$acot_army_cyborg_torso_se_plural$"
+ pmca_hundred_acot_army_cyborg_torso_se_desc: "$acot_army_cyborg_torso_se_desc$"
+
+
  #######################
  ### ACOT_ARMY_SYNTH ###
  #######################
@@ -528,6 +792,28 @@
  pmca_hundred_acot_army_synth_se: "$pmca_hundred$ $acot_army_synth_se$"
  pmca_hundred_acot_army_synth_se_plural: "$acot_army_synth_se_plural$"
  pmca_hundred_acot_army_synth_se_desc: "$acot_army_synth_se_desc$"
+
+
+ #############################
+ ### ACOT_ARMY_SYNTH_TORSO ###
+ #############################
+ pmca_ten_acot_army_synth_torso: "$pmca_ten$ $acot_army_synth_torso$"
+ pmca_ten_acot_army_synth_torso_plural: "$acot_army_synth_torso_plural$"
+ pmca_ten_acot_army_synth_torso_desc: "$acot_army_synth_torso_desc$"
+ pmca_hundred_acot_army_synth_torso: "$pmca_hundred$ $acot_army_synth_torso$"
+ pmca_hundred_acot_army_synth_torso_plural: "$acot_army_synth_torso_plural$"
+ pmca_hundred_acot_army_synth_torso_desc: "$acot_army_synth_torso_desc$"
+
+
+ ################################
+ ### ACOT_ARMY_SYNTH_TORSO_SE ###
+ ################################
+ pmca_ten_acot_army_synth_torso_se: "$pmca_ten$ $acot_army_synth_torso_se$"
+ pmca_ten_acot_army_synth_torso_se_plural: "$acot_army_synth_torso_se_plural$"
+ pmca_ten_acot_army_synth_torso_se_desc: "$acot_army_synth_torso_se_desc$"
+ pmca_hundred_acot_army_synth_torso_se: "$pmca_hundred$ $acot_army_synth_torso_se$"
+ pmca_hundred_acot_army_synth_torso_se_plural: "$acot_army_synth_torso_se_plural$"
+ pmca_hundred_acot_army_synth_torso_se_desc: "$acot_army_synth_torso_se_desc$"
 
 
  #####################
@@ -618,6 +904,50 @@
  pmca_hundred_acot_army_machine_se_desc: "$acot_army_machine_se_desc$"
 
 
+ ###############################
+ ### ACOT_ARMY_MACHINE_TORSO ###
+ ###############################
+ pmca_ten_acot_army_machine_torso: "$pmca_ten$ $acot_army_machine_torso$"
+ pmca_ten_acot_army_machine_torso_plural: "$acot_army_machine_torso_plural$"
+ pmca_ten_acot_army_machine_torso_desc: "$acot_army_machine_torso_desc$"
+ pmca_hundred_acot_army_machine_torso: "$pmca_hundred$ $acot_army_machine_torso$"
+ pmca_hundred_acot_army_machine_torso_plural: "$acot_army_machine_torso_plural$"
+ pmca_hundred_acot_army_machine_torso_desc: "$acot_army_machine_torso_desc$"
+
+
+ ##################################
+ ### ACOT_ARMY_MACHINE_TORSO_DM ###
+ ##################################
+ pmca_ten_acot_army_machine_torso_dm: "$pmca_ten$ $acot_army_machine_torso_dm$"
+ pmca_ten_acot_army_machine_torso_dm_plural: "$acot_army_machine_torso_dm_plural$"
+ pmca_ten_acot_army_machine_torso_dm_desc: "$acot_army_machine_torso_dm_desc$"
+ pmca_hundred_acot_army_machine_torso_dm: "$pmca_hundred$ $acot_army_machine_torso_dm$"
+ pmca_hundred_acot_army_machine_torso_dm_plural: "$acot_army_machine_torso_dm_plural$"
+ pmca_hundred_acot_army_machine_torso_dm_desc: "$acot_army_machine_torso_dm_desc$"
+
+
+ ##################################
+ ### ACOT_ARMY_MACHINE_TORSO_AE ###
+ ##################################
+ pmca_ten_acot_army_machine_torso_ae: "$pmca_ten$ $acot_army_machine_torso_ae$"
+ pmca_ten_acot_army_machine_torso_ae_plural: "$acot_army_machine_torso_ae_plural$"
+ pmca_ten_acot_army_machine_torso_ae_desc: "$acot_army_machine_torso_ae_desc$"
+ pmca_hundred_acot_army_machine_torso_ae: "$pmca_hundred$ $acot_army_machine_torso_ae$"
+ pmca_hundred_acot_army_machine_torso_ae_plural: "$acot_army_machine_torso_ae_plural$"
+ pmca_hundred_acot_army_machine_torso_ae_desc: "$acot_army_machine_torso_ae_desc$"
+
+
+ ##################################
+ ### ACOT_ARMY_MACHINE_TORSO_SE ###
+ ##################################
+ pmca_ten_acot_army_machine_torso_se: "$pmca_ten$ $acot_army_machine_torso_se$"
+ pmca_ten_acot_army_machine_torso_se_plural: "$acot_army_machine_torso_se_plural$"
+ pmca_ten_acot_army_machine_torso_se_desc: "$acot_army_machine_torso_se_desc$"
+ pmca_hundred_acot_army_machine_torso_se: "$pmca_hundred$ $acot_army_machine_torso_se$"
+ pmca_hundred_acot_army_machine_torso_se_plural: "$acot_army_machine_torso_se_plural$"
+ pmca_hundred_acot_army_machine_torso_se_desc: "$acot_army_machine_torso_se_desc$"
+
+
  #############################
  ### ACOT_ARMY_MACHINE_SPM ###
  #############################
@@ -693,6 +1023,50 @@
  pmca_hundred_acot_army_machine_light_se: "$pmca_hundred$ $acot_army_machine_light_se$"
  pmca_hundred_acot_army_machine_light_se_plural: "$acot_army_machine_light_se_plural$"
  pmca_hundred_acot_army_machine_light_se_desc: "$acot_army_machine_light_se_desc$"
+
+
+ #####################################
+ ### ACOT_ARMY_MACHINE_LIGHT_TORSO ###
+ #####################################
+ pmca_ten_acot_army_machine_light_torso: "$pmca_ten$ $acot_army_machine_light_torso$"
+ pmca_ten_acot_army_machine_light_torso_plural: "$acot_army_machine_light_torso_plural$"
+ pmca_ten_acot_army_machine_light_torso_desc: "$acot_army_machine_light_torso_desc$"
+ pmca_hundred_acot_army_machine_light_torso: "$pmca_hundred$ $acot_army_machine_light_torso$"
+ pmca_hundred_acot_army_machine_light_torso_plural: "$acot_army_machine_light_torso_plural$"
+ pmca_hundred_acot_army_machine_light_torso_desc: "$acot_army_machine_light_torso_desc$"
+
+
+ ########################################
+ ### ACOT_ARMY_MACHINE_LIGHT_TORSO_DM ###
+ ########################################
+ pmca_ten_acot_army_machine_light_torso_dm: "$pmca_ten$ $acot_army_machine_light_torso_dm$"
+ pmca_ten_acot_army_machine_light_torso_dm_plural: "$acot_army_machine_light_torso_dm_plural$"
+ pmca_ten_acot_army_machine_light_torso_dm_desc: "$acot_army_machine_light_torso_dm_desc$"
+ pmca_hundred_acot_army_machine_light_torso_dm: "$pmca_hundred$ $acot_army_machine_light_torso_dm$"
+ pmca_hundred_acot_army_machine_light_torso_dm_plural: "$acot_army_machine_light_torso_dm_plural$"
+ pmca_hundred_acot_army_machine_light_torso_dm_desc: "$acot_army_machine_light_torso_dm_desc$"
+
+
+ ########################################
+ ### ACOT_ARMY_MACHINE_LIGHT_TORSO_AE ###
+ ########################################
+ pmca_ten_acot_army_machine_light_torso_ae: "$pmca_ten$ $acot_army_machine_light_torso_ae$"
+ pmca_ten_acot_army_machine_light_torso_ae_plural: "$acot_army_machine_light_torso_ae_plural$"
+ pmca_ten_acot_army_machine_light_torso_ae_desc: "$acot_army_machine_light_torso_ae_desc$"
+ pmca_hundred_acot_army_machine_light_torso_ae: "$pmca_hundred$ $acot_army_machine_light_torso_ae$"
+ pmca_hundred_acot_army_machine_light_torso_ae_plural: "$acot_army_machine_light_torso_ae_plural$"
+ pmca_hundred_acot_army_machine_light_torso_ae_desc: "$acot_army_machine_light_torso_ae_desc$"
+
+
+ ########################################
+ ### ACOT_ARMY_MACHINE_LIGHT_TORSO_SE ###
+ ########################################
+ pmca_ten_acot_army_machine_light_torso_se: "$pmca_ten$ $acot_army_machine_light_torso_se$"
+ pmca_ten_acot_army_machine_light_torso_se_plural: "$acot_army_machine_light_torso_se_plural$"
+ pmca_ten_acot_army_machine_light_torso_se_desc: "$acot_army_machine_light_torso_se_desc$"
+ pmca_hundred_acot_army_machine_light_torso_se: "$pmca_hundred$ $acot_army_machine_light_torso_se$"
+ pmca_hundred_acot_army_machine_light_torso_se_plural: "$acot_army_machine_light_torso_se_plural$"
+ pmca_hundred_acot_army_machine_light_torso_se_desc: "$acot_army_machine_light_torso_se_desc$"
 
 
  ##################################
@@ -772,6 +1146,50 @@
  pmca_hundred_acot_army_machine_cyborg_se_desc: "$acot_army_machine_cyborg_se_desc$"
 
 
+ ######################################
+ ### ACOT_ARMY_MACHINE_CYBORG_TORSO ###
+ ######################################
+ pmca_ten_acot_army_machine_cyborg_torso: "$pmca_ten$ $acot_army_machine_cyborg_torso$"
+ pmca_ten_acot_army_machine_cyborg_torso_plural: "$acot_army_machine_cyborg_torso_plural$"
+ pmca_ten_acot_army_machine_cyborg_torso_desc: "$acot_army_machine_cyborg_torso_desc$"
+ pmca_hundred_acot_army_machine_cyborg_torso: "$pmca_hundred$ $acot_army_machine_cyborg_torso$"
+ pmca_hundred_acot_army_machine_cyborg_torso_plural: "$acot_army_machine_cyborg_torso_plural$"
+ pmca_hundred_acot_army_machine_cyborg_torso_desc: "$acot_army_machine_cyborg_torso_desc$"
+
+
+ #########################################
+ ### ACOT_ARMY_MACHINE_CYBORG_TORSO_DM ###
+ #########################################
+ pmca_ten_acot_army_machine_cyborg_torso_dm: "$pmca_ten$ $acot_army_machine_cyborg_torso_dm$"
+ pmca_ten_acot_army_machine_cyborg_torso_dm_plural: "$acot_army_machine_cyborg_torso_dm_plural$"
+ pmca_ten_acot_army_machine_cyborg_torso_dm_desc: "$acot_army_machine_cyborg_torso_dm_desc$"
+ pmca_hundred_acot_army_machine_cyborg_torso_dm: "$pmca_hundred$ $acot_army_machine_cyborg_torso_dm$"
+ pmca_hundred_acot_army_machine_cyborg_torso_dm_plural: "$acot_army_machine_cyborg_torso_dm_plural$"
+ pmca_hundred_acot_army_machine_cyborg_torso_dm_desc: "$acot_army_machine_cyborg_torso_dm_desc$"
+
+
+ #########################################
+ ### ACOT_ARMY_MACHINE_CYBORG_TORSO_AE ###
+ #########################################
+ pmca_ten_acot_army_machine_cyborg_torso_ae: "$pmca_ten$ $acot_army_machine_cyborg_torso_ae$"
+ pmca_ten_acot_army_machine_cyborg_torso_ae_plural: "$acot_army_machine_cyborg_torso_ae_plural$"
+ pmca_ten_acot_army_machine_cyborg_torso_ae_desc: "$acot_army_machine_cyborg_torso_ae_desc$"
+ pmca_hundred_acot_army_machine_cyborg_torso_ae: "$pmca_hundred$ $acot_army_machine_cyborg_torso_ae$"
+ pmca_hundred_acot_army_machine_cyborg_torso_ae_plural: "$acot_army_machine_cyborg_torso_ae_plural$"
+ pmca_hundred_acot_army_machine_cyborg_torso_ae_desc: "$acot_army_machine_cyborg_torso_ae_desc$"
+
+
+ #########################################
+ ### ACOT_ARMY_MACHINE_CYBORG_TORSO_SE ###
+ #########################################
+ pmca_ten_acot_army_machine_cyborg_torso_se: "$pmca_ten$ $acot_army_machine_cyborg_torso_se$"
+ pmca_ten_acot_army_machine_cyborg_torso_se_plural: "$acot_army_machine_cyborg_torso_se_plural$"
+ pmca_ten_acot_army_machine_cyborg_torso_se_desc: "$acot_army_machine_cyborg_torso_se_desc$"
+ pmca_hundred_acot_army_machine_cyborg_torso_se: "$pmca_hundred$ $acot_army_machine_cyborg_torso_se$"
+ pmca_hundred_acot_army_machine_cyborg_torso_se_plural: "$acot_army_machine_cyborg_torso_se_plural$"
+ pmca_hundred_acot_army_machine_cyborg_torso_se_desc: "$acot_army_machine_cyborg_torso_se_desc$"
+
+
  #################################
  ### ACOT_ARMY_MACHINE_SPECIAL ###
  #################################
@@ -792,6 +1210,28 @@
  pmca_hundred_acot_army_machine_special_se: "$pmca_hundred$ $acot_army_machine_special_se$"
  pmca_hundred_acot_army_machine_special_se_plural: "$acot_army_machine_special_se_plural$"
  pmca_hundred_acot_army_machine_special_se_desc: "$acot_army_machine_special_se_desc$"
+
+
+ #######################################
+ ### ACOT_ARMY_MACHINE_SPECIAL_TORSO ###
+ #######################################
+ pmca_ten_acot_army_machine_special_torso: "$pmca_ten$ $acot_army_machine_special_torso$"
+ pmca_ten_acot_army_machine_special_torso_plural: "$acot_army_machine_special_torso_plural$"
+ pmca_ten_acot_army_machine_special_torso_desc: "$acot_army_machine_special_torso_desc$"
+ pmca_hundred_acot_army_machine_special_torso: "$pmca_hundred$ $acot_army_machine_special_torso$"
+ pmca_hundred_acot_army_machine_special_torso_plural: "$acot_army_machine_special_torso_plural$"
+ pmca_hundred_acot_army_machine_special_torso_desc: "$acot_army_machine_special_torso_desc$"
+
+
+ ##########################################
+ ### ACOT_ARMY_MACHINE_SPECIAL_TORSO_SE ###
+ ##########################################
+ pmca_ten_acot_army_machine_special_torso_se: "$pmca_ten$ $acot_army_machine_special_torso_se$"
+ pmca_ten_acot_army_machine_special_torso_se_plural: "$acot_army_machine_special_torso_se_plural$"
+ pmca_ten_acot_army_machine_special_torso_se_desc: "$acot_army_machine_special_torso_se_desc$"
+ pmca_hundred_acot_army_machine_special_torso_se: "$pmca_hundred$ $acot_army_machine_special_torso_se$"
+ pmca_hundred_acot_army_machine_special_torso_se_plural: "$acot_army_machine_special_torso_se_plural$"
+ pmca_hundred_acot_army_machine_special_torso_se_desc: "$acot_army_machine_special_torso_se_desc$"
 
 
  ############################
@@ -902,6 +1342,50 @@
  pmca_hundred_acot_hive_swarmer_se: "$pmca_hundred$ $acot_hive_swarmer_se$"
  pmca_hundred_acot_hive_swarmer_se_plural: "$acot_hive_swarmer_se_plural$"
  pmca_hundred_acot_hive_swarmer_se_desc: "$acot_hive_swarmer_se_desc$"
+
+
+ #############################
+ ### ACOT_HIVE_BROODLING_1 ###
+ #############################
+ pmca_ten_acot_hive_broodling_1: "$pmca_ten$ $acot_hive_broodling_1$"
+ pmca_ten_acot_hive_broodling_1_plural: "$acot_hive_broodling_1_plural$"
+ pmca_ten_acot_hive_broodling_1_desc: "$acot_hive_broodling_1_desc$"
+ pmca_hundred_acot_hive_broodling_1: "$pmca_hundred$ $acot_hive_broodling_1$"
+ pmca_hundred_acot_hive_broodling_1_plural: "$acot_hive_broodling_1_plural$"
+ pmca_hundred_acot_hive_broodling_1_desc: "$acot_hive_broodling_1_desc$"
+
+
+ ##############################
+ ### ACOT_HIVE_BROODLING_DM ###
+ ##############################
+ pmca_ten_acot_hive_broodling_dm: "$pmca_ten$ $acot_hive_broodling_dm$"
+ pmca_ten_acot_hive_broodling_dm_plural: "$acot_hive_broodling_dm_plural$"
+ pmca_ten_acot_hive_broodling_dm_desc: "$acot_hive_broodling_dm_desc$"
+ pmca_hundred_acot_hive_broodling_dm: "$pmca_hundred$ $acot_hive_broodling_dm$"
+ pmca_hundred_acot_hive_broodling_dm_plural: "$acot_hive_broodling_dm_plural$"
+ pmca_hundred_acot_hive_broodling_dm_desc: "$acot_hive_broodling_dm_desc$"
+
+
+ ##############################
+ ### ACOT_HIVE_BROODLING_AE ###
+ ##############################
+ pmca_ten_acot_hive_broodling_ae: "$pmca_ten$ $acot_hive_broodling_ae$"
+ pmca_ten_acot_hive_broodling_ae_plural: "$acot_hive_broodling_ae_plural$"
+ pmca_ten_acot_hive_broodling_ae_desc: "$acot_hive_broodling_ae_desc$"
+ pmca_hundred_acot_hive_broodling_ae: "$pmca_hundred$ $acot_hive_broodling_ae$"
+ pmca_hundred_acot_hive_broodling_ae_plural: "$acot_hive_broodling_ae_plural$"
+ pmca_hundred_acot_hive_broodling_ae_desc: "$acot_hive_broodling_ae_desc$"
+
+
+ ##############################
+ ### ACOT_HIVE_BROODLING_SE ###
+ ##############################
+ pmca_ten_acot_hive_broodling_se: "$pmca_ten$ $acot_hive_broodling_se$"
+ pmca_ten_acot_hive_broodling_se_plural: "$acot_hive_broodling_se_plural$"
+ pmca_ten_acot_hive_broodling_se_desc: "$acot_hive_broodling_se_desc$"
+ pmca_hundred_acot_hive_broodling_se: "$pmca_hundred$ $acot_hive_broodling_se$"
+ pmca_hundred_acot_hive_broodling_se_plural: "$acot_hive_broodling_se_plural$"
+ pmca_hundred_acot_hive_broodling_se_desc: "$acot_hive_broodling_se_desc$"
 
 
  #################################
@@ -1025,6 +1509,50 @@
  pmca_hundred_acot_hive_heavy_se_desc: "$acot_hive_heavy_se_desc$"
 
 
+ ################################
+ ### ACOT_HIVE_HEAVY_COCOON_1 ###
+ ################################
+ pmca_ten_acot_hive_heavy_cocoon_1: "$pmca_ten$ $acot_hive_heavy_cocoon_1$"
+ pmca_ten_acot_hive_heavy_cocoon_1_plural: "$acot_hive_heavy_cocoon_1_plural$"
+ pmca_ten_acot_hive_heavy_cocoon_1_desc: "$acot_hive_heavy_cocoon_1_desc$"
+ pmca_hundred_acot_hive_heavy_cocoon_1: "$pmca_hundred$ $acot_hive_heavy_cocoon_1$"
+ pmca_hundred_acot_hive_heavy_cocoon_1_plural: "$acot_hive_heavy_cocoon_1_plural$"
+ pmca_hundred_acot_hive_heavy_cocoon_1_desc: "$acot_hive_heavy_cocoon_1_desc$"
+
+
+ #################################
+ ### ACOT_HIVE_HEAVY_COCOON_DM ###
+ #################################
+ pmca_ten_acot_hive_heavy_cocoon_dm: "$pmca_ten$ $acot_hive_heavy_cocoon_dm$"
+ pmca_ten_acot_hive_heavy_cocoon_dm_plural: "$acot_hive_heavy_cocoon_dm_plural$"
+ pmca_ten_acot_hive_heavy_cocoon_dm_desc: "$acot_hive_heavy_cocoon_dm_desc$"
+ pmca_hundred_acot_hive_heavy_cocoon_dm: "$pmca_hundred$ $acot_hive_heavy_cocoon_dm$"
+ pmca_hundred_acot_hive_heavy_cocoon_dm_plural: "$acot_hive_heavy_cocoon_dm_plural$"
+ pmca_hundred_acot_hive_heavy_cocoon_dm_desc: "$acot_hive_heavy_cocoon_dm_desc$"
+
+
+ #################################
+ ### ACOT_HIVE_HEAVY_COCOON_AE ###
+ #################################
+ pmca_ten_acot_hive_heavy_cocoon_ae: "$pmca_ten$ $acot_hive_heavy_cocoon_ae$"
+ pmca_ten_acot_hive_heavy_cocoon_ae_plural: "$acot_hive_heavy_cocoon_ae_plural$"
+ pmca_ten_acot_hive_heavy_cocoon_ae_desc: "$acot_hive_heavy_cocoon_ae_desc$"
+ pmca_hundred_acot_hive_heavy_cocoon_ae: "$pmca_hundred$ $acot_hive_heavy_cocoon_ae$"
+ pmca_hundred_acot_hive_heavy_cocoon_ae_plural: "$acot_hive_heavy_cocoon_ae_plural$"
+ pmca_hundred_acot_hive_heavy_cocoon_ae_desc: "$acot_hive_heavy_cocoon_ae_desc$"
+
+
+ #################################
+ ### ACOT_HIVE_HEAVY_COCOON_SE ###
+ #################################
+ pmca_ten_acot_hive_heavy_cocoon_se: "$pmca_ten$ $acot_hive_heavy_cocoon_se$"
+ pmca_ten_acot_hive_heavy_cocoon_se_plural: "$acot_hive_heavy_cocoon_se_plural$"
+ pmca_ten_acot_hive_heavy_cocoon_se_desc: "$acot_hive_heavy_cocoon_se_desc$"
+ pmca_hundred_acot_hive_heavy_cocoon_se: "$pmca_hundred$ $acot_hive_heavy_cocoon_se$"
+ pmca_hundred_acot_hive_heavy_cocoon_se_plural: "$acot_hive_heavy_cocoon_se_plural$"
+ pmca_hundred_acot_hive_heavy_cocoon_se_desc: "$acot_hive_heavy_cocoon_se_desc$"
+
+
  ###########################
  ### ACOT_ARMY_HIVE_GENE ###
  ###########################
@@ -1058,6 +1586,50 @@
  pmca_hundred_acot_army_hive_gene_se_desc: "$acot_army_hive_gene_se_desc$"
 
 
+ ##################################
+ ### ACOT_ARMY_HIVE_GENE_COCOON ###
+ ##################################
+ pmca_ten_acot_army_hive_gene_cocoon: "$pmca_ten$ $acot_army_hive_gene_cocoon$"
+ pmca_ten_acot_army_hive_gene_cocoon_plural: "$acot_army_hive_gene_cocoon_plural$"
+ pmca_ten_acot_army_hive_gene_cocoon_desc: "$acot_army_hive_gene_cocoon_desc$"
+ pmca_hundred_acot_army_hive_gene_cocoon: "$pmca_hundred$ $acot_army_hive_gene_cocoon$"
+ pmca_hundred_acot_army_hive_gene_cocoon_plural: "$acot_army_hive_gene_cocoon_plural$"
+ pmca_hundred_acot_army_hive_gene_cocoon_desc: "$acot_army_hive_gene_cocoon_desc$"
+
+
+ #####################################
+ ### ACOT_ARMY_HIVE_GENE_COCOON_DM ###
+ #####################################
+ pmca_ten_acot_army_hive_gene_cocoon_dm: "$pmca_ten$ $acot_army_hive_gene_cocoon_dm$"
+ pmca_ten_acot_army_hive_gene_cocoon_dm_plural: "$acot_army_hive_gene_cocoon_dm_plural$"
+ pmca_ten_acot_army_hive_gene_cocoon_dm_desc: "$acot_army_hive_gene_cocoon_dm_desc$"
+ pmca_hundred_acot_army_hive_gene_cocoon_dm: "$pmca_hundred$ $acot_army_hive_gene_cocoon_dm$"
+ pmca_hundred_acot_army_hive_gene_cocoon_dm_plural: "$acot_army_hive_gene_cocoon_dm_plural$"
+ pmca_hundred_acot_army_hive_gene_cocoon_dm_desc: "$acot_army_hive_gene_cocoon_dm_desc$"
+
+
+ #####################################
+ ### ACOT_ARMY_HIVE_GENE_COCOON_AE ###
+ #####################################
+ pmca_ten_acot_army_hive_gene_cocoon_ae: "$pmca_ten$ $acot_army_hive_gene_cocoon_ae$"
+ pmca_ten_acot_army_hive_gene_cocoon_ae_plural: "$acot_army_hive_gene_cocoon_ae_plural$"
+ pmca_ten_acot_army_hive_gene_cocoon_ae_desc: "$acot_army_hive_gene_cocoon_ae_desc$"
+ pmca_hundred_acot_army_hive_gene_cocoon_ae: "$pmca_hundred$ $acot_army_hive_gene_cocoon_ae$"
+ pmca_hundred_acot_army_hive_gene_cocoon_ae_plural: "$acot_army_hive_gene_cocoon_ae_plural$"
+ pmca_hundred_acot_army_hive_gene_cocoon_ae_desc: "$acot_army_hive_gene_cocoon_ae_desc$"
+
+
+ #####################################
+ ### ACOT_ARMY_HIVE_GENE_COCOON_SE ###
+ #####################################
+ pmca_ten_acot_army_hive_gene_cocoon_se: "$pmca_ten$ $acot_army_hive_gene_cocoon_se$"
+ pmca_ten_acot_army_hive_gene_cocoon_se_plural: "$acot_army_hive_gene_cocoon_se_plural$"
+ pmca_ten_acot_army_hive_gene_cocoon_se_desc: "$acot_army_hive_gene_cocoon_se_desc$"
+ pmca_hundred_acot_army_hive_gene_cocoon_se: "$pmca_hundred$ $acot_army_hive_gene_cocoon_se$"
+ pmca_hundred_acot_army_hive_gene_cocoon_se_plural: "$acot_army_hive_gene_cocoon_se_plural$"
+ pmca_hundred_acot_army_hive_gene_cocoon_se_desc: "$acot_army_hive_gene_cocoon_se_desc$"
+
+
  ##############################
  ### ACOT_ARMY_HIVE_CONTROL ###
  ##############################
@@ -1078,6 +1650,28 @@
  pmca_hundred_acot_army_hive_control_se: "$pmca_hundred$ $acot_army_hive_control_se$"
  pmca_hundred_acot_army_hive_control_se_plural: "$acot_army_hive_control_se_plural$"
  pmca_hundred_acot_army_hive_control_se_desc: "$acot_army_hive_control_se_desc$"
+
+
+ #####################################
+ ### ACOT_ARMY_HIVE_CONTROL_COCOON ###
+ #####################################
+ pmca_ten_acot_army_hive_control_cocoon: "$pmca_ten$ $acot_army_hive_control_cocoon$"
+ pmca_ten_acot_army_hive_control_cocoon_plural: "$acot_army_hive_control_cocoon_plural$"
+ pmca_ten_acot_army_hive_control_cocoon_desc: "$acot_army_hive_control_cocoon_desc$"
+ pmca_hundred_acot_army_hive_control_cocoon: "$pmca_hundred$ $acot_army_hive_control_cocoon$"
+ pmca_hundred_acot_army_hive_control_cocoon_plural: "$acot_army_hive_control_cocoon_plural$"
+ pmca_hundred_acot_army_hive_control_cocoon_desc: "$acot_army_hive_control_cocoon_desc$"
+
+
+ ########################################
+ ### ACOT_ARMY_HIVE_CONTROL_COCOON_SE ###
+ ########################################
+ pmca_ten_acot_army_hive_control_cocoon_se: "$pmca_ten$ $acot_army_hive_control_cocoon_se$"
+ pmca_ten_acot_army_hive_control_cocoon_se_plural: "$acot_army_hive_control_cocoon_se_plural$"
+ pmca_ten_acot_army_hive_control_cocoon_se_desc: "$acot_army_hive_control_cocoon_se_desc$"
+ pmca_hundred_acot_army_hive_control_cocoon_se: "$pmca_hundred$ $acot_army_hive_control_cocoon_se$"
+ pmca_hundred_acot_army_hive_control_cocoon_se_plural: "$acot_army_hive_control_cocoon_se_plural$"
+ pmca_hundred_acot_army_hive_control_cocoon_se_desc: "$acot_army_hive_control_cocoon_se_desc$"
 
 
  ###################################

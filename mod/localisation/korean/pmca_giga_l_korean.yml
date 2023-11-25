@@ -2,6 +2,17 @@
 
  # Localisation generated using Python
 
+ ####################################
+ ### RIESIGERKATZENPANZER_ASSAULT ###
+ ####################################
+ pmca_ten_riesigerkatzenpanzer_assault: "$pmca_ten$ $riesigerkatzenpanzer_assault$"
+ pmca_ten_riesigerkatzenpanzer_assault_plural: "$riesigerkatzenpanzer_assault_plural$"
+ pmca_ten_riesigerkatzenpanzer_assault_desc: "$riesigerkatzenpanzer_assault_desc$"
+ pmca_hundred_riesigerkatzenpanzer_assault: "$pmca_hundred$ $riesigerkatzenpanzer_assault$"
+ pmca_hundred_riesigerkatzenpanzer_assault_plural: "$riesigerkatzenpanzer_assault_plural$"
+ pmca_hundred_riesigerkatzenpanzer_assault_desc: "$riesigerkatzenpanzer_assault_desc$"
+
+
  #############################
  ### GIGA_EAW_CRYSTAL_ARMY ###
  #############################

@@ -7,9 +7,9 @@ defined_text = {
 				value = 0 # Since my placeholders will always be 0, I only need to care if it changes
 			}
 		}
-		localization_key = pmca_gigas_not_loaded
+		localization_key = pmca_inactive
 	}
-	default = pmca_gigas_loaded
+	default = pmca_active
 }
 
 defined_text = {
@@ -21,9 +21,9 @@ defined_text = {
 				value = 0
 			}
 		}
-		localization_key = pmca_esc_not_loaded
+		localization_key = pmca_inactive
 	}
-	default = pmca_esc_loaded
+	default = pmca_active
 }
 
 defined_text = {
@@ -35,7 +35,7 @@ defined_text = {
 				value = 0
 			}
 		}
-		localization_key = pmca_acot_not_loaded
+		localization_key = pmca_inactive
 	}
-	default = pmca_acot_loaded
+	default = pmca_active
 }

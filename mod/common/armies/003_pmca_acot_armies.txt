@@ -44,13 +44,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 150.0
@@ -103,13 +103,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 150.0
@@ -162,13 +162,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 150.0
@@ -214,16 +214,232 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 150.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_infantry_autoarmor = {
+	use_armynames_from = acot_infantry_autoarmor
+	damage = 10.0
+	health = 12.5
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_infantry_autoarmor_se = {
+	use_armynames_from = acot_infantry_autoarmor_se
+	damage = 20.0
+	health = 22.5
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_infantry_medium_autoarmor = {
+	use_armynames_from = acot_infantry_medium_autoarmor
+	damage = 10.0
+	health = 17.5
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_infantry_medium_autoarmor_se = {
+	use_armynames_from = acot_infantry_medium_autoarmor_se
+	damage = 20.0
+	health = 27.5
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_infantry_heavy_autoarmor = {
+	use_armynames_from = acot_infantry_heavy_autoarmor
+	damage = 15.0
+	health = 20.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_infantry_heavy_autoarmor_se = {
+	use_armynames_from = acot_infantry_heavy_autoarmor_se
+	damage = 25.0
+	health = 30.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -272,13 +488,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_policy_flag = slavery_allowed
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 200.0
 		}
-		has_policy_flag = slavery_allowed
-		is_machine_empire = no
 	}
 	allow = {
 		custom_tooltip = {
@@ -346,13 +562,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_policy_flag = slavery_allowed
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 200.0
 		}
-		has_policy_flag = slavery_allowed
-		is_machine_empire = no
 	}
 	allow = {
 		custom_tooltip = {
@@ -428,12 +644,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_reanimated_armies
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-		has_valid_civic = civic_reanimated_armies
 	}
 	ai_weight = {
 		base = 150.0
@@ -487,12 +703,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_reanimated_armies
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		has_valid_civic = civic_reanimated_armies
 	}
 	ai_weight = {
 		base = 180.0
@@ -538,16 +754,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 90.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_light_armor_pilot = {
+	use_armynames_from = acot_light_armor_pilot
+	damage = 5.0
+	health = 7.5
+	morale = 5.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 5.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -590,16 +843,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 90.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_light_armor_pilot_dm = {
+	use_armynames_from = acot_light_armor_pilot_dm
+	damage = 15.0
+	health = 12.5
+	morale = 7.5
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 7.5
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -642,16 +932,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 4000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 90.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_light_armor_pilot_ae = {
+	use_armynames_from = acot_light_armor_pilot_ae
+	damage = 20.0
+	health = 17.5
+	morale = 7.5
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 10.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -689,16 +1016,53 @@ inline_script = {
 		NOT = { has_global_flag = acot_army_forbidden }
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 6000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 90.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_light_armor_pilot_se = {
+	use_armynames_from = acot_light_armor_pilot_se
+	damage = 30.0
+	health = 27.5
+	morale = 10.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 5.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -742,16 +1106,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 1500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 60.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_heavy_armor_pilot = {
+	use_armynames_from = acot_heavy_armor_pilot
+	damage = 5.0
+	health = 7.5
+	morale = 5.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 5.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -795,16 +1196,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 60.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_heavy_armor_pilot_dm = {
+	use_armynames_from = acot_heavy_armor_pilot_dm
+	damage = 15.0
+	health = 12.5
+	morale = 7.5
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 7.5
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -847,16 +1285,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 60.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_heavy_armor_pilot_ae = {
+	use_armynames_from = acot_heavy_armor_pilot_ae
+	damage = 20.0
+	health = 17.5
+	morale = 7.5
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 10.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -895,16 +1370,53 @@ inline_script = {
 		NOT = { has_global_flag = acot_army_forbidden }
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 3500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 60.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_heavy_armor_pilot_se = {
+	use_armynames_from = acot_heavy_armor_pilot_se
+	damage = 30.0
+	health = 27.5
+	morale = 10.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 20.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -946,13 +1458,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1013,13 +1525,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 600.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1080,13 +1592,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 700.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1140,13 +1652,13 @@ inline_script = {
 		is_fallen_empire = no
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 900.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1208,13 +1720,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1279,7 +1791,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1750.0
 		}
-
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1349,7 +1860,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1416,7 +1926,235 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	ai_weight = {
+		base = 90.0
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+	}
+	"
+}
 
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_droid_army_torso = {
+	use_armynames_from = acot_droid_army_torso
+	damage = 10.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 60.0
+	icon = GFX_army_type_droid_unit
+	potential = {
+		always = no
+		from = { has_trait = trait_mechanical }
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_robotic_dm
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	ai_weight = {
+		base = 90.0
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+			is_fallen_empire = no
+		}
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_droid_army_torso_dm = {
+	use_armynames_from = acot_droid_army_torso_dm
+	damage = 20.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 160.0
+	icon = GFX_army_type_machine_assault
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = { has_trait = trait_mechanical }
+		owner = {
+			is_machine_empire = no
+			NOT = {
+				has_technology = tech_acot_army_robotic_ae
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	ai_weight = {
+		base = 90.0
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_droid_army_torso_ae = {
+	use_armynames_from = acot_droid_army_torso_ae
+	damage = 25.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 160.0
+	icon = GFX_army_type_machine_assault
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = { has_trait = trait_mechanical }
+		owner = {
+			is_machine_empire = no
+			NOT = {
+				has_technology = tech_acot_army_robotic_se
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	ai_weight = {
+		base = 90.0
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_droid_army_torso_se = {
+	use_armynames_from = acot_droid_army_torso_se
+	damage = 35.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 160.0
+	icon = GFX_army_type_machine_assault
+	potential = {
+		always = no
+		from = { has_trait = trait_mechanical }
+		owner = {
+			is_machine_empire = no
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1485,13 +2223,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1555,13 +2293,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 750.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1625,13 +2363,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 1000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1690,13 +2428,13 @@ inline_script = {
 		from = { has_trait = trait_mechanical }
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 1500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -1771,7 +2509,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-
 	}
 	ai_weight = {
 		base = 45.0
@@ -1830,7 +2567,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3000.0
 		}
-
 	}
 	ai_weight = {
 		base = 45.0
@@ -1889,7 +2625,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3250.0
 		}
-
 	}
 	ai_weight = {
 		base = 45.0
@@ -1948,7 +2683,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3750.0
 		}
-
 	}
 	ai_weight = {
 		base = 45.0
@@ -1993,10 +2727,40 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 60.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_mat_pilot = {
+	use_armynames_from = acot_army_mat_pilot
+	damage = 20.0
+	health = 25.0
+	morale = 15.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -2046,10 +2810,40 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 65.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_mat_pilot_se = {
+	use_armynames_from = acot_army_mat_pilot_se
+	damage = 30.0
+	health = 35.0
+	morale = 15.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_primitive
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -2101,7 +2895,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 15.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2161,7 +2954,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 17.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2216,7 +3008,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 17.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2276,7 +3067,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 18.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2331,7 +3121,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 17.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2391,7 +3180,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 18.700000000000003
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2439,10 +3227,40 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 40.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_ega_pilot = {
+	use_armynames_from = acot_army_ega_pilot
+	damage = 15.0
+	health = 30.0
+	morale = 10.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_infantry
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -2492,10 +3310,40 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 42.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_ega_pilot_se = {
+	use_armynames_from = acot_army_ega_pilot_se
+	damage = 25.0
+	health = 40.0
+	morale = 10.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 2.5
+	time = 0.0
+	icon = GFX_army_type_infantry
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -2547,7 +3395,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 20.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2607,7 +3454,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 21.7
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2672,7 +3518,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 11.200000000000001
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2735,7 +3580,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 12.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -2790,7 +3634,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 10.0
 		}
-
 	}
 	ai_weight = {
 		base = 0.0
@@ -2847,7 +3690,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 11.0
 		}
-
 	}
 	ai_weight = {
 		base = 0.0
@@ -2889,12 +3731,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 170.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 0.0
@@ -2940,12 +3782,103 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 400.0
 		}
-		is_regular_empire = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_cyborg_torso = {
+	use_armynames_from = acot_army_cyborg_torso
+	damage = 35.0
+	health = 1.0
+	morale = 5.0
+	morale_damage = 0.5
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 160.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 3500.0
+			sr_dark_matter = 350.0
+			acot_sr_dark_energy = 350.0
+			unity = 350.0
+			influence = 170.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = { has_trait = trait_cybernetic }
+		owner = {
+			is_machine_empire = no
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 170.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_cyborg_torso_se = {
+	use_armynames_from = acot_army_cyborg_torso_se
+	damage = 45.0
+	health = 1.0
+	morale = 7.5
+	morale_damage = 0.5
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 160.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 4000.0
+			acot_sr_stellarite = 400.0
+			unity = 400.0
+			influence = 200.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = { has_trait = trait_cybernetic }
+		owner = {
+			has_technology = tech_acot_army_se
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = acot_sr_stellarite
+			PMCA_VALUE = 400.0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -2986,12 +3919,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 300.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 0.0
@@ -3036,12 +3969,102 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 700.0
 		}
-		is_regular_empire = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_synth_torso = {
+	use_armynames_from = acot_army_synth_torso
+	damage = 50.0
+	health = 1.0
+	morale = 7.5
+	morale_damage = 0.5
+	collateral_damage = 20.0
+	war_exhaustion = 20.0
+	time = 220.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 6000.0
+			sr_dark_matter = 600.0
+			acot_sr_dark_energy = 600.0
+			unity = 600.0
+			influence = 300.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		owner = {
+			is_machine_empire = no
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 300.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_synth_torso_se = {
+	use_armynames_from = acot_army_synth_torso_se
+	damage = 60.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.5
+	collateral_damage = 20.0
+	war_exhaustion = 20.0
+	time = 220.0
+	icon = GFX_army_type_machine_assault
+	prerequisites = { tech_acot_army_synth }
+	resources = {
+		category = armies
+		cost = {
+			minerals = 7000.0
+			acot_sr_stellarite = 700.0
+			unity = 700.0
+			influence = 300.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		owner = {
+			has_technology = tech_acot_army_se
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = acot_sr_stellarite
+			PMCA_VALUE = 700.0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -3097,12 +4120,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3163,12 +4186,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 150.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 150.0
@@ -3231,12 +4254,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 350.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 150.0
@@ -3287,12 +4310,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3361,7 +4384,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 50.0
 		}
-
 	}
 	ai_weight = {
 		base = 0.0
@@ -3409,12 +4431,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3000.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3464,12 +4486,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 170.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3521,12 +4543,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 400.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3566,7 +4588,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-
 	}
 	ai_weight = {
 		base = 15.0
@@ -3621,12 +4642,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3672,12 +4693,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1200.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3723,12 +4744,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1400.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3776,7 +4797,182 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1600.0
 		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
 
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_torso = {
+	use_armynames_from = acot_army_machine_torso
+	damage = 7.5
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 2.5
+	time = 55.0
+	icon = GFX_army_type_machine_infantry
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_dm }
+		}
+	}
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1000.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_torso_dm = {
+	use_armynames_from = acot_army_machine_torso_dm
+	damage = 17.5
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 2.5
+	time = 55.0
+	icon = GFX_army_type_machine_infantry
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1200.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_ae }
+		}
+	}
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1200.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_torso_ae = {
+	use_armynames_from = acot_army_machine_torso_ae
+	damage = 22.5
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 2.5
+	time = 55.0
+	icon = GFX_army_type_machine_infantry
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1400.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_se }
+		}
+	}
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1400.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_torso_se = {
+	use_armynames_from = acot_army_machine_torso_se
+	damage = 32.5
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.1
+	collateral_damage = 2.5
+	war_exhaustion = 2.5
+	time = 55.0
+	icon = GFX_army_type_machine_infantry
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1600.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1600.0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -3819,12 +5015,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 700.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3867,12 +5063,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 800.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3915,12 +5111,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 900.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -3968,7 +5164,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-
 	}
 	ai_weight = {
 		base = 0.0
@@ -4014,12 +5209,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
@@ -4065,12 +5260,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2250.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
@@ -4116,12 +5311,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
@@ -4164,15 +5359,191 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2750.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_light_torso = {
+	use_armynames_from = acot_army_machine_light_torso
+	damage = 12.5
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 120.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_dm }
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 2000.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_light_torso_dm = {
+	use_armynames_from = acot_army_machine_light_torso_dm
+	damage = 22.5
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 120.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2250.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_ae }
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 2250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_light_torso_ae = {
+	use_armynames_from = acot_army_machine_light_torso_ae
+	damage = 27.5
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 120.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2500.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_ae }
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 2500.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_light_torso_se = {
+	use_armynames_from = acot_army_machine_light_torso_se
+	damage = 37.5
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.2
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 120.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_ae }
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 2750.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -4214,12 +5585,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 3000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 60.0
@@ -4267,12 +5638,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 3500.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 60.0
@@ -4320,12 +5691,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 4000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 60.0
@@ -4370,12 +5741,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 4500.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 60.0
@@ -4425,12 +5796,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_machine_assimilator
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1200.0
 		}
-		has_valid_civic = civic_machine_assimilator
 	}
 	ai_weight = {
 		base = 120.0
@@ -4480,12 +5851,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_machine_assimilator
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1400.0
 		}
-		has_valid_civic = civic_machine_assimilator
 	}
 	ai_weight = {
 		base = 120.0
@@ -4535,12 +5906,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_machine_assimilator
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1600.0
 		}
-		has_valid_civic = civic_machine_assimilator
 	}
 	ai_weight = {
 		base = 120.0
@@ -4585,15 +5956,202 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_machine_assimilator
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1800.0
 		}
-		has_valid_civic = civic_machine_assimilator
 	}
 	ai_weight = {
 		base = 120.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_cyborg_torso = {
+	use_armynames_from = acot_army_machine_cyborg_torso
+	damage = 10.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.3
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 65.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1200.0
+		}
+	}
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_cybernetic
+			NOR = {
+				is_sapient = no
+			}
+		}
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_machine_dm
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1200.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_cyborg_torso_dm = {
+	use_armynames_from = acot_army_machine_cyborg_torso_dm
+	damage = 20.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.3
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 65.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1400.0
+		}
+	}
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_cybernetic
+			NOR = {
+				is_sapient = no
+			}
+		}
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_machine_ae
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1400.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_cyborg_torso_ae = {
+	use_armynames_from = acot_army_machine_cyborg_torso_ae
+	damage = 25.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.3
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 65.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1600.0
+		}
+	}
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_cybernetic
+			NOR = {
+				is_sapient = no
+			}
+		}
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_machine_se
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1600.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_cyborg_torso_se = {
+	use_armynames_from = acot_army_machine_cyborg_torso_se
+	damage = 35.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.3
+	collateral_damage = 2.5
+	war_exhaustion = 10.0
+	time = 65.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1800.0
+		}
+	}
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_cybernetic
+			NOR = {
+				is_sapient = no
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1800.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -4644,7 +6202,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 35.0
 		}
-
 	}
 	allow = {
 		OR = {
@@ -4708,13 +6265,110 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 37.5
 		}
-
 	}
 	allow = {
 		OR = {
 			has_building = building_fe_machine_dome
 			has_building = building_ae_machine_dome
 			has_district = district_acot_enigmapolis_fortress
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_special_torso = {
+	use_armynames_from = acot_army_machine_special_torso
+	damage = 30.0
+	health = 1.0
+	morale = 7.5
+	morale_damage = 1.25
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 145.0
+	icon = GFX_army_type_machine_special
+	resources = {
+		category = armies
+		cost = {
+			minerals = 3500.0
+			sr_dark_matter = 35.0
+			acot_sr_dark_energy = 35.0
+			unity = 35.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		owner = { is_machine_empire = yes }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_machine_se
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = sr_dark_matter
+			PMCA_VALUE = 35.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_machine_special_torso_se = {
+	use_armynames_from = acot_army_machine_special_torso_se
+	damage = 40.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 1.25
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 145.0
+	icon = GFX_army_type_machine_special
+	resources = {
+		category = armies
+		cost = {
+			minerals = 3750.0
+			sr_dark_matter = 37.5
+			acot_sr_dark_energy = 37.5
+			unity = 37.5
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		owner = { is_machine_empire = yes }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			has_technology = tech_acot_army_machine_se
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = sr_dark_matter
+			PMCA_VALUE = 37.5
 		}
 	}
 	ai_weight = {
@@ -4762,12 +6416,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -4814,12 +6468,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 600.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -4866,12 +6520,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 700.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -4913,12 +6567,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 800.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -4965,12 +6619,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -5015,12 +6669,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 600.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -5061,12 +6715,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 250.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -5107,12 +6761,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 350.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -5153,12 +6807,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 450.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -5192,15 +6846,167 @@ inline_script = {
 		is_hive_empire = yes
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 550.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_hive_broodling_1 = {
+	use_armynames_from = acot_hive_broodling_1
+	damage = 5.0
+	health = 1.0
+	morale = 10.0
+	morale_damage = 0.5
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 10.0
+	icon = GFX_acot_type_hive_swarmer
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_hive_broodling_dm = {
+	use_armynames_from = acot_hive_broodling_dm
+	damage = 15.0
+	health = 4.0
+	morale = 10.0
+	morale_damage = 0.5
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 10.0
+	icon = GFX_acot_type_hive_swarmer
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_hive_broodling_ae = {
+	use_armynames_from = acot_hive_broodling_ae
+	damage = 20.0
+	health = 6.0
+	morale = 10.0
+	morale_damage = 0.5
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 10.0
+	icon = GFX_acot_type_hive_swarmer
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_hive_broodling_se = {
+	use_armynames_from = acot_hive_broodling_se
+	damage = 30.0
+	health = 10.0
+	morale = 10.0
+	morale_damage = 0.5
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 10.0
+	icon = GFX_acot_type_hive_swarmer
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -5231,12 +7037,12 @@ inline_script = {
 		is_hive_empire = yes
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 50.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -5283,12 +7089,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
@@ -5335,12 +7141,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1600.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
@@ -5387,12 +7193,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1700.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
@@ -5434,12 +7240,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1800.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
@@ -5486,12 +7292,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
@@ -5536,12 +7342,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1600.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 90.0
@@ -5588,12 +7394,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 5000.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 60.0
@@ -5640,12 +7446,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 5500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 60.0
@@ -5692,12 +7498,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 6000.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 60.0
@@ -5739,15 +7545,151 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 6500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 60.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_hive_heavy_cocoon_1 = {
+	use_armynames_from = acot_hive_heavy_cocoon_1
+	damage = 0.1
+	health = 30.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_acot_type_hive_heavy
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_hive_heavy_cocoon_dm = {
+	use_armynames_from = acot_hive_heavy_cocoon_dm
+	damage = 0.1
+	health = 40.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_acot_type_hive_heavy
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_hive_heavy_cocoon_ae = {
+	use_armynames_from = acot_hive_heavy_cocoon_ae
+	damage = 0.1
+	health = 45.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_acot_type_hive_heavy
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_hive_heavy_cocoon_se = {
+	use_armynames_from = acot_hive_heavy_cocoon_se
+	damage = 0.1
+	health = 55.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_acot_type_hive_heavy
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -5788,12 +7730,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -5842,12 +7784,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 150.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
@@ -5898,15 +7840,151 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 350.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 150.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_hive_gene_cocoon = {
+	use_armynames_from = acot_army_hive_gene_cocoon
+	damage = 0.1
+	health = 30.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_army_type_gene_warrior
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_hive_gene_cocoon_dm = {
+	use_armynames_from = acot_army_hive_gene_cocoon_dm
+	damage = 0.1
+	health = 40.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_army_type_gene_warrior
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_hive_gene_cocoon_ae = {
+	use_armynames_from = acot_army_hive_gene_cocoon_ae
+	damage = 0.1
+	health = 45.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_army_type_gene_warrior
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_hive_gene_cocoon_se = {
+	use_armynames_from = acot_army_hive_gene_cocoon_se
+	damage = 0.1
+	health = 55.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_army_type_gene_warrior
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -5943,12 +8021,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 20.0
 		}
-		is_hive_empire = yes
 	}
 	allow = {
 		OR = {
@@ -6003,18 +8081,86 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = ten
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 22.5
 		}
-		is_hive_empire = yes
 	}
 	allow = {
 		OR = {
 			has_building = building_fe_hive_evochamber
 			has_building = building_ae_hive_evochamber
 			has_district = district_acot_enigmapolis_fortress
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_hive_control_cocoon = {
+	use_armynames_from = acot_army_hive_control_cocoon
+	damage = 0.1
+	health = 45.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_acot_type_hive_controller
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_ten_acot_army_hive_control_cocoon_se = {
+	use_armynames_from = acot_army_hive_control_cocoon_se
+	damage = 0.1
+	health = 55.0
+	morale = 10.0
+	morale_damage = 1.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 140.0
+	icon = GFX_acot_type_hive_controller
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = ten
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
 		}
 	}
 	ai_weight = {
@@ -6058,7 +8204,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 2000.0
 		}
-
 	}
 	ai_weight = {
 		base = 75.0
@@ -6110,13 +8255,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 200.0
@@ -6169,13 +8314,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 200.0
@@ -6228,13 +8373,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 200.0
@@ -6280,16 +8425,232 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 200.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_infantry_autoarmor = {
+	use_armynames_from = acot_infantry_autoarmor
+	damage = 100.0
+	health = 125.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_infantry_autoarmor_se = {
+	use_armynames_from = acot_infantry_autoarmor_se
+	damage = 200.0
+	health = 225.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_infantry_medium_autoarmor = {
+	use_armynames_from = acot_infantry_medium_autoarmor
+	damage = 100.0
+	health = 175.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_infantry_medium_autoarmor_se = {
+	use_armynames_from = acot_infantry_medium_autoarmor_se
+	damage = 200.0
+	health = 275.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_infantry_heavy_autoarmor = {
+	use_armynames_from = acot_infantry_heavy_autoarmor
+	damage = 150.0
+	health = 200.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_infantry_heavy_autoarmor_se = {
+	use_armynames_from = acot_infantry_heavy_autoarmor_se
+	damage = 250.0
+	health = 300.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 50.0
+	icon = GFX_army_type_droid_unit
+	prerequisites = { tech_infantry_alpha_capacitor }
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		is_fallen_empire = no
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -6338,13 +8699,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_policy_flag = slavery_allowed
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 200.0
 		}
-		has_policy_flag = slavery_allowed
-		is_machine_empire = no
 	}
 	allow = {
 		custom_tooltip = {
@@ -6412,13 +8773,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_policy_flag = slavery_allowed
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 200.0
 		}
-		has_policy_flag = slavery_allowed
-		is_machine_empire = no
 	}
 	allow = {
 		custom_tooltip = {
@@ -6494,12 +8855,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_reanimated_armies
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-		has_valid_civic = civic_reanimated_armies
 	}
 	ai_weight = {
 		base = 200.0
@@ -6553,12 +8914,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_reanimated_armies
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		has_valid_civic = civic_reanimated_armies
 	}
 	ai_weight = {
 		base = 240.0
@@ -6604,16 +8965,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 120.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_light_armor_pilot = {
+	use_armynames_from = acot_light_armor_pilot
+	damage = 50.0
+	health = 75.0
+	morale = 50.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 50.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -6656,16 +9054,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 120.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_light_armor_pilot_dm = {
+	use_armynames_from = acot_light_armor_pilot_dm
+	damage = 150.0
+	health = 125.0
+	morale = 75.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 75.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -6708,16 +9143,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 4000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 120.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_light_armor_pilot_ae = {
+	use_armynames_from = acot_light_armor_pilot_ae
+	damage = 200.0
+	health = 175.0
+	morale = 75.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 100.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -6755,16 +9227,53 @@ inline_script = {
 		NOT = { has_global_flag = acot_army_forbidden }
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 6000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 120.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_light_armor_pilot_se = {
+	use_armynames_from = acot_light_armor_pilot_se
+	damage = 300.0
+	health = 275.0
+	morale = 100.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 50.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -6808,16 +9317,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 1500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 80.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_heavy_armor_pilot = {
+	use_armynames_from = acot_heavy_armor_pilot
+	damage = 50.0
+	health = 75.0
+	morale = 50.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 50.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -6861,16 +9407,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 2000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 80.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_heavy_armor_pilot_dm = {
+	use_armynames_from = acot_heavy_armor_pilot_dm
+	damage = 150.0
+	health = 125.0
+	morale = 75.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 75.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -6913,16 +9496,53 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 80.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_heavy_armor_pilot_ae = {
+	use_armynames_from = acot_heavy_armor_pilot_ae
+	damage = 200.0
+	health = 175.0
+	morale = 75.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 100.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -6961,16 +9581,53 @@ inline_script = {
 		NOT = { has_global_flag = acot_army_forbidden }
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 3500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	ai_weight = {
 		base = 80.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_heavy_armor_pilot_se = {
+	use_armynames_from = acot_heavy_armor_pilot_se
+	damage = 300.0
+	health = 275.0
+	morale = 100.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 200.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -7012,13 +9669,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7079,13 +9736,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 600.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7146,13 +9803,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 700.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7206,13 +9863,13 @@ inline_script = {
 		is_fallen_empire = no
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 900.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7274,13 +9931,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7345,7 +10002,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1750.0
 		}
-
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7415,7 +10071,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7482,7 +10137,235 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	ai_weight = {
+		base = 120.0
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+	}
+	"
+}
 
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_droid_army_torso = {
+	use_armynames_from = acot_droid_army_torso
+	damage = 100.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 60.0
+	icon = GFX_army_type_droid_unit
+	potential = {
+		always = no
+		from = { has_trait = trait_mechanical }
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_robotic_dm
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	ai_weight = {
+		base = 120.0
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+			is_fallen_empire = no
+		}
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_droid_army_torso_dm = {
+	use_armynames_from = acot_droid_army_torso_dm
+	damage = 200.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 160.0
+	icon = GFX_army_type_machine_assault
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = { has_trait = trait_mechanical }
+		owner = {
+			is_machine_empire = no
+			NOT = {
+				has_technology = tech_acot_army_robotic_ae
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	ai_weight = {
+		base = 120.0
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_droid_army_torso_ae = {
+	use_armynames_from = acot_droid_army_torso_ae
+	damage = 250.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 160.0
+	icon = GFX_army_type_machine_assault
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = { has_trait = trait_mechanical }
+		owner = {
+			is_machine_empire = no
+			NOT = {
+				has_technology = tech_acot_army_robotic_se
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	ai_weight = {
+		base = 120.0
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+			is_fallen_empire = no
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_droid_army_torso_se = {
+	use_armynames_from = acot_droid_army_torso_se
+	damage = 350.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 160.0
+	icon = GFX_army_type_machine_assault
+	potential = {
+		always = no
+		from = { has_trait = trait_mechanical }
+		owner = {
+			is_machine_empire = no
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7551,13 +10434,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7621,13 +10504,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 750.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7691,13 +10574,13 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 1000.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7756,13 +10639,13 @@ inline_script = {
 		from = { has_trait = trait_mechanical }
 	}
 	potential_country = {
+		is_regular_empire = yes
+		is_fallen_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 1500.0
 		}
-		is_regular_empire = yes
-		is_fallen_empire = no
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
@@ -7837,7 +10720,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-
 	}
 	ai_weight = {
 		base = 60.0
@@ -7896,7 +10778,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3000.0
 		}
-
 	}
 	ai_weight = {
 		base = 60.0
@@ -7955,7 +10836,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3250.0
 		}
-
 	}
 	ai_weight = {
 		base = 60.0
@@ -8014,7 +10894,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3750.0
 		}
-
 	}
 	ai_weight = {
 		base = 60.0
@@ -8059,10 +10938,40 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 60.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_mat_pilot = {
+	use_armynames_from = acot_army_mat_pilot
+	damage = 200.0
+	health = 250.0
+	morale = 150.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -8112,10 +11021,40 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 65.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_mat_pilot_se = {
+	use_armynames_from = acot_army_mat_pilot_se
+	damage = 300.0
+	health = 350.0
+	morale = 150.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_primitive
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -8167,7 +11106,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 15.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8227,7 +11165,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 17.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8282,7 +11219,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 17.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8342,7 +11278,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 18.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8397,7 +11332,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 17.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8457,7 +11391,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 18.700000000000003
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8505,10 +11438,40 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 40.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_ega_pilot = {
+	use_armynames_from = acot_army_ega_pilot
+	damage = 150.0
+	health = 300.0
+	morale = 100.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_infantry
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -8558,10 +11521,40 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 42.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_ega_pilot_se = {
+	use_armynames_from = acot_army_ega_pilot_se
+	damage = 250.0
+	health = 400.0
+	morale = 100.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 25.0
+	time = 0.0
+	icon = GFX_army_type_infantry
+	potential = {
+		always = no
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -8613,7 +11606,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 20.0
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8673,7 +11665,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 21.7
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8738,7 +11729,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 11.200000000000001
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8801,7 +11791,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 12.5
 		}
-
 	}
 	allow = {
 		has_advanced_fort = yes
@@ -8856,7 +11845,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 10.0
 		}
-
 	}
 	ai_weight = {
 		base = 0.0
@@ -8913,7 +11901,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 11.0
 		}
-
 	}
 	ai_weight = {
 		base = 0.0
@@ -8955,12 +11942,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 170.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 0.0
@@ -9006,12 +11993,103 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 400.0
 		}
-		is_regular_empire = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_cyborg_torso = {
+	use_armynames_from = acot_army_cyborg_torso
+	damage = 350.0
+	health = 10.0
+	morale = 50.0
+	morale_damage = 0.5
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 160.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35000.0
+			sr_dark_matter = 3500.0
+			acot_sr_dark_energy = 3500.0
+			unity = 3500.0
+			influence = 1700.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = { has_trait = trait_cybernetic }
+		owner = {
+			is_machine_empire = no
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 170.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_cyborg_torso_se = {
+	use_armynames_from = acot_army_cyborg_torso_se
+	damage = 450.0
+	health = 10.0
+	morale = 75.0
+	morale_damage = 0.5
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 160.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 40000.0
+			acot_sr_stellarite = 4000.0
+			unity = 4000.0
+			influence = 2000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = { has_trait = trait_cybernetic }
+		owner = {
+			has_technology = tech_acot_army_se
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = acot_sr_stellarite
+			PMCA_VALUE = 400.0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -9052,12 +12130,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 300.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 0.0
@@ -9102,12 +12180,102 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 700.0
 		}
-		is_regular_empire = yes
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_synth_torso = {
+	use_armynames_from = acot_army_synth_torso
+	damage = 500.0
+	health = 10.0
+	morale = 75.0
+	morale_damage = 0.5
+	collateral_damage = 200.0
+	war_exhaustion = 200.0
+	time = 220.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 60000.0
+			sr_dark_matter = 6000.0
+			acot_sr_dark_energy = 6000.0
+			unity = 6000.0
+			influence = 3000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		owner = {
+			is_machine_empire = no
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = influence
+			PMCA_VALUE = 300.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_synth_torso_se = {
+	use_armynames_from = acot_army_synth_torso_se
+	damage = 600.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.5
+	collateral_damage = 200.0
+	war_exhaustion = 200.0
+	time = 220.0
+	icon = GFX_army_type_machine_assault
+	prerequisites = { tech_acot_army_synth }
+	resources = {
+		category = armies
+		cost = {
+			minerals = 70000.0
+			acot_sr_stellarite = 7000.0
+			unity = 7000.0
+			influence = 3000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		owner = {
+			has_technology = tech_acot_army_se
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = acot_sr_stellarite
+			PMCA_VALUE = 700.0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -9163,12 +12331,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9229,12 +12397,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 150.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 200.0
@@ -9297,12 +12465,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = no
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 350.0
 		}
-		is_machine_empire = no
 	}
 	ai_weight = {
 		base = 200.0
@@ -9353,12 +12521,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9427,7 +12595,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 50.0
 		}
-
 	}
 	ai_weight = {
 		base = 0.0
@@ -9475,12 +12642,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 3000.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9530,12 +12697,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 170.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9587,12 +12754,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_regular_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 400.0
 		}
-		is_regular_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9632,7 +12799,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-
 	}
 	ai_weight = {
 		base = 20.0
@@ -9687,12 +12853,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9738,12 +12904,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1200.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9789,12 +12955,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1400.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9842,7 +13008,182 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1600.0
 		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
 
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_torso = {
+	use_armynames_from = acot_army_machine_torso
+	damage = 75.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 25.0
+	time = 55.0
+	icon = GFX_army_type_machine_infantry
+	resources = {
+		category = armies
+		cost = {
+			minerals = 10000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_dm }
+		}
+	}
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1000.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_torso_dm = {
+	use_armynames_from = acot_army_machine_torso_dm
+	damage = 175.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 25.0
+	time = 55.0
+	icon = GFX_army_type_machine_infantry
+	resources = {
+		category = armies
+		cost = {
+			minerals = 12000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_ae }
+		}
+	}
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1200.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_torso_ae = {
+	use_armynames_from = acot_army_machine_torso_ae
+	damage = 225.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 25.0
+	time = 55.0
+	icon = GFX_army_type_machine_infantry
+	resources = {
+		category = armies
+		cost = {
+			minerals = 14000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_se }
+		}
+	}
+	potential_country = {
+		is_machine_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1400.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_torso_se = {
+	use_armynames_from = acot_army_machine_torso_se
+	damage = 325.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.1
+	collateral_damage = 25.0
+	war_exhaustion = 25.0
+	time = 55.0
+	icon = GFX_army_type_machine_infantry
+	resources = {
+		category = armies
+		cost = {
+			minerals = 16000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1600.0
+		}
 	}
 	ai_weight = {
 		base = 0.0
@@ -9885,12 +13226,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 700.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9933,12 +13274,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 800.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -9981,12 +13322,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 900.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -10034,7 +13375,6 @@ inline_script = {
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1000.0
 		}
-
 	}
 	ai_weight = {
 		base = 0.0
@@ -10080,12 +13420,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
@@ -10131,12 +13471,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2250.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
@@ -10182,12 +13522,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
@@ -10230,15 +13570,191 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2750.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_light_torso = {
+	use_armynames_from = acot_army_machine_light_torso
+	damage = 125.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 120.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 20000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_dm }
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 2000.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_light_torso_dm = {
+	use_armynames_from = acot_army_machine_light_torso_dm
+	damage = 225.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 120.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 22500.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_ae }
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 2250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_light_torso_ae = {
+	use_armynames_from = acot_army_machine_light_torso_ae
+	damage = 275.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 120.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 25000.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_ae }
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 2500.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_light_torso_se = {
+	use_armynames_from = acot_army_machine_light_torso_se
+	damage = 375.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.2
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 120.0
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 27500.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_machine_ae }
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 2750.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -10280,12 +13796,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 3000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 80.0
@@ -10333,12 +13849,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 3500.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 80.0
@@ -10386,12 +13902,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 4000.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 80.0
@@ -10436,12 +13952,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_machine_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = alloys
 			PMCA_VALUE = 4500.0
 		}
-		is_machine_empire = yes
 	}
 	ai_weight = {
 		base = 80.0
@@ -10491,12 +14007,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_machine_assimilator
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1200.0
 		}
-		has_valid_civic = civic_machine_assimilator
 	}
 	ai_weight = {
 		base = 160.0
@@ -10546,12 +14062,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_machine_assimilator
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1400.0
 		}
-		has_valid_civic = civic_machine_assimilator
 	}
 	ai_weight = {
 		base = 160.0
@@ -10601,12 +14117,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_machine_assimilator
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1600.0
 		}
-		has_valid_civic = civic_machine_assimilator
 	}
 	ai_weight = {
 		base = 160.0
@@ -10651,15 +14167,202 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		has_valid_civic = civic_machine_assimilator
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1800.0
 		}
-		has_valid_civic = civic_machine_assimilator
 	}
 	ai_weight = {
 		base = 160.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_cyborg_torso = {
+	use_armynames_from = acot_army_machine_cyborg_torso
+	damage = 100.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.3
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 65.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 12000.0
+		}
+	}
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_cybernetic
+			NOR = {
+				is_sapient = no
+			}
+		}
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_machine_dm
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1200.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_cyborg_torso_dm = {
+	use_armynames_from = acot_army_machine_cyborg_torso_dm
+	damage = 200.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.3
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 65.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 14000.0
+		}
+	}
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_cybernetic
+			NOR = {
+				is_sapient = no
+			}
+		}
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_machine_ae
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1400.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_cyborg_torso_ae = {
+	use_armynames_from = acot_army_machine_cyborg_torso_ae
+	damage = 250.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.3
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 65.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 16000.0
+		}
+	}
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_cybernetic
+			NOR = {
+				is_sapient = no
+			}
+		}
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_machine_se
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1600.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_cyborg_torso_se = {
+	use_armynames_from = acot_army_machine_cyborg_torso_se
+	damage = 350.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.3
+	collateral_damage = 25.0
+	war_exhaustion = 100.0
+	time = 65.0
+	icon = GFX_army_type_cyborg
+	resources = {
+		category = armies
+		cost = {
+			minerals = 18000.0
+		}
+	}
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_cybernetic
+			NOR = {
+				is_sapient = no
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 1800.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -10710,7 +14413,6 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 35.0
 		}
-
 	}
 	allow = {
 		OR = {
@@ -10774,13 +14476,110 @@ inline_script = {
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 37.5
 		}
-
 	}
 	allow = {
 		OR = {
 			has_building = building_fe_machine_dome
 			has_building = building_ae_machine_dome
 			has_district = district_acot_enigmapolis_fortress
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_special_torso = {
+	use_armynames_from = acot_army_machine_special_torso
+	damage = 300.0
+	health = 10.0
+	morale = 75.0
+	morale_damage = 1.25
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 145.0
+	icon = GFX_army_type_machine_special
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35000.0
+			sr_dark_matter = 350.0
+			acot_sr_dark_energy = 350.0
+			unity = 350.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		owner = { is_machine_empire = yes }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_machine_se
+			}
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = sr_dark_matter
+			PMCA_VALUE = 35.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_machine_special_torso_se = {
+	use_armynames_from = acot_army_machine_special_torso_se
+	damage = 400.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 1.25
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 145.0
+	icon = GFX_army_type_machine_special
+	resources = {
+		category = armies
+		cost = {
+			minerals = 37500.0
+			sr_dark_matter = 375.0
+			acot_sr_dark_energy = 375.0
+			unity = 375.0
+		}
+	}
+	potential = {
+		always = no
+		NOT = { has_global_flag = acot_army_forbidden }
+		owner = { is_machine_empire = yes }
+		from = {
+			has_trait = trait_machine_unit
+		}
+		owner = {
+			has_technology = tech_acot_army_machine_se
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = sr_dark_matter
+			PMCA_VALUE = 37.5
 		}
 	}
 	ai_weight = {
@@ -10828,12 +14627,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -10880,12 +14679,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 600.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -10932,12 +14731,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 700.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -10979,12 +14778,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 800.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -11031,12 +14830,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -11081,12 +14880,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 600.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -11127,12 +14926,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 250.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -11173,12 +14972,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 350.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -11219,12 +15018,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 450.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -11258,15 +15057,167 @@ inline_script = {
 		is_hive_empire = yes
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 550.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_hive_broodling_1 = {
+	use_armynames_from = acot_hive_broodling_1
+	damage = 50.0
+	health = 10.0
+	morale = 100.0
+	morale_damage = 0.5
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 10.0
+	icon = GFX_acot_type_hive_swarmer
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2500.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_hive_broodling_dm = {
+	use_armynames_from = acot_hive_broodling_dm
+	damage = 150.0
+	health = 40.0
+	morale = 100.0
+	morale_damage = 0.5
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 10.0
+	icon = GFX_acot_type_hive_swarmer
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2500.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_hive_broodling_ae = {
+	use_armynames_from = acot_hive_broodling_ae
+	damage = 200.0
+	health = 60.0
+	morale = 100.0
+	morale_damage = 0.5
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 10.0
+	icon = GFX_acot_type_hive_swarmer
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2500.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_hive_broodling_se = {
+	use_armynames_from = acot_hive_broodling_se
+	damage = 300.0
+	health = 100.0
+	morale = 100.0
+	morale_damage = 0.5
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 10.0
+	icon = GFX_acot_type_hive_swarmer
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2500.0
+		}
+	}
+	potential = {
+		always = no
+	}
+	potential_country = {
+		is_hive_empire = yes
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = minerals
+			PMCA_VALUE = 250.0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -11297,12 +15248,12 @@ inline_script = {
 		is_hive_empire = yes
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 50.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -11349,12 +15300,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
@@ -11401,12 +15352,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1600.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
@@ -11453,12 +15404,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1700.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
@@ -11500,12 +15451,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1800.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
@@ -11552,12 +15503,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
@@ -11602,12 +15553,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 1600.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 120.0
@@ -11654,12 +15605,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 5000.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 80.0
@@ -11706,12 +15657,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 5500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 80.0
@@ -11758,12 +15709,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 6000.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 80.0
@@ -11805,15 +15756,151 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 6500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 80.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_hive_heavy_cocoon_1 = {
+	use_armynames_from = acot_hive_heavy_cocoon_1
+	damage = 1.0
+	health = 300.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_acot_type_hive_heavy
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_hive_heavy_cocoon_dm = {
+	use_armynames_from = acot_hive_heavy_cocoon_dm
+	damage = 1.0
+	health = 400.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_acot_type_hive_heavy
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_hive_heavy_cocoon_ae = {
+	use_armynames_from = acot_hive_heavy_cocoon_ae
+	damage = 1.0
+	health = 450.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_acot_type_hive_heavy
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_hive_heavy_cocoon_se = {
+	use_armynames_from = acot_hive_heavy_cocoon_se
+	damage = 1.0
+	health = 550.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_acot_type_hive_heavy
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -11854,12 +15941,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = minerals
 			PMCA_VALUE = 2500.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -11908,12 +15995,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = influence
 			PMCA_VALUE = 150.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
@@ -11964,15 +16051,151 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 350.0
 		}
-		is_hive_empire = yes
 	}
 	ai_weight = {
 		base = 200.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_hive_gene_cocoon = {
+	use_armynames_from = acot_army_hive_gene_cocoon
+	damage = 1.0
+	health = 300.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_army_type_gene_warrior
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_hive_gene_cocoon_dm = {
+	use_armynames_from = acot_army_hive_gene_cocoon_dm
+	damage = 1.0
+	health = 400.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_army_type_gene_warrior
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_hive_gene_cocoon_ae = {
+	use_armynames_from = acot_army_hive_gene_cocoon_ae
+	damage = 1.0
+	health = 450.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_army_type_gene_warrior
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_hive_gene_cocoon_se = {
+	use_armynames_from = acot_army_hive_gene_cocoon_se
+	damage = 1.0
+	health = 550.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_army_type_gene_warrior
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
 	}
 	}
 	"
@@ -12009,12 +16232,12 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 20.0
 		}
-		is_hive_empire = yes
 	}
 	allow = {
 		OR = {
@@ -12069,18 +16292,86 @@ inline_script = {
 		}
 	}
 	potential_country = {
+		is_hive_empire = yes
 		pmca_materiel_policy_check = {
 			PMCA_MULT = hundred
 			PMCA_RESOURCE = sr_dark_matter
 			PMCA_VALUE = 22.5
 		}
-		is_hive_empire = yes
 	}
 	allow = {
 		OR = {
 			has_building = building_fe_hive_evochamber
 			has_building = building_ae_hive_evochamber
 			has_district = district_acot_enigmapolis_fortress
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_hive_control_cocoon = {
+	use_armynames_from = acot_army_hive_control_cocoon
+	damage = 1.0
+	health = 450.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_acot_type_hive_controller
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
+		}
+	}
+	ai_weight = {
+		base = 0.0
+	}
+	}
+	"
+}
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	pmca_hundred_acot_army_hive_control_cocoon_se = {
+	use_armynames_from = acot_army_hive_control_cocoon_se
+	damage = 1.0
+	health = 550.0
+	morale = 100.0
+	morale_damage = 1.0
+	collateral_damage = 100.0
+	war_exhaustion = 100.0
+	time = 140.0
+	icon = GFX_acot_type_hive_controller
+	potential = {
+		always = no
+		from = {
+			has_trait = trait_hive_mind
+		}
+	}
+	potential_country = {
+		pmca_materiel_policy_check = {
+			PMCA_MULT = hundred
+			PMCA_RESOURCE = food
+			PMCA_VALUE = 0
 		}
 	}
 	ai_weight = {
@@ -12124,7 +16415,6 @@ inline_script = {
 			PMCA_RESOURCE = acot_sr_stellarite
 			PMCA_VALUE = 2000.0
 		}
-
 	}
 	ai_weight = {
 		base = 100.0

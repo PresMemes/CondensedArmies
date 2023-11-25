@@ -57,6 +57,39 @@ country_event = {
 	}
 }
 
+planet_event = {
+	id = pmca_events.75
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			OR = {
+				has_country_flag = pmca_times_ten_set
+				has_country_flag = pmca_times_hundred_set
+			}
+		}
+		from = {
+			pmca_is_condensed_army = yes
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					pmca_is_times_ten_army = yes
+				}
+				set_army_flag = pmca_times_ten_army
+			}
+			else = {
+				set_army_flag = pmca_times_hundred_army
+			}
+		}
+	}
+}
+
 # AI shenanigans
 event = {
 	id = pmca_events.100

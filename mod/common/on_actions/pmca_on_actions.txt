@@ -28,3 +28,12 @@ on_five_year_pulse = {
 		pmca_events.100
 	}
 }
+
+# An army construction has been completed.
+# This = Planet
+# From = Army
+on_army_recruited = {
+	events = {
+		pmca_events.75
+	}
+}
