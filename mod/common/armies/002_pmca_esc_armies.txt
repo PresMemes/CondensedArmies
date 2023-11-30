@@ -1,56 +1,57 @@
+# Dear Irony please fallback to simple parser
 # x10 and x100 army definition generated via Python
-# NOTE: Yes i'm aware the army definition should be indented, I just don't want to bludgeon python into doing it.
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_ten_esc_psionic_avatar_army = {
-	use_armynames_from = esc_psionic_avatar_army
-	damage = 50.0
-	health = 70.0
-	morale = 10.0
-	morale_damage = 2.0
-	collateral_damage = 10.0
-	war_exhaustion = 50.0
-	time = 25.0
-	icon = GFX_esc_army_psi_avatar
-	prerequisites = { esc_tech_psi_avatar_army }
-	resources = {
-		category = armies
-		cost = {
-			energy = 25000.0
-			sr_zro = 1000.0
+		use_armynames_from = esc_psionic_avatar_army
+		damage = 50.0
+		health = 70.0
+		has_morale = no
+		morale_damage = 2.0
+		collateral_damage = 10.0
+		war_exhaustion = 50.0
+		time = 25.0
+		has_species = no
+		icon = GFX_esc_army_psi_avatar
+		prerequisites = { esc_tech_psi_avatar_army }
+		resources = {
+			category = armies
+			cost = {
+				energy = 25000.0
+				sr_zro = 1000.0
+			}
 		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
-	}
-	potential = {
-		custom_tooltip = {
-			planet = { is_capital = yes }
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
 		}
-	}
-	potential_country = {
-		OR = {
-			is_machine_empire = no
-			has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
-			has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
+		potential = {
+			custom_tooltip = {
+				planet = { is_capital = yes }
+			}
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = sr_zro
-			PMCA_VALUE = 1000.0
+		potential_country = {
+			OR = {
+				is_machine_empire = no
+				has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
+				has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = sr_zro
+				PMCA_VALUE = 1000.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 150.0
-		modifier = {
-			set = 0
-			is_fallen_empire = yes
-			NOT = { has_ethic = ethic_fanatic_spiritualist }
+		ai_weight = {
+			base = 150.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_spiritualist }
+			}
 		}
-	}
 	}
 	"
 }
@@ -60,55 +61,55 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_ten_esc_erasure_squad_army = {
-	use_armynames_from = esc_erasure_squad_army
-	damage = 70.0
-	health = 20.0
-	morale = 20.0
-	morale_damage = 3.0
-	collateral_damage = 10.0
-	war_exhaustion = 30.0
-	time = 360.0
-	icon = GFX_esc_army_chrono_trooper
-	prerequisites = { esc_tech_chrono_spatial_weapons }
-	resources = {
-		category = armies
-		cost = {
-			energy = 2500.0
-			minerals = 5000.0
-			sr_dark_matter = 100.0
-		}
-		upkeep = {
-			energy = 20.0
-		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
-		OR = {
-			is_machine_empire = no
-		}
-	}
-	potential = {
-		from = {
-			NOR = {
-				has_trait = trait_mechanical
-				has_trait = trait_machine_unit
-				is_sapient = no
+		use_armynames_from = esc_erasure_squad_army
+		damage = 70.0
+		health = 20.0
+		morale = 20.0
+		morale_damage = 3.0
+		collateral_damage = 10.0
+		war_exhaustion = 30.0
+		time = 360.0
+		icon = GFX_esc_army_chrono_trooper
+		prerequisites = { esc_tech_chrono_spatial_weapons }
+		resources = {
+			category = armies
+			cost = {
+				energy = 2500.0
+				minerals = 5000.0
+				sr_dark_matter = 100.0
+			}
+			upkeep = {
+				energy = 20.0
 			}
 		}
-	}
-	potential_country = {
-		OR = {
-			is_machine_empire = no
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
+			OR = {
+				is_machine_empire = no
+			}
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = sr_dark_matter
-			PMCA_VALUE = 100.0
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
 		}
-	}
-	ai_weight = {
-		base = 150.0
-	}
+		potential_country = {
+			OR = {
+				is_machine_empire = no
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = sr_dark_matter
+				PMCA_VALUE = 100.0
+			}
+		}
+		ai_weight = {
+			base = 150.0
+		}
 	}
 	"
 }
@@ -118,45 +119,46 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_ten_esc_eradicator_droids_army = {
-	use_armynames_from = esc_eradicator_droids_army
-	damage = 70.0
-	health = 20.0
-	morale = 10.0
-	morale_damage = 3.0
-	collateral_damage = 10.0
-	war_exhaustion = 30.0
-	time = 360.0
-	icon = GFX_esc_army_chrono_trooper
-	prerequisites = { esc_tech_chrono_spatial_weapons }
-	resources = {
-		category = armies
-		cost = {
-			energy = 2500.0
-			alloys = 2000.0
-			sr_dark_matter = 100.0
+		use_armynames_from = esc_eradicator_droids_army
+		damage = 70.0
+		health = 20.0
+		has_morale = no
+		morale_damage = 3.0
+		collateral_damage = 10.0
+		war_exhaustion = 30.0
+		time = 360.0
+		has_species = no
+		icon = GFX_esc_army_chrono_trooper
+		prerequisites = { esc_tech_chrono_spatial_weapons }
+		resources = {
+			category = armies
+			cost = {
+				energy = 2500.0
+				alloys = 2000.0
+				sr_dark_matter = 100.0
+			}
+			upkeep = {
+				energy = 20.0
+			}
 		}
-		upkeep = {
-			energy = 20.0
-		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
-		is_machine_empire = yes
-	}
-	potential_country = {
-		OR = {
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
 			is_machine_empire = yes
-			has_tradition = tr_synthetics_synthetic_age
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = sr_dark_matter
-			PMCA_VALUE = 100.0
+		potential_country = {
+			OR = {
+				is_machine_empire = yes
+				has_tradition = tr_synthetics_synthetic_age
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = sr_dark_matter
+				PMCA_VALUE = 100.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 150.0
-	}
+		ai_weight = {
+			base = 150.0
+		}
 	}
 	"
 }
@@ -166,52 +168,52 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_ten_esc_tesla_troopers_army = {
-	use_armynames_from = esc_tesla_troopers_army
-	damage = 35.0
-	health = 40.0
-	morale = 20.0
-	morale_damage = 2.0
-	collateral_damage = 10.0
-	war_exhaustion = 15.0
-	time = 360.0
-	icon = GFX_esc_army_tesla_trooper
-	prerequisites = { esc_tech_tesla_weapons }
-	resources = {
-		category = armies
-		cost = {
-			energy = 1500.0
-			minerals = 4000.0
-		}
-		upkeep = {
-			energy = 10.0
-		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		OR = {
-			is_machine_empire = no
-		}
-	}
-	potential = {
-		from = {
-			NOR = {
-				has_trait = trait_mechanical
-				has_trait = trait_machine_unit
-				is_sapient = no
+		use_armynames_from = esc_tesla_troopers_army
+		damage = 35.0
+		health = 40.0
+		morale = 20.0
+		morale_damage = 2.0
+		collateral_damage = 10.0
+		war_exhaustion = 15.0
+		time = 360.0
+		icon = GFX_esc_army_tesla_trooper
+		prerequisites = { esc_tech_tesla_weapons }
+		resources = {
+			category = armies
+			cost = {
+				energy = 1500.0
+				minerals = 4000.0
+			}
+			upkeep = {
+				energy = 10.0
 			}
 		}
-	}
-	potential_country = {
-		is_machine_empire = no
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 4000.0
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
+			OR = {
+				is_machine_empire = no
+			}
 		}
-	}
-	ai_weight = {
-		base = 150.0
-	}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 4000.0
+			}
+		}
+		ai_weight = {
+			base = 150.0
+		}
 	}
 	"
 }
@@ -221,44 +223,45 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_ten_esc_tesla_droids_army = {
-	use_armynames_from = esc_tesla_droids_army
-	damage = 35.0
-	health = 40.0
-	morale = 10.0
-	morale_damage = 2.0
-	collateral_damage = 10.0
-	war_exhaustion = 15.0
-	time = 360.0
-	icon = GFX_esc_army_tesla_trooper
-	prerequisites = { esc_tech_tesla_weapons }
-	resources = {
-		category = armies
-		cost = {
-			energy = 1500.0
-			alloys = 1000.0
+		use_armynames_from = esc_tesla_droids_army
+		damage = 35.0
+		health = 40.0
+		has_morale = no
+		morale_damage = 2.0
+		collateral_damage = 10.0
+		war_exhaustion = 15.0
+		time = 360.0
+		has_species = no
+		icon = GFX_esc_army_tesla_trooper
+		prerequisites = { esc_tech_tesla_weapons }
+		resources = {
+			category = armies
+			cost = {
+				energy = 1500.0
+				alloys = 1000.0
+			}
+			upkeep = {
+				energy = 10.0
+			}
 		}
-		upkeep = {
-			energy = 10.0
-		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		is_machine_empire = yes
-	}
-	potential_country = {
-		OR = {
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
 			is_machine_empire = yes
-			has_tradition = tr_synthetics_synthetic_age
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 1000.0
+		potential_country = {
+			OR = {
+				is_machine_empire = yes
+				has_tradition = tr_synthetics_synthetic_age
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = alloys
+				PMCA_VALUE = 1000.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 150.0
-	}
+		ai_weight = {
+			base = 150.0
+		}
 	}
 	"
 }
@@ -268,52 +271,53 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_ten_esc_biohorror_army = {
-	use_armynames_from = esc_biohorror_army
-	damage = 40.0
-	health = 40.0
-	morale = 10.0
-	morale_damage = 2.5
-	collateral_damage = 40.0
-	war_exhaustion = 2.5
-	time = 100.0
-	icon = GFX_army_type_xenomorph
-	prerequisites = { esc_tech_bio_horror_army }
-	resources = {
-		category = armies
-		cost = {
-			minerals = 3500.0
-		}
-		upkeep = {
-			energy = 20.0
-		}
-	}
-	potential_country = {
-		ESC_TRIGGER_may_research_biological_weapons_advanced = yes
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 3500.0
-		}
-	}
-	ai_weight = {
-		base = 15.0
-		modifier = {
-			factor = 10
-			is_xenophobe = yes
-		}
-		modifier = {
-			set = 0
-			OR = {
-				is_pacifist = yes
-				is_xenophile = yes
+		use_armynames_from = esc_biohorror_army
+		damage = 40.0
+		health = 40.0
+		has_morale = no
+		morale_damage = 2.5
+		collateral_damage = 40.0
+		war_exhaustion = 2.5
+		time = 100.0
+		has_species = no
+		icon = GFX_army_type_xenomorph
+		prerequisites = { esc_tech_bio_horror_army }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 3500.0
+			}
+			upkeep = {
+				energy = 20.0
 			}
 		}
-		modifier = {
-			set = 0
-			is_fallen_empire = yes
-			NOT = { has_ethic = ethic_fanatic_xenophobe }
+		potential_country = {
+			ESC_TRIGGER_may_research_biological_weapons_advanced = yes
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 3500.0
+			}
 		}
-	}
+		ai_weight = {
+			base = 15.0
+			modifier = {
+				factor = 10
+				is_xenophobe = yes
+			}
+			modifier = {
+				set = 0
+				OR = {
+					is_pacifist = yes
+					is_xenophile = yes
+				}
+			}
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_xenophobe }
+			}
+		}
 	}
 	"
 }
@@ -323,51 +327,52 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_hundred_esc_psionic_avatar_army = {
-	use_armynames_from = esc_psionic_avatar_army
-	damage = 500.0
-	health = 700.0
-	morale = 100.0
-	morale_damage = 2.0
-	collateral_damage = 100.0
-	war_exhaustion = 500.0
-	time = 25.0
-	icon = GFX_esc_army_psi_avatar
-	prerequisites = { esc_tech_psi_avatar_army }
-	resources = {
-		category = armies
-		cost = {
-			energy = 250000.0
-			sr_zro = 10000.0
+		use_armynames_from = esc_psionic_avatar_army
+		damage = 500.0
+		health = 700.0
+		has_morale = no
+		morale_damage = 2.0
+		collateral_damage = 100.0
+		war_exhaustion = 500.0
+		time = 25.0
+		has_species = no
+		icon = GFX_esc_army_psi_avatar
+		prerequisites = { esc_tech_psi_avatar_army }
+		resources = {
+			category = armies
+			cost = {
+				energy = 250000.0
+				sr_zro = 10000.0
+			}
 		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
-	}
-	potential = {
-		custom_tooltip = {
-			planet = { is_capital = yes }
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
 		}
-	}
-	potential_country = {
-		OR = {
-			is_machine_empire = no
-			has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
-			has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
+		potential = {
+			custom_tooltip = {
+				planet = { is_capital = yes }
+			}
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = sr_zro
-			PMCA_VALUE = 1000.0
+		potential_country = {
+			OR = {
+				is_machine_empire = no
+				has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
+				has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = sr_zro
+				PMCA_VALUE = 1000.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 200.0
-		modifier = {
-			set = 0
-			is_fallen_empire = yes
-			NOT = { has_ethic = ethic_fanatic_spiritualist }
+		ai_weight = {
+			base = 200.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_spiritualist }
+			}
 		}
-	}
 	}
 	"
 }
@@ -377,55 +382,55 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_hundred_esc_erasure_squad_army = {
-	use_armynames_from = esc_erasure_squad_army
-	damage = 700.0
-	health = 200.0
-	morale = 200.0
-	morale_damage = 3.0
-	collateral_damage = 100.0
-	war_exhaustion = 300.0
-	time = 360.0
-	icon = GFX_esc_army_chrono_trooper
-	prerequisites = { esc_tech_chrono_spatial_weapons }
-	resources = {
-		category = armies
-		cost = {
-			energy = 25000.0
-			minerals = 50000.0
-			sr_dark_matter = 1000.0
-		}
-		upkeep = {
-			energy = 200.0
-		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
-		OR = {
-			is_machine_empire = no
-		}
-	}
-	potential = {
-		from = {
-			NOR = {
-				has_trait = trait_mechanical
-				has_trait = trait_machine_unit
-				is_sapient = no
+		use_armynames_from = esc_erasure_squad_army
+		damage = 700.0
+		health = 200.0
+		morale = 200.0
+		morale_damage = 3.0
+		collateral_damage = 100.0
+		war_exhaustion = 300.0
+		time = 360.0
+		icon = GFX_esc_army_chrono_trooper
+		prerequisites = { esc_tech_chrono_spatial_weapons }
+		resources = {
+			category = armies
+			cost = {
+				energy = 25000.0
+				minerals = 50000.0
+				sr_dark_matter = 1000.0
+			}
+			upkeep = {
+				energy = 200.0
 			}
 		}
-	}
-	potential_country = {
-		OR = {
-			is_machine_empire = no
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
+			OR = {
+				is_machine_empire = no
+			}
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = sr_dark_matter
-			PMCA_VALUE = 100.0
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
 		}
-	}
-	ai_weight = {
-		base = 200.0
-	}
+		potential_country = {
+			OR = {
+				is_machine_empire = no
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = sr_dark_matter
+				PMCA_VALUE = 100.0
+			}
+		}
+		ai_weight = {
+			base = 200.0
+		}
 	}
 	"
 }
@@ -435,45 +440,46 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_hundred_esc_eradicator_droids_army = {
-	use_armynames_from = esc_eradicator_droids_army
-	damage = 700.0
-	health = 200.0
-	morale = 100.0
-	morale_damage = 3.0
-	collateral_damage = 100.0
-	war_exhaustion = 300.0
-	time = 360.0
-	icon = GFX_esc_army_chrono_trooper
-	prerequisites = { esc_tech_chrono_spatial_weapons }
-	resources = {
-		category = armies
-		cost = {
-			energy = 25000.0
-			alloys = 20000.0
-			sr_dark_matter = 1000.0
+		use_armynames_from = esc_eradicator_droids_army
+		damage = 700.0
+		health = 200.0
+		has_morale = no
+		morale_damage = 3.0
+		collateral_damage = 100.0
+		war_exhaustion = 300.0
+		time = 360.0
+		has_species = no
+		icon = GFX_esc_army_chrono_trooper
+		prerequisites = { esc_tech_chrono_spatial_weapons }
+		resources = {
+			category = armies
+			cost = {
+				energy = 25000.0
+				alloys = 20000.0
+				sr_dark_matter = 1000.0
+			}
+			upkeep = {
+				energy = 200.0
+			}
 		}
-		upkeep = {
-			energy = 200.0
-		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
-		is_machine_empire = yes
-	}
-	potential_country = {
-		OR = {
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden }
 			is_machine_empire = yes
-			has_tradition = tr_synthetics_synthetic_age
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = sr_dark_matter
-			PMCA_VALUE = 100.0
+		potential_country = {
+			OR = {
+				is_machine_empire = yes
+				has_tradition = tr_synthetics_synthetic_age
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = sr_dark_matter
+				PMCA_VALUE = 100.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 200.0
-	}
+		ai_weight = {
+			base = 200.0
+		}
 	}
 	"
 }
@@ -483,52 +489,52 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_hundred_esc_tesla_troopers_army = {
-	use_armynames_from = esc_tesla_troopers_army
-	damage = 350.0
-	health = 400.0
-	morale = 200.0
-	morale_damage = 2.0
-	collateral_damage = 100.0
-	war_exhaustion = 150.0
-	time = 360.0
-	icon = GFX_esc_army_tesla_trooper
-	prerequisites = { esc_tech_tesla_weapons }
-	resources = {
-		category = armies
-		cost = {
-			energy = 15000.0
-			minerals = 40000.0
-		}
-		upkeep = {
-			energy = 100.0
-		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		OR = {
-			is_machine_empire = no
-		}
-	}
-	potential = {
-		from = {
-			NOR = {
-				has_trait = trait_mechanical
-				has_trait = trait_machine_unit
-				is_sapient = no
+		use_armynames_from = esc_tesla_troopers_army
+		damage = 350.0
+		health = 400.0
+		morale = 200.0
+		morale_damage = 2.0
+		collateral_damage = 100.0
+		war_exhaustion = 150.0
+		time = 360.0
+		icon = GFX_esc_army_tesla_trooper
+		prerequisites = { esc_tech_tesla_weapons }
+		resources = {
+			category = armies
+			cost = {
+				energy = 15000.0
+				minerals = 40000.0
+			}
+			upkeep = {
+				energy = 100.0
 			}
 		}
-	}
-	potential_country = {
-		is_machine_empire = no
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 4000.0
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
+			OR = {
+				is_machine_empire = no
+			}
 		}
-	}
-	ai_weight = {
-		base = 200.0
-	}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 4000.0
+			}
+		}
+		ai_weight = {
+			base = 200.0
+		}
 	}
 	"
 }
@@ -538,44 +544,45 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_hundred_esc_tesla_droids_army = {
-	use_armynames_from = esc_tesla_droids_army
-	damage = 350.0
-	health = 400.0
-	morale = 100.0
-	morale_damage = 2.0
-	collateral_damage = 100.0
-	war_exhaustion = 150.0
-	time = 360.0
-	icon = GFX_esc_army_tesla_trooper
-	prerequisites = { esc_tech_tesla_weapons }
-	resources = {
-		category = armies
-		cost = {
-			energy = 15000.0
-			alloys = 10000.0
+		use_armynames_from = esc_tesla_droids_army
+		damage = 350.0
+		health = 400.0
+		has_morale = no
+		morale_damage = 2.0
+		collateral_damage = 100.0
+		war_exhaustion = 150.0
+		time = 360.0
+		has_species = no
+		icon = GFX_esc_army_tesla_trooper
+		prerequisites = { esc_tech_tesla_weapons }
+		resources = {
+			category = armies
+			cost = {
+				energy = 15000.0
+				alloys = 10000.0
+			}
+			upkeep = {
+				energy = 100.0
+			}
 		}
-		upkeep = {
-			energy = 100.0
-		}
-	}
-	show_tech_unlock_if = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
-		is_machine_empire = yes
-	}
-	potential_country = {
-		OR = {
+		show_tech_unlock_if = {
+			NOT = { has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden }
 			is_machine_empire = yes
-			has_tradition = tr_synthetics_synthetic_age
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 1000.0
+		potential_country = {
+			OR = {
+				is_machine_empire = yes
+				has_tradition = tr_synthetics_synthetic_age
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = alloys
+				PMCA_VALUE = 1000.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 200.0
-	}
+		ai_weight = {
+			base = 200.0
+		}
 	}
 	"
 }
@@ -585,52 +592,53 @@ inline_script = {
 	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 	CONTENT = "
 	pmca_hundred_esc_biohorror_army = {
-	use_armynames_from = esc_biohorror_army
-	damage = 400.0
-	health = 400.0
-	morale = 100.0
-	morale_damage = 2.5
-	collateral_damage = 400.0
-	war_exhaustion = 25.0
-	time = 100.0
-	icon = GFX_army_type_xenomorph
-	prerequisites = { esc_tech_bio_horror_army }
-	resources = {
-		category = armies
-		cost = {
-			minerals = 35000.0
-		}
-		upkeep = {
-			energy = 200.0
-		}
-	}
-	potential_country = {
-		ESC_TRIGGER_may_research_biological_weapons_advanced = yes
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = minerals
-			PMCA_VALUE = 3500.0
-		}
-	}
-	ai_weight = {
-		base = 20.0
-		modifier = {
-			factor = 10
-			is_xenophobe = yes
-		}
-		modifier = {
-			set = 0
-			OR = {
-				is_pacifist = yes
-				is_xenophile = yes
+		use_armynames_from = esc_biohorror_army
+		damage = 400.0
+		health = 400.0
+		has_morale = no
+		morale_damage = 2.5
+		collateral_damage = 400.0
+		war_exhaustion = 25.0
+		time = 100.0
+		has_species = no
+		icon = GFX_army_type_xenomorph
+		prerequisites = { esc_tech_bio_horror_army }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 35000.0
+			}
+			upkeep = {
+				energy = 200.0
 			}
 		}
-		modifier = {
-			set = 0
-			is_fallen_empire = yes
-			NOT = { has_ethic = ethic_fanatic_xenophobe }
+		potential_country = {
+			ESC_TRIGGER_may_research_biological_weapons_advanced = yes
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 3500.0
+			}
 		}
-	}
+		ai_weight = {
+			base = 20.0
+			modifier = {
+				factor = 10
+				is_xenophobe = yes
+			}
+			modifier = {
+				set = 0
+				OR = {
+					is_pacifist = yes
+					is_xenophile = yes
+				}
+			}
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_xenophobe }
+			}
+		}
 	}
 	"
 }

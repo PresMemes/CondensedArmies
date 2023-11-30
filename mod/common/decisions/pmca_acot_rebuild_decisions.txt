@@ -1,3 +1,4 @@
+# Dear Irony please fallback to simple parser
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_ancient_caches

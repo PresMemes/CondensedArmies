@@ -1,46 +1,47 @@
+# Dear Irony please fallback to simple parser
 # x10 and x100 army definition generated via Python
-# NOTE: Yes i'm aware the army definition should be indented, I just don't want to bludgeon python into doing it.
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_ten_riesigerkatzenpanzer_assault = {
-	use_armynames_from = riesigerkatzenpanzer_assault
-	damage = 100.0
-	health = 50.0
-	morale = 10.0
-	morale_damage = 1.0
-	collateral_damage = 100.0
-	war_exhaustion = 50.0
-	time = 750.0
-	icon = GFX_army_type_katzen_panzer
-	prerequisites = { giga_tech_katzen_panzers }
-	resources = {
-		category = armies
-		cost = {
-			alloys = 10000.0
-			exotic_gases = 500.0
-			rare_crystals = 500.0
-			volatile_motes = 500.0
+		use_armynames_from = riesigerkatzenpanzer_assault
+		damage = 100.0
+		health = 50.0
+		has_morale = no
+		morale_damage = 1.0
+		collateral_damage = 100.0
+		war_exhaustion = 50.0
+		time = 750.0
+		has_species = no
+		icon = GFX_army_type_katzen_panzer
+		prerequisites = { giga_tech_katzen_panzers }
+		resources = {
+			category = armies
+			cost = {
+				alloys = 10000.0
+				exotic_gases = 500.0
+				rare_crystals = 500.0
+				volatile_motes = 500.0
+			}
+			upkeep = {
+				energy = 100.0
+			}
 		}
-		upkeep = {
-			energy = 100.0
+		potential = {
+			owner = { has_technology = giga_tech_katzen_panzers }
 		}
-	}
-	potential = {
-		owner = { has_technology = giga_tech_katzen_panzers }
-	}
-	potential_country = {
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = exotic_gases
-			PMCA_VALUE = 500.0
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = exotic_gases
+				PMCA_VALUE = 500.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 0.0
-	}
+		ai_weight = {
+			base = 0.0
+		}
 	}
 	"
 }
@@ -50,46 +51,46 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_ten_giga_eaw_crystal_army = {
-	use_armynames_from = giga_eaw_crystal_army
-	damage = 20.0
-	health = 9.0
-	morale = 11.0
-	morale_damage = 1.0
-	collateral_damage = 10.0
-	war_exhaustion = 10.0
-	time = 90.0
-	icon = GFX_army_type_psionic
-	prerequisites = { giga_tech_thaumaturgic_weaponry }
-	resources = {
-		category = armies
-		cost = {
-			minerals = 1000.0
-			rare_crystals = 100.0
+		use_armynames_from = giga_eaw_crystal_army
+		damage = 20.0
+		health = 9.0
+		morale = 11.0
+		morale_damage = 1.0
+		collateral_damage = 10.0
+		war_exhaustion = 10.0
+		time = 90.0
+		icon = GFX_army_type_psionic
+		prerequisites = { giga_tech_thaumaturgic_weaponry }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 1000.0
+				rare_crystals = 100.0
+			}
+			upkeep = {
+				energy = 10.0
+				rare_crystals = 1.0
+			}
 		}
-		upkeep = {
-			energy = 10.0
-			rare_crystals = 1.0
-		}
-	}
-	show_tech_unlock_if = {
-		is_machine_empire = no
-	}
-	potential = {
-		owner = {
-			has_technology = giga_tech_thaumaturgic_weaponry
+		show_tech_unlock_if = {
 			is_machine_empire = no
 		}
-	}
-	potential_country = {
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = rare_crystals
-			PMCA_VALUE = 100.0
+		potential = {
+			owner = {
+				has_technology = giga_tech_thaumaturgic_weaponry
+				is_machine_empire = no
+			}
 		}
-	}
-	ai_weight = {
-		base = 0.0
-	}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = rare_crystals
+				PMCA_VALUE = 100.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
 	}
 	"
 }
@@ -99,46 +100,46 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_ten_giga_eaw_crystal_army_drone = {
-	use_armynames_from = giga_eaw_crystal_army_drone
-	damage = 20.0
-	health = 14.0
-	morale = 10.0
-	morale_damage = 1.0
-	collateral_damage = 10.0
-	war_exhaustion = 10.0
-	time = 90.0
-	icon = GFX_army_type_psionic
-	prerequisites = { giga_tech_thaumaturgic_weaponry }
-	resources = {
-		category = armies
-		cost = {
-			minerals = 1250.0
-			rare_crystals = 100.0
+		use_armynames_from = giga_eaw_crystal_army_drone
+		damage = 20.0
+		health = 14.0
+		has_morale = no
+		morale_damage = 1.0
+		collateral_damage = 10.0
+		war_exhaustion = 10.0
+		time = 90.0
+		icon = GFX_army_type_psionic
+		prerequisites = { giga_tech_thaumaturgic_weaponry }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 1250.0
+				rare_crystals = 100.0
+			}
+			upkeep = {
+				energy = 10.0
+				rare_crystals = 2.5
+			}
 		}
-		upkeep = {
-			energy = 10.0
-			rare_crystals = 2.5
-		}
-	}
-	show_tech_unlock_if = {
-		is_machine_empire = yes
-	}
-	potential = {
-		owner = {
-			has_technology = giga_tech_thaumaturgic_weaponry
+		show_tech_unlock_if = {
 			is_machine_empire = yes
 		}
-	}
-	potential_country = {
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = rare_crystals
-			PMCA_VALUE = 100.0
+		potential = {
+			owner = {
+				has_technology = giga_tech_thaumaturgic_weaponry
+				is_machine_empire = yes
+			}
 		}
-	}
-	ai_weight = {
-		base = 0.0
-	}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = rare_crystals
+				PMCA_VALUE = 100.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
 	}
 	"
 }
@@ -148,43 +149,43 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_ten_shroud_summoned_army = {
-	use_armynames_from = shroud_summoned_army
-	damage = 20.0
-	health = 7.5
-	morale = 10.0
-	morale_damage = 1.5
-	collateral_damage = 10.0
-	war_exhaustion = 10.0
-	time = 30.0
-	icon = GFX_army_type_psionic
-	prerequisites = { giga_tech_shroud_conduit }
-	resources = {
-		category = armies
-		cost = {
-			energy = 1000.0
-			sr_zro = 100.0
+		use_armynames_from = shroud_summoned_army
+		damage = 20.0
+		health = 7.5
+		has_morale = no
+		morale_damage = 1.5
+		collateral_damage = 10.0
+		war_exhaustion = 10.0
+		time = 30.0
+		icon = GFX_army_type_psionic
+		prerequisites = { giga_tech_shroud_conduit }
+		resources = {
+			category = armies
+			cost = {
+				energy = 1000.0
+				sr_zro = 100.0
+			}
+			upkeep = {
+				energy = 10.0
+			}
 		}
-		upkeep = {
-			energy = 10.0
+		potential = {
+			has_building = building_giga_shroud_conduit
+			from = {
+				is_robotic = no
+				has_psionic_species_trait = yes
+			}
 		}
-	}
-	potential = {
-		has_building = building_giga_shroud_conduit
-		from = {
-			is_robotic = no
-			has_psionic_species_trait = yes
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = sr_zro
+				PMCA_VALUE = 100.0
+			}
 		}
-	}
-	potential_country = {
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = sr_zro
-			PMCA_VALUE = 100.0
+		ai_weight = {
+			base = 0.0
 		}
-	}
-	ai_weight = {
-		base = 0.0
-	}
 	}
 	"
 }
@@ -194,43 +195,44 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_ten_cybrex_warform = {
-	use_armynames_from = cybrex_warform
-	damage = 50.0
-	health = 70.0
-	morale = 10.0
-	morale_damage = 2.0
-	collateral_damage = 50.0
-	war_exhaustion = 40.0
-	time = 500.0
-	icon = GFX_army_type_machine_assault
-	resources = {
-		category = armies
-		cost = {
-			alloys = 2500.0
+		use_armynames_from = cybrex_warform
+		damage = 50.0
+		health = 70.0
+		has_morale = no
+		morale_damage = 2.0
+		collateral_damage = 50.0
+		war_exhaustion = 40.0
+		time = 500.0
+		has_species = no
+		icon = GFX_army_type_machine_assault
+		resources = {
+			category = armies
+			cost = {
+				alloys = 2500.0
+			}
+			upkeep = {
+				energy = 80.0
+			}
 		}
-		upkeep = {
-			energy = 80.0
+		potential = {
+			custom_tooltip = {
+				planet = { is_capital = yes }
+			}
 		}
-	}
-	potential = {
-		custom_tooltip = {
-			planet = { is_capital = yes }
+		potential_country = {
+			OR = {
+				has_relic = r_war_forge
+				has_relic = r_ehof_war_forge
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = alloys
+				PMCA_VALUE = 2500.0
+			}
 		}
-	}
-	potential_country = {
-		OR = {
-			has_relic = r_war_forge
-			has_relic = r_ehof_war_forge
+		ai_weight = {
+			base = 75.0
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 2500.0
-		}
-	}
-	ai_weight = {
-		base = 75.0
-	}
 	}
 	"
 }
@@ -240,44 +242,44 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_ten_maginot_assault_unit = {
-	use_armynames_from = maginot_assault_unit
-	damage = 50.0
-	health = 70.0
-	morale = 60.0
-	morale_damage = 1.75
-	collateral_damage = 50.0
-	war_exhaustion = 40.0
-	time = 500.0
-	icon = GFX_army_type_maginot_assault_unit
-	resources = {
-		category = armies
-		cost = {
-			alloys = 2500.0
+		use_armynames_from = maginot_assault_unit
+		damage = 50.0
+		health = 70.0
+		morale = 60.0
+		morale_damage = 1.75
+		collateral_damage = 50.0
+		war_exhaustion = 40.0
+		time = 500.0
+		icon = GFX_army_type_maginot_assault_unit
+		resources = {
+			category = armies
+			cost = {
+				alloys = 2500.0
+			}
+			upkeep = {
+				energy = 80.0
+				alloys = 1.0
+			}
 		}
-		upkeep = {
-			energy = 80.0
-			alloys = 1.0
+		show_tech_unlock_if = {
+			is_machine_empire = no
 		}
-	}
-	show_tech_unlock_if = {
-		is_machine_empire = no
-	}
-	potential = {
-		custom_tooltip = {
-			planet = { is_giga_maginot_world = yes }
+		potential = {
+			custom_tooltip = {
+				planet = { is_giga_maginot_world = yes }
+			}
 		}
-	}
-	potential_country = {
-		has_country_flag = has_built_or_repaired_gigastructure
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 2500.0
+		potential_country = {
+			has_country_flag = has_built_or_repaired_gigastructure
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = alloys
+				PMCA_VALUE = 2500.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 76.5
-	}
+		ai_weight = {
+			base = 76.5
+		}
 	}
 	"
 }
@@ -287,45 +289,46 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_ten_maginot_machine_assault_unit = {
-	use_armynames_from = maginot_machine_assault_unit
-	damage = 50.0
-	health = 70.0
-	morale = 10.0
-	morale_damage = 1.75
-	collateral_damage = 50.0
-	war_exhaustion = 40.0
-	time = 500.0
-	icon = GFX_army_type_maginot_machine_assault_unit
-	resources = {
-		category = armies
-		cost = {
-			alloys = 2500.0
+		use_armynames_from = maginot_machine_assault_unit
+		damage = 50.0
+		health = 70.0
+		has_morale = no
+		morale_damage = 1.75
+		collateral_damage = 50.0
+		war_exhaustion = 40.0
+		time = 500.0
+		has_species = no
+		icon = GFX_army_type_maginot_machine_assault_unit
+		resources = {
+			category = armies
+			cost = {
+				alloys = 2500.0
+			}
+			upkeep = {
+				energy = 80.0
+				alloys = 1.0
+			}
 		}
-		upkeep = {
-			energy = 80.0
-			alloys = 1.0
+		show_tech_unlock_if = {
+			is_machine_empire = yes
 		}
-	}
-	show_tech_unlock_if = {
-		is_machine_empire = yes
-	}
-	potential = {
-		custom_tooltip = {
-			planet = { is_giga_maginot_world = yes }
+		potential = {
+			custom_tooltip = {
+				planet = { is_giga_maginot_world = yes }
+			}
 		}
-	}
-	potential_country = {
-		is_machine_empire = yes
-		has_country_flag = has_built_or_repaired_gigastructure
-		pmca_materiel_policy_check = {
-			PMCA_MULT = ten
-			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 2500.0
+		potential_country = {
+			is_machine_empire = yes
+			has_country_flag = has_built_or_repaired_gigastructure
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = alloys
+				PMCA_VALUE = 2500.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 76.5
-	}
+		ai_weight = {
+			base = 76.5
+		}
 	}
 	"
 }
@@ -335,41 +338,42 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_hundred_riesigerkatzenpanzer_assault = {
-	use_armynames_from = riesigerkatzenpanzer_assault
-	damage = 1000.0
-	health = 500.0
-	morale = 100.0
-	morale_damage = 1.0
-	collateral_damage = 1000.0
-	war_exhaustion = 500.0
-	time = 750.0
-	icon = GFX_army_type_katzen_panzer
-	prerequisites = { giga_tech_katzen_panzers }
-	resources = {
-		category = armies
-		cost = {
-			alloys = 100000.0
-			exotic_gases = 5000.0
-			rare_crystals = 5000.0
-			volatile_motes = 5000.0
+		use_armynames_from = riesigerkatzenpanzer_assault
+		damage = 1000.0
+		health = 500.0
+		has_morale = no
+		morale_damage = 1.0
+		collateral_damage = 1000.0
+		war_exhaustion = 500.0
+		time = 750.0
+		has_species = no
+		icon = GFX_army_type_katzen_panzer
+		prerequisites = { giga_tech_katzen_panzers }
+		resources = {
+			category = armies
+			cost = {
+				alloys = 100000.0
+				exotic_gases = 5000.0
+				rare_crystals = 5000.0
+				volatile_motes = 5000.0
+			}
+			upkeep = {
+				energy = 1000.0
+			}
 		}
-		upkeep = {
-			energy = 1000.0
+		potential = {
+			owner = { has_technology = giga_tech_katzen_panzers }
 		}
-	}
-	potential = {
-		owner = { has_technology = giga_tech_katzen_panzers }
-	}
-	potential_country = {
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = exotic_gases
-			PMCA_VALUE = 500.0
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = exotic_gases
+				PMCA_VALUE = 500.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 0.0
-	}
+		ai_weight = {
+			base = 0.0
+		}
 	}
 	"
 }
@@ -379,46 +383,46 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_hundred_giga_eaw_crystal_army = {
-	use_armynames_from = giga_eaw_crystal_army
-	damage = 200.0
-	health = 90.0
-	morale = 110.0
-	morale_damage = 1.0
-	collateral_damage = 100.0
-	war_exhaustion = 100.0
-	time = 90.0
-	icon = GFX_army_type_psionic
-	prerequisites = { giga_tech_thaumaturgic_weaponry }
-	resources = {
-		category = armies
-		cost = {
-			minerals = 10000.0
-			rare_crystals = 1000.0
+		use_armynames_from = giga_eaw_crystal_army
+		damage = 200.0
+		health = 90.0
+		morale = 110.0
+		morale_damage = 1.0
+		collateral_damage = 100.0
+		war_exhaustion = 100.0
+		time = 90.0
+		icon = GFX_army_type_psionic
+		prerequisites = { giga_tech_thaumaturgic_weaponry }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 10000.0
+				rare_crystals = 1000.0
+			}
+			upkeep = {
+				energy = 100.0
+				rare_crystals = 10.0
+			}
 		}
-		upkeep = {
-			energy = 100.0
-			rare_crystals = 10.0
-		}
-	}
-	show_tech_unlock_if = {
-		is_machine_empire = no
-	}
-	potential = {
-		owner = {
-			has_technology = giga_tech_thaumaturgic_weaponry
+		show_tech_unlock_if = {
 			is_machine_empire = no
 		}
-	}
-	potential_country = {
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = rare_crystals
-			PMCA_VALUE = 100.0
+		potential = {
+			owner = {
+				has_technology = giga_tech_thaumaturgic_weaponry
+				is_machine_empire = no
+			}
 		}
-	}
-	ai_weight = {
-		base = 0.0
-	}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = rare_crystals
+				PMCA_VALUE = 100.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
 	}
 	"
 }
@@ -428,46 +432,46 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_hundred_giga_eaw_crystal_army_drone = {
-	use_armynames_from = giga_eaw_crystal_army_drone
-	damage = 200.0
-	health = 140.0
-	morale = 100.0
-	morale_damage = 1.0
-	collateral_damage = 100.0
-	war_exhaustion = 100.0
-	time = 90.0
-	icon = GFX_army_type_psionic
-	prerequisites = { giga_tech_thaumaturgic_weaponry }
-	resources = {
-		category = armies
-		cost = {
-			minerals = 12500.0
-			rare_crystals = 1000.0
+		use_armynames_from = giga_eaw_crystal_army_drone
+		damage = 200.0
+		health = 140.0
+		has_morale = no
+		morale_damage = 1.0
+		collateral_damage = 100.0
+		war_exhaustion = 100.0
+		time = 90.0
+		icon = GFX_army_type_psionic
+		prerequisites = { giga_tech_thaumaturgic_weaponry }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 12500.0
+				rare_crystals = 1000.0
+			}
+			upkeep = {
+				energy = 100.0
+				rare_crystals = 25.0
+			}
 		}
-		upkeep = {
-			energy = 100.0
-			rare_crystals = 25.0
-		}
-	}
-	show_tech_unlock_if = {
-		is_machine_empire = yes
-	}
-	potential = {
-		owner = {
-			has_technology = giga_tech_thaumaturgic_weaponry
+		show_tech_unlock_if = {
 			is_machine_empire = yes
 		}
-	}
-	potential_country = {
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = rare_crystals
-			PMCA_VALUE = 100.0
+		potential = {
+			owner = {
+				has_technology = giga_tech_thaumaturgic_weaponry
+				is_machine_empire = yes
+			}
 		}
-	}
-	ai_weight = {
-		base = 0.0
-	}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = rare_crystals
+				PMCA_VALUE = 100.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
 	}
 	"
 }
@@ -477,43 +481,43 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_hundred_shroud_summoned_army = {
-	use_armynames_from = shroud_summoned_army
-	damage = 200.0
-	health = 75.0
-	morale = 100.0
-	morale_damage = 1.5
-	collateral_damage = 100.0
-	war_exhaustion = 100.0
-	time = 30.0
-	icon = GFX_army_type_psionic
-	prerequisites = { giga_tech_shroud_conduit }
-	resources = {
-		category = armies
-		cost = {
-			energy = 10000.0
-			sr_zro = 1000.0
+		use_armynames_from = shroud_summoned_army
+		damage = 200.0
+		health = 75.0
+		has_morale = no
+		morale_damage = 1.5
+		collateral_damage = 100.0
+		war_exhaustion = 100.0
+		time = 30.0
+		icon = GFX_army_type_psionic
+		prerequisites = { giga_tech_shroud_conduit }
+		resources = {
+			category = armies
+			cost = {
+				energy = 10000.0
+				sr_zro = 1000.0
+			}
+			upkeep = {
+				energy = 100.0
+			}
 		}
-		upkeep = {
-			energy = 100.0
+		potential = {
+			has_building = building_giga_shroud_conduit
+			from = {
+				is_robotic = no
+				has_psionic_species_trait = yes
+			}
 		}
-	}
-	potential = {
-		has_building = building_giga_shroud_conduit
-		from = {
-			is_robotic = no
-			has_psionic_species_trait = yes
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = sr_zro
+				PMCA_VALUE = 100.0
+			}
 		}
-	}
-	potential_country = {
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = sr_zro
-			PMCA_VALUE = 100.0
+		ai_weight = {
+			base = 0.0
 		}
-	}
-	ai_weight = {
-		base = 0.0
-	}
 	}
 	"
 }
@@ -523,43 +527,44 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_hundred_cybrex_warform = {
-	use_armynames_from = cybrex_warform
-	damage = 500.0
-	health = 700.0
-	morale = 100.0
-	morale_damage = 2.0
-	collateral_damage = 500.0
-	war_exhaustion = 400.0
-	time = 500.0
-	icon = GFX_army_type_machine_assault
-	resources = {
-		category = armies
-		cost = {
-			alloys = 25000.0
+		use_armynames_from = cybrex_warform
+		damage = 500.0
+		health = 700.0
+		has_morale = no
+		morale_damage = 2.0
+		collateral_damage = 500.0
+		war_exhaustion = 400.0
+		time = 500.0
+		has_species = no
+		icon = GFX_army_type_machine_assault
+		resources = {
+			category = armies
+			cost = {
+				alloys = 25000.0
+			}
+			upkeep = {
+				energy = 800.0
+			}
 		}
-		upkeep = {
-			energy = 800.0
+		potential = {
+			custom_tooltip = {
+				planet = { is_capital = yes }
+			}
 		}
-	}
-	potential = {
-		custom_tooltip = {
-			planet = { is_capital = yes }
+		potential_country = {
+			OR = {
+				has_relic = r_war_forge
+				has_relic = r_ehof_war_forge
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = alloys
+				PMCA_VALUE = 2500.0
+			}
 		}
-	}
-	potential_country = {
-		OR = {
-			has_relic = r_war_forge
-			has_relic = r_ehof_war_forge
+		ai_weight = {
+			base = 100.0
 		}
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 2500.0
-		}
-	}
-	ai_weight = {
-		base = 100.0
-	}
 	}
 	"
 }
@@ -569,44 +574,44 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_hundred_maginot_assault_unit = {
-	use_armynames_from = maginot_assault_unit
-	damage = 500.0
-	health = 700.0
-	morale = 600.0
-	morale_damage = 1.75
-	collateral_damage = 500.0
-	war_exhaustion = 400.0
-	time = 500.0
-	icon = GFX_army_type_maginot_assault_unit
-	resources = {
-		category = armies
-		cost = {
-			alloys = 25000.0
+		use_armynames_from = maginot_assault_unit
+		damage = 500.0
+		health = 700.0
+		morale = 600.0
+		morale_damage = 1.75
+		collateral_damage = 500.0
+		war_exhaustion = 400.0
+		time = 500.0
+		icon = GFX_army_type_maginot_assault_unit
+		resources = {
+			category = armies
+			cost = {
+				alloys = 25000.0
+			}
+			upkeep = {
+				energy = 800.0
+				alloys = 10.0
+			}
 		}
-		upkeep = {
-			energy = 800.0
-			alloys = 10.0
+		show_tech_unlock_if = {
+			is_machine_empire = no
 		}
-	}
-	show_tech_unlock_if = {
-		is_machine_empire = no
-	}
-	potential = {
-		custom_tooltip = {
-			planet = { is_giga_maginot_world = yes }
+		potential = {
+			custom_tooltip = {
+				planet = { is_giga_maginot_world = yes }
+			}
 		}
-	}
-	potential_country = {
-		has_country_flag = has_built_or_repaired_gigastructure
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 2500.0
+		potential_country = {
+			has_country_flag = has_built_or_repaired_gigastructure
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = alloys
+				PMCA_VALUE = 2500.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 102.0
-	}
+		ai_weight = {
+			base = 102.0
+		}
 	}
 	"
 }
@@ -616,45 +621,46 @@ inline_script = {
 	MOD_VARIABLE = @has_gigastructures
 	CONTENT = "
 	pmca_hundred_maginot_machine_assault_unit = {
-	use_armynames_from = maginot_machine_assault_unit
-	damage = 500.0
-	health = 700.0
-	morale = 100.0
-	morale_damage = 1.75
-	collateral_damage = 500.0
-	war_exhaustion = 400.0
-	time = 500.0
-	icon = GFX_army_type_maginot_machine_assault_unit
-	resources = {
-		category = armies
-		cost = {
-			alloys = 25000.0
+		use_armynames_from = maginot_machine_assault_unit
+		damage = 500.0
+		health = 700.0
+		has_morale = no
+		morale_damage = 1.75
+		collateral_damage = 500.0
+		war_exhaustion = 400.0
+		time = 500.0
+		has_species = no
+		icon = GFX_army_type_maginot_machine_assault_unit
+		resources = {
+			category = armies
+			cost = {
+				alloys = 25000.0
+			}
+			upkeep = {
+				energy = 800.0
+				alloys = 10.0
+			}
 		}
-		upkeep = {
-			energy = 800.0
-			alloys = 10.0
+		show_tech_unlock_if = {
+			is_machine_empire = yes
 		}
-	}
-	show_tech_unlock_if = {
-		is_machine_empire = yes
-	}
-	potential = {
-		custom_tooltip = {
-			planet = { is_giga_maginot_world = yes }
+		potential = {
+			custom_tooltip = {
+				planet = { is_giga_maginot_world = yes }
+			}
 		}
-	}
-	potential_country = {
-		is_machine_empire = yes
-		has_country_flag = has_built_or_repaired_gigastructure
-		pmca_materiel_policy_check = {
-			PMCA_MULT = hundred
-			PMCA_RESOURCE = alloys
-			PMCA_VALUE = 2500.0
+		potential_country = {
+			is_machine_empire = yes
+			has_country_flag = has_built_or_repaired_gigastructure
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = alloys
+				PMCA_VALUE = 2500.0
+			}
 		}
-	}
-	ai_weight = {
-		base = 102.0
-	}
+		ai_weight = {
+			base = 102.0
+		}
 	}
 	"
 }

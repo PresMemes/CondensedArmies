@@ -1,3 +1,4 @@
+# Dear Irony please fallback to simple parser
 # Credit to TTFTCUTS and MrRoAdd for letting their intrusive thoughts win
 # So the weird ass equation below is this:
 # |(((x / x) - 1) / ((0/0) - 1)) - 1|
@@ -7,7 +8,9 @@
 inline_script = {
 	script = army/pmca_conditional_inline_p2
 
-	CASE = @[ |((($MOD_VARIABLE$ / $MOD_VARIABLE$) - 1 ) / ((0 / 0) - 1)) - 1| ]
+	CASE = @[ ($MOD_VARIABLE$ * $MOD_VARIABLE$) ]
+
+	#CASE = @[ | (((($MOD_VARIABLE$ / $MOD_VARIABLE$) - 1) / ((0 / 0) - 1)) - 1) | ]
 	CONTENT = "$CONTENT$"
 }
 

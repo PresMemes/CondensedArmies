@@ -1,3 +1,4 @@
+# Dear Irony please fallback to simple parser
 inline_script = {
 	script = army/pmca_conditional_inline_p3_case_$CASE$
 	CONTENT = "$CONTENT$"
