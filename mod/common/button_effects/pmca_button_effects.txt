@@ -2,15 +2,13 @@
 #### TOOLTIP MAKER ####
 #######################
 
-###########################
-### PATCHES WORK-AROUND ###
-###########################
-
+#######################
+### PATCHES TOOLTIP ###
+#######################
 pmca_button_patches_tooltip = {
     potential = { is_same_value = from }
-    effect = {
-        custom_tooltip = pmca_calm_patches_tooltip
-    }
+    allow = { always = yes }
+    effect = { custom_tooltip = pmca_calm_patches_tooltip }
 }
 
 #################
@@ -28,6 +26,11 @@ pmca_button_ai_enabled = {
     effect = {
         hidden_effect = {
             remove_global_flag = pmca_ai_allowed
+            every_playable_country = {
+                limit = { is_ai = yes }
+                remove_country_flag = pmca_times_ten_set
+                remove_country_flag = pmca_times_hundred_set
+            }
         }
     }
 }
@@ -62,10 +65,6 @@ pmca_button_condense_x0_enabled = {
         }
     }
     allow = { always = yes }
-    effect = {
-        hidden_effect = {
-        }
-    }
 }
 
 # Off
@@ -129,6 +128,29 @@ pmca_button_condense_x100_disabled = {
     effect = {
         hidden_effect = {
             set_country_flag = pmca_times_hundred_set
+        }
+    }
+}
+
+#######################
+### BEAUTIFY TOGGLE ###
+#######################
+pmca_button_beautify_enabled = {
+    potential = { is_same_value = from NOT = { has_country_flag = pmca_unbeautify_army_recruitment_view } }
+    allow = { always = yes }
+    effect = {
+        hidden_effect = {
+            set_country_flag = pmca_unbeautify_army_recruitment_view
+        }
+    }
+}
+
+pmca_button_beautify_disabled = {
+    potential = { is_same_value = from has_country_flag = pmca_unbeautify_army_recruitment_view }
+    allow = { always = yes }
+    effect = {
+        hidden_effect = {
+            remove_country_flag = pmca_unbeautify_army_recruitment_view
         }
     }
 }

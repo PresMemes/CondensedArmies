@@ -1,0 +1,91 @@
+﻿l_english:
+
+ # Localisation generated using Python
+
+ ########################
+ ### ACOT_PHANON_ARMY ###
+ ########################
+ pmca_ten_acot_phanon_army: "$pmca_ten$ $acot_phanon_army$"
+ pmca_ten_acot_phanon_army_plural: "$acot_phanon_army_plural$"
+ pmca_ten_acot_phanon_army_desc: "$acot_phanon_army_desc$"
+ pmca_hundred_acot_phanon_army: "$pmca_hundred$ $acot_phanon_army$"
+ pmca_hundred_acot_phanon_army_plural: "$acot_phanon_army_plural$"
+ pmca_hundred_acot_phanon_army_desc: "$acot_phanon_army_desc$"
+
+
+ ###############################
+ ### ACOT_PHANON_ARMY_SNIPER ###
+ ###############################
+ pmca_ten_acot_phanon_army_sniper: "$pmca_ten$ $acot_phanon_army_sniper$"
+ pmca_ten_acot_phanon_army_sniper_plural: "$acot_phanon_army_sniper_plural$"
+ pmca_ten_acot_phanon_army_sniper_desc: "$acot_phanon_army_sniper_desc$"
+ pmca_hundred_acot_phanon_army_sniper: "$pmca_hundred$ $acot_phanon_army_sniper$"
+ pmca_hundred_acot_phanon_army_sniper_plural: "$acot_phanon_army_sniper_plural$"
+ pmca_hundred_acot_phanon_army_sniper_desc: "$acot_phanon_army_sniper_desc$"
+
+
+ #########################
+ ### ACOT_PHANON_ELITE ###
+ #########################
+ pmca_ten_acot_phanon_elite: "$pmca_ten$ $acot_phanon_elite$"
+ pmca_ten_acot_phanon_elite_plural: "$acot_phanon_elite_plural$"
+ pmca_ten_acot_phanon_elite_desc: "$acot_phanon_elite_desc$"
+ pmca_hundred_acot_phanon_elite: "$pmca_hundred$ $acot_phanon_elite$"
+ pmca_hundred_acot_phanon_elite_plural: "$acot_phanon_elite_plural$"
+ pmca_hundred_acot_phanon_elite_desc: "$acot_phanon_elite_desc$"
+
+
+ ########################
+ ### ACOT_PHANON_TANK ###
+ ########################
+ pmca_ten_acot_phanon_tank: "$pmca_ten$ $acot_phanon_tank$"
+ pmca_ten_acot_phanon_tank_plural: "$acot_phanon_tank_plural$"
+ pmca_ten_acot_phanon_tank_desc: "$acot_phanon_tank_desc$"
+ pmca_hundred_acot_phanon_tank: "$pmca_hundred$ $acot_phanon_tank$"
+ pmca_hundred_acot_phanon_tank_plural: "$acot_phanon_tank_plural$"
+ pmca_hundred_acot_phanon_tank_desc: "$acot_phanon_tank_desc$"
+
+
+ ##############################
+ ### ACOT_PHANON_ATTACK_DOG ###
+ ##############################
+ pmca_ten_acot_phanon_attack_dog: "$pmca_ten$ $acot_phanon_attack_dog$"
+ pmca_ten_acot_phanon_attack_dog_plural: "$acot_phanon_attack_dog_plural$"
+ pmca_ten_acot_phanon_attack_dog_desc: "$acot_phanon_attack_dog_desc$"
+ pmca_hundred_acot_phanon_attack_dog: "$pmca_hundred$ $acot_phanon_attack_dog$"
+ pmca_hundred_acot_phanon_attack_dog_plural: "$acot_phanon_attack_dog_plural$"
+ pmca_hundred_acot_phanon_attack_dog_desc: "$acot_phanon_attack_dog_desc$"
+
+
+ ##################################
+ ### ACOT_PHANON_ATTACK_MAMMOTH ###
+ ##################################
+ pmca_ten_acot_phanon_attack_mammoth: "$pmca_ten$ $acot_phanon_attack_mammoth$"
+ pmca_ten_acot_phanon_attack_mammoth_plural: "$acot_phanon_attack_mammoth_plural$"
+ pmca_ten_acot_phanon_attack_mammoth_desc: "$acot_phanon_attack_mammoth_desc$"
+ pmca_hundred_acot_phanon_attack_mammoth: "$pmca_hundred$ $acot_phanon_attack_mammoth$"
+ pmca_hundred_acot_phanon_attack_mammoth_plural: "$acot_phanon_attack_mammoth_plural$"
+ pmca_hundred_acot_phanon_attack_mammoth_desc: "$acot_phanon_attack_mammoth_desc$"
+
+
+ #############################
+ ### ACOT_PHANON_OPERATIVE ###
+ #############################
+ pmca_ten_acot_phanon_operative: "$pmca_ten$ $acot_phanon_operative$"
+ pmca_ten_acot_phanon_operative_plural: "$acot_phanon_operative_plural$"
+ pmca_ten_acot_phanon_operative_desc: "$acot_phanon_operative_desc$"
+ pmca_hundred_acot_phanon_operative: "$pmca_hundred$ $acot_phanon_operative$"
+ pmca_hundred_acot_phanon_operative_plural: "$acot_phanon_operative_plural$"
+ pmca_hundred_acot_phanon_operative_desc: "$acot_phanon_operative_desc$"
+
+
+ ####################################
+ ### ACOT_PHANON_OPERATIVE_TYPE_B ###
+ ####################################
+ pmca_ten_acot_phanon_operative_type_b: "$pmca_ten$ $acot_phanon_operative_type_b$"
+ pmca_ten_acot_phanon_operative_type_b_plural: "$acot_phanon_operative_type_b_plural$"
+ pmca_ten_acot_phanon_operative_type_b_desc: "$acot_phanon_operative_type_b_desc$"
+ pmca_hundred_acot_phanon_operative_type_b: "$pmca_hundred$ $acot_phanon_operative_type_b$"
+ pmca_hundred_acot_phanon_operative_type_b_plural: "$acot_phanon_operative_type_b_plural$"
+ pmca_hundred_acot_phanon_operative_type_b_desc: "$acot_phanon_operative_type_b_desc$"
+

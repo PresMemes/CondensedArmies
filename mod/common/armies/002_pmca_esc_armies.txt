@@ -1,5 +1,5 @@
 # Dear Irony please fallback to simple parser
-# x10 and x100 army definition generated via Python
+# x10 and x100 army definition(s) generated via Python
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
@@ -362,7 +362,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = sr_zro
-				PMCA_VALUE = 1000.0
+				PMCA_VALUE = 10000.0
 			}
 		}
 		ai_weight = {
@@ -425,7 +425,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 100.0
+				PMCA_VALUE = 1000.0
 			}
 		}
 		ai_weight = {
@@ -474,7 +474,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 100.0
+				PMCA_VALUE = 1000.0
 			}
 		}
 		ai_weight = {
@@ -529,7 +529,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
-				PMCA_VALUE = 4000.0
+				PMCA_VALUE = 40000.0
 			}
 		}
 		ai_weight = {
@@ -577,7 +577,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = alloys
-				PMCA_VALUE = 1000.0
+				PMCA_VALUE = 10000.0
 			}
 		}
 		ai_weight = {
@@ -617,7 +617,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
-				PMCA_VALUE = 3500.0
+				PMCA_VALUE = 35000.0
 			}
 		}
 		ai_weight = {

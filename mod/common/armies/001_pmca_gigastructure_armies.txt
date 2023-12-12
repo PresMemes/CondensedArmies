@@ -1,5 +1,5 @@
 # Dear Irony please fallback to simple parser
-# x10 and x100 army definition generated via Python
+# x10 and x100 army definition(s) generated via Python
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
@@ -35,7 +35,7 @@ inline_script = {
 		potential_country = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
-				PMCA_RESOURCE = exotic_gases
+				PMCA_RESOURCE = volatile_motes
 				PMCA_VALUE = 500.0
 			}
 		}
@@ -367,8 +367,8 @@ inline_script = {
 		potential_country = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
-				PMCA_RESOURCE = exotic_gases
-				PMCA_VALUE = 500.0
+				PMCA_RESOURCE = volatile_motes
+				PMCA_VALUE = 5000.0
 			}
 		}
 		ai_weight = {
@@ -417,7 +417,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = rare_crystals
-				PMCA_VALUE = 100.0
+				PMCA_VALUE = 1000.0
 			}
 		}
 		ai_weight = {
@@ -466,7 +466,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = rare_crystals
-				PMCA_VALUE = 100.0
+				PMCA_VALUE = 1000.0
 			}
 		}
 		ai_weight = {
@@ -512,7 +512,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = sr_zro
-				PMCA_VALUE = 100.0
+				PMCA_VALUE = 1000.0
 			}
 		}
 		ai_weight = {
@@ -559,7 +559,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = alloys
-				PMCA_VALUE = 2500.0
+				PMCA_VALUE = 25000.0
 			}
 		}
 		ai_weight = {
@@ -606,7 +606,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = alloys
-				PMCA_VALUE = 2500.0
+				PMCA_VALUE = 25000.0
 			}
 		}
 		ai_weight = {
@@ -655,7 +655,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = alloys
-				PMCA_VALUE = 2500.0
+				PMCA_VALUE = 25000.0
 			}
 		}
 		ai_weight = {

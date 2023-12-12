@@ -8,21 +8,25 @@ has_condensed_armies = {
 # Scope: this = country
 # Parameters: PMCA_MULT (ten, hundred), PMCA_RESOURCE, PMCA_VALUE
 pmca_materiel_policy_check = {
-	optimize_memory
+	# optimize_memory
 	OR = {
 		is_ai = no
 		has_global_flag = pmca_ai_allowed
 	}
 	has_country_flag = pmca_times_$PMCA_MULT$_set
-	resource_stockpile_compare = {
-		resource = $PMCA_RESOURCE$
-		value >= $PMCA_VALUE$
+	OR = {
+		has_country_flag = pmca_unbeautify_army_recruitment_view
+		resource_stockpile_compare = {
+			resource = $PMCA_RESOURCE$
+			value >= $PMCA_VALUE$
+		}
 	}
 }
 
 # Check if the army is a PMCA army
 # Scopes: this = army
 pmca_is_condensed_army = {
+	optimize_memory
 	OR = {
 		has_army_flag = pmca_times_ten_army
 		has_army_flag = pmca_times_hundred_army
@@ -33,6 +37,7 @@ pmca_is_condensed_army = {
 
 # Scopes: this = army
 pmca_is_times_ten_army = {
+	optimize_memory
 	OR = {
 		has_army_flag = pmca_times_ten_army
 		army_type = pmca_ten_assault_army
@@ -214,11 +219,20 @@ pmca_is_times_ten_army = {
 		army_type = pmca_ten_acot_army_hive_control_cocoon
 		army_type = pmca_ten_acot_army_hive_control_cocoon_se
 		army_type = pmca_ten_acot_army_stellarite_bomber
+		army_type = pmca_ten_acot_phanon_army
+		army_type = pmca_ten_acot_phanon_army_sniper
+		army_type = pmca_ten_acot_phanon_elite
+		army_type = pmca_ten_acot_phanon_tank
+		army_type = pmca_ten_acot_phanon_attack_dog
+		army_type = pmca_ten_acot_phanon_attack_mammoth
+		army_type = pmca_ten_acot_phanon_operative
+		army_type = pmca_ten_acot_phanon_operative_type_b
 	}
 }
 
 # Scopes: this = army
 pmca_is_times_hundred_army = {
+	optimize_memory
 	OR = {
 		has_army_flag = pmca_times_hundred_army
 		army_type = pmca_hundred_assault_army
@@ -400,5 +414,13 @@ pmca_is_times_hundred_army = {
 		army_type = pmca_hundred_acot_army_hive_control_cocoon
 		army_type = pmca_hundred_acot_army_hive_control_cocoon_se
 		army_type = pmca_hundred_acot_army_stellarite_bomber
+		army_type = pmca_hundred_acot_phanon_army
+		army_type = pmca_hundred_acot_phanon_army_sniper
+		army_type = pmca_hundred_acot_phanon_elite
+		army_type = pmca_hundred_acot_phanon_tank
+		army_type = pmca_hundred_acot_phanon_attack_dog
+		army_type = pmca_hundred_acot_phanon_attack_mammoth
+		army_type = pmca_hundred_acot_phanon_operative
+		army_type = pmca_hundred_acot_phanon_operative_type_b
 	}
 }

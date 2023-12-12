@@ -1,0 +1,2 @@
+# So Chiru did make a scripted variable for SBTG (I think), @has_sins_of_fallen_empires
+# BUT he accidentally included it with the main mod, so it's basically useless lmao

@@ -39,3 +39,31 @@ defined_text = {
 	}
 	default = pmca_active
 }
+
+# defined_text = {
+# 	name = pmca_get_acot_sbtg_status
+# 	text = {
+# 		trigger = {
+# 			check_variable_arithmetic = {
+# 				which = ???
+# 				value = 0
+# 			}
+# 		}
+# 		localization_key = pmca_inactive
+# 	}
+# 	default = pmca_active
+# }
+
+defined_text = {
+	name = pmca_get_acot_aot_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @has_acquisition_of_tech
+				value = 0
+			}
+		}
+		localization_key = pmca_inactive
+	}
+	default = pmca_active
+}

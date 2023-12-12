@@ -1,5 +1,6 @@
 namespace = pmca_events
 
+## Initialization
 # Set ID flag
 event = {
 	id = pmca_events.1
@@ -29,7 +30,8 @@ country_event = {
 	}
 }
 
-# DMM
+## Dynamic Mod Menu
+# Register
 event = {
 	id = pmca_events.50
 	hide_window = yes
@@ -43,6 +45,7 @@ event = {
 	}
 }
 
+# Launch Menu
 country_event = {
 	id = pmca_events.51
 	is_triggered_only = yes
@@ -57,6 +60,8 @@ country_event = {
 	}
 }
 
+## Mark Condensed Armies
+# Set appropriate flag
 planet_event = {
 	id = pmca_events.75
 	is_triggered_only = yes
@@ -90,7 +95,8 @@ planet_event = {
 	}
 }
 
-# AI shenanigans
+## AI Shenanigans
+# Gatekeeper event
 event = {
 	id = pmca_events.100
 	hide_window = yes
@@ -124,36 +130,58 @@ country_event = {
 					limit = { is_defensive_army = no }
 				}
 			}
-			if = {
-				limit = {
-					#PM: AI budgets very little energy for army upkeep.
-					# R = C / (B / S), where:
-					# R = Resource income (or storage), C = Cost (or upkeep), B = Weight of one budget, S = Sum of all active budget weights
-					# R = 100 / (0.05 / 1.56), R = 3,120 EC/Month for the AI to consider building a x100 assault army.
-					resource_income_compare = {
-						resource = energy
-						value >= 3000
-					}
-					resource_income_compare = {
-						resource = minerals
-						value >= 1000
-					}
-				}
-				set_country_flag = pmca_times_hundred_set
-			}
-			else_if = {
-				limit = {
-					resource_income_compare = {
-						resource = energy
-						value >= 200
-					}
-					resource_income_compare = {
-						resource = minerals
-						value >= 150
-					}
-				}
-				set_country_flag = pmca_times_ten_set
-			}
+			country_event = { id = pmca_events.102 }
+			country_event = { id = pmca_events.103 }
+		}
+	}
+}
+
+# Set x10 flag
+country_event = {
+	id = pmca_events.102
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		resource_income_compare = {
+			resource = energy
+			value >= 200
+		}
+		resource_income_compare = {
+			resource = minerals
+			value >= 150
+		}
+	}
+
+	immediate = {
+		every_playable_country = {
+			limit = { is_ai = yes }
+			country_event = { id = pmca_events.101 days = 14 random = 59 } # Delay for some better performance
+		}
+	}
+}
+
+# Set x100 flag
+country_event = {
+	id = pmca_events.103
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		resource_income_compare = {
+			resource = energy
+			value >= 3000
+		}
+		resource_income_compare = {
+			resource = minerals
+			value >= 1000
+		}
+	}
+
+	immediate = {
+		every_playable_country = {
+			limit = { is_ai = yes }
+			country_event = { id = pmca_events.101 days = 14 random = 59 } # Delay for some better performance
 		}
 	}
 }

@@ -1,10 +1,13 @@
 # Irony this is a placeholder file please ignore it
 
-# Gigastuctures
+# Gigastuctural Engineering & More
 @has_gigastructures = 0
 
-# ESC: NEXT 
+# Extra Ship Components NEXT
 @ESC_WEAPON_crystalline_s_t6_cost_crystals = 0
 
 # Ancient Cache of Technologies
-@has_ancient_caches = 0 #
+@has_ancient_caches = 0
+
+# ACOT: Acquisition of Technology
+@has_acquisition_of_tech = 0
