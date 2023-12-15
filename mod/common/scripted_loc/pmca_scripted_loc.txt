@@ -67,3 +67,17 @@ defined_text = {
 	}
 	default = pmca_active
 }
+
+defined_text = {
+	name = pmca_get_evolved_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @has_stellaris_evolved
+				value = 0
+			}
+		}
+		localization_key = pmca_inactive
+	}
+	default = pmca_active
+}

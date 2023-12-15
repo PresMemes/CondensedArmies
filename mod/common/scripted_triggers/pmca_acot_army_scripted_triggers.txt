@@ -1,342 +1,483 @@
-# Checks if a given army is a Condensed ACOT Light Vehicle
-# Scopes: this = army
-pmca_is_condensed_acot_light_manned_vehicle = {
-	OR = {
-		army_type = pmca_ten_acot_light_armor
-		army_type = pmca_ten_acot_light_armor_dm
-		army_type = pmca_ten_acot_light_armor_ae
-		army_type = pmca_ten_acot_light_armor_se
+# Dear Irony please fallback to simple parser
 
-		army_type = pmca_hundred_acot_light_armor
-		army_type = pmca_hundred_acot_light_armor_dm
-		army_type = pmca_hundred_acot_light_armor_ae
-		army_type = pmca_hundred_acot_light_armor_se
-	}
-}
-
-# Checks if a given army is a Condensed ACOT Heavy Vehicle
-# Scopes: this = army
-pmca_is_condensed_acot_heavy_manned_vehicle = {
-	army_type = pmca_ten_acot_heavy_armor
-	army_type = pmca_ten_acot_heavy_armor_dm
-	army_type = pmca_ten_acot_heavy_armor_ae
-	army_type = pmca_ten_acot_heavy_armor_se
-	army_type = pmca_ten_acot_army_mat
-	army_type = pmca_ten_acot_army_mat_se
-	army_type = pmca_ten_acot_army_ega
-	army_type = pmca_ten_acot_army_ega_se
-
-	army_type = pmca_hundred_acot_heavy_armor
-	army_type = pmca_hundred_acot_heavy_armor_dm
-	army_type = pmca_hundred_acot_heavy_armor_ae
-	army_type = pmca_hundred_acot_heavy_armor_se
-	army_type = pmca_hundred_acot_army_mat
-	army_type = pmca_hundred_acot_army_mat_se
-	army_type = pmca_hundred_acot_army_ega
-	army_type = pmca_hundred_acot_army_ega_se
-}
-
-# Checks if a given army is a Condensed ACOT Pilot
-# Scopes: this = army
-pmca_is_condensed_acot_pilot = {
-	OR = {
-		army_type = pmca_ten_acot_light_armor_pilot
-		army_type = pmca_ten_acot_light_armor_pilot_dm
-		army_type = pmca_ten_acot_light_armor_pilot_ae
-		army_type = pmca_ten_acot_light_armor_pilot_se
-		army_type = pmca_ten_acot_heavy_armor_pilot
-		army_type = pmca_ten_acot_heavy_armor_pilot_dm
-		army_type = pmca_ten_acot_heavy_armor_pilot_ae
-		army_type = pmca_ten_acot_heavy_armor_pilot_se
-		army_type = pmca_ten_acot_army_mat_pilot
-		army_type = pmca_ten_acot_army_mat_pilot_se
-		army_type = pmca_ten_acot_army_ega_pilot
-		army_type = pmca_ten_acot_army_ega_pilot_se
-
-		army_type = pmca_hundred_acot_light_armor_pilot
-		army_type = pmca_hundred_acot_light_armor_pilot_dm
-		army_type = pmca_hundred_acot_light_armor_pilot_ae
-		army_type = pmca_hundred_acot_light_armor_pilot_se
-		army_type = pmca_hundred_acot_heavy_armor_pilot
-		army_type = pmca_hundred_acot_heavy_armor_pilot_dm
-		army_type = pmca_hundred_acot_heavy_armor_pilot_ae
-		army_type = pmca_hundred_acot_heavy_armor_pilot_se
-		army_type = pmca_hundred_acot_army_mat_pilot
-		army_type = pmca_hundred_acot_army_mat_pilot_se
-		army_type = pmca_hundred_acot_army_ega_pilot
-		army_type = pmca_hundred_acot_army_ega_pilot_se
-	}
-}
-
-# Checks if a given army is a Condensed ACOT Light Infantry
-# Scopes: this = army
-pmca_is_condensed_acot_light_infantry = {
-	OR = {
-		army_type = pmca_ten_assault_army
-		army_type = pmca_ten_acot_infantry_dm
-		army_type = pmca_ten_acot_infantry_ae
-		army_type = pmca_ten_acot_infantry_se
-		army_type = pmca_ten_acot_army_phile
-		army_type = pmca_ten_acot_army_phile_se
-
-		army_type = pmca_hundred_assault_army
-		army_type = pmca_hundred_acot_infantry_dm
-		army_type = pmca_hundred_acot_infantry_ae
-		army_type = pmca_hundred_acot_infantry_se
-		army_type = pmca_hundred_acot_army_phile
-		army_type = pmca_hundred_acot_army_phile_se
-	}
-}
-
-# Checks if a given army is a Condensed ACOT Medium Infantry
-# Scopes: this = army
-pmca_is_condensed_acot_medium_infantry = {
-	OR = {
-		army_type = pmca_ten_acot_special_force
-		army_type = pmca_ten_acot_special_force_dm
-		army_type = pmca_ten_acot_special_force_ae
-		army_type = pmca_ten_acot_special_force_se
-		army_type = pmca_ten_acot_army_spirit
-		army_type = pmca_ten_acot_army_spirit_se
-		army_type = pmca_ten_acot_army_paci
-		army_type = pmca_ten_acot_army_paci_se
-		army_type = pmca_ten_acot_army_auth
-		army_type = pmca_ten_acot_army_auth_se
-		army_type = pmca_ten_acot_army_mili
-		army_type = pmca_ten_acot_army_mili_se
-		army_type = pmca_ten_psionic_army
-		army_type = pmca_ten_acot_army_psi
-		army_type = pmca_ten_acot_army_psi_se
-
-		army_type = pmca_hundred_acot_special_force
-		army_type = pmca_hundred_acot_special_force_dm
-		army_type = pmca_hundred_acot_special_force_ae
-		army_type = pmca_hundred_acot_special_force_se
-		army_type = pmca_hundred_acot_army_spirit
-		army_type = pmca_hundred_acot_army_spirit_se
-		army_type = pmca_hundred_acot_army_paci
-		army_type = pmca_hundred_acot_army_paci_se
-		army_type = pmca_hundred_acot_army_auth
-		army_type = pmca_hundred_acot_army_auth_se
-		army_type = pmca_hundred_acot_army_mili
-		army_type = pmca_hundred_acot_army_mili_se
-		army_type = pmca_hundred_psionic_army
-		army_type = pmca_hundred_acot_army_psi
-		army_type = pmca_hundred_acot_army_psi_se
-	}
-}
-
-# Checks if a given army is a Condensed ACOT Heavy Infantry
-# Scopes: this = army
-pmca_is_condensed_acot_heavy_infantry = {
-	OR = {
-		army_type = pmca_ten_gene_warrior_army
-		army_type = pmca_ten_acot_army_gene
-		army_type = pmca_ten_acot_army_gene_se
-		army_type = pmca_ten_acot_army_phobe
-		army_type = pmca_ten_acot_army_phobe_se
-
-		army_type = pmca_hundred_gene_warrior_army
-		army_type = pmca_hundred_acot_army_gene
-		army_type = pmca_hundred_acot_army_gene_se
-		army_type = pmca_hundred_acot_army_phobe
-		army_type = pmca_hundred_acot_army_phobe_se
-	}
-}
-
-# Checks if a given army is a Condensed ACOT Robot/Cyborg/Synth
-# Scopes: this = army
-pmca_is_condensed_acot_robot_or_cyborg_or_synth = {
-	OR = {
-		army_type = pmca_ten_robotic_army
-		army_type = pmca_ten_acot_droid_army_dm
-		army_type = pmca_ten_acot_droid_army_ae
-		army_type = pmca_ten_acot_droid_army_se
-		army_type = pmca_ten_acot_army_cyborg
-		army_type = pmca_ten_acot_army_cyborg_se
-		army_type = pmca_ten_acot_army_synth
-		army_type = pmca_ten_acot_army_synth_se
-
-		army_type = pmca_hundred_robotic_army
-		army_type = pmca_hundred_acot_droid_army_dm
-		army_type = pmca_hundred_acot_droid_army_ae
-		army_type = pmca_hundred_acot_droid_army_se
-		army_type = pmca_hundred_acot_army_cyborg
-		army_type = pmca_hundred_acot_army_cyborg_se
-		army_type = pmca_hundred_acot_army_synth
-		army_type = pmca_hundred_acot_army_synth_se
-	}
-}
-
-# Checks if a given army is a Condensed ACOT Robot Torso
-# Scopes: this = army
-pmca_is_condensed_acot_robot_torso = {
-	OR = {
-		army_type = pmca_ten_acot_droid_army_torso
-		army_type = pmca_ten_acot_droid_army_torso_dm
-		army_type = pmca_ten_acot_droid_army_torso_ae
-		army_type = pmca_ten_acot_droid_army_torso_se
-		army_type = pmca_ten_acot_army_cyborg_torso
-		army_type = pmca_ten_acot_army_cyborg_torso_se
-		army_type = pmca_ten_acot_army_synth_torso
-		army_type = pmca_ten_acot_army_synth_torso_se
-
-		army_type = pmca_hundred_acot_droid_army_torso
-		army_type = pmca_hundred_acot_droid_army_torso_dm
-		army_type = pmca_hundred_acot_droid_army_torso_ae
-		army_type = pmca_hundred_acot_droid_army_torso_se
-		army_type = pmca_hundred_acot_army_cyborg_torso
-		army_type = pmca_hundred_acot_army_cyborg_torso_se
-		army_type = pmca_hundred_acot_army_synth_torso
-		army_type = pmca_hundred_acot_army_synth_torso_se
-	}
-}
-
-# Checks if a given army is a Condensed ACOT Machine/Machine Cyborg
-# Scopes: this = army
-pmca_is_condensed_acot_machine_or_cyborg = {
-	OR = {
-		army_type = pmca_ten_machine_assault_1
-		army_type = pmca_ten_acot_army_machine_dm
-		army_type = pmca_ten_acot_army_machine_ae
-		army_type = pmca_ten_acot_army_machine_se
-		army_type = pmca_ten_machine_assault_2
-		army_type = pmca_ten_acot_army_machine_light_dm
-		army_type = pmca_ten_acot_army_machine_light_ae
-		army_type = pmca_ten_acot_army_machine_light_se
-		army_type = pmca_ten_acot_army_machine_cyborg
-		army_type = pmca_ten_acot_army_machine_cyborg_dm
-		army_type = pmca_ten_acot_army_machine_cyborg_ae
-		army_type = pmca_ten_acot_army_machine_cyborg_se
-		army_type = pmca_ten_acot_army_machine_special
-		army_type = pmca_ten_acot_army_machine_special_se
-
-		army_type = pmca_hundred_machine_assault_1
-		army_type = pmca_hundred_acot_army_machine_dm
-		army_type = pmca_hundred_acot_army_machine_ae
-		army_type = pmca_hundred_acot_army_machine_se
-		army_type = pmca_hundred_machine_assault_2
-		army_type = pmca_hundred_acot_army_machine_light_dm
-		army_type = pmca_hundred_acot_army_machine_light_ae
-		army_type = pmca_hundred_acot_army_machine_light_se
-		army_type = pmca_hundred_acot_army_machine_cyborg
-		army_type = pmca_hundred_acot_army_machine_cyborg_dm
-		army_type = pmca_hundred_acot_army_machine_cyborg_ae
-		army_type = pmca_hundred_acot_army_machine_cyborg_se
-		army_type = pmca_hundred_acot_army_machine_special
-		army_type = pmca_hundred_acot_army_machine_special_se
-	}
-}
-
-# Checks if a given army is a Condensed ACOT Machine Torso
-# Scopes: this = army
-pmca_is_condensed_acot_machine_torso = {
-	OR = {
-		army_type = pmca_ten_acot_army_machine_torso
-		army_type = pmca_ten_acot_army_machine_torso_dm
-		army_type = pmca_ten_acot_army_machine_torso_ae
-		army_type = pmca_ten_acot_army_machine_torso_se
-		army_type = pmca_ten_acot_army_machine_light_torso
-		army_type = pmca_ten_acot_army_machine_light_torso_dm
-		army_type = pmca_ten_acot_army_machine_light_torso_ae
-		army_type = pmca_ten_acot_army_machine_light_torso_se
-		army_type = pmca_ten_acot_army_machine_cyborg_torso
-		army_type = pmca_ten_acot_army_machine_cyborg_torso_dm
-		army_type = pmca_ten_acot_army_machine_cyborg_torso_ae
-		army_type = pmca_ten_acot_army_machine_cyborg_torso_se
-		army_type = pmca_ten_acot_army_machine_special_torso
-		army_type = pmca_ten_acot_army_machine_special_torso_se
-
-		army_type = pmca_hundred_acot_army_machine_torso
-		army_type = pmca_hundred_acot_army_machine_torso_dm
-		army_type = pmca_hundred_acot_army_machine_torso_ae
-		army_type = pmca_hundred_acot_army_machine_torso_se
-		army_type = pmca_hundred_acot_army_machine_light_torso
-		army_type = pmca_hundred_acot_army_machine_light_torso_dm
-		army_type = pmca_hundred_acot_army_machine_light_torso_ae
-		army_type = pmca_hundred_acot_army_machine_light_torso_se
-		army_type = pmca_hundred_acot_army_machine_cyborg_torso
-		army_type = pmca_hundred_acot_army_machine_cyborg_torso_dm
-		army_type = pmca_hundred_acot_army_machine_cyborg_torso_ae
-		army_type = pmca_hundred_acot_army_machine_cyborg_torso_se
-		army_type = pmca_hundred_acot_army_machine_special_torso
-		army_type = pmca_hundred_acot_army_machine_special_torso_se
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @has_ancient_caches
+	CONTENT = "
+	# Checks if a given army is a Condensed ACOT Light Vehicle
+	# Looks weird, but hopefully better performance by short circuiting on the army flag first
+	# Scopes: this = army
+	pmca_is_condensed_acot_light_manned_vehicle = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_light_armor
+					army_type = pmca_ten_acot_light_armor_dm
+					army_type = pmca_ten_acot_light_armor_ae
+					army_type = pmca_ten_acot_light_armor_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_light_armor
+					army_type = pmca_hundred_acot_light_armor_dm
+					army_type = pmca_hundred_acot_light_armor_ae
+					army_type = pmca_hundred_acot_light_armor_se
+				}
+			}
+		}
 	}
 
-}
+	# Checks if a given army is a Condensed ACOT Heavy Vehicle
+	# Scopes: this = army
+	pmca_is_condensed_acot_heavy_manned_vehicle = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_heavy_armor
+					army_type = pmca_ten_acot_heavy_armor_dm
+					army_type = pmca_ten_acot_heavy_armor_ae
+					army_type = pmca_ten_acot_heavy_armor_se
+					army_type = pmca_ten_acot_army_mat
+					army_type = pmca_ten_acot_army_mat_se
+					army_type = pmca_ten_acot_army_ega
+					army_type = pmca_ten_acot_army_ega_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_heavy_armor
+					army_type = pmca_hundred_acot_heavy_armor_dm
+					army_type = pmca_hundred_acot_heavy_armor_ae
+					army_type = pmca_hundred_acot_heavy_armor_se
+					army_type = pmca_hundred_acot_army_mat
+					army_type = pmca_hundred_acot_army_mat_se
+					army_type = pmca_hundred_acot_army_ega
+					army_type = pmca_hundred_acot_army_ega_se
+				}
+			}
+		}
 
-# Checks if a given army is a Condensed ACOT light hive
-# Scopes: this = army
-pmca_is_condensed_acot_light_hive = {
-	OR = {
-		army_type = pmca_ten_acot_hive_light_1
-		army_type = pmca_ten_acot_hive_light_dm
-		army_type = pmca_ten_acot_hive_light_ae
-		army_type = pmca_ten_acot_hive_light_se
-
-		army_type = pmca_hundred_acot_hive_light_1
-		army_type = pmca_hundred_acot_hive_light_dm
-		army_type = pmca_hundred_acot_hive_light_ae
-		army_type = pmca_hundred_acot_hive_light_se
 	}
-}
 
-# Checks if a given army is a Condensed ACOT heavy hive
-# Scopes: this = army
-pmca_is_condensed_acot_heavy_hive = {
-	OR = {
-		army_type = pmca_ten_acot_hive_heavy_1
-		army_type = pmca_ten_acot_hive_heavy_dm
-		army_type = pmca_ten_acot_hive_heavy_ae
-		army_type = pmca_ten_acot_hive_heavy_se
-
-		army_type = pmca_hundred_acot_hive_heavy_1
-		army_type = pmca_hundred_acot_hive_heavy_dm
-		army_type = pmca_hundred_acot_hive_heavy_ae
-		army_type = pmca_hundred_acot_hive_heavy_se
+	# Checks if a given army is a Condensed ACOT Pilot
+	# Scopes: this = army
+	pmca_is_condensed_acot_pilot = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_light_armor_pilot
+					army_type = pmca_ten_acot_light_armor_pilot_dm
+					army_type = pmca_ten_acot_light_armor_pilot_ae
+					army_type = pmca_ten_acot_light_armor_pilot_se
+					army_type = pmca_ten_acot_heavy_armor_pilot
+					army_type = pmca_ten_acot_heavy_armor_pilot_dm
+					army_type = pmca_ten_acot_heavy_armor_pilot_ae
+					army_type = pmca_ten_acot_heavy_armor_pilot_se
+					army_type = pmca_ten_acot_army_mat_pilot
+					army_type = pmca_ten_acot_army_mat_pilot_se
+					army_type = pmca_ten_acot_army_ega_pilot
+					army_type = pmca_ten_acot_army_ega_pilot_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_light_armor_pilot
+					army_type = pmca_hundred_acot_light_armor_pilot_dm
+					army_type = pmca_hundred_acot_light_armor_pilot_ae
+					army_type = pmca_hundred_acot_light_armor_pilot_se
+					army_type = pmca_hundred_acot_heavy_armor_pilot
+					army_type = pmca_hundred_acot_heavy_armor_pilot_dm
+					army_type = pmca_hundred_acot_heavy_armor_pilot_ae
+					army_type = pmca_hundred_acot_heavy_armor_pilot_se
+					army_type = pmca_hundred_acot_army_mat_pilot
+					army_type = pmca_hundred_acot_army_mat_pilot_se
+					army_type = pmca_hundred_acot_army_ega_pilot
+					army_type = pmca_hundred_acot_army_ega_pilot_se
+				}
+			}
+		}
 	}
-}
 
-# Checks if a given army is a Condensed ACOT special hive
-# Scopes: this = army
-pmca_is_condensed_acot_special_hive = {
-	OR = {
-		army_type = pmca_ten_acot_army_hive_gene
-		army_type = pmca_ten_acot_army_hive_gene_ae
-		army_type = pmca_ten_acot_army_hive_gene_se
-		army_type = pmca_ten_acot_army_hive_control
-		army_type = pmca_ten_acot_army_hive_control_se
+	# Checks if a given army is a Condensed ACOT Light Infantry
+	# Scopes: this = army
+	pmca_is_condensed_acot_light_infantry = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_assault_army
+					army_type = pmca_ten_acot_infantry_dm
+					army_type = pmca_ten_acot_infantry_ae
+					army_type = pmca_ten_acot_infantry_se
+					army_type = pmca_ten_acot_army_phile
+					army_type = pmca_ten_acot_army_phile_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_assault_army
+					army_type = pmca_hundred_acot_infantry_dm
+					army_type = pmca_hundred_acot_infantry_ae
+					army_type = pmca_hundred_acot_infantry_se
+					army_type = pmca_hundred_acot_army_phile
+					army_type = pmca_hundred_acot_army_phile_se
+				}
+			}
 
-		army_type = pmca_hundred_acot_army_hive_gene
-		army_type = pmca_hundred_acot_army_hive_gene_ae
-		army_type = pmca_hundred_acot_army_hive_gene_se
-		army_type = pmca_hundred_acot_army_hive_control
-		army_type = pmca_hundred_acot_army_hive_control_se
+		}
 	}
-}
 
-# Checks if a given army is a Condensed ACOT cocoon
-# Scopes: this = army
-pmca_is_condensed_acot_hive_cocoon = {
-	OR = {
-		army_type = pmca_ten_acot_hive_heavy_cocoon_1
-		army_type = pmca_ten_acot_hive_heavy_cocoon_dm
-		army_type = pmca_ten_acot_hive_heavy_cocoon_ae
-		army_type = pmca_ten_acot_hive_heavy_cocoon_se
-		army_type = pmca_ten_acot_army_hive_gene_cocoon
-		army_type = pmca_ten_acot_army_hive_gene_cocoon_ae
-		army_type = pmca_ten_acot_army_hive_gene_cocoon_se
-		army_type = pmca_ten_acot_army_hive_control_cocoon
-		army_type = pmca_ten_acot_army_hive_control_cocoon_se
-
-		army_type = pmca_hundred_acot_hive_heavy_cocoon_1
-		army_type = pmca_hundred_acot_hive_heavy_cocoon_dm
-		army_type = pmca_hundred_acot_hive_heavy_cocoon_ae
-		army_type = pmca_hundred_acot_hive_heavy_cocoon_se
-		army_type = pmca_hundred_acot_army_hive_gene_cocoon
-		army_type = pmca_hundred_acot_army_hive_gene_cocoon_ae
-		army_type = pmca_hundred_acot_army_hive_gene_cocoon_se
-		army_type = pmca_hundred_acot_army_hive_control_cocoon
-		army_type = pmca_hundred_acot_army_hive_control_cocoon_se
+	# Checks if a given army is a Condensed ACOT Medium Infantry
+	# Scopes: this = army
+	pmca_is_condensed_acot_medium_infantry = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_special_force
+					army_type = pmca_ten_acot_special_force_dm
+					army_type = pmca_ten_acot_special_force_ae
+					army_type = pmca_ten_acot_special_force_se
+					army_type = pmca_ten_acot_army_spirit
+					army_type = pmca_ten_acot_army_spirit_se
+					army_type = pmca_ten_acot_army_paci
+					army_type = pmca_ten_acot_army_paci_se
+					army_type = pmca_ten_acot_army_auth
+					army_type = pmca_ten_acot_army_auth_se
+					army_type = pmca_ten_acot_army_mili
+					army_type = pmca_ten_acot_army_mili_se
+					army_type = pmca_ten_psionic_army
+					army_type = pmca_ten_acot_army_psi
+					army_type = pmca_ten_acot_army_psi_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_special_force
+					army_type = pmca_hundred_acot_special_force_dm
+					army_type = pmca_hundred_acot_special_force_ae
+					army_type = pmca_hundred_acot_special_force_se
+					army_type = pmca_hundred_acot_army_spirit
+					army_type = pmca_hundred_acot_army_spirit_se
+					army_type = pmca_hundred_acot_army_paci
+					army_type = pmca_hundred_acot_army_paci_se
+					army_type = pmca_hundred_acot_army_auth
+					army_type = pmca_hundred_acot_army_auth_se
+					army_type = pmca_hundred_acot_army_mili
+					army_type = pmca_hundred_acot_army_mili_se
+					army_type = pmca_hundred_psionic_army
+					army_type = pmca_hundred_acot_army_psi
+					army_type = pmca_hundred_acot_army_psi_se
+				}
+			}
+		}
 	}
+
+	# Checks if a given army is a Condensed ACOT Heavy Infantry
+	# Scopes: this = army
+	pmca_is_condensed_acot_heavy_infantry = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_gene_warrior_army
+					army_type = pmca_ten_acot_army_gene
+					army_type = pmca_ten_acot_army_gene_se
+					army_type = pmca_ten_acot_army_phobe
+					army_type = pmca_ten_acot_army_phobe_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_gene_warrior_army
+					army_type = pmca_hundred_acot_army_gene
+					army_type = pmca_hundred_acot_army_gene_se
+					army_type = pmca_hundred_acot_army_phobe
+					army_type = pmca_hundred_acot_army_phobe_se
+				}
+			}
+		}
+	}
+
+	# Checks if a given army is a Condensed ACOT Robot/Cyborg/Synth
+	# Scopes: this = army
+	pmca_is_condensed_acot_robot_or_cyborg_or_synth = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_robotic_army
+					army_type = pmca_ten_acot_droid_army_dm
+					army_type = pmca_ten_acot_droid_army_ae
+					army_type = pmca_ten_acot_droid_army_se
+					army_type = pmca_ten_acot_army_cyborg
+					army_type = pmca_ten_acot_army_cyborg_se
+					army_type = pmca_ten_acot_army_synth
+					army_type = pmca_ten_acot_army_synth_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_robotic_army
+					army_type = pmca_hundred_acot_droid_army_dm
+					army_type = pmca_hundred_acot_droid_army_ae
+					army_type = pmca_hundred_acot_droid_army_se
+					army_type = pmca_hundred_acot_army_cyborg
+					army_type = pmca_hundred_acot_army_cyborg_se
+					army_type = pmca_hundred_acot_army_synth
+					army_type = pmca_hundred_acot_army_synth_se
+				}
+			}
+		}
+	}
+
+	# Checks if a given army is a Condensed ACOT Robot Torso
+	# Scopes: this = army
+	pmca_is_condensed_acot_robot_torso = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_droid_army_torso
+					army_type = pmca_ten_acot_droid_army_torso_dm
+					army_type = pmca_ten_acot_droid_army_torso_ae
+					army_type = pmca_ten_acot_droid_army_torso_se
+					army_type = pmca_ten_acot_army_cyborg_torso
+					army_type = pmca_ten_acot_army_cyborg_torso_se
+					army_type = pmca_ten_acot_army_synth_torso
+					army_type = pmca_ten_acot_army_synth_torso_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_droid_army_torso
+					army_type = pmca_hundred_acot_droid_army_torso_dm
+					army_type = pmca_hundred_acot_droid_army_torso_ae
+					army_type = pmca_hundred_acot_droid_army_torso_se
+					army_type = pmca_hundred_acot_army_cyborg_torso
+					army_type = pmca_hundred_acot_army_cyborg_torso_se
+					army_type = pmca_hundred_acot_army_synth_torso
+					army_type = pmca_hundred_acot_army_synth_torso_se
+				}
+			}
+		}
+	}
+
+	# Checks if a given army is a Condensed ACOT Machine/Machine Cyborg
+	# Scopes: this = army
+	pmca_is_condensed_acot_machine_or_cyborg = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_machine_assault_1
+					army_type = pmca_ten_acot_army_machine_dm
+					army_type = pmca_ten_acot_army_machine_ae
+					army_type = pmca_ten_acot_army_machine_se
+					army_type = pmca_ten_machine_assault_2
+					army_type = pmca_ten_acot_army_machine_light_dm
+					army_type = pmca_ten_acot_army_machine_light_ae
+					army_type = pmca_ten_acot_army_machine_light_se
+					army_type = pmca_ten_acot_army_machine_cyborg
+					army_type = pmca_ten_acot_army_machine_cyborg_dm
+					army_type = pmca_ten_acot_army_machine_cyborg_ae
+					army_type = pmca_ten_acot_army_machine_cyborg_se
+					army_type = pmca_ten_acot_army_machine_special
+					army_type = pmca_ten_acot_army_machine_special_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_machine_assault_1
+					army_type = pmca_hundred_acot_army_machine_dm
+					army_type = pmca_hundred_acot_army_machine_ae
+					army_type = pmca_hundred_acot_army_machine_se
+					army_type = pmca_hundred_machine_assault_2
+					army_type = pmca_hundred_acot_army_machine_light_dm
+					army_type = pmca_hundred_acot_army_machine_light_ae
+					army_type = pmca_hundred_acot_army_machine_light_se
+					army_type = pmca_hundred_acot_army_machine_cyborg
+					army_type = pmca_hundred_acot_army_machine_cyborg_dm
+					army_type = pmca_hundred_acot_army_machine_cyborg_ae
+					army_type = pmca_hundred_acot_army_machine_cyborg_se
+					army_type = pmca_hundred_acot_army_machine_special
+					army_type = pmca_hundred_acot_army_machine_special_se
+				}
+			}
+		}
+	}
+
+	# Checks if a given army is a Condensed ACOT Machine Torso
+	# Scopes: this = army
+	pmca_is_condensed_acot_machine_torso = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_army_machine_torso
+					army_type = pmca_ten_acot_army_machine_torso_dm
+					army_type = pmca_ten_acot_army_machine_torso_ae
+					army_type = pmca_ten_acot_army_machine_torso_se
+					army_type = pmca_ten_acot_army_machine_light_torso
+					army_type = pmca_ten_acot_army_machine_light_torso_dm
+					army_type = pmca_ten_acot_army_machine_light_torso_ae
+					army_type = pmca_ten_acot_army_machine_light_torso_se
+					army_type = pmca_ten_acot_army_machine_cyborg_torso
+					army_type = pmca_ten_acot_army_machine_cyborg_torso_dm
+					army_type = pmca_ten_acot_army_machine_cyborg_torso_ae
+					army_type = pmca_ten_acot_army_machine_cyborg_torso_se
+					army_type = pmca_ten_acot_army_machine_special_torso
+					army_type = pmca_ten_acot_army_machine_special_torso_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_army_machine_torso
+					army_type = pmca_hundred_acot_army_machine_torso_dm
+					army_type = pmca_hundred_acot_army_machine_torso_ae
+					army_type = pmca_hundred_acot_army_machine_torso_se
+					army_type = pmca_hundred_acot_army_machine_light_torso
+					army_type = pmca_hundred_acot_army_machine_light_torso_dm
+					army_type = pmca_hundred_acot_army_machine_light_torso_ae
+					army_type = pmca_hundred_acot_army_machine_light_torso_se
+					army_type = pmca_hundred_acot_army_machine_cyborg_torso
+					army_type = pmca_hundred_acot_army_machine_cyborg_torso_dm
+					army_type = pmca_hundred_acot_army_machine_cyborg_torso_ae
+					army_type = pmca_hundred_acot_army_machine_cyborg_torso_se
+					army_type = pmca_hundred_acot_army_machine_special_torso
+					army_type = pmca_hundred_acot_army_machine_special_torso_se
+				}
+			}
+		}
+
+	}
+
+	# Checks if a given army is a Condensed ACOT light hive
+	# Scopes: this = army
+	pmca_is_condensed_acot_light_hive = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_hive_light_1
+					army_type = pmca_ten_acot_hive_light_dm
+					army_type = pmca_ten_acot_hive_light_ae
+					army_type = pmca_ten_acot_hive_light_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_hive_light_1
+					army_type = pmca_hundred_acot_hive_light_dm
+					army_type = pmca_hundred_acot_hive_light_ae
+					army_type = pmca_hundred_acot_hive_light_se
+				}
+			}
+		}
+	}
+
+	# Checks if a given army is a Condensed ACOT heavy hive
+	# Scopes: this = army
+	pmca_is_condensed_acot_heavy_hive = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_hive_heavy_1
+					army_type = pmca_ten_acot_hive_heavy_dm
+					army_type = pmca_ten_acot_hive_heavy_ae
+					army_type = pmca_ten_acot_hive_heavy_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_hive_heavy_1
+					army_type = pmca_hundred_acot_hive_heavy_dm
+					army_type = pmca_hundred_acot_hive_heavy_ae
+					army_type = pmca_hundred_acot_hive_heavy_se
+				}
+			}
+		}
+	}
+
+	# Checks if a given army is a Condensed ACOT special hive
+	# Scopes: this = army
+	pmca_is_condensed_acot_special_hive = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_army_hive_gene
+					army_type = pmca_ten_acot_army_hive_gene_ae
+					army_type = pmca_ten_acot_army_hive_gene_se
+					army_type = pmca_ten_acot_army_hive_control
+					army_type = pmca_ten_acot_army_hive_control_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_army_hive_gene
+					army_type = pmca_hundred_acot_army_hive_gene_ae
+					army_type = pmca_hundred_acot_army_hive_gene_se
+					army_type = pmca_hundred_acot_army_hive_control
+					army_type = pmca_hundred_acot_army_hive_control_se
+				}
+			}
+		}
+	}
+
+	# Checks if a given army is a Condensed ACOT cocoon
+	# Scopes: this = army
+	pmca_is_condensed_acot_hive_cocoon = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_acot_hive_heavy_cocoon_1
+					army_type = pmca_ten_acot_hive_heavy_cocoon_dm
+					army_type = pmca_ten_acot_hive_heavy_cocoon_ae
+					army_type = pmca_ten_acot_hive_heavy_cocoon_se
+					army_type = pmca_ten_acot_army_hive_gene_cocoon
+					army_type = pmca_ten_acot_army_hive_gene_cocoon_ae
+					army_type = pmca_ten_acot_army_hive_gene_cocoon_se
+					army_type = pmca_ten_acot_army_hive_control_cocoon
+					army_type = pmca_ten_acot_army_hive_control_cocoon_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_acot_hive_heavy_cocoon_1
+					army_type = pmca_hundred_acot_hive_heavy_cocoon_dm
+					army_type = pmca_hundred_acot_hive_heavy_cocoon_ae
+					army_type = pmca_hundred_acot_hive_heavy_cocoon_se
+					army_type = pmca_hundred_acot_army_hive_gene_cocoon
+					army_type = pmca_hundred_acot_army_hive_gene_cocoon_ae
+					army_type = pmca_hundred_acot_army_hive_gene_cocoon_se
+					army_type = pmca_hundred_acot_army_hive_control_cocoon
+					army_type = pmca_hundred_acot_army_hive_control_cocoon_se
+				}
+			}
+		}
+	}
+	"
 }
+
+

@@ -11,3 +11,6 @@
 
 # ACOT: Acquisition of Technology
 @has_acquisition_of_tech = 0
+
+# Stellaris Evolved - Alpha
+@has_stellaris_evolved = 0

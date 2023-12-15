@@ -67,6 +67,7 @@ guiTypes = {
             name = "pmca_calm_patches_container"
             position = { x = 0 y = 0 }
 
+            # buttonTypes don't support scripted_loc lmao
             effectButtonType = {
                 name = "pmca_calm_patches_tooltip"
                 font = "malgun_goth_24"
@@ -75,6 +76,8 @@ guiTypes = {
                 size = { x = 85 y = 35 }
                 effect = pmca_button_patches_tooltip
                 spriteType = "GFX_tiles_frame_light"
+                oversound = no_sound
+                no_clicksound = yes
             }
         }
 
