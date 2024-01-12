@@ -1,7 +1,6 @@
-# Creates an army based on an ACOT tech
+# Creates a x10 Condensed Army based on an ACOT tech
 # Scopes: this = country, fromfromform = planet
-# Parameters: MULT = ten/hundred
-pmca_acot_army_create_infantry_crew_survivor = {
+pmca_acot_army_create_times_ten_infantry_crew_survivor = {
 	inline_script = {
 		script = army/pmca_conditional_inline_p1
 		MOD_VARIABLE = @has_ancient_caches
@@ -11,32 +10,78 @@ pmca_acot_army_create_infantry_crew_survivor = {
 			tech_acot_army_se = {
 				fromfromfrom = {
 					pmca_spawn_condensed_army = {
-						TYPE = pmca_$ARMY_MULT$_acot_infantry_se
-						MULT_FLAG = $ARMY_MULT$
+						TYPE = pmca_ten_acot_infantry_se
+						MULT_FLAG = ten
 					}
 				}
 			}
 			tech_acot_army_ae = {
 				fromfromfrom = {
 					pmca_spawn_condensed_army = {
-						TYPE = pmca_$ARMY_MULT$_acot_infantry_ae
-						MULT_FLAG = $ARMY_MULT$
+						TYPE = pmca_ten_acot_infantry_ae
+						MULT_FLAG = ten
 					}
 				}
 			}
 			tech_acot_army_dm = {
 				fromfromfrom = {
 					pmca_spawn_condensed_army = {
-						TYPE = pmca_$ARMY_MULT$_acot_infantry_dm
-						MULT_FLAG = $ARMY_MULT$
+						TYPE = pmca_ten_acot_infantry_dm
+						MULT_FLAG = ten
 					}
 				}
 			}
 			default = {
 				fromfromfrom = {
 					pmca_spawn_condensed_army = {
-						TYPE = pmca_$ARMY_MULT$_assault_army
-						MULT_FLAG = $ARMY_MULT$
+						TYPE = pmca_ten_assault_army
+						MULT_FLAG = ten
+					}
+				}
+			}
+		}
+		"
+	}
+}
+
+# Creates a x100 Condensed Army based on an ACOT tech
+# Scopes: this = country, fromfromform = planet
+pmca_acot_army_create_times_hundred_infantry_crew_survivor = {
+	inline_script = {
+		script = army/pmca_conditional_inline_p1
+		MOD_VARIABLE = @has_ancient_caches
+		CONTENT = "
+		switch = {
+			trigger = has_technology
+			tech_acot_army_se = {
+				fromfromfrom = {
+					pmca_spawn_condensed_army = {
+						TYPE = pmca_hundred_acot_infantry_se
+						MULT_FLAG = hundred
+					}
+				}
+			}
+			tech_acot_army_ae = {
+				fromfromfrom = {
+					pmca_spawn_condensed_army = {
+						TYPE = pmca_hundred_acot_infantry_ae
+						MULT_FLAG = hundred
+					}
+				}
+			}
+			tech_acot_army_dm = {
+				fromfromfrom = {
+					pmca_spawn_condensed_army = {
+						TYPE = pmca_hundred_acot_infantry_dm
+						MULT_FLAG = hundred
+					}
+				}
+			}
+			default = {
+				fromfromfrom = {
+					pmca_spawn_condensed_army = {
+						TYPE = pmca_hundred_assault_army
+						MULT_FLAG = hundred
 					}
 				}
 			}

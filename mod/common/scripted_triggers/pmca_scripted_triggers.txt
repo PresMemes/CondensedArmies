@@ -246,7 +246,6 @@ pmca_is_times_ten_army = {
 			"
 		}
 
-
 		# AOT x10
 		inline_script = {
 			script = army/pmca_conditional_inline_p1
@@ -272,6 +271,27 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_tec_shambling_robot
 			army_type = pmca_ten_tec_pherodrone
 			army_type = pmca_ten_tec_siegecraft_army
+			"
+		}
+
+		# SLGT x10
+		inline_script = {
+			script = army/pmca_conditional_inline_p1
+			MOD_VARIABLE = @slgt_Tier6_cost
+			CONTENT = "
+			army_type = pmca_ten_slgt_gene_titan_army
+			army_type = pmca_ten_slgt_immortal_titan_army
+			army_type = pmca_ten_slgt_shroud_touched_army
+			army_type = pmca_ten_slgt_shroud_host_army
+			army_type = pmca_ten_slgt_cyborg_siege_army
+			army_type = pmca_ten_slgt_self_replicating_army
+			army_type = pmca_ten_slgt_synth_warform
+			army_type = pmca_ten_slgt_omnivirus_army
+			army_type = pmca_ten_slgt_dark_assault_army
+			army_type = pmca_ten_slgt_specter_assault_army
+			army_type = pmca_ten_slgt_undead_chimera_army
+			army_type = pmca_ten_slgt_flux_abomination_army
+			army_type = pmca_ten_slgt_undead_brute_army
 			"
 		}
 	}
@@ -488,7 +508,6 @@ pmca_is_times_hundred_army = {
 			"
 		}
 
-
 		# AOT x100
 		inline_script = {
 			script = army/pmca_conditional_inline_p1
@@ -514,6 +533,27 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_tec_shambling_robot
 			army_type = pmca_hundred_tec_pherodrone
 			army_type = pmca_hundred_tec_siegecraft_army
+			"
+		}
+
+		# SLGT x100
+		inline_script = {
+			script = army/pmca_conditional_inline_p1
+			MOD_VARIABLE = @slgt_Tier6_cost
+			CONTENT = "
+			army_type = pmca_hundred_slgt_gene_titan_army
+			army_type = pmca_hundred_slgt_immortal_titan_army
+			army_type = pmca_hundred_slgt_shroud_touched_army
+			army_type = pmca_hundred_slgt_shroud_host_army
+			army_type = pmca_hundred_slgt_cyborg_siege_army
+			army_type = pmca_hundred_slgt_self_replicating_army
+			army_type = pmca_hundred_slgt_synth_warform
+			army_type = pmca_hundred_slgt_omnivirus_army
+			army_type = pmca_hundred_slgt_dark_assault_army
+			army_type = pmca_hundred_slgt_specter_assault_army
+			army_type = pmca_hundred_slgt_undead_chimera_army
+			army_type = pmca_hundred_slgt_flux_abomination_army
+			army_type = pmca_hundred_slgt_undead_brute_army
 			"
 		}
 	}

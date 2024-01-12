@@ -14,3 +14,6 @@
 
 # Stellaris Evolved - Alpha
 @has_stellaris_evolved = 0
+
+# Sensible Late Game Techs
+@slgt_Tier6_cost = 0

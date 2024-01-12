@@ -81,3 +81,17 @@ defined_text = {
 	}
 	default = pmca_active
 }
+
+defined_text = {
+	name = pmca_get_slgt_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @slgt_Tier6_cost
+				value = 0
+			}
+		}
+		localization_key = pmca_inactive
+	}
+	default = pmca_active
+}

@@ -5,8 +5,8 @@
  pmca_times_hundred_set: "§SPMCA§! $pmca_hundred$"
 
  # Edicts
- edict_pmca_logistics_manager:0 "Condensed Armies Logistics Manager"
- edict_pmca_logistics_manager_desc:0 "Access Condensed Armies' mod menu and enable/disable the various features the mod adds."
+ edict_pmca_logistics_manager: "Condensed Armies Logistics Manager"
+ edict_pmca_logistics_manager_desc: "Access Condensed Armies' mod menu and enable/disable the various features the mod adds."
 
  # Decisions
  decision_pmca_acot_rebuild_condensed_armies: "Rebuild/Repair/Hatch $pmca_ten$/$pmca_hundred$ Armies"
@@ -16,7 +16,7 @@
  pmca_calm_header_text: "Condensed Armies Logistics Manager"
 
  pmca_calm_patches_text: "§BPATCHES§!"
- pmca_calm_patches_tooltip: "§LIntegrated Patch Data:§!\n\n$pmca_calm_patches_main$\n$pmca_calm_patches_gigas$\n$pmca_calm_patches_esc$\n$pmca_calm_patches_ground_command$\n$pmca_calm_patches_acot$§!\n$pmca_calm_patches_acot_sbtg$\n$pmca_calm_patches_acot_aot$\n$pmca_calm_patches_evolved$"
+ pmca_calm_patches_tooltip: "§LIntegrated Patch Data:§!\n\n$pmca_calm_patches_main$\n$pmca_calm_patches_gigas$\n$pmca_calm_patches_esc$\n$pmca_calm_patches_ground_command$\n$pmca_calm_patches_acot$§!\n$pmca_calm_patches_acot_sbtg$\n$pmca_calm_patches_acot_aot$\n$pmca_calm_patches_evolved$\n$pmca_calm_patches_slgt$"
  pmca_calm_patches_main: "§BCondensed Armies:§! §GActive§!"
  pmca_calm_patches_gigas: "§EGigastructural Engineering & More:§! [root.pmca_get_gigas_status]"
  pmca_calm_patches_esc: "§HExtra Ship Components NEXT:§! [root.pmca_get_esc_status]"
@@ -25,6 +25,7 @@
  pmca_calm_patches_acot_aot: "§M$t$- Acquisition of Technology:§! [root.pmca_get_acot_aot_status]"
  pmca_calm_patches_ground_command: "§VGround Command:§! $pmca_pending$"
  pmca_calm_patches_evolved: "§lStellaris Evolved - Alpha:§! [root.pmca_get_evolved_status]"
+ pmca_calm_patches_slgt: "§cSensible Late Game Techs:§! [root.pmca_get_slgt_status]"
  pmca_active: "§GActive§!"
  pmca_pending: "§YPending Integration...§!"
  pmca_inactive: "§RInactive§!"
@@ -58,6 +59,5 @@
  pmca_calm_beautify_tooltip_delayed: "§L$TRIGGER_PASS$= Condensed Armies should §Gnot§! appear in the recruitment view if you don't have enough resources.\n\n$TRIGGER_FAIL$= Condensed Armies should §Ralways§! appear in the recruitment view regardless of resources.§!"
 
  # Common Army Strings
- pmca_ten:0 "§Mx10§!"
+ pmca_ten: "§Mx10§!"
  pmca_hundred: "§Mx100§!"
-

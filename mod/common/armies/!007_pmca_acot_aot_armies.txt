@@ -49,7 +49,7 @@ inline_script = {
 		potential_country = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
-				PMCA_RESOURCE = sr_dark_matter
+				PMCA_RESOURCE = acot_sr_dark_energy
 				PMCA_VALUE = 35.0
 			}
 		}
@@ -66,13 +66,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_army_machine_special_se = {
 		use_armynames_from = acot_army_machine_special_se
 		damage = 40.0
@@ -117,7 +111,7 @@ inline_script = {
 		potential_country = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
-				PMCA_RESOURCE = sr_dark_matter
+				PMCA_RESOURCE = acot_sr_dark_energy
 				PMCA_VALUE = 37.5
 			}
 		}
@@ -134,13 +128,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_army_hive_control = {
 		use_armynames_from = acot_army_hive_control
 		damage = 27.5
@@ -172,7 +160,7 @@ inline_script = {
 			is_hive_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
-				PMCA_RESOURCE = sr_dark_matter
+				PMCA_RESOURCE = acot_sr_dark_energy
 				PMCA_VALUE = 20.0
 			}
 		}
@@ -189,13 +177,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_army_hive_control_se = {
 		use_armynames_from = acot_army_hive_control_se
 		damage = 37.5
@@ -235,7 +217,7 @@ inline_script = {
 			is_hive_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
-				PMCA_RESOURCE = sr_dark_matter
+				PMCA_RESOURCE = acot_sr_dark_energy
 				PMCA_VALUE = 22.5
 			}
 		}
@@ -252,13 +234,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_phanon_army = {
 		use_armynames_from = acot_phanon_army
 		damage = 40.0
@@ -295,13 +271,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_phanon_army_sniper = {
 		use_armynames_from = acot_phanon_army_sniper
 		damage = 60.0
@@ -338,13 +308,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_phanon_elite = {
 		use_armynames_from = acot_phanon_elite
 		damage = 65.0
@@ -381,13 +345,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_phanon_tank = {
 		use_armynames_from = acot_phanon_tank
 		damage = 85.0
@@ -424,13 +382,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_phanon_attack_dog = {
 		use_armynames_from = acot_phanon_attack_dog
 		damage = 70.0
@@ -467,13 +419,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_phanon_attack_mammoth = {
 		use_armynames_from = acot_phanon_attack_mammoth
 		damage = 125.0
@@ -510,13 +456,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_phanon_operative = {
 		use_armynames_from = acot_phanon_operative
 		damage = 450.0
@@ -555,13 +495,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_ten_acot_phanon_operative_type_b = {
 		use_armynames_from = acot_phanon_operative_type_b
 		damage = 550.0
@@ -600,13 +534,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_army_machine_special = {
 		use_armynames_from = acot_army_machine_special
 		damage = 300.0
@@ -651,8 +579,8 @@ inline_script = {
 		potential_country = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
-				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 35.0
+				PMCA_RESOURCE = acot_sr_dark_energy
+				PMCA_VALUE = 350.0
 			}
 		}
 		allow = {
@@ -668,13 +596,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_army_machine_special_se = {
 		use_armynames_from = acot_army_machine_special_se
 		damage = 400.0
@@ -719,8 +641,8 @@ inline_script = {
 		potential_country = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
-				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 37.5
+				PMCA_RESOURCE = acot_sr_dark_energy
+				PMCA_VALUE = 375.0
 			}
 		}
 		allow = {
@@ -736,13 +658,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_army_hive_control = {
 		use_armynames_from = acot_army_hive_control
 		damage = 275.0
@@ -774,8 +690,8 @@ inline_script = {
 			is_hive_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
-				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 20.0
+				PMCA_RESOURCE = acot_sr_dark_energy
+				PMCA_VALUE = 200.0
 			}
 		}
 		allow = {
@@ -791,13 +707,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_army_hive_control_se = {
 		use_armynames_from = acot_army_hive_control_se
 		damage = 375.0
@@ -837,8 +747,8 @@ inline_script = {
 			is_hive_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
-				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 22.5
+				PMCA_RESOURCE = acot_sr_dark_energy
+				PMCA_VALUE = 225.0
 			}
 		}
 		allow = {
@@ -854,13 +764,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_phanon_army = {
 		use_armynames_from = acot_phanon_army
 		damage = 400.0
@@ -890,20 +794,14 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
-				PMCA_VALUE = 2500.0
+				PMCA_VALUE = 25000.0
 			}
 		}
 		ai_weight = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_phanon_army_sniper = {
 		use_armynames_from = acot_phanon_army_sniper
 		damage = 600.0
@@ -933,20 +831,14 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
-				PMCA_VALUE = 2500.0
+				PMCA_VALUE = 25000.0
 			}
 		}
 		ai_weight = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_phanon_elite = {
 		use_armynames_from = acot_phanon_elite
 		damage = 650.0
@@ -976,20 +868,14 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
-				PMCA_VALUE = 4000.0
+				PMCA_VALUE = 40000.0
 			}
 		}
 		ai_weight = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_phanon_tank = {
 		use_armynames_from = acot_phanon_tank
 		damage = 850.0
@@ -1019,20 +905,14 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = alloys
-				PMCA_VALUE = 3000.0
+				PMCA_VALUE = 30000.0
 			}
 		}
 		ai_weight = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_phanon_attack_dog = {
 		use_armynames_from = acot_phanon_attack_dog
 		damage = 700.0
@@ -1062,20 +942,14 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
-				PMCA_VALUE = 3500.0
+				PMCA_VALUE = 35000.0
 			}
 		}
 		ai_weight = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_phanon_attack_mammoth = {
 		use_armynames_from = acot_phanon_attack_mammoth
 		damage = 1250.0
@@ -1105,20 +979,14 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
-				PMCA_VALUE = 7000.0
+				PMCA_VALUE = 70000.0
 			}
 		}
 		ai_weight = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_phanon_operative = {
 		use_armynames_from = acot_phanon_operative
 		damage = 4500.0
@@ -1150,20 +1018,14 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = influence
-				PMCA_VALUE = 5000.0
+				PMCA_VALUE = 50000.0
 			}
 		}
 		ai_weight = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_acquisition_of_tech
-	CONTENT = "
 	pmca_hundred_acot_phanon_operative_type_b = {
 		use_armynames_from = acot_phanon_operative_type_b
 		damage = 5500.0
@@ -1195,7 +1057,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = influence
-				PMCA_VALUE = 5000.0
+				PMCA_VALUE = 50000.0
 			}
 		}
 		ai_weight = {
@@ -1204,4 +1066,3 @@ inline_script = {
 	}
 	"
 }
-

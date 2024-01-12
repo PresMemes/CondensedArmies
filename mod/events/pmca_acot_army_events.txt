@@ -9,7 +9,7 @@ country_event = {
 	trigger = {
 		check_variable_arithmetic = {
 			which = @has_ancient_caches
-			value != 0
+			value = 1
 		}
 	}
 
@@ -387,10 +387,10 @@ country_event = {
 							limit = {
 								from = { has_army_flag = pmca_times_ten_army }
 							}
-							pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = ten }
+							pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
 						}
 						else = {
-							pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = hundred }
+							pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
 						}
 					}
 					20 = {
@@ -404,13 +404,13 @@ country_event = {
 							}
 							while = {
 								count = 2
-								pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = ten }
+								pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
 							}
 						}
 						else = {
 							while = {
 								count = 2
-								pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = hundred }
+								pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
 							}
 						}
 					}
@@ -425,13 +425,13 @@ country_event = {
 							}
 							while = {
 								count = 3
-								pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = ten }
+								pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
 							}
 						}
 						else = {
 							while = {
 								count = 3
-								pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = hundred }
+								pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
 							}
 						}
 					}
@@ -454,10 +454,10 @@ country_event = {
 							limit = {
 								from = { has_army_flag = pmca_times_ten_army }
 							}
-							pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = ten }
+							pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
 						}
 						else = {
-							pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = hundred }
+							pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
 						}
 					}
 					15 = {
@@ -471,13 +471,13 @@ country_event = {
 							}
 							while = {
 								count = 2
-								pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = ten }
+								pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
 							}
 						}
 						else = {
 							while = {
 								count = 2
-								pmca_acot_army_create_infantry_crew_survivor = { ARMY_MULT = hundred }
+								pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
 							}
 						}
 					}

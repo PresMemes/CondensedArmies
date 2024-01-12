@@ -56,13 +56,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_infantry_dm = {
 		use_armynames_from = acot_infantry_dm
 		damage = 20.0
@@ -115,13 +109,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_infantry_ae = {
 		use_armynames_from = acot_infantry_ae
 		damage = 25.0
@@ -174,13 +162,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_infantry_se = {
 		use_armynames_from = acot_infantry_se
 		damage = 35.0
@@ -226,13 +208,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_infantry_autoarmor = {
 		use_armynames_from = acot_infantry_autoarmor
 		damage = 10.0
@@ -250,13 +226,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_infantry_autoarmor_se = {
 		use_armynames_from = acot_infantry_autoarmor_se
 		damage = 20.0
@@ -274,13 +244,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_infantry_medium_autoarmor = {
 		use_armynames_from = acot_infantry_medium_autoarmor
 		damage = 10.0
@@ -298,13 +262,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_infantry_medium_autoarmor_se = {
 		use_armynames_from = acot_infantry_medium_autoarmor_se
 		damage = 20.0
@@ -322,13 +280,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_infantry_heavy_autoarmor = {
 		use_armynames_from = acot_infantry_heavy_autoarmor
 		damage = 15.0
@@ -346,13 +298,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_infantry_heavy_autoarmor_se = {
 		use_armynames_from = acot_infantry_heavy_autoarmor_se
 		damage = 25.0
@@ -370,13 +316,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_slave_army = {
 		use_armynames_from = slave_army
 		damage = 7.5
@@ -445,13 +385,7 @@ inline_script = {
 			base = 75.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_slave_army_dm = {
 		use_armynames_from = acot_slave_army_dm
 		damage = 8.5
@@ -519,13 +453,7 @@ inline_script = {
 			base = 75.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_undead_army = {
 		use_armynames_from = undead_army
 		damage = 7.5
@@ -583,13 +511,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_undead_army_dm = {
 		use_armynames_from = acot_undead_army_dm
 		damage = 17.5
@@ -642,13 +564,7 @@ inline_script = {
 			base = 180.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_light_armor = {
 		use_armynames_from = acot_light_armor
 		damage = 15.0
@@ -695,13 +611,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_light_armor_pilot = {
 		use_armynames_from = acot_light_armor_pilot
 		damage = 5.0
@@ -720,13 +630,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_light_armor_dm = {
 		use_armynames_from = acot_light_armor_dm
 		damage = 25.0
@@ -773,13 +677,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_light_armor_pilot_dm = {
 		use_armynames_from = acot_light_armor_pilot_dm
 		damage = 15.0
@@ -798,13 +696,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_light_armor_ae = {
 		use_armynames_from = acot_light_armor_ae
 		damage = 30.0
@@ -851,13 +743,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_light_armor_pilot_ae = {
 		use_armynames_from = acot_light_armor_pilot_ae
 		damage = 20.0
@@ -876,13 +762,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_light_armor_se = {
 		use_armynames_from = acot_light_armor_se
 		damage = 40.0
@@ -924,13 +804,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_light_armor_pilot_se = {
 		use_armynames_from = acot_light_armor_pilot_se
 		damage = 30.0
@@ -949,13 +823,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_heavy_armor = {
 		use_armynames_from = acot_heavy_armor
 		damage = 45.0
@@ -1003,13 +871,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_heavy_armor_pilot = {
 		use_armynames_from = acot_heavy_armor_pilot
 		damage = 5.0
@@ -1028,13 +890,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_heavy_armor_dm = {
 		use_armynames_from = acot_heavy_armor_dm
 		damage = 55.0
@@ -1082,13 +938,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_heavy_armor_pilot_dm = {
 		use_armynames_from = acot_heavy_armor_pilot_dm
 		damage = 15.0
@@ -1107,13 +957,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_heavy_armor_ae = {
 		use_armynames_from = acot_heavy_armor_ae
 		damage = 60.0
@@ -1160,13 +1004,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_heavy_armor_pilot_ae = {
 		use_armynames_from = acot_heavy_armor_pilot_ae
 		damage = 20.0
@@ -1185,13 +1023,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_heavy_armor_se = {
 		use_armynames_from = acot_heavy_armor_se
 		damage = 70.0
@@ -1234,13 +1066,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_heavy_armor_pilot_se = {
 		use_armynames_from = acot_heavy_armor_pilot_se
 		damage = 30.0
@@ -1259,13 +1085,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_drone_army = {
 		use_armynames_from = acot_drone_army
 		damage = 5.0
@@ -1327,13 +1147,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_drone_army_dm = {
 		use_armynames_from = acot_drone_army_dm
 		damage = 15.0
@@ -1395,13 +1209,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_drone_army_ae = {
 		use_armynames_from = acot_drone_army_ae
 		damage = 20.0
@@ -1463,13 +1271,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_drone_army_se = {
 		use_armynames_from = acot_drone_army_se
 		damage = 30.0
@@ -1524,13 +1326,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_robotic_army = {
 		use_armynames_from = robotic_army
 		damage = 10.0
@@ -1592,13 +1388,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_army_dm = {
 		use_armynames_from = acot_droid_army_dm
 		damage = 20.0
@@ -1661,13 +1451,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_army_ae = {
 		use_armynames_from = acot_droid_army_ae
 		damage = 25.0
@@ -1730,13 +1514,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_army_se = {
 		use_armynames_from = acot_droid_army_se
 		damage = 35.0
@@ -1796,13 +1574,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_army_torso = {
 		use_armynames_from = acot_droid_army_torso
 		damage = 10.0
@@ -1815,13 +1587,7 @@ inline_script = {
 		icon = GFX_army_type_droid_unit
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_army_torso_dm = {
 		use_armynames_from = acot_droid_army_torso_dm
 		damage = 20.0
@@ -1834,13 +1600,7 @@ inline_script = {
 		icon = GFX_army_type_machine_assault
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_army_torso_ae = {
 		use_armynames_from = acot_droid_army_torso_ae
 		damage = 25.0
@@ -1853,13 +1613,7 @@ inline_script = {
 		icon = GFX_army_type_machine_assault
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_army_torso_se = {
 		use_armynames_from = acot_droid_army_torso_se
 		damage = 35.0
@@ -1872,13 +1626,7 @@ inline_script = {
 		icon = GFX_army_type_machine_assault
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_mech = {
 		use_armynames_from = acot_droid_mech
 		damage = 25.0
@@ -1942,13 +1690,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_mech_dm = {
 		use_armynames_from = acot_droid_mech_dm
 		damage = 35.0
@@ -2012,13 +1754,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_mech_ae = {
 		use_armynames_from = acot_droid_mech_ae
 		damage = 40.0
@@ -2082,13 +1818,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_droid_mech_se = {
 		use_armynames_from = acot_droid_mech_se
 		damage = 50.0
@@ -2147,13 +1877,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_special_force = {
 		use_armynames_from = acot_special_force
 		damage = 17.5
@@ -2205,13 +1929,7 @@ inline_script = {
 			base = 45.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_special_force_dm = {
 		use_armynames_from = acot_special_force_dm
 		damage = 27.5
@@ -2263,13 +1981,7 @@ inline_script = {
 			base = 45.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_special_force_ae = {
 		use_armynames_from = acot_special_force_ae
 		damage = 32.5
@@ -2321,13 +2033,7 @@ inline_script = {
 			base = 45.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_special_force_se = {
 		use_armynames_from = acot_special_force_se
 		damage = 42.5
@@ -2379,13 +2085,7 @@ inline_script = {
 			base = 45.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_mat = {
 		use_armynames_from = acot_army_mat
 		damage = 40.0
@@ -2427,13 +2127,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_mat_pilot = {
 		use_armynames_from = acot_army_mat_pilot
 		damage = 20.0
@@ -2446,13 +2140,7 @@ inline_script = {
 		icon = GFX_army_type_primitive
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_mat_se = {
 		use_armynames_from = acot_army_mat_se
 		damage = 50.0
@@ -2499,13 +2187,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_mat_pilot_se = {
 		use_armynames_from = acot_army_mat_pilot_se
 		damage = 30.0
@@ -2518,13 +2200,7 @@ inline_script = {
 		icon = GFX_army_type_primitive
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_spirit = {
 		use_armynames_from = acot_army_spirit
 		damage = 27.5
@@ -2572,13 +2248,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_spirit_se = {
 		use_armynames_from = acot_army_spirit_se
 		damage = 37.5
@@ -2631,13 +2301,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_phobe = {
 		use_armynames_from = acot_army_phobe
 		damage = 35.0
@@ -2685,13 +2349,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_phobe_se = {
 		use_armynames_from = acot_army_phobe_se
 		damage = 45.0
@@ -2744,13 +2402,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_phile = {
 		use_armynames_from = acot_army_phile
 		damage = 45.0
@@ -2798,13 +2450,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_phile_se = {
 		use_armynames_from = acot_army_phile_se
 		damage = 55.0
@@ -2857,13 +2503,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_ega = {
 		use_armynames_from = acot_army_ega
 		damage = 80.0
@@ -2905,13 +2545,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_ega_pilot = {
 		use_armynames_from = acot_army_ega_pilot
 		damage = 15.0
@@ -2924,13 +2558,7 @@ inline_script = {
 		icon = GFX_army_type_infantry
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_ega_se = {
 		use_armynames_from = acot_army_ega_se
 		damage = 90.0
@@ -2977,13 +2605,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_ega_pilot_se = {
 		use_armynames_from = acot_army_ega_pilot_se
 		damage = 25.0
@@ -2996,13 +2618,7 @@ inline_script = {
 		icon = GFX_army_type_infantry
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_auth = {
 		use_armynames_from = acot_army_auth
 		damage = 35.0
@@ -3050,13 +2666,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_auth_se = {
 		use_armynames_from = acot_army_auth_se
 		damage = 45.0
@@ -3109,13 +2719,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_paci = {
 		use_armynames_from = acot_army_paci
 		damage = 25.0
@@ -3173,13 +2777,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_paci_se = {
 		use_armynames_from = acot_army_paci_se
 		damage = 35.0
@@ -3235,13 +2833,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_mili = {
 		use_armynames_from = acot_army_mili
 		damage = 32.5
@@ -3286,13 +2878,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_mili_se = {
 		use_armynames_from = acot_army_mili_se
 		damage = 42.5
@@ -3342,13 +2928,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_cyborg = {
 		use_armynames_from = acot_army_cyborg
 		damage = 35.0
@@ -3389,13 +2969,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_cyborg_se = {
 		use_armynames_from = acot_army_cyborg_se
 		damage = 45.0
@@ -3440,13 +3014,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_cyborg_torso = {
 		use_armynames_from = acot_army_cyborg_torso
 		damage = 35.0
@@ -3469,13 +3037,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_cyborg_torso_se = {
 		use_armynames_from = acot_army_cyborg_torso_se
 		damage = 45.0
@@ -3497,13 +3059,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_synth = {
 		use_armynames_from = acot_army_synth
 		damage = 50.0
@@ -3544,13 +3100,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_synth_se = {
 		use_armynames_from = acot_army_synth_se
 		damage = 60.0
@@ -3595,13 +3145,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_synth_torso = {
 		use_armynames_from = acot_army_synth_torso
 		damage = 50.0
@@ -3625,13 +3169,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_synth_torso_se = {
 		use_armynames_from = acot_army_synth_torso_se
 		damage = 60.0
@@ -3655,13 +3193,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_psionic_army = {
 		use_armynames_from = psionic_army
 		damage = 20.0
@@ -3683,7 +3215,7 @@ inline_script = {
 		potential = {
 			from = {
 				OR = {
-					NOT = { host_has_dlc = Utopia }
+					has_utopia = no
 					OR = {
 						has_trait = trait_latent_psionic
 						has_trait = trait_psionic
@@ -3728,13 +3260,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_psi = {
 		use_armynames_from = acot_army_psi
 		damage = 40.0
@@ -3760,7 +3286,7 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = {
 				OR = {
-					NOT = { host_has_dlc = Utopia }
+					has_utopia = no
 					has_trait = trait_psionic
 				}
 				NOR = {
@@ -3789,13 +3315,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_psi_se = {
 		use_armynames_from = acot_army_psi_se
 		damage = 50.0
@@ -3825,7 +3345,7 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = {
 				OR = {
-					NOT = { host_has_dlc = Utopia }
+					has_utopia = no
 					has_trait = trait_psionic
 				}
 				NOR = {
@@ -3857,13 +3377,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_clone_army = {
 		use_armynames_from = clone_army
 		damage = 10.0
@@ -3926,13 +3440,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_clone_dm = {
 		use_armynames_from = acot_army_clone_dm
 		damage = 20.0
@@ -3976,13 +3484,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_gene_warrior_army = {
 		use_armynames_from = gene_warrior_army
 		damage = 20.0
@@ -4029,13 +3531,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_gene = {
 		use_armynames_from = acot_army_gene
 		damage = 40.0
@@ -4084,13 +3580,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_gene_se = {
 		use_armynames_from = acot_army_gene_se
 		damage = 50.0
@@ -4141,13 +3631,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_xenomorph_army = {
 		use_armynames_from = xenomorph_army
 		damage = 40.0
@@ -4190,13 +3674,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_machine_assault_1 = {
 		use_armynames_from = machine_assault_1
 		damage = 7.5
@@ -4241,13 +3719,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_dm = {
 		use_armynames_from = acot_army_machine_dm
 		damage = 17.5
@@ -4292,13 +3764,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_ae = {
 		use_armynames_from = acot_army_machine_ae
 		damage = 22.5
@@ -4343,13 +3809,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_se = {
 		use_armynames_from = acot_army_machine_se
 		damage = 32.5
@@ -4390,13 +3850,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_torso = {
 		use_armynames_from = acot_army_machine_torso
 		damage = 7.5
@@ -4415,13 +3869,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_torso_dm = {
 		use_armynames_from = acot_army_machine_torso_dm
 		damage = 17.5
@@ -4440,13 +3888,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_torso_ae = {
 		use_armynames_from = acot_army_machine_torso_ae
 		damage = 22.5
@@ -4465,13 +3907,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_torso_se = {
 		use_armynames_from = acot_army_machine_torso_se
 		damage = 32.5
@@ -4490,13 +3926,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_spm = {
 		use_armynames_from = acot_army_machine_spm
 		damage = 7.0
@@ -4539,13 +3969,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_spm_dm = {
 		use_armynames_from = acot_army_machine_spm_dm
 		damage = 17.0
@@ -4588,13 +4012,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_spm_ae = {
 		use_armynames_from = acot_army_machine_spm_ae
 		damage = 22.0
@@ -4637,13 +4055,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_spm_se = {
 		use_armynames_from = acot_army_machine_spm_se
 		damage = 32.0
@@ -4685,13 +4097,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_machine_assault_2 = {
 		use_armynames_from = machine_assault_2
 		damage = 12.5
@@ -4736,13 +4142,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_light_dm = {
 		use_armynames_from = acot_army_machine_light_dm
 		damage = 22.5
@@ -4787,13 +4187,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_light_ae = {
 		use_armynames_from = acot_army_machine_light_ae
 		damage = 27.5
@@ -4838,13 +4232,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_light_se = {
 		use_armynames_from = acot_army_machine_light_se
 		damage = 37.5
@@ -4886,13 +4274,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_light_torso = {
 		use_armynames_from = acot_army_machine_light_torso
 		damage = 12.5
@@ -4911,13 +4293,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_light_torso_dm = {
 		use_armynames_from = acot_army_machine_light_torso_dm
 		damage = 22.5
@@ -4936,13 +4312,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_light_torso_ae = {
 		use_armynames_from = acot_army_machine_light_torso_ae
 		damage = 27.5
@@ -4961,13 +4331,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_light_torso_se = {
 		use_armynames_from = acot_army_machine_light_torso_se
 		damage = 37.5
@@ -4986,13 +4350,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_machine_assault_3 = {
 		use_armynames_from = machine_assault_3
 		damage = 45.0
@@ -5036,13 +4394,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_heavy_dm = {
 		use_armynames_from = acot_army_machine_heavy_dm
 		damage = 55.0
@@ -5089,13 +4441,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_heavy_ae = {
 		use_armynames_from = acot_army_machine_heavy_ae
 		damage = 60.0
@@ -5142,13 +4488,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_heavy_se = {
 		use_armynames_from = acot_army_machine_heavy_se
 		damage = 70.0
@@ -5192,13 +4532,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_cyborg = {
 		use_armynames_from = acot_army_machine_cyborg
 		damage = 10.0
@@ -5247,13 +4581,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_cyborg_dm = {
 		use_armynames_from = acot_army_machine_cyborg_dm
 		damage = 20.0
@@ -5302,13 +4630,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_cyborg_ae = {
 		use_armynames_from = acot_army_machine_cyborg_ae
 		damage = 25.0
@@ -5357,13 +4679,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_cyborg_se = {
 		use_armynames_from = acot_army_machine_cyborg_se
 		damage = 35.0
@@ -5407,13 +4723,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_cyborg_torso = {
 		use_armynames_from = acot_army_machine_cyborg_torso
 		damage = 10.0
@@ -5432,13 +4742,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_cyborg_torso_dm = {
 		use_armynames_from = acot_army_machine_cyborg_torso_dm
 		damage = 20.0
@@ -5457,13 +4761,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_cyborg_torso_ae = {
 		use_armynames_from = acot_army_machine_cyborg_torso_ae
 		damage = 25.0
@@ -5482,13 +4780,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_cyborg_torso_se = {
 		use_armynames_from = acot_army_machine_cyborg_torso_se
 		damage = 35.0
@@ -5507,13 +4799,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_special = {
 		use_armynames_from = acot_army_machine_special
 		damage = 30.0
@@ -5567,13 +4853,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_special_se = {
 		use_armynames_from = acot_army_machine_special_se
 		damage = 40.0
@@ -5630,13 +4910,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_special_torso = {
 		use_armynames_from = acot_army_machine_special_torso
 		damage = 30.0
@@ -5658,13 +4932,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_machine_special_torso_se = {
 		use_armynames_from = acot_army_machine_special_torso_se
 		damage = 40.0
@@ -5686,13 +4954,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_infantry_1 = {
 		use_armynames_from = acot_hive_infantry_1
 		damage = 5.0
@@ -5738,13 +5000,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_infantry_dm = {
 		use_armynames_from = acot_hive_infantry_dm
 		damage = 15.0
@@ -5790,13 +5046,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_infantry_ae = {
 		use_armynames_from = acot_hive_infantry_ae
 		damage = 20.0
@@ -5842,13 +5092,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_infantry_se = {
 		use_armynames_from = acot_hive_infantry_se
 		damage = 30.0
@@ -5889,13 +5133,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_clone_infantry_1 = {
 		use_armynames_from = acot_hive_clone_infantry_1
 		damage = 5.0
@@ -5941,13 +5179,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_clone_infantry_dm = {
 		use_armynames_from = acot_hive_clone_infantry_dm
 		damage = 15.0
@@ -5991,13 +5223,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_swarmer_1 = {
 		use_armynames_from = acot_hive_swarmer_1
 		damage = 5.0
@@ -6038,13 +5264,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_swarmer_dm = {
 		use_armynames_from = acot_hive_swarmer_dm
 		damage = 15.0
@@ -6085,13 +5305,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_swarmer_ae = {
 		use_armynames_from = acot_hive_swarmer_ae
 		damage = 20.0
@@ -6132,13 +5346,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_swarmer_se = {
 		use_armynames_from = acot_hive_swarmer_se
 		damage = 30.0
@@ -6172,13 +5380,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_broodling_1 = {
 		use_armynames_from = acot_hive_broodling_1
 		damage = 5.0
@@ -6197,13 +5399,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_broodling_dm = {
 		use_armynames_from = acot_hive_broodling_dm
 		damage = 15.0
@@ -6222,13 +5418,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_broodling_ae = {
 		use_armynames_from = acot_hive_broodling_ae
 		damage = 20.0
@@ -6247,13 +5437,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_broodling_se = {
 		use_armynames_from = acot_hive_broodling_se
 		damage = 30.0
@@ -6272,13 +5456,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_clone_swarmer_1 = {
 		use_armynames_from = acot_hive_clone_swarmer_1
 		damage = 3.0
@@ -6312,13 +5490,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_light_1 = {
 		use_armynames_from = acot_hive_light_1
 		damage = 7.5
@@ -6364,13 +5536,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_light_dm = {
 		use_armynames_from = acot_hive_light_dm
 		damage = 17.5
@@ -6416,13 +5582,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_light_ae = {
 		use_armynames_from = acot_hive_light_ae
 		damage = 22.5
@@ -6468,13 +5628,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_light_se = {
 		use_armynames_from = acot_hive_light_se
 		damage = 32.5
@@ -6515,13 +5669,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_clone_light_1 = {
 		use_armynames_from = acot_hive_clone_light_1
 		damage = 7.5
@@ -6567,13 +5715,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_clone_light_dm = {
 		use_armynames_from = acot_hive_clone_light_dm
 		damage = 17.5
@@ -6617,13 +5759,7 @@ inline_script = {
 			base = 90.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_heavy_1 = {
 		use_armynames_from = acot_hive_heavy_1
 		damage = 37.5
@@ -6669,13 +5805,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_heavy_dm = {
 		use_armynames_from = acot_hive_heavy_dm
 		damage = 47.5
@@ -6721,13 +5851,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_heavy_ae = {
 		use_armynames_from = acot_hive_heavy_ae
 		damage = 52.5
@@ -6773,13 +5897,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_heavy_se = {
 		use_armynames_from = acot_hive_heavy_se
 		damage = 62.5
@@ -6820,13 +5938,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_heavy_cocoon_1 = {
 		use_armynames_from = acot_hive_heavy_cocoon_1
 		damage = 0.1
@@ -6839,13 +5951,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_heavy
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_heavy_cocoon_dm = {
 		use_armynames_from = acot_hive_heavy_cocoon_dm
 		damage = 0.1
@@ -6858,13 +5964,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_heavy
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_heavy_cocoon_ae = {
 		use_armynames_from = acot_hive_heavy_cocoon_ae
 		damage = 0.1
@@ -6877,13 +5977,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_heavy
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_hive_heavy_cocoon_se = {
 		use_armynames_from = acot_hive_heavy_cocoon_se
 		damage = 0.1
@@ -6896,13 +5990,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_heavy
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_gene = {
 		use_armynames_from = acot_army_hive_gene
 		damage = 22.5
@@ -6945,13 +6033,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_gene_ae = {
 		use_armynames_from = acot_army_hive_gene_ae
 		damage = 42.5
@@ -6999,13 +6081,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_gene_se = {
 		use_armynames_from = acot_army_hive_gene_se
 		damage = 52.5
@@ -7055,13 +6131,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_gene_cocoon = {
 		use_armynames_from = acot_army_hive_gene_cocoon
 		damage = 0.1
@@ -7074,13 +6144,7 @@ inline_script = {
 		icon = GFX_army_type_gene_warrior
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_gene_cocoon_dm = {
 		use_armynames_from = acot_army_hive_gene_cocoon_dm
 		damage = 0.1
@@ -7093,13 +6157,7 @@ inline_script = {
 		icon = GFX_army_type_gene_warrior
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_gene_cocoon_ae = {
 		use_armynames_from = acot_army_hive_gene_cocoon_ae
 		damage = 0.1
@@ -7112,13 +6170,7 @@ inline_script = {
 		icon = GFX_army_type_gene_warrior
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_gene_cocoon_se = {
 		use_armynames_from = acot_army_hive_gene_cocoon_se
 		damage = 0.1
@@ -7131,13 +6183,7 @@ inline_script = {
 		icon = GFX_army_type_gene_warrior
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_control = {
 		use_armynames_from = acot_army_hive_control
 		damage = 27.5
@@ -7183,13 +6229,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_control_se = {
 		use_armynames_from = acot_army_hive_control_se
 		damage = 37.5
@@ -7243,13 +6283,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_control_cocoon = {
 		use_armynames_from = acot_army_hive_control_cocoon
 		damage = 0.1
@@ -7262,13 +6296,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_controller
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_hive_control_cocoon_se = {
 		use_armynames_from = acot_army_hive_control_cocoon_se
 		damage = 0.1
@@ -7281,13 +6309,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_controller
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_ten_acot_army_stellarite_bomber = {
 		use_armynames_from = acot_army_stellarite_bomber
 		damage = 300.0
@@ -7324,13 +6346,7 @@ inline_script = {
 			base = 75.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_assault_army = {
 		use_armynames_from = assault_army
 		damage = 100.0
@@ -7382,13 +6398,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_infantry_dm = {
 		use_armynames_from = acot_infantry_dm
 		damage = 200.0
@@ -7441,13 +6451,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_infantry_ae = {
 		use_armynames_from = acot_infantry_ae
 		damage = 250.0
@@ -7500,13 +6504,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_infantry_se = {
 		use_armynames_from = acot_infantry_se
 		damage = 350.0
@@ -7552,13 +6550,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_infantry_autoarmor = {
 		use_armynames_from = acot_infantry_autoarmor
 		damage = 100.0
@@ -7576,13 +6568,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_infantry_autoarmor_se = {
 		use_armynames_from = acot_infantry_autoarmor_se
 		damage = 200.0
@@ -7600,13 +6586,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_infantry_medium_autoarmor = {
 		use_armynames_from = acot_infantry_medium_autoarmor
 		damage = 100.0
@@ -7624,13 +6604,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_infantry_medium_autoarmor_se = {
 		use_armynames_from = acot_infantry_medium_autoarmor_se
 		damage = 200.0
@@ -7648,13 +6622,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_infantry_heavy_autoarmor = {
 		use_armynames_from = acot_infantry_heavy_autoarmor
 		damage = 150.0
@@ -7672,13 +6640,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_infantry_heavy_autoarmor_se = {
 		use_armynames_from = acot_infantry_heavy_autoarmor_se
 		damage = 250.0
@@ -7696,13 +6658,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_slave_army = {
 		use_armynames_from = slave_army
 		damage = 75.0
@@ -7771,13 +6727,7 @@ inline_script = {
 			base = 100.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_slave_army_dm = {
 		use_armynames_from = acot_slave_army_dm
 		damage = 85.0
@@ -7845,13 +6795,7 @@ inline_script = {
 			base = 100.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_undead_army = {
 		use_armynames_from = undead_army
 		damage = 75.0
@@ -7909,13 +6853,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_undead_army_dm = {
 		use_armynames_from = acot_undead_army_dm
 		damage = 175.0
@@ -7968,13 +6906,7 @@ inline_script = {
 			base = 240.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_light_armor = {
 		use_armynames_from = acot_light_armor
 		damage = 150.0
@@ -8021,13 +6953,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_light_armor_pilot = {
 		use_armynames_from = acot_light_armor_pilot
 		damage = 50.0
@@ -8046,13 +6972,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_light_armor_dm = {
 		use_armynames_from = acot_light_armor_dm
 		damage = 250.0
@@ -8099,13 +7019,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_light_armor_pilot_dm = {
 		use_armynames_from = acot_light_armor_pilot_dm
 		damage = 150.0
@@ -8124,13 +7038,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_light_armor_ae = {
 		use_armynames_from = acot_light_armor_ae
 		damage = 300.0
@@ -8177,13 +7085,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_light_armor_pilot_ae = {
 		use_armynames_from = acot_light_armor_pilot_ae
 		damage = 200.0
@@ -8202,13 +7104,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_light_armor_se = {
 		use_armynames_from = acot_light_armor_se
 		damage = 400.0
@@ -8250,13 +7146,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_light_armor_pilot_se = {
 		use_armynames_from = acot_light_armor_pilot_se
 		damage = 300.0
@@ -8275,13 +7165,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_heavy_armor = {
 		use_armynames_from = acot_heavy_armor
 		damage = 450.0
@@ -8329,13 +7213,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_heavy_armor_pilot = {
 		use_armynames_from = acot_heavy_armor_pilot
 		damage = 50.0
@@ -8354,13 +7232,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_heavy_armor_dm = {
 		use_armynames_from = acot_heavy_armor_dm
 		damage = 550.0
@@ -8408,13 +7280,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_heavy_armor_pilot_dm = {
 		use_armynames_from = acot_heavy_armor_pilot_dm
 		damage = 150.0
@@ -8433,13 +7299,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_heavy_armor_ae = {
 		use_armynames_from = acot_heavy_armor_ae
 		damage = 600.0
@@ -8486,13 +7346,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_heavy_armor_pilot_ae = {
 		use_armynames_from = acot_heavy_armor_pilot_ae
 		damage = 200.0
@@ -8511,13 +7365,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_heavy_armor_se = {
 		use_armynames_from = acot_heavy_armor_se
 		damage = 700.0
@@ -8560,13 +7408,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_heavy_armor_pilot_se = {
 		use_armynames_from = acot_heavy_armor_pilot_se
 		damage = 300.0
@@ -8585,13 +7427,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_drone_army = {
 		use_armynames_from = acot_drone_army
 		damage = 50.0
@@ -8653,13 +7489,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_drone_army_dm = {
 		use_armynames_from = acot_drone_army_dm
 		damage = 150.0
@@ -8721,13 +7551,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_drone_army_ae = {
 		use_armynames_from = acot_drone_army_ae
 		damage = 200.0
@@ -8789,13 +7613,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_drone_army_se = {
 		use_armynames_from = acot_drone_army_se
 		damage = 300.0
@@ -8850,13 +7668,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_robotic_army = {
 		use_armynames_from = robotic_army
 		damage = 100.0
@@ -8918,13 +7730,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_army_dm = {
 		use_armynames_from = acot_droid_army_dm
 		damage = 200.0
@@ -8987,13 +7793,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_army_ae = {
 		use_armynames_from = acot_droid_army_ae
 		damage = 250.0
@@ -9056,13 +7856,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_army_se = {
 		use_armynames_from = acot_droid_army_se
 		damage = 350.0
@@ -9122,13 +7916,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_army_torso = {
 		use_armynames_from = acot_droid_army_torso
 		damage = 100.0
@@ -9141,13 +7929,7 @@ inline_script = {
 		icon = GFX_army_type_droid_unit
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_army_torso_dm = {
 		use_armynames_from = acot_droid_army_torso_dm
 		damage = 200.0
@@ -9160,13 +7942,7 @@ inline_script = {
 		icon = GFX_army_type_machine_assault
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_army_torso_ae = {
 		use_armynames_from = acot_droid_army_torso_ae
 		damage = 250.0
@@ -9179,13 +7955,7 @@ inline_script = {
 		icon = GFX_army_type_machine_assault
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_army_torso_se = {
 		use_armynames_from = acot_droid_army_torso_se
 		damage = 350.0
@@ -9198,13 +7968,7 @@ inline_script = {
 		icon = GFX_army_type_machine_assault
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_mech = {
 		use_armynames_from = acot_droid_mech
 		damage = 250.0
@@ -9268,13 +8032,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_mech_dm = {
 		use_armynames_from = acot_droid_mech_dm
 		damage = 350.0
@@ -9338,13 +8096,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_mech_ae = {
 		use_armynames_from = acot_droid_mech_ae
 		damage = 400.0
@@ -9408,13 +8160,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_droid_mech_se = {
 		use_armynames_from = acot_droid_mech_se
 		damage = 500.0
@@ -9473,13 +8219,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_special_force = {
 		use_armynames_from = acot_special_force
 		damage = 175.0
@@ -9531,13 +8271,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_special_force_dm = {
 		use_armynames_from = acot_special_force_dm
 		damage = 275.0
@@ -9589,13 +8323,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_special_force_ae = {
 		use_armynames_from = acot_special_force_ae
 		damage = 325.0
@@ -9647,13 +8375,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_special_force_se = {
 		use_armynames_from = acot_special_force_se
 		damage = 425.0
@@ -9705,13 +8427,7 @@ inline_script = {
 			base = 60.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_mat = {
 		use_armynames_from = acot_army_mat
 		damage = 400.0
@@ -9753,13 +8469,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_mat_pilot = {
 		use_armynames_from = acot_army_mat_pilot
 		damage = 200.0
@@ -9772,13 +8482,7 @@ inline_script = {
 		icon = GFX_army_type_primitive
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_mat_se = {
 		use_armynames_from = acot_army_mat_se
 		damage = 500.0
@@ -9825,13 +8529,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_mat_pilot_se = {
 		use_armynames_from = acot_army_mat_pilot_se
 		damage = 300.0
@@ -9844,13 +8542,7 @@ inline_script = {
 		icon = GFX_army_type_primitive
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_spirit = {
 		use_armynames_from = acot_army_spirit
 		damage = 275.0
@@ -9898,13 +8590,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_spirit_se = {
 		use_armynames_from = acot_army_spirit_se
 		damage = 375.0
@@ -9957,13 +8643,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_phobe = {
 		use_armynames_from = acot_army_phobe
 		damage = 350.0
@@ -10011,13 +8691,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_phobe_se = {
 		use_armynames_from = acot_army_phobe_se
 		damage = 450.0
@@ -10070,13 +8744,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_phile = {
 		use_armynames_from = acot_army_phile
 		damage = 450.0
@@ -10124,13 +8792,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_phile_se = {
 		use_armynames_from = acot_army_phile_se
 		damage = 550.0
@@ -10183,13 +8845,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_ega = {
 		use_armynames_from = acot_army_ega
 		damage = 800.0
@@ -10231,13 +8887,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_ega_pilot = {
 		use_armynames_from = acot_army_ega_pilot
 		damage = 150.0
@@ -10250,13 +8900,7 @@ inline_script = {
 		icon = GFX_army_type_infantry
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_ega_se = {
 		use_armynames_from = acot_army_ega_se
 		damage = 900.0
@@ -10303,13 +8947,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_ega_pilot_se = {
 		use_armynames_from = acot_army_ega_pilot_se
 		damage = 250.0
@@ -10322,13 +8960,7 @@ inline_script = {
 		icon = GFX_army_type_infantry
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_auth = {
 		use_armynames_from = acot_army_auth
 		damage = 350.0
@@ -10376,13 +9008,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_auth_se = {
 		use_armynames_from = acot_army_auth_se
 		damage = 450.0
@@ -10435,13 +9061,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_paci = {
 		use_armynames_from = acot_army_paci
 		damage = 250.0
@@ -10499,13 +9119,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_paci_se = {
 		use_armynames_from = acot_army_paci_se
 		damage = 350.0
@@ -10561,13 +9175,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_mili = {
 		use_armynames_from = acot_army_mili
 		damage = 325.0
@@ -10612,13 +9220,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_mili_se = {
 		use_armynames_from = acot_army_mili_se
 		damage = 425.0
@@ -10668,13 +9270,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_cyborg = {
 		use_armynames_from = acot_army_cyborg
 		damage = 350.0
@@ -10715,13 +9311,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_cyborg_se = {
 		use_armynames_from = acot_army_cyborg_se
 		damage = 450.0
@@ -10766,13 +9356,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_cyborg_torso = {
 		use_armynames_from = acot_army_cyborg_torso
 		damage = 350.0
@@ -10795,13 +9379,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_cyborg_torso_se = {
 		use_armynames_from = acot_army_cyborg_torso_se
 		damage = 450.0
@@ -10823,13 +9401,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_synth = {
 		use_armynames_from = acot_army_synth
 		damage = 500.0
@@ -10870,13 +9442,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_synth_se = {
 		use_armynames_from = acot_army_synth_se
 		damage = 600.0
@@ -10921,13 +9487,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_synth_torso = {
 		use_armynames_from = acot_army_synth_torso
 		damage = 500.0
@@ -10951,13 +9511,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_synth_torso_se = {
 		use_armynames_from = acot_army_synth_torso_se
 		damage = 600.0
@@ -10981,13 +9535,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_psionic_army = {
 		use_armynames_from = psionic_army
 		damage = 200.0
@@ -11009,7 +9557,7 @@ inline_script = {
 		potential = {
 			from = {
 				OR = {
-					NOT = { host_has_dlc = Utopia }
+					has_utopia = no
 					OR = {
 						has_trait = trait_latent_psionic
 						has_trait = trait_psionic
@@ -11054,13 +9602,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_psi = {
 		use_armynames_from = acot_army_psi
 		damage = 400.0
@@ -11086,7 +9628,7 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = {
 				OR = {
-					NOT = { host_has_dlc = Utopia }
+					has_utopia = no
 					has_trait = trait_psionic
 				}
 				NOR = {
@@ -11115,13 +9657,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_psi_se = {
 		use_armynames_from = acot_army_psi_se
 		damage = 500.0
@@ -11151,7 +9687,7 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = {
 				OR = {
-					NOT = { host_has_dlc = Utopia }
+					has_utopia = no
 					has_trait = trait_psionic
 				}
 				NOR = {
@@ -11183,13 +9719,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_clone_army = {
 		use_armynames_from = clone_army
 		damage = 100.0
@@ -11252,13 +9782,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_clone_dm = {
 		use_armynames_from = acot_army_clone_dm
 		damage = 200.0
@@ -11302,13 +9826,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_gene_warrior_army = {
 		use_armynames_from = gene_warrior_army
 		damage = 200.0
@@ -11355,13 +9873,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_gene = {
 		use_armynames_from = acot_army_gene
 		damage = 400.0
@@ -11410,13 +9922,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_gene_se = {
 		use_armynames_from = acot_army_gene_se
 		damage = 500.0
@@ -11467,13 +9973,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_xenomorph_army = {
 		use_armynames_from = xenomorph_army
 		damage = 400.0
@@ -11516,13 +10016,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_machine_assault_1 = {
 		use_armynames_from = machine_assault_1
 		damage = 75.0
@@ -11567,13 +10061,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_dm = {
 		use_armynames_from = acot_army_machine_dm
 		damage = 175.0
@@ -11618,13 +10106,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_ae = {
 		use_armynames_from = acot_army_machine_ae
 		damage = 225.0
@@ -11669,13 +10151,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_se = {
 		use_armynames_from = acot_army_machine_se
 		damage = 325.0
@@ -11716,13 +10192,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_torso = {
 		use_armynames_from = acot_army_machine_torso
 		damage = 75.0
@@ -11741,13 +10211,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_torso_dm = {
 		use_armynames_from = acot_army_machine_torso_dm
 		damage = 175.0
@@ -11766,13 +10230,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_torso_ae = {
 		use_armynames_from = acot_army_machine_torso_ae
 		damage = 225.0
@@ -11791,13 +10249,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_torso_se = {
 		use_armynames_from = acot_army_machine_torso_se
 		damage = 325.0
@@ -11816,13 +10268,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_spm = {
 		use_armynames_from = acot_army_machine_spm
 		damage = 70.0
@@ -11865,13 +10311,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_spm_dm = {
 		use_armynames_from = acot_army_machine_spm_dm
 		damage = 170.0
@@ -11914,13 +10354,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_spm_ae = {
 		use_armynames_from = acot_army_machine_spm_ae
 		damage = 220.0
@@ -11963,13 +10397,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_spm_se = {
 		use_armynames_from = acot_army_machine_spm_se
 		damage = 320.0
@@ -12011,13 +10439,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_machine_assault_2 = {
 		use_armynames_from = machine_assault_2
 		damage = 125.0
@@ -12062,13 +10484,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_light_dm = {
 		use_armynames_from = acot_army_machine_light_dm
 		damage = 225.0
@@ -12113,13 +10529,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_light_ae = {
 		use_armynames_from = acot_army_machine_light_ae
 		damage = 275.0
@@ -12164,13 +10574,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_light_se = {
 		use_armynames_from = acot_army_machine_light_se
 		damage = 375.0
@@ -12212,13 +10616,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_light_torso = {
 		use_armynames_from = acot_army_machine_light_torso
 		damage = 125.0
@@ -12237,13 +10635,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_light_torso_dm = {
 		use_armynames_from = acot_army_machine_light_torso_dm
 		damage = 225.0
@@ -12262,13 +10654,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_light_torso_ae = {
 		use_armynames_from = acot_army_machine_light_torso_ae
 		damage = 275.0
@@ -12287,13 +10673,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_light_torso_se = {
 		use_armynames_from = acot_army_machine_light_torso_se
 		damage = 375.0
@@ -12312,13 +10692,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_machine_assault_3 = {
 		use_armynames_from = machine_assault_3
 		damage = 450.0
@@ -12362,13 +10736,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_heavy_dm = {
 		use_armynames_from = acot_army_machine_heavy_dm
 		damage = 550.0
@@ -12415,13 +10783,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_heavy_ae = {
 		use_armynames_from = acot_army_machine_heavy_ae
 		damage = 600.0
@@ -12468,13 +10830,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_heavy_se = {
 		use_armynames_from = acot_army_machine_heavy_se
 		damage = 700.0
@@ -12518,13 +10874,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_cyborg = {
 		use_armynames_from = acot_army_machine_cyborg
 		damage = 100.0
@@ -12573,13 +10923,7 @@ inline_script = {
 			base = 160.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_cyborg_dm = {
 		use_armynames_from = acot_army_machine_cyborg_dm
 		damage = 200.0
@@ -12628,13 +10972,7 @@ inline_script = {
 			base = 160.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_cyborg_ae = {
 		use_armynames_from = acot_army_machine_cyborg_ae
 		damage = 250.0
@@ -12683,13 +11021,7 @@ inline_script = {
 			base = 160.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_cyborg_se = {
 		use_armynames_from = acot_army_machine_cyborg_se
 		damage = 350.0
@@ -12733,13 +11065,7 @@ inline_script = {
 			base = 160.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_cyborg_torso = {
 		use_armynames_from = acot_army_machine_cyborg_torso
 		damage = 100.0
@@ -12758,13 +11084,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_cyborg_torso_dm = {
 		use_armynames_from = acot_army_machine_cyborg_torso_dm
 		damage = 200.0
@@ -12783,13 +11103,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_cyborg_torso_ae = {
 		use_armynames_from = acot_army_machine_cyborg_torso_ae
 		damage = 250.0
@@ -12808,13 +11122,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_cyborg_torso_se = {
 		use_armynames_from = acot_army_machine_cyborg_torso_se
 		damage = 350.0
@@ -12833,13 +11141,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_special = {
 		use_armynames_from = acot_army_machine_special
 		damage = 300.0
@@ -12893,13 +11195,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_special_se = {
 		use_armynames_from = acot_army_machine_special_se
 		damage = 400.0
@@ -12956,13 +11252,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_special_torso = {
 		use_armynames_from = acot_army_machine_special_torso
 		damage = 300.0
@@ -12984,13 +11274,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_machine_special_torso_se = {
 		use_armynames_from = acot_army_machine_special_torso_se
 		damage = 400.0
@@ -13012,13 +11296,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_infantry_1 = {
 		use_armynames_from = acot_hive_infantry_1
 		damage = 50.0
@@ -13064,13 +11342,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_infantry_dm = {
 		use_armynames_from = acot_hive_infantry_dm
 		damage = 150.0
@@ -13116,13 +11388,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_infantry_ae = {
 		use_armynames_from = acot_hive_infantry_ae
 		damage = 200.0
@@ -13168,13 +11434,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_infantry_se = {
 		use_armynames_from = acot_hive_infantry_se
 		damage = 300.0
@@ -13215,13 +11475,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_clone_infantry_1 = {
 		use_armynames_from = acot_hive_clone_infantry_1
 		damage = 50.0
@@ -13267,13 +11521,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_clone_infantry_dm = {
 		use_armynames_from = acot_hive_clone_infantry_dm
 		damage = 150.0
@@ -13317,13 +11565,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_swarmer_1 = {
 		use_armynames_from = acot_hive_swarmer_1
 		damage = 50.0
@@ -13364,13 +11606,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_swarmer_dm = {
 		use_armynames_from = acot_hive_swarmer_dm
 		damage = 150.0
@@ -13411,13 +11647,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_swarmer_ae = {
 		use_armynames_from = acot_hive_swarmer_ae
 		damage = 200.0
@@ -13458,13 +11688,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_swarmer_se = {
 		use_armynames_from = acot_hive_swarmer_se
 		damage = 300.0
@@ -13498,13 +11722,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_broodling_1 = {
 		use_armynames_from = acot_hive_broodling_1
 		damage = 50.0
@@ -13523,13 +11741,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_broodling_dm = {
 		use_armynames_from = acot_hive_broodling_dm
 		damage = 150.0
@@ -13548,13 +11760,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_broodling_ae = {
 		use_armynames_from = acot_hive_broodling_ae
 		damage = 200.0
@@ -13573,13 +11779,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_broodling_se = {
 		use_armynames_from = acot_hive_broodling_se
 		damage = 300.0
@@ -13598,13 +11798,7 @@ inline_script = {
 		}
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_clone_swarmer_1 = {
 		use_armynames_from = acot_hive_clone_swarmer_1
 		damage = 30.0
@@ -13638,13 +11832,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_light_1 = {
 		use_armynames_from = acot_hive_light_1
 		damage = 75.0
@@ -13690,13 +11878,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_light_dm = {
 		use_armynames_from = acot_hive_light_dm
 		damage = 175.0
@@ -13742,13 +11924,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_light_ae = {
 		use_armynames_from = acot_hive_light_ae
 		damage = 225.0
@@ -13794,13 +11970,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_light_se = {
 		use_armynames_from = acot_hive_light_se
 		damage = 325.0
@@ -13841,13 +12011,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_clone_light_1 = {
 		use_armynames_from = acot_hive_clone_light_1
 		damage = 75.0
@@ -13893,13 +12057,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_clone_light_dm = {
 		use_armynames_from = acot_hive_clone_light_dm
 		damage = 175.0
@@ -13943,13 +12101,7 @@ inline_script = {
 			base = 120.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_heavy_1 = {
 		use_armynames_from = acot_hive_heavy_1
 		damage = 375.0
@@ -13995,13 +12147,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_heavy_dm = {
 		use_armynames_from = acot_hive_heavy_dm
 		damage = 475.0
@@ -14047,13 +12193,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_heavy_ae = {
 		use_armynames_from = acot_hive_heavy_ae
 		damage = 525.0
@@ -14099,13 +12239,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_heavy_se = {
 		use_armynames_from = acot_hive_heavy_se
 		damage = 625.0
@@ -14146,13 +12280,7 @@ inline_script = {
 			base = 80.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_heavy_cocoon_1 = {
 		use_armynames_from = acot_hive_heavy_cocoon_1
 		damage = 1.0
@@ -14165,13 +12293,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_heavy
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_heavy_cocoon_dm = {
 		use_armynames_from = acot_hive_heavy_cocoon_dm
 		damage = 1.0
@@ -14184,13 +12306,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_heavy
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_heavy_cocoon_ae = {
 		use_armynames_from = acot_hive_heavy_cocoon_ae
 		damage = 1.0
@@ -14203,13 +12319,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_heavy
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_hive_heavy_cocoon_se = {
 		use_armynames_from = acot_hive_heavy_cocoon_se
 		damage = 1.0
@@ -14222,13 +12332,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_heavy
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_gene = {
 		use_armynames_from = acot_army_hive_gene
 		damage = 225.0
@@ -14271,13 +12375,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_gene_ae = {
 		use_armynames_from = acot_army_hive_gene_ae
 		damage = 425.0
@@ -14325,13 +12423,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_gene_se = {
 		use_armynames_from = acot_army_hive_gene_se
 		damage = 525.0
@@ -14381,13 +12473,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_gene_cocoon = {
 		use_armynames_from = acot_army_hive_gene_cocoon
 		damage = 1.0
@@ -14400,13 +12486,7 @@ inline_script = {
 		icon = GFX_army_type_gene_warrior
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_gene_cocoon_dm = {
 		use_armynames_from = acot_army_hive_gene_cocoon_dm
 		damage = 1.0
@@ -14419,13 +12499,7 @@ inline_script = {
 		icon = GFX_army_type_gene_warrior
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_gene_cocoon_ae = {
 		use_armynames_from = acot_army_hive_gene_cocoon_ae
 		damage = 1.0
@@ -14438,13 +12512,7 @@ inline_script = {
 		icon = GFX_army_type_gene_warrior
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_gene_cocoon_se = {
 		use_armynames_from = acot_army_hive_gene_cocoon_se
 		damage = 1.0
@@ -14457,13 +12525,7 @@ inline_script = {
 		icon = GFX_army_type_gene_warrior
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_control = {
 		use_armynames_from = acot_army_hive_control
 		damage = 275.0
@@ -14509,13 +12571,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_control_se = {
 		use_armynames_from = acot_army_hive_control_se
 		damage = 375.0
@@ -14569,13 +12625,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_control_cocoon = {
 		use_armynames_from = acot_army_hive_control_cocoon
 		damage = 1.0
@@ -14588,13 +12638,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_controller
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_hive_control_cocoon_se = {
 		use_armynames_from = acot_army_hive_control_cocoon_se
 		damage = 1.0
@@ -14607,13 +12651,7 @@ inline_script = {
 		icon = GFX_acot_type_hive_controller
 		potential = { always = no }
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
-	CONTENT = "
 	pmca_hundred_acot_army_stellarite_bomber = {
 		use_armynames_from = acot_army_stellarite_bomber
 		damage = 3000.0
@@ -14652,4 +12690,3 @@ inline_script = {
 	}
 	"
 }
-

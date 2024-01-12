@@ -1,7 +1,7 @@
-# This file is used purely for debugging
-# Each placeholder army adds about 0.02ms overhead per year, which in other context would be amazing;
-# But when you have ~400 placeholders? That's adds up *really* quickly
-
+# # This file is used purely for debugging
+# # Each placeholder army adds about 0.02ms overhead per year, which in other context would be amazing;
+# # But when you have ~400 placeholders? That's adds up *really* quickly
+#
 # pmca_ten_assault_army = { defensive = yes potential = { always = no } ai_weight = { base = 0.0 } }
 # pmca_hundred_assault_army = { defensive = yes potential = { always = no } ai_weight = { base = 0.0 } }
 # pmca_ten_acot_infantry_dm = { defensive = yes potential = { always = no } ai_weight = { base = 0.0 } }

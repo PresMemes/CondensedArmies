@@ -44,13 +44,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_stellaris_evolved
-	CONTENT = "
 	pmca_ten_tec_shambling_robot = {
 		use_armynames_from = tec_shambling_robot
 		damage = 10.0
@@ -79,7 +73,7 @@ inline_script = {
 				OR = {
 					has_trait = trait_mechanical
 					has_trait = trait_machine_unit
-					has_trait = @trait_tec_replicant_main	
+					has_trait = @trait_tec_replicant_main
 				}
 			}
 			owner = {
@@ -97,13 +91,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_stellaris_evolved
-	CONTENT = "
 	pmca_ten_tec_pherodrone = {
 		use_armynames_from = tec_pherodrone
 		damage = 5.0
@@ -143,13 +131,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_stellaris_evolved
-	CONTENT = "
 	pmca_ten_tec_siegecraft_army = {
 		use_armynames_from = tec_siegecraft_army
 		damage = 50.0
@@ -184,13 +166,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_stellaris_evolved
-	CONTENT = "
 	pmca_ten_undead_army = {
 		use_armynames_from = undead_army
 		damage = 10.0
@@ -248,13 +224,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_stellaris_evolved
-	CONTENT = "
 	pmca_hundred_tec_reanimator = {
 		use_armynames_from = tec_reanimator
 		damage = 100.0
@@ -294,13 +264,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_stellaris_evolved
-	CONTENT = "
 	pmca_hundred_tec_shambling_robot = {
 		use_armynames_from = tec_shambling_robot
 		damage = 100.0
@@ -329,7 +293,7 @@ inline_script = {
 				OR = {
 					has_trait = trait_mechanical
 					has_trait = trait_machine_unit
-					has_trait = @trait_tec_replicant_main	
+					has_trait = @trait_tec_replicant_main
 				}
 			}
 			owner = {
@@ -347,13 +311,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_stellaris_evolved
-	CONTENT = "
 	pmca_hundred_tec_pherodrone = {
 		use_armynames_from = tec_pherodrone
 		damage = 50.0
@@ -393,13 +351,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_stellaris_evolved
-	CONTENT = "
 	pmca_hundred_tec_siegecraft_army = {
 		use_armynames_from = tec_siegecraft_army
 		damage = 500.0
@@ -434,13 +386,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_stellaris_evolved
-	CONTENT = "
 	pmca_hundred_undead_army = {
 		use_armynames_from = undead_army
 		damage = 100.0
@@ -500,4 +446,3 @@ inline_script = {
 	}
 	"
 }
-

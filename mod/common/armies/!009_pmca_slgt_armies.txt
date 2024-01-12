@@ -1,0 +1,1462 @@
+# Dear Irony please fallback to simple parser
+# x10 and x100 army definition(s) generated via Python
+
+inline_script = {
+	script = army/pmca_conditional_inline_p1
+	MOD_VARIABLE = @slgt_Tier6_cost
+	CONTENT = "
+	pmca_ten_slgt_gene_titan_army = {
+		use_armynames_from = slgt_gene_titan_army
+		damage = 51.0
+		health = 91.0
+		morale = 30.0
+		morale_damage = 2.0
+		collateral_damage = 10.0
+		war_exhaustion = 40.0
+		time = 500.0
+		icon = GFX_slgt_gene_titan_army
+		prerequisites = {
+			tech_gene_seed_purification
+			tech_slgt_bio_titans
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 8000.0
+			}
+			upkeep = {
+				energy = 80.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 8000.0
+			}
+		}
+		ai_weight = {
+			base = 300.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_xenophile }
+			}
+		}
+	}
+
+	pmca_ten_slgt_immortal_titan_army = {
+		use_armynames_from = slgt_immortal_titan_army
+		damage = 146.0
+		health = 260.0
+		morale = 86.0
+		morale_damage = 5.7
+		collateral_damage = 10.0
+		war_exhaustion = 114.0
+		time = 1430.0
+		icon = GFX_slgt_immortal_titan_army
+		prerequisites = {
+			tech_gene_seed_purification
+			tech_slgt_bio_titans
+			tech_slgt_specter_ground_warfare
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 23000.0
+			}
+			upkeep = {
+				energy = 230.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 23000.0
+			}
+		}
+		ai_weight = {
+			base = 450.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_ten_slgt_shroud_touched_army = {
+		use_armynames_from = slgt_shroud_touched_army
+		damage = 92.5
+		health = 17.5
+		has_morale = no
+		morale_damage = 5.2
+		collateral_damage = 40.0
+		war_exhaustion = 40.0
+		time = 500.0
+		icon = GFX_slgt_shroud_touched_army
+		prerequisites = {
+			tech_telepathy
+			tech_slgt_shroud_mercenaries
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 8000.0
+			}
+			upkeep = {
+				energy = 80.0
+			}
+		}
+		potential = {
+			from = {
+				OR = {
+					has_utopia = no
+					OR = {
+						has_trait = trait_latent_psionic
+						has_trait = trait_psionic
+					}
+				}
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 8000.0
+			}
+		}
+		ai_weight = {
+			base = 300.0
+			modifier = {
+				set = 0
+				OR = {
+					NOT = { has_technology = tech_telepathy }
+					has_technology = tech_gene_seed_purification
+				}
+			}
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_spiritualist }
+			}
+		}
+	}
+
+	pmca_ten_slgt_shroud_host_army = {
+		use_armynames_from = slgt_shroud_host_army
+		damage = 264.0
+		health = 50.0
+		has_morale = no
+		morale_damage = 15.0
+		collateral_damage = 40.0
+		war_exhaustion = 114.0
+		time = 1430.0
+		icon = GFX_slgt_shroud_host_army
+		prerequisites = {
+			tech_telepathy
+			tech_slgt_shroud_mercenaries
+			tech_slgt_specter_ground_warfare
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 23000.0
+			}
+			upkeep = {
+				energy = 230.0
+			}
+		}
+		potential = {
+			from = {
+				OR = {
+					has_utopia = no
+					OR = {
+						has_trait = trait_latent_psionic
+						has_trait = trait_psionic
+					}
+				}
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 23000.0
+			}
+		}
+		ai_weight = {
+			base = 450.0
+			modifier = {
+				set = 0
+				OR = {
+					NOT = { has_technology = tech_telepathy }
+					has_technology = tech_gene_seed_purification
+				}
+			}
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_ten_slgt_cyborg_siege_army = {
+		use_armynames_from = slgt_cyborg_siege_army
+		damage = 62.0
+		health = 62.0
+		morale = 38.0
+		morale_damage = 2.0
+		collateral_damage = 10.0
+		war_exhaustion = 30.0
+		time = 500.0
+		icon = GFX_slgt_cyborg_siege_army
+		prerequisites = { tech_slgt_cybernetics_update }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 8000.0
+			}
+			upkeep = {
+				energy = 80.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+				has_trait = trait_cybernetic
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 8000.0
+			}
+		}
+		ai_weight = {
+			base = 300.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_materialist }
+			}
+		}
+	}
+
+	pmca_ten_slgt_self_replicating_army = {
+		use_armynames_from = slgt_self_replicating_army
+		damage = 177.0
+		health = 177.0
+		morale = 109.0
+		morale_damage = 5.71
+		collateral_damage = 10.0
+		war_exhaustion = 86.0
+		time = 1430.0
+		icon = GFX_slgt_self_replicating_army
+		prerequisites = {
+			tech_slgt_cybernetics_update
+			tech_slgt_specter_ground_warfare
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 23000.0
+			}
+			upkeep = {
+				energy = 230.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+				has_trait = trait_cybernetic
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 23000.0
+			}
+		}
+		ai_weight = {
+			base = 450.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_ten_slgt_synth_warform = {
+		use_armynames_from = slgt_synth_warform
+		damage = 40.0
+		health = 60.0
+		has_morale = no
+		morale_damage = 1.5
+		collateral_damage = 40.0
+		war_exhaustion = 40.0
+		time = 500.0
+		icon = GFX_slgt_synth_warform
+		resources = {
+			category = armies
+			cost = {
+				minerals = 8000.0
+			}
+			upkeep = {
+				energy = 80.0
+			}
+		}
+		potential = {
+			from = { has_trait = trait_mechanical }
+		}
+		potential_country = {
+			is_machine_empire = no
+			has_tradition = tr_synthetics_finish
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 8000.0
+			}
+		}
+		allow = {
+			owner = { NOT = { has_policy_flag = robots_outlawed } }
+		}
+		ai_weight = {
+			base = 300.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_ten_slgt_omnivirus_army = {
+		use_armynames_from = slgt_omnivirus_army
+		damage = 114.0
+		health = 171.0
+		has_morale = no
+		morale_damage = 4.3
+		collateral_damage = 40.0
+		war_exhaustion = 114.0
+		time = 1430.0
+		icon = GFX_slgt_synth_warform
+		prerequisites = { tech_slgt_specter_ground_warfare }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 23000.0
+			}
+			upkeep = {
+				energy = 230.0
+			}
+		}
+		potential = {
+			from = { has_trait = trait_mechanical }
+		}
+		potential_country = {
+			OR = {
+				has_tradition = tr_synthetics_finish
+				is_machine_empire = yes
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 23000.0
+			}
+		}
+		allow = {
+			owner = { NOT = { has_policy_flag = robots_outlawed } }
+		}
+		ai_weight = {
+			base = 450.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_ten_slgt_dark_assault_army = {
+		use_armynames_from = slgt_dark_assault_army
+		damage = 20.0
+		health = 20.0
+		morale = 20.0
+		morale_damage = 1.0
+		collateral_damage = 10.0
+		war_exhaustion = 20.0
+		time = 90.0
+		icon = GFX_slgt_dark_assault_army
+		prerequisites = { tech_slgt_domestic_dark_matter_power }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 3000.0
+			}
+			upkeep = {
+				energy = 30.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			OR = {
+				NOR = {
+					AND = {
+						has_technology = tech_telepathy
+						has_technology = tech_slgt_shroud_mercenaries
+					}
+					AND = {
+						has_technology = tech_gene_seed_purification
+						has_technology = tech_slgt_bio_titans
+					}
+					has_technology = tech_slgt_cybernetics_update
+					has_tradition = tr_synthetics_finish
+				}
+				is_fallen_empire = yes
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 3000.0
+			}
+		}
+		ai_weight = {
+			base = 300.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				OR = {
+					has_ethic = ethic_fanatic_xenophile
+					has_ethic = ethic_fanatic_materialist
+					has_ethic = ethic_fanatic_spiritualist
+				}
+			}
+		}
+	}
+
+	pmca_ten_slgt_specter_assault_army = {
+		use_armynames_from = slgt_specter_assault_army
+		damage = 57.0
+		health = 57.0
+		morale = 57.0
+		morale_damage = 2.9
+		collateral_damage = 10.0
+		war_exhaustion = 57.0
+		time = 260.0
+		icon = GFX_slgt_specter_assault_army
+		prerequisites = {
+			tech_slgt_domestic_dark_matter_power
+			tech_slgt_specter_ground_warfare
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 8500.0
+			}
+			upkeep = {
+				energy = 85.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			OR = {
+				NOR = {
+					AND = {
+						has_technology = tech_telepathy
+						has_technology = tech_slgt_shroud_mercenaries
+					}
+					AND = {
+						has_technology = tech_gene_seed_purification
+						has_technology = tech_slgt_bio_titans
+					}
+					has_technology = tech_slgt_cybernetics_update
+					has_tradition = tr_synthetics_finish
+					is_fallen_empire = yes
+				}
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 8500.0
+			}
+		}
+		ai_weight = {
+			base = 450.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_ten_slgt_undead_chimera_army = {
+		use_armynames_from = slgt_undead_chimera_army
+		damage = 50.0
+		health = 92.0
+		has_morale = no
+		morale_damage = 2.75
+		collateral_damage = 12.5
+		war_exhaustion = 20.0
+		time = 350.0
+		icon = GFX_slgt_undead_chimera_army
+		resources = {
+			category = armies
+			cost = {
+				energy = 8000.0
+			}
+			upkeep = {
+				energy = 60.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+			planet = {
+				OR = {
+					has_active_building = building_dread_encampment
+					has_active_building = slgt_building_doctors_place
+				}
+				num_assigned_jobs = {
+					job = necromancer
+					value >= 1
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			OR = {
+				AND = {
+					has_technology = tech_telepathy
+					has_technology = tech_slgt_shroud_mercenaries
+				}
+				AND = {
+					has_technology = tech_gene_seed_purification
+					has_technology = tech_slgt_bio_titans
+				}
+				has_technology = tech_slgt_cybernetics_update
+				has_tradition = tr_synthetics_finish
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 8000.0
+			}
+		}
+		ai_weight = {
+			base = 450.0
+		}
+	}
+
+	pmca_ten_slgt_flux_abomination_army = {
+		use_armynames_from = slgt_flux_abomination_army
+		damage = 143.0
+		health = 257.0
+		has_morale = no
+		morale_damage = 7.9
+		collateral_damage = 57.0
+		war_exhaustion = 57.0
+		time = 1000.0
+		icon = GFX_slgt_flux_abomination_army
+		prerequisites = { tech_slgt_specter_ground_warfare }
+		resources = {
+			category = armies
+			cost = {
+				energy = 23000.0
+			}
+			upkeep = {
+				energy = 170.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+			planet = {
+				OR = {
+					has_active_building = building_dread_encampment
+					has_active_building = slgt_building_doctors_place
+				}
+				num_assigned_jobs = {
+					job = necromancer
+					value >= 1
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			OR = {
+				AND = {
+					has_technology = tech_telepathy
+					has_technology = tech_slgt_shroud_mercenaries
+				}
+				AND = {
+					has_technology = tech_gene_seed_purification
+					has_technology = tech_slgt_bio_titans
+				}
+				has_technology = tech_slgt_cybernetics_update
+				has_tradition = tr_synthetics_finish
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 23000.0
+			}
+		}
+		ai_weight = {
+			base = 600.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_ten_slgt_undead_brute_army = {
+		use_armynames_from = slgt_undead_brute_army
+		damage = 10.0
+		health = 10.0
+		has_morale = no
+		morale_damage = 1.75
+		collateral_damage = 12.5
+		war_exhaustion = 5.0
+		time = 60.0
+		icon = GFX_army_type_undead
+		prerequisites = { tech_assault_armies }
+		resources = {
+			category = armies
+			cost = {
+				energy = 1000.0
+			}
+			upkeep = {
+				energy = 7.5
+			}
+		}
+		show_tech_unlock_if = {
+			has_valid_civic = civic_reanimated_armies
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+			planet = {
+				has_active_building = slgt_building_doctors_place
+				num_assigned_jobs = {
+					job = necromancer
+					value >= 1
+				}
+			}
+		}
+		potential_country = {
+			has_valid_civic = civic_reanimated_armies
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 1000.0
+			}
+		}
+		ai_weight = {
+			base = 150.0
+		}
+	}
+
+	pmca_hundred_slgt_gene_titan_army = {
+		use_armynames_from = slgt_gene_titan_army
+		damage = 510.0
+		health = 910.0
+		morale = 300.0
+		morale_damage = 2.0
+		collateral_damage = 100.0
+		war_exhaustion = 400.0
+		time = 500.0
+		icon = GFX_slgt_gene_titan_army
+		prerequisites = {
+			tech_gene_seed_purification
+			tech_slgt_bio_titans
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 80000.0
+			}
+			upkeep = {
+				energy = 800.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 80000.0
+			}
+		}
+		ai_weight = {
+			base = 400.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_xenophile }
+			}
+		}
+	}
+
+	pmca_hundred_slgt_immortal_titan_army = {
+		use_armynames_from = slgt_immortal_titan_army
+		damage = 1460.0
+		health = 2600.0
+		morale = 860.0
+		morale_damage = 5.7
+		collateral_damage = 100.0
+		war_exhaustion = 1140.0
+		time = 1430.0
+		icon = GFX_slgt_immortal_titan_army
+		prerequisites = {
+			tech_gene_seed_purification
+			tech_slgt_bio_titans
+			tech_slgt_specter_ground_warfare
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 230000.0
+			}
+			upkeep = {
+				energy = 2300.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 230000.0
+			}
+		}
+		ai_weight = {
+			base = 600.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_hundred_slgt_shroud_touched_army = {
+		use_armynames_from = slgt_shroud_touched_army
+		damage = 925.0
+		health = 175.0
+		has_morale = no
+		morale_damage = 5.2
+		collateral_damage = 400.0
+		war_exhaustion = 400.0
+		time = 500.0
+		icon = GFX_slgt_shroud_touched_army
+		prerequisites = {
+			tech_telepathy
+			tech_slgt_shroud_mercenaries
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 80000.0
+			}
+			upkeep = {
+				energy = 800.0
+			}
+		}
+		potential = {
+			from = {
+				OR = {
+					has_utopia = no
+					OR = {
+						has_trait = trait_latent_psionic
+						has_trait = trait_psionic
+					}
+				}
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 80000.0
+			}
+		}
+		ai_weight = {
+			base = 400.0
+			modifier = {
+				set = 0
+				OR = {
+					NOT = { has_technology = tech_telepathy }
+					has_technology = tech_gene_seed_purification
+				}
+			}
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_spiritualist }
+			}
+		}
+	}
+
+	pmca_hundred_slgt_shroud_host_army = {
+		use_armynames_from = slgt_shroud_host_army
+		damage = 2640.0
+		health = 500.0
+		has_morale = no
+		morale_damage = 15.0
+		collateral_damage = 400.0
+		war_exhaustion = 1140.0
+		time = 1430.0
+		icon = GFX_slgt_shroud_host_army
+		prerequisites = {
+			tech_telepathy
+			tech_slgt_shroud_mercenaries
+			tech_slgt_specter_ground_warfare
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 230000.0
+			}
+			upkeep = {
+				energy = 2300.0
+			}
+		}
+		potential = {
+			from = {
+				OR = {
+					has_utopia = no
+					OR = {
+						has_trait = trait_latent_psionic
+						has_trait = trait_psionic
+					}
+				}
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 230000.0
+			}
+		}
+		ai_weight = {
+			base = 600.0
+			modifier = {
+				set = 0
+				OR = {
+					NOT = { has_technology = tech_telepathy }
+					has_technology = tech_gene_seed_purification
+				}
+			}
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_hundred_slgt_cyborg_siege_army = {
+		use_armynames_from = slgt_cyborg_siege_army
+		damage = 620.0
+		health = 620.0
+		morale = 380.0
+		morale_damage = 2.0
+		collateral_damage = 100.0
+		war_exhaustion = 300.0
+		time = 500.0
+		icon = GFX_slgt_cyborg_siege_army
+		prerequisites = { tech_slgt_cybernetics_update }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 80000.0
+			}
+			upkeep = {
+				energy = 800.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+				has_trait = trait_cybernetic
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 80000.0
+			}
+		}
+		ai_weight = {
+			base = 400.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_materialist }
+			}
+		}
+	}
+
+	pmca_hundred_slgt_self_replicating_army = {
+		use_armynames_from = slgt_self_replicating_army
+		damage = 1770.0
+		health = 1770.0
+		morale = 1090.0
+		morale_damage = 5.71
+		collateral_damage = 100.0
+		war_exhaustion = 860.0
+		time = 1430.0
+		icon = GFX_slgt_self_replicating_army
+		prerequisites = {
+			tech_slgt_cybernetics_update
+			tech_slgt_specter_ground_warfare
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 230000.0
+			}
+			upkeep = {
+				energy = 2300.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+				has_trait = trait_cybernetic
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 230000.0
+			}
+		}
+		ai_weight = {
+			base = 600.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_hundred_slgt_synth_warform = {
+		use_armynames_from = slgt_synth_warform
+		damage = 400.0
+		health = 600.0
+		has_morale = no
+		morale_damage = 1.5
+		collateral_damage = 400.0
+		war_exhaustion = 400.0
+		time = 500.0
+		icon = GFX_slgt_synth_warform
+		resources = {
+			category = armies
+			cost = {
+				minerals = 80000.0
+			}
+			upkeep = {
+				energy = 800.0
+			}
+		}
+		potential = {
+			from = { has_trait = trait_mechanical }
+		}
+		potential_country = {
+			is_machine_empire = no
+			has_tradition = tr_synthetics_finish
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 80000.0
+			}
+		}
+		allow = {
+			owner = { NOT = { has_policy_flag = robots_outlawed } }
+		}
+		ai_weight = {
+			base = 400.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_hundred_slgt_omnivirus_army = {
+		use_armynames_from = slgt_omnivirus_army
+		damage = 1140.0
+		health = 1710.0
+		has_morale = no
+		morale_damage = 4.3
+		collateral_damage = 400.0
+		war_exhaustion = 1140.0
+		time = 1430.0
+		icon = GFX_slgt_synth_warform
+		prerequisites = { tech_slgt_specter_ground_warfare }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 230000.0
+			}
+			upkeep = {
+				energy = 2300.0
+			}
+		}
+		potential = {
+			from = { has_trait = trait_mechanical }
+		}
+		potential_country = {
+			OR = {
+				has_tradition = tr_synthetics_finish
+				is_machine_empire = yes
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 230000.0
+			}
+		}
+		allow = {
+			owner = { NOT = { has_policy_flag = robots_outlawed } }
+		}
+		ai_weight = {
+			base = 600.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_hundred_slgt_dark_assault_army = {
+		use_armynames_from = slgt_dark_assault_army
+		damage = 200.0
+		health = 200.0
+		morale = 200.0
+		morale_damage = 1.0
+		collateral_damage = 100.0
+		war_exhaustion = 200.0
+		time = 90.0
+		icon = GFX_slgt_dark_assault_army
+		prerequisites = { tech_slgt_domestic_dark_matter_power }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 30000.0
+			}
+			upkeep = {
+				energy = 300.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			OR = {
+				NOR = {
+					AND = {
+						has_technology = tech_telepathy
+						has_technology = tech_slgt_shroud_mercenaries
+					}
+					AND = {
+						has_technology = tech_gene_seed_purification
+						has_technology = tech_slgt_bio_titans
+					}
+					has_technology = tech_slgt_cybernetics_update
+					has_tradition = tr_synthetics_finish
+				}
+				is_fallen_empire = yes
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 30000.0
+			}
+		}
+		ai_weight = {
+			base = 400.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				OR = {
+					has_ethic = ethic_fanatic_xenophile
+					has_ethic = ethic_fanatic_materialist
+					has_ethic = ethic_fanatic_spiritualist
+				}
+			}
+		}
+	}
+
+	pmca_hundred_slgt_specter_assault_army = {
+		use_armynames_from = slgt_specter_assault_army
+		damage = 570.0
+		health = 570.0
+		morale = 570.0
+		morale_damage = 2.9
+		collateral_damage = 100.0
+		war_exhaustion = 570.0
+		time = 260.0
+		icon = GFX_slgt_specter_assault_army
+		prerequisites = {
+			tech_slgt_domestic_dark_matter_power
+			tech_slgt_specter_ground_warfare
+		}
+		resources = {
+			category = armies
+			cost = {
+				minerals = 85000.0
+			}
+			upkeep = {
+				energy = 850.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			OR = {
+				NOR = {
+					AND = {
+						has_technology = tech_telepathy
+						has_technology = tech_slgt_shroud_mercenaries
+					}
+					AND = {
+						has_technology = tech_gene_seed_purification
+						has_technology = tech_slgt_bio_titans
+					}
+					has_technology = tech_slgt_cybernetics_update
+					has_tradition = tr_synthetics_finish
+					is_fallen_empire = yes
+				}
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 85000.0
+			}
+		}
+		ai_weight = {
+			base = 600.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_hundred_slgt_undead_chimera_army = {
+		use_armynames_from = slgt_undead_chimera_army
+		damage = 500.0
+		health = 920.0
+		has_morale = no
+		morale_damage = 2.75
+		collateral_damage = 125.0
+		war_exhaustion = 200.0
+		time = 350.0
+		icon = GFX_slgt_undead_chimera_army
+		resources = {
+			category = armies
+			cost = {
+				energy = 80000.0
+			}
+			upkeep = {
+				energy = 600.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+			planet = {
+				OR = {
+					has_active_building = building_dread_encampment
+					has_active_building = slgt_building_doctors_place
+				}
+				num_assigned_jobs = {
+					job = necromancer
+					value >= 1
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			OR = {
+				AND = {
+					has_technology = tech_telepathy
+					has_technology = tech_slgt_shroud_mercenaries
+				}
+				AND = {
+					has_technology = tech_gene_seed_purification
+					has_technology = tech_slgt_bio_titans
+				}
+				has_technology = tech_slgt_cybernetics_update
+				has_tradition = tr_synthetics_finish
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 80000.0
+			}
+		}
+		ai_weight = {
+			base = 600.0
+		}
+	}
+
+	pmca_hundred_slgt_flux_abomination_army = {
+		use_armynames_from = slgt_flux_abomination_army
+		damage = 1430.0
+		health = 2570.0
+		has_morale = no
+		morale_damage = 7.9
+		collateral_damage = 570.0
+		war_exhaustion = 570.0
+		time = 1000.0
+		icon = GFX_slgt_flux_abomination_army
+		prerequisites = { tech_slgt_specter_ground_warfare }
+		resources = {
+			category = armies
+			cost = {
+				energy = 230000.0
+			}
+			upkeep = {
+				energy = 1700.0
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+			planet = {
+				OR = {
+					has_active_building = building_dread_encampment
+					has_active_building = slgt_building_doctors_place
+				}
+				num_assigned_jobs = {
+					job = necromancer
+					value >= 1
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			OR = {
+				AND = {
+					has_technology = tech_telepathy
+					has_technology = tech_slgt_shroud_mercenaries
+				}
+				AND = {
+					has_technology = tech_gene_seed_purification
+					has_technology = tech_slgt_bio_titans
+				}
+				has_technology = tech_slgt_cybernetics_update
+				has_tradition = tr_synthetics_finish
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 230000.0
+			}
+		}
+		ai_weight = {
+			base = 800.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+		}
+	}
+
+	pmca_hundred_slgt_undead_brute_army = {
+		use_armynames_from = slgt_undead_brute_army
+		damage = 100.0
+		health = 100.0
+		has_morale = no
+		morale_damage = 1.75
+		collateral_damage = 125.0
+		war_exhaustion = 50.0
+		time = 60.0
+		icon = GFX_army_type_undead
+		prerequisites = { tech_assault_armies }
+		resources = {
+			category = armies
+			cost = {
+				energy = 10000.0
+			}
+			upkeep = {
+				energy = 75.0
+			}
+		}
+		show_tech_unlock_if = {
+			has_valid_civic = civic_reanimated_armies
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+			planet = {
+				has_active_building = slgt_building_doctors_place
+				num_assigned_jobs = {
+					job = necromancer
+					value >= 1
+				}
+			}
+		}
+		potential_country = {
+			has_valid_civic = civic_reanimated_armies
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 10000.0
+			}
+		}
+		ai_weight = {
+			base = 200.0
+		}
+	}
+	"
+}

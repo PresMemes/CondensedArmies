@@ -43,13 +43,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_ten_giga_eaw_crystal_army = {
 		use_armynames_from = giga_eaw_crystal_army
 		damage = 20.0
@@ -92,13 +86,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_ten_giga_eaw_crystal_army_drone = {
 		use_armynames_from = giga_eaw_crystal_army_drone
 		damage = 20.0
@@ -141,13 +129,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_ten_shroud_summoned_army = {
 		use_armynames_from = shroud_summoned_army
 		damage = 20.0
@@ -187,13 +169,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_ten_cybrex_warform = {
 		use_armynames_from = cybrex_warform
 		damage = 50.0
@@ -234,13 +210,7 @@ inline_script = {
 			base = 75.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_ten_maginot_assault_unit = {
 		use_armynames_from = maginot_assault_unit
 		damage = 50.0
@@ -281,13 +251,7 @@ inline_script = {
 			base = 76.5
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_ten_maginot_machine_assault_unit = {
 		use_armynames_from = maginot_machine_assault_unit
 		damage = 50.0
@@ -330,13 +294,7 @@ inline_script = {
 			base = 76.5
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_hundred_riesigerkatzenpanzer_assault = {
 		use_armynames_from = riesigerkatzenpanzer_assault
 		damage = 1000.0
@@ -375,13 +333,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_hundred_giga_eaw_crystal_army = {
 		use_armynames_from = giga_eaw_crystal_army
 		damage = 200.0
@@ -424,13 +376,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_hundred_giga_eaw_crystal_army_drone = {
 		use_armynames_from = giga_eaw_crystal_army_drone
 		damage = 200.0
@@ -473,13 +419,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_hundred_shroud_summoned_army = {
 		use_armynames_from = shroud_summoned_army
 		damage = 200.0
@@ -519,13 +459,7 @@ inline_script = {
 			base = 0.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_hundred_cybrex_warform = {
 		use_armynames_from = cybrex_warform
 		damage = 500.0
@@ -566,13 +500,7 @@ inline_script = {
 			base = 100.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_hundred_maginot_assault_unit = {
 		use_armynames_from = maginot_assault_unit
 		damage = 500.0
@@ -613,13 +541,7 @@ inline_script = {
 			base = 102.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_gigastructures
-	CONTENT = "
 	pmca_hundred_maginot_machine_assault_unit = {
 		use_armynames_from = maginot_machine_assault_unit
 		damage = 500.0
@@ -664,4 +586,3 @@ inline_script = {
 	}
 	"
 }
-

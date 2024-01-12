@@ -1,0 +1,146 @@
+﻿l_korean:
+
+ # Localisation generated using Python
+
+ ############################
+ ### SLGT_GENE_TITAN_ARMY ###
+ ############################
+ pmca_ten_slgt_gene_titan_army: "$pmca_ten$ $slgt_gene_titan_army$"
+ pmca_ten_slgt_gene_titan_army_plural: "$slgt_gene_titan_army_plural$"
+ pmca_ten_slgt_gene_titan_army_desc: "$slgt_gene_titan_army_desc$"
+ pmca_hundred_slgt_gene_titan_army: "$pmca_hundred$ $slgt_gene_titan_army$"
+ pmca_hundred_slgt_gene_titan_army_plural: "$slgt_gene_titan_army_plural$"
+ pmca_hundred_slgt_gene_titan_army_desc: "$slgt_gene_titan_army_desc$"
+
+
+ ################################
+ ### SLGT_IMMORTAL_TITAN_ARMY ###
+ ################################
+ pmca_ten_slgt_immortal_titan_army: "$pmca_ten$ $slgt_immortal_titan_army$"
+ pmca_ten_slgt_immortal_titan_army_plural: "$slgt_immortal_titan_army_plural$"
+ pmca_ten_slgt_immortal_titan_army_desc: "$slgt_immortal_titan_army_desc$"
+ pmca_hundred_slgt_immortal_titan_army: "$pmca_hundred$ $slgt_immortal_titan_army$"
+ pmca_hundred_slgt_immortal_titan_army_plural: "$slgt_immortal_titan_army_plural$"
+ pmca_hundred_slgt_immortal_titan_army_desc: "$slgt_immortal_titan_army_desc$"
+
+
+ ################################
+ ### SLGT_SHROUD_TOUCHED_ARMY ###
+ ################################
+ pmca_ten_slgt_shroud_touched_army: "$pmca_ten$ $slgt_shroud_touched_army$"
+ pmca_ten_slgt_shroud_touched_army_plural: "$slgt_shroud_touched_army_plural$"
+ pmca_ten_slgt_shroud_touched_army_desc: "$slgt_shroud_touched_army_desc$"
+ pmca_hundred_slgt_shroud_touched_army: "$pmca_hundred$ $slgt_shroud_touched_army$"
+ pmca_hundred_slgt_shroud_touched_army_plural: "$slgt_shroud_touched_army_plural$"
+ pmca_hundred_slgt_shroud_touched_army_desc: "$slgt_shroud_touched_army_desc$"
+
+
+ #############################
+ ### SLGT_SHROUD_HOST_ARMY ###
+ #############################
+ pmca_ten_slgt_shroud_host_army: "$pmca_ten$ $slgt_shroud_host_army$"
+ pmca_ten_slgt_shroud_host_army_plural: "$slgt_shroud_host_army_plural$"
+ pmca_ten_slgt_shroud_host_army_desc: "$slgt_shroud_host_army_desc$"
+ pmca_hundred_slgt_shroud_host_army: "$pmca_hundred$ $slgt_shroud_host_army$"
+ pmca_hundred_slgt_shroud_host_army_plural: "$slgt_shroud_host_army_plural$"
+ pmca_hundred_slgt_shroud_host_army_desc: "$slgt_shroud_host_army_desc$"
+
+
+ ##############################
+ ### SLGT_CYBORG_SIEGE_ARMY ###
+ ##############################
+ pmca_ten_slgt_cyborg_siege_army: "$pmca_ten$ $slgt_cyborg_siege_army$"
+ pmca_ten_slgt_cyborg_siege_army_plural: "$slgt_cyborg_siege_army_plural$"
+ pmca_ten_slgt_cyborg_siege_army_desc: "$slgt_cyborg_siege_army_desc$"
+ pmca_hundred_slgt_cyborg_siege_army: "$pmca_hundred$ $slgt_cyborg_siege_army$"
+ pmca_hundred_slgt_cyborg_siege_army_plural: "$slgt_cyborg_siege_army_plural$"
+ pmca_hundred_slgt_cyborg_siege_army_desc: "$slgt_cyborg_siege_army_desc$"
+
+
+ ##################################
+ ### SLGT_SELF_REPLICATING_ARMY ###
+ ##################################
+ pmca_ten_slgt_self_replicating_army: "$pmca_ten$ $slgt_self_replicating_army$"
+ pmca_ten_slgt_self_replicating_army_plural: "$slgt_self_replicating_army_plural$"
+ pmca_ten_slgt_self_replicating_army_desc: "$slgt_self_replicating_army_desc$"
+ pmca_hundred_slgt_self_replicating_army: "$pmca_hundred$ $slgt_self_replicating_army$"
+ pmca_hundred_slgt_self_replicating_army_plural: "$slgt_self_replicating_army_plural$"
+ pmca_hundred_slgt_self_replicating_army_desc: "$slgt_self_replicating_army_desc$"
+
+
+ ##########################
+ ### SLGT_SYNTH_WARFORM ###
+ ##########################
+ pmca_ten_slgt_synth_warform: "$pmca_ten$ $slgt_synth_warform$"
+ pmca_ten_slgt_synth_warform_plural: "$slgt_synth_warform_plural$"
+ pmca_ten_slgt_synth_warform_desc: "$slgt_synth_warform_desc$"
+ pmca_hundred_slgt_synth_warform: "$pmca_hundred$ $slgt_synth_warform$"
+ pmca_hundred_slgt_synth_warform_plural: "$slgt_synth_warform_plural$"
+ pmca_hundred_slgt_synth_warform_desc: "$slgt_synth_warform_desc$"
+
+
+ ###########################
+ ### SLGT_OMNIVIRUS_ARMY ###
+ ###########################
+ pmca_ten_slgt_omnivirus_army: "$pmca_ten$ $slgt_omnivirus_army$"
+ pmca_ten_slgt_omnivirus_army_plural: "$slgt_omnivirus_army_plural$"
+ pmca_ten_slgt_omnivirus_army_desc: "$slgt_omnivirus_army_desc$"
+ pmca_hundred_slgt_omnivirus_army: "$pmca_hundred$ $slgt_omnivirus_army$"
+ pmca_hundred_slgt_omnivirus_army_plural: "$slgt_omnivirus_army_plural$"
+ pmca_hundred_slgt_omnivirus_army_desc: "$slgt_omnivirus_army_desc$"
+
+
+ ##############################
+ ### SLGT_DARK_ASSAULT_ARMY ###
+ ##############################
+ pmca_ten_slgt_dark_assault_army: "$pmca_ten$ $slgt_dark_assault_army$"
+ pmca_ten_slgt_dark_assault_army_plural: "$slgt_dark_assault_army_plural$"
+ pmca_ten_slgt_dark_assault_army_desc: "$slgt_dark_assault_army_desc$"
+ pmca_hundred_slgt_dark_assault_army: "$pmca_hundred$ $slgt_dark_assault_army$"
+ pmca_hundred_slgt_dark_assault_army_plural: "$slgt_dark_assault_army_plural$"
+ pmca_hundred_slgt_dark_assault_army_desc: "$slgt_dark_assault_army_desc$"
+
+
+ #################################
+ ### SLGT_SPECTER_ASSAULT_ARMY ###
+ #################################
+ pmca_ten_slgt_specter_assault_army: "$pmca_ten$ $slgt_specter_assault_army$"
+ pmca_ten_slgt_specter_assault_army_plural: "$slgt_specter_assault_army_plural$"
+ pmca_ten_slgt_specter_assault_army_desc: "$slgt_specter_assault_army_desc$"
+ pmca_hundred_slgt_specter_assault_army: "$pmca_hundred$ $slgt_specter_assault_army$"
+ pmca_hundred_slgt_specter_assault_army_plural: "$slgt_specter_assault_army_plural$"
+ pmca_hundred_slgt_specter_assault_army_desc: "$slgt_specter_assault_army_desc$"
+
+
+ ################################
+ ### SLGT_UNDEAD_CHIMERA_ARMY ###
+ ################################
+ pmca_ten_slgt_undead_chimera_army: "$pmca_ten$ $slgt_undead_chimera_army$"
+ pmca_ten_slgt_undead_chimera_army_plural: "$slgt_undead_chimera_army_plural$"
+ pmca_ten_slgt_undead_chimera_army_desc: "$slgt_undead_chimera_army_desc$"
+ pmca_hundred_slgt_undead_chimera_army: "$pmca_hundred$ $slgt_undead_chimera_army$"
+ pmca_hundred_slgt_undead_chimera_army_plural: "$slgt_undead_chimera_army_plural$"
+ pmca_hundred_slgt_undead_chimera_army_desc: "$slgt_undead_chimera_army_desc$"
+
+
+ ##################################
+ ### SLGT_FLUX_ABOMINATION_ARMY ###
+ ##################################
+ pmca_ten_slgt_flux_abomination_army: "$pmca_ten$ $slgt_flux_abomination_army$"
+ pmca_ten_slgt_flux_abomination_army_plural: "$slgt_flux_abomination_army_plural$"
+ pmca_ten_slgt_flux_abomination_army_desc: "$slgt_flux_abomination_army_desc$"
+ pmca_hundred_slgt_flux_abomination_army: "$pmca_hundred$ $slgt_flux_abomination_army$"
+ pmca_hundred_slgt_flux_abomination_army_plural: "$slgt_flux_abomination_army_plural$"
+ pmca_hundred_slgt_flux_abomination_army_desc: "$slgt_flux_abomination_army_desc$"
+
+
+ ##############################
+ ### SLGT_UNDEAD_BRUTE_ARMY ###
+ ##############################
+ pmca_ten_slgt_undead_brute_army: "$pmca_ten$ $slgt_undead_brute_army$"
+ pmca_ten_slgt_undead_brute_army_plural: "$slgt_undead_brute_army_plural$"
+ pmca_ten_slgt_undead_brute_army_desc: "$slgt_undead_brute_army_desc$"
+ pmca_hundred_slgt_undead_brute_army: "$pmca_hundred$ $slgt_undead_brute_army$"
+ pmca_hundred_slgt_undead_brute_army_plural: "$slgt_undead_brute_army_plural$"
+ pmca_hundred_slgt_undead_brute_army_desc: "$slgt_undead_brute_army_desc$"
+

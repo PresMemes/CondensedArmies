@@ -53,13 +53,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_ten_esc_erasure_squad_army = {
 		use_armynames_from = esc_erasure_squad_army
 		damage = 70.0
@@ -111,13 +105,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_ten_esc_eradicator_droids_army = {
 		use_armynames_from = esc_eradicator_droids_army
 		damage = 70.0
@@ -160,13 +148,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_ten_esc_tesla_troopers_army = {
 		use_armynames_from = esc_tesla_troopers_army
 		damage = 35.0
@@ -215,13 +197,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_ten_esc_tesla_droids_army = {
 		use_armynames_from = esc_tesla_droids_army
 		damage = 35.0
@@ -263,13 +239,7 @@ inline_script = {
 			base = 150.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_ten_esc_biohorror_army = {
 		use_armynames_from = esc_biohorror_army
 		damage = 40.0
@@ -319,13 +289,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_hundred_esc_psionic_avatar_army = {
 		use_armynames_from = esc_psionic_avatar_army
 		damage = 500.0
@@ -374,13 +338,7 @@ inline_script = {
 			}
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_hundred_esc_erasure_squad_army = {
 		use_armynames_from = esc_erasure_squad_army
 		damage = 700.0
@@ -432,13 +390,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_hundred_esc_eradicator_droids_army = {
 		use_armynames_from = esc_eradicator_droids_army
 		damage = 700.0
@@ -481,13 +433,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_hundred_esc_tesla_troopers_army = {
 		use_armynames_from = esc_tesla_troopers_army
 		damage = 350.0
@@ -536,13 +482,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_hundred_esc_tesla_droids_army = {
 		use_armynames_from = esc_tesla_droids_army
 		damage = 350.0
@@ -584,13 +524,7 @@ inline_script = {
 			base = 200.0
 		}
 	}
-	"
-}
 
-inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-	CONTENT = "
 	pmca_hundred_esc_biohorror_army = {
 		use_armynames_from = esc_biohorror_army
 		damage = 400.0
@@ -642,4 +576,3 @@ inline_script = {
 	}
 	"
 }
-
