@@ -1,6 +1,6 @@
 # Creates a x10 Condensed Army based on an ACOT tech
 # Scopes: this = country, fromfromform = planet
-pmca_acot_army_create_times_ten_infantry_crew_survivor = {
+pmca_army_compat_create_times_ten_infantry_crew_survivor = {
 	inline_script = {
 		script = army/pmca_conditional_inline_p1
 		MOD_VARIABLE = @has_ancient_caches
@@ -46,7 +46,7 @@ pmca_acot_army_create_times_ten_infantry_crew_survivor = {
 
 # Creates a x100 Condensed Army based on an ACOT tech
 # Scopes: this = country, fromfromform = planet
-pmca_acot_army_create_times_hundred_infantry_crew_survivor = {
+pmca_army_compat_create_times_hundred_infantry_crew_survivor = {
 	inline_script = {
 		script = army/pmca_conditional_inline_p1
 		MOD_VARIABLE = @has_ancient_caches

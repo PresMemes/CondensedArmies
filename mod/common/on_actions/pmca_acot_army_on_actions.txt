@@ -5,6 +5,6 @@
 # FromFromFrom = planet
 on_army_killed_in_combat = {
 	events = {
-		pmca_acot_army.999
+		pmca_army_compat.0
 	}
 }

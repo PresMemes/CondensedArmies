@@ -50,8 +50,8 @@ inline_script = {
 						localization = message_acot_army_machine_repair
 						days = 10
 					}
-					planet_event = { id = pmca_acot_army.400 }
-					planet_event = { id = pmca_acot_army.401 }
+					planet_event = { id = pmca_army_compat.400 }
+					planet_event = { id = pmca_army_compat.401 }
 				}
 			}
 			else_if = {
@@ -64,7 +64,7 @@ inline_script = {
 						localization = message_acot_army_machine_repair
 						days = 10
 					}
-					planet_event = { id = pmca_acot_army.402 }
+					planet_event = { id = pmca_army_compat.402 }
 				}
 			}
 			else = {
@@ -76,7 +76,7 @@ inline_script = {
 						localization = message_acot_army_cocoon_hatch
 						days = 10
 					}
-					planet_event = { id = pmca_acot_army.403 }
+					planet_event = { id = pmca_army_compat.403 }
 				}
 			}
 		}

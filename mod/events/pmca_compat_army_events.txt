@@ -1,8 +1,12 @@
-namespace = pmca_acot_army
+namespace = pmca_army_compat
+
+############
+### ACOT ###
+############
 
 ## Gatekeeper event
 country_event = {
-	id = pmca_acot_army.999
+	id = pmca_army_compat.0
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -15,22 +19,22 @@ country_event = {
 
 	immediate = {
 		# Vehicle Events
-		country_event = { id = pmca_acot_army.1 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-		country_event = { id = pmca_acot_army.2 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.1 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.2 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
 
 		# Infantry Events
-		country_event = { id = pmca_acot_army.100 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-		country_event = { id = pmca_acot_army.101 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-		country_event = { id = pmca_acot_army.102 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.100 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.101 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.102 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
 
 		# Machine Events
-		country_event = { id = pmca_acot_army.200 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-		country_event = { id = pmca_acot_army.201 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.200 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.201 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
 
 		# Hive Events
-		country_event = { id = pmca_acot_army.300 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-		country_event = { id = pmca_acot_army.301 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-		country_event = { id = pmca_acot_army.302 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.300 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.301 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+		country_event = { id = pmca_army_compat.302 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
 	}
 }
 
@@ -38,7 +42,7 @@ country_event = {
 ## Vehicle Ejection
 # Light Vehicles
 country_event = {
-	id = pmca_acot_army.1
+	id = pmca_army_compat.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -155,7 +159,7 @@ country_event = {
 
 # Heavy Vehicles
 country_event = {
-	id = pmca_acot_army.2
+	id = pmca_army_compat.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -336,7 +340,7 @@ country_event = {
 				}
 			}
 			country_event = {
-				id = pmca_acot_army.3
+				id = pmca_army_compat.3
 				scopes = {
 					from = from
 					fromfrom = fromfrom
@@ -350,7 +354,7 @@ country_event = {
 
 # Additional Survivors
 country_event = {
-	id = pmca_acot_army.3
+	id = pmca_army_compat.3
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -387,10 +391,10 @@ country_event = {
 							limit = {
 								from = { has_army_flag = pmca_times_ten_army }
 							}
-							pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
+							pmca_army_compat_create_times_ten_infantry_crew_survivor = yes
 						}
 						else = {
-							pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
+							pmca_army_compat_create_times_hundred_infantry_crew_survivor = yes
 						}
 					}
 					20 = {
@@ -404,13 +408,13 @@ country_event = {
 							}
 							while = {
 								count = 2
-								pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
+								pmca_army_compat_create_times_ten_infantry_crew_survivor = yes
 							}
 						}
 						else = {
 							while = {
 								count = 2
-								pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
+								pmca_army_compat_create_times_hundred_infantry_crew_survivor = yes
 							}
 						}
 					}
@@ -425,13 +429,13 @@ country_event = {
 							}
 							while = {
 								count = 3
-								pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
+								pmca_army_compat_create_times_ten_infantry_crew_survivor = yes
 							}
 						}
 						else = {
 							while = {
 								count = 3
-								pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
+								pmca_army_compat_create_times_hundred_infantry_crew_survivor = yes
 							}
 						}
 					}
@@ -454,10 +458,10 @@ country_event = {
 							limit = {
 								from = { has_army_flag = pmca_times_ten_army }
 							}
-							pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
+							pmca_army_compat_create_times_ten_infantry_crew_survivor = yes
 						}
 						else = {
-							pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
+							pmca_army_compat_create_times_hundred_infantry_crew_survivor = yes
 						}
 					}
 					15 = {
@@ -471,13 +475,13 @@ country_event = {
 							}
 							while = {
 								count = 2
-								pmca_acot_army_create_times_ten_infantry_crew_survivor = yes
+								pmca_army_compat_create_times_ten_infantry_crew_survivor = yes
 							}
 						}
 						else = {
 							while = {
 								count = 2
-								pmca_acot_army_create_times_hundred_infantry_crew_survivor = yes
+								pmca_army_compat_create_times_hundred_infantry_crew_survivor = yes
 							}
 						}
 					}
@@ -491,7 +495,7 @@ country_event = {
 ## Infantry Armor
 # Light
 country_event = {
-	id = pmca_acot_army.100
+	id = pmca_army_compat.100
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -561,7 +565,7 @@ country_event = {
 
 # Medium
 country_event = {
-	id = pmca_acot_army.101
+	id = pmca_army_compat.101
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -631,7 +635,7 @@ country_event = {
 
 # Heavy
 country_event = {
-	id = pmca_acot_army.102
+	id = pmca_army_compat.102
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -702,7 +706,7 @@ country_event = {
 ## Torsos
 # Robots, Cyborgs & Synths
 country_event = {
-	id = pmca_acot_army.200
+	id = pmca_army_compat.200
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -894,7 +898,7 @@ country_event = {
 
 # Machines
 country_event = {
-	id = pmca_acot_army.201
+	id = pmca_army_compat.201
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1191,7 +1195,7 @@ country_event = {
 ## Hive Spawning
 # Light
 country_event = {
-	id = pmca_acot_army.300
+	id = pmca_army_compat.300
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1320,7 +1324,7 @@ country_event = {
 
 # Heavy
 country_event = {
-	id = pmca_acot_army.301
+	id = pmca_army_compat.301
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1585,7 +1589,7 @@ country_event = {
 
 # Special
 country_event = {
-	id = pmca_acot_army.302
+	id = pmca_army_compat.302
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1909,7 +1913,7 @@ country_event = {
 ## Rebuild Armies
 # Pilots -> Vehicles
 planet_event = {
-	id = pmca_acot_army.400
+	id = pmca_army_compat.400
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2070,7 +2074,7 @@ planet_event = {
 
 # Non-Machine Torsos -> Non-Machines Armies
 planet_event = {
-	id = pmca_acot_army.401
+	id = pmca_army_compat.401
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2191,7 +2195,7 @@ planet_event = {
 
 # Machine Torsos -> Machines Armies
 planet_event = {
-	id = pmca_acot_army.402
+	id = pmca_army_compat.402
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2372,7 +2376,7 @@ planet_event = {
 
 # Hive Cocoons -> Hive Armies
 planet_event = {
-	id = pmca_acot_army.403
+	id = pmca_army_compat.403
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2498,5 +2502,78 @@ planet_event = {
 			}
 		}
 		"
+	}
+}
+
+#############
+### GIGAS ###
+#############
+
+## Gatekeeper
+country_event = {
+	id = pmca_army_compat.1000
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		check_variable_arithmetic = {
+			which = @has_gigastructures
+			value = 1
+		}
+		inline_script = {
+			script = army/pmca_conditional_inline_p1
+			MOD_VARIABLE = @has_gigastructures
+			CONTENT = "
+			from = { has_trait = paluush_trait_grandbunny }
+			"
+		}
+	}
+
+	immediate = {
+		from = {
+			leader_event = {
+				id = pmca_army_compat.1001
+				days = 1 # Delay to let armies spawn
+			}
+		}
+	}
+}
+
+# Grandbunny -> x2 Grandbunny
+#PM: Originally was going to do x100 Grandbunny, but I legit don't think it's possible without some serious fuckery
+# My simulations estimate you'd need ~8k x100 armies (~80 million minerals), though it doesn't take modifiers or Commanders into account
+# (why did i spend a week emulating ground combat in python)
+leader_event = {
+	id = pmca_army_compat.1001
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		exists = owner.capital_scope
+	}
+
+	immediate = {
+		inline_script = {
+			script = army/pmca_conditional_inline_p1
+			MOD_VARIABLE = @has_gigastructures
+			CONTENT = "
+			owner.capital_scope = {
+				if = {
+					limit = { has_global_flag = acot_activated }
+					random_planet_army = {
+						limit = { army_type = the_grandbunny_acot }
+						modify_army = { type = pmca_ten_the_grandbunny_acot }
+					}
+				}
+				else = {
+					random_planet_army = {
+						limit = { army_type = the_grandbunny }
+						modify_army = { type = pmca_ten_the_grandbunny }
+					}
+				}
+			}
+			"
+		}
 	}
 }

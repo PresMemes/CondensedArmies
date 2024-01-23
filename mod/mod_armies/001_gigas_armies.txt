@@ -257,3 +257,26 @@ maginot_machine_assault_unit = {
 		base = 51
 	}
 }
+
+#PM: Stats nerfed so the scripts makes an effective x2 instead of x10. Also got rid of collateral and WE
+the_grandbunny = {
+	defensive = yes
+	damage = 40
+	health = 130
+	has_morale = no
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_psionic
+	potential = { always = no }
+}
+
+the_grandbunny_acot = {
+	defensive = yes
+	damage = 100
+	health = 500
+	has_morale = no
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_psionic
+	potential = { always = no }
+}
