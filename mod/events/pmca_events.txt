@@ -1,31 +1,5 @@
 namespace = pmca_events
 
-## Just in case you're mid-game and update
-# TODO: Remove me!
-country_event = {
-	id = pmca_events.101
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = { always = no }
-}
-
-country_event = {
-	id = pmca_events.102
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = { always = no }
-}
-
-country_event = {
-	id = pmca_events.103
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = { always = no }
-}
-
 ## Initialization
 # Set ID flag
 event = {

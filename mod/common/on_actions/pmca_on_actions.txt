@@ -54,3 +54,9 @@ on_army_killed_no_combat = {
 		pmca_ai_events.11
 	}
 }
+
+on_army_disbanded = {
+	events = {
+		pmca_ai_events.11
+	}
+}

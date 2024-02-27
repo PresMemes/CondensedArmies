@@ -38,7 +38,6 @@ country_event = {
 	}
 }
 
-
 ## Vehicle Ejection
 # Light Vehicles
 country_event = {
@@ -166,7 +165,8 @@ country_event = {
 	inline_script = {
 		script = army/pmca_conditional_inline_p1
 		MOD_VARIABLE = @has_ancient_caches
-		CONTENT = "trigger = {
+		CONTENT = "
+		trigger = {
 			from = { pmca_is_condensed_acot_heavy_manned_vehicle = yes }
 		}
 

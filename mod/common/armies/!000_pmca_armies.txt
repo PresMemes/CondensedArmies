@@ -1,5 +1,8 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
+# Last Updated:
+#  Local (GMT-5): 2024-02-27 08:44:09.500882
+#  Unix: 1709041449.500882
 
 inline_script = {
 	script = army/pmca_conditional_inline_p1
@@ -69,7 +72,7 @@ inline_script = {
 				}
 			}
 			modifier = {
-				factor = 0.01 #cannot guarantee that they actually have slaves/robots to get armies from
+				factor = 0.01
 				OR = {
 					AND = {
 						has_ai_personality_behaviour = slaver
@@ -636,7 +639,11 @@ inline_script = {
 		resources = {
 			category = armies
 			cost = {
-				astral_threads = 100.0
+				astral_threads = 1000.0
+			}
+			upkeep = {
+				energy = 10.0
+				astral_threads = 1.0
 			}
 		}
 		potential_country = {
@@ -645,7 +652,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = astral_threads
-				PMCA_VALUE = 100.0
+				PMCA_VALUE = 1000.0
 			}
 		}
 		ai_weight = {
@@ -792,7 +799,7 @@ inline_script = {
 				}
 			}
 			modifier = {
-				factor = 0.01 #cannot guarantee that they actually have slaves/robots to get armies from
+				factor = 0.01
 				OR = {
 					AND = {
 						has_ai_personality_behaviour = slaver
@@ -1359,7 +1366,11 @@ inline_script = {
 		resources = {
 			category = armies
 			cost = {
-				astral_threads = 1000.0
+				astral_threads = 10000.0
+			}
+			upkeep = {
+				energy = 100.0
+				astral_threads = 10.0
 			}
 		}
 		potential_country = {
@@ -1368,7 +1379,7 @@ inline_script = {
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = astral_threads
-				PMCA_VALUE = 1000.0
+				PMCA_VALUE = 10000.0
 			}
 		}
 		ai_weight = {
