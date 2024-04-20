@@ -109,3 +109,18 @@ country_event = {
 		name = OK
 	}
 }
+
+# Remove variable from existing save games
+# TODO: Remove me!
+event = {
+	id = pmca_events.80085
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = { is_variable_set = pmca_assault_army_count }
+			clear_variable = pmca_assault_army_count
+		}
+	}
+}

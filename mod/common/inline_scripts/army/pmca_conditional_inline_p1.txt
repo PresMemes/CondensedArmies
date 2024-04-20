@@ -1,10 +1,5 @@
 # Dear Irony please fallback to simple parser
-# Credit to TTFTCUTS and MrRoAdd for letting their intrusive thoughts win
-# So the weird ass equation below is this:
-# |(((x / x) - 1) / ((0/0) - 1)) - 1|
-# Where X is $MOD_VARIABLE$ and will always return a 0 or a 1, which is needed for the conditional inline to work
-# If $MOD_VARIABLE$ == 0, return 0
-# If $MOD_VARIABLE$ != 0, return 1
+# DEPRECATED, will be replaced soon (probably when ACOT finally updates
 inline_script = {
 	script = army/pmca_conditional_inline_p2
 

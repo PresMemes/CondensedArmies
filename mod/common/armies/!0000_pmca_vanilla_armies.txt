@@ -1,12 +1,10 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated:
-#  Local (GMT-5): 2024-02-27 08:44:09.500882
-#  Unix: 1709041449.500882
+# Last Updated: Thu Apr 18 18:34:08 2024
 
 inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_condensed_armies
+	script = compatibility/pmca_conditional_inline_1_input
+	MOD_VARIABLE_1 = @has_condensed_armies
 	CONTENT = "
 	pmca_ten_assault_army = {
 		use_armynames_from = assault_army
@@ -72,7 +70,7 @@ inline_script = {
 				}
 			}
 			modifier = {
-				factor = 0.01
+				factor = 0.01 
 				OR = {
 					AND = {
 						has_ai_personality_behaviour = slaver
@@ -799,7 +797,7 @@ inline_script = {
 				}
 			}
 			modifier = {
-				factor = 0.01
+				factor = 0.01 
 				OR = {
 					AND = {
 						has_ai_personality_behaviour = slaver

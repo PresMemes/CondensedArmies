@@ -2521,8 +2521,8 @@ country_event = {
 			value = 1
 		}
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_gigastructures
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_gigastructures
 			CONTENT = "
 			from = { has_trait = paluush_trait_grandbunny }
 			"
@@ -2555,8 +2555,8 @@ leader_event = {
 
 	immediate = {
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_gigastructures
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_gigastructures
 			CONTENT = "
 			owner.capital_scope = {
 				if = {

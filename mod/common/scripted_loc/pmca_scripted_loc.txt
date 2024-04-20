@@ -1,9 +1,9 @@
 defined_text = {
-	name = pmca_get_gigas_status
+	name = pmca_get_esc_status
 	text = {
 		trigger = {
 			check_variable_arithmetic = {
-				which = @has_gigastructures
+				which = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 				value = 0 # Since my placeholders will always be 0, I only need to care if it changes
 			}
 		}
@@ -13,11 +13,67 @@ defined_text = {
 }
 
 defined_text = {
-	name = pmca_get_esc_status
+	name = pmca_get_slgt_status
 	text = {
 		trigger = {
 			check_variable_arithmetic = {
-				which = @ESC_WEAPON_crystalline_s_t6_cost_crystals
+				which = @slgt_Tier6_cost
+				value = 0
+			}
+		}
+		localization_key = pmca_inactive
+	}
+	default = pmca_active
+}
+
+defined_text = {
+	name = pmca_get_gigas_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @has_gigastructures
+				value = 0
+			}
+		}
+		localization_key = pmca_inactive
+	}
+	default = pmca_active
+}
+
+defined_text = {
+	name = pmca_get_evolved_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @has_stellaris_evolved
+				value = 0
+			}
+		}
+		localization_key = pmca_inactive
+	}
+	default = pmca_active
+}
+
+# defined_text = {
+# 	name = pmca_get_ground_command_status
+# 	text = {
+# 		trigger = {
+# 			check_variable_arithmetic = {
+# 				which = ???
+# 				value = 0
+# 			}
+# 		}
+# 		localization_key = pmca_inactive
+# 	}
+# 	default = pmca_active
+# }
+
+defined_text = {
+	name = pmca_get_military_enhancements_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @has_military_enhancements
 				value = 0
 			}
 		}
@@ -60,34 +116,6 @@ defined_text = {
 		trigger = {
 			check_variable_arithmetic = {
 				which = @has_acquisition_of_tech
-				value = 0
-			}
-		}
-		localization_key = pmca_inactive
-	}
-	default = pmca_active
-}
-
-defined_text = {
-	name = pmca_get_evolved_status
-	text = {
-		trigger = {
-			check_variable_arithmetic = {
-				which = @has_stellaris_evolved
-				value = 0
-			}
-		}
-		localization_key = pmca_inactive
-	}
-	default = pmca_active
-}
-
-defined_text = {
-	name = pmca_get_slgt_status
-	text = {
-		trigger = {
-			check_variable_arithmetic = {
-				which = @slgt_Tier6_cost
 				value = 0
 			}
 		}

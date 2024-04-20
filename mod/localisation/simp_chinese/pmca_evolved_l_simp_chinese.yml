@@ -2,17 +2,6 @@
 
  # Localisation generated using Python
 
- ######################
- ### TEC_REANIMATOR ###
- ######################
- pmca_ten_tec_reanimator: "$pmca_ten$ $tec_reanimator$"
- pmca_ten_tec_reanimator_plural: "$tec_reanimator_plural$"
- pmca_ten_tec_reanimator_desc: "$tec_reanimator_desc$"
- pmca_hundred_tec_reanimator: "$pmca_hundred$ $tec_reanimator$"
- pmca_hundred_tec_reanimator_plural: "$tec_reanimator_plural$"
- pmca_hundred_tec_reanimator_desc: "$tec_reanimator_desc$"
-
-
  ###########################
  ### TEC_SHAMBLING_ROBOT ###
  ###########################
@@ -22,17 +11,6 @@
  pmca_hundred_tec_shambling_robot: "$pmca_hundred$ $tec_shambling_robot$"
  pmca_hundred_tec_shambling_robot_plural: "$tec_shambling_robot_plural$"
  pmca_hundred_tec_shambling_robot_desc: "$tec_shambling_robot_desc$"
-
-
- ######################
- ### TEC_PHERODRONE ###
- ######################
- pmca_ten_tec_pherodrone: "$pmca_ten$ $tec_pherodrone$"
- pmca_ten_tec_pherodrone_plural: "$tec_pherodrone_plural$"
- pmca_ten_tec_pherodrone_desc: "$tec_pherodrone_desc$"
- pmca_hundred_tec_pherodrone: "$pmca_hundred$ $tec_pherodrone$"
- pmca_hundred_tec_pherodrone_plural: "$tec_pherodrone_plural$"
- pmca_hundred_tec_pherodrone_desc: "$tec_pherodrone_desc$"
 
 
  ###########################

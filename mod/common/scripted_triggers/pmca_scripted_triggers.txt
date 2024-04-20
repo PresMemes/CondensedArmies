@@ -42,25 +42,31 @@ pmca_is_times_ten_army = {
 		has_army_flag = pmca_times_ten_army
 
 		# Vanilla x10
-		army_type = pmca_ten_assault_army
-		army_type = pmca_ten_slave_army
-		army_type = pmca_ten_clone_army
-		army_type = pmca_ten_robotic_army
-		army_type = pmca_ten_psionic_army
-		army_type = pmca_ten_xenomorph_army
-		army_type = pmca_ten_gene_warrior_army
-		army_type = pmca_ten_machine_assault_1
-		army_type = pmca_ten_machine_assault_2
-		army_type = pmca_ten_machine_assault_3
-		army_type = pmca_ten_undead_army
-		army_type = pmca_ten_warpling_army
-		army_type = pmca_ten_flamestorm_troopers_army
-		army_type = pmca_ten_cybrex_warform
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_condensed_armies
+			CONTENT = "
+			army_type = pmca_ten_assault_army
+			army_type = pmca_ten_slave_army
+			army_type = pmca_ten_clone_army
+			army_type = pmca_ten_robotic_army
+			army_type = pmca_ten_psionic_army
+			army_type = pmca_ten_xenomorph_army
+			army_type = pmca_ten_gene_warrior_army
+			army_type = pmca_ten_machine_assault_1
+			army_type = pmca_ten_machine_assault_2
+			army_type = pmca_ten_machine_assault_3
+			army_type = pmca_ten_undead_army
+			army_type = pmca_ten_warpling_army
+			army_type = pmca_ten_flamestorm_troopers_army
+			army_type = pmca_ten_cybrex_warform
+			"
+		}
 
 		# ESC x10
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 			CONTENT = "
 			army_type = pmca_ten_esc_psionic_avatar_army
 			army_type = pmca_ten_esc_erasure_squad_army
@@ -73,8 +79,8 @@ pmca_is_times_ten_army = {
 
 		# Gigastructures x10
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_gigastructures
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_gigastructures
 			CONTENT = "
 			army_type = pmca_ten_riesigerkatzenpanzer_assault
 			army_type = pmca_ten_giga_eaw_crystal_army
@@ -87,8 +93,8 @@ pmca_is_times_ten_army = {
 
 		# ACOT x10
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_ancient_caches
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_ancient_caches
 			CONTENT = "
 			army_type = pmca_ten_acot_infantry_dm
 			army_type = pmca_ten_acot_infantry_ae
@@ -248,8 +254,8 @@ pmca_is_times_ten_army = {
 
 		# AOT x10
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_acquisition_of_tech
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_acquisition_of_tech
 			CONTENT = "
 			army_type = pmca_ten_acot_phanon_army
 			army_type = pmca_ten_acot_phanon_army_sniper
@@ -264,20 +270,18 @@ pmca_is_times_ten_army = {
 
 		# Evolved x10
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_stellaris_evolved
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_stellaris_evolved
 			CONTENT = "
-			army_type = pmca_ten_tec_reanimator
 			army_type = pmca_ten_tec_shambling_robot
-			army_type = pmca_ten_tec_pherodrone
 			army_type = pmca_ten_tec_siegecraft_army
 			"
 		}
 
 		# SLGT x10
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @slgt_Tier6_cost
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @slgt_Tier6_cost
 			CONTENT = "
 			army_type = pmca_ten_slgt_gene_titan_army
 			army_type = pmca_ten_slgt_immortal_titan_army
@@ -294,6 +298,24 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_slgt_undead_brute_army
 			"
 		}
+
+		# Military Enhancements 2.0 x10
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_military_enhancements
+			CONTENT = "
+			army_type = pmca_ten_heavy_assault_army
+			army_type = pmca_ten_special_forces_army
+			army_type = pmca_ten_advanced_tank_army
+			army_type = pmca_ten_purge_squads_army
+			army_type = pmca_ten_mech_trooper_army
+			army_type = pmca_ten_psionic_army_2
+			army_type = pmca_ten_hive_assault_army
+			army_type = pmca_ten_hive_heavy_assault_army
+			army_type = pmca_ten_hive_gene_warrior_army
+			army_type = pmca_ten_clone_army2
+			"
+		}
 	}
 }
 
@@ -304,25 +326,31 @@ pmca_is_times_hundred_army = {
 		has_army_flag = pmca_times_hundred_army
 
 		# Vanilla x100
-		army_type = pmca_hundred_assault_army
-		army_type = pmca_hundred_slave_army
-		army_type = pmca_hundred_clone_army
-		army_type = pmca_hundred_robotic_army
-		army_type = pmca_hundred_psionic_army
-		army_type = pmca_hundred_xenomorph_army
-		army_type = pmca_hundred_gene_warrior_army
-		army_type = pmca_hundred_machine_assault_1
-		army_type = pmca_hundred_machine_assault_2
-		army_type = pmca_hundred_machine_assault_3
-		army_type = pmca_hundred_undead_army
-		army_type = pmca_hundred_warpling_army
-		army_type = pmca_hundred_flamestorm_troopers_army
-		army_type = pmca_hundred_cybrex_warform
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_condensed_armies
+			CONTENT = "
+			army_type = pmca_hundred_assault_army
+			army_type = pmca_hundred_slave_army
+			army_type = pmca_hundred_clone_army
+			army_type = pmca_hundred_robotic_army
+			army_type = pmca_hundred_psionic_army
+			army_type = pmca_hundred_xenomorph_army
+			army_type = pmca_hundred_gene_warrior_army
+			army_type = pmca_hundred_machine_assault_1
+			army_type = pmca_hundred_machine_assault_2
+			army_type = pmca_hundred_machine_assault_3
+			army_type = pmca_hundred_undead_army
+			army_type = pmca_hundred_warpling_army
+			army_type = pmca_hundred_flamestorm_troopers_army
+			army_type = pmca_hundred_cybrex_warform
+			"
+		}
 
 		# ESC x100
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @ESC_WEAPON_crystalline_s_t6_cost_crystals
 			CONTENT = "
 			army_type = pmca_hundred_esc_psionic_avatar_army
 			army_type = pmca_hundred_esc_erasure_squad_army
@@ -335,8 +363,8 @@ pmca_is_times_hundred_army = {
 
 		# Gigastructures x100
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_gigastructures
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_gigastructures
 			CONTENT = "
 			army_type = pmca_hundred_riesigerkatzenpanzer_assault
 			army_type = pmca_hundred_giga_eaw_crystal_army
@@ -349,8 +377,8 @@ pmca_is_times_hundred_army = {
 
 		# ACOT x100
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_ancient_caches
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_ancient_caches
 			CONTENT = "
 			army_type = pmca_hundred_acot_infantry_dm
 			army_type = pmca_hundred_acot_infantry_ae
@@ -510,8 +538,8 @@ pmca_is_times_hundred_army = {
 
 		# AOT x100
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_acquisition_of_tech
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_acquisition_of_tech
 			CONTENT = "
 			army_type = pmca_hundred_acot_phanon_army
 			army_type = pmca_hundred_acot_phanon_army_sniper
@@ -526,20 +554,18 @@ pmca_is_times_hundred_army = {
 
 		# Evolved x100
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @has_stellaris_evolved
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_stellaris_evolved
 			CONTENT = "
-			army_type = pmca_hundred_tec_reanimator
 			army_type = pmca_hundred_tec_shambling_robot
-			army_type = pmca_hundred_tec_pherodrone
 			army_type = pmca_hundred_tec_siegecraft_army
 			"
 		}
 
 		# SLGT x100
 		inline_script = {
-			script = army/pmca_conditional_inline_p1
-			MOD_VARIABLE = @slgt_Tier6_cost
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @slgt_Tier6_cost
 			CONTENT = "
 			army_type = pmca_hundred_slgt_gene_titan_army
 			army_type = pmca_hundred_slgt_immortal_titan_army
@@ -554,6 +580,24 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_slgt_undead_chimera_army
 			army_type = pmca_hundred_slgt_flux_abomination_army
 			army_type = pmca_hundred_slgt_undead_brute_army
+			"
+		}
+
+		# Military Enhancements 2.0 x100
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_military_enhancements
+			CONTENT = "
+			army_type = pmca_hundred_heavy_assault_army
+			army_type = pmca_hundred_special_forces_army
+			army_type = pmca_hundred_advanced_tank_army
+			army_type = pmca_hundred_purge_squads_army
+			army_type = pmca_hundred_mech_trooper_army
+			army_type = pmca_hundred_psionic_army_2
+			army_type = pmca_hundred_hive_assault_army
+			army_type = pmca_hundred_hive_heavy_assault_army
+			army_type = pmca_hundred_hive_gene_warrior_army
+			army_type = pmca_hundred_clone_army2
 			"
 		}
 	}

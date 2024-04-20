@@ -1,59 +1,12 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
+# Last Updated: Sat Apr 20 10:12:57 2024
 
 inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @ESC_WEAPON_crystalline_s_t6_cost_crystals
+	script = compatibility/pmca_conditional_inline_2_input
+	MOD_VARIABLE_1 = @ESC_WEAPON_crystalline_s_t6_cost_crystals
+	MOD_VARIABLE_2 = @has_military_enhancements
 	CONTENT = "
-	pmca_ten_esc_psionic_avatar_army = {
-		use_armynames_from = esc_psionic_avatar_army
-		damage = 50.0
-		health = 70.0
-		has_morale = no
-		morale_damage = 2.0
-		collateral_damage = 10.0
-		war_exhaustion = 50.0
-		time = 25.0
-		has_species = no
-		icon = GFX_esc_army_psi_avatar
-		prerequisites = { esc_tech_psi_avatar_army }
-		resources = {
-			category = armies
-			cost = {
-				energy = 25000.0
-				sr_zro = 1000.0
-			}
-		}
-		show_tech_unlock_if = {
-			NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
-		}
-		potential = {
-			custom_tooltip = {
-				planet = { is_capital = yes }
-			}
-		}
-		potential_country = {
-			OR = {
-				is_machine_empire = no
-				has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
-				has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
-			}
-			pmca_materiel_policy_check = {
-				PMCA_MULT = ten
-				PMCA_RESOURCE = sr_zro
-				PMCA_VALUE = 1000.0
-			}
-		}
-		ai_weight = {
-			base = 150.0
-			modifier = {
-				set = 0
-				is_fallen_empire = yes
-				NOT = { has_ethic = ethic_fanatic_spiritualist }
-			}
-		}
-	}
-
 	pmca_ten_esc_erasure_squad_army = {
 		use_armynames_from = esc_erasure_squad_army
 		damage = 70.0
@@ -71,9 +24,11 @@ inline_script = {
 				energy = 2500.0
 				minerals = 5000.0
 				sr_dark_matter = 100.0
+				sr_armaments = 5000.0
 			}
 			upkeep = {
-				energy = 20.0
+				energy = 40.0
+				sr_armaments = 30.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -97,8 +52,8 @@ inline_script = {
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
-				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 100.0
+				PMCA_RESOURCE = sr_armaments
+				PMCA_VALUE = 5000.0
 			}
 		}
 		ai_weight = {
@@ -124,9 +79,11 @@ inline_script = {
 				energy = 2500.0
 				alloys = 2000.0
 				sr_dark_matter = 100.0
+				sr_armaments = 2000.0
 			}
 			upkeep = {
-				energy = 20.0
+				energy = 60.0
+				sr_armaments = 40.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -140,8 +97,8 @@ inline_script = {
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
-				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 100.0
+				PMCA_RESOURCE = sr_armaments
+				PMCA_VALUE = 2000.0
 			}
 		}
 		ai_weight = {
@@ -165,9 +122,11 @@ inline_script = {
 			cost = {
 				energy = 1500.0
 				minerals = 4000.0
+				sr_armaments = 4000.0
 			}
 			upkeep = {
-				energy = 10.0
+				energy = 20.0
+				sr_armaments = 10.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -189,7 +148,7 @@ inline_script = {
 			is_machine_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
-				PMCA_RESOURCE = minerals
+				PMCA_RESOURCE = sr_armaments
 				PMCA_VALUE = 4000.0
 			}
 		}
@@ -215,9 +174,11 @@ inline_script = {
 			cost = {
 				energy = 1500.0
 				alloys = 1000.0
+				sr_armaments = 1000.0
 			}
 			upkeep = {
-				energy = 10.0
+				energy = 20.0
+				sr_armaments = 10.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -231,111 +192,12 @@ inline_script = {
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
-				PMCA_RESOURCE = alloys
+				PMCA_RESOURCE = sr_armaments
 				PMCA_VALUE = 1000.0
 			}
 		}
 		ai_weight = {
 			base = 150.0
-		}
-	}
-
-	pmca_ten_esc_biohorror_army = {
-		use_armynames_from = esc_biohorror_army
-		damage = 40.0
-		health = 40.0
-		has_morale = no
-		morale_damage = 2.5
-		collateral_damage = 40.0
-		war_exhaustion = 2.5
-		time = 100.0
-		has_species = no
-		icon = GFX_army_type_xenomorph
-		prerequisites = { esc_tech_bio_horror_army }
-		resources = {
-			category = armies
-			cost = {
-				minerals = 3500.0
-			}
-			upkeep = {
-				energy = 20.0
-			}
-		}
-		potential_country = {
-			ESC_TRIGGER_may_research_biological_weapons_advanced = yes
-			pmca_materiel_policy_check = {
-				PMCA_MULT = ten
-				PMCA_RESOURCE = minerals
-				PMCA_VALUE = 3500.0
-			}
-		}
-		ai_weight = {
-			base = 15.0
-			modifier = {
-				factor = 10
-				is_xenophobe = yes
-			}
-			modifier = {
-				set = 0
-				OR = {
-					is_pacifist = yes
-					is_xenophile = yes
-				}
-			}
-			modifier = {
-				set = 0
-				is_fallen_empire = yes
-				NOT = { has_ethic = ethic_fanatic_xenophobe }
-			}
-		}
-	}
-
-	pmca_hundred_esc_psionic_avatar_army = {
-		use_armynames_from = esc_psionic_avatar_army
-		damage = 500.0
-		health = 700.0
-		has_morale = no
-		morale_damage = 2.0
-		collateral_damage = 100.0
-		war_exhaustion = 500.0
-		time = 25.0
-		has_species = no
-		icon = GFX_esc_army_psi_avatar
-		prerequisites = { esc_tech_psi_avatar_army }
-		resources = {
-			category = armies
-			cost = {
-				energy = 250000.0
-				sr_zro = 10000.0
-			}
-		}
-		show_tech_unlock_if = {
-			NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
-		}
-		potential = {
-			custom_tooltip = {
-				planet = { is_capital = yes }
-			}
-		}
-		potential_country = {
-			OR = {
-				is_machine_empire = no
-				has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
-				has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
-			}
-			pmca_materiel_policy_check = {
-				PMCA_MULT = hundred
-				PMCA_RESOURCE = sr_zro
-				PMCA_VALUE = 10000.0
-			}
-		}
-		ai_weight = {
-			base = 200.0
-			modifier = {
-				set = 0
-				is_fallen_empire = yes
-				NOT = { has_ethic = ethic_fanatic_spiritualist }
-			}
 		}
 	}
 
@@ -356,9 +218,11 @@ inline_script = {
 				energy = 25000.0
 				minerals = 50000.0
 				sr_dark_matter = 1000.0
+				sr_armaments = 50000.0
 			}
 			upkeep = {
-				energy = 200.0
+				energy = 400.0
+				sr_armaments = 300.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -382,8 +246,8 @@ inline_script = {
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
-				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 1000.0
+				PMCA_RESOURCE = sr_armaments
+				PMCA_VALUE = 50000.0
 			}
 		}
 		ai_weight = {
@@ -409,9 +273,11 @@ inline_script = {
 				energy = 25000.0
 				alloys = 20000.0
 				sr_dark_matter = 1000.0
+				sr_armaments = 20000.0
 			}
 			upkeep = {
-				energy = 200.0
+				energy = 600.0
+				sr_armaments = 400.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -425,8 +291,8 @@ inline_script = {
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
-				PMCA_RESOURCE = sr_dark_matter
-				PMCA_VALUE = 1000.0
+				PMCA_RESOURCE = sr_armaments
+				PMCA_VALUE = 20000.0
 			}
 		}
 		ai_weight = {
@@ -450,9 +316,11 @@ inline_script = {
 			cost = {
 				energy = 15000.0
 				minerals = 40000.0
+				sr_armaments = 40000.0
 			}
 			upkeep = {
-				energy = 100.0
+				energy = 200.0
+				sr_armaments = 100.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -474,7 +342,7 @@ inline_script = {
 			is_machine_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
-				PMCA_RESOURCE = minerals
+				PMCA_RESOURCE = sr_armaments
 				PMCA_VALUE = 40000.0
 			}
 		}
@@ -500,9 +368,11 @@ inline_script = {
 			cost = {
 				energy = 15000.0
 				alloys = 10000.0
+				sr_armaments = 10000.0
 			}
 			upkeep = {
-				energy = 100.0
+				energy = 200.0
+				sr_armaments = 100.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -516,62 +386,12 @@ inline_script = {
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
-				PMCA_RESOURCE = alloys
+				PMCA_RESOURCE = sr_armaments
 				PMCA_VALUE = 10000.0
 			}
 		}
 		ai_weight = {
 			base = 200.0
-		}
-	}
-
-	pmca_hundred_esc_biohorror_army = {
-		use_armynames_from = esc_biohorror_army
-		damage = 400.0
-		health = 400.0
-		has_morale = no
-		morale_damage = 2.5
-		collateral_damage = 400.0
-		war_exhaustion = 25.0
-		time = 100.0
-		has_species = no
-		icon = GFX_army_type_xenomorph
-		prerequisites = { esc_tech_bio_horror_army }
-		resources = {
-			category = armies
-			cost = {
-				minerals = 35000.0
-			}
-			upkeep = {
-				energy = 200.0
-			}
-		}
-		potential_country = {
-			ESC_TRIGGER_may_research_biological_weapons_advanced = yes
-			pmca_materiel_policy_check = {
-				PMCA_MULT = hundred
-				PMCA_RESOURCE = minerals
-				PMCA_VALUE = 35000.0
-			}
-		}
-		ai_weight = {
-			base = 20.0
-			modifier = {
-				factor = 10
-				is_xenophobe = yes
-			}
-			modifier = {
-				set = 0
-				OR = {
-					is_pacifist = yes
-					is_xenophile = yes
-				}
-			}
-			modifier = {
-				set = 0
-				is_fallen_empire = yes
-				NOT = { has_ethic = ethic_fanatic_xenophobe }
-			}
 		}
 	}
 	"

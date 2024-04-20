@@ -1,0 +1,113 @@
+﻿l_french:
+
+ # Localisation generated using Python
+
+ ##########################
+ ### HEAVY_ASSAULT_ARMY ###
+ ##########################
+ pmca_ten_heavy_assault_army: "$pmca_ten$ $heavy_assault_army$"
+ pmca_ten_heavy_assault_army_plural: "$heavy_assault_army_plural$"
+ pmca_ten_heavy_assault_army_desc: "$heavy_assault_army_desc$"
+ pmca_hundred_heavy_assault_army: "$pmca_hundred$ $heavy_assault_army$"
+ pmca_hundred_heavy_assault_army_plural: "$heavy_assault_army_plural$"
+ pmca_hundred_heavy_assault_army_desc: "$heavy_assault_army_desc$"
+
+
+ ###########################
+ ### SPECIAL_FORCES_ARMY ###
+ ###########################
+ pmca_ten_special_forces_army: "$pmca_ten$ $special_forces_army$"
+ pmca_ten_special_forces_army_plural: "$special_forces_army_plural$"
+ pmca_ten_special_forces_army_desc: "$special_forces_army_desc$"
+ pmca_hundred_special_forces_army: "$pmca_hundred$ $special_forces_army$"
+ pmca_hundred_special_forces_army_plural: "$special_forces_army_plural$"
+ pmca_hundred_special_forces_army_desc: "$special_forces_army_desc$"
+
+
+ ##########################
+ ### ADVANCED_TANK_ARMY ###
+ ##########################
+ pmca_ten_advanced_tank_army: "$pmca_ten$ $advanced_tank_army$"
+ pmca_ten_advanced_tank_army_plural: "$advanced_tank_army_plural$"
+ pmca_ten_advanced_tank_army_desc: "$advanced_tank_army_desc$"
+ pmca_hundred_advanced_tank_army: "$pmca_hundred$ $advanced_tank_army$"
+ pmca_hundred_advanced_tank_army_plural: "$advanced_tank_army_plural$"
+ pmca_hundred_advanced_tank_army_desc: "$advanced_tank_army_desc$"
+
+
+ #########################
+ ### PURGE_SQUADS_ARMY ###
+ #########################
+ pmca_ten_purge_squads_army: "$pmca_ten$ $purge_squads_army$"
+ pmca_ten_purge_squads_army_plural: "$purge_squads_army_plural$"
+ pmca_ten_purge_squads_army_desc: "$purge_squads_army_desc$"
+ pmca_hundred_purge_squads_army: "$pmca_hundred$ $purge_squads_army$"
+ pmca_hundred_purge_squads_army_plural: "$purge_squads_army_plural$"
+ pmca_hundred_purge_squads_army_desc: "$purge_squads_army_desc$"
+
+
+ #########################
+ ### MECH_TROOPER_ARMY ###
+ #########################
+ pmca_ten_mech_trooper_army: "$pmca_ten$ $mech_trooper_army$"
+ pmca_ten_mech_trooper_army_plural: "$mech_trooper_army_plural$"
+ pmca_ten_mech_trooper_army_desc: "$mech_trooper_army_desc$"
+ pmca_hundred_mech_trooper_army: "$pmca_hundred$ $mech_trooper_army$"
+ pmca_hundred_mech_trooper_army_plural: "$mech_trooper_army_plural$"
+ pmca_hundred_mech_trooper_army_desc: "$mech_trooper_army_desc$"
+
+
+ ######################
+ ### PSIONIC_ARMY_2 ###
+ ######################
+ pmca_ten_psionic_army_2: "$pmca_ten$ $psionic_army_2$"
+ pmca_ten_psionic_army_2_plural: "$psionic_army_2_plural$"
+ pmca_ten_psionic_army_2_desc: "$psionic_army_2_desc$"
+ pmca_hundred_psionic_army_2: "$pmca_hundred$ $psionic_army_2$"
+ pmca_hundred_psionic_army_2_plural: "$psionic_army_2_plural$"
+ pmca_hundred_psionic_army_2_desc: "$psionic_army_2_desc$"
+
+
+ #########################
+ ### HIVE_ASSAULT_ARMY ###
+ #########################
+ pmca_ten_hive_assault_army: "$pmca_ten$ $hive_assault_army$"
+ pmca_ten_hive_assault_army_plural: "$hive_assault_army_plural$"
+ pmca_ten_hive_assault_army_desc: "$hive_assault_army_desc$"
+ pmca_hundred_hive_assault_army: "$pmca_hundred$ $hive_assault_army$"
+ pmca_hundred_hive_assault_army_plural: "$hive_assault_army_plural$"
+ pmca_hundred_hive_assault_army_desc: "$hive_assault_army_desc$"
+
+
+ ###############################
+ ### HIVE_HEAVY_ASSAULT_ARMY ###
+ ###############################
+ pmca_ten_hive_heavy_assault_army: "$pmca_ten$ $hive_heavy_assault_army$"
+ pmca_ten_hive_heavy_assault_army_plural: "$hive_heavy_assault_army_plural$"
+ pmca_ten_hive_heavy_assault_army_desc: "$hive_heavy_assault_army_desc$"
+ pmca_hundred_hive_heavy_assault_army: "$pmca_hundred$ $hive_heavy_assault_army$"
+ pmca_hundred_hive_heavy_assault_army_plural: "$hive_heavy_assault_army_plural$"
+ pmca_hundred_hive_heavy_assault_army_desc: "$hive_heavy_assault_army_desc$"
+
+
+ ##############################
+ ### HIVE_GENE_WARRIOR_ARMY ###
+ ##############################
+ pmca_ten_hive_gene_warrior_army: "$pmca_ten$ $hive_gene_warrior_army$"
+ pmca_ten_hive_gene_warrior_army_plural: "$hive_gene_warrior_army_plural$"
+ pmca_ten_hive_gene_warrior_army_desc: "$hive_gene_warrior_army_desc$"
+ pmca_hundred_hive_gene_warrior_army: "$pmca_hundred$ $hive_gene_warrior_army$"
+ pmca_hundred_hive_gene_warrior_army_plural: "$hive_gene_warrior_army_plural$"
+ pmca_hundred_hive_gene_warrior_army_desc: "$hive_gene_warrior_army_desc$"
+
+
+ ###################
+ ### CLONE_ARMY2 ###
+ ###################
+ pmca_ten_clone_army2: "$pmca_ten$ $clone_army2$"
+ pmca_ten_clone_army2_plural: "$clone_army2_plural$"
+ pmca_ten_clone_army2_desc: "$clone_army2_desc$"
+ pmca_hundred_clone_army2: "$pmca_hundred$ $clone_army2$"
+ pmca_hundred_clone_army2_plural: "$clone_army2_plural$"
+ pmca_hundred_clone_army2_desc: "$clone_army2_desc$"
+

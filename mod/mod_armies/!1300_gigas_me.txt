@@ -17,10 +17,12 @@ riesigerkatzenpanzer_assault = {
 			exotic_gases = 50
 			rare_crystals = 50
 			volatile_motes = 50
+			sr_armaments = 2000
 		}
 
 		upkeep = {
 			energy = 10
+			sr_armaments = 10
 		}
 	}
 
@@ -43,10 +45,12 @@ giga_eaw_crystal_army = {
 		cost = {
 			minerals = 100
 			rare_crystals = 10
+			sr_armaments = 100
 		}
 		upkeep = {
 			energy = 1
 			rare_crystals = 0.10
+			sr_armaments = 1
 		}
 	}
 
@@ -76,10 +80,12 @@ giga_eaw_crystal_army_drone = {
 		cost = {
 			minerals = 125
 			rare_crystals = 10
+			sr_armaments = 125
 		}
 		upkeep = {
 			energy = 1
 			rare_crystals = 0.25
+			sr_armaments = 1.25
 		}
 	}
 
@@ -89,38 +95,6 @@ giga_eaw_crystal_army_drone = {
 		owner = {
 			has_technology = giga_tech_thaumaturgic_weaponry
 			has_authority = auth_machine_intelligence
-		}
-	}
-}
-
-shroud_summoned_army = {
-	damage = 2.0
-	health = 0.75
-	has_morale = no
-	morale_damage = 1.5
-	collateral_damage = 1.0
-	war_exhaustion = 1.0
-	time = 30
-	icon = GFX_army_type_psionic
-	prerequisites = { giga_tech_shroud_conduit }
-
-	resources = {
-		category = armies
-		cost = {
-			energy = 100
-			sr_zro = 10
-		}
-		upkeep = {
-			energy = 1
-			#sr_zro = 0.05
-		}
-	}
-
-	potential = {
-		has_building = building_giga_shroud_conduit
-		from = {
-			is_robotic = no
-			has_psionic_species_trait = yes
 		}
 	}
 }
@@ -137,33 +111,10 @@ cybrex_warform = {
 
 	icon = GFX_army_type_machine_assault
 
-	resources = {
-		category = armies
-		cost = {
-			alloys = 250
-		}
-
-		upkeep = {
-			energy = 8
-		}
-	}
-
-	potential_country = {
-		OR = {
-			has_relic = r_war_forge
-			has_relic = r_ehof_war_forge
-		}
-	}
 	potential = {
-		custom_tooltip = {
-			planet = { is_capital = yes }
-		}
-	}
-	ai_weight = {
-		base = 50
+		always = no
 	}
 }
-
 
 # cybrex warform equivalents for any country
 maginot_assault_unit = {
@@ -183,10 +134,12 @@ maginot_assault_unit = {
 		category = armies
 		cost = {
 			alloys = 250
+			sr_armaments = 250
 		}
 		upkeep = {
 			energy = 8.0
 			alloys = 0.1
+			sr_armaments = 8
 		}
 	}
 
@@ -229,10 +182,12 @@ maginot_machine_assault_unit = {
 		category = armies
 		cost = {
 			alloys = 250
+			sr_armaments = 250
 		}
 		upkeep = {
 			energy = 8.0
 			alloys = 0.1
+			sr_armaments = 8
 		}
 	}
 
@@ -256,27 +211,4 @@ maginot_machine_assault_unit = {
 	ai_weight = {
 		base = 51
 	}
-}
-
-#PM: Stats nerfed so the scripts makes an effective x2 instead of x10. Also got rid of collateral and WE
-the_grandbunny = {
-	defensive = yes
-	damage = 40
-	health = 130
-	has_morale = no
-	collateral_damage = 0.0
-	war_exhaustion = 0.0
-	icon = GFX_army_type_psionic
-	potential = { always = no }
-}
-
-the_grandbunny_acot = {
-	defensive = yes
-	damage = 100
-	health = 500
-	has_morale = no
-	collateral_damage = 0.0
-	war_exhaustion = 0.0
-	icon = GFX_army_type_psionic
-	potential = { always = no }
 }

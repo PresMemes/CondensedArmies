@@ -1,0 +1,8 @@
+# Dear Irony please fallback to simple parser
+
+inline_script = {
+	script = compatibility/pmca_conditional_inline_step_2
+
+	CASE = @[ (|(((($MOD_VARIABLE_1$ / $MOD_VARIABLE_1$) - 1) / ((0 / 0) - 1)) - 1)|) *(|(((($MOD_VARIABLE_2$ / $MOD_VARIABLE_2$) - 1) / ((0 / 0) - 1)) - 1)|) * (|(((($MOD_VARIABLE_3$ / $MOD_VARIABLE_3$) - 1) / ((0 / 0) - 1)) - 1)|) * (|(((($MOD_VARIABLE_4$ / $MOD_VARIABLE_4$) - 1) / ((0 / 0) - 1)) - 1)|) ]
+	CONTENT = "$CONTENT$"
+}

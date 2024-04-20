@@ -1,0 +1,5 @@
+# Dear Irony please fallback to simple parser
+inline_script = {
+	script = compatibility/pmca_conditional_inline_step_3_case_$CASE$
+	CONTENT = "$CONTENT$"
+}

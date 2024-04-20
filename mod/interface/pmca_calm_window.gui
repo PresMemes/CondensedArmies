@@ -78,6 +78,7 @@ guiTypes = {
                 spriteType = "GFX_tiles_frame_light"
                 oversound = no_sound
                 no_clicksound = yes
+                multiline = no
             }
         }
 
@@ -105,6 +106,7 @@ guiTypes = {
                 effect = pmca_button_ai_enabled
                 quadTextureSprite = "GFX_button_20_20_accept"
                 frame = 3
+                multiline = no
             }
 
             effectButtonType = {
@@ -113,6 +115,7 @@ guiTypes = {
                 effect = pmca_button_ai_disabled
                 quadTextureSprite = "GFX_button_20_20_reject"
                 frame = 3
+                multiline = no
             }
         }
 
@@ -172,6 +175,7 @@ guiTypes = {
                 effect = pmca_button_condense_x0_enabled
                 quadTextureSprite = "GFX_button_20_20_accept"
                 frame = 3
+                multiline = no
             }
 
             effectButtonType = {
@@ -180,6 +184,7 @@ guiTypes = {
                 effect = pmca_button_condense_x0_disabled
                 quadTextureSprite = "GFX_button_20_20_reject"
                 frame = 3
+                multiline = no
             }
 
             effectButtonType = {
@@ -188,6 +193,7 @@ guiTypes = {
                 effect = pmca_button_condense_x10_enabled
                 quadTextureSprite = "GFX_button_20_20_accept"
                 frame = 3
+                multiline = no
             }
 
             effectButtonType = {
@@ -196,6 +202,7 @@ guiTypes = {
                 effect = pmca_button_condense_x10_disabled
                 quadTextureSprite = "GFX_button_20_20_reject"
                 frame = 3
+                multiline = no
             }
 
             effectButtonType = {
@@ -204,6 +211,7 @@ guiTypes = {
                 effect = pmca_button_condense_x100_enabled
                 quadTextureSprite = "GFX_button_20_20_accept"
                 frame = 3
+                multiline = no
             }
 
             effectButtonType = {
@@ -212,6 +220,7 @@ guiTypes = {
                 effect = pmca_button_condense_x100_disabled
                 quadTextureSprite = "GFX_button_20_20_reject"
                 frame = 3
+                multiline = no
             }
         }
 
@@ -238,6 +247,7 @@ guiTypes = {
                 effect = pmca_button_beautify_enabled
                 quadTextureSprite = "GFX_button_20_20_accept"
                 frame = 3
+                multiline = no
             }
 
             effectButtonType = {
@@ -246,6 +256,7 @@ guiTypes = {
                 effect = pmca_button_beautify_disabled
                 quadTextureSprite = "GFX_button_20_20_reject"
                 frame = 3
+                multiline = no
             }
         }
 

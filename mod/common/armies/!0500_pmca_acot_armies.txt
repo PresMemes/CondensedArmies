@@ -1,9 +1,10 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
+# Last Updated: Thu Apr 18 19:19:56 2024
 
 inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
+	script = compatibility/pmca_conditional_inline_1_input
+	MOD_VARIABLE_1 = @has_ancient_caches
 	CONTENT = "
 	pmca_ten_assault_army = {
 		use_armynames_from = assault_army
@@ -374,6 +375,7 @@ inline_script = {
 						orbital_defence = {
 							exists = starbase
 							starbase = {
+								
 							}
 						}
 					}
@@ -442,6 +444,7 @@ inline_script = {
 						orbital_defence = {
 							exists = starbase
 							starbase = {
+								
 							}
 						}
 					}
@@ -620,7 +623,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -686,7 +689,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -752,7 +755,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -813,7 +816,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -880,7 +883,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -947,7 +950,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -1013,7 +1016,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -1075,7 +1078,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -2136,7 +2139,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		potential = { always = no }
 	}
@@ -2196,7 +2199,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		potential = { always = no }
 	}
@@ -2554,7 +2557,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_infantry
 		potential = { always = no }
 	}
@@ -2614,7 +2617,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 2.5
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_infantry
 		potential = { always = no }
 	}
@@ -6716,6 +6719,7 @@ inline_script = {
 						orbital_defence = {
 							exists = starbase
 							starbase = {
+								
 							}
 						}
 					}
@@ -6784,6 +6788,7 @@ inline_script = {
 						orbital_defence = {
 							exists = starbase
 							starbase = {
+								
 							}
 						}
 					}
@@ -6962,7 +6967,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -7028,7 +7033,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -7094,7 +7099,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -7155,7 +7160,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -7222,7 +7227,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -7289,7 +7294,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -7355,7 +7360,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -7417,7 +7422,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		resources = {
 			category = armies
@@ -8478,7 +8483,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		potential = { always = no }
 	}
@@ -8538,7 +8543,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_primitive
 		potential = { always = no }
 	}
@@ -8896,7 +8901,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_infantry
 		potential = { always = no }
 	}
@@ -8956,7 +8961,7 @@ inline_script = {
 		morale_damage = 0.2
 		collateral_damage = 0.0
 		war_exhaustion = 25.0
-		time = 0.0
+		time = 0
 		icon = GFX_army_type_infantry
 		potential = { always = no }
 	}

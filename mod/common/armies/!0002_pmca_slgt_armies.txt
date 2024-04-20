@@ -1,9 +1,10 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
+# Last Updated: Thu Apr 18 18:47:02 2024
 
 inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @slgt_Tier6_cost
+	script = compatibility/pmca_conditional_inline_1_input
+	MOD_VARIABLE_1 = @slgt_Tier6_cost
 	CONTENT = "
 	pmca_ten_slgt_gene_titan_army = {
 		use_armynames_from = slgt_gene_titan_army
@@ -460,7 +461,7 @@ inline_script = {
 					AND = {
 						has_technology = tech_gene_seed_purification
 						has_technology = tech_slgt_bio_titans
-					}
+					}				
 					has_technology = tech_slgt_cybernetics_update
 					has_tradition = tr_synthetics_finish
 				}
@@ -528,11 +529,11 @@ inline_script = {
 					AND = {
 						has_technology = tech_gene_seed_purification
 						has_technology = tech_slgt_bio_titans
-					}
+					}				
 					has_technology = tech_slgt_cybernetics_update
 					has_tradition = tr_synthetics_finish
 					is_fallen_empire = yes
-				}
+				}			
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
@@ -597,7 +598,7 @@ inline_script = {
 				AND = {
 					has_technology = tech_gene_seed_purification
 					has_technology = tech_slgt_bio_titans
-				}
+				}				
 				has_technology = tech_slgt_cybernetics_update
 				has_tradition = tr_synthetics_finish
 			}
@@ -661,7 +662,7 @@ inline_script = {
 				AND = {
 					has_technology = tech_gene_seed_purification
 					has_technology = tech_slgt_bio_titans
-				}
+				}				
 				has_technology = tech_slgt_cybernetics_update
 				has_tradition = tr_synthetics_finish
 			}
@@ -1187,7 +1188,7 @@ inline_script = {
 					AND = {
 						has_technology = tech_gene_seed_purification
 						has_technology = tech_slgt_bio_titans
-					}
+					}				
 					has_technology = tech_slgt_cybernetics_update
 					has_tradition = tr_synthetics_finish
 				}
@@ -1255,11 +1256,11 @@ inline_script = {
 					AND = {
 						has_technology = tech_gene_seed_purification
 						has_technology = tech_slgt_bio_titans
-					}
+					}				
 					has_technology = tech_slgt_cybernetics_update
 					has_tradition = tr_synthetics_finish
 					is_fallen_empire = yes
-				}
+				}			
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
@@ -1324,7 +1325,7 @@ inline_script = {
 				AND = {
 					has_technology = tech_gene_seed_purification
 					has_technology = tech_slgt_bio_titans
-				}
+				}				
 				has_technology = tech_slgt_cybernetics_update
 				has_tradition = tr_synthetics_finish
 			}
@@ -1388,7 +1389,7 @@ inline_script = {
 				AND = {
 					has_technology = tech_gene_seed_purification
 					has_technology = tech_slgt_bio_titans
-				}
+				}				
 				has_technology = tech_slgt_cybernetics_update
 				has_tradition = tr_synthetics_finish
 			}
