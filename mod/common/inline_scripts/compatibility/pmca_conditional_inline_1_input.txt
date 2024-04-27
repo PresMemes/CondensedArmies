@@ -1,14 +1,46 @@
 # Dear Irony please fallback to simple parser
+
 # Credit to TTFTCUTS and MrRoAdd for letting their intrusive thoughts win
-# So the weird ass equation below is this:
-# |(((x / x) - 1) / ((0/0) - 1)) - 1|
-# Where X is $MOD_VARIABLE_1$ and will always return a 0 or a 1, which is needed for the conditional inline to work
-# If $MOD_VARIABLE_1 == 0, return 0
-# If $MOD_VARIABLE_1 != 0, return 1
+#
+# So here's the problem: We need an equation that mimics this piecewise function:
+# f(x) = {
+#	0, if x = 0
+#	1, otherwise
+# }
+#
+# Which normally wouldn't be to difficult, as with any other contemporary coding/scripting language we could something like math.ceil() or a ternary statement.
+# But Stellaris' inline math is annoyingly unique as we're limited to only the following operands: +, -, *, /, %, (x), and |x|.
+# Since x can be any rational number, the any solution involving (x/x) would throw a divide by zero error if x = 0...
+# Except inline math, for some reason, returns (2^32 - 1 / 10^5) when division by zero occurs. MrRoAdd used this bug to make their own equation:
+# f(x) = ((x/x) - 1) / (0/0 - 1)
+#
+# Which returned the inverse of what I wanted, so I modified it into:
+# f(x) = |(((x / x) - 1) / ((0/0) - 1)) - 1|
+#
+# While dividing by zero *is* pretty funny, I'd rather not rely on a bug that might be accidentally fixed.
+# TTFTCUTS came up with their own math without using division by zero, which looks like this:
+# f(x) = (-1 * ((-1 * ((x*x) / ((x*x)+1))) - ((((-1 * ((x*x) / ((x*x)+1))) % 1) + 1) % 1)))
+#
+# Which in their own words "this is equal to ceil( x^2 / (x^2+1) ), which returns 0 for a 0 input and 1 for anything else"
+# Now it does work (I've tested via Python), but honesty it's not exactly 'human-readable' and is a pain in the ass to solve by hand
+#
+# So I tried my hand at the problem, and after an hour or so the closest I got (thanks to humh on https://puzzling.stackexchange.com/questions/33625/function-that-is-1-for-all-positive-integers-but-0-at-0) was:
+# f(x) = |x| / (||x| - 1| + 1)
+#
+# Which *almost* worked, but would break if 0 < x < 1. Frustrated, I went to bed thinking there might not be an elegant solution.
+#
+# Woke up this (4/26/2024) morning, and thought "what if I absolute and offset the input?"
+# Apparently my brain took a course in Gastronomy when I was asleep because it fucking COOKED and led me to:
+# f(x) = (|x| + 2) % (|x| + 1)
+#
+# Which:
+#	a) Satisfies the piecewise function
+#	b) Elegant
+#	c) Easily solvable by hand
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_step_2
 
-	CASE = @[ (|(((($MOD_VARIABLE_1$ / $MOD_VARIABLE_1$) - 1) / ((0 / 0) - 1)) - 1)|) ]
+	CASE = @[ ((|$MOD_VARIABLE_1$| + 2) % (|$MOD_VARIABLE_1$| + 1)) ]
 	CONTENT = "$CONTENT$"
 }
