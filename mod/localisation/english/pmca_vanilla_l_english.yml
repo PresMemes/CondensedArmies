@@ -145,6 +145,39 @@
  pmca_hundred_flamestorm_troopers_army_desc: "$flamestorm_troopers_army_desc$"
 
 
+ ####################################
+ ### INDIVIDUAL_MACHINE_ASSAULT_1 ###
+ ####################################
+ pmca_ten_individual_machine_assault_1: "$pmca_ten$ $individual_machine_assault_1$"
+ pmca_ten_individual_machine_assault_1_plural: "$individual_machine_assault_1_plural$"
+ pmca_ten_individual_machine_assault_1_desc: "$individual_machine_assault_1_desc$"
+ pmca_hundred_individual_machine_assault_1: "$pmca_hundred$ $individual_machine_assault_1$"
+ pmca_hundred_individual_machine_assault_1_plural: "$individual_machine_assault_1_plural$"
+ pmca_hundred_individual_machine_assault_1_desc: "$individual_machine_assault_1_desc$"
+
+
+ ####################################
+ ### INDIVIDUAL_MACHINE_ASSAULT_2 ###
+ ####################################
+ pmca_ten_individual_machine_assault_2: "$pmca_ten$ $individual_machine_assault_2$"
+ pmca_ten_individual_machine_assault_2_plural: "$individual_machine_assault_2_plural$"
+ pmca_ten_individual_machine_assault_2_desc: "$individual_machine_assault_2_desc$"
+ pmca_hundred_individual_machine_assault_2: "$pmca_hundred$ $individual_machine_assault_2$"
+ pmca_hundred_individual_machine_assault_2_plural: "$individual_machine_assault_2_plural$"
+ pmca_hundred_individual_machine_assault_2_desc: "$individual_machine_assault_2_desc$"
+
+
+ ####################################
+ ### INDIVIDUAL_MACHINE_ASSAULT_3 ###
+ ####################################
+ pmca_ten_individual_machine_assault_3: "$pmca_ten$ $individual_machine_assault_3$"
+ pmca_ten_individual_machine_assault_3_plural: "$individual_machine_assault_3_plural$"
+ pmca_ten_individual_machine_assault_3_desc: "$individual_machine_assault_3_desc$"
+ pmca_hundred_individual_machine_assault_3: "$pmca_hundred$ $individual_machine_assault_3$"
+ pmca_hundred_individual_machine_assault_3_plural: "$individual_machine_assault_3_plural$"
+ pmca_hundred_individual_machine_assault_3_desc: "$individual_machine_assault_3_desc$"
+
+
  ######################
  ### CYBREX_WARFORM ###
  ######################

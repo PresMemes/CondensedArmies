@@ -59,6 +59,9 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_undead_army
 			army_type = pmca_ten_warpling_army
 			army_type = pmca_ten_flamestorm_troopers_army
+			army_type = pmca_ten_individual_machine_assault_1
+			army_type = pmca_ten_individual_machine_assault_2
+			army_type = pmca_ten_individual_machine_assault_3
 			army_type = pmca_ten_cybrex_warform
 			"
 		}
@@ -343,6 +346,9 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_undead_army
 			army_type = pmca_hundred_warpling_army
 			army_type = pmca_hundred_flamestorm_troopers_army
+			army_type = pmca_hundred_individual_machine_assault_1
+			army_type = pmca_hundred_individual_machine_assault_2
+			army_type = pmca_hundred_individual_machine_assault_3
 			army_type = pmca_hundred_cybrex_warform
 			"
 		}
