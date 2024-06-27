@@ -3,5 +3,5 @@ tags={
 	"Military"
 }
 name="Condensed Armies (3.12.X)"
-supported_version="3.12.*"
+supported_version="v3.12.*"
 remote_file_id="2797565369"
