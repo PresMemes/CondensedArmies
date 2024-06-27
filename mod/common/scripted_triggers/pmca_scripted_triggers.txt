@@ -244,7 +244,6 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_acot_army_hive_gene_ae
 			army_type = pmca_ten_acot_army_hive_gene_se
 			army_type = pmca_ten_acot_army_hive_gene_cocoon
-			army_type = pmca_ten_acot_army_hive_gene_cocoon_dm
 			army_type = pmca_ten_acot_army_hive_gene_cocoon_ae
 			army_type = pmca_ten_acot_army_hive_gene_cocoon_se
 			army_type = pmca_ten_acot_army_hive_control
@@ -313,10 +312,16 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_purge_squads_army
 			army_type = pmca_ten_mech_trooper_army
 			army_type = pmca_ten_psionic_army_2
+			army_type = pmca_ten_clone_army2
 			army_type = pmca_ten_hive_assault_army
 			army_type = pmca_ten_hive_heavy_assault_army
 			army_type = pmca_ten_hive_gene_warrior_army
-			army_type = pmca_ten_clone_army2
+			army_type = pmca_ten_ind_mach_heavy_assault_army
+			army_type = pmca_ten_ind_mach_commando_army
+			army_type = pmca_ten_ind_mach_integrated_armor_army
+			army_type = pmca_ten_ind_mach_advanced_infantry
+			army_type = pmca_ten_ind_mach_autonomous_war_droid
+			army_type = pmca_ten_ind_mach_purge_squads_army
 			"
 		}
 	}
@@ -531,7 +536,6 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_acot_army_hive_gene_ae
 			army_type = pmca_hundred_acot_army_hive_gene_se
 			army_type = pmca_hundred_acot_army_hive_gene_cocoon
-			army_type = pmca_hundred_acot_army_hive_gene_cocoon_dm
 			army_type = pmca_hundred_acot_army_hive_gene_cocoon_ae
 			army_type = pmca_hundred_acot_army_hive_gene_cocoon_se
 			army_type = pmca_hundred_acot_army_hive_control
@@ -600,10 +604,16 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_purge_squads_army
 			army_type = pmca_hundred_mech_trooper_army
 			army_type = pmca_hundred_psionic_army_2
+			army_type = pmca_hundred_clone_army2
 			army_type = pmca_hundred_hive_assault_army
 			army_type = pmca_hundred_hive_heavy_assault_army
 			army_type = pmca_hundred_hive_gene_warrior_army
-			army_type = pmca_hundred_clone_army2
+			army_type = pmca_hundred_ind_mach_heavy_assault_army
+			army_type = pmca_hundred_ind_mach_commando_army
+			army_type = pmca_hundred_ind_mach_integrated_armor_army
+			army_type = pmca_hundred_ind_mach_advanced_infantry
+			army_type = pmca_hundred_ind_mach_autonomous_war_droid
+			army_type = pmca_hundred_ind_mach_purge_squads_army
 			"
 		}
 	}

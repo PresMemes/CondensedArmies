@@ -9,7 +9,7 @@
  edict_pmca_logistics_manager_desc: "Access Condensed Armies' mod menu and enable/disable the various features the mod adds."
 
  # Decisions
- decision_pmca_acot_rebuild_condensed_armies: "Rebuild/Repair/Hatch $pmca_ten$/$pmca_hundred$ Armies"
+ decision_pmca_acot_rebuild_condensed_armies: "Rebuild/Repair §MCondensed§! Armies"
  decision_pmca_acot_rebuild_condensed_armies_desc: "All-in-one decision that simulates ACOT's decisions for regular armies. Costs nothing, but takes twice as long due to logistical constraints."
 
  # Condensed Armies Logistics Manager

@@ -17,7 +17,7 @@ heavy_assault_army = { ## standard army
 
 		upkeep = {
 			energy = 2
-			sr_armaments = 3
+			sr_armaments = 2
 		}
 	}
 
@@ -85,7 +85,7 @@ special_forces_army = {
 	damage = 0.85
 	health = 1.00
 	morale = 2.50
-	morale_damage = 2.50
+	morale_damage = 3.50
 	collateral_damage = 0.10
 	war_exhaustion = 1.00
 	time = 180
@@ -375,9 +375,53 @@ psionic_army_2 = {
 	}
 }
 
-####
-##HIVE UNIQUE
-####
+clone_army2 = {
+	damage = 1.25
+	health = 1.25
+	morale = 1.25
+	collateral_damage = 1.00
+	war_exhaustion = 0.50
+	time = 25
+	icon = GFX_army_type_clone
+	pop_limited = no
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 75
+			sr_armaments = 100
+		}
+
+		upkeep = {
+			energy = 0.75
+			sr_armaments = 1
+		}
+	}
+
+	prerequisites = { "tech_gene_banks" }
+
+	show_tech_unlock_if = {
+		is_ai = yes
+	}
+
+	potential_country = {
+		has_country_flag = improved_clone_armies
+	}
+
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}
 
 hive_assault_army = {
 	damage = 0.60
@@ -529,61 +573,359 @@ hive_gene_warrior_army = {
 	}
 }
 
-clone_army2 = {
-	damage = 1.25
-	health = 1.25
+ind_mach_heavy_assault_army = {
+	damage = 1.50
+	health = 1.50
 	morale = 1.25
-	collateral_damage = 1.00
-	war_exhaustion = 0.50
-	time = 25
-	icon = GFX_army_type_clone
-	pop_limited = no
+	morale_damage = 1.00
+	collateral_damage = 2.0
+	war_exhaustion = 0.5
+	time = 120
+	has_species = yes
+
+	icon = GFX_army_type_machine_assault
 
 	resources = {
 		category = armies
 		cost = {
-			minerals = 75
-			sr_armaments = 100
+			minerals = 300
+			sr_armaments = 300
 		}
 
 		upkeep = {
-			energy = 0.75
-			sr_armaments = 1
+			energy = 2
+			sr_armaments = 2
 		}
 	}
 
-	prerequisites = { "tech_gene_banks" }
-
-	show_tech_unlock_if = {
-		is_ai = yes
-	}
-
 	potential_country = {
-		has_country_flag = improved_clone_armies
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
 	}
 
 	potential = {
 		from = {
-			NOR = {
-				has_trait = "trait_mechanical"
-				has_trait = "trait_machine_unit"
-				is_sapient = no
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	show_tech_unlock_if = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+
+	prerequisites = { "tech_assault_armies" }
+
+	ai_weight = {
+		base = 100
+		modifier = {
+			set = 70
+			has_technology = tech_indvidual_mach_training1
+		}
+	}
+}
+
+ind_mach_commando_army = {
+	damage = 1.00
+	health = 1.00
+	morale = 3.00
+	morale_damage = 4.00
+	collateral_damage = 0.10
+	war_exhaustion = 1.00
+	time = 90
+	icon = GFX_army_type_machine_assault
+	prerequisites = { "tech_indvidual_mach_training1"}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+			sr_armaments = 100
+		}
+
+		upkeep = {
+			energy = 2.5
+			sr_armaments = 1.00
+		}
+	}
+
+	potential_country = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+
+	potential = {
+		OR = {
+			OR = {
+				has_building = building_indvidual_mach_training_1
+				has_building = building_indvidual_mach_training_2
 			}
+			owner = { is_ai = yes }
+		}
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	show_tech_unlock_if = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
 		}
 	}
 
 	ai_weight = {
-		base = 0
+		base = 30
+		modifier = {
+			factor = 3
+			is_pacifist = yes
+		}
 	}
 }
 
-#Defensive armies can't transport of the planet
-#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
-#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+ind_mach_integrated_armor_army = {
+	damage = 2.50
+	health = 2.50
+	morale = 2.00
+	morale_damage = 1.25
+	collateral_damage = 3.0
+	war_exhaustion = 1.5
+	time = 120
+	has_species = yes
+	prerequisites = { "tech_indvidual_mach_training1"}
 
-#ai_weight: as standard, but note that it pre-filters by whether the country can recruit this army (measuring by whether it is an assault army, whether it has the tech prereqs, and whether it passes potential_country)
+	icon = GFX_army_type_machine_assault
 
-# Assault Armies
+	resources = {
+		category = armies
+		cost = {
+			minerals = 400
+			alloys = 100
+			sr_armaments = 400
+		}
+
+		upkeep = {
+			energy = 3
+			sr_armaments = 4
+		}
+	}
+
+	potential_country = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+	
+	potential = {
+		OR = {
+			OR = {
+				has_building = building_indvidual_mach_training_1
+				has_building = building_indvidual_mach_training_2
+			}
+			owner = { is_ai = yes }
+		}
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	show_tech_unlock_if = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+
+	ai_weight = {
+		base = 80
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+	}
+}
+
+ind_mach_advanced_infantry = {
+	damage = 2.00
+	health = 2.00
+	morale = 2.00
+	morale_damage = 1.25
+	collateral_damage = 1.00
+	war_exhaustion = 0.50
+	time = 240
+	has_species = yes
+	prerequisites = { "tech_indvidual_mach_training2"}
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+			sr_armaments = 100
+		}
+
+		upkeep = {
+			energy = 2
+			sr_armaments = 1
+		}
+	}
+
+	potential_country = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+	
+	potential = {
+		OR = {
+			has_building = building_indvidual_mach_training_2
+			owner = { is_ai = yes }
+		}
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	show_tech_unlock_if = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+
+	ai_weight = {
+		base = 100
+	}
+}
+
+ind_mach_autonomous_war_droid = {
+	damage = 3.00
+	health = 4.00
+	has_morale = no
+	morale_damage = 1.25
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 240
+	has_species = yes
+	prerequisites = { "tech_indvidual_mach_training2"}
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			alloys = 200
+			sr_armaments = 600
+		}
+
+		upkeep = {
+			energy = 5
+			sr_armaments = 6
+		}
+	}
+
+	potential_country = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+	
+	potential = {
+		OR = {
+			has_building = building_indvidual_mach_training_2
+			owner = { is_ai = yes }
+		}
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	show_tech_unlock_if = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+
+	ai_weight = {
+		base = 30
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+	}
+}
+
+ind_mach_purge_squads_army = {
+	damage = 1.25
+	health = 1.00
+	has_morale = no
+	morale_damage = 1.00
+	collateral_damage = 10.00
+	war_exhaustion = 0.5
+	time = 90
+	has_species = yes
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+			sr_armaments = 100
+		}
+
+		upkeep = {
+			energy = 1
+			sr_armaments = 1
+		}
+	}
+
+	potential_country = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+
+	show_tech_unlock_if = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			is_individual_machine = yes
+		}
+	}
+		
+	potential = {
+		owner = { has_policy_flag = purge_squads }
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	prerequisites = { "tech_assault_armies" }
+
+	ai_weight = {
+		base = 0
+		modifier = {
+			set = 1000
+			AND = {
+				has_ethic = ethic_fanatic_xenophobe
+				is_fallen_empire = no
+				is_pacifist = no
+			}
+		}
+	}
+}
+
 assault_army = {
 	damage = 1.00
 	health = 1.00
@@ -914,7 +1256,7 @@ psionic_army = {
 	}
 
 	prerequisites = { "tech_telepathy" }
-
+	
 	potential_country = {
 		NOT = { has_authority = auth_machine_intelligence }
 	}
@@ -1155,7 +1497,6 @@ machine_assault_2 = {
 	}
 }
 
-# Undead Armies
 undead_army = {
 	damage = 1.00
 	health = 1.00
@@ -1274,21 +1615,133 @@ flamestorm_troopers_army = {
 	}
 }
 
-# Improved Mega-Warform, unlocked by War Forge relic
-cybrex_warform = {
-	damage = 5.0
-	health = 7.0
-	has_morale = no
-	morale_damage = 2
-	collateral_damage = 5.0
+individual_machine_assault_1 = {
+	damage = 1.00
+	health = 1.00
+	morale = 1.00
+	morale_damage = 1.00
+	collateral_damage = 2.0
+	war_exhaustion = 0.5
+	time = 90
+	has_species = yes
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+			sr_armaments = 100
+		}
+
+		upkeep = {
+			energy = 1
+			sr_armaments = 1
+		}
+	}
+
+	potential_country = {
+		is_individual_machine = yes
+	}
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	show_tech_unlock_if = {
+		is_individual_machine = yes
+	}
+
+	prerequisites = { "tech_assault_armies" }
+
+	ai_weight = {
+		base = 100
+		modifier = {
+			set = 70
+			has_technology = tech_indvidual_mach_training1
+		}
+		modifier = {
+			factor = 0.20
+			is_militarist = yes
+		}
+	}
+}
+
+# IM Armies 2
+individual_machine_assault_2 = {
+	damage = 1.5
+	health = 2.5
+	morale = 1.5
+	morale_damage = 1.5
+	collateral_damage = 2.0
+	war_exhaustion = 1.0
+	time = 120
+	has_species = yes
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 200
+			sr_armaments = 200
+		}
+
+		upkeep = {
+			energy = 2
+			sr_armaments = 2
+		}
+	}
+
+	potential_country = {
+		is_individual_machine = yes
+	}
+
+	potential = {
+		always = no
+	}
+	
+	ai_weight = {
+		base = 0
+	}
+}
+
+# IM Armies 3
+individual_machine_assault_3 = {
+	damage = 4.0
+	health = 6.0
+	morale = 2.0
+	morale_damage = 1.5
+	collateral_damage = 4.0
 	war_exhaustion = 4.0
 	time = 500
 	has_species = no
+
 	icon = GFX_army_type_machine_assault
+
 	resources = {
 		category = armies
+		cost = {
+			minerals = 800
+			sr_armaments = 800
+		}
+
+		upkeep = {
+			energy = 8
+			sr_armaments = 8
+		}
 	}
+
+	potential_country = {
+		is_individual_machine = yes
+	}
+
 	potential = {
 		always = no
+	}
+
+	ai_weight = {
+		base = 0
 	}
 }

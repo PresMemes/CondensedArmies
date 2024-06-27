@@ -1,6 +1,6 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated: Thu Apr 18 19:19:56 2024
+# Last Updated: Thu Jun 20 15:46:14 2024
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_1_input
@@ -375,7 +375,7 @@ inline_script = {
 						orbital_defence = {
 							exists = starbase
 							starbase = {
-								
+
 							}
 						}
 					}
@@ -444,7 +444,7 @@ inline_script = {
 						orbital_defence = {
 							exists = starbase
 							starbase = {
-								
+
 							}
 						}
 					}
@@ -1416,8 +1416,8 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = { has_trait = trait_mechanical }
 			owner = {
-				is_machine_empire = no
-				NOT = {
+				NOR = {
+					is_machine_empire = yes
 					has_technology = tech_acot_army_robotic_ae
 				}
 			}
@@ -1479,8 +1479,8 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = { has_trait = trait_mechanical }
 			owner = {
-				is_machine_empire = no
-				NOT = {
+				NOR = {
+					is_machine_empire = yes
 					has_technology = tech_acot_army_robotic_se
 				}
 			}
@@ -2957,7 +2957,10 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = { has_trait = trait_cybernetic }
 			owner = {
-				is_machine_empire = no
+				NOR = {
+					has_technology = tech_acot_army_se
+					is_machine_empire = yes
+				}
 			}
 		}
 		potential_country = {
@@ -3088,7 +3091,10 @@ inline_script = {
 		potential = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			owner = {
-				is_machine_empire = no
+				NOR = {
+					has_technology = tech_acot_army_se
+					is_machine_empire = yes
+				}
 			}
 		}
 		potential_country = {
@@ -3219,10 +3225,8 @@ inline_script = {
 			from = {
 				OR = {
 					has_utopia = no
-					OR = {
-						has_trait = trait_latent_psionic
-						has_trait = trait_psionic
-					}
+					has_trait = trait_latent_psionic
+					has_trait = trait_psionic
 				}
 				NOR = {
 					has_trait = trait_mechanical
@@ -3298,9 +3302,14 @@ inline_script = {
 					is_sapient = no
 				}
 			}
+			owner = {
+				NOT = {
+					has_technology = tech_acot_army_se
+				}
+			}
 		}
 		potential_country = {
-			is_machine_empire = no
+			is_regular_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = influence
@@ -3356,13 +3365,13 @@ inline_script = {
 					has_trait = trait_machine_unit
 					is_sapient = no
 				}
-				owner = {
-					has_technology = tech_acot_army_se
-				}
+			}
+			owner = {
+				has_technology = tech_acot_army_se
 			}
 		}
 		potential_country = {
-			is_machine_empire = no
+			is_regular_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = influence
@@ -3429,10 +3438,8 @@ inline_script = {
 					has_technology = tech_telepathy
 					has_technology = tech_gene_seed_purification
 					NAND = {
-						OR = {
-							has_ethic = ethic_militarist
-							has_ethic = ethic_fanatic_militarist
-						}
+
+						is_militarist = yes
 						has_technology = tech_gene_banks
 					}
 				}
@@ -3668,8 +3675,7 @@ inline_script = {
 			base = 15.0
 			modifier = {
 				factor = 10
-				is_fallen_empire = yes
-				has_ethic = ethic_fanatic_xenophobe
+				is_fallen_empire_xenophobe = yes
 			}
 			modifier = {
 				set = 0
@@ -4847,8 +4853,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_machine_dome
-				has_building = building_ae_machine_dome
+				has_building = building_acot_dm_machine_dome
+				has_building = building_acot_ae_machine_dome
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -4904,8 +4910,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_machine_dome
-				has_building = building_ae_machine_dome
+				has_building = building_acot_dm_machine_dome
+				has_building = building_acot_ae_machine_dome
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -6148,19 +6154,6 @@ inline_script = {
 		potential = { always = no }
 	}
 
-	pmca_ten_acot_army_hive_gene_cocoon_dm = {
-		use_armynames_from = acot_army_hive_gene_cocoon_dm
-		damage = 0.1
-		health = 40.0
-		has_morale = no
-		morale_damage = 0.0
-		collateral_damage = 0.0
-		war_exhaustion = 0.0
-		time = 140.0
-		icon = GFX_army_type_gene_warrior
-		potential = { always = no }
-	}
-
 	pmca_ten_acot_army_hive_gene_cocoon_ae = {
 		use_armynames_from = acot_army_hive_gene_cocoon_ae
 		damage = 0.1
@@ -6212,6 +6205,9 @@ inline_script = {
 			from = {
 				has_trait = trait_hive_mind
 			}
+			owner = {
+				NOT = { has_technology = tech_acot_army_hive_se }
+			}
 		}
 		potential_country = {
 			is_hive_empire = yes
@@ -6223,8 +6219,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_hive_evochamber
-				has_building = building_ae_hive_evochamber
+				has_building = building_acot_dm_hive_evochamber
+				has_building = building_acot_ae_hive_evochamber
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -6277,8 +6273,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_hive_evochamber
-				has_building = building_ae_hive_evochamber
+				has_building = building_acot_dm_hive_evochamber
+				has_building = building_acot_ae_hive_evochamber
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -6719,7 +6715,7 @@ inline_script = {
 						orbital_defence = {
 							exists = starbase
 							starbase = {
-								
+
 							}
 						}
 					}
@@ -6788,7 +6784,7 @@ inline_script = {
 						orbital_defence = {
 							exists = starbase
 							starbase = {
-								
+
 							}
 						}
 					}
@@ -7760,8 +7756,8 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = { has_trait = trait_mechanical }
 			owner = {
-				is_machine_empire = no
-				NOT = {
+				NOR = {
+					is_machine_empire = yes
 					has_technology = tech_acot_army_robotic_ae
 				}
 			}
@@ -7823,8 +7819,8 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = { has_trait = trait_mechanical }
 			owner = {
-				is_machine_empire = no
-				NOT = {
+				NOR = {
+					is_machine_empire = yes
 					has_technology = tech_acot_army_robotic_se
 				}
 			}
@@ -9301,7 +9297,10 @@ inline_script = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			from = { has_trait = trait_cybernetic }
 			owner = {
-				is_machine_empire = no
+				NOR = {
+					has_technology = tech_acot_army_se
+					is_machine_empire = yes
+				}
 			}
 		}
 		potential_country = {
@@ -9432,7 +9431,10 @@ inline_script = {
 		potential = {
 			NOT = { has_global_flag = acot_army_forbidden }
 			owner = {
-				is_machine_empire = no
+				NOR = {
+					has_technology = tech_acot_army_se
+					is_machine_empire = yes
+				}
 			}
 		}
 		potential_country = {
@@ -9563,10 +9565,8 @@ inline_script = {
 			from = {
 				OR = {
 					has_utopia = no
-					OR = {
-						has_trait = trait_latent_psionic
-						has_trait = trait_psionic
-					}
+					has_trait = trait_latent_psionic
+					has_trait = trait_psionic
 				}
 				NOR = {
 					has_trait = trait_mechanical
@@ -9642,9 +9642,14 @@ inline_script = {
 					is_sapient = no
 				}
 			}
+			owner = {
+				NOT = {
+					has_technology = tech_acot_army_se
+				}
+			}
 		}
 		potential_country = {
-			is_machine_empire = no
+			is_regular_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = influence
@@ -9700,13 +9705,13 @@ inline_script = {
 					has_trait = trait_machine_unit
 					is_sapient = no
 				}
-				owner = {
-					has_technology = tech_acot_army_se
-				}
+			}
+			owner = {
+				has_technology = tech_acot_army_se
 			}
 		}
 		potential_country = {
-			is_machine_empire = no
+			is_regular_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = influence
@@ -9773,10 +9778,8 @@ inline_script = {
 					has_technology = tech_telepathy
 					has_technology = tech_gene_seed_purification
 					NAND = {
-						OR = {
-							has_ethic = ethic_militarist
-							has_ethic = ethic_fanatic_militarist
-						}
+
+						is_militarist = yes
 						has_technology = tech_gene_banks
 					}
 				}
@@ -10012,8 +10015,7 @@ inline_script = {
 			base = 20.0
 			modifier = {
 				factor = 10
-				is_fallen_empire = yes
-				has_ethic = ethic_fanatic_xenophobe
+				is_fallen_empire_xenophobe = yes
 			}
 			modifier = {
 				set = 0
@@ -11191,8 +11193,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_machine_dome
-				has_building = building_ae_machine_dome
+				has_building = building_acot_dm_machine_dome
+				has_building = building_acot_ae_machine_dome
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -11248,8 +11250,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_machine_dome
-				has_building = building_ae_machine_dome
+				has_building = building_acot_dm_machine_dome
+				has_building = building_acot_ae_machine_dome
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -12492,19 +12494,6 @@ inline_script = {
 		potential = { always = no }
 	}
 
-	pmca_hundred_acot_army_hive_gene_cocoon_dm = {
-		use_armynames_from = acot_army_hive_gene_cocoon_dm
-		damage = 1.0
-		health = 400.0
-		has_morale = no
-		morale_damage = 0.0
-		collateral_damage = 0.0
-		war_exhaustion = 0.0
-		time = 140.0
-		icon = GFX_army_type_gene_warrior
-		potential = { always = no }
-	}
-
 	pmca_hundred_acot_army_hive_gene_cocoon_ae = {
 		use_armynames_from = acot_army_hive_gene_cocoon_ae
 		damage = 1.0
@@ -12556,6 +12545,9 @@ inline_script = {
 			from = {
 				has_trait = trait_hive_mind
 			}
+			owner = {
+				NOT = { has_technology = tech_acot_army_hive_se }
+			}
 		}
 		potential_country = {
 			is_hive_empire = yes
@@ -12567,8 +12559,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_hive_evochamber
-				has_building = building_ae_hive_evochamber
+				has_building = building_acot_dm_hive_evochamber
+				has_building = building_acot_ae_hive_evochamber
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -12621,8 +12613,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_hive_evochamber
-				has_building = building_ae_hive_evochamber
+				has_building = building_acot_dm_hive_evochamber
+				has_building = building_acot_ae_hive_evochamber
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}

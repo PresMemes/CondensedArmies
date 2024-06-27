@@ -68,6 +68,17 @@
  pmca_hundred_psionic_army_2_desc: "$psionic_army_2_desc$"
 
 
+ ###################
+ ### CLONE_ARMY2 ###
+ ###################
+ pmca_ten_clone_army2: "$pmca_ten$ $clone_army2$"
+ pmca_ten_clone_army2_plural: "$clone_army2_plural$"
+ pmca_ten_clone_army2_desc: "$clone_army2_desc$"
+ pmca_hundred_clone_army2: "$pmca_hundred$ $clone_army2$"
+ pmca_hundred_clone_army2_plural: "$clone_army2_plural$"
+ pmca_hundred_clone_army2_desc: "$clone_army2_desc$"
+
+
  #########################
  ### HIVE_ASSAULT_ARMY ###
  #########################
@@ -101,13 +112,68 @@
  pmca_hundred_hive_gene_warrior_army_desc: "$hive_gene_warrior_army_desc$"
 
 
- ###################
- ### CLONE_ARMY2 ###
- ###################
- pmca_ten_clone_army2: "$pmca_ten$ $clone_army2$"
- pmca_ten_clone_army2_plural: "$clone_army2_plural$"
- pmca_ten_clone_army2_desc: "$clone_army2_desc$"
- pmca_hundred_clone_army2: "$pmca_hundred$ $clone_army2$"
- pmca_hundred_clone_army2_plural: "$clone_army2_plural$"
- pmca_hundred_clone_army2_desc: "$clone_army2_desc$"
+ ###################################
+ ### IND_MACH_HEAVY_ASSAULT_ARMY ###
+ ###################################
+ pmca_ten_ind_mach_heavy_assault_army: "$pmca_ten$ $ind_mach_heavy_assault_army$"
+ pmca_ten_ind_mach_heavy_assault_army_plural: "$ind_mach_heavy_assault_army_plural$"
+ pmca_ten_ind_mach_heavy_assault_army_desc: "$ind_mach_heavy_assault_army_desc$"
+ pmca_hundred_ind_mach_heavy_assault_army: "$pmca_hundred$ $ind_mach_heavy_assault_army$"
+ pmca_hundred_ind_mach_heavy_assault_army_plural: "$ind_mach_heavy_assault_army_plural$"
+ pmca_hundred_ind_mach_heavy_assault_army_desc: "$ind_mach_heavy_assault_army_desc$"
+
+
+ ##############################
+ ### IND_MACH_COMMANDO_ARMY ###
+ ##############################
+ pmca_ten_ind_mach_commando_army: "$pmca_ten$ $ind_mach_commando_army$"
+ pmca_ten_ind_mach_commando_army_plural: "$ind_mach_commando_army_plural$"
+ pmca_ten_ind_mach_commando_army_desc: "$ind_mach_commando_army_desc$"
+ pmca_hundred_ind_mach_commando_army: "$pmca_hundred$ $ind_mach_commando_army$"
+ pmca_hundred_ind_mach_commando_army_plural: "$ind_mach_commando_army_plural$"
+ pmca_hundred_ind_mach_commando_army_desc: "$ind_mach_commando_army_desc$"
+
+
+ ######################################
+ ### IND_MACH_INTEGRATED_ARMOR_ARMY ###
+ ######################################
+ pmca_ten_ind_mach_integrated_armor_army: "$pmca_ten$ $ind_mach_integrated_armor_army$"
+ pmca_ten_ind_mach_integrated_armor_army_plural: "$ind_mach_integrated_armor_army_plural$"
+ pmca_ten_ind_mach_integrated_armor_army_desc: "$ind_mach_integrated_armor_army_desc$"
+ pmca_hundred_ind_mach_integrated_armor_army: "$pmca_hundred$ $ind_mach_integrated_armor_army$"
+ pmca_hundred_ind_mach_integrated_armor_army_plural: "$ind_mach_integrated_armor_army_plural$"
+ pmca_hundred_ind_mach_integrated_armor_army_desc: "$ind_mach_integrated_armor_army_desc$"
+
+
+ ##################################
+ ### IND_MACH_ADVANCED_INFANTRY ###
+ ##################################
+ pmca_ten_ind_mach_advanced_infantry: "$pmca_ten$ $ind_mach_advanced_infantry$"
+ pmca_ten_ind_mach_advanced_infantry_plural: "$ind_mach_advanced_infantry_plural$"
+ pmca_ten_ind_mach_advanced_infantry_desc: "$ind_mach_advanced_infantry_desc$"
+ pmca_hundred_ind_mach_advanced_infantry: "$pmca_hundred$ $ind_mach_advanced_infantry$"
+ pmca_hundred_ind_mach_advanced_infantry_plural: "$ind_mach_advanced_infantry_plural$"
+ pmca_hundred_ind_mach_advanced_infantry_desc: "$ind_mach_advanced_infantry_desc$"
+
+
+ #####################################
+ ### IND_MACH_AUTONOMOUS_WAR_DROID ###
+ #####################################
+ pmca_ten_ind_mach_autonomous_war_droid: "$pmca_ten$ $ind_mach_autonomous_war_droid$"
+ pmca_ten_ind_mach_autonomous_war_droid_plural: "$ind_mach_autonomous_war_droid_plural$"
+ pmca_ten_ind_mach_autonomous_war_droid_desc: "$ind_mach_autonomous_war_droid_desc$"
+ pmca_hundred_ind_mach_autonomous_war_droid: "$pmca_hundred$ $ind_mach_autonomous_war_droid$"
+ pmca_hundred_ind_mach_autonomous_war_droid_plural: "$ind_mach_autonomous_war_droid_plural$"
+ pmca_hundred_ind_mach_autonomous_war_droid_desc: "$ind_mach_autonomous_war_droid_desc$"
+
+
+ ##################################
+ ### IND_MACH_PURGE_SQUADS_ARMY ###
+ ##################################
+ pmca_ten_ind_mach_purge_squads_army: "$pmca_ten$ $ind_mach_purge_squads_army$"
+ pmca_ten_ind_mach_purge_squads_army_plural: "$ind_mach_purge_squads_army_plural$"
+ pmca_ten_ind_mach_purge_squads_army_desc: "$ind_mach_purge_squads_army_desc$"
+ pmca_hundred_ind_mach_purge_squads_army: "$pmca_hundred$ $ind_mach_purge_squads_army$"
+ pmca_hundred_ind_mach_purge_squads_army_plural: "$ind_mach_purge_squads_army_plural$"
+ pmca_hundred_ind_mach_purge_squads_army_desc: "$ind_mach_purge_squads_army_desc$"
 

@@ -1,10 +1,10 @@
-# Spawns an army with a flag so PMCA knows what it is
+# Spawns an army with a flag so Condensed Armies knows what it is
 # Scopes: this = planet
 # Parameters: OWNER = target | TYPE = army | MULT = ten/hundred
 pmca_spawn_condensed_army = {
 	create_army = {
 		owner = $OWNER|root.owner$
-		species = $SPECIES|root.owner.species$
+		species = $SPECIES|root.owner_main_species$
 		type = $TYPE$
 	}
 	last_created_army = { set_army_flag = pmca_times_$MULT_FLAG$_army }

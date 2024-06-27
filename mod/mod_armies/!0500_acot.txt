@@ -1,6 +1,6 @@
-#Defensive armies can't transport of the planet
-#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
-#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+# Defensive armies can't transport of the planet
+# maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+# morale_damage = 1		# Average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
 
 ############### STANDARD ARMY ###############
 
@@ -221,7 +221,7 @@ acot_infantry_autoarmor = {
 		is_regular_empire = yes
 		is_fallen_empire = no
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -246,7 +246,7 @@ acot_infantry_autoarmor_se = {
 		is_regular_empire = yes
 		is_fallen_empire = no
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -273,7 +273,7 @@ acot_infantry_medium_autoarmor = {
 		is_regular_empire = yes
 		is_fallen_empire = no
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -298,7 +298,7 @@ acot_infantry_medium_autoarmor_se = {
 		is_regular_empire = yes
 		is_fallen_empire = no
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -325,7 +325,7 @@ acot_infantry_heavy_autoarmor = {
 		is_regular_empire = yes
 		is_fallen_empire = no
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -350,7 +350,7 @@ acot_infantry_heavy_autoarmor_se = {
 		is_regular_empire = yes
 		is_fallen_empire = no
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -389,7 +389,7 @@ slave_army = {
 					orbital_defence = {
 						exists = starbase
 						starbase = {
-							#has_starbase_building = ring_slave_processing_facility
+							# has_starbase_building = ring_slave_processing_facility
 						}
 					}
 				}
@@ -399,7 +399,7 @@ slave_army = {
 	}
 	potential_country = {
 		has_policy_flag = slavery_allowed
-		NOT = { has_authority = auth_machine_intelligence }
+		NOT = { is_machine_empire = yes }
 	}
 	potential = {
 		owner = {
@@ -457,7 +457,7 @@ acot_slave_army_dm = {
 					orbital_defence = {
 						exists = starbase
 						starbase = {
-							#has_starbase_building = ring_slave_processing_facility
+							# has_starbase_building = ring_slave_processing_facility
 						}
 					}
 				}
@@ -467,7 +467,7 @@ acot_slave_army_dm = {
 	}
 	potential_country = {
 		has_policy_flag = slavery_allowed
-		NOT = { has_authority = auth_machine_intelligence }
+		NOT = { is_machine_empire = yes }
 	}
 	potential = {
 		owner = {
@@ -505,7 +505,7 @@ undead_army = {
 	time = 70
 	icon = GFX_army_type_undead
 	pop_limited = no
-	disband_if_species_lacks_rights = no #i.e. if you resurrect your enemies, you get to keep these armies, even if you are a purifier
+	disband_if_species_lacks_rights = no # i.e. If you resurrect your enemies, you get to keep these armies, even if you are a purifier
 	prerequisites = { "tech_assault_armies" }
 
 	resources = {
@@ -562,7 +562,7 @@ acot_undead_army_dm = {
 	time = 70
 	icon = GFX_army_type_undead
 	pop_limited = no
-	disband_if_species_lacks_rights = no #i.e. if you resurrect your enemies, you get to keep these armies, even if you are a purifier
+	disband_if_species_lacks_rights = no # i.e. If you resurrect your enemies, you get to keep these armies, even if you are a purifier
 	prerequisites = { "tech_acot_army_dm" }
 	resources = {
 		category = armies
@@ -599,7 +599,6 @@ acot_undead_army_dm = {
 		base = 120
 	}
 }
-
 
 ######################### LIGHT #########################
 
@@ -665,7 +664,7 @@ acot_light_armor_pilot = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -732,7 +731,7 @@ acot_light_armor_pilot_dm = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -799,7 +798,7 @@ acot_light_armor_pilot_ae = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -861,7 +860,7 @@ acot_light_armor_pilot_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -931,7 +930,7 @@ acot_heavy_armor_pilot = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -999,7 +998,7 @@ acot_heavy_armor_pilot_dm = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -1067,7 +1066,7 @@ acot_heavy_armor_pilot_ae = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -1130,7 +1129,7 @@ acot_heavy_armor_pilot_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -1450,7 +1449,6 @@ robotic_army = {
 	}
 }
 
-
 # Synthetic Omnic Armies
 acot_droid_army_dm = {
 	use_armynames_from = robotic_army
@@ -1478,8 +1476,8 @@ acot_droid_army_dm = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = { has_trait = "trait_mechanical" }
 		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
-			NOT = {
+			NOR = {
+				is_machine_empire = yes
 				has_technology = tech_acot_army_robotic_ae
 			}
 		}
@@ -1512,7 +1510,6 @@ acot_droid_army_dm = {
 	}
 }
 
-
 # Synthetic Omnic Armies
 acot_droid_army_ae = {
 	use_armynames_from = robotic_army
@@ -1540,8 +1537,8 @@ acot_droid_army_ae = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = { has_trait = "trait_mechanical" }
 		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
-			NOT = {
+			NOR = {
+				is_machine_empire = yes
 				has_technology = tech_acot_army_robotic_se
 			}
 		}
@@ -1574,7 +1571,6 @@ acot_droid_army_ae = {
 	}
 }
 
-
 # Synthetic Omnic Armies
 acot_droid_army_se = {
 	use_armynames_from = robotic_army
@@ -1602,7 +1598,7 @@ acot_droid_army_se = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = { has_trait = "trait_mechanical" }
 		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = { is_machine_empire = yes }
 		}
 	}
 
@@ -1635,7 +1631,6 @@ acot_droid_army_se = {
 
 ###################### ROBOTIC INFANTRY TORSO
 
-
 # Robotic Armies
 acot_droid_army_torso = {
 	damage = 1.00
@@ -1652,38 +1647,10 @@ acot_droid_army_torso = {
 		category = armies
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = { has_trait = "trait_mechanical" }
-		owner = {
-			NOT = {
-				has_technology = tech_acot_army_robotic_dm
-			}
-		}
-	}
-
-	allow = {
-		owner = { NOT = { has_policy_flag = robots_outlawed } }
-	}
-
-	ai_weight = {
-		base = 60
-		modifier = {
-			set = 0
-			OR = {
-				NOT = { has_policy_flag = robots_outlawed }
-				has_technology = tech_telepathy
-				has_technology = tech_gene_seed_purification
-				NAND = {
-					has_ai_personality_behaviour = robot_liberator
-					has_technology = tech_droid_workers
-				}
-			}
-			is_fallen_empire = no
-		}
 	}
 }
-
 
 # Synthetic Omnic Armies
 acot_droid_army_torso_dm = {
@@ -1701,45 +1668,10 @@ acot_droid_army_torso_dm = {
 		category = armies
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = { has_trait = "trait_mechanical" }
-		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
-			NOT = {
-				has_technology = tech_acot_army_robotic_ae
-			}
-		}
-	}
-
-	allow = {
-		owner = { NOT = { has_policy_flag = robots_outlawed } }
-	}
-
-	ai_weight = {
-		base = 60
-		modifier = {
-			set = 0
-			OR = {
-				NOT = { has_policy_flag = robots_outlawed }
-				has_technology = tech_telepathy
-				has_technology = tech_gene_seed_purification
-				NAND = {
-					has_ai_personality_behaviour = robot_liberator
-					has_technology = tech_droid_workers
-				}
-			}
-			is_fallen_empire = no
-		}
-		modifier = {
-			set = 0
-			is_fallen_empire = yes
-			NOT = { has_ethic = ethic_fanatic_materialist }
-		}
 	}
 }
-
 
 # Synthetic Omnic Armies
 acot_droid_army_torso_ae = {
@@ -1757,45 +1689,10 @@ acot_droid_army_torso_ae = {
 		category = armies
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = { has_trait = "trait_mechanical" }
-		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
-			NOT = {
-				has_technology = tech_acot_army_robotic_se
-			}
-		}
-	}
-
-	allow = {
-		owner = { NOT = { has_policy_flag = robots_outlawed } }
-	}
-
-	ai_weight = {
-		base = 60
-		modifier = {
-			set = 0
-			OR = {
-				NOT = { has_policy_flag = robots_outlawed }
-				has_technology = tech_telepathy
-				has_technology = tech_gene_seed_purification
-				NAND = {
-					has_ai_personality_behaviour = robot_liberator
-					has_technology = tech_droid_workers
-				}
-			}
-			is_fallen_empire = no
-		}
-		modifier = {
-			set = 0
-			is_fallen_empire = yes
-			NOT = { has_ethic = ethic_fanatic_materialist }
-		}
 	}
 }
-
 
 # Synthetic Omnic Armies
 acot_droid_army_torso_se = {
@@ -1813,41 +1710,10 @@ acot_droid_army_torso_se = {
 		category = armies
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = { has_trait = "trait_mechanical" }
-		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
-		}
-	}
-
-	allow = {
-		owner = { NOT = { has_policy_flag = robots_outlawed } }
-	}
-
-	ai_weight = {
-		base = 60
-		modifier = {
-			set = 0
-			OR = {
-				NOT = { has_policy_flag = robots_outlawed }
-				has_technology = tech_telepathy
-				has_technology = tech_gene_seed_purification
-				NAND = {
-					has_ai_personality_behaviour = robot_liberator
-					has_technology = tech_droid_workers
-				}
-			}
-			is_fallen_empire = no
-		}
-		modifier = {
-			set = 0
-			is_fallen_empire = yes
-			NOT = { has_ethic = ethic_fanatic_materialist }
-		}
 	}
 }
-
 
 ###################### WARMECH
 
@@ -2349,7 +2215,7 @@ acot_army_mat_pilot = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -2412,7 +2278,7 @@ acot_army_mat_pilot_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -2679,6 +2545,7 @@ acot_army_phile_se = {
 		}
 	}
 }
+
 ############### EGA
 
 # FE Egalitarian Gunship
@@ -2731,7 +2598,7 @@ acot_army_ega_pilot = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -2793,10 +2660,11 @@ acot_army_ega_pilot_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
+
 ############### AUTH
 
 # Authoritarian Enforcers
@@ -2916,7 +2784,7 @@ acot_army_paci = {
 
 	show_tech_unlock_if = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = { is_machine_empire = yes }
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
@@ -2933,7 +2801,7 @@ acot_army_paci = {
 		}
 		owner = {
 			has_ethic = ethic_fanatic_pacifist
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = { is_machine_empire = yes }
 		}
 	}
 }
@@ -3107,7 +2975,10 @@ acot_army_cyborg = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = { has_trait = trait_cybernetic }
 		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOR = {
+				has_technology = tech_acot_army_se
+				is_machine_empire = yes
+			}
 		}
 	}
 }
@@ -3153,7 +3024,6 @@ acot_army_cyborg_se = {
 
 ###################### CYBORG INFANTRY TORSO
 
-
 # Synthetic Omnic Armies
 acot_army_cyborg_torso = {
 	use_armynames_from = assault_army
@@ -3176,13 +3046,8 @@ acot_army_cyborg_torso = {
 			influence = 17
 		}
 	}
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = { has_trait = trait_cybernetic }
-		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
-		}
 	}
 }
 # Synthetic Omnic Armies
@@ -3206,13 +3071,8 @@ acot_army_cyborg_torso_se = {
 			influence = 20
 		}
 	}
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = { has_trait = "trait_cybernetic" }
-		owner = {
-			has_technology = tech_acot_army_se
-		}
 	}
 }
 
@@ -3247,7 +3107,10 @@ acot_army_synth = {
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOR = {
+				has_technology = tech_acot_army_se
+				is_machine_empire = yes
+			}
 		}
 	}
 }
@@ -3292,7 +3155,6 @@ acot_army_synth_se = {
 
 ############### SYNTH TORSO
 
-
 # Synthetic Omnic Armies
 acot_army_synth_torso = {
 	use_armynames_from = assault_army
@@ -3315,12 +3177,8 @@ acot_army_synth_torso = {
 			influence = 30
 		}
 	}
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
-		}
 	}
 }
 
@@ -3346,12 +3204,8 @@ acot_army_synth_torso_se = {
 		}
 	}
 	prerequisites = { "tech_acot_army_synth" }
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		owner = {
-			has_technology = tech_acot_army_se
-		}
 	}
 }
 
@@ -3383,11 +3237,9 @@ psionic_army = {
 	potential = {
 		from = {
 			OR = {
-				NOT = { host_has_dlc = "Utopia" }
-				OR = {
-					has_trait = trait_latent_psionic
-					has_trait = trait_psionic
-				}
+				NOT = { has_utopia = yes }
+				has_trait = trait_latent_psionic
+				has_trait = trait_psionic
 			}
 			NOR = {
 				has_trait = "trait_mechanical"
@@ -3445,19 +3297,24 @@ acot_army_psi = {
 	}
 	prerequisites = { "tech_acot_army_psi" }
 	potential_country = {
-		NOT = { has_authority = auth_machine_intelligence }
+		is_regular_empire = yes
 	}
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
 			OR = {
-				NOT = { host_has_dlc = "Utopia" }
+				NOT = { has_utopia = yes }
 				has_trait = trait_psionic
 			}
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
 				is_sapient = no
+			}
+		}
+		owner = {
+			NOT = {
+				has_technology = tech_acot_army_se
 			}
 		}
 	}
@@ -3496,7 +3353,7 @@ acot_army_psi_se = {
 	}
 	prerequisites = { "tech_acot_army_psi" }
 	potential_country = {
-		NOT = { has_authority = auth_machine_intelligence }
+		is_regular_empire = yes
 	}
 	show_tech_unlock_if = {
 		owner = {
@@ -3507,7 +3364,7 @@ acot_army_psi_se = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
 			OR = {
-				NOT = { host_has_dlc = "Utopia" }
+				NOT = { has_utopia = yes }
 				has_trait = trait_psionic
 			}
 			NOR = {
@@ -3515,9 +3372,9 @@ acot_army_psi_se = {
 				has_trait = "trait_machine_unit"
 				is_sapient = no
 			}
-			owner = {
-				has_technology = tech_acot_army_se
-			}
+		}
+		owner = {
+			has_technology = tech_acot_army_se
 		}
 	}
 
@@ -3582,10 +3439,8 @@ clone_army = {
 				has_technology = tech_telepathy
 				has_technology = tech_gene_seed_purification
 				NAND = {
-					OR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-					}
+
+					is_militarist = yes
 					has_technology = tech_gene_banks
 				}
 			}
@@ -3623,12 +3478,12 @@ acot_army_clone_dm = {
 
 	prerequisites = { "tech_acot_army_clone_dm" }
 
-	show_tech_unlock_if = { NOT = { has_authority = auth_machine_intelligence } }
+	show_tech_unlock_if = { NOT = { is_machine_empire = yes } }
 
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = { is_machine_empire = yes }
 		}
 	}
 }
@@ -3806,8 +3661,7 @@ xenomorph_army = {
 		base = 10
 		modifier = {
 			factor = 10
-			is_fallen_empire = yes
-			has_ethic = ethic_fanatic_xenophobe
+			is_fallen_empire_xenophobe = yes
 		}
 		modifier = {
 			set = 0
@@ -3815,13 +3669,9 @@ xenomorph_army = {
 		}
 	}
 }
-#Defensive armies can't transport of the planet
-#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
-#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
 
 ############### STANDARD ARMY ###############
 ### OVERWRITE
-
 
 ### Machine Empire Armies
 
@@ -3848,7 +3698,7 @@ machine_assault_1 = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -3859,7 +3709,7 @@ machine_assault_1 = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_assault_armies" }
 
@@ -3891,7 +3741,7 @@ acot_army_machine_dm = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -3902,7 +3752,7 @@ acot_army_machine_dm = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_dm" }
 
@@ -3933,7 +3783,7 @@ acot_army_machine_ae = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -3944,7 +3794,7 @@ acot_army_machine_ae = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_ae" }
 
@@ -3982,7 +3832,7 @@ acot_army_machine_se = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_se" }
 }
@@ -4009,16 +3859,9 @@ acot_army_machine_torso = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
-	potential = {
+	potential_country = { is_machine_empire = yes }
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			NOT = { has_technology = tech_acot_army_machine_dm }
-		}
 	}
 }
 
@@ -4042,16 +3885,9 @@ acot_army_machine_torso_dm = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
-	potential = {
+	potential_country = { is_machine_empire = yes }
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			NOT = { has_technology = tech_acot_army_machine_ae }
-		}
 	}
 }
 
@@ -4074,16 +3910,9 @@ acot_army_machine_torso_ae = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
-	potential = {
+	potential_country = { is_machine_empire = yes }
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			NOT = { has_technology = tech_acot_army_machine_se }
-		}
 	}
 }
 
@@ -4105,13 +3934,8 @@ acot_army_machine_torso_se = {
 			minerals = 160
 		}
 	}
-
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
 	}
 }
 
@@ -4142,7 +3966,7 @@ acot_army_machine_spm = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		owner = {
@@ -4150,7 +3974,7 @@ acot_army_machine_spm = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { tech_adaptive_combat_algorithms }
 
@@ -4184,7 +4008,7 @@ acot_army_machine_spm_dm = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		owner = {
@@ -4192,7 +4016,7 @@ acot_army_machine_spm_dm = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_dm" }
 
@@ -4225,7 +4049,7 @@ acot_army_machine_spm_ae = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		owner = {
@@ -4233,7 +4057,7 @@ acot_army_machine_spm_ae = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_ae" }
 
@@ -4273,7 +4097,7 @@ acot_army_machine_spm_se = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_se" }
 }
@@ -4304,7 +4128,7 @@ machine_assault_2 = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -4315,7 +4139,7 @@ machine_assault_2 = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_assault_armies" }
 
@@ -4349,7 +4173,7 @@ acot_army_machine_light_dm = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -4360,7 +4184,7 @@ acot_army_machine_light_dm = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_dm" }
 
@@ -4393,7 +4217,7 @@ acot_army_machine_light_ae = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -4404,7 +4228,7 @@ acot_army_machine_light_ae = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_ae" }
 
@@ -4437,7 +4261,7 @@ acot_army_machine_light_se = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -4445,7 +4269,7 @@ acot_army_machine_light_se = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_se" }
 
@@ -4476,15 +4300,8 @@ acot_army_machine_light_torso = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			NOT = { has_technology = tech_acot_army_machine_dm }
-		}
 	}
 }
 
@@ -4509,15 +4326,8 @@ acot_army_machine_light_torso_dm = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			NOT = { has_technology = tech_acot_army_machine_ae }
-		}
 	}
 }
 
@@ -4541,15 +4351,8 @@ acot_army_machine_light_torso_ae = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			NOT = { has_technology = tech_acot_army_machine_ae }
-		}
 	}
 }
 
@@ -4573,15 +4376,8 @@ acot_army_machine_light_torso_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			NOT = { has_technology = tech_acot_army_machine_ae }
-		}
 	}
 }
 
@@ -4612,7 +4408,7 @@ machine_assault_3 = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -4656,7 +4452,7 @@ acot_army_machine_heavy_dm = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -4667,7 +4463,7 @@ acot_army_machine_heavy_dm = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_dm" }
 
@@ -4701,7 +4497,7 @@ acot_army_machine_heavy_ae = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -4712,7 +4508,7 @@ acot_army_machine_heavy_ae = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_ae" }
 
@@ -4746,7 +4542,7 @@ acot_army_machine_heavy_se = {
 		}
 	}
 
-	potential_country = { has_authority = auth_machine_intelligence }
+	potential_country = { is_machine_empire = yes }
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
@@ -4754,7 +4550,7 @@ acot_army_machine_heavy_se = {
 		}
 	}
 
-	show_tech_unlock_if = { has_authority = auth_machine_intelligence }
+	show_tech_unlock_if = { is_machine_empire = yes }
 
 	prerequisites = { "tech_acot_army_machine_se" }
 
@@ -4947,7 +4743,6 @@ acot_army_machine_cyborg_se = {
 
 ###########
 
-
 # Assault Armies
 acot_army_machine_cyborg_torso = {
 	damage = 1.00
@@ -4965,19 +4760,8 @@ acot_army_machine_cyborg_torso = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_cybernetic
-			NOR = {
-				is_sapient = no
-			}
-		}
-		owner = {
-			NOT = {
-				has_technology = tech_acot_army_machine_dm
-			}
-		}
 	}
 }
 
@@ -4998,19 +4782,8 @@ acot_army_machine_cyborg_torso_dm = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_cybernetic
-			NOR = {
-				is_sapient = no
-			}
-		}
-		owner = {
-			NOT = {
-				has_technology = tech_acot_army_machine_ae
-			}
-		}
 	}
 }
 
@@ -5031,19 +4804,8 @@ acot_army_machine_cyborg_torso_ae = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_cybernetic
-			NOR = {
-				is_sapient = no
-			}
-		}
-		owner = {
-			NOT = {
-				has_technology = tech_acot_army_machine_se
-			}
-		}
 	}
 }
 
@@ -5064,14 +4826,8 @@ acot_army_machine_cyborg_torso_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_cybernetic
-			NOR = {
-				is_sapient = no
-			}
-		}
 	}
 }
 
@@ -5104,18 +4860,17 @@ acot_army_machine_special = {
 		}
 	}
 
-
 	allow = {
 		OR = {
-			has_building = building_fe_machine_dome
-			has_building = building_ae_machine_dome
+			has_building = building_acot_dm_machine_dome
+			has_building = building_acot_ae_machine_dome
 			has_district = district_acot_enigmapolis_fortress
 		}
 	}
 
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
-		owner = { has_authority = auth_machine_intelligence }
+		owner = { is_machine_empire = yes }
 		from = {
 			has_trait = "trait_machine_unit"
 		}
@@ -5156,11 +4911,10 @@ acot_army_machine_special_se = {
 		}
 	}
 
-
 	allow = {
 		OR = {
-			has_building = building_fe_machine_dome
-			has_building = building_ae_machine_dome
+			has_building = building_acot_dm_machine_dome
+			has_building = building_acot_ae_machine_dome
 			has_district = district_acot_enigmapolis_fortress
 		}
 	}
@@ -5173,7 +4927,7 @@ acot_army_machine_special_se = {
 
 	potential = {
 		NOT = { has_global_flag = acot_army_forbidden }
-		owner = { has_authority = auth_machine_intelligence }
+		owner = { is_machine_empire = yes }
 		from = {
 			has_trait = "trait_machine_unit"
 		}
@@ -5186,7 +4940,6 @@ acot_army_machine_special_se = {
 }
 
 ################
-
 
 # Omnimech
 acot_army_machine_special_torso = {
@@ -5212,18 +4965,8 @@ acot_army_machine_special_torso = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		owner = { has_authority = auth_machine_intelligence }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			NOT = {
-				has_technology = tech_acot_army_machine_se
-			}
-		}
 	}
 }
 
@@ -5251,25 +4994,10 @@ acot_army_machine_special_torso_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		NOT = { has_global_flag = acot_army_forbidden }
-		owner = { has_authority = auth_machine_intelligence }
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			has_technology = tech_acot_army_machine_se
-		}
 	}
-
 }
-
-#Defensive armies can't transport of the planet
-#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
-#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
-
-############### STANDARD ARMY ###############
 
 ############# INFANTRY - GOOD MORALE, LOW COLLATERAL DAMAGE, FAST TO RECRUIT
 # Assault Armies
@@ -5695,7 +5423,6 @@ acot_hive_swarmer_se = {
 
 ######################### BROODLING
 
-
 # Assault Armies
 acot_hive_broodling_1 = {
 	use_armynames_from = clone_army
@@ -5719,7 +5446,7 @@ acot_hive_broodling_1 = {
 	potential_country = {
 		is_hive_empire = yes
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -5746,7 +5473,7 @@ acot_hive_broodling_dm = {
 	potential_country = {
 		is_hive_empire = yes
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -5773,7 +5500,7 @@ acot_hive_broodling_ae = {
 	potential_country = {
 		is_hive_empire = yes
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -5801,7 +5528,7 @@ acot_hive_broodling_se = {
 	potential_country = {
 		is_hive_empire = yes
 	}
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -6324,11 +6051,8 @@ acot_hive_heavy_cocoon_1 = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
 	}
 }
 
@@ -6349,11 +6073,8 @@ acot_hive_heavy_cocoon_dm = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
 	}
 }
 
@@ -6374,11 +6095,8 @@ acot_hive_heavy_cocoon_ae = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
 	}
 }
 
@@ -6400,11 +6118,8 @@ acot_hive_heavy_cocoon_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
 	}
 }
 
@@ -6566,36 +6281,8 @@ acot_army_hive_gene_cocoon = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
-	}
-}
-
-acot_army_hive_gene_cocoon_dm = {
-	damage = 0.01
-	health = 4.00
-	has_morale = no
-	morale_damage = 0
-	collateral_damage = 0
-	war_exhaustion = 0
-	time = 140
-	has_species = yes
-	icon = GFX_army_type_gene_warrior
-
-	resources = {
-		category = armies
-		cost = {
-		}
-	}
-
-	potential = {
-		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
 	}
 }
 
@@ -6616,11 +6303,8 @@ acot_army_hive_gene_cocoon_ae = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
 	}
 }
 
@@ -6642,11 +6326,8 @@ acot_army_hive_gene_cocoon_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
 	}
 }
 
@@ -6675,8 +6356,8 @@ acot_army_hive_control = {
 
 	allow = {
 		OR = {
-			has_building = building_fe_hive_evochamber
-			has_building = building_ae_hive_evochamber
+			has_building = building_acot_dm_hive_evochamber
+			has_building = building_acot_ae_hive_evochamber
 			has_district = district_acot_enigmapolis_fortress
 		}
 	}
@@ -6689,6 +6370,9 @@ acot_army_hive_control = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = {
 			has_trait = trait_hive_mind
+		}
+		owner = {
+			NOT = { has_technology = tech_acot_army_hive_se }
 		}
 	}
 
@@ -6718,8 +6402,8 @@ acot_army_hive_control_se = {
 
 	allow = {
 		OR = {
-			has_building = building_fe_hive_evochamber
-			has_building = building_ae_hive_evochamber
+			has_building = building_acot_dm_hive_evochamber
+			has_building = building_acot_ae_hive_evochamber
 			has_district = district_acot_enigmapolis_fortress
 		}
 	}
@@ -6747,7 +6431,6 @@ acot_army_hive_control_se = {
 	prerequisites = { "tech_acot_army_hive_control" }
 }
 
-
 ##################################
 
 acot_army_hive_control_cocoon = {
@@ -6767,11 +6450,8 @@ acot_army_hive_control_cocoon = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
 	}
 }
 
@@ -6793,11 +6473,8 @@ acot_army_hive_control_cocoon_se = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		always = no
-		from = {
-			has_trait = trait_hive_mind
-		}
 	}
 }
 

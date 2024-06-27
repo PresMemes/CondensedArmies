@@ -1,0 +1,252 @@
+# Mimics ACOT vehicle ejection mechanic
+# Scopes: this = planet, root = country
+pmca_army_compat_vehicle_eject_effect = {
+	inline_script = {
+		script = compatibility/pmca_conditional_inline_1_input
+		MOD_VARIABLE_1 = @has_ancient_caches
+		CONTENT = "
+		random_list = {
+			$DEATH_CHANCE$ = {
+				modifier = {
+					multiply = 0
+					root = { has_technology = tech_ae_army_armor }
+				}
+			}
+			1 = {
+				pmca_spawn_condensed_army = {
+					OWNER = root
+					TYPE = $TYPE$
+					MULT_FLAG = $MULT_FLAG$
+				}
+			}
+		}
+		"
+	}
+}
+
+# Spawns some ACOT infantry on the planet
+# Scopes: this = country, fromfrom = planet
+# PARAMETERS: TEN = spawn x10, HUNDRED = spawn x100
+pmca_army_compat_spawn_condensed_infantry_crew_survivor_effect = {
+	inline_script = {
+		script = compatibility/pmca_conditional_inline_1_input
+		MOD_VARIABLE_1 = @has_ancient_caches
+		CONTENT = "
+		[[TEN]
+			switch = {
+				trigger = has_technology
+				tech_acot_army_se = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_ten_acot_infantry_se
+							MULT_FLAG = ten
+						}
+					}
+				}
+				tech_acot_army_ae = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_ten_acot_infantry_ae
+							MULT_FLAG = ten
+						}
+					}
+				}
+				tech_acot_army_dm = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_ten_acot_infantry_dm
+							MULT_FLAG = ten
+						}
+					}
+				}
+				default = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_ten_assault_army
+							MULT_FLAG = ten
+						}
+					}
+				}
+			}
+		]
+		[[HUNDRED]
+			switch = {
+				trigger = has_technology
+				tech_acot_army_se = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_hundred_acot_infantry_se
+							MULT_FLAG = hundred
+						}
+					}
+				}
+				tech_acot_army_ae = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_hundred_acot_infantry_ae
+							MULT_FLAG = hundred
+						}
+					}
+				}
+				tech_acot_army_dm = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_hundred_acot_infantry_dm
+							MULT_FLAG = hundred
+						}
+					}
+				}
+				default = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_hundred_assault_army
+							MULT_FLAG = hundred
+						}
+					}
+				}
+			}
+		]
+		"
+	}
+}
+
+# Spawn some ACOT Broodlings on the planet
+# Scopes: this = planet, root = country
+# PARAMETERS: COUNT = int, OWNER = target, BROODLING = army, MULT_FLAG = { ten hundred }
+pmca_army_compat_spawn_broodling_only_effect = {
+	inline_script = {
+		script = compatibility/pmca_conditional_inline_1_input
+		MOD_VARIABLE_1 = @has_ancient_caches
+		CONTENT = "
+		while = {
+			count = $COUNT$
+			pmca_spawn_condensed_army = {
+				OWNER = $OWNER$
+				TYPE = $BROODLING$
+				MULT_FLAG = $MULT_FLAG$
+			}
+		}
+		"
+	}
+}
+
+# Spawn some ACOT Broodlings or a cocoon on the planet
+# Scopes: this = planet, root = country
+# PARAMETERS: COUNT = int, OWNER = target, TYPE = army, MULT_FLAG = { ten hundred }, COCOON = army
+pmca_army_compat_spawn_broodling_or_cocoon_effect = {
+	inline_script = {
+		script = compatibility/pmca_conditional_inline_1_input
+		MOD_VARIABLE_1 = @has_ancient_caches
+		CONTENT = "
+		random_list = {
+			3 = {
+				pmca_army_compat_spawn_broodling_only_effect = {
+					COUNT = $COUNT$
+					OWNER = $OWNER$
+					BROODLING = $BROODLING$
+					MULT_FLAG = $MULT_FLAG$
+				}
+			}
+			1 = {
+				modifier = {
+					multiply = 0
+					root = { NOT = { has_technology = tech_ae_army_hive_supercell } }
+				}
+				pmca_spawn_condensed_army = {
+					OWNER = $OWNER$
+					TYPE = $COCOON$
+					MULT_FLAG = $MULT_FLAG$
+				}
+				last_created_army = {
+					owner = {
+						country_event = { id = pmca_army_compat.301 days = 30 scopes = { from = prev } }
+					}
+				}
+			}
+		}
+		"
+	}
+}
+
+# Swaps Pilots/Torsos with their parent army
+# Scopes: this = planet
+# PARAMETERS: ORGANIC = bool, MACHINE = bool
+pmca_army_compat_rebuild_and_or_repair_condensed_acot_armies_effect = {
+	inline_script = {
+		script = compatibility/pmca_conditional_inline_1_input
+		MOD_VARIABLE_1 = @has_ancient_caches
+		CONTENT = "
+		every_planet_army = {
+			limit = {
+				is_defensive_army = no
+				OR = {
+					has_army_flag = pmca_times_ten_army
+					has_army_flag = pmca_times_hundred_army
+				}
+			}
+			switch = {
+				trigger = army_type
+				[[ORGANIC]
+				pmca_ten_acot_light_armor_pilot = { modify_army = { type = pmca_ten_acot_light_armor } }
+				pmca_ten_acot_light_armor_pilot_dm = { modify_army = { type = pmca_ten_acot_light_armor_dm } }
+				pmca_ten_acot_light_armor_pilot_ae = { modify_army = { type = pmca_ten_acot_light_armor_ae } }
+				pmca_ten_acot_light_armor_pilot_se = { modify_army = { type = pmca_ten_acot_light_armor_se } }
+				pmca_ten_acot_heavy_armor_pilot = { modify_army = { type = pmca_ten_acot_heavy_armor } }
+				pmca_ten_acot_heavy_armor_pilot_dm = { modify_army = { type = pmca_ten_acot_heavy_armor_dm } }
+				pmca_ten_acot_heavy_armor_pilot_ae = { modify_army = { type = pmca_ten_acot_heavy_armor_ae } }
+				pmca_ten_acot_heavy_armor_pilot_se = { modify_army = { type = pmca_ten_acot_heavy_armor_se } }
+				pmca_ten_acot_army_mat_pilot = { modify_army = { type = pmca_ten_acot_army_mat } }
+				pmca_ten_acot_army_mat_pilot_se = { modify_army = { type = pmca_ten_acot_army_mat_se } }
+				pmca_ten_acot_army_ega_pilot = { modify_army = { type = pmca_ten_acot_army_ega } }
+				pmca_ten_acot_army_ega_pilot_se = { modify_army = { type = pmca_ten_acot_army_ega_se } }
+				pmca_ten_acot_droid_army_torso = { modify_army = { type = pmca_ten_robotic_army } }
+				pmca_ten_acot_droid_army_torso_dm = { modify_army = { type = pmca_ten_acot_droid_army_dm } }
+				pmca_ten_acot_droid_army_torso_ae = { modify_army = { type = pmca_ten_acot_droid_army_ae } }
+				pmca_ten_acot_droid_army_torso_se = { modify_army = { type = pmca_ten_acot_droid_army_se } }
+				pmca_ten_acot_army_cyborg_torso = { modify_army = { type = pmca_ten_acot_army_cyborg } }
+				pmca_ten_acot_army_cyborg_torso_se = { modify_army = { type = pmca_ten_acot_army_cyborg_se } }
+				pmca_ten_acot_army_synth_torso = { modify_army = { type = pmca_ten_acot_army_synth } }
+				pmca_ten_acot_army_synth_torso_se = { modify_army = { type = pmca_ten_acot_army_synth_se } }
+				pmca_hundred_acot_light_armor_pilot = { modify_army = { type = pmca_hundred_acot_light_armor } }
+				pmca_hundred_acot_light_armor_pilot_dm = { modify_army = { type = pmca_hundred_acot_light_armor_dm } }
+				pmca_hundred_acot_light_armor_pilot_ae = { modify_army = { type = pmca_hundred_acot_light_armor_ae } }
+				pmca_hundred_acot_light_armor_pilot_se = { modify_army = { type = pmca_hundred_acot_light_armor_se } }
+				pmca_hundred_acot_heavy_armor_pilot = { modify_army = { type = pmca_hundred_acot_heavy_armor } }
+				pmca_hundred_acot_heavy_armor_pilot_dm = { modify_army = { type = pmca_hundred_acot_heavy_armor_dm } }
+				pmca_hundred_acot_heavy_armor_pilot_ae = { modify_army = { type = pmca_hundred_acot_heavy_armor_ae } }
+				pmca_hundred_acot_heavy_armor_pilot_se = { modify_army = { type = pmca_hundred_acot_heavy_armor_se } }
+				pmca_hundred_acot_army_mat_pilot = { modify_army = { type = pmca_hundred_acot_army_mat } }
+				pmca_hundred_acot_army_mat_pilot_se = { modify_army = { type = pmca_hundred_acot_army_mat_se } }
+				pmca_hundred_acot_army_ega_pilot = { modify_army = { type = pmca_hundred_acot_army_ega } }
+				pmca_hundred_acot_army_ega_pilot_se = { modify_army = { type = pmca_hundred_acot_army_ega_se } }
+				pmca_hundred_acot_droid_army_torso = { modify_army = { type = pmca_hundred_robotic_army } }
+				pmca_hundred_acot_droid_army_torso_dm = { modify_army = { type = pmca_hundred_acot_droid_army_dm } }
+				pmca_hundred_acot_droid_army_torso_ae = { modify_army = { type = pmca_hundred_acot_droid_army_ae } }
+				pmca_hundred_acot_droid_army_torso_se = { modify_army = { type = pmca_hundred_acot_droid_army_se } }
+				pmca_hundred_acot_army_cyborg_torso = { modify_army = { type = pmca_hundred_acot_army_cyborg } }
+				pmca_hundred_acot_army_cyborg_torso_se = { modify_army = { type = pmca_hundred_acot_army_cyborg_se } }
+				pmca_hundred_acot_army_synth_torso = { modify_army = { type = pmca_hundred_acot_army_synth } }
+				pmca_hundred_acot_army_synth_torso_se = { modify_army = { type = pmca_hundred_acot_army_synth_se } }
+				]
+
+				[[MACHINE]
+				pmca_ten_acot_army_machine_torso = { modify_army = { type = pmca_ten_machine_assault_1 } }
+				pmca_ten_acot_army_machine_torso_dm = { modify_army = { type = pmca_ten_acot_army_machine_dm } }
+				pmca_ten_acot_army_machine_torso_ae = { modify_army = { type = pmca_ten_acot_army_machine_ae } }
+				pmca_ten_acot_army_machine_torso_se = { modify_army = { type = pmca_ten_acot_army_machine_se } }
+				pmca_ten_acot_army_machine_light_torso = { modify_army = { type = pmca_ten_machine_assault_2 } }
+				pmca_ten_acot_army_machine_light_torso_dm = { modify_army = { type = pmca_ten_acot_army_machine_light_dm } }
+				pmca_ten_acot_army_machine_light_torso_ae = { modify_army = { type = pmca_ten_acot_army_machine_light_ae } }
+				pmca_ten_acot_army_machine_light_torso_se = { modify_army = { type = pmca_ten_acot_army_machine_light_se } }
+				pmca_ten_acot_army_machine_cyborg_torso = { modify_army = { type = pmca_ten_acot_army_machine_cyborg } }
+				pmca_ten_acot_army_machine_cyborg_torso_dm = { modify_army = { type = pmca_ten_acot_army_machine_cyborg_dm } }
+				pmca_ten_acot_army_machine_cyborg_torso_ae = { modify_army = { type = pmca_ten_acot_army_machine_cyborg_ae } }
+				pmca_ten_acot_army_machine_cyborg_torso_se = { modify_army = { type = pmca_ten_acot_army_machine_cyborg_se } }
+				pmca_ten_acot_army_machine_special_torso = { modify_army = { type = pmca_ten_acot_army_machine_special } }
+				pmca_ten_acot_army_machine_special_torso_se = { modify_army = { type = pmca_ten_acot_army_machine_special_se } }
+				]
+			}
+		}
+		"
+	}
+}

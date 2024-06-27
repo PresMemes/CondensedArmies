@@ -8,6 +8,7 @@ Added x10/x100 variations of vanilla and some modded armies.
     - Acquisition of Technology
 - Stellaris Evolved: Alpha
 - Sensible Late Game Techs
+- Military Enhancments 2.0
 
 #### Mods Pending Support
 - Ground Command

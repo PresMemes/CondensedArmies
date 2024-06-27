@@ -1,5 +1,14 @@
+# a new leader is created
+# scope: country, from: leader
 on_leader_spawned = {
-	events = {
-		pmca_army_compat.1000
+	inline_script = {
+		script = compatibility/pmca_conditional_inline_1_input
+		MOD_VARIABLE_1 = @has_gigastructures
+		CONTENT = "
+		events = {
+			pmca_army_compat.1000
+		}
+		"
 	}
+
 }

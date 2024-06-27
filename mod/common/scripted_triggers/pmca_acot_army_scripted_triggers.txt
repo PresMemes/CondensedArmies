@@ -1,13 +1,13 @@
 # Dear Irony please fallback to simple parser
 
 inline_script = {
-	script = army/pmca_conditional_inline_p1
-	MOD_VARIABLE = @has_ancient_caches
+	script = compatibility/pmca_conditional_inline_1_input
+	MOD_VARIABLE_1 = @has_ancient_caches
 	CONTENT = "
 	# Checks if a given army is a Condensed ACOT Light Vehicle
 	# Looks weird, but hopefully better performance by short circuiting on the army flag first
 	# Scopes: this = army
-	pmca_is_condensed_acot_light_manned_vehicle = {
+	pmca_is_condensed_acot_manned_vehicle = {
 		OR = {
 			AND = {
 				has_army_flag = pmca_times_ten_army
@@ -16,6 +16,14 @@ inline_script = {
 					army_type = pmca_ten_acot_light_armor_dm
 					army_type = pmca_ten_acot_light_armor_ae
 					army_type = pmca_ten_acot_light_armor_se
+					army_type = pmca_ten_acot_heavy_armor
+					army_type = pmca_ten_acot_heavy_armor_dm
+					army_type = pmca_ten_acot_heavy_armor_ae
+					army_type = pmca_ten_acot_heavy_armor_se
+					army_type = pmca_ten_acot_army_mat
+					army_type = pmca_ten_acot_army_mat_se
+					army_type = pmca_ten_acot_army_ega
+					army_type = pmca_ten_acot_army_ega_se
 				}
 			}
 			AND = {
@@ -25,13 +33,19 @@ inline_script = {
 					army_type = pmca_hundred_acot_light_armor_dm
 					army_type = pmca_hundred_acot_light_armor_ae
 					army_type = pmca_hundred_acot_light_armor_se
+					army_type = pmca_hundred_acot_heavy_armor
+					army_type = pmca_hundred_acot_heavy_armor_dm
+					army_type = pmca_hundred_acot_heavy_armor_ae
+					army_type = pmca_hundred_acot_heavy_armor_se
+					army_type = pmca_hundred_acot_army_mat
+					army_type = pmca_hundred_acot_army_mat_se
+					army_type = pmca_hundred_acot_army_ega
+					army_type = pmca_hundred_acot_army_ega_se
 				}
 			}
 		}
 	}
 
-	# Checks if a given army is a Condensed ACOT Heavy Vehicle
-	# Scopes: this = army
 	pmca_is_condensed_acot_heavy_manned_vehicle = {
 		OR = {
 			AND = {
@@ -61,7 +75,6 @@ inline_script = {
 				}
 			}
 		}
-
 	}
 
 	# Checks if a given army is a Condensed ACOT Pilot
@@ -105,8 +118,6 @@ inline_script = {
 		}
 	}
 
-	# Checks if a given army is a Condensed ACOT Light Infantry
-	# Scopes: this = army
 	pmca_is_condensed_acot_light_infantry = {
 		OR = {
 			AND = {
@@ -131,7 +142,6 @@ inline_script = {
 					army_type = pmca_hundred_acot_army_phile_se
 				}
 			}
-
 		}
 	}
 
@@ -363,121 +373,73 @@ inline_script = {
 				}
 			}
 		}
-
 	}
 
-	# Checks if a given army is a Condensed ACOT light hive
-	# Scopes: this = army
-	pmca_is_condensed_acot_light_hive = {
+
+	pmca_is_condensed_acot_broodling_spawner = {
 		OR = {
 			AND = {
 				has_army_flag = pmca_times_ten_army
-				OR = {
-					army_type = pmca_ten_acot_hive_light_1
-					army_type = pmca_ten_acot_hive_light_dm
-					army_type = pmca_ten_acot_hive_light_ae
-					army_type = pmca_ten_acot_hive_light_se
-				}
+				army_type = pmca_ten_acot_hive_light_1
+				army_type = pmca_ten_acot_hive_light_dm
+				army_type = pmca_ten_acot_hive_light_ae
+				army_type = pmca_ten_acot_hive_light_se
+				army_type = pmca_ten_acot_hive_heavy_1
+				army_type = pmca_ten_acot_hive_heavy_dm
+				army_type = pmca_ten_acot_hive_heavy_ae
+				army_type = pmca_ten_acot_hive_heavy_se
+				army_type = pmca_ten_acot_army_hive_gene
+				army_type = pmca_ten_acot_army_hive_gene_ae
+				army_type = pmca_ten_acot_army_hive_gene_se
+				army_type = pmca_ten_acot_army_hive_control
+				army_type = pmca_ten_acot_army_hive_control_se
 			}
 			AND = {
 				has_army_flag = pmca_times_hundred_army
-				OR = {
-					army_type = pmca_hundred_acot_hive_light_1
-					army_type = pmca_hundred_acot_hive_light_dm
-					army_type = pmca_hundred_acot_hive_light_ae
-					army_type = pmca_hundred_acot_hive_light_se
-				}
+				army_type = pmca_hundred_acot_hive_light_1
+				army_type = pmca_hundred_acot_hive_light_dm
+				army_type = pmca_hundred_acot_hive_light_ae
+				army_type = pmca_hundred_acot_hive_light_se
+				army_type = pmca_hundred_acot_hive_heavy_1
+				army_type = pmca_hundred_acot_hive_heavy_dm
+				army_type = pmca_hundred_acot_hive_heavy_ae
+				army_type = pmca_hundred_acot_hive_heavy_se
+				army_type = pmca_hundred_acot_army_hive_gene
+				army_type = pmca_hundred_acot_army_hive_gene_ae
+				army_type = pmca_hundred_acot_army_hive_gene_se
+				army_type = pmca_hundred_acot_army_hive_control
+				army_type = pmca_hundred_acot_army_hive_control_se
 			}
 		}
 	}
 
-	# Checks if a given army is a Condensed ACOT heavy hive
-	# Scopes: this = army
-	pmca_is_condensed_acot_heavy_hive = {
+	pmca_is_condensed_coccon = {
 		OR = {
 			AND = {
 				has_army_flag = pmca_times_ten_army
-				OR = {
-					army_type = pmca_ten_acot_hive_heavy_1
-					army_type = pmca_ten_acot_hive_heavy_dm
-					army_type = pmca_ten_acot_hive_heavy_ae
-					army_type = pmca_ten_acot_hive_heavy_se
-				}
+				army_type = pmca_ten_acot_hive_heavy_cocoon_1
+				army_type = pmca_ten_acot_hive_heavy_cocoon_dm
+				army_type = pmca_ten_acot_hive_heavy_cocoon_ae
+				army_type = pmca_ten_acot_hive_heavy_cocoon_se
+				army_type = pmca_ten_acot_army_hive_gene_cocoon
+				army_type = pmca_ten_acot_army_hive_gene_cocoon_ae
+				army_type = pmca_ten_acot_army_hive_gene_cocoon_se
+				army_type = pmca_ten_acot_army_hive_control_cocoon
+				army_type = pmca_ten_acot_army_hive_control_cocoon_se
 			}
 			AND = {
 				has_army_flag = pmca_times_hundred_army
-				OR = {
-					army_type = pmca_hundred_acot_hive_heavy_1
-					army_type = pmca_hundred_acot_hive_heavy_dm
-					army_type = pmca_hundred_acot_hive_heavy_ae
-					army_type = pmca_hundred_acot_hive_heavy_se
-				}
-			}
-		}
-	}
-
-	# Checks if a given army is a Condensed ACOT special hive
-	# Scopes: this = army
-	pmca_is_condensed_acot_special_hive = {
-		OR = {
-			AND = {
-				has_army_flag = pmca_times_ten_army
-				OR = {
-					army_type = pmca_ten_acot_army_hive_gene
-					army_type = pmca_ten_acot_army_hive_gene_ae
-					army_type = pmca_ten_acot_army_hive_gene_se
-					army_type = pmca_ten_acot_army_hive_control
-					army_type = pmca_ten_acot_army_hive_control_se
-				}
-			}
-			AND = {
-				has_army_flag = pmca_times_hundred_army
-				OR = {
-					army_type = pmca_hundred_acot_army_hive_gene
-					army_type = pmca_hundred_acot_army_hive_gene_ae
-					army_type = pmca_hundred_acot_army_hive_gene_se
-					army_type = pmca_hundred_acot_army_hive_control
-					army_type = pmca_hundred_acot_army_hive_control_se
-				}
-			}
-		}
-	}
-
-	# Checks if a given army is a Condensed ACOT cocoon
-	# Scopes: this = army
-	pmca_is_condensed_acot_hive_cocoon = {
-		OR = {
-			AND = {
-				has_army_flag = pmca_times_ten_army
-				OR = {
-					army_type = pmca_ten_acot_hive_heavy_cocoon_1
-					army_type = pmca_ten_acot_hive_heavy_cocoon_dm
-					army_type = pmca_ten_acot_hive_heavy_cocoon_ae
-					army_type = pmca_ten_acot_hive_heavy_cocoon_se
-					army_type = pmca_ten_acot_army_hive_gene_cocoon
-					army_type = pmca_ten_acot_army_hive_gene_cocoon_ae
-					army_type = pmca_ten_acot_army_hive_gene_cocoon_se
-					army_type = pmca_ten_acot_army_hive_control_cocoon
-					army_type = pmca_ten_acot_army_hive_control_cocoon_se
-				}
-			}
-			AND = {
-				has_army_flag = pmca_times_hundred_army
-				OR = {
-					army_type = pmca_hundred_acot_hive_heavy_cocoon_1
-					army_type = pmca_hundred_acot_hive_heavy_cocoon_dm
-					army_type = pmca_hundred_acot_hive_heavy_cocoon_ae
-					army_type = pmca_hundred_acot_hive_heavy_cocoon_se
-					army_type = pmca_hundred_acot_army_hive_gene_cocoon
-					army_type = pmca_hundred_acot_army_hive_gene_cocoon_ae
-					army_type = pmca_hundred_acot_army_hive_gene_cocoon_se
-					army_type = pmca_hundred_acot_army_hive_control_cocoon
-					army_type = pmca_hundred_acot_army_hive_control_cocoon_se
-				}
+				army_type = pmca_hundred_acot_hive_heavy_cocoon_1
+				army_type = pmca_hundred_acot_hive_heavy_cocoon_dm
+				army_type = pmca_hundred_acot_hive_heavy_cocoon_ae
+				army_type = pmca_hundred_acot_hive_heavy_cocoon_se
+				army_type = pmca_hundred_acot_army_hive_gene_cocoon
+				army_type = pmca_hundred_acot_army_hive_gene_cocoon_ae
+				army_type = pmca_hundred_acot_army_hive_gene_cocoon_se
+				army_type = pmca_hundred_acot_army_hive_control_cocoon
+				army_type = pmca_hundred_acot_army_hive_control_cocoon_se
 			}
 		}
 	}
 	"
 }
-
-
