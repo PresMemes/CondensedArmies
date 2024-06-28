@@ -12,6 +12,7 @@ event = {
 
 	immediate = {
 		every_playable_country = {
+			limit = { is_ai = yes }
 			remove_country_flag = pmca_times_ten_set
 			remove_country_flag = pmca_times_hundred_set
 			country_event = { id = pmca_ai_events.101 days = 14 random = 59 } # Delay for some better performance
