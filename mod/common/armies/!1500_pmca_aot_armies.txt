@@ -1,6 +1,6 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated: Thu Apr 18 19:21:53 2024
+# Last Updated: Sun Aug 04 08:56:41 2024
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_2_input
@@ -39,14 +39,12 @@ inline_script = {
 			}
 			owner = {
 				is_machine_empire = yes
-			}
-			from = {
-				has_trait = trait_machine_unit
-			}
-			owner = {
 				NOT = {
 					has_technology = tech_acot_army_machine_se
 				}
+			}
+			from = {
+				has_trait = trait_machine_unit
 			}
 		}
 		potential_country = {
@@ -58,10 +56,10 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_machine_dome
-				has_building = building_ae_machine_dome
 				has_building = building_stellarite_machine_dome
 				has_building = building_phanon_machine_dome
+				has_building = building_acot_dm_machine_dome
+				has_building = building_acot_ae_machine_dome
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -104,12 +102,10 @@ inline_script = {
 			}
 			owner = {
 				is_machine_empire = yes
+				has_technology = tech_acot_army_machine_se
 			}
 			from = {
 				has_trait = trait_machine_unit
-			}
-			owner = {
-				has_technology = tech_acot_army_machine_se
 			}
 		}
 		potential_country = {
@@ -121,10 +117,10 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_machine_dome
-				has_building = building_ae_machine_dome
 				has_building = building_stellarite_machine_dome
 				has_building = building_phanon_machine_dome
+				has_building = building_acot_dm_machine_dome
+				has_building = building_acot_ae_machine_dome
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -171,8 +167,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_hive_evochamber
-				has_building = building_ae_hive_evochamber
+				has_building = building_acot_dm_hive_evochamber
+				has_building = building_acot_ae_hive_evochamber
 				has_building = building_stellarite_hive_evochamber
 				has_building = building_phanon_hive_evochamber
 				has_district = district_acot_enigmapolis_fortress
@@ -229,8 +225,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_hive_evochamber
-				has_building = building_ae_hive_evochamber
+				has_building = building_acot_dm_hive_evochamber
+				has_building = building_acot_ae_hive_evochamber
 				has_building = building_stellarite_hive_evochamber
 				has_building = building_phanon_hive_evochamber
 				has_district = district_acot_enigmapolis_fortress
@@ -581,14 +577,12 @@ inline_script = {
 			}
 			owner = {
 				is_machine_empire = yes
-			}
-			from = {
-				has_trait = trait_machine_unit
-			}
-			owner = {
 				NOT = {
 					has_technology = tech_acot_army_machine_se
 				}
+			}
+			from = {
+				has_trait = trait_machine_unit
 			}
 		}
 		potential_country = {
@@ -600,10 +594,10 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_machine_dome
-				has_building = building_ae_machine_dome
 				has_building = building_stellarite_machine_dome
 				has_building = building_phanon_machine_dome
+				has_building = building_acot_dm_machine_dome
+				has_building = building_acot_ae_machine_dome
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -646,12 +640,10 @@ inline_script = {
 			}
 			owner = {
 				is_machine_empire = yes
+				has_technology = tech_acot_army_machine_se
 			}
 			from = {
 				has_trait = trait_machine_unit
-			}
-			owner = {
-				has_technology = tech_acot_army_machine_se
 			}
 		}
 		potential_country = {
@@ -663,10 +655,10 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_machine_dome
-				has_building = building_ae_machine_dome
 				has_building = building_stellarite_machine_dome
 				has_building = building_phanon_machine_dome
+				has_building = building_acot_dm_machine_dome
+				has_building = building_acot_ae_machine_dome
 				has_district = district_acot_enigmapolis_fortress
 			}
 		}
@@ -713,8 +705,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_hive_evochamber
-				has_building = building_ae_hive_evochamber
+				has_building = building_acot_dm_hive_evochamber
+				has_building = building_acot_ae_hive_evochamber
 				has_building = building_stellarite_hive_evochamber
 				has_building = building_phanon_hive_evochamber
 				has_district = district_acot_enigmapolis_fortress
@@ -771,8 +763,8 @@ inline_script = {
 		}
 		allow = {
 			OR = {
-				has_building = building_fe_hive_evochamber
-				has_building = building_ae_hive_evochamber
+				has_building = building_acot_dm_hive_evochamber
+				has_building = building_acot_ae_hive_evochamber
 				has_building = building_stellarite_hive_evochamber
 				has_building = building_phanon_hive_evochamber
 				has_district = district_acot_enigmapolis_fortress

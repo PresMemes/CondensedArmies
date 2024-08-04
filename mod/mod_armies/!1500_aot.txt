@@ -24,10 +24,10 @@ acot_army_machine_special = {
 	}
 	allow = {
 		OR = {
-			has_building = building_fe_machine_dome
-			has_building = building_ae_machine_dome
 			has_building = building_stellarite_machine_dome
 			has_building = building_phanon_machine_dome
+			has_building = building_acot_dm_machine_dome
+			has_building = building_acot_ae_machine_dome
 			has_district = district_acot_enigmapolis_fortress
 		}
 	}
@@ -36,19 +36,17 @@ acot_army_machine_special = {
 			has_global_flag = acot_army_forbidden
 		}
 		owner = {
-			has_authority = auth_machine_intelligence
-		}
-		from = {
-			has_trait = "trait_machine_unit"
-		}
-		owner = {
+			is_machine_empire = yes
 			NOT = {
 				has_technology = tech_acot_army_machine_se
 			}
 		}
+		from = {
+			has_trait = "trait_machine_unit"
+		}
 	}
 	show_tech_unlock_if = {
-		has_authority = auth_machine_intelligence
+		is_machine_empire = yes
 	}
 	prerequisites = {
 		"tech_acot_army_machine_special"
@@ -81,10 +79,10 @@ acot_army_machine_special_se = {
 	}
 	allow = {
 		OR = {
-			has_building = building_fe_machine_dome
-			has_building = building_ae_machine_dome
 			has_building = building_stellarite_machine_dome
 			has_building = building_phanon_machine_dome
+			has_building = building_acot_dm_machine_dome
+			has_building = building_acot_ae_machine_dome
 			has_district = district_acot_enigmapolis_fortress
 		}
 	}
@@ -98,13 +96,11 @@ acot_army_machine_special_se = {
 			has_global_flag = acot_army_forbidden
 		}
 		owner = {
-			has_authority = auth_machine_intelligence
+			is_machine_empire = yes
+			has_technology = tech_acot_army_machine_se
 		}
 		from = {
 			has_trait = "trait_machine_unit"
-		}
-		owner = {
-			has_technology = tech_acot_army_machine_se
 		}
 	}
 	prerequisites = {
@@ -134,8 +130,8 @@ acot_army_hive_control = {
 	}
 	allow = {
 		OR = {
-			has_building = building_fe_hive_evochamber
-			has_building = building_ae_hive_evochamber
+			has_building = building_acot_dm_hive_evochamber
+			has_building = building_acot_ae_hive_evochamber
 			has_building = building_stellarite_hive_evochamber
 			has_building = building_phanon_hive_evochamber
 			has_district = district_acot_enigmapolis_fortress
@@ -179,8 +175,8 @@ acot_army_hive_control_se = {
 	}
 	allow = {
 		OR = {
-			has_building = building_fe_hive_evochamber
-			has_building = building_ae_hive_evochamber
+			has_building = building_acot_dm_hive_evochamber
+			has_building = building_acot_ae_hive_evochamber
 			has_building = building_stellarite_hive_evochamber
 			has_building = building_phanon_hive_evochamber
 			has_district = district_acot_enigmapolis_fortress
