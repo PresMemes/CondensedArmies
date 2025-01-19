@@ -179,26 +179,39 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_acot_army_gene
 			army_type = pmca_ten_acot_army_gene_se
 			army_type = pmca_ten_acot_army_machine_dm
+			army_type = pmca_ten_acot_army_machine_individual_dm
 			army_type = pmca_ten_acot_army_machine_ae
+			army_type = pmca_ten_acot_army_machine_individual_ae
 			army_type = pmca_ten_acot_army_machine_se
+			army_type = pmca_ten_acot_army_machine_individual_se
 			army_type = pmca_ten_acot_army_machine_torso
+			army_type = pmca_ten_acot_army_machine_individual_torso
 			army_type = pmca_ten_acot_army_machine_torso_dm
+			army_type = pmca_ten_acot_army_machine_individual_torso_dm
 			army_type = pmca_ten_acot_army_machine_torso_ae
+			army_type = pmca_ten_acot_army_machine_individual_torso_ae
 			army_type = pmca_ten_acot_army_machine_torso_se
+			army_type = pmca_ten_acot_army_machine_individual_torso_se
 			army_type = pmca_ten_acot_army_machine_spm
 			army_type = pmca_ten_acot_army_machine_spm_dm
 			army_type = pmca_ten_acot_army_machine_spm_ae
 			army_type = pmca_ten_acot_army_machine_spm_se
 			army_type = pmca_ten_acot_army_machine_light_dm
+			army_type = pmca_ten_acot_army_machine_individual_light_dm
 			army_type = pmca_ten_acot_army_machine_light_ae
+			army_type = pmca_ten_acot_army_machine_individual_light_ae
 			army_type = pmca_ten_acot_army_machine_light_se
+			army_type = pmca_ten_acot_army_machine_individual_light_se
 			army_type = pmca_ten_acot_army_machine_light_torso
 			army_type = pmca_ten_acot_army_machine_light_torso_dm
 			army_type = pmca_ten_acot_army_machine_light_torso_ae
 			army_type = pmca_ten_acot_army_machine_light_torso_se
 			army_type = pmca_ten_acot_army_machine_heavy_dm
+			army_type = pmca_ten_acot_army_machine_individual_heavy_dm
 			army_type = pmca_ten_acot_army_machine_heavy_ae
+			army_type = pmca_ten_acot_army_machine_individual_heavy_ae
 			army_type = pmca_ten_acot_army_machine_heavy_se
+			army_type = pmca_ten_acot_army_machine_individual_heavy_se
 			army_type = pmca_ten_acot_army_machine_cyborg
 			army_type = pmca_ten_acot_army_machine_cyborg_dm
 			army_type = pmca_ten_acot_army_machine_cyborg_ae
@@ -211,6 +224,8 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_acot_army_machine_special_se
 			army_type = pmca_ten_acot_army_machine_special_torso
 			army_type = pmca_ten_acot_army_machine_special_torso_se
+			army_type = pmca_ten_acot_army_indie_machine_special
+			army_type = pmca_ten_acot_army_indie_machine_special_se
 			army_type = pmca_ten_acot_hive_infantry_1
 			army_type = pmca_ten_acot_hive_infantry_dm
 			army_type = pmca_ten_acot_hive_infantry_ae
@@ -244,6 +259,7 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_acot_army_hive_gene_ae
 			army_type = pmca_ten_acot_army_hive_gene_se
 			army_type = pmca_ten_acot_army_hive_gene_cocoon
+			army_type = pmca_ten_acot_army_hive_gene_cocoon_dm
 			army_type = pmca_ten_acot_army_hive_gene_cocoon_ae
 			army_type = pmca_ten_acot_army_hive_gene_cocoon_se
 			army_type = pmca_ten_acot_army_hive_control
@@ -275,7 +291,10 @@ pmca_is_times_ten_army = {
 			script = compatibility/pmca_conditional_inline_1_input
 			MOD_VARIABLE_1 = @has_stellaris_evolved
 			CONTENT = "
+			army_type = pmca_ten_tec_ascended_nanite_army
 			army_type = pmca_ten_tec_shambling_robot
+			army_type = pmca_ten_tec_husk
+			army_type = pmca_ten_tec_zombified_army
 			army_type = pmca_ten_tec_siegecraft_army
 			"
 		}
@@ -283,7 +302,7 @@ pmca_is_times_ten_army = {
 		# SLGT x10
 		inline_script = {
 			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @slgt_Tier6_cost
+			MOD_VARIABLE_1 = @slgt_mod
 			CONTENT = "
 			army_type = pmca_ten_slgt_gene_titan_army
 			army_type = pmca_ten_slgt_immortal_titan_army
@@ -322,6 +341,20 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_ind_mach_advanced_infantry
 			army_type = pmca_ten_ind_mach_autonomous_war_droid
 			army_type = pmca_ten_ind_mach_purge_squads_army
+			"
+		}
+
+		# Playable Katzenartig Imperium x10
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_pki_mod
+			CONTENT = "
+			army_type = pmca_ten_katzensoldaten_army
+			army_type = pmca_ten_angriffskatze_army
+			army_type = pmca_ten_gepanzertertank_army
+			army_type = pmca_ten_atmospharischekatzenbomber_army
+			army_type = pmca_ten_luftkatzenvernichter_army
+			army_type = pmca_ten_pki_riesigerkatzenpanzer_assault
 			"
 		}
 	}
@@ -471,26 +504,39 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_acot_army_gene
 			army_type = pmca_hundred_acot_army_gene_se
 			army_type = pmca_hundred_acot_army_machine_dm
+			army_type = pmca_hundred_acot_army_machine_individual_dm
 			army_type = pmca_hundred_acot_army_machine_ae
+			army_type = pmca_hundred_acot_army_machine_individual_ae
 			army_type = pmca_hundred_acot_army_machine_se
+			army_type = pmca_hundred_acot_army_machine_individual_se
 			army_type = pmca_hundred_acot_army_machine_torso
+			army_type = pmca_hundred_acot_army_machine_individual_torso
 			army_type = pmca_hundred_acot_army_machine_torso_dm
+			army_type = pmca_hundred_acot_army_machine_individual_torso_dm
 			army_type = pmca_hundred_acot_army_machine_torso_ae
+			army_type = pmca_hundred_acot_army_machine_individual_torso_ae
 			army_type = pmca_hundred_acot_army_machine_torso_se
+			army_type = pmca_hundred_acot_army_machine_individual_torso_se
 			army_type = pmca_hundred_acot_army_machine_spm
 			army_type = pmca_hundred_acot_army_machine_spm_dm
 			army_type = pmca_hundred_acot_army_machine_spm_ae
 			army_type = pmca_hundred_acot_army_machine_spm_se
 			army_type = pmca_hundred_acot_army_machine_light_dm
+			army_type = pmca_hundred_acot_army_machine_individual_light_dm
 			army_type = pmca_hundred_acot_army_machine_light_ae
+			army_type = pmca_hundred_acot_army_machine_individual_light_ae
 			army_type = pmca_hundred_acot_army_machine_light_se
+			army_type = pmca_hundred_acot_army_machine_individual_light_se
 			army_type = pmca_hundred_acot_army_machine_light_torso
 			army_type = pmca_hundred_acot_army_machine_light_torso_dm
 			army_type = pmca_hundred_acot_army_machine_light_torso_ae
 			army_type = pmca_hundred_acot_army_machine_light_torso_se
 			army_type = pmca_hundred_acot_army_machine_heavy_dm
+			army_type = pmca_hundred_acot_army_machine_individual_heavy_dm
 			army_type = pmca_hundred_acot_army_machine_heavy_ae
+			army_type = pmca_hundred_acot_army_machine_individual_heavy_ae
 			army_type = pmca_hundred_acot_army_machine_heavy_se
+			army_type = pmca_hundred_acot_army_machine_individual_heavy_se
 			army_type = pmca_hundred_acot_army_machine_cyborg
 			army_type = pmca_hundred_acot_army_machine_cyborg_dm
 			army_type = pmca_hundred_acot_army_machine_cyborg_ae
@@ -503,6 +549,8 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_acot_army_machine_special_se
 			army_type = pmca_hundred_acot_army_machine_special_torso
 			army_type = pmca_hundred_acot_army_machine_special_torso_se
+			army_type = pmca_hundred_acot_army_indie_machine_special
+			army_type = pmca_hundred_acot_army_indie_machine_special_se
 			army_type = pmca_hundred_acot_hive_infantry_1
 			army_type = pmca_hundred_acot_hive_infantry_dm
 			army_type = pmca_hundred_acot_hive_infantry_ae
@@ -536,6 +584,7 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_acot_army_hive_gene_ae
 			army_type = pmca_hundred_acot_army_hive_gene_se
 			army_type = pmca_hundred_acot_army_hive_gene_cocoon
+			army_type = pmca_hundred_acot_army_hive_gene_cocoon_dm
 			army_type = pmca_hundred_acot_army_hive_gene_cocoon_ae
 			army_type = pmca_hundred_acot_army_hive_gene_cocoon_se
 			army_type = pmca_hundred_acot_army_hive_control
@@ -567,7 +616,10 @@ pmca_is_times_hundred_army = {
 			script = compatibility/pmca_conditional_inline_1_input
 			MOD_VARIABLE_1 = @has_stellaris_evolved
 			CONTENT = "
+			army_type = pmca_hundred_tec_ascended_nanite_army
 			army_type = pmca_hundred_tec_shambling_robot
+			army_type = pmca_hundred_tec_husk
+			army_type = pmca_hundred_tec_zombified_army
 			army_type = pmca_hundred_tec_siegecraft_army
 			"
 		}
@@ -575,7 +627,7 @@ pmca_is_times_hundred_army = {
 		# SLGT x100
 		inline_script = {
 			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @slgt_Tier6_cost
+			MOD_VARIABLE_1 = @slgt_mod
 			CONTENT = "
 			army_type = pmca_hundred_slgt_gene_titan_army
 			army_type = pmca_hundred_slgt_immortal_titan_army
@@ -614,6 +666,20 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_ind_mach_advanced_infantry
 			army_type = pmca_hundred_ind_mach_autonomous_war_droid
 			army_type = pmca_hundred_ind_mach_purge_squads_army
+			"
+		}
+
+		# Playable Katzenartig Imperium x100
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_pki_mod
+			CONTENT = "
+			army_type = pmca_hundred_katzensoldaten_army
+			army_type = pmca_hundred_angriffskatze_army
+			army_type = pmca_hundred_gepanzertertank_army
+			army_type = pmca_hundred_atmospharischekatzenbomber_army
+			army_type = pmca_hundred_luftkatzenvernichter_army
+			army_type = pmca_hundred_pki_riesigerkatzenpanzer_assault
 			"
 		}
 	}

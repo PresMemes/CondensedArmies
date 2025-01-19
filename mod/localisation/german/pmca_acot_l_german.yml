@@ -882,6 +882,17 @@
  pmca_hundred_acot_army_machine_dm_desc: "$acot_army_machine_dm_desc$"
 
 
+ #######################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_DM ###
+ #######################################
+ pmca_ten_acot_army_machine_individual_dm: "$pmca_ten$ $acot_army_machine_individual_dm$"
+ pmca_ten_acot_army_machine_individual_dm_plural: "$acot_army_machine_individual_dm_plural$"
+ pmca_ten_acot_army_machine_individual_dm_desc: "$acot_army_machine_individual_dm_desc$"
+ pmca_hundred_acot_army_machine_individual_dm: "$pmca_hundred$ $acot_army_machine_individual_dm$"
+ pmca_hundred_acot_army_machine_individual_dm_plural: "$acot_army_machine_individual_dm_plural$"
+ pmca_hundred_acot_army_machine_individual_dm_desc: "$acot_army_machine_individual_dm_desc$"
+
+
  ############################
  ### ACOT_ARMY_MACHINE_AE ###
  ############################
@@ -891,6 +902,17 @@
  pmca_hundred_acot_army_machine_ae: "$pmca_hundred$ $acot_army_machine_ae$"
  pmca_hundred_acot_army_machine_ae_plural: "$acot_army_machine_ae_plural$"
  pmca_hundred_acot_army_machine_ae_desc: "$acot_army_machine_ae_desc$"
+
+
+ #######################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_AE ###
+ #######################################
+ pmca_ten_acot_army_machine_individual_ae: "$pmca_ten$ $acot_army_machine_individual_ae$"
+ pmca_ten_acot_army_machine_individual_ae_plural: "$acot_army_machine_individual_ae_plural$"
+ pmca_ten_acot_army_machine_individual_ae_desc: "$acot_army_machine_individual_ae_desc$"
+ pmca_hundred_acot_army_machine_individual_ae: "$pmca_hundred$ $acot_army_machine_individual_ae$"
+ pmca_hundred_acot_army_machine_individual_ae_plural: "$acot_army_machine_individual_ae_plural$"
+ pmca_hundred_acot_army_machine_individual_ae_desc: "$acot_army_machine_individual_ae_desc$"
 
 
  ############################
@@ -904,6 +926,17 @@
  pmca_hundred_acot_army_machine_se_desc: "$acot_army_machine_se_desc$"
 
 
+ #######################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_SE ###
+ #######################################
+ pmca_ten_acot_army_machine_individual_se: "$pmca_ten$ $acot_army_machine_individual_se$"
+ pmca_ten_acot_army_machine_individual_se_plural: "$acot_army_machine_individual_se_plural$"
+ pmca_ten_acot_army_machine_individual_se_desc: "$acot_army_machine_individual_se_desc$"
+ pmca_hundred_acot_army_machine_individual_se: "$pmca_hundred$ $acot_army_machine_individual_se$"
+ pmca_hundred_acot_army_machine_individual_se_plural: "$acot_army_machine_individual_se_plural$"
+ pmca_hundred_acot_army_machine_individual_se_desc: "$acot_army_machine_individual_se_desc$"
+
+
  ###############################
  ### ACOT_ARMY_MACHINE_TORSO ###
  ###############################
@@ -913,6 +946,17 @@
  pmca_hundred_acot_army_machine_torso: "$pmca_hundred$ $acot_army_machine_torso$"
  pmca_hundred_acot_army_machine_torso_plural: "$acot_army_machine_torso_plural$"
  pmca_hundred_acot_army_machine_torso_desc: "$acot_army_machine_torso_desc$"
+
+
+ ##########################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_TORSO ###
+ ##########################################
+ pmca_ten_acot_army_machine_individual_torso: "$pmca_ten$ $acot_army_machine_individual_torso$"
+ pmca_ten_acot_army_machine_individual_torso_plural: "$acot_army_machine_individual_torso_plural$"
+ pmca_ten_acot_army_machine_individual_torso_desc: "$acot_army_machine_individual_torso_desc$"
+ pmca_hundred_acot_army_machine_individual_torso: "$pmca_hundred$ $acot_army_machine_individual_torso$"
+ pmca_hundred_acot_army_machine_individual_torso_plural: "$acot_army_machine_individual_torso_plural$"
+ pmca_hundred_acot_army_machine_individual_torso_desc: "$acot_army_machine_individual_torso_desc$"
 
 
  ##################################
@@ -926,6 +970,17 @@
  pmca_hundred_acot_army_machine_torso_dm_desc: "$acot_army_machine_torso_dm_desc$"
 
 
+ #############################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_TORSO_DM ###
+ #############################################
+ pmca_ten_acot_army_machine_individual_torso_dm: "$pmca_ten$ $acot_army_machine_individual_torso_dm$"
+ pmca_ten_acot_army_machine_individual_torso_dm_plural: "$acot_army_machine_individual_torso_dm_plural$"
+ pmca_ten_acot_army_machine_individual_torso_dm_desc: "$acot_army_machine_individual_torso_dm_desc$"
+ pmca_hundred_acot_army_machine_individual_torso_dm: "$pmca_hundred$ $acot_army_machine_individual_torso_dm$"
+ pmca_hundred_acot_army_machine_individual_torso_dm_plural: "$acot_army_machine_individual_torso_dm_plural$"
+ pmca_hundred_acot_army_machine_individual_torso_dm_desc: "$acot_army_machine_individual_torso_dm_desc$"
+
+
  ##################################
  ### ACOT_ARMY_MACHINE_TORSO_AE ###
  ##################################
@@ -937,6 +992,17 @@
  pmca_hundred_acot_army_machine_torso_ae_desc: "$acot_army_machine_torso_ae_desc$"
 
 
+ #############################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_TORSO_AE ###
+ #############################################
+ pmca_ten_acot_army_machine_individual_torso_ae: "$pmca_ten$ $acot_army_machine_individual_torso_ae$"
+ pmca_ten_acot_army_machine_individual_torso_ae_plural: "$acot_army_machine_individual_torso_ae_plural$"
+ pmca_ten_acot_army_machine_individual_torso_ae_desc: "$acot_army_machine_individual_torso_ae_desc$"
+ pmca_hundred_acot_army_machine_individual_torso_ae: "$pmca_hundred$ $acot_army_machine_individual_torso_ae$"
+ pmca_hundred_acot_army_machine_individual_torso_ae_plural: "$acot_army_machine_individual_torso_ae_plural$"
+ pmca_hundred_acot_army_machine_individual_torso_ae_desc: "$acot_army_machine_individual_torso_ae_desc$"
+
+
  ##################################
  ### ACOT_ARMY_MACHINE_TORSO_SE ###
  ##################################
@@ -946,6 +1012,17 @@
  pmca_hundred_acot_army_machine_torso_se: "$pmca_hundred$ $acot_army_machine_torso_se$"
  pmca_hundred_acot_army_machine_torso_se_plural: "$acot_army_machine_torso_se_plural$"
  pmca_hundred_acot_army_machine_torso_se_desc: "$acot_army_machine_torso_se_desc$"
+
+
+ #############################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_TORSO_SE ###
+ #############################################
+ pmca_ten_acot_army_machine_individual_torso_se: "$pmca_ten$ $acot_army_machine_individual_torso_se$"
+ pmca_ten_acot_army_machine_individual_torso_se_plural: "$acot_army_machine_individual_torso_se_plural$"
+ pmca_ten_acot_army_machine_individual_torso_se_desc: "$acot_army_machine_individual_torso_se_desc$"
+ pmca_hundred_acot_army_machine_individual_torso_se: "$pmca_hundred$ $acot_army_machine_individual_torso_se$"
+ pmca_hundred_acot_army_machine_individual_torso_se_plural: "$acot_army_machine_individual_torso_se_plural$"
+ pmca_hundred_acot_army_machine_individual_torso_se_desc: "$acot_army_machine_individual_torso_se_desc$"
 
 
  #############################
@@ -1003,6 +1080,17 @@
  pmca_hundred_acot_army_machine_light_dm_desc: "$acot_army_machine_light_dm_desc$"
 
 
+ #############################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_LIGHT_DM ###
+ #############################################
+ pmca_ten_acot_army_machine_individual_light_dm: "$pmca_ten$ $acot_army_machine_individual_light_dm$"
+ pmca_ten_acot_army_machine_individual_light_dm_plural: "$acot_army_machine_individual_light_dm_plural$"
+ pmca_ten_acot_army_machine_individual_light_dm_desc: "$acot_army_machine_individual_light_dm_desc$"
+ pmca_hundred_acot_army_machine_individual_light_dm: "$pmca_hundred$ $acot_army_machine_individual_light_dm$"
+ pmca_hundred_acot_army_machine_individual_light_dm_plural: "$acot_army_machine_individual_light_dm_plural$"
+ pmca_hundred_acot_army_machine_individual_light_dm_desc: "$acot_army_machine_individual_light_dm_desc$"
+
+
  ##################################
  ### ACOT_ARMY_MACHINE_LIGHT_AE ###
  ##################################
@@ -1014,6 +1102,17 @@
  pmca_hundred_acot_army_machine_light_ae_desc: "$acot_army_machine_light_ae_desc$"
 
 
+ #############################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_LIGHT_AE ###
+ #############################################
+ pmca_ten_acot_army_machine_individual_light_ae: "$pmca_ten$ $acot_army_machine_individual_light_ae$"
+ pmca_ten_acot_army_machine_individual_light_ae_plural: "$acot_army_machine_individual_light_ae_plural$"
+ pmca_ten_acot_army_machine_individual_light_ae_desc: "$acot_army_machine_individual_light_ae_desc$"
+ pmca_hundred_acot_army_machine_individual_light_ae: "$pmca_hundred$ $acot_army_machine_individual_light_ae$"
+ pmca_hundred_acot_army_machine_individual_light_ae_plural: "$acot_army_machine_individual_light_ae_plural$"
+ pmca_hundred_acot_army_machine_individual_light_ae_desc: "$acot_army_machine_individual_light_ae_desc$"
+
+
  ##################################
  ### ACOT_ARMY_MACHINE_LIGHT_SE ###
  ##################################
@@ -1023,6 +1122,17 @@
  pmca_hundred_acot_army_machine_light_se: "$pmca_hundred$ $acot_army_machine_light_se$"
  pmca_hundred_acot_army_machine_light_se_plural: "$acot_army_machine_light_se_plural$"
  pmca_hundred_acot_army_machine_light_se_desc: "$acot_army_machine_light_se_desc$"
+
+
+ #############################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_LIGHT_SE ###
+ #############################################
+ pmca_ten_acot_army_machine_individual_light_se: "$pmca_ten$ $acot_army_machine_individual_light_se$"
+ pmca_ten_acot_army_machine_individual_light_se_plural: "$acot_army_machine_individual_light_se_plural$"
+ pmca_ten_acot_army_machine_individual_light_se_desc: "$acot_army_machine_individual_light_se_desc$"
+ pmca_hundred_acot_army_machine_individual_light_se: "$pmca_hundred$ $acot_army_machine_individual_light_se$"
+ pmca_hundred_acot_army_machine_individual_light_se_plural: "$acot_army_machine_individual_light_se_plural$"
+ pmca_hundred_acot_army_machine_individual_light_se_desc: "$acot_army_machine_individual_light_se_desc$"
 
 
  #####################################
@@ -1080,6 +1190,17 @@
  pmca_hundred_acot_army_machine_heavy_dm_desc: "$acot_army_machine_heavy_dm_desc$"
 
 
+ #############################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_HEAVY_DM ###
+ #############################################
+ pmca_ten_acot_army_machine_individual_heavy_dm: "$pmca_ten$ $acot_army_machine_individual_heavy_dm$"
+ pmca_ten_acot_army_machine_individual_heavy_dm_plural: "$acot_army_machine_individual_heavy_dm_plural$"
+ pmca_ten_acot_army_machine_individual_heavy_dm_desc: "$acot_army_machine_individual_heavy_dm_desc$"
+ pmca_hundred_acot_army_machine_individual_heavy_dm: "$pmca_hundred$ $acot_army_machine_individual_heavy_dm$"
+ pmca_hundred_acot_army_machine_individual_heavy_dm_plural: "$acot_army_machine_individual_heavy_dm_plural$"
+ pmca_hundred_acot_army_machine_individual_heavy_dm_desc: "$acot_army_machine_individual_heavy_dm_desc$"
+
+
  ##################################
  ### ACOT_ARMY_MACHINE_HEAVY_AE ###
  ##################################
@@ -1091,6 +1212,17 @@
  pmca_hundred_acot_army_machine_heavy_ae_desc: "$acot_army_machine_heavy_ae_desc$"
 
 
+ #############################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_HEAVY_AE ###
+ #############################################
+ pmca_ten_acot_army_machine_individual_heavy_ae: "$pmca_ten$ $acot_army_machine_individual_heavy_ae$"
+ pmca_ten_acot_army_machine_individual_heavy_ae_plural: "$acot_army_machine_individual_heavy_ae_plural$"
+ pmca_ten_acot_army_machine_individual_heavy_ae_desc: "$acot_army_machine_individual_heavy_ae_desc$"
+ pmca_hundred_acot_army_machine_individual_heavy_ae: "$pmca_hundred$ $acot_army_machine_individual_heavy_ae$"
+ pmca_hundred_acot_army_machine_individual_heavy_ae_plural: "$acot_army_machine_individual_heavy_ae_plural$"
+ pmca_hundred_acot_army_machine_individual_heavy_ae_desc: "$acot_army_machine_individual_heavy_ae_desc$"
+
+
  ##################################
  ### ACOT_ARMY_MACHINE_HEAVY_SE ###
  ##################################
@@ -1100,6 +1232,17 @@
  pmca_hundred_acot_army_machine_heavy_se: "$pmca_hundred$ $acot_army_machine_heavy_se$"
  pmca_hundred_acot_army_machine_heavy_se_plural: "$acot_army_machine_heavy_se_plural$"
  pmca_hundred_acot_army_machine_heavy_se_desc: "$acot_army_machine_heavy_se_desc$"
+
+
+ #############################################
+ ### ACOT_ARMY_MACHINE_INDIVIDUAL_HEAVY_SE ###
+ #############################################
+ pmca_ten_acot_army_machine_individual_heavy_se: "$pmca_ten$ $acot_army_machine_individual_heavy_se$"
+ pmca_ten_acot_army_machine_individual_heavy_se_plural: "$acot_army_machine_individual_heavy_se_plural$"
+ pmca_ten_acot_army_machine_individual_heavy_se_desc: "$acot_army_machine_individual_heavy_se_desc$"
+ pmca_hundred_acot_army_machine_individual_heavy_se: "$pmca_hundred$ $acot_army_machine_individual_heavy_se$"
+ pmca_hundred_acot_army_machine_individual_heavy_se_plural: "$acot_army_machine_individual_heavy_se_plural$"
+ pmca_hundred_acot_army_machine_individual_heavy_se_desc: "$acot_army_machine_individual_heavy_se_desc$"
 
 
  ################################
@@ -1232,6 +1375,28 @@
  pmca_hundred_acot_army_machine_special_torso_se: "$pmca_hundred$ $acot_army_machine_special_torso_se$"
  pmca_hundred_acot_army_machine_special_torso_se_plural: "$acot_army_machine_special_torso_se_plural$"
  pmca_hundred_acot_army_machine_special_torso_se_desc: "$acot_army_machine_special_torso_se_desc$"
+
+
+ #######################################
+ ### ACOT_ARMY_INDIE_MACHINE_SPECIAL ###
+ #######################################
+ pmca_ten_acot_army_indie_machine_special: "$pmca_ten$ $acot_army_indie_machine_special$"
+ pmca_ten_acot_army_indie_machine_special_plural: "$acot_army_indie_machine_special_plural$"
+ pmca_ten_acot_army_indie_machine_special_desc: "$acot_army_indie_machine_special_desc$"
+ pmca_hundred_acot_army_indie_machine_special: "$pmca_hundred$ $acot_army_indie_machine_special$"
+ pmca_hundred_acot_army_indie_machine_special_plural: "$acot_army_indie_machine_special_plural$"
+ pmca_hundred_acot_army_indie_machine_special_desc: "$acot_army_indie_machine_special_desc$"
+
+
+ ##########################################
+ ### ACOT_ARMY_INDIE_MACHINE_SPECIAL_SE ###
+ ##########################################
+ pmca_ten_acot_army_indie_machine_special_se: "$pmca_ten$ $acot_army_indie_machine_special_se$"
+ pmca_ten_acot_army_indie_machine_special_se_plural: "$acot_army_indie_machine_special_se_plural$"
+ pmca_ten_acot_army_indie_machine_special_se_desc: "$acot_army_indie_machine_special_se_desc$"
+ pmca_hundred_acot_army_indie_machine_special_se: "$pmca_hundred$ $acot_army_indie_machine_special_se$"
+ pmca_hundred_acot_army_indie_machine_special_se_plural: "$acot_army_indie_machine_special_se_plural$"
+ pmca_hundred_acot_army_indie_machine_special_se_desc: "$acot_army_indie_machine_special_se_desc$"
 
 
  ############################

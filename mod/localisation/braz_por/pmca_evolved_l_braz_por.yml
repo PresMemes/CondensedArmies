@@ -2,6 +2,17 @@
 
  # Localisation generated using Python
 
+ ################################
+ ### TEC_ASCENDED_NANITE_ARMY ###
+ ################################
+ pmca_ten_tec_ascended_nanite_army: "$pmca_ten$ $tec_ascended_nanite_army$"
+ pmca_ten_tec_ascended_nanite_army_plural: "$tec_ascended_nanite_army_plural$"
+ pmca_ten_tec_ascended_nanite_army_desc: "$tec_ascended_nanite_army_desc$"
+ pmca_hundred_tec_ascended_nanite_army: "$pmca_hundred$ $tec_ascended_nanite_army$"
+ pmca_hundred_tec_ascended_nanite_army_plural: "$tec_ascended_nanite_army_plural$"
+ pmca_hundred_tec_ascended_nanite_army_desc: "$tec_ascended_nanite_army_desc$"
+
+
  ###########################
  ### TEC_SHAMBLING_ROBOT ###
  ###########################
@@ -11,6 +22,28 @@
  pmca_hundred_tec_shambling_robot: "$pmca_hundred$ $tec_shambling_robot$"
  pmca_hundred_tec_shambling_robot_plural: "$tec_shambling_robot_plural$"
  pmca_hundred_tec_shambling_robot_desc: "$tec_shambling_robot_desc$"
+
+
+ ################
+ ### TEC_HUSK ###
+ ################
+ pmca_ten_tec_husk: "$pmca_ten$ $tec_husk$"
+ pmca_ten_tec_husk_plural: "$tec_husk_plural$"
+ pmca_ten_tec_husk_desc: "$tec_husk_desc$"
+ pmca_hundred_tec_husk: "$pmca_hundred$ $tec_husk$"
+ pmca_hundred_tec_husk_plural: "$tec_husk_plural$"
+ pmca_hundred_tec_husk_desc: "$tec_husk_desc$"
+
+
+ ##########################
+ ### TEC_ZOMBIFIED_ARMY ###
+ ##########################
+ pmca_ten_tec_zombified_army: "$pmca_ten$ $tec_zombified_army$"
+ pmca_ten_tec_zombified_army_plural: "$tec_zombified_army_plural$"
+ pmca_ten_tec_zombified_army_desc: "$tec_zombified_army_desc$"
+ pmca_hundred_tec_zombified_army: "$pmca_hundred$ $tec_zombified_army$"
+ pmca_hundred_tec_zombified_army_plural: "$tec_zombified_army_plural$"
+ pmca_hundred_tec_zombified_army_desc: "$tec_zombified_army_desc$"
 
 
  ###########################

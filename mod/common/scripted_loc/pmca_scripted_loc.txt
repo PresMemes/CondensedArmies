@@ -17,7 +17,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable_arithmetic = {
-				which = @slgt_Tier6_cost
+				which = @slgt_mod
 				value = 0
 			}
 		}
@@ -116,6 +116,21 @@ defined_text = {
 		trigger = {
 			check_variable_arithmetic = {
 				which = @has_acquisition_of_tech
+				value = 0
+			}
+		}
+		localization_key = pmca_inactive
+	}
+	default = pmca_active
+}
+
+
+defined_text = {
+	name = pmca_get_pki_status
+	text = {
+		trigger = {
+			check_variable_arithmetic = {
+				which = @has_pki_mod
 				value = 0
 			}
 		}

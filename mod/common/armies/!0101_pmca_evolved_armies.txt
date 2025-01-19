@@ -1,11 +1,51 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated: Sat Apr 20 10:45:43 2024
+# Last Updated: Sunday, January 19, 2025
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_1_input
 	MOD_VARIABLE_1 = @has_stellaris_evolved
 	CONTENT = "
+	pmca_ten_tec_ascended_nanite_army = {
+		use_armynames_from = tec_ascended_nanite_army
+		damage = 200.0
+		health = 50.0
+		has_morale = no
+		morale_damage = 2.0
+		collateral_damage = 100.0
+		war_exhaustion = 40.0
+		time = 360.0
+		has_species = no
+		icon = GFX_tec_siegecraft_army
+		resources = {
+			category = armies
+			cost = {
+				nanites = 2500.0
+			}
+			upkeep = {
+				energy = 20.0
+			}
+		}
+		potential = {
+			owner = {
+					has_country_flag = tec_ascension_synthetic_nanites
+				}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = nanites
+				PMCA_VALUE = 2500.0
+			}
+		}
+		allow = {
+			custom_tooltip = tec_ascended_nanite_army_tooltip
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
 	pmca_ten_tec_shambling_robot = {
 		use_armynames_from = tec_shambling_robot
 		damage = 10.0
@@ -34,12 +74,95 @@ inline_script = {
 				OR = {
 					has_trait = trait_mechanical
 					has_trait = trait_machine_unit
-					has_trait = @trait_tec_replicant_main
-
+					has_trait = trait_tec_replicant_main
+					
 				}
 			}
 			owner = {
 				has_valid_civic = civic_tec_machine_reanimation
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 1000.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_ten_tec_husk = {
+		use_armynames_from = tec_husk
+		damage = 10.0
+		health = 10.0
+		has_morale = no
+		morale_damage = 1.6
+		collateral_damage = 12.5
+		war_exhaustion = 5.0
+		time = 60.0
+		icon = GFX_army_type_undead
+		prerequisites = { tech_assault_armies }
+		resources = {
+			category = armies
+			cost = {
+				energy = 1000.0
+			}
+			upkeep = {
+				energy = 7.5
+			}
+		}
+		show_tech_unlock_if = {
+			tec_is_reanimator_empire = yes
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+			always = no
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 1000.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_ten_tec_zombified_army = {
+		use_armynames_from = tec_zombified_army
+		damage = 10.0
+		health = 10.0
+		has_morale = no
+		morale_damage = 1.75
+		collateral_damage = 12.5
+		war_exhaustion = 5.0
+		time = 60.0
+		icon = GFX_army_type_undead
+		prerequisites = { tech_assault_armies }
+		resources = {
+			category = armies
+			cost = {
+				energy = 1000.0
+			}
+			upkeep = {
+				energy = 7.5
+			}
+		}
+		potential = {
+			from = {
+				has_trait = trait_zombie
+				has_trait = trait_tec_zombification
 			}
 		}
 		potential_country = {
@@ -86,6 +209,65 @@ inline_script = {
 		}
 		ai_weight = {
 			base = 0.0
+		}
+	}
+
+	pmca_ten_psionic_army = {
+		use_armynames_from = psionic_army
+		damage = 20.0
+		health = 17.5
+		morale = 25.0
+		morale_damage = 1.5
+		collateral_damage = 5.0
+		war_exhaustion = 30.0
+		time = 120.0
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_telepathy }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 2500.0
+			}
+			upkeep = {
+				energy = 25.0
+			}
+		}
+		potential = {
+			from = {
+				OR = {
+					has_utopia = no
+					tec_is_any_psionic_species = yes
+				}
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_trait = trait_limited_cybernetic
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 2500.0
+			}
+		}
+		ai_weight = {
+			base = 150.0
+			modifier = {
+				set = 0
+				OR = {
+					NOT = { has_technology = tech_telepathy }
+					has_technology = tech_gene_seed_purification
+				}
+			}
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_spiritualist }
+			}
 		}
 	}
 
@@ -147,6 +329,46 @@ inline_script = {
 		}
 	}
 
+	pmca_hundred_tec_ascended_nanite_army = {
+		use_armynames_from = tec_ascended_nanite_army
+		damage = 2000.0
+		health = 500.0
+		has_morale = no
+		morale_damage = 2.0
+		collateral_damage = 1000.0
+		war_exhaustion = 400.0
+		time = 360.0
+		has_species = no
+		icon = GFX_tec_siegecraft_army
+		resources = {
+			category = armies
+			cost = {
+				nanites = 25000.0
+			}
+			upkeep = {
+				energy = 200.0
+			}
+		}
+		potential = {
+			owner = {
+					has_country_flag = tec_ascension_synthetic_nanites
+				}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = nanites
+				PMCA_VALUE = 25000.0
+			}
+		}
+		allow = {
+			custom_tooltip = tec_ascended_nanite_army_tooltip
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
 	pmca_hundred_tec_shambling_robot = {
 		use_armynames_from = tec_shambling_robot
 		damage = 100.0
@@ -175,12 +397,95 @@ inline_script = {
 				OR = {
 					has_trait = trait_mechanical
 					has_trait = trait_machine_unit
-					has_trait = @trait_tec_replicant_main
-
+					has_trait = trait_tec_replicant_main
+					
 				}
 			}
 			owner = {
 				has_valid_civic = civic_tec_machine_reanimation
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 10000.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_hundred_tec_husk = {
+		use_armynames_from = tec_husk
+		damage = 100.0
+		health = 100.0
+		has_morale = no
+		morale_damage = 1.6
+		collateral_damage = 125.0
+		war_exhaustion = 50.0
+		time = 60.0
+		icon = GFX_army_type_undead
+		prerequisites = { tech_assault_armies }
+		resources = {
+			category = armies
+			cost = {
+				energy = 10000.0
+			}
+			upkeep = {
+				energy = 75.0
+			}
+		}
+		show_tech_unlock_if = {
+			tec_is_reanimator_empire = yes
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_sapient = no
+				}
+			}
+			always = no
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = energy
+				PMCA_VALUE = 10000.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_hundred_tec_zombified_army = {
+		use_armynames_from = tec_zombified_army
+		damage = 100.0
+		health = 100.0
+		has_morale = no
+		morale_damage = 1.75
+		collateral_damage = 125.0
+		war_exhaustion = 50.0
+		time = 60.0
+		icon = GFX_army_type_undead
+		prerequisites = { tech_assault_armies }
+		resources = {
+			category = armies
+			cost = {
+				energy = 10000.0
+			}
+			upkeep = {
+				energy = 75.0
+			}
+		}
+		potential = {
+			from = {
+				has_trait = trait_zombie
+				has_trait = trait_tec_zombification
 			}
 		}
 		potential_country = {
@@ -227,6 +532,65 @@ inline_script = {
 		}
 		ai_weight = {
 			base = 0.0
+		}
+	}
+
+	pmca_hundred_psionic_army = {
+		use_armynames_from = psionic_army
+		damage = 200.0
+		health = 175.0
+		morale = 250.0
+		morale_damage = 1.5
+		collateral_damage = 50.0
+		war_exhaustion = 300.0
+		time = 120.0
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_telepathy }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 25000.0
+			}
+			upkeep = {
+				energy = 250.0
+			}
+		}
+		potential = {
+			from = {
+				OR = {
+					has_utopia = no
+					tec_is_any_psionic_species = yes
+				}
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_trait = trait_limited_cybernetic
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 25000.0
+			}
+		}
+		ai_weight = {
+			base = 200.0
+			modifier = {
+				set = 0
+				OR = {
+					NOT = { has_technology = tech_telepathy }
+					has_technology = tech_gene_seed_purification
+				}
+			}
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+				NOT = { has_ethic = ethic_fanatic_spiritualist }
+			}
 		}
 	}
 

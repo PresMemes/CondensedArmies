@@ -6,6 +6,19 @@ pmca_spawn_condensed_army = {
 		owner = $OWNER|root.owner$
 		species = $SPECIES|root.owner_main_species$
 		type = $TYPE$
+		effect = {
+			set_army_flag = pmca_times_$MULT_FLAG$_army
+		}
 	}
-	last_created_army = { set_army_flag = pmca_times_$MULT_FLAG$_army }
+}
+
+pmca_spawn_multiple_condensed_armies = {
+	while = {
+		count = $COUNT$
+		pmca_spawn_condensed_army = {
+			OWNER = $OWNER$
+			TYPE = $ARMY$
+			MULT_FLAG = $MULT_FLAG$
+		}
+	}
 }

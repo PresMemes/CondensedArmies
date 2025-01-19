@@ -979,40 +979,40 @@ country_event = {
 					trigger = army_type
 					pmca_ten_acot_hive_light_1 = {
 						fromfrom = {
-							pmca_army_compat_spawn_broodling_only_effect = {
+							pmca_spawn_multiple_condensed_armies = {
 								COUNT = 2
 								OWNER = root
-								BROODLING = pmca_ten_acot_hive_broodling_1
+								ARMY = pmca_ten_acot_hive_broodling_1
 								MULT_FLAG = ten
 							}
 						}
 					}
 					pmca_ten_acot_hive_light_dm = {
 						fromfrom = {
-							pmca_army_compat_spawn_broodling_only_effect = {
+							pmca_spawn_multiple_condensed_armies = {
 								COUNT = 2
 								OWNER = root
-								BROODLING = pmca_ten_acot_hive_broodling_dm
+								ARMY = pmca_ten_acot_hive_broodling_dm
 								MULT_FLAG = ten
 							}
 						}
 					}
 					pmca_ten_acot_hive_light_ae = {
 						fromfrom = {
-							pmca_army_compat_spawn_broodling_only_effect = {
+							pmca_spawn_multiple_condensed_armies = {
 								COUNT = 2
 								OWNER = root
-								BROODLING = pmca_ten_acot_hive_broodling_ae
+								ARMY = pmca_ten_acot_hive_broodling_ae
 								MULT_FLAG = ten
 							}
 						}
 					}
 					pmca_ten_acot_hive_light_se = {
 						fromfrom = {
-							pmca_army_compat_spawn_broodling_only_effect = {
+							pmca_spawn_multiple_condensed_armies = {
 								COUNT = 2
 								OWNER = root
-								BROODLING = pmca_ten_acot_hive_broodling_se
+								ARMY = pmca_ten_acot_hive_broodling_se
 								MULT_FLAG = ten
 							}
 						}
@@ -1146,40 +1146,40 @@ country_event = {
 					}
 					pmca_hundred_acot_hive_light_1 = {
 						fromfrom = {
-							pmca_army_compat_spawn_broodling_only_effect = {
+							pmca_spawn_multiple_condensed_armies = {
 								COUNT = 2
 								OWNER = root
-								BROODLING = pmca_hundred_acot_hive_broodling_1
+								ARMY = pmca_hundred_acot_hive_broodling_1
 								MULT_FLAG = hundred
 							}
 						}
 					}
 					pmca_hundred_acot_hive_light_dm = {
 						fromfrom = {
-							pmca_army_compat_spawn_broodling_only_effect = {
+							pmca_spawn_multiple_condensed_armies = {
 								COUNT = 2
 								OWNER = root
-								BROODLING = pmca_hundred_acot_hive_broodling_dm
+								ARMY = pmca_hundred_acot_hive_broodling_dm
 								MULT_FLAG = hundred
 							}
 						}
 					}
 					pmca_hundred_acot_hive_light_ae = {
 						fromfrom = {
-							pmca_army_compat_spawn_broodling_only_effect = {
+							pmca_spawn_multiple_condensed_armies = {
 								COUNT = 2
 								OWNER = root
-								BROODLING = pmca_hundred_acot_hive_broodling_ae
+								ARMY = pmca_hundred_acot_hive_broodling_ae
 								MULT_FLAG = hundred
 							}
 						}
 					}
 					pmca_hundred_acot_hive_light_se = {
 						fromfrom = {
-							pmca_army_compat_spawn_broodling_only_effect = {
+							pmca_spawn_multiple_condensed_armies = {
 								COUNT = 2
 								OWNER = root
-								BROODLING = pmca_hundred_acot_hive_broodling_se
+								ARMY = pmca_hundred_acot_hive_broodling_se
 								MULT_FLAG = hundred
 							}
 						}
@@ -1430,74 +1430,5 @@ country_event = {
 			}
 		}
 		"
-	}
-}
-
-#############
-### GIGAS ###
-#############
-
-## Gatekeeper
-country_event = {
-	id = pmca_army_compat.1000
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_gigastructures
-			CONTENT = "
-			from = { has_trait = paluush_trait_grandbunny }
-			"
-		}
-	}
-
-	immediate = {
-		from = {
-			leader_event = {
-				id = pmca_army_compat.1001
-				days = 1 # Delay to let armies spawn
-			}
-		}
-	}
-}
-
-# Grandbunny -> x2 Grandbunny
-#PM: Originally was going to do x100 Grandbunny, but I legit don't think it's possible without some serious fuckery
-# My simulations estimate you'd need ~8k x100 armies (~80 million minerals), though it doesn't take modifiers or Commanders into account
-# (why did i spend a week emulating ground combat in python)
-leader_event = {
-	id = pmca_army_compat.1001
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		exists = owner
-		exists = owner.capital_scope
-	}
-
-	immediate = {
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_gigastructures
-			CONTENT = "
-			owner.capital_scope = {
-				if = {
-					limit = { has_global_flag = acot_activated }
-					random_planet_army = {
-						limit = { army_type = the_grandbunny_acot }
-						modify_army = { type = pmca_ten_the_grandbunny_acot }
-					}
-				}
-				else = {
-					random_planet_army = {
-						limit = { army_type = the_grandbunny }
-						modify_army = { type = pmca_ten_the_grandbunny }
-					}
-				}
-			}
-			"
-		}
 	}
 }

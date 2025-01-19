@@ -2,34 +2,9 @@
 
 # 2 input AND gate
 
-# So let's say I want an inline_script that ONLY loads if mod A and mod B are present.
-# Using the math described in 'pmca_conditional_inline_1_input.txt', the resulting truth table would look like this:
-# A | B | Output
-# --+---+--------
-# 0 | 0 |   0
-# 0 | 1 |   0
-# 1 | 0 |   0
-# 1 | 1 |   1
-#
-# Which matches 1:1 with a logical AND gate.
-# And making an AND gate is pretty easy, we can just multiply the outputs together since anything * 0 = 0
-# (Note: ((|x| + 2) % (|x| + 1)) is abbreviated as n(x) for readability purposes)
-# f(x) = n(a) * n(b)
-#
-# People much smarter than me have already replicated most logic gates as math, so to make an OR gate we can do:
-# f(x) = n(a) + n(b) - n(a) * n(b)
-#
-# NOT gates are pretty easy to implement as well:
-# f(x) = 1 - n(a)
-#
-# XOR can be done with:
-# f(x) = n(a) + n(b) - (2 * n(a) * n(b))
-#
-# NANDs, NORs, and XNORs can be made by combining the above formulas.
-
 inline_script = {
 	script = compatibility/pmca_conditional_inline_step_2
 
-	CASE = @[ ((|$MOD_VARIABLE_1$| + 2) % (|$MOD_VARIABLE_1$| + 1)) * ((|$MOD_VARIABLE_2$| + 2) % (|$MOD_VARIABLE_2$| + 1)) ]
+	CASE = @[ ((|($MOD_VARIABLE_1$ * $MOD_VARIABLE_2$)| + 2) % (|($MOD_VARIABLE_1$ * $MOD_VARIABLE_2$)| + 1)) ]
 	CONTENT = "$CONTENT$"
 }

@@ -1,0 +1,69 @@
+﻿l_spanish:
+
+ # Localisation generated using Python
+
+ ###########################
+ ### KATZENSOLDATEN_ARMY ###
+ ###########################
+ pmca_ten_katzensoldaten_army: "$pmca_ten$ $katzensoldaten_army$"
+ pmca_ten_katzensoldaten_army_plural: "$katzensoldaten_army_plural$"
+ pmca_ten_katzensoldaten_army_desc: "$katzensoldaten_army_desc$"
+ pmca_hundred_katzensoldaten_army: "$pmca_hundred$ $katzensoldaten_army$"
+ pmca_hundred_katzensoldaten_army_plural: "$katzensoldaten_army_plural$"
+ pmca_hundred_katzensoldaten_army_desc: "$katzensoldaten_army_desc$"
+
+
+ ##########################
+ ### ANGRIFFSKATZE_ARMY ###
+ ##########################
+ pmca_ten_angriffskatze_army: "$pmca_ten$ $angriffskatze_army$"
+ pmca_ten_angriffskatze_army_plural: "$angriffskatze_army_plural$"
+ pmca_ten_angriffskatze_army_desc: "$angriffskatze_army_desc$"
+ pmca_hundred_angriffskatze_army: "$pmca_hundred$ $angriffskatze_army$"
+ pmca_hundred_angriffskatze_army_plural: "$angriffskatze_army_plural$"
+ pmca_hundred_angriffskatze_army_desc: "$angriffskatze_army_desc$"
+
+
+ ############################
+ ### GEPANZERTERTANK_ARMY ###
+ ############################
+ pmca_ten_gepanzertertank_army: "$pmca_ten$ $gepanzertertank_army$"
+ pmca_ten_gepanzertertank_army_plural: "$gepanzertertank_army_plural$"
+ pmca_ten_gepanzertertank_army_desc: "$gepanzertertank_army_desc$"
+ pmca_hundred_gepanzertertank_army: "$pmca_hundred$ $gepanzertertank_army$"
+ pmca_hundred_gepanzertertank_army_plural: "$gepanzertertank_army_plural$"
+ pmca_hundred_gepanzertertank_army_desc: "$gepanzertertank_army_desc$"
+
+
+ #######################################
+ ### ATMOSPHARISCHEKATZENBOMBER_ARMY ###
+ #######################################
+ pmca_ten_atmospharischekatzenbomber_army: "$pmca_ten$ $atmospharischekatzenbomber_army$"
+ pmca_ten_atmospharischekatzenbomber_army_plural: "$atmospharischekatzenbomber_army_plural$"
+ pmca_ten_atmospharischekatzenbomber_army_desc: "$atmospharischekatzenbomber_army_desc$"
+ pmca_hundred_atmospharischekatzenbomber_army: "$pmca_hundred$ $atmospharischekatzenbomber_army$"
+ pmca_hundred_atmospharischekatzenbomber_army_plural: "$atmospharischekatzenbomber_army_plural$"
+ pmca_hundred_atmospharischekatzenbomber_army_desc: "$atmospharischekatzenbomber_army_desc$"
+
+
+ #################################
+ ### LUFTKATZENVERNICHTER_ARMY ###
+ #################################
+ pmca_ten_luftkatzenvernichter_army: "$pmca_ten$ $luftkatzenvernichter_army$"
+ pmca_ten_luftkatzenvernichter_army_plural: "$luftkatzenvernichter_army_plural$"
+ pmca_ten_luftkatzenvernichter_army_desc: "$luftkatzenvernichter_army_desc$"
+ pmca_hundred_luftkatzenvernichter_army: "$pmca_hundred$ $luftkatzenvernichter_army$"
+ pmca_hundred_luftkatzenvernichter_army_plural: "$luftkatzenvernichter_army_plural$"
+ pmca_hundred_luftkatzenvernichter_army_desc: "$luftkatzenvernichter_army_desc$"
+
+
+ ########################################
+ ### PKI_RIESIGERKATZENPANZER_ASSAULT ###
+ ########################################
+ pmca_ten_pki_riesigerkatzenpanzer_assault: "$pmca_ten$ $pki_riesigerkatzenpanzer_assault$"
+ pmca_ten_pki_riesigerkatzenpanzer_assault_plural: "$pki_riesigerkatzenpanzer_assault_plural$"
+ pmca_ten_pki_riesigerkatzenpanzer_assault_desc: "$pki_riesigerkatzenpanzer_assault_desc$"
+ pmca_hundred_pki_riesigerkatzenpanzer_assault: "$pmca_hundred$ $pki_riesigerkatzenpanzer_assault$"
+ pmca_hundred_pki_riesigerkatzenpanzer_assault_plural: "$pki_riesigerkatzenpanzer_assault_plural$"
+ pmca_hundred_pki_riesigerkatzenpanzer_assault_desc: "$pki_riesigerkatzenpanzer_assault_desc$"
+

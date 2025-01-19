@@ -2,6 +2,50 @@
 
  # Localisation generated using Python
 
+ #################################
+ ### ACOT_ARMY_MACHINE_SPECIAL ###
+ #################################
+ pmca_ten_acot_army_machine_special: "$pmca_ten$ $acot_army_machine_special$"
+ pmca_ten_acot_army_machine_special_plural: "$acot_army_machine_special_plural$"
+ pmca_ten_acot_army_machine_special_desc: "$acot_army_machine_special_desc$"
+ pmca_hundred_acot_army_machine_special: "$pmca_hundred$ $acot_army_machine_special$"
+ pmca_hundred_acot_army_machine_special_plural: "$acot_army_machine_special_plural$"
+ pmca_hundred_acot_army_machine_special_desc: "$acot_army_machine_special_desc$"
+
+
+ ####################################
+ ### ACOT_ARMY_MACHINE_SPECIAL_SE ###
+ ####################################
+ pmca_ten_acot_army_machine_special_se: "$pmca_ten$ $acot_army_machine_special_se$"
+ pmca_ten_acot_army_machine_special_se_plural: "$acot_army_machine_special_se_plural$"
+ pmca_ten_acot_army_machine_special_se_desc: "$acot_army_machine_special_se_desc$"
+ pmca_hundred_acot_army_machine_special_se: "$pmca_hundred$ $acot_army_machine_special_se$"
+ pmca_hundred_acot_army_machine_special_se_plural: "$acot_army_machine_special_se_plural$"
+ pmca_hundred_acot_army_machine_special_se_desc: "$acot_army_machine_special_se_desc$"
+
+
+ ##############################
+ ### ACOT_ARMY_HIVE_CONTROL ###
+ ##############################
+ pmca_ten_acot_army_hive_control: "$pmca_ten$ $acot_army_hive_control$"
+ pmca_ten_acot_army_hive_control_plural: "$acot_army_hive_control_plural$"
+ pmca_ten_acot_army_hive_control_desc: "$acot_army_hive_control_desc$"
+ pmca_hundred_acot_army_hive_control: "$pmca_hundred$ $acot_army_hive_control$"
+ pmca_hundred_acot_army_hive_control_plural: "$acot_army_hive_control_plural$"
+ pmca_hundred_acot_army_hive_control_desc: "$acot_army_hive_control_desc$"
+
+
+ #################################
+ ### ACOT_ARMY_HIVE_CONTROL_SE ###
+ #################################
+ pmca_ten_acot_army_hive_control_se: "$pmca_ten$ $acot_army_hive_control_se$"
+ pmca_ten_acot_army_hive_control_se_plural: "$acot_army_hive_control_se_plural$"
+ pmca_ten_acot_army_hive_control_se_desc: "$acot_army_hive_control_se_desc$"
+ pmca_hundred_acot_army_hive_control_se: "$pmca_hundred$ $acot_army_hive_control_se$"
+ pmca_hundred_acot_army_hive_control_se_plural: "$acot_army_hive_control_se_plural$"
+ pmca_hundred_acot_army_hive_control_se_desc: "$acot_army_hive_control_se_desc$"
+
+
  ########################
  ### ACOT_PHANON_ARMY ###
  ########################

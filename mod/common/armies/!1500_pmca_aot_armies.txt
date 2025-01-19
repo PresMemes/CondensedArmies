@@ -1,6 +1,6 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated: Sun Aug 04 08:56:41 2024
+# Last Updated: Sunday, January 19, 2025
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_2_input
@@ -27,27 +27,24 @@ inline_script = {
 				unity = 35.0
 			}
 			upkeep = {
-				energy = 35.0
+				energy = 25.0
 			}
-		}
-		show_tech_unlock_if = {
-			is_machine_empire = yes
 		}
 		potential = {
 			NOT = {
 				has_global_flag = acot_army_forbidden
 			}
+			from = {
+				has_trait = trait_machine_unit
+			}
 			owner = {
-				is_machine_empire = yes
 				NOT = {
 					has_technology = tech_acot_army_machine_se
 				}
 			}
-			from = {
-				has_trait = trait_machine_unit
-			}
 		}
 		potential_country = {
+			is_machine_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = acot_sr_dark_energy
@@ -88,7 +85,7 @@ inline_script = {
 				unity = 37.5
 			}
 			upkeep = {
-				energy = 37.5
+				energy = 25.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -100,15 +97,15 @@ inline_script = {
 			NOT = {
 				has_global_flag = acot_army_forbidden
 			}
-			owner = {
-				is_machine_empire = yes
-				has_technology = tech_acot_army_machine_se
-			}
 			from = {
 				has_trait = trait_machine_unit
 			}
+			owner = {
+				has_technology = tech_acot_army_machine_se
+			}
 		}
 		potential_country = {
+			is_machine_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = acot_sr_dark_energy
@@ -155,6 +152,11 @@ inline_script = {
 			}
 			from = {
 				has_trait = trait_hive_mind
+			}
+			owner = {
+				NOT = {
+					has_technology = tech_acot_army_hive_se
+				}
 			}
 		}
 		potential_country = {
@@ -565,27 +567,24 @@ inline_script = {
 				unity = 350.0
 			}
 			upkeep = {
-				energy = 350.0
+				energy = 250.0
 			}
-		}
-		show_tech_unlock_if = {
-			is_machine_empire = yes
 		}
 		potential = {
 			NOT = {
 				has_global_flag = acot_army_forbidden
 			}
+			from = {
+				has_trait = trait_machine_unit
+			}
 			owner = {
-				is_machine_empire = yes
 				NOT = {
 					has_technology = tech_acot_army_machine_se
 				}
 			}
-			from = {
-				has_trait = trait_machine_unit
-			}
 		}
 		potential_country = {
+			is_machine_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = acot_sr_dark_energy
@@ -626,7 +625,7 @@ inline_script = {
 				unity = 375.0
 			}
 			upkeep = {
-				energy = 375.0
+				energy = 250.0
 			}
 		}
 		show_tech_unlock_if = {
@@ -638,15 +637,15 @@ inline_script = {
 			NOT = {
 				has_global_flag = acot_army_forbidden
 			}
-			owner = {
-				is_machine_empire = yes
-				has_technology = tech_acot_army_machine_se
-			}
 			from = {
 				has_trait = trait_machine_unit
 			}
+			owner = {
+				has_technology = tech_acot_army_machine_se
+			}
 		}
 		potential_country = {
+			is_machine_empire = yes
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = acot_sr_dark_energy
@@ -693,6 +692,11 @@ inline_script = {
 			}
 			from = {
 				has_trait = trait_hive_mind
+			}
+			owner = {
+				NOT = {
+					has_technology = tech_acot_army_hive_se
+				}
 			}
 		}
 		potential_country = {

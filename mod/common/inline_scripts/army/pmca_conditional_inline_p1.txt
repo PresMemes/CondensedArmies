@@ -1,8 +1,0 @@
-# Dear Irony please fallback to simple parser
-# DEPRECATED, will be replaced soon (probably when ACOT finally updates
-inline_script = {
-	script = army/pmca_conditional_inline_p2
-
-	CASE = @[ | (((($MOD_VARIABLE$ / $MOD_VARIABLE$) - 1) / ((0 / 0) - 1)) - 1) | ]
-	CONTENT = "$CONTENT$"
-}

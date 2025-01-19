@@ -1,14 +1,16 @@
 # Irony this is a placeholder file please ignore it
 
-
 # Extra Ship Components NEXT
 @ESC_WEAPON_crystalline_s_t6_cost_crystals = 0
 
 # Sensible Late Game Techs
-@slgt_Tier6_cost = 0
+@slgt_mod = 0
 
 # Gigastuctural Engineering & More
 @has_gigastructures = 0
+
+# Playable Katzenartig Imperium
+@has_pki_mod = 0
 
 # Stellaris Evolved - Alpha
 @has_stellaris_evolved = 0

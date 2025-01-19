@@ -1,26 +1,26 @@
 # Mimics ACOT vehicle ejection mechanic
 # Scopes: this = planet, root = country
 pmca_army_compat_vehicle_eject_effect = {
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
-		random_list = {
-			$DEATH_CHANCE$ = {
+	random_list = {
+		$DEATH_CHANCE$ = {
+			inline_script = {
+				script = compatibility/pmca_conditional_inline_1_input
+				MOD_VARIABLE_1 = @has_ancient_caches
+				CONTENT = "
 				modifier = {
 					multiply = 0
 					root = { has_technology = tech_ae_army_armor }
 				}
-			}
-			1 = {
-				pmca_spawn_condensed_army = {
-					OWNER = root
-					TYPE = $TYPE$
-					MULT_FLAG = $MULT_FLAG$
-				}
+				"
 			}
 		}
-		"
+		1 = {
+			pmca_spawn_condensed_army = {
+				OWNER = root
+				TYPE = $TYPE$
+				MULT_FLAG = $MULT_FLAG$
+			}
+		}
 	}
 }
 
@@ -110,61 +110,40 @@ pmca_army_compat_spawn_condensed_infantry_crew_survivor_effect = {
 	}
 }
 
-# Spawn some ACOT Broodlings on the planet
+# Spawn some ACOT Broodlings or a cocoon on the planet
 # Scopes: this = planet, root = country
-# PARAMETERS: COUNT = int, OWNER = target, BROODLING = army, MULT_FLAG = { ten hundred }
-pmca_army_compat_spawn_broodling_only_effect = {
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
-		while = {
-			count = $COUNT$
-			pmca_spawn_condensed_army = {
+pmca_army_compat_spawn_broodling_or_cocoon_effect = {
+	random_list = {
+		3 = {
+			pmca_spawn_multiple_condensed_armies = {
+				COUNT = $COUNT$
 				OWNER = $OWNER$
-				TYPE = $BROODLING$
+				ARMY = $BROODLING$
 				MULT_FLAG = $MULT_FLAG$
 			}
 		}
-		"
-	}
-}
-
-# Spawn some ACOT Broodlings or a cocoon on the planet
-# Scopes: this = planet, root = country
-# PARAMETERS: COUNT = int, OWNER = target, TYPE = army, MULT_FLAG = { ten hundred }, COCOON = army
-pmca_army_compat_spawn_broodling_or_cocoon_effect = {
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
-		random_list = {
-			3 = {
-				pmca_army_compat_spawn_broodling_only_effect = {
-					COUNT = $COUNT$
-					OWNER = $OWNER$
-					BROODLING = $BROODLING$
-					MULT_FLAG = $MULT_FLAG$
-				}
-			}
-			1 = {
+		1 = {
+			inline_script = {
+				script = compatibility/pmca_conditional_inline_1_input
+				MOD_VARIABLE_1 = @has_ancient_caches
+				CONTENT = "
 				modifier = {
 					multiply = 0
 					root = { NOT = { has_technology = tech_ae_army_hive_supercell } }
 				}
-				pmca_spawn_condensed_army = {
-					OWNER = $OWNER$
-					TYPE = $COCOON$
-					MULT_FLAG = $MULT_FLAG$
-				}
-				last_created_army = {
-					owner = {
-						country_event = { id = pmca_army_compat.301 days = 30 scopes = { from = prev } }
-					}
+				"
+			}
+			pmca_spawn_condensed_army = {
+				OWNER = $OWNER$
+				TYPE = $COCOON$
+				MULT_FLAG = $MULT_FLAG$
+			}
+			last_created_army = {
+				owner = {
+					country_event = { id = pmca_army_compat.301 days = 30 scopes = { from = prev } }
 				}
 			}
 		}
-		"
 	}
 }
 

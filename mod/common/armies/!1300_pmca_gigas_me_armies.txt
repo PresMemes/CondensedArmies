@@ -1,11 +1,11 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated: Sat Apr 20 10:14:55 2024
+# Last Updated: Sunday, January 19, 2025
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_2_input
-	MOD_VARIABLE_1 = @has_gigastructures
-	MOD_VARIABLE_2 = @has_military_enhancements
+	MOD_VARIABLE_1 = @has_military_enhancements
+	MOD_VARIABLE_2 = @has_gigastructures
 	CONTENT = "
 	pmca_ten_riesigerkatzenpanzer_assault = {
 		use_armynames_from = riesigerkatzenpanzer_assault
@@ -152,98 +152,6 @@ inline_script = {
 		potential = { always = no }
 	}
 
-	pmca_ten_maginot_assault_unit = {
-		use_armynames_from = maginot_assault_unit
-		damage = 50.0
-		health = 70.0
-		morale = 60.0
-		morale_damage = 1.75
-		collateral_damage = 50.0
-		war_exhaustion = 40.0
-		time = 500.0
-		icon = GFX_army_type_maginot_assault_unit
-		prerequisites = { giga_tech_maginot_world }
-		resources = {
-			category = armies
-			cost = {
-				alloys = 2500.0
-				sr_armaments = 2500.0
-			}
-			upkeep = {
-				energy = 80.0
-				alloys = 1.0
-				sr_armaments = 80.0
-			}
-		}
-		show_tech_unlock_if = {
-			is_machine_empire = no
-		}
-		potential = {
-			custom_tooltip = {
-				planet = { is_giga_maginot_world = yes }
-			}
-		}
-		potential_country = {
-			has_country_flag = has_built_or_repaired_gigastructure
-			pmca_materiel_policy_check = {
-				PMCA_MULT = ten
-				PMCA_RESOURCE = sr_armaments
-				PMCA_VALUE = 2500.0
-			}
-		}
-		ai_weight = {
-			base = 76.5
-		}
-	}
-
-	pmca_ten_maginot_machine_assault_unit = {
-		use_armynames_from = maginot_machine_assault_unit
-		damage = 50.0
-		health = 70.0
-		has_morale = no
-		morale_damage = 1.75
-		collateral_damage = 50.0
-		war_exhaustion = 40.0
-		time = 500.0
-		has_species = no
-		icon = GFX_army_type_maginot_machine_assault_unit
-		prerequisites = { giga_tech_maginot_world }
-		resources = {
-			category = armies
-			cost = {
-				alloys = 2500.0
-				sr_armaments = 2500.0
-			}
-			upkeep = {
-				energy = 80.0
-				alloys = 1.0
-				sr_armaments = 80.0
-			}
-		}
-		show_tech_unlock_if = {
-			is_machine_empire = yes
-		}
-		potential = {
-			custom_tooltip = {
-				planet = { is_giga_maginot_world = yes }
-			}
-		}
-		potential_country = {
-			is_machine_empire = yes
-
-
-			has_country_flag = has_built_or_repaired_gigastructure
-			pmca_materiel_policy_check = {
-				PMCA_MULT = ten
-				PMCA_RESOURCE = sr_armaments
-				PMCA_VALUE = 2500.0
-			}
-		}
-		ai_weight = {
-			base = 76.5
-		}
-	}
-
 	pmca_hundred_riesigerkatzenpanzer_assault = {
 		use_armynames_from = riesigerkatzenpanzer_assault
 		damage = 1000.0
@@ -387,98 +295,6 @@ inline_script = {
 		has_species = no
 		icon = GFX_army_type_machine_assault
 		potential = { always = no }
-	}
-
-	pmca_hundred_maginot_assault_unit = {
-		use_armynames_from = maginot_assault_unit
-		damage = 500.0
-		health = 700.0
-		morale = 600.0
-		morale_damage = 1.75
-		collateral_damage = 500.0
-		war_exhaustion = 400.0
-		time = 500.0
-		icon = GFX_army_type_maginot_assault_unit
-		prerequisites = { giga_tech_maginot_world }
-		resources = {
-			category = armies
-			cost = {
-				alloys = 25000.0
-				sr_armaments = 25000.0
-			}
-			upkeep = {
-				energy = 800.0
-				alloys = 10.0
-				sr_armaments = 800.0
-			}
-		}
-		show_tech_unlock_if = {
-			is_machine_empire = no
-		}
-		potential = {
-			custom_tooltip = {
-				planet = { is_giga_maginot_world = yes }
-			}
-		}
-		potential_country = {
-			has_country_flag = has_built_or_repaired_gigastructure
-			pmca_materiel_policy_check = {
-				PMCA_MULT = hundred
-				PMCA_RESOURCE = sr_armaments
-				PMCA_VALUE = 25000.0
-			}
-		}
-		ai_weight = {
-			base = 102.0
-		}
-	}
-
-	pmca_hundred_maginot_machine_assault_unit = {
-		use_armynames_from = maginot_machine_assault_unit
-		damage = 500.0
-		health = 700.0
-		has_morale = no
-		morale_damage = 1.75
-		collateral_damage = 500.0
-		war_exhaustion = 400.0
-		time = 500.0
-		has_species = no
-		icon = GFX_army_type_maginot_machine_assault_unit
-		prerequisites = { giga_tech_maginot_world }
-		resources = {
-			category = armies
-			cost = {
-				alloys = 25000.0
-				sr_armaments = 25000.0
-			}
-			upkeep = {
-				energy = 800.0
-				alloys = 10.0
-				sr_armaments = 800.0
-			}
-		}
-		show_tech_unlock_if = {
-			is_machine_empire = yes
-		}
-		potential = {
-			custom_tooltip = {
-				planet = { is_giga_maginot_world = yes }
-			}
-		}
-		potential_country = {
-			is_machine_empire = yes
-
-
-			has_country_flag = has_built_or_repaired_gigastructure
-			pmca_materiel_policy_check = {
-				PMCA_MULT = hundred
-				PMCA_RESOURCE = sr_armaments
-				PMCA_VALUE = 25000.0
-			}
-		}
-		ai_weight = {
-			base = 102.0
-		}
 	}
 	"
 }

@@ -67,25 +67,3 @@
  pmca_hundred_maginot_machine_assault_unit_plural: "$maginot_machine_assault_unit_plural$"
  pmca_hundred_maginot_machine_assault_unit_desc: "$maginot_machine_assault_unit_desc$"
 
-
- ######################
- ### THE_GRANDBUNNY ###
- ######################
- pmca_ten_the_grandbunny: "§Mx2§! $the_grandbunny$"
- pmca_ten_the_grandbunny_plural: "$the_grandbunny_plural$"
- pmca_ten_the_grandbunny_desc: "$the_grandbunny_desc$"
- pmca_hundred_the_grandbunny: "$pmca_hundred$ $the_grandbunny$"
- pmca_hundred_the_grandbunny_plural: "$the_grandbunny_plural$"
- pmca_hundred_the_grandbunny_desc: "$the_grandbunny_desc$"
-
-
- ###########################
- ### THE_GRANDBUNNY_ACOT ###
- ###########################
- pmca_ten_the_grandbunny_acot: "§Mx2§! $the_grandbunny_acot$"
- pmca_ten_the_grandbunny_acot_plural: "$the_grandbunny_acot_plural$"
- pmca_ten_the_grandbunny_acot_desc: "$the_grandbunny_acot_desc$"
- pmca_hundred_the_grandbunny_acot: "$pmca_hundred$ $the_grandbunny_acot$"
- pmca_hundred_the_grandbunny_acot_plural: "$the_grandbunny_acot_plural$"
- pmca_hundred_the_grandbunny_acot_desc: "$the_grandbunny_acot_desc$"
-

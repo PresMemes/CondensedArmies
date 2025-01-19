@@ -5,6 +5,6 @@
 inline_script = {
 	script = compatibility/pmca_conditional_inline_step_2
 
-	CASE = @[ ((|$MOD_VARIABLE_1$| + 2) % (|$MOD_VARIABLE_1$| + 1)) * ((|$MOD_VARIABLE_2$| + 2) % (|$MOD_VARIABLE_2$| + 1)) * ((|$MOD_VARIABLE_3$| + 2) % (|$MOD_VARIABLE_3$| + 1)) * ((|$MOD_VARIABLE_4$| + 2) % (|$MOD_VARIABLE_4$| + 1)) ]
+	CASE = @[ ((|($MOD_VARIABLE_1$ * $MOD_VARIABLE_2$ * $MOD_VARIABLE_3$ * $MOD_VARIABLE_4$)| + 2) % (|($MOD_VARIABLE_1$ * $MOD_VARIABLE_2$ * $MOD_VARIABLE_3$ * $MOD_VARIABLE_4$)| + 1)) ]
 	CONTENT = "$CONTENT$"
 }

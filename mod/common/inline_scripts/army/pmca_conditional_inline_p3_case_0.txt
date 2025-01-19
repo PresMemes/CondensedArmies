@@ -1,3 +1,0 @@
-# Dear Irony please fallback to simple parser
-# Empty
-#PM: Needed for the conditional inline to work
