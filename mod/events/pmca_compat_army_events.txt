@@ -295,44 +295,113 @@ country_event = {
 		MOD_VARIABLE_1 = @has_ancient_caches
 		CONTENT = "
 		trigger = {
-			from = { pmca_is_condensed_acot_heavy_manned_vehicle = yes }
+			from = {
+				OR = {
+					pmca_is_condensed_acot_heavy_manned_vehicle = yes
+					pmca_is_condensed_acot_individual_machine = yes
+				}
+			}
 		}
 
 		immediate = {
-			random_list = {
-				10 = {
-					modifier = {
-						multiply = 0
-						has_technology = tech_ae_army_armor
+			if = {
+				limit = { from = { pmca_is_condensed_acot_individual_machine = yes } }
+				random_list = {
+					3 = {
+						modifier = {
+							multiply = 0
+							has_technology = tech_ae_army_armor
+						}
 					}
-				}
-				7 = {
-					from = {
-						switch = {
-							trigger = has_army_flag
-							pmca_times_ten_army = {
-								pmca_army_compat_spawn_condensed_infantry_crew_survivor_effect = { TEN = yes }
+					3 = {
+						from = {
+							switch = {
+								trigger = has_army_flag
+								pmca_times_ten_army = {
+									pmca_army_compat_spawn_condensed_indie_machine_survivor_effect = { TEN = yes }
+								}
+								pmca_times_hundred_army = {
+									pmca_army_compat_spawn_condensed_indie_machine_survivor_effect = { HUNDRED = yes }
+								}
 							}
-							pmca_times_hundred_army = {
-								pmca_army_compat_spawn_condensed_infantry_crew_survivor_effect = { HUNDRED = yes }
+						}
+					}
+					2 = {
+						from = {
+							switch = {
+								trigger = has_army_flag
+								pmca_times_ten_army = {
+									while = {
+										count = 2
+										pmca_army_compat_spawn_condensed_indie_machine_survivor_effect = { TEN = yes }
+									}
+								}
+								pmca_times_hundred_army = {
+									while = {
+										count = 2
+										pmca_army_compat_spawn_condensed_indie_machine_survivor_effect = { HUNDRED = yes }
+									}
+								}
+							}
+						}
+					}
+					1 = {
+						from = {
+							switch = {
+								trigger = has_army_flag
+								pmca_times_ten_army = {
+									while = {
+										count = 3
+										pmca_army_compat_spawn_condensed_indie_machine_survivor_effect = { TEN = yes }
+									}
+								}
+								pmca_times_hundred_army = {
+									while = {
+										count = 3
+										pmca_army_compat_spawn_condensed_indie_machine_survivor_effect = { HUNDRED = yes }
+									}
+								}
 							}
 						}
 					}
 				}
-				3 = {
-					from = {
-						switch = {
-							trigger = has_army_flag
-							pmca_times_ten_army = {
-								while = {
-									count = 2
+			}
+			else = {
+				random_list = {
+					10 = {
+						modifier = {
+							multiply = 0
+							has_technology = tech_ae_army_armor
+						}
+					}
+					7 = {
+						from = {
+							switch = {
+								trigger = has_army_flag
+								pmca_times_ten_army = {
 									pmca_army_compat_spawn_condensed_infantry_crew_survivor_effect = { TEN = yes }
 								}
-							}
-							pmca_times_hundred_army = {
-								while = {
-									count = 2
+								pmca_times_hundred_army = {
 									pmca_army_compat_spawn_condensed_infantry_crew_survivor_effect = { HUNDRED = yes }
+								}
+							}
+						}
+					}
+					3 = {
+						from = {
+							switch = {
+								trigger = has_army_flag
+								pmca_times_ten_army = {
+									while = {
+										count = 2
+										pmca_army_compat_spawn_condensed_infantry_crew_survivor_effect = { TEN = yes }
+									}
+								}
+								pmca_times_hundred_army = {
+									while = {
+										count = 2
+										pmca_army_compat_spawn_condensed_infantry_crew_survivor_effect = { HUNDRED = yes }
+									}
 								}
 							}
 						}

@@ -77,6 +77,29 @@ inline_script = {
 		}
 	}
 
+	pmca_is_condensed_acot_individual_machine = {
+		OR = {
+			AND = {
+				has_army_flag = pmca_times_ten_army
+				OR = {
+					army_type = pmca_ten_individual_machine_assault_2
+					army_type = pmca_ten_acot_army_machine_individual_light_dm
+					army_type = pmca_ten_acot_army_machine_individual_light_ae
+					army_type = pmca_ten_acot_army_machine_individual_light_se
+				}
+			}
+			AND = {
+				has_army_flag = pmca_times_hundred_army
+				OR = {
+					army_type = pmca_hundred_individual_machine_assault_2
+					army_type = pmca_hundred_acot_army_machine_individual_light_dm
+					army_type = pmca_hundred_acot_army_machine_individual_light_ae
+					army_type = pmca_hundred_acot_army_machine_individual_light_se
+				}
+			}
+		}
+	}
+
 	# Checks if a given army is a Condensed ACOT Pilot
 	# Scopes: this = army
 	pmca_is_condensed_acot_pilot = {

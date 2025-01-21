@@ -110,6 +110,92 @@ pmca_army_compat_spawn_condensed_infantry_crew_survivor_effect = {
 	}
 }
 
+# Spawns some ACOT individual machines on the planet
+# Scopes: this = country, fromfrom = planet
+# PARAMETERS: TEN = spawn x10, HUNDRED = spawn x100
+pmca_army_compat_spawn_condensed_indie_machine_survivor_effect = {
+	inline_script = {
+		script = compatibility/pmca_conditional_inline_1_input
+		MOD_VARIABLE_1 = @has_ancient_caches
+		CONTENT = "
+		[[TEN]
+			switch = {
+				trigger = has_technology
+				tech_acot_army_machine_se = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_ten_acot_army_machine_individual_se
+							MULT_FLAG = ten
+						}
+					}
+				}
+				tech_acot_army_machine_ae = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_ten_acot_army_machine_individual_ae
+							MULT_FLAG = ten
+						}
+					}
+				}
+				tech_acot_army_machine_dm = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_ten_acot_army_machine_individual_dm
+							MULT_FLAG = ten
+						}
+					}
+				}
+				default = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_ten_individual_machine_assault_1
+							MULT_FLAG = ten
+						}
+					}
+				}
+			}
+		]
+		[[HUNDRED]
+			switch = {
+				trigger = has_technology
+				tech_acot_army_machine_se = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_hundred_acot_army_machine_individual_se
+							MULT_FLAG = hundred
+						}
+					}
+				}
+				tech_acot_army_machine_ae = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_hundred_acot_army_machine_individual_ae
+							MULT_FLAG = hundred
+						}
+					}
+				}
+				tech_acot_army_machine_dm = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_hundred_acot_army_machine_individual_dm
+							MULT_FLAG = hundred
+						}
+					}
+				}
+				default = {
+					fromfrom = {
+						pmca_spawn_condensed_army = {
+							TYPE = pmca_hundred_individual_machine_assault_1
+							MULT_FLAG = hundred
+						}
+					}
+				}
+			}
+		]
+		"
+	}
+}
+
 # Spawn some ACOT Broodlings or a cocoon on the planet
 # Scopes: this = planet, root = country
 pmca_army_compat_spawn_broodling_or_cocoon_effect = {
