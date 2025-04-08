@@ -1,0 +1,274 @@
+# Dear Irony please fallback to simple parser
+# x10 and x100 army definition(s) generated via Python
+# Last Updated: Thursday, February 13, 2025
+
+inline_script = {
+	script = compatibility/pmca_conditional_inline_2_input
+	MOD_VARIABLE_1 = @has_ancient_caches
+	MOD_VARIABLE_2 = @has_sbtg_mod
+	CONTENT = "
+	pmca_ten_origin_assault_guardian = {
+		use_armynames_from = origin_assault_guardian
+		damage = 500.0
+		health = 500.0
+		has_morale = no
+		morale_damage = 4.5
+		collateral_damage = 30.0
+		war_exhaustion = 0.0
+		time = 5.0
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_celestial_guardian }
+		potential = {
+			from = {
+					has_trait = trait_bionic_implants
+					has_trait = trait_ancient_race
+					has_trait = trait_ancient_knowledge
+					has_trait = trait_master_mind
+			}
+			owner = {
+				is_progenitor_empires = yes
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = food
+				PMCA_VALUE = 0.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_ten_origin_autarch_guardian = {
+		use_armynames_from = origin_autarch_guardian
+		damage = 2500.0
+		health = 1500.0
+		has_morale = no
+		morale_damage = 20.0
+		collateral_damage = 1000.0
+		war_exhaustion = 0.0
+		time = 10.0
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_celestial_guardian }
+		potential = {
+			from = {
+					has_trait = trait_bionic_implants
+					has_trait = trait_ancient_race
+					has_trait = trait_ancient_knowledge
+					has_trait = trait_master_mind
+			}
+			owner = {
+				is_progenitor_empires = yes
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = food
+				PMCA_VALUE = 0.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_ten_sofe_psionic_dark_archon = {
+		use_armynames_from = sofe_psionic_dark_archon
+		damage = 400.0
+		health = 100.0
+		has_morale = no
+		morale_damage = 20.0
+		collateral_damage = 15.0
+		war_exhaustion = 0.0
+		time = 800.0
+		has_species = no
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_psionic_archon }
+		resources = {
+			category = armies
+			cost = {
+				influence = 2500.0
+				unity = 250000.0
+			}
+			upkeep = {
+				unity = 2500.0
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = influence
+				PMCA_VALUE = 2500.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_ten_sofe_omega_mech = {
+		use_armynames_from = sofe_omega_mech
+		damage = 300.0
+		health = 300.0
+		has_morale = no
+		morale_damage = 10.0
+		collateral_damage = 45.0
+		war_exhaustion = 0.0
+		time = 500.0
+		has_species = no
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_omega_warmech }
+		resources = {
+			category = armies
+			cost = {
+				acot_sr_light_matter = 1000.0
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = acot_sr_light_matter
+				PMCA_VALUE = 1000.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_hundred_origin_assault_guardian = {
+		use_armynames_from = origin_assault_guardian
+		damage = 5000.0
+		health = 5000.0
+		has_morale = no
+		morale_damage = 4.5
+		collateral_damage = 300.0
+		war_exhaustion = 0.0
+		time = 5.0
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_celestial_guardian }
+		potential = {
+			from = {
+					has_trait = trait_bionic_implants
+					has_trait = trait_ancient_race
+					has_trait = trait_ancient_knowledge
+					has_trait = trait_master_mind
+			}
+			owner = {
+				is_progenitor_empires = yes
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = food
+				PMCA_VALUE = 0.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_hundred_origin_autarch_guardian = {
+		use_armynames_from = origin_autarch_guardian
+		damage = 25000.0
+		health = 15000.0
+		has_morale = no
+		morale_damage = 20.0
+		collateral_damage = 10000.0
+		war_exhaustion = 0.0
+		time = 10.0
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_celestial_guardian }
+		potential = {
+			from = {
+					has_trait = trait_bionic_implants
+					has_trait = trait_ancient_race
+					has_trait = trait_ancient_knowledge
+					has_trait = trait_master_mind
+			}
+			owner = {
+				is_progenitor_empires = yes
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = food
+				PMCA_VALUE = 0.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_hundred_sofe_psionic_dark_archon = {
+		use_armynames_from = sofe_psionic_dark_archon
+		damage = 4000.0
+		health = 1000.0
+		has_morale = no
+		morale_damage = 20.0
+		collateral_damage = 150.0
+		war_exhaustion = 0.0
+		time = 800.0
+		has_species = no
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_psionic_archon }
+		resources = {
+			category = armies
+			cost = {
+				influence = 25000.0
+				unity = 2500000.0
+			}
+			upkeep = {
+				unity = 25000.0
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = influence
+				PMCA_VALUE = 25000.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+
+	pmca_hundred_sofe_omega_mech = {
+		use_armynames_from = sofe_omega_mech
+		damage = 3000.0
+		health = 3000.0
+		has_morale = no
+		morale_damage = 10.0
+		collateral_damage = 450.0
+		war_exhaustion = 0.0
+		time = 500.0
+		has_species = no
+		icon = GFX_army_type_psionic
+		prerequisites = { tech_omega_warmech }
+		resources = {
+			category = armies
+			cost = {
+				acot_sr_light_matter = 10000.0
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = acot_sr_light_matter
+				PMCA_VALUE = 10000.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
+		}
+	}
+	"
+}

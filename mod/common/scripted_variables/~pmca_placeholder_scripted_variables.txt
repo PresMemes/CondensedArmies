@@ -23,3 +23,9 @@
 
 # ACOT: Acquisition of Technology
 @has_acquisition_of_tech = 0
+
+# ACOT: Secrets Beyond The Gates
+@has_sbtg_mod = 0
+
+# Ethos Unique Techs and Buildings Unofficial
+@has_eutab_unofficial = 0

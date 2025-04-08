@@ -1,3 +1,5 @@
+# Dear Irony please fallback to simple parser
+
 # Mimics ACOT vehicle ejection mechanic
 # Scopes: this = planet, root = country
 pmca_army_compat_vehicle_eject_effect = {

@@ -1,0 +1,47 @@
+﻿l_english:
+
+ # Localisation generated using Python
+
+ ###############################
+ ### ORIGIN_ASSAULT_GUARDIAN ###
+ ###############################
+ pmca_ten_origin_assault_guardian: "$pmca_ten$ $origin_assault_guardian$"
+ pmca_ten_origin_assault_guardian_plural: "$origin_assault_guardian_plural$"
+ pmca_ten_origin_assault_guardian_desc: "$origin_assault_guardian_desc$"
+ pmca_hundred_origin_assault_guardian: "$pmca_hundred$ $origin_assault_guardian$"
+ pmca_hundred_origin_assault_guardian_plural: "$origin_assault_guardian_plural$"
+ pmca_hundred_origin_assault_guardian_desc: "$origin_assault_guardian_desc$"
+
+
+ ###############################
+ ### ORIGIN_AUTARCH_GUARDIAN ###
+ ###############################
+ pmca_ten_origin_autarch_guardian: "$pmca_ten$ $origin_autarch_guardian$"
+ pmca_ten_origin_autarch_guardian_plural: "$origin_autarch_guardian_plural$"
+ pmca_ten_origin_autarch_guardian_desc: "$origin_autarch_guardian_desc$"
+ pmca_hundred_origin_autarch_guardian: "$pmca_hundred$ $origin_autarch_guardian$"
+ pmca_hundred_origin_autarch_guardian_plural: "$origin_autarch_guardian_plural$"
+ pmca_hundred_origin_autarch_guardian_desc: "$origin_autarch_guardian_desc$"
+
+
+ ################################
+ ### SOFE_PSIONIC_DARK_ARCHON ###
+ ################################
+ pmca_ten_sofe_psionic_dark_archon: "$pmca_ten$ $sofe_psionic_dark_archon$"
+ pmca_ten_sofe_psionic_dark_archon_plural: "$sofe_psionic_dark_archon_plural$"
+ pmca_ten_sofe_psionic_dark_archon_desc: "$sofe_psionic_dark_archon_desc$"
+ pmca_hundred_sofe_psionic_dark_archon: "$pmca_hundred$ $sofe_psionic_dark_archon$"
+ pmca_hundred_sofe_psionic_dark_archon_plural: "$sofe_psionic_dark_archon_plural$"
+ pmca_hundred_sofe_psionic_dark_archon_desc: "$sofe_psionic_dark_archon_desc$"
+
+
+ #######################
+ ### SOFE_OMEGA_MECH ###
+ #######################
+ pmca_ten_sofe_omega_mech: "$pmca_ten$ $sofe_omega_mech$"
+ pmca_ten_sofe_omega_mech_plural: "$sofe_omega_mech_plural$"
+ pmca_ten_sofe_omega_mech_desc: "$sofe_omega_mech_desc$"
+ pmca_hundred_sofe_omega_mech: "$pmca_hundred$ $sofe_omega_mech$"
+ pmca_hundred_sofe_omega_mech_plural: "$sofe_omega_mech_plural$"
+ pmca_hundred_sofe_omega_mech_desc: "$sofe_omega_mech_desc$"
+

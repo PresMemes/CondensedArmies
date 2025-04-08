@@ -270,6 +270,18 @@ pmca_is_times_ten_army = {
 			"
 		}
 
+		# SBTG x10
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_sbtg_mod
+			CONTENT = "
+			army_type = pmca_ten_origin_assault_guardian
+			army_type = pmca_ten_origin_autarch_guardian
+			army_type = pmca_ten_sofe_psionic_dark_archon
+			army_type = pmca_ten_sofe_omega_mech
+			"
+		}
+
 		# AOT x10
 		inline_script = {
 			script = compatibility/pmca_conditional_inline_1_input
@@ -355,6 +367,18 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_atmospharischekatzenbomber_army
 			army_type = pmca_ten_luftkatzenvernichter_army
 			army_type = pmca_ten_pki_riesigerkatzenpanzer_assault
+			"
+		}
+
+		# EUTAB Unofficial x10
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_eutab_unofficial
+			CONTENT = "
+			army_type = pmca_ten_eutab_mindlink_commando_army
+			army_type = pmca_ten_eutab_terror_drones
+			army_type = pmca_ten_eutab_janissary_army
+			army_type = pmca_ten_eutab_clone_commando_pod
 			"
 		}
 	}
@@ -595,6 +619,18 @@ pmca_is_times_hundred_army = {
 			"
 		}
 
+		# SBTG x100
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_sbtg_mod
+			CONTENT = "
+			army_type = pmca_hundred_origin_assault_guardian
+			army_type = pmca_hundred_origin_autarch_guardian
+			army_type = pmca_hundred_sofe_psionic_dark_archon
+			army_type = pmca_hundred_sofe_omega_mech
+			"
+		}
+
 		# AOT x100
 		inline_script = {
 			script = compatibility/pmca_conditional_inline_1_input
@@ -680,6 +716,18 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_atmospharischekatzenbomber_army
 			army_type = pmca_hundred_luftkatzenvernichter_army
 			army_type = pmca_hundred_pki_riesigerkatzenpanzer_assault
+			"
+		}
+
+		# EUTAB Unofficial x100
+		inline_script = {
+			script = compatibility/pmca_conditional_inline_1_input
+			MOD_VARIABLE_1 = @has_eutab_unofficial
+			CONTENT = "
+			army_type = pmca_hundred_eutab_mindlink_commando_army
+			army_type = pmca_hundred_eutab_terror_drones
+			army_type = pmca_hundred_eutab_janissary_army
+			army_type = pmca_hundred_eutab_clone_commando_pod
 			"
 		}
 	}

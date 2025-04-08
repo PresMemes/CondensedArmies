@@ -1,0 +1,47 @@
+﻿l_german:
+
+ # Localisation generated using Python
+
+ ####################################
+ ### EUTAB_MINDLINK_COMMANDO_ARMY ###
+ ####################################
+ pmca_ten_eutab_mindlink_commando_army: "$pmca_ten$ $eutab_mindlink_commando_army$"
+ pmca_ten_eutab_mindlink_commando_army_plural: "$eutab_mindlink_commando_army_plural$"
+ pmca_ten_eutab_mindlink_commando_army_desc: "$eutab_mindlink_commando_army_desc$"
+ pmca_hundred_eutab_mindlink_commando_army: "$pmca_hundred$ $eutab_mindlink_commando_army$"
+ pmca_hundred_eutab_mindlink_commando_army_plural: "$eutab_mindlink_commando_army_plural$"
+ pmca_hundred_eutab_mindlink_commando_army_desc: "$eutab_mindlink_commando_army_desc$"
+
+
+ ###########################
+ ### EUTAB_TERROR_DRONES ###
+ ###########################
+ pmca_ten_eutab_terror_drones: "$pmca_ten$ $eutab_terror_drones$"
+ pmca_ten_eutab_terror_drones_plural: "$eutab_terror_drones_plural$"
+ pmca_ten_eutab_terror_drones_desc: "$eutab_terror_drones_desc$"
+ pmca_hundred_eutab_terror_drones: "$pmca_hundred$ $eutab_terror_drones$"
+ pmca_hundred_eutab_terror_drones_plural: "$eutab_terror_drones_plural$"
+ pmca_hundred_eutab_terror_drones_desc: "$eutab_terror_drones_desc$"
+
+
+ ############################
+ ### EUTAB_JANISSARY_ARMY ###
+ ############################
+ pmca_ten_eutab_janissary_army: "$pmca_ten$ $eutab_janissary_army$"
+ pmca_ten_eutab_janissary_army_plural: "$eutab_janissary_army_plural$"
+ pmca_ten_eutab_janissary_army_desc: "$eutab_janissary_army_desc$"
+ pmca_hundred_eutab_janissary_army: "$pmca_hundred$ $eutab_janissary_army$"
+ pmca_hundred_eutab_janissary_army_plural: "$eutab_janissary_army_plural$"
+ pmca_hundred_eutab_janissary_army_desc: "$eutab_janissary_army_desc$"
+
+
+ ################################
+ ### EUTAB_CLONE_COMMANDO_POD ###
+ ################################
+ pmca_ten_eutab_clone_commando_pod: "$pmca_ten$ $eutab_clone_commando_pod$"
+ pmca_ten_eutab_clone_commando_pod_plural: "$eutab_clone_commando_pod_plural$"
+ pmca_ten_eutab_clone_commando_pod_desc: "$eutab_clone_commando_pod_desc$"
+ pmca_hundred_eutab_clone_commando_pod: "$pmca_hundred$ $eutab_clone_commando_pod$"
+ pmca_hundred_eutab_clone_commando_pod_plural: "$eutab_clone_commando_pod_plural$"
+ pmca_hundred_eutab_clone_commando_pod_desc: "$eutab_clone_commando_pod_desc$"
+
