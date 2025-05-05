@@ -79,6 +79,17 @@
  pmca_hundred_gene_warrior_army_desc: "$gene_warrior_army_desc$"
 
 
+ ###########################################
+ ### WILDERNESS_PRE_SAPIENT_ASSAULT_ARMY ###
+ ###########################################
+ pmca_ten_wilderness_pre_sapient_assault_army: "$pmca_ten$ $wilderness_pre_sapient_assault_army$"
+ pmca_ten_wilderness_pre_sapient_assault_army_plural: "$wilderness_pre_sapient_assault_army_plural$"
+ pmca_ten_wilderness_pre_sapient_assault_army_desc: "$wilderness_pre_sapient_assault_army_desc$"
+ pmca_hundred_wilderness_pre_sapient_assault_army: "$pmca_hundred$ $wilderness_pre_sapient_assault_army$"
+ pmca_hundred_wilderness_pre_sapient_assault_army_plural: "$wilderness_pre_sapient_assault_army_plural$"
+ pmca_hundred_wilderness_pre_sapient_assault_army_desc: "$wilderness_pre_sapient_assault_army_desc$"
+
+
  #########################
  ### MACHINE_ASSAULT_1 ###
  #########################
@@ -176,6 +187,17 @@
  pmca_hundred_individual_machine_assault_3: "$pmca_hundred$ $individual_machine_assault_3$"
  pmca_hundred_individual_machine_assault_3_plural: "$individual_machine_assault_3_plural$"
  pmca_hundred_individual_machine_assault_3_desc: "$individual_machine_assault_3_desc$"
+
+
+ ############################
+ ### PERFECTED_CLONE_ARMY ###
+ ############################
+ pmca_ten_perfected_clone_army: "$pmca_ten$ $perfected_clone_army$"
+ pmca_ten_perfected_clone_army_plural: "$perfected_clone_army_plural$"
+ pmca_ten_perfected_clone_army_desc: "$perfected_clone_army_desc$"
+ pmca_hundred_perfected_clone_army: "$pmca_hundred$ $perfected_clone_army$"
+ pmca_hundred_perfected_clone_army_plural: "$perfected_clone_army_plural$"
+ pmca_hundred_perfected_clone_army_desc: "$perfected_clone_army_desc$"
 
 
  ######################

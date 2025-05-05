@@ -1,6 +1,6 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated: Sunday, January 19, 2025
+# Last Updated: Monday, May 05, 2025
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_1_input
@@ -47,6 +47,7 @@ inline_script = {
 				is_machine_empire = no
 				has_valid_civic = civic_machine_assimilator
 			}
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = minerals
@@ -71,7 +72,7 @@ inline_script = {
 				}
 			}
 			modifier = {
-				factor = 0.01
+				factor = 0.01 
 				OR = {
 					AND = {
 						has_ai_personality_behaviour = slaver
@@ -109,7 +110,7 @@ inline_script = {
 		}
 		potential = {
 			owner = {
-				any_owned_pop = {
+				any_owned_pop_group = {
 					is_pop_category = slave
 					is_same_species = from
 				}
@@ -124,8 +125,12 @@ inline_script = {
 			}
 		}
 		potential_country = {
-			has_policy_flag = slavery_allowed
+			OR = {
+				has_policy_flag = slavery_allowed
+				has_exploited_disconnected_drones = yes
+			}
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = minerals
@@ -148,7 +153,7 @@ inline_script = {
 					}
 				}
 			}
-			any_owned_pop = { is_pop_category = slave }
+			any_owned_pop_group = { is_pop_category = slave }
 		}
 		ai_weight = {
 			base = 150.0
@@ -216,6 +221,7 @@ inline_script = {
 				is_machine_empire = no
 				has_civic = civic_machine_assimilator
 			}
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = minerals
@@ -271,6 +277,7 @@ inline_script = {
 		}
 		potential_country = {
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = minerals
@@ -342,6 +349,7 @@ inline_script = {
 		}
 		potential_country = {
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = minerals
@@ -388,6 +396,7 @@ inline_script = {
 		}
 		potential_country = {
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = minerals
@@ -443,6 +452,7 @@ inline_script = {
 		}
 		potential_country = {
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
 				PMCA_RESOURCE = minerals
@@ -456,6 +466,46 @@ inline_script = {
 				is_fallen_empire = yes
 				NOT = { has_ethic = ethic_fanatic_xenophile }
 			}
+		}
+	}
+
+	pmca_ten_wilderness_pre_sapient_assault_army = {
+		use_armynames_from = wilderness_pre_sapient_assault_army
+		damage = 15.0
+		health = 32.5
+		morale = 5.0
+		morale_damage = 1.25
+		collateral_damage = 50.0
+		war_exhaustion = 0.0
+		time = 90.0
+		has_species = no
+		icon = GFX_wilderness_army_type_assault
+		prerequisites = { tech_assault_armies }
+		resources = {
+			category = armies
+			cost = {
+				food = 2000.0
+			}
+			upkeep = {
+				food = 10.0
+				energy = 10.0
+			}
+		}
+		potential = {
+			exists = owner
+			owner = {
+				is_wilderness_empire = yes
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = food
+				PMCA_VALUE = 2000.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
 		}
 	}
 
@@ -609,10 +659,6 @@ inline_script = {
 			}
 			planet = {
 				has_active_building = building_dread_encampment
-				num_assigned_jobs = {
-					job = necromancer
-					value >= 1
-				}
 			}
 		}
 		potential_country = {
@@ -817,6 +863,65 @@ inline_script = {
 		}
 	}
 
+	pmca_ten_perfected_clone_army = {
+		use_armynames_from = perfected_clone_army
+		damage = 15.0
+		health = 15.0
+		morale = 15.0
+		morale_damage = 1.0
+		collateral_damage = 5.0
+		war_exhaustion = 2.5
+		time = 30.0
+		icon = GFX_army_type_clone
+		resources = {
+			category = armies
+			cost = {
+				minerals = 900.0
+			}
+			upkeep = {
+				energy = 10.0
+			}
+		}
+		show_tech_unlock_if = {
+			OR = {
+				has_active_tradition = tr_cloning_somatic_synthesization
+				has_active_tradition = tr_cloning_somatic_synthesization_clone_army
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_trait = trait_limited_cybernetic
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			OR = {
+				has_active_tradition = tr_cloning_somatic_synthesization
+				has_active_tradition = tr_cloning_somatic_synthesization_clone_army
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 900.0
+			}
+		}
+		ai_weight = {
+			base = 150.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+			modifier = {
+				factor = 2
+				has_origin = origin_clone_army
+			}
+		}
+	}
+
 	pmca_ten_cybrex_warform = {
 		use_armynames_from = cybrex_warform
 		damage = 50.0
@@ -896,6 +1001,7 @@ inline_script = {
 				is_machine_empire = no
 				has_valid_civic = civic_machine_assimilator
 			}
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
@@ -920,7 +1026,7 @@ inline_script = {
 				}
 			}
 			modifier = {
-				factor = 0.01
+				factor = 0.01 
 				OR = {
 					AND = {
 						has_ai_personality_behaviour = slaver
@@ -958,7 +1064,7 @@ inline_script = {
 		}
 		potential = {
 			owner = {
-				any_owned_pop = {
+				any_owned_pop_group = {
 					is_pop_category = slave
 					is_same_species = from
 				}
@@ -973,8 +1079,12 @@ inline_script = {
 			}
 		}
 		potential_country = {
-			has_policy_flag = slavery_allowed
+			OR = {
+				has_policy_flag = slavery_allowed
+				has_exploited_disconnected_drones = yes
+			}
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
@@ -997,7 +1107,7 @@ inline_script = {
 					}
 				}
 			}
-			any_owned_pop = { is_pop_category = slave }
+			any_owned_pop_group = { is_pop_category = slave }
 		}
 		ai_weight = {
 			base = 200.0
@@ -1065,6 +1175,7 @@ inline_script = {
 				is_machine_empire = no
 				has_civic = civic_machine_assimilator
 			}
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
@@ -1120,6 +1231,7 @@ inline_script = {
 		}
 		potential_country = {
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
@@ -1191,6 +1303,7 @@ inline_script = {
 		}
 		potential_country = {
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
@@ -1237,6 +1350,7 @@ inline_script = {
 		}
 		potential_country = {
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
@@ -1292,6 +1406,7 @@ inline_script = {
 		}
 		potential_country = {
 			is_machine_empire = no
+			is_wilderness_empire = no
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
 				PMCA_RESOURCE = minerals
@@ -1305,6 +1420,46 @@ inline_script = {
 				is_fallen_empire = yes
 				NOT = { has_ethic = ethic_fanatic_xenophile }
 			}
+		}
+	}
+
+	pmca_hundred_wilderness_pre_sapient_assault_army = {
+		use_armynames_from = wilderness_pre_sapient_assault_army
+		damage = 150.0
+		health = 325.0
+		morale = 50.0
+		morale_damage = 1.25
+		collateral_damage = 500.0
+		war_exhaustion = 0.0
+		time = 90.0
+		has_species = no
+		icon = GFX_wilderness_army_type_assault
+		prerequisites = { tech_assault_armies }
+		resources = {
+			category = armies
+			cost = {
+				food = 20000.0
+			}
+			upkeep = {
+				food = 100.0
+				energy = 100.0
+			}
+		}
+		potential = {
+			exists = owner
+			owner = {
+				is_wilderness_empire = yes
+			}
+		}
+		potential_country = {
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = food
+				PMCA_VALUE = 20000.0
+			}
+		}
+		ai_weight = {
+			base = 0.0
 		}
 	}
 
@@ -1458,10 +1613,6 @@ inline_script = {
 			}
 			planet = {
 				has_active_building = building_dread_encampment
-				num_assigned_jobs = {
-					job = necromancer
-					value >= 1
-				}
 			}
 		}
 		potential_country = {
@@ -1663,6 +1814,65 @@ inline_script = {
 		}
 		ai_weight = {
 			base = 100.0
+		}
+	}
+
+	pmca_hundred_perfected_clone_army = {
+		use_armynames_from = perfected_clone_army
+		damage = 150.0
+		health = 150.0
+		morale = 150.0
+		morale_damage = 1.0
+		collateral_damage = 50.0
+		war_exhaustion = 25.0
+		time = 30.0
+		icon = GFX_army_type_clone
+		resources = {
+			category = armies
+			cost = {
+				minerals = 9000.0
+			}
+			upkeep = {
+				energy = 100.0
+			}
+		}
+		show_tech_unlock_if = {
+			OR = {
+				has_active_tradition = tr_cloning_somatic_synthesization
+				has_active_tradition = tr_cloning_somatic_synthesization_clone_army
+			}
+		}
+		potential = {
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_trait = trait_limited_cybernetic
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			OR = {
+				has_active_tradition = tr_cloning_somatic_synthesization
+				has_active_tradition = tr_cloning_somatic_synthesization_clone_army
+			}
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 9000.0
+			}
+		}
+		ai_weight = {
+			base = 200.0
+			modifier = {
+				set = 0
+				is_fallen_empire = yes
+			}
+			modifier = {
+				factor = 2
+				has_origin = origin_clone_army
+			}
 		}
 	}
 

@@ -2,6 +2,6 @@ version="1.10.1"
 tags={
 	"Military"
 }
-name="Condensed Armies (3.14.X)"
-supported_version="v3.14.*"
+name="Condensed Armies (4.0.X)"
+supported_version="v4.0.*"
 remote_file_id="2797565369"

@@ -53,6 +53,7 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_psionic_army
 			army_type = pmca_ten_xenomorph_army
 			army_type = pmca_ten_gene_warrior_army
+			army_type = pmca_ten_wilderness_pre_sapient_assault_army
 			army_type = pmca_ten_machine_assault_1
 			army_type = pmca_ten_machine_assault_2
 			army_type = pmca_ten_machine_assault_3
@@ -62,6 +63,7 @@ pmca_is_times_ten_army = {
 			army_type = pmca_ten_individual_machine_assault_1
 			army_type = pmca_ten_individual_machine_assault_2
 			army_type = pmca_ten_individual_machine_assault_3
+			army_type = pmca_ten_perfected_clone_army
 			army_type = pmca_ten_cybrex_warform
 			"
 		}
@@ -402,6 +404,7 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_psionic_army
 			army_type = pmca_hundred_xenomorph_army
 			army_type = pmca_hundred_gene_warrior_army
+			army_type = pmca_hundred_wilderness_pre_sapient_assault_army
 			army_type = pmca_hundred_machine_assault_1
 			army_type = pmca_hundred_machine_assault_2
 			army_type = pmca_hundred_machine_assault_3
@@ -411,6 +414,7 @@ pmca_is_times_hundred_army = {
 			army_type = pmca_hundred_individual_machine_assault_1
 			army_type = pmca_hundred_individual_machine_assault_2
 			army_type = pmca_hundred_individual_machine_assault_3
+			army_type = pmca_hundred_perfected_clone_army
 			army_type = pmca_hundred_cybrex_warform
 			"
 		}
