@@ -1,6 +1,6 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated: Sunday, January 19, 2025
+# Last Updated: Monday, June 02, 2025
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_1_input
@@ -355,8 +355,8 @@ inline_script = {
 			from = { has_trait = trait_mechanical }
 		}
 		potential_country = {
-			NAND = {
-				is_machine_empire = yes
+			NAND = { 
+				is_machine_empire = yes 
 				is_individual_machine = yes
 			}
 			OR = {
@@ -408,7 +408,7 @@ inline_script = {
 			OR = {
 					has_ascension_perk = ap_synthetic_evolution
 					has_ascension_perk = ap_synthetic_age
-					is_machine_empire = yes
+					is_machine_empire = yes 
 					is_individual_machine = yes
 			}
 			pmca_materiel_policy_check = {
@@ -469,7 +469,7 @@ inline_script = {
 					AND = {
 						has_technology = tech_gene_seed_purification
 						has_technology = tech_slgt_bio_titans
-					}
+					}				
 					has_technology = tech_slgt_cybernetics_update
 					has_tradition = tr_synthetics_finish
 				}
@@ -537,11 +537,11 @@ inline_script = {
 					AND = {
 						has_technology = tech_gene_seed_purification
 						has_technology = tech_slgt_bio_titans
-					}
+					}				
 					has_technology = tech_slgt_cybernetics_update
 					has_tradition = tr_synthetics_finish
 					is_fallen_empire = yes
-				}
+				}			
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = ten
@@ -588,11 +588,7 @@ inline_script = {
 			planet = {
 				OR = {
 					has_active_building = building_dread_encampment
-					has_active_building = slgt_building_doctors_place
-				}
-				num_assigned_jobs = {
-					job = necromancer
-					value >= 1
+					has_planet_flag = active_dread_outpost
 				}
 			}
 		}
@@ -606,7 +602,7 @@ inline_script = {
 				AND = {
 					has_technology = tech_gene_seed_purification
 					has_technology = tech_slgt_bio_titans
-				}
+				}				
 				has_technology = tech_slgt_cybernetics_update
 				has_tradition = tr_synthetics_finish
 			}
@@ -652,11 +648,7 @@ inline_script = {
 			planet = {
 				OR = {
 					has_active_building = building_dread_encampment
-					has_active_building = slgt_building_doctors_place
-				}
-				num_assigned_jobs = {
-					job = necromancer
-					value >= 1
+					has_planet_flag = active_dread_outpost
 				}
 			}
 		}
@@ -670,7 +662,7 @@ inline_script = {
 				AND = {
 					has_technology = tech_gene_seed_purification
 					has_technology = tech_slgt_bio_titans
-				}
+				}				
 				has_technology = tech_slgt_cybernetics_update
 				has_tradition = tr_synthetics_finish
 			}
@@ -721,10 +713,9 @@ inline_script = {
 				}
 			}
 			planet = {
-				has_active_building = slgt_building_doctors_place
-				num_assigned_jobs = {
-					job = necromancer
-					value >= 1
+				OR = {
+					has_active_building = building_dread_encampment
+					has_planet_flag = active_dread_outpost
 				}
 			}
 		}
@@ -1090,8 +1081,8 @@ inline_script = {
 			from = { has_trait = trait_mechanical }
 		}
 		potential_country = {
-			NAND = {
-				is_machine_empire = yes
+			NAND = { 
+				is_machine_empire = yes 
 				is_individual_machine = yes
 			}
 			OR = {
@@ -1143,7 +1134,7 @@ inline_script = {
 			OR = {
 					has_ascension_perk = ap_synthetic_evolution
 					has_ascension_perk = ap_synthetic_age
-					is_machine_empire = yes
+					is_machine_empire = yes 
 					is_individual_machine = yes
 			}
 			pmca_materiel_policy_check = {
@@ -1204,7 +1195,7 @@ inline_script = {
 					AND = {
 						has_technology = tech_gene_seed_purification
 						has_technology = tech_slgt_bio_titans
-					}
+					}				
 					has_technology = tech_slgt_cybernetics_update
 					has_tradition = tr_synthetics_finish
 				}
@@ -1272,11 +1263,11 @@ inline_script = {
 					AND = {
 						has_technology = tech_gene_seed_purification
 						has_technology = tech_slgt_bio_titans
-					}
+					}				
 					has_technology = tech_slgt_cybernetics_update
 					has_tradition = tr_synthetics_finish
 					is_fallen_empire = yes
-				}
+				}			
 			}
 			pmca_materiel_policy_check = {
 				PMCA_MULT = hundred
@@ -1323,11 +1314,7 @@ inline_script = {
 			planet = {
 				OR = {
 					has_active_building = building_dread_encampment
-					has_active_building = slgt_building_doctors_place
-				}
-				num_assigned_jobs = {
-					job = necromancer
-					value >= 1
+					has_planet_flag = active_dread_outpost
 				}
 			}
 		}
@@ -1341,7 +1328,7 @@ inline_script = {
 				AND = {
 					has_technology = tech_gene_seed_purification
 					has_technology = tech_slgt_bio_titans
-				}
+				}				
 				has_technology = tech_slgt_cybernetics_update
 				has_tradition = tr_synthetics_finish
 			}
@@ -1387,11 +1374,7 @@ inline_script = {
 			planet = {
 				OR = {
 					has_active_building = building_dread_encampment
-					has_active_building = slgt_building_doctors_place
-				}
-				num_assigned_jobs = {
-					job = necromancer
-					value >= 1
+					has_planet_flag = active_dread_outpost
 				}
 			}
 		}
@@ -1405,7 +1388,7 @@ inline_script = {
 				AND = {
 					has_technology = tech_gene_seed_purification
 					has_technology = tech_slgt_bio_titans
-				}
+				}				
 				has_technology = tech_slgt_cybernetics_update
 				has_tradition = tr_synthetics_finish
 			}
@@ -1456,10 +1439,9 @@ inline_script = {
 				}
 			}
 			planet = {
-				has_active_building = slgt_building_doctors_place
-				num_assigned_jobs = {
-					job = necromancer
-					value >= 1
+				OR = {
+					has_active_building = building_dread_encampment
+					has_planet_flag = active_dread_outpost
 				}
 			}
 		}

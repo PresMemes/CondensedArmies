@@ -1,6 +1,6 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated: Sunday, January 19, 2025
+# Last Updated: Monday, June 02, 2025
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_1_input
@@ -343,7 +343,7 @@ inline_script = {
 				NOT = {
 					has_technology = tech_acot_army_dm
 				}
-				any_owned_pop = {
+				any_owned_pop_group = {
 					is_pop_category = slave
 					is_same_species = from
 				}
@@ -381,7 +381,7 @@ inline_script = {
 					}
 				}
 			}
-			any_owned_pop = { is_pop_category = slave }
+			any_owned_pop_group = { is_pop_category = slave }
 		}
 		ai_weight = {
 			base = 75.0
@@ -412,7 +412,7 @@ inline_script = {
 			owner = {
 				has_technology = tech_acot_army_dm
 				has_technology = tech_neural_implants
-				any_owned_pop = {
+				any_owned_pop_group = {
 					is_pop_category = slave
 					is_same_species = from
 				}
@@ -450,7 +450,7 @@ inline_script = {
 					}
 				}
 			}
-			any_owned_pop = { is_pop_category = slave }
+			any_owned_pop_group = { is_pop_category = slave }
 		}
 		ai_weight = {
 			base = 75.0
@@ -7438,7 +7438,7 @@ inline_script = {
 				NOT = {
 					has_technology = tech_acot_army_dm
 				}
-				any_owned_pop = {
+				any_owned_pop_group = {
 					is_pop_category = slave
 					is_same_species = from
 				}
@@ -7476,7 +7476,7 @@ inline_script = {
 					}
 				}
 			}
-			any_owned_pop = { is_pop_category = slave }
+			any_owned_pop_group = { is_pop_category = slave }
 		}
 		ai_weight = {
 			base = 100.0
@@ -7507,7 +7507,7 @@ inline_script = {
 			owner = {
 				has_technology = tech_acot_army_dm
 				has_technology = tech_neural_implants
-				any_owned_pop = {
+				any_owned_pop_group = {
 					is_pop_category = slave
 					is_same_species = from
 				}
@@ -7545,7 +7545,7 @@ inline_script = {
 					}
 				}
 			}
-			any_owned_pop = { is_pop_category = slave }
+			any_owned_pop_group = { is_pop_category = slave }
 		}
 		ai_weight = {
 			base = 100.0
