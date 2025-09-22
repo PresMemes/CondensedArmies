@@ -1,6 +1,6 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Python
-# Last Updated: Sunday, June 22, 2025
+# Last Updated: Monday, September 22, 2025
 
 inline_script = {
 	script = compatibility/pmca_conditional_inline_1_input
@@ -404,10 +404,7 @@ inline_script = {
 			from = {
 				OR = {
 					has_utopia = no
-					OR = {
-						has_trait = trait_latent_psionic
-						has_trait = trait_psionic
-					}
+					has_psionic_species_trait = yes
 				}
 				NOR = {
 					has_trait = trait_mechanical
@@ -604,6 +601,101 @@ inline_script = {
 		}
 		ai_weight = {
 			base = 0.0
+		}
+	}
+
+	pmca_ten_abomination_army = {
+		use_armynames_from = abomination_army
+		damage = 13.3334
+		health = 15.0
+		morale = 15.0
+		morale_damage = 1.5
+		collateral_damage = 25.0
+		war_exhaustion = 5.0
+		time = 100.0
+		icon = GFX_army_type_slave
+		prerequisites = { tech_neural_implants }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 500.0
+			}
+			upkeep = {
+				energy = 5.0
+			}
+		}
+		show_tech_unlock_if = {
+			is_twisted_experimenters_empire = yes
+		}
+		potential = {
+			owner = {
+				any_owned_pop_group = {
+					is_enslaved = yes
+					is_same_species = from
+				}
+			}
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_trait = trait_limited_cybernetic
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_twisted_experimenters_empire = yes
+			OR = {
+				has_policy_flag = slavery_allowed
+				has_exploited_disconnected_drones = yes
+			}
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = ten
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 500.0
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = requires_slave_processing_facility
+				OR = {
+					has_building = building_slave_processing
+					AND = {
+						exists = orbital_defence
+						orbital_defence = {
+							exists = starbase
+							starbase = {
+								has_starbase_building = ring_slave_processing_facility
+							}
+						}
+					}
+				}
+			}
+			any_owned_pop_group = { is_enslaved = yes }
+		}
+		ai_weight = {
+			base = 150.0
+			modifier = {
+				set = 0
+				OR = {
+					is_fallen_empire = yes
+					NOT = { has_ai_personality_behaviour = slaver }
+					has_technology = tech_telepathy
+					has_technology = tech_gene_seed_purification
+					AND = {
+						OR = {
+							has_ethic = ethic_militarist
+							has_ethic = ethic_fanatic_militarist
+						}
+						has_technology = tech_gene_banks
+					}
+					AND = {
+						has_ai_personality_behaviour = robot_liberator
+						has_technology = tech_droid_workers
+					}
+				}
+			}
 		}
 	}
 
@@ -1554,10 +1646,7 @@ inline_script = {
 			from = {
 				OR = {
 					has_utopia = no
-					OR = {
-						has_trait = trait_latent_psionic
-						has_trait = trait_psionic
-					}
+					has_psionic_species_trait = yes
 				}
 				NOR = {
 					has_trait = trait_mechanical
@@ -1754,6 +1843,101 @@ inline_script = {
 		}
 		ai_weight = {
 			base = 0.0
+		}
+	}
+
+	pmca_hundred_abomination_army = {
+		use_armynames_from = abomination_army
+		damage = 133.334
+		health = 150.0
+		morale = 150.0
+		morale_damage = 1.5
+		collateral_damage = 250.0
+		war_exhaustion = 50.0
+		time = 100.0
+		icon = GFX_army_type_slave
+		prerequisites = { tech_neural_implants }
+		resources = {
+			category = armies
+			cost = {
+				minerals = 5000.0
+			}
+			upkeep = {
+				energy = 50.0
+			}
+		}
+		show_tech_unlock_if = {
+			is_twisted_experimenters_empire = yes
+		}
+		potential = {
+			owner = {
+				any_owned_pop_group = {
+					is_enslaved = yes
+					is_same_species = from
+				}
+			}
+			from = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_trait = trait_limited_cybernetic
+					is_sapient = no
+				}
+			}
+		}
+		potential_country = {
+			is_twisted_experimenters_empire = yes
+			OR = {
+				has_policy_flag = slavery_allowed
+				has_exploited_disconnected_drones = yes
+			}
+			is_machine_empire = no
+			pmca_materiel_policy_check = {
+				PMCA_MULT = hundred
+				PMCA_RESOURCE = minerals
+				PMCA_VALUE = 5000.0
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = requires_slave_processing_facility
+				OR = {
+					has_building = building_slave_processing
+					AND = {
+						exists = orbital_defence
+						orbital_defence = {
+							exists = starbase
+							starbase = {
+								has_starbase_building = ring_slave_processing_facility
+							}
+						}
+					}
+				}
+			}
+			any_owned_pop_group = { is_enslaved = yes }
+		}
+		ai_weight = {
+			base = 200.0
+			modifier = {
+				set = 0
+				OR = {
+					is_fallen_empire = yes
+					NOT = { has_ai_personality_behaviour = slaver }
+					has_technology = tech_telepathy
+					has_technology = tech_gene_seed_purification
+					AND = {
+						OR = {
+							has_ethic = ethic_militarist
+							has_ethic = ethic_fanatic_militarist
+						}
+						has_technology = tech_gene_banks
+					}
+					AND = {
+						has_ai_personality_behaviour = robot_liberator
+						has_technology = tech_droid_workers
+					}
+				}
+			}
 		}
 	}
 

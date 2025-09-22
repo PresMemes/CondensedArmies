@@ -90,6 +90,17 @@
  pmca_hundred_wilderness_pre_sapient_assault_army_desc: "$wilderness_pre_sapient_assault_army_desc$"
 
 
+ ########################
+ ### ABOMINATION_ARMY ###
+ ########################
+ pmca_ten_abomination_army: "$pmca_ten$ $abomination_army$"
+ pmca_ten_abomination_army_plural: "$abomination_army_plural$"
+ pmca_ten_abomination_army_desc: "$abomination_army_desc$"
+ pmca_hundred_abomination_army: "$pmca_hundred$ $abomination_army$"
+ pmca_hundred_abomination_army_plural: "$abomination_army_plural$"
+ pmca_hundred_abomination_army_desc: "$abomination_army_desc$"
+
+
  #########################
  ### MACHINE_ASSAULT_1 ###
  #########################
