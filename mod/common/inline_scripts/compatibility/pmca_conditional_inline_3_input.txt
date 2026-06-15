@@ -3,8 +3,8 @@
 # 3 input AND gate
 
 inline_script = {
-	script = compatibility/pmca_conditional_inline_step_2
+    script = compatibility/pmca_conditional_inline_step_2
 
-	CASE = @[ ((|($MOD_VARIABLE_1$ * $MOD_VARIABLE_2$ * $MOD_VARIABLE_3$)| + 2) % (|($MOD_VARIABLE_1$ * $MOD_VARIABLE_2$ * $MOD_VARIABLE_3$)| + 1)) ]
-	CONTENT = "$CONTENT$"
+    CASE = @[ ((|($MOD_VARIABLE_1$ * $MOD_VARIABLE_2$ * $MOD_VARIABLE_3$)| + 2) % (|($MOD_VARIABLE_1$ * $MOD_VARIABLE_2$ * $MOD_VARIABLE_3$)| + 1)) ]
+    CONTENT = "$CONTENT$"
 }

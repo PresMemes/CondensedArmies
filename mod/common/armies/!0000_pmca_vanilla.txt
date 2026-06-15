@@ -1,0 +1,3361 @@
+# Dear Irony please fallback to simple parser
+# x10 and x100 army definition(s) generated via Rust
+# Last Updated: Monday, June 15, 2026
+
+inline_script = {
+    script = compatibility/pmca_conditional_inline_1_input
+    MOD_VARIABLE_1 = @has_condensed_armies
+    CONTENT = "
+    pmca_ten_assault_army = {
+        use_armynames_from = assault_army
+        health = 10
+        damage = 10
+        morale = 10
+        morale_damage = 1
+        collateral_damage = 10
+        war_exhaustion = 10
+        time = 90
+        icon = GFX_army_type_assault
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 1000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 1000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        show_tech_unlock_if = {
+            OR = {
+                is_machine_empire = no
+                has_valid_civic = civic_machine_assimilator
+                has_origin = origin_shroud_forged
+            }
+            is_wilderness_empire = no
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_shroud_forged
+                    NOR = {
+                        has_trait = trait_mechanical
+                        has_trait = trait_machine_unit
+                        has_trait = trait_limited_cybernetic
+                        is_sapient = no
+                    }
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 1000
+            }
+            OR = {
+                is_machine_empire = no
+                has_valid_civic = civic_machine_assimilator
+                has_origin = origin_shroud_forged
+            }
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    is_fallen_empire = yes
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    AND = {
+                        is_militarist = yes
+                        has_technology = tech_gene_banks
+                    }
+                }
+            }
+            modifier = {
+                factor = 0.01
+                OR = {
+                    AND = {
+                        has_ai_personality_behaviour = slaver
+                        has_technology = tech_neural_implants
+                    }
+                    AND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                    has_valid_civic = civic_reanimated_armies
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_assault_army = {
+        use_armynames_from = assault_army
+        health = 100
+        damage = 100
+        morale = 100
+        morale_damage = 1
+        collateral_damage = 100
+        war_exhaustion = 100
+        time = 90
+        icon = GFX_army_type_assault
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 10000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 5000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 10000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        show_tech_unlock_if = {
+            OR = {
+                is_machine_empire = no
+                has_valid_civic = civic_machine_assimilator
+                has_origin = origin_shroud_forged
+            }
+            is_wilderness_empire = no
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_shroud_forged
+                    NOR = {
+                        has_trait = trait_mechanical
+                        has_trait = trait_machine_unit
+                        has_trait = trait_limited_cybernetic
+                        is_sapient = no
+                    }
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 10000
+            }
+            OR = {
+                is_machine_empire = no
+                has_valid_civic = civic_machine_assimilator
+                has_origin = origin_shroud_forged
+            }
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    is_fallen_empire = yes
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    AND = {
+                        is_militarist = yes
+                        has_technology = tech_gene_banks
+                    }
+                }
+            }
+            modifier = {
+                factor = 0.01
+                OR = {
+                    AND = {
+                        has_ai_personality_behaviour = slaver
+                        has_technology = tech_neural_implants
+                    }
+                    AND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                    has_valid_civic = civic_reanimated_armies
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_slave_army = {
+        use_armynames_from = slave_army
+        health = 10
+        damage = 10
+        morale = 7.5
+        morale_damage = 0.75
+        collateral_damage = 15
+        war_exhaustion = 5
+        time = 60
+        icon = GFX_army_type_slave
+        prerequisites = {
+            tech_neural_implants
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 250
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 500
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 5
+            }
+        }
+        potential = {
+            owner = {
+                any_owned_pop_group = {
+                    is_enslaved = yes
+                    is_same_species = from
+                }
+            }
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 500
+            }
+            OR = {
+                has_policy_flag = slavery_allowed
+                has_exploited_disconnected_drones = yes
+            }
+            is_machine_empire = no
+            is_wilderness_empire = no
+        }
+        allow = {
+            custom_tooltip = {
+                fail_text = requires_slave_processing_facility
+                OR = {
+                    has_building = building_slave_processing
+                    AND = {
+                        exists = orbital_defence
+                        orbital_defence = {
+                            exists = starbase
+                            starbase = {
+                                has_starbase_building = ring_slave_processing_facility
+                            }
+                        }
+                    }
+                }
+            }
+            any_owned_pop_group = {
+                is_enslaved = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    is_fallen_empire = yes
+                    NOT = {
+                        has_ai_personality_behaviour = slaver
+                    }
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    AND = {
+                        is_militarist = yes
+                        has_technology = tech_gene_banks
+                    }
+                    AND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_slave_army = {
+        use_armynames_from = slave_army
+        health = 100
+        damage = 100
+        morale = 75
+        morale_damage = 0.75
+        collateral_damage = 150
+        war_exhaustion = 50
+        time = 60
+        icon = GFX_army_type_slave
+        prerequisites = {
+            tech_neural_implants
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 5000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 2500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 5000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 50
+            }
+        }
+        potential = {
+            owner = {
+                any_owned_pop_group = {
+                    is_enslaved = yes
+                    is_same_species = from
+                }
+            }
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 5000
+            }
+            OR = {
+                has_policy_flag = slavery_allowed
+                has_exploited_disconnected_drones = yes
+            }
+            is_machine_empire = no
+            is_wilderness_empire = no
+        }
+        allow = {
+            custom_tooltip = {
+                fail_text = requires_slave_processing_facility
+                OR = {
+                    has_building = building_slave_processing
+                    AND = {
+                        exists = orbital_defence
+                        orbital_defence = {
+                            exists = starbase
+                            starbase = {
+                                has_starbase_building = ring_slave_processing_facility
+                            }
+                        }
+                    }
+                }
+            }
+            any_owned_pop_group = {
+                is_enslaved = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    is_fallen_empire = yes
+                    NOT = {
+                        has_ai_personality_behaviour = slaver
+                    }
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    AND = {
+                        is_militarist = yes
+                        has_technology = tech_gene_banks
+                    }
+                    AND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_clone_army = {
+        use_armynames_from = clone_army
+        health = 10
+        damage = 10
+        morale = 10
+        morale_damage = 1
+        collateral_damage = 12.5
+        war_exhaustion = 5
+        time = 30
+        pop_limited = no
+        icon = GFX_army_type_clone
+        prerequisites = {
+            tech_gene_banks
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 750
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 375
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 750
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 7.5
+            }
+        }
+        show_tech_unlock_if = {
+            OR = {
+                is_machine_empire = no
+                has_civic = civic_machine_assimilator
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 750
+            }
+            OR = {
+                is_machine_empire = no
+                has_civic = civic_machine_assimilator
+            }
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    is_fallen_empire = yes
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    NAND = {
+                        is_militarist = yes
+                        has_technology = tech_gene_banks
+                    }
+                }
+            }
+            modifier = {
+                factor = 2
+                has_origin = origin_clone_army
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_clone_army = {
+        use_armynames_from = clone_army
+        health = 100
+        damage = 100
+        morale = 100
+        morale_damage = 1
+        collateral_damage = 125
+        war_exhaustion = 50
+        time = 30
+        pop_limited = no
+        icon = GFX_army_type_clone
+        prerequisites = {
+            tech_gene_banks
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 7500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 3750
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 7500
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 75
+            }
+        }
+        show_tech_unlock_if = {
+            OR = {
+                is_machine_empire = no
+                has_civic = civic_machine_assimilator
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 7500
+            }
+            OR = {
+                is_machine_empire = no
+                has_civic = civic_machine_assimilator
+            }
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    is_fallen_empire = yes
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    NAND = {
+                        is_militarist = yes
+                        has_technology = tech_gene_banks
+                    }
+                }
+            }
+            modifier = {
+                factor = 2
+                has_origin = origin_clone_army
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_robotic_army = {
+        use_armynames_from = robotic_army
+        health = 20
+        damage = 10
+        morale_damage = 1
+        collateral_damage = 15
+        war_exhaustion = 5
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_robot
+        prerequisites = {
+            tech_droid_workers
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 1500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 750
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 1500
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 15
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_mechanical
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 1500
+            }
+            is_machine_empire = no
+            is_wilderness_empire = no
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    NOT = {
+                        has_policy_flag = robots_outlawed
+                    }
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    NAND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+                is_fallen_empire = no
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    is_fanatic_materialist = yes
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_robotic_army = {
+        use_armynames_from = robotic_army
+        health = 200
+        damage = 100
+        morale_damage = 1
+        collateral_damage = 150
+        war_exhaustion = 50
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_robot
+        prerequisites = {
+            tech_droid_workers
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 15000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 7500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 15000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 150
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_mechanical
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 15000
+            }
+            is_machine_empire = no
+            is_wilderness_empire = no
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    NOT = {
+                        has_policy_flag = robots_outlawed
+                    }
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    NAND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+                is_fallen_empire = no
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    is_fanatic_materialist = yes
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_psionic_army = {
+        use_armynames_from = psionic_army
+        health = 17.5
+        damage = 20
+        morale = 25
+        morale_damage = 1.5
+        collateral_damage = 5
+        war_exhaustion = 30
+        time = 120
+        icon = GFX_army_type_psionic
+        prerequisites = {
+            tech_telepathy
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 2500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 1250
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 2500
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 25
+            }
+        }
+        potential = {
+            from = {
+                has_psionic_species_trait = yes
+                OR = {
+                    has_trait = trait_shroud_forged
+                    NOR = {
+                        has_trait = trait_mechanical
+                        has_trait = trait_machine_unit
+                        has_trait = trait_limited_cybernetic
+                        is_sapient = no
+                    }
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 2500
+            }
+            OR = {
+                is_machine_empire = no
+                has_origin = origin_shroud_forged
+            }
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    NOT = {
+                        has_technology = tech_telepathy
+                    }
+                    has_technology = tech_gene_seed_purification
+                }
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    is_fanatic_spiritualist = yes
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_psionic_army = {
+        use_armynames_from = psionic_army
+        health = 175
+        damage = 200
+        morale = 250
+        morale_damage = 1.5
+        collateral_damage = 50
+        war_exhaustion = 300
+        time = 120
+        icon = GFX_army_type_psionic
+        prerequisites = {
+            tech_telepathy
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 25000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 12500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 25000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 250
+            }
+        }
+        potential = {
+            from = {
+                has_psionic_species_trait = yes
+                OR = {
+                    has_trait = trait_shroud_forged
+                    NOR = {
+                        has_trait = trait_mechanical
+                        has_trait = trait_machine_unit
+                        has_trait = trait_limited_cybernetic
+                        is_sapient = no
+                    }
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 25000
+            }
+            OR = {
+                is_machine_empire = no
+                has_origin = origin_shroud_forged
+            }
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    NOT = {
+                        has_technology = tech_telepathy
+                    }
+                    has_technology = tech_gene_seed_purification
+                }
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    is_fanatic_spiritualist = yes
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_xenomorph_army = {
+        use_armynames_from = xenomorph_army
+        health = 20
+        damage = 20
+        morale_damage = 2
+        collateral_damage = 50
+        war_exhaustion = 2.5
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_xenomorph
+        prerequisites = {
+            tech_morphogenetic_field_mastery
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 2000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 1000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 2000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 2000
+            }
+            is_machine_empire = no
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                is_fallen_empire = yes
+                has_ethic = ethic_fanatic_xenophobe
+            }
+            modifier = {
+                set = 0
+                OR = {
+                    is_pacifist = yes
+                    is_xenophile = yes
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_xenomorph_army = {
+        use_armynames_from = xenomorph_army
+        health = 200
+        damage = 200
+        morale_damage = 2
+        collateral_damage = 500
+        war_exhaustion = 25
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_xenomorph
+        prerequisites = {
+            tech_morphogenetic_field_mastery
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 20000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 10000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 20000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 20000
+            }
+            is_machine_empire = no
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                is_fallen_empire = yes
+                has_ethic = ethic_fanatic_xenophobe
+            }
+            modifier = {
+                set = 0
+                OR = {
+                    is_pacifist = yes
+                    is_xenophile = yes
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_gene_warrior_army = {
+        use_armynames_from = gene_warrior_army
+        health = 25
+        damage = 20
+        morale = 25
+        morale_damage = 1
+        collateral_damage = 7.5
+        war_exhaustion = 30
+        time = 150
+        icon = GFX_army_type_gene_warrior
+        prerequisites = {
+            tech_gene_seed_purification
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 3000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 1500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 3000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 3000
+            }
+            is_machine_empire = no
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                is_fanatic_xenophile = no
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_gene_warrior_army = {
+        use_armynames_from = gene_warrior_army
+        health = 250
+        damage = 200
+        morale = 250
+        morale_damage = 1
+        collateral_damage = 75
+        war_exhaustion = 300
+        time = 150
+        icon = GFX_army_type_gene_warrior
+        prerequisites = {
+            tech_gene_seed_purification
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 30000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 15000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 30000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 30000
+            }
+            is_machine_empire = no
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                is_fanatic_xenophile = no
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_wilderness_pre_sapient_assault_army = {
+        use_armynames_from = wilderness_pre_sapient_assault_army
+        health = 32.5
+        damage = 15
+        morale = 5
+        morale_damage = 1.25
+        collateral_damage = 50
+        war_exhaustion = 0
+        time = 90
+        has_species = no
+        pop_limited = no
+        icon = GFX_wilderness_army_type_assault
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                food = 2000
+            }
+            upkeep = {
+                food = 10
+                energy = 10
+            }
+        }
+        show_tech_unlock_if = {
+            is_wilderness_empire = yes
+        }
+        potential = {
+            exists = owner
+            owner = {
+                is_wilderness_empire = yes
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = food
+                PMCA_VALUE = 2000
+            }
+        }
+    }
+    pmca_hundred_wilderness_pre_sapient_assault_army = {
+        use_armynames_from = wilderness_pre_sapient_assault_army
+        health = 325
+        damage = 150
+        morale = 50
+        morale_damage = 1.25
+        collateral_damage = 500
+        war_exhaustion = 0
+        time = 90
+        has_species = no
+        pop_limited = no
+        icon = GFX_wilderness_army_type_assault
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                food = 20000
+            }
+            upkeep = {
+                food = 100
+                energy = 100
+            }
+        }
+        show_tech_unlock_if = {
+            is_wilderness_empire = yes
+        }
+        potential = {
+            exists = owner
+            owner = {
+                is_wilderness_empire = yes
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = food
+                PMCA_VALUE = 20000
+            }
+        }
+    }
+
+    pmca_ten_abomination_army = {
+        use_armynames_from = abomination_army
+        health = 15
+        damage = 13.3334
+        morale = 15
+        morale_damage = 1.5
+        collateral_damage = 25
+        war_exhaustion = 5
+        time = 100
+        icon = GFX_army_type_slave
+        prerequisites = {
+            tech_neural_implants
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 250
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 500
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 5
+            }
+        }
+        show_tech_unlock_if = {
+            is_twisted_experimenters_empire = yes
+        }
+        potential = {
+            owner = {
+                any_owned_pop_group = {
+                    is_enslaved = yes
+                    is_same_species = from
+                }
+            }
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 500
+            }
+            is_twisted_experimenters_empire = yes
+            OR = {
+                has_policy_flag = slavery_allowed
+                has_exploited_disconnected_drones = yes
+            }
+            is_machine_empire = no
+        }
+        allow = {
+            custom_tooltip = {
+                fail_text = requires_slave_processing_facility
+                OR = {
+                    has_building = building_slave_processing
+                    AND = {
+                        exists = orbital_defence
+                        orbital_defence = {
+                            exists = starbase
+                            starbase = {
+                                has_starbase_building = ring_slave_processing_facility
+                            }
+                        }
+                    }
+                }
+            }
+            any_owned_pop_group = {
+                is_enslaved = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    is_fallen_empire = yes
+                    NOT = {
+                        has_ai_personality_behaviour = slaver
+                    }
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    AND = {
+                        is_militarist = yes
+                        has_technology = tech_gene_banks
+                    }
+                    AND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_abomination_army = {
+        use_armynames_from = abomination_army
+        health = 150
+        damage = 133.334
+        morale = 150
+        morale_damage = 1.5
+        collateral_damage = 250
+        war_exhaustion = 50
+        time = 100
+        icon = GFX_army_type_slave
+        prerequisites = {
+            tech_neural_implants
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 5000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 2500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 5000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 50
+            }
+        }
+        show_tech_unlock_if = {
+            is_twisted_experimenters_empire = yes
+        }
+        potential = {
+            owner = {
+                any_owned_pop_group = {
+                    is_enslaved = yes
+                    is_same_species = from
+                }
+            }
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 5000
+            }
+            is_twisted_experimenters_empire = yes
+            OR = {
+                has_policy_flag = slavery_allowed
+                has_exploited_disconnected_drones = yes
+            }
+            is_machine_empire = no
+        }
+        allow = {
+            custom_tooltip = {
+                fail_text = requires_slave_processing_facility
+                OR = {
+                    has_building = building_slave_processing
+                    AND = {
+                        exists = orbital_defence
+                        orbital_defence = {
+                            exists = starbase
+                            starbase = {
+                                has_starbase_building = ring_slave_processing_facility
+                            }
+                        }
+                    }
+                }
+            }
+            any_owned_pop_group = {
+                is_enslaved = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                OR = {
+                    is_fallen_empire = yes
+                    NOT = {
+                        has_ai_personality_behaviour = slaver
+                    }
+                    has_technology = tech_telepathy
+                    has_technology = tech_gene_seed_purification
+                    AND = {
+                        is_militarist = yes
+                        has_technology = tech_gene_banks
+                    }
+                    AND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_machine_assault_1 = {
+        use_armynames_from = machine_assault_1
+        health = 10
+        damage = 10
+        morale_damage = 1
+        collateral_damage = 20
+        war_exhaustion = 5
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 1000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 1000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        show_tech_unlock_if = {
+            is_machine_empire = yes
+        }
+        potential = {
+            from = {
+                has_trait = trait_machine_unit
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 1000
+            }
+            is_machine_empire = yes
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                has_technology = tech_adaptive_combat_algorithms
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_machine_assault_1 = {
+        use_armynames_from = machine_assault_1
+        health = 100
+        damage = 100
+        morale_damage = 1
+        collateral_damage = 200
+        war_exhaustion = 50
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 10000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 5000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 10000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        show_tech_unlock_if = {
+            is_machine_empire = yes
+        }
+        potential = {
+            from = {
+                has_trait = trait_machine_unit
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 10000
+            }
+            is_machine_empire = yes
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                has_technology = tech_adaptive_combat_algorithms
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_machine_assault_2 = {
+        use_armynames_from = machine_assault_2
+        health = 25
+        damage = 15
+        morale_damage = 1.5
+        collateral_damage = 20
+        war_exhaustion = 10
+        time = 120
+        has_morale = no
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_adaptive_combat_algorithms
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 2000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 1000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 2000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_machine_unit
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 2000
+            }
+            is_machine_empire = yes
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_machine_assault_2 = {
+        use_armynames_from = machine_assault_2
+        health = 250
+        damage = 150
+        morale_damage = 1.5
+        collateral_damage = 200
+        war_exhaustion = 100
+        time = 120
+        has_morale = no
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_adaptive_combat_algorithms
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 20000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 10000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 20000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_machine_unit
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 20000
+            }
+            is_machine_empire = yes
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_machine_assault_3 = {
+        use_armynames_from = machine_assault_3
+        health = 60
+        damage = 40
+        morale_damage = 1.5
+        collateral_damage = 40
+        war_exhaustion = 40
+        time = 500
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_biomechanics
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 8000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 4000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 8000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 80
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 8000
+            }
+            is_machine_empire = yes
+        }
+        ai_weight = {
+            base = 50
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_machine_assault_3 = {
+        use_armynames_from = machine_assault_3
+        health = 600
+        damage = 400
+        morale_damage = 1.5
+        collateral_damage = 400
+        war_exhaustion = 400
+        time = 500
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_biomechanics
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 80000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 40000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 80000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 800
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 80000
+            }
+            is_machine_empire = yes
+        }
+        ai_weight = {
+            base = 50
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_undead_army = {
+        use_armynames_from = undead_army
+        health = 10
+        damage = 10
+        morale_damage = 1.75
+        collateral_damage = 12.5
+        war_exhaustion = 5
+        time = 60
+        has_morale = no
+        disband_if_species_lacks_rights = no
+        pop_limited = no
+        icon = GFX_army_type_undead
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 1000
+            }
+            upkeep = {
+                energy = 7.5
+            }
+        }
+        show_tech_unlock_if = {
+            has_valid_civic = civic_reanimated_armies
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    is_sapient = no
+                }
+            }
+            planet = {
+                has_active_building = building_dread_encampment
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = energy
+                PMCA_VALUE = 1000
+            }
+            has_valid_civic = civic_reanimated_armies
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_undead_army = {
+        use_armynames_from = undead_army
+        health = 100
+        damage = 100
+        morale_damage = 1.75
+        collateral_damage = 125
+        war_exhaustion = 50
+        time = 60
+        has_morale = no
+        disband_if_species_lacks_rights = no
+        pop_limited = no
+        icon = GFX_army_type_undead
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 10000
+            }
+            upkeep = {
+                energy = 75
+            }
+        }
+        show_tech_unlock_if = {
+            has_valid_civic = civic_reanimated_armies
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    is_sapient = no
+                }
+            }
+            planet = {
+                has_active_building = building_dread_encampment
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = energy
+                PMCA_VALUE = 10000
+            }
+            has_valid_civic = civic_reanimated_armies
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_warpling_army = {
+        use_armynames_from = warpling_army
+        health = 25
+        damage = 50
+        morale_damage = 2
+        collateral_damage = 5
+        war_exhaustion = 5
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_xenomorph
+        resources = {
+            category = armies
+            cost = {
+                astral_threads = 1000
+            }
+            upkeep = {
+                energy = 10
+                astral_threads = 1
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = astral_threads
+                PMCA_VALUE = 1000
+            }
+            has_astral_planes_dlc = yes
+            has_country_flag = unlocked_warplings
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_warpling_army = {
+        use_armynames_from = warpling_army
+        health = 250
+        damage = 500
+        morale_damage = 2
+        collateral_damage = 50
+        war_exhaustion = 50
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_xenomorph
+        resources = {
+            category = armies
+            cost = {
+                astral_threads = 10000
+            }
+            upkeep = {
+                energy = 100
+                astral_threads = 10
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = astral_threads
+                PMCA_VALUE = 10000
+            }
+            has_astral_planes_dlc = yes
+            has_country_flag = unlocked_warplings
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_flamestorm_troopers_army = {
+        use_armynames_from = flamestorm_troopers_army
+        health = 30
+        damage = 20
+        morale = 30
+        morale_damage = 3
+        collateral_damage = 50
+        war_exhaustion = 5
+        time = 150
+        icon = GFX_army_type_flamestorm
+        resources = {
+            category = armies
+            cost = {
+                astral_threads = 1000
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = astral_threads
+                PMCA_VALUE = 1000
+            }
+            has_astral_planes_dlc = yes
+            has_country_flag = unlocked_flamestorm_troopers
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_flamestorm_troopers_army = {
+        use_armynames_from = flamestorm_troopers_army
+        health = 300
+        damage = 200
+        morale = 300
+        morale_damage = 3
+        collateral_damage = 500
+        war_exhaustion = 50
+        time = 150
+        icon = GFX_army_type_flamestorm
+        resources = {
+            category = armies
+            cost = {
+                astral_threads = 10000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = astral_threads
+                PMCA_VALUE = 10000
+            }
+            has_astral_planes_dlc = yes
+            has_country_flag = unlocked_flamestorm_troopers
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_individual_machine_assault_1 = {
+        use_armynames_from = individual_machine_assault_1
+        health = 10
+        damage = 10
+        morale = 10
+        morale_damage = 1
+        collateral_damage = 20
+        war_exhaustion = 5
+        time = 90
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 1000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 1000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        show_tech_unlock_if = {
+            is_individual_machine = yes
+        }
+        potential = {
+            from = {
+                has_trait = trait_machine_unit
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 1000
+            }
+            is_individual_machine = yes
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                has_technology = tech_adaptive_combat_algorithms
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_individual_machine_assault_1 = {
+        use_armynames_from = individual_machine_assault_1
+        health = 100
+        damage = 100
+        morale = 100
+        morale_damage = 1
+        collateral_damage = 200
+        war_exhaustion = 50
+        time = 90
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_assault_armies
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 10000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 5000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 10000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        show_tech_unlock_if = {
+            is_individual_machine = yes
+        }
+        potential = {
+            from = {
+                has_trait = trait_machine_unit
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 10000
+            }
+            is_individual_machine = yes
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                has_technology = tech_adaptive_combat_algorithms
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_individual_machine_assault_2 = {
+        use_armynames_from = individual_machine_assault_2
+        health = 25
+        damage = 15
+        morale = 15
+        morale_damage = 1.5
+        collateral_damage = 20
+        war_exhaustion = 10
+        time = 120
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_adaptive_combat_algorithms
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 2000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 1000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 2000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_machine_unit
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 2000
+            }
+            is_individual_machine = yes
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_individual_machine_assault_2 = {
+        use_armynames_from = individual_machine_assault_2
+        health = 250
+        damage = 150
+        morale = 150
+        morale_damage = 1.5
+        collateral_damage = 200
+        war_exhaustion = 100
+        time = 120
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_adaptive_combat_algorithms
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 20000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 10000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 20000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_machine_unit
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 20000
+            }
+            is_individual_machine = yes
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_individual_machine_assault_3 = {
+        use_armynames_from = individual_machine_assault_3
+        health = 60
+        damage = 40
+        morale = 20
+        morale_damage = 1.5
+        collateral_damage = 40
+        war_exhaustion = 40
+        time = 500
+        has_species = no
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_biomechanics
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 8000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 4000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 8000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 80
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 8000
+            }
+            is_individual_machine = yes
+        }
+        ai_weight = {
+            base = 50
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_individual_machine_assault_3 = {
+        use_armynames_from = individual_machine_assault_3
+        health = 600
+        damage = 400
+        morale = 200
+        morale_damage = 1.5
+        collateral_damage = 400
+        war_exhaustion = 400
+        time = 500
+        has_species = no
+        icon = GFX_army_type_machine_assault
+        prerequisites = {
+            tech_biomechanics
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 80000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 40000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 80000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 800
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 80000
+            }
+            is_individual_machine = yes
+        }
+        ai_weight = {
+            base = 50
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_perfected_clone_army = {
+        use_armynames_from = perfected_clone_army
+        health = 15
+        damage = 15
+        morale = 15
+        morale_damage = 1
+        collateral_damage = 5
+        war_exhaustion = 2.5
+        time = 30
+        pop_limited = no
+        icon = GFX_army_type_clone
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 1000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 1000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        show_tech_unlock_if = {
+            OR = {
+                has_active_tradition = tr_cloning_somatic_synthesization
+                has_active_tradition = tr_cloning_somatic_synthesization_clone_army
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 1000
+            }
+            OR = {
+                has_active_tradition = tr_cloning_somatic_synthesization
+                has_active_tradition = tr_cloning_somatic_synthesization_clone_army
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+            }
+            modifier = {
+                factor = 2
+                has_origin = origin_clone_army
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_perfected_clone_army = {
+        use_armynames_from = perfected_clone_army
+        health = 150
+        damage = 150
+        morale = 150
+        morale_damage = 1
+        collateral_damage = 50
+        war_exhaustion = 25
+        time = 30
+        pop_limited = no
+        icon = GFX_army_type_clone
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 10000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 5000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 10000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        show_tech_unlock_if = {
+            OR = {
+                has_active_tradition = tr_cloning_somatic_synthesization
+                has_active_tradition = tr_cloning_somatic_synthesization_clone_army
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 10000
+            }
+            OR = {
+                has_active_tradition = tr_cloning_somatic_synthesization
+                has_active_tradition = tr_cloning_somatic_synthesization_clone_army
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+            }
+            modifier = {
+                factor = 2
+                has_origin = origin_clone_army
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ember_legion = {
+        use_armynames_from = ember_legion
+        health = 25
+        damage = 20
+        morale = 10
+        morale_damage = 2.25
+        collateral_damage = 12.5
+        war_exhaustion = 2.5
+        time = 180
+        icon = GFX_army_type_ember
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 2500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 1250
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 2500
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+            planet = {
+                habitability = {
+                    who = from
+                    value <= 0.2
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 2500
+            }
+            has_civic = civic_pyrolatry
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_ethic = ethic_fanatic_xenophobe
+            }
+            modifier = {
+                set = 0
+                OR = {
+                    is_pacifist = yes
+                    is_xenophile = yes
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ember_legion = {
+        use_armynames_from = ember_legion
+        health = 250
+        damage = 200
+        morale = 100
+        morale_damage = 2.25
+        collateral_damage = 125
+        war_exhaustion = 25
+        time = 180
+        icon = GFX_army_type_ember
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 25000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 12500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 25000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    has_trait = trait_limited_cybernetic
+                    is_sapient = no
+                }
+            }
+            planet = {
+                habitability = {
+                    who = from
+                    value <= 0.2
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 25000
+            }
+            has_civic = civic_pyrolatry
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_ethic = ethic_fanatic_xenophobe
+            }
+            modifier = {
+                set = 0
+                OR = {
+                    is_pacifist = yes
+                    is_xenophile = yes
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_lm_imbued_army = {
+        use_armynames_from = lm_imbued_army
+        health = 25
+        damage = 20
+        morale_damage = 2
+        collateral_damage = 12.5
+        war_exhaustion = 2.5
+        time = 180
+        has_morale = no
+        icon = GFX_army_type_robot
+        resources = {
+            category = armies
+            cost = {
+                sr_living_metal = 1500
+            }
+            upkeep = {
+                energy = 20
+                minerals = 10
+            }
+        }
+        potential = {
+            OR = {
+                from = {
+                    has_trait = trait_infernal
+                }
+                owner = {
+                    has_valid_civic = civic_machine_galvanic_symbiosis
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = sr_living_metal
+                PMCA_VALUE = 1500
+            }
+            is_galvanic_empire = yes
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_ethic = ethic_fanatic_xenophobe
+            }
+            modifier = {
+                factor = 2
+                owner = {
+                    has_monthly_income = {
+                        resource = sr_living_metal
+                        value > 30
+                    }
+                }
+            }
+            modifier = {
+                factor = 5
+                is_genocidal_infernal = yes
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_lm_imbued_army = {
+        use_armynames_from = lm_imbued_army
+        health = 250
+        damage = 200
+        morale_damage = 2
+        collateral_damage = 125
+        war_exhaustion = 25
+        time = 180
+        has_morale = no
+        icon = GFX_army_type_robot
+        resources = {
+            category = armies
+            cost = {
+                sr_living_metal = 15000
+            }
+            upkeep = {
+                energy = 200
+                minerals = 100
+            }
+        }
+        potential = {
+            OR = {
+                from = {
+                    has_trait = trait_infernal
+                }
+                owner = {
+                    has_valid_civic = civic_machine_galvanic_symbiosis
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = sr_living_metal
+                PMCA_VALUE = 15000
+            }
+            is_galvanic_empire = yes
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_ethic = ethic_fanatic_xenophobe
+            }
+            modifier = {
+                factor = 2
+                owner = {
+                    has_monthly_income = {
+                        resource = sr_living_metal
+                        value > 30
+                    }
+                }
+            }
+            modifier = {
+                factor = 5
+                is_genocidal_infernal = yes
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cybrex_warform = {
+        use_armynames_from = cybrex_warform
+        health = 70
+        damage = 50
+        morale_damage = 2
+        collateral_damage = 50
+        war_exhaustion = 40
+        time = 500
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_machine_assault
+        resources = {
+            category = armies
+            cost = {
+                alloys = 2500
+            }
+            upkeep = {
+                energy = 80
+            }
+        }
+        potential = {
+            custom_tooltip = {
+                planet = {
+                    is_capital = yes
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = alloys
+                PMCA_VALUE = 2500
+            }
+            has_relic = r_war_forge
+        }
+        ai_weight = {
+            base = 50
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cybrex_warform = {
+        use_armynames_from = cybrex_warform
+        health = 700
+        damage = 500
+        morale_damage = 2
+        collateral_damage = 500
+        war_exhaustion = 400
+        time = 500
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_machine_assault
+        resources = {
+            category = armies
+            cost = {
+                alloys = 25000
+            }
+            upkeep = {
+                energy = 800
+            }
+        }
+        potential = {
+            custom_tooltip = {
+                planet = {
+                    is_capital = yes
+                }
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = alloys
+                PMCA_VALUE = 25000
+            }
+            has_relic = r_war_forge
+        }
+        ai_weight = {
+            base = 50
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_imperial_legion = {
+        use_armynames_from = imperial_legion
+        health = 30
+        damage = 25
+        morale = 30
+        morale_damage = 1
+        collateral_damage = 7.5
+        war_exhaustion = 30
+        time = 150
+        has_species = no
+        icon = GFX_army_type_imperial
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 3000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 1500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 3000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = ten
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 3000
+            }
+            is_galactic_emperor = yes
+            is_active_resolution = resolution_emperor_imperial_legions
+        }
+        ai_weight = {
+            base = 500
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_imperial_legion = {
+        use_armynames_from = imperial_legion
+        health = 300
+        damage = 250
+        morale = 300
+        morale_damage = 1
+        collateral_damage = 75
+        war_exhaustion = 300
+        time = 150
+        has_species = no
+        icon = GFX_army_type_imperial
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = no
+                    }
+                }
+                minerals = 30000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                        is_nomadic = yes
+                    }
+                }
+                alloys = 15000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 30000
+                multiplier = @mineral_to_food_cost_ratio
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential_country = {
+            pmca_materiel_policy_check = {
+                PMCA_MULT = hundred
+                PMCA_RESOURCE = minerals
+                PMCA_VALUE = 30000
+            }
+            is_galactic_emperor = yes
+            is_active_resolution = resolution_emperor_imperial_legions
+        }
+        ai_weight = {
+            base = 500
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    "
+}

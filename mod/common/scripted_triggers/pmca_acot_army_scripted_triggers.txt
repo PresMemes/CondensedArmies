@@ -1,9 +1,9 @@
 # Dear Irony please fallback to simple parser
 
 inline_script = {
-	script = compatibility/pmca_conditional_inline_1_input
-	MOD_VARIABLE_1 = @has_ancient_caches
-	CONTENT = "
+    script = compatibility/pmca_conditional_inline_1_input
+    MOD_VARIABLE_1 = @has_ancient_caches
+    CONTENT = "
 	# Checks if a given army is a Condensed ACOT Light Vehicle
 	# Looks weird, but hopefully better performance by short circuiting on the army flag first
 	# Scopes: this = army

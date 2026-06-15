@@ -13,43 +13,43 @@ namespace = pmca_army_compat
 
 ## Gatekeeper event
 country_event = {
-	id = pmca_army_compat.0
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.0
+    hide_window = yes
+    is_triggered_only = yes
 
-	immediate = {
-		## Vehicle
-		country_event = { id = pmca_army_compat.50 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+    immediate = {
+        ## Vehicle
+        country_event = { id = pmca_army_compat.50 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
 
-		## Infantry
-		random_list = {
-			1 = { } # Nothing
-			1 = {
-				country_event = { id = pmca_army_compat.100 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-				country_event = { id = pmca_army_compat.101 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-				country_event = { id = pmca_army_compat.102 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-			}
-		}
+        ## Infantry
+        random_list = {
+            1 = { } # Nothing
+            1 = {
+                country_event = { id = pmca_army_compat.100 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+                country_event = { id = pmca_army_compat.101 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+                country_event = { id = pmca_army_compat.102 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+            }
+        }
 
-		## Torso
-		country_event = { id = pmca_army_compat.200 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-		country_event = { id = pmca_army_compat.201 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+        ## Torso
+        country_event = { id = pmca_army_compat.200 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+        country_event = { id = pmca_army_compat.201 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
 
-		## Hive
-		country_event = { id = pmca_army_compat.300 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
-	}
+        ## Hive
+        country_event = { id = pmca_army_compat.300 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
+    }
 }
 
 ## Vehicle Ejection
 country_event = {
-	id = pmca_army_compat.50
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.50
+    hide_window = yes
+    is_triggered_only = yes
 
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
+    inline_script = {
+        script = compatibility/pmca_conditional_inline_1_input
+        MOD_VARIABLE_1 = @has_ancient_caches
+        CONTENT = "
 		trigger = {
 			from = { pmca_is_condensed_acot_manned_vehicle = yes }
 		}
@@ -279,21 +279,21 @@ country_event = {
 			country_event = { id = pmca_army_compat.51 scopes = { from = from fromfrom = fromfrom fromfromfrom = fromfromfrom } }
 		}
 		"
-	}
+    }
 }
 
 # Additional Survivors
 country_event = {
-	id = pmca_army_compat.51
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.51
+    hide_window = yes
+    is_triggered_only = yes
 
-	# Yes, I know the Liberty Land cruiser (acot_army_ega/acot_army_ega_se) has a slightly different table.
-	# I just don't care enough to do it. The only people who will notice are the ones reading this comment.
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
+    # Yes, I know the Liberty Land cruiser (acot_army_ega/acot_army_ega_se) has a slightly different table.
+    # I just don't care enough to do it. The only people who will notice are the ones reading this comment.
+    inline_script = {
+        script = compatibility/pmca_conditional_inline_1_input
+        MOD_VARIABLE_1 = @has_ancient_caches
+        CONTENT = "
 		trigger = {
 			from = {
 				OR = {
@@ -410,20 +410,20 @@ country_event = {
 			}
 		}
 		"
-	}
+    }
 }
 
 ## Infantry Autoarmor
 # Light
 country_event = {
-	id = pmca_army_compat.100
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.100
+    hide_window = yes
+    is_triggered_only = yes
 
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
+    inline_script = {
+        script = compatibility/pmca_conditional_inline_1_input
+        MOD_VARIABLE_1 = @has_ancient_caches
+        CONTENT = "
 		trigger = {
 			from = { pmca_is_condensed_acot_light_infantry = yes }
 		}
@@ -475,19 +475,19 @@ country_event = {
 			}
 		}
 		"
-	}
+    }
 }
 
 # Medium
 country_event = {
-	id = pmca_army_compat.101
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.101
+    hide_window = yes
+    is_triggered_only = yes
 
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
+    inline_script = {
+        script = compatibility/pmca_conditional_inline_1_input
+        MOD_VARIABLE_1 = @has_ancient_caches
+        CONTENT = "
 		trigger = {
 			from = { pmca_is_condensed_acot_medium_infantry = yes }
 		}
@@ -538,19 +538,19 @@ country_event = {
 			}
 		}
 		"
-	}
+    }
 }
 
 # Heavy
 country_event = {
-	id = pmca_army_compat.102
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.102
+    hide_window = yes
+    is_triggered_only = yes
 
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
+    inline_script = {
+        script = compatibility/pmca_conditional_inline_1_input
+        MOD_VARIABLE_1 = @has_ancient_caches
+        CONTENT = "
 		trigger = {
 			from = { pmca_is_condensed_acot_heavy_infantry = yes }
 		}
@@ -601,20 +601,20 @@ country_event = {
 			}
 		}
 		"
-	}
+    }
 }
 
 ## Torso
 # Robot, Droid, Cyborg, and Synths
 country_event = {
-	id = pmca_army_compat.200
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.200
+    hide_window = yes
+    is_triggered_only = yes
 
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
+    inline_script = {
+        script = compatibility/pmca_conditional_inline_1_input
+        MOD_VARIABLE_1 = @has_ancient_caches
+        CONTENT = "
 		trigger = {
 			from = { pmca_is_condensed_acot_robot_or_cyborg_or_synth = yes }
 		}
@@ -765,19 +765,19 @@ country_event = {
 			}
 		}
 		"
-	}
+    }
 }
 
 # Machines
 country_event = {
-	id = pmca_army_compat.201
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.201
+    hide_window = yes
+    is_triggered_only = yes
 
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
+    inline_script = {
+        script = compatibility/pmca_conditional_inline_1_input
+        MOD_VARIABLE_1 = @has_ancient_caches
+        CONTENT = "
 		trigger = {
 			from  = { pmca_is_condensed_acot_robot_torso = yes }
 		}
@@ -1024,20 +1024,20 @@ country_event = {
 			}
 		}
 	"
-	}
+    }
 }
 
 ## Hive
 # Broodlings, Cocoons
 country_event = {
-	id = pmca_army_compat.300
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.300
+    hide_window = yes
+    is_triggered_only = yes
 
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
+    inline_script = {
+        script = compatibility/pmca_conditional_inline_1_input
+        MOD_VARIABLE_1 = @has_ancient_caches
+        CONTENT = "
 		trigger = {
 			from = { pmca_is_condensed_acot_broodling_spawner = yes }
 		}
@@ -1384,19 +1384,19 @@ country_event = {
 			}
 		}
 		"
-	}
+    }
 }
 
 # Cocoon Stuff
 country_event = {
-	id = pmca_army_compat.301
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_army_compat.301
+    hide_window = yes
+    is_triggered_only = yes
 
-	inline_script = {
-		script = compatibility/pmca_conditional_inline_1_input
-		MOD_VARIABLE_1 = @has_ancient_caches
-		CONTENT = "
+    inline_script = {
+        script = compatibility/pmca_conditional_inline_1_input
+        MOD_VARIABLE_1 = @has_ancient_caches
+        CONTENT = "
 		trigger = {
 			exists = from
 		}
@@ -1499,5 +1499,5 @@ country_event = {
 			}
 		}
 		"
-	}
+    }
 }

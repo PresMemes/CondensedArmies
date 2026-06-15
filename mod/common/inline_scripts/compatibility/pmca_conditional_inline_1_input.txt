@@ -39,8 +39,8 @@
 #	c) Easily solvable by hand
 
 inline_script = {
-	script = compatibility/pmca_conditional_inline_step_2
+    script = compatibility/pmca_conditional_inline_step_2
 
-	CASE = @[ ((|$MOD_VARIABLE_1$| + 2) % (|$MOD_VARIABLE_1$| + 1)) ]
-	CONTENT = "$CONTENT$"
+    CASE = @[ ((|$MOD_VARIABLE_1$| + 2) % (|$MOD_VARIABLE_1$| + 1)) ]
+    CONTENT = "$CONTENT$"
 }

@@ -3,124 +3,124 @@ namespace = pmca_events
 ## Initialization
 # Set ID flag
 event = {
-	id = pmca_events.1
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_events.1
+    hide_window = yes
+    is_triggered_only = yes
 
-	immediate = {
-		set_global_flag = pmca_installed # Mod flag
-		set_global_flag = pmca_ai_allowed
-	}
+    immediate = {
+        set_global_flag = pmca_installed # Mod flag
+        set_global_flag = pmca_ai_allowed
+    }
 }
 
 # Get host
 country_event = {
-	id = pmca_events.2
-	hide_window = yes
-	fire_only_once = yes
-	is_triggered_only = yes
+    id = pmca_events.2
+    hide_window = yes
+    fire_only_once = yes
+    is_triggered_only = yes
 
-	trigger = {
-		is_ai = no
-		NOT = { has_country_flag = pmca_host }
-	}
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = pmca_host }
+    }
 
-	immediate = {
-		set_country_flag = pmca_host
-	}
+    immediate = {
+        set_country_flag = pmca_host
+    }
 }
 
 ## Dynamic Mod Menu
 # Register
 event = {
-	id = pmca_events.50
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_events.50
+    hide_window = yes
+    is_triggered_only = yes
 
-	immediate = {
-		dmm_register_mod = {
-			DMM_NAME = edict_pmca_logistics_manager
-			DMM_FLAG = pmca_installed
-		}
-	}
+    immediate = {
+        dmm_register_mod = {
+            DMM_NAME = edict_pmca_logistics_manager
+            DMM_FLAG = pmca_installed
+        }
+    }
 }
 
 # Launch Menu
 country_event = {
-	id = pmca_events.51
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		from = {
-			has_leader_flag = pmca_installed
-		}
-	}
-	immediate = {
-		country_event = { id = pmca_events.999 }
-	}
+    id = pmca_events.51
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = {
+        from = {
+            has_leader_flag = pmca_installed
+        }
+    }
+    immediate = {
+        country_event = { id = pmca_events.999 }
+    }
 }
 
 ## Mark Condensed Armies
 # Set appropriate flag
 planet_event = {
-	id = pmca_events.75
-	is_triggered_only = yes
-	hide_window = yes
+    id = pmca_events.75
+    is_triggered_only = yes
+    hide_window = yes
 
-	trigger = {
-		exists = owner
-		owner = {
-			OR = {
-				has_country_flag = pmca_times_ten_set
-				has_country_flag = pmca_times_hundred_set
-			}
-		}
-		from = {
-			pmca_is_condensed_army = yes
-		}
-	}
+    trigger = {
+        exists = owner
+        owner = {
+            OR = {
+                has_country_flag = pmca_times_ten_set
+                has_country_flag = pmca_times_hundred_set
+            }
+        }
+        from = {
+            pmca_is_condensed_army = yes
+        }
+    }
 
-	immediate = {
-		from = {
-			if = {
-				limit = {
-					pmca_is_times_ten_army = yes
-				}
-				set_army_flag = pmca_times_ten_army
-			}
-			else = {
-				set_army_flag = pmca_times_hundred_army
-			}
-		}
-	}
+    immediate = {
+        from = {
+            if = {
+                limit = {
+                    pmca_is_times_ten_army = yes
+                }
+                set_army_flag = pmca_times_ten_army
+            }
+            else = {
+                set_army_flag = pmca_times_hundred_army
+            }
+        }
+    }
 }
 
 ## Custom GUI
 country_event = {
-	id = pmca_events.999
-	title = BLANK_STRING
-	desc = pmca_calm_body_text
+    id = pmca_events.999
+    title = BLANK_STRING
+    desc = pmca_calm_body_text
 
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "pmca_calm_window"
+    is_triggered_only = yes
+    diplomatic = yes
+    #custom_gui = "pmca_calm_window"
 
-	option = {
-		name = OK
-	}
+    option = {
+        name = OK
+    }
 }
 
-# Remove variable from existing save games
-# TODO: Remove me!
-event = {
-	id = pmca_events.80085
-	hide_window = yes
-	is_triggered_only = yes
+country_event = {
+    id = pmca_events.1001
+    title = "Condensed Armies Logistics Manager"
+    desc = BLANK_STRING
 
-	immediate = {
-		every_playable_country = {
-			limit = { is_variable_set = pmca_assault_army_count }
-			clear_variable = pmca_assault_army_count
-		}
-	}
+    is_triggered_only = yes
+    diplomatic = yes
+    custom_gui = "pmca_calm_window"
+
+    option = {
+        name = CONFIRM
+        default_hide_option = yes
+    }
 }
