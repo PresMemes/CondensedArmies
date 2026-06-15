@@ -30,7 +30,16 @@ pmca_condenser_off_unselected = {
 
 pmca_condenser_off_toggle = {
     potential = {  }
-    allow = {  }
+    allow = {
+        hidden_trigger = {
+            from = {
+                OR = {
+                    has_country_flag = pmca_times_ten_set
+                    has_country_flag = pmca_times_hundred_set
+                }
+            }
+        }
+    }
     effect = {
         from = {
             remove_country_flag = pmca_times_ten_set
@@ -60,7 +69,11 @@ pmca_condenser_x10_unselected = {
 
 pmca_condenser_x10_toggle = {
     potential = {  }
-    allow = {  }
+    allow = {
+        hidden_trigger = {
+            NOT = { from = { has_country_flag = pmca_times_ten_set } }
+        }
+    }
     effect = {
         from = {
             set_country_flag = pmca_times_ten_set
@@ -90,11 +103,94 @@ pmca_condenser_x100_unselected = {
 
 pmca_condenser_x100_toggle = {
     potential = { }
-    allow = { }
+    allow = {
+        hidden_trigger = {
+            NOT = { from = { has_country_flag = pmca_times_hundred_set } }
+        }
+    }
     effect = {
         from = {
             remove_country_flag = pmca_times_ten_set
             set_country_flag = pmca_times_hundred_set
         }
     }
+}
+
+###################
+### AI Settings ###
+###################
+# Off
+pmca_ai_disabled_selected = {
+    potential = {
+        NOT = { has_global_flag = pmca_ai_allowed }
+    }
+    allow = {  }
+    effect = {  }
+}
+
+pmca_ai_disabled_unselected = {
+    potential = {
+        has_global_flag = pmca_ai_allowed
+    }
+    allow = {  }
+    effect = {  }
+}
+
+pmca_ai_disabled_toggle = {
+    potential = {  }
+    allow = {
+        fail_text = {
+            text = pmca_calm_ai_host_only
+            from = { has_country_flag = pmca_host }
+        }
+        hidden_trigger = {
+            has_global_flag = pmca_ai_allowed
+        }
+    }
+    effect = {
+        remove_global_flag = pmca_ai_allowed
+    }
+}
+
+# On
+pmca_ai_enabled_selected = {
+    potential = {
+        has_global_flag = pmca_ai_allowed
+    }
+    allow = {  }
+    effect = {  }
+}
+
+pmca_ai_enabled_unselected = {
+    potential = {
+        NOT = { has_global_flag = pmca_ai_allowed }
+    }
+    allow = {  }
+    effect = {  }
+}
+
+pmca_ai_enabled_toggle = {
+    potential = {  }
+    allow = {
+        fail_text = {
+            text = pmca_calm_ai_host_only
+            from = { has_country_flag = pmca_host }
+        }
+        hidden_trigger = {
+            NOT = { has_global_flag = pmca_ai_allowed }
+        }
+    }
+    effect = {
+        set_global_flag = pmca_ai_allowed
+    }
+}
+
+#############
+### Other ###
+#############
+
+pmca_patches_list_dummy = {
+    potential = {  }
+    allow = {  }
+    effect = {  }
 }

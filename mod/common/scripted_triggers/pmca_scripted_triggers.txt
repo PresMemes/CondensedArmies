@@ -6,10 +6,6 @@ has_condensed_armies = {
 # Hides the given army if a given flag is not set
 pmca_flag_check = {
     # optimize_memory
-    OR = {
-        is_ai = no
-        has_global_flag = pmca_ai_allowed
-    }
     has_country_flag = pmca_times_$MULT$_set
 }
 

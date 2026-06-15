@@ -8,7 +8,7 @@ guiTypes = {
         orientation = center
         origo = center
         moveable = yes
-        size = { width = 900 height = 680 }
+        size = { width = 900 height = 450 }
 
         # Background (duh)
         background = {
@@ -19,8 +19,10 @@ guiTypes = {
         # Fake Background
         buttonType = {
             name = "fake_background"
-            size = { x = 570 y = 680 }
+            size = { x = 570 y = 450 }
             quadTextureSprite = "GFX_plain_bg_tile"
+            no_clicksound = yes
+            alwaysTransparent = yes
         }
 
         # Underneath Header
@@ -53,7 +55,7 @@ guiTypes = {
         buttonType = {
             name = "close"
             quadTextureSprite = "GFX_main_close_button"
-            position = { x= -45 y = 6 }
+            position = { x = 10000 y = 6 }
             Orientation = "UPPER_RIGHT"
             clicksound = "back_click"
         }
@@ -121,7 +123,7 @@ guiTypes = {
                 instantTextboxType = {
                     name = header
                     font = malgun_goth_24
-                    text = "HEADER FOR THIS OPTION"
+                    text = pmca_calm_condenser_header
                     maxWidth = 500
                     maxHeight = 20
                 }
@@ -129,7 +131,7 @@ guiTypes = {
                 instantTextboxType = {
                     name = description
                     font = cg_16b
-                    text = pmca_calm_body_text
+                    text = pmca_calm_condenser_desc
                     maxWidth = 500
                     maxHeight = 80
                     position = { x = 0 y = 30 }
@@ -143,7 +145,7 @@ guiTypes = {
                     effect = pmca_condenser_off_toggle
                     spriteType = GFX_standard_button_116_34
                     buttonFont = cg_16b
-                    buttonText = "Off"
+                    buttonText = pmca_calm_condenser_off
                     position = { x = 50 y = 108 }
                 }
 
@@ -154,7 +156,7 @@ guiTypes = {
                     effect = pmca_condenser_x10_toggle
                     spriteType = GFX_standard_button_116_34
                     buttonFont = cg_16b
-                    buttonText = "x10"
+                    buttonText = pmca_calm_condenser_x10
                     position = { x = 220 y = 108 }
                 }
 
@@ -165,28 +167,133 @@ guiTypes = {
                     effect = pmca_condenser_x100_toggle
                     spriteType = GFX_standard_button_116_34
                     buttonFont = cg_16b
-                    buttonText = "x100"
+                    buttonText = pmca_calm_condenser_x100
                     position = { x = 390 y = 108 }
                 }
             }
 
-            #iconType = {
-            #    name = seperator
-            #    spriteType = GFX_population_seperate_line
-            #}
+            iconType = {
+               name = seperator
+               spriteType = GFX_population_seperate_line
+                position = { x = 21 y = 160 }
+            }
+
+            containerWindowType = {
+                name = pmca_calm_ai_toggle
+                position = { x = 0 y = 180 }
+
+                instantTextboxType = {
+                    name = header
+                    font = malgun_goth_24
+                    text = pmca_calm_ai_header
+                    maxWidth = 500
+                    maxHeight = 20
+                }
+
+                instantTextboxType = {
+                    name = description
+                    font = cg_16b
+                    text = pmca_calm_ai_desc
+                    maxWidth = 500
+                    maxHeight = 80
+                    position = { x = 0 y = 30 }
+                    scrollbartype = standardtext_slider_small
+                }
+
+                effectButtonType = { name = pmca_ai_disabled_selected effect = pmca_ai_disabled_selected spriteType = GFX_radio_button frame = 2 position = { x = 80 y = 120 } no_clicksound = yes }
+                effectButtonType = { name = pmca_ai_disabled_unselected effect = pmca_ai_disabled_unselected spriteType = GFX_radio_button frame = 1 position = { x = 80 y = 120 } no_clicksound = yes }
+                effectButtonType = {
+                    name = pmca_ai_disabled_toggle
+                    effect = pmca_ai_disabled_toggle
+                    spriteType = GFX_standard_button_116_34
+                    buttonFont = cg_16b
+                    buttonText = pmca_calm_ai_disable
+                    position = { x = 100 y = 108 }
+                }
+
+                effectButtonType = { name = pmca_ai_enabled_selected effect = pmca_ai_enabled_selected spriteType = GFX_radio_button frame = 2 position = { x = 320 y = 120 } no_clicksound = yes }
+                effectButtonType = { name = pmca_ai_enabled_unselected effect = pmca_ai_enabled_unselected spriteType = GFX_radio_button frame = 1 position = { x = 320 y = 120 } no_clicksound = yes }
+                effectButtonType = {
+                    name = pmca_ai_enabled_toggle
+                    effect = pmca_ai_enabled_toggle
+                    spriteType = GFX_standard_button_116_34
+                    buttonFont = cg_16b
+                    buttonText = pmca_calm_ai_enable
+                    position = { x = 340 y = 108 }
+                }
+            }
         }
 
         # Patch Subwindow
-        containerWindowType = {
-            name = pmca_calm_patch_subwindow
-            position = { x = 570 y = 185 }
-            size = { width = 330 height = 500 }
-            moveable = no
-
+        dropdownboxtype = {
+            name = pmca_calm_patch_dropdown
             background = {
-                name = background
-                quadTextureSprite = GFX_plain_bg_tile
+                name = "dropdown_bg"
+                spriteType = "GFX_invisible"
             }
+
+            expandButton = { # Arrow icon without any text
+                name = "expand_button"
+                position = { x = 525 y = 5 }
+                quadTextureSprite = GFX_button_right
+            }
+
+            expandedWindow = {
+                name = pmca_calm_patch_window
+                show_animation_type = decelerated # PM: I have no idea why but commening these out
+                hide_animation_type = accelerated # makes the header dissapear?
+
+                containerWindowType = {
+                    name = pmca_calm_patch_subwindow
+                    position = { x = 570 y = 0 }
+                    size = { width = 330 height = 450 }
+
+                    background = {
+                        name = background3
+                        quadTextureSprite = GFX_tile_outliner_bg
+                    }
+
+                    instantTextboxType = {
+                        name = header
+                        font = malgun_goth_24
+                        text = pmca_calm_integrated_patches_header
+                        position = { x = 10 y = 0 }
+                    }
+
+                    containerWindowType = {
+                        name = pmca_calm_patch_list
+                        size = { width = 300 height = 450 }
+                        position = { x = 0 y = 30 }
+                        verticalScrollbar = right_vertical_slider
+                        smooth_scrolling = yes
+
+                        background = {
+                            name = background4
+                            quadTextureSprite = GFX_tiled_window_transparent
+                        }
+
+                        effectButtonType = {
+                            name = test
+                            effect = pmca_patches_list_dummy
+                            spriteType = GFX_tiled_window_transparent
+                            buttonFont = cg_16b
+                            buttonText = pmca_calm_integrated_patches_desc
+                            format = left
+                            vertical_alignment = top
+                            multiline = yes
+                            size = { x = 300 y = 2000 }
+                            position = { x = 0 y = 0 }
+                        }
+                    }
+                }
+            }
+        }
+
+        # Seperator
+        iconType = {
+            name = seperator2
+            spriteType = GFX_population_seperate_line
+            position = { x = 30 y = 390 }
         }
 
         ### PORTRAIT ###
@@ -424,7 +531,7 @@ guiTypes = {
             # Event - Option(s)
             listboxType = {
                 name = "option_list"
-                position = { x = 38 y = 600 }
+                position = { x = 49 y = 400 }
                 backGround=""
                 size = { x = 450 y = 240 }
                 spacing = 1

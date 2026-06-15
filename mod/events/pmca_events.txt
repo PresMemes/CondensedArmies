@@ -98,21 +98,7 @@ planet_event = {
 ## Custom GUI
 country_event = {
     id = pmca_events.999
-    title = BLANK_STRING
-    desc = pmca_calm_body_text
-
-    is_triggered_only = yes
-    diplomatic = yes
-    #custom_gui = "pmca_calm_window"
-
-    option = {
-        name = OK
-    }
-}
-
-country_event = {
-    id = pmca_events.1001
-    title = "Condensed Armies Logistics Manager"
+    title = pmca_events.999.title
     desc = BLANK_STRING
 
     is_triggered_only = yes

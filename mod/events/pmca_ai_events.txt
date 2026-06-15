@@ -52,7 +52,7 @@ country_event = {
                 years = 5
             }
 
-            log = "[Country.GetName] hit x100 threshhold on [GetDate]"
+            # log = "[Country.GetName] hit x100 threshhold on [GetDate]"
         }
         else_if = {
             limit = {
@@ -70,7 +70,7 @@ country_event = {
                 years = 5
             }
 
-            log = "[Country.GetName] hit x10 threshhold on [GetDate]"
+            # log = "[Country.GetName] hit x10 threshhold on [GetDate]"
         }
     }
 }
