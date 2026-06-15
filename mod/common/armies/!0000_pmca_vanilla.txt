@@ -1,6 +1,7 @@
 # Dear Irony please fallback to simple parser
 # x10 and x100 army definition(s) generated via Rust
 # Last Updated: Monday, June 15, 2026
+# Number of Armies in file: 23 * 2
 
 inline_script = {
     script = compatibility/pmca_conditional_inline_1_input
@@ -74,11 +75,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 1000
-            }
+            pmca_flag_check = { MULT = ten }
             OR = {
                 is_machine_empire = no
                 has_valid_civic = civic_machine_assimilator
@@ -185,11 +182,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 10000
-            }
+            pmca_flag_check = { MULT = hundred }
             OR = {
                 is_machine_empire = no
                 has_valid_civic = civic_machine_assimilator
@@ -292,11 +285,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 500
-            }
+            pmca_flag_check = { MULT = ten }
             OR = {
                 has_policy_flag = slavery_allowed
                 has_exploited_disconnected_drones = yes
@@ -411,11 +400,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 5000
-            }
+            pmca_flag_check = { MULT = hundred }
             OR = {
                 has_policy_flag = slavery_allowed
                 has_exploited_disconnected_drones = yes
@@ -532,11 +517,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 750
-            }
+            pmca_flag_check = { MULT = ten }
             OR = {
                 is_machine_empire = no
                 has_civic = civic_machine_assimilator
@@ -628,11 +609,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 7500
-            }
+            pmca_flag_check = { MULT = hundred }
             OR = {
                 is_machine_empire = no
                 has_civic = civic_machine_assimilator
@@ -713,11 +690,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 1500
-            }
+            pmca_flag_check = { MULT = ten }
             is_machine_empire = no
             is_wilderness_empire = no
         }
@@ -807,11 +780,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 15000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_machine_empire = no
             is_wilderness_empire = no
         }
@@ -911,11 +880,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 2500
-            }
+            pmca_flag_check = { MULT = ten }
             OR = {
                 is_machine_empire = no
                 has_origin = origin_shroud_forged
@@ -1004,11 +969,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 25000
-            }
+            pmca_flag_check = { MULT = hundred }
             OR = {
                 is_machine_empire = no
                 has_origin = origin_shroud_forged
@@ -1085,11 +1046,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 2000
-            }
+            pmca_flag_check = { MULT = ten }
             is_machine_empire = no
             is_wilderness_empire = no
         }
@@ -1158,11 +1115,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 20000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_machine_empire = no
             is_wilderness_empire = no
         }
@@ -1241,11 +1194,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 3000
-            }
+            pmca_flag_check = { MULT = ten }
             is_machine_empire = no
             is_wilderness_empire = no
         }
@@ -1316,11 +1265,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 30000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_machine_empire = no
             is_wilderness_empire = no
         }
@@ -1370,11 +1315,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = food
-                PMCA_VALUE = 2000
-            }
+            pmca_flag_check = { MULT = ten }
         }
     }
     pmca_hundred_wilderness_pre_sapient_assault_army = {
@@ -1412,11 +1353,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = food
-                PMCA_VALUE = 20000
-            }
+            pmca_flag_check = { MULT = hundred }
         }
     }
 
@@ -1486,11 +1423,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 500
-            }
+            pmca_flag_check = { MULT = ten }
             is_twisted_experimenters_empire = yes
             OR = {
                 has_policy_flag = slavery_allowed
@@ -1608,11 +1541,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 5000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_twisted_experimenters_empire = yes
             OR = {
                 has_policy_flag = slavery_allowed
@@ -1720,11 +1649,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 1000
-            }
+            pmca_flag_check = { MULT = ten }
             is_machine_empire = yes
         }
         ai_weight = {
@@ -1791,11 +1716,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 10000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_machine_empire = yes
         }
         ai_weight = {
@@ -1860,11 +1781,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 2000
-            }
+            pmca_flag_check = { MULT = ten }
             is_machine_empire = yes
         }
         ai_weight = {
@@ -1924,11 +1841,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 20000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_machine_empire = yes
         }
         ai_weight = {
@@ -1985,11 +1898,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 8000
-            }
+            pmca_flag_check = { MULT = ten }
             is_machine_empire = yes
         }
         ai_weight = {
@@ -2045,11 +1954,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 80000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_machine_empire = yes
         }
         ai_weight = {
@@ -2098,11 +2003,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = energy
-                PMCA_VALUE = 1000
-            }
+            pmca_flag_check = { MULT = ten }
             has_valid_civic = civic_reanimated_armies
         }
         ai_weight = {
@@ -2150,11 +2051,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = energy
-                PMCA_VALUE = 10000
-            }
+            pmca_flag_check = { MULT = hundred }
             has_valid_civic = civic_reanimated_armies
         }
         ai_weight = {
@@ -2185,11 +2082,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = astral_threads
-                PMCA_VALUE = 1000
-            }
+            pmca_flag_check = { MULT = ten }
             has_astral_planes_dlc = yes
             has_country_flag = unlocked_warplings
         }
@@ -2220,11 +2113,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = astral_threads
-                PMCA_VALUE = 10000
-            }
+            pmca_flag_check = { MULT = hundred }
             has_astral_planes_dlc = yes
             has_country_flag = unlocked_warplings
         }
@@ -2254,11 +2143,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = astral_threads
-                PMCA_VALUE = 1000
-            }
+            pmca_flag_check = { MULT = ten }
             has_astral_planes_dlc = yes
             has_country_flag = unlocked_flamestorm_troopers
         }
@@ -2291,11 +2176,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = astral_threads
-                PMCA_VALUE = 10000
-            }
+            pmca_flag_check = { MULT = hundred }
             has_astral_planes_dlc = yes
             has_country_flag = unlocked_flamestorm_troopers
         }
@@ -2364,11 +2245,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 1000
-            }
+            pmca_flag_check = { MULT = ten }
             is_individual_machine = yes
         }
         ai_weight = {
@@ -2435,11 +2312,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 10000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_individual_machine = yes
         }
         ai_weight = {
@@ -2504,11 +2377,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 2000
-            }
+            pmca_flag_check = { MULT = ten }
             is_individual_machine = yes
         }
         ai_weight = {
@@ -2568,11 +2437,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 20000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_individual_machine = yes
         }
         ai_weight = {
@@ -2629,11 +2494,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 8000
-            }
+            pmca_flag_check = { MULT = ten }
             is_individual_machine = yes
         }
         ai_weight = {
@@ -2689,11 +2550,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 80000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_individual_machine = yes
         }
         ai_weight = {
@@ -2763,11 +2620,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 1000
-            }
+            pmca_flag_check = { MULT = ten }
             OR = {
                 has_active_tradition = tr_cloning_somatic_synthesization
                 has_active_tradition = tr_cloning_somatic_synthesization_clone_army
@@ -2847,11 +2700,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 10000
-            }
+            pmca_flag_check = { MULT = hundred }
             OR = {
                 has_active_tradition = tr_cloning_somatic_synthesization
                 has_active_tradition = tr_cloning_somatic_synthesization_clone_army
@@ -2931,11 +2780,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 2500
-            }
+            pmca_flag_check = { MULT = ten }
             has_civic = civic_pyrolatry
         }
         ai_weight = {
@@ -3014,11 +2859,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 25000
-            }
+            pmca_flag_check = { MULT = hundred }
             has_civic = civic_pyrolatry
         }
         ai_weight = {
@@ -3069,11 +2910,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = sr_living_metal
-                PMCA_VALUE = 1500
-            }
+            pmca_flag_check = { MULT = ten }
             is_galvanic_empire = yes
         }
         ai_weight = {
@@ -3129,11 +2966,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = sr_living_metal
-                PMCA_VALUE = 15000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_galvanic_empire = yes
         }
         ai_weight = {
@@ -3187,11 +3020,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = alloys
-                PMCA_VALUE = 2500
-            }
+            pmca_flag_check = { MULT = ten }
             has_relic = r_war_forge
         }
         ai_weight = {
@@ -3227,11 +3056,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = alloys
-                PMCA_VALUE = 25000
-            }
+            pmca_flag_check = { MULT = hundred }
             has_relic = r_war_forge
         }
         ai_weight = {
@@ -3285,11 +3110,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = ten
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 3000
-            }
+            pmca_flag_check = { MULT = ten }
             is_galactic_emperor = yes
             is_active_resolution = resolution_emperor_imperial_legions
         }
@@ -3343,11 +3164,7 @@ inline_script = {
             }
         }
         potential_country = {
-            pmca_materiel_policy_check = {
-                PMCA_MULT = hundred
-                PMCA_RESOURCE = minerals
-                PMCA_VALUE = 30000
-            }
+            pmca_flag_check = { MULT = hundred }
             is_galactic_emperor = yes
             is_active_resolution = resolution_emperor_imperial_legions
         }
