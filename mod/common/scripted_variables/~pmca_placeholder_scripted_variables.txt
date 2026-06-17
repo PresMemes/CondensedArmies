@@ -1,31 +1,4 @@
 # Irony this is a placeholder file please ignore it
 
 # Extra Ship Components NEXT
-@ESC_WEAPON_crystalline_s_t6_cost_crystals = 0
-
-# Sensible Late Game Techs
-@slgt_mod = 0
-
-# Gigastuctural Engineering & More
-@has_gigastructures = 0
-
-# Playable Katzenartig Imperium
-@has_pki_mod = 0
-
-# Stellaris Evolved - Alpha
-@has_stellaris_evolved = 0
-
-# Military Enhancements
-@has_military_enhancements = 0
-
-# Ancient Cache of Technologies
-@has_ancient_caches = 0
-
-# ACOT: Acquisition of Technology
-@has_acquisition_of_tech = 0
-
-# ACOT: Secrets Beyond The Gates
-@has_sbtg_mod = 0
-
-# Ethos Unique Techs and Buildings Unofficial
-@has_eutab_unofficial = 0
+@has_esc_next = 0

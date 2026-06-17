@@ -1,0 +1,13 @@
+defined_text = {
+    name = pmca_get_esc_status
+    text = {
+        trigger = {
+            check_variable_arithmetic = {
+                which = @has_esc_next
+                value = 0
+            }
+        }
+        localization_key = pmca_inactive
+    }
+    default = pmca_active
+}

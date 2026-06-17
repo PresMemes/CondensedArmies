@@ -56,6 +56,20 @@ pmca_is_times_ten_army = {
             army_type = pmca_ten_imperial_legion
 			"
         }
+
+        # Extra Ship Components NEXT x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @has_esc_next
+            CONTENT = "
+            army_type = pmca_ten_esc_psionic_avatar_army
+            army_type = pmca_ten_esc_erasure_squad_army
+            army_type = pmca_ten_esc_eradicator_droids_army
+            army_type = pmca_ten_esc_tesla_troopers_army
+            army_type = pmca_ten_esc_tesla_droids_army
+            army_type = pmca_ten_esc_biohorror_army
+            "
+        }
     }
 }
 
@@ -94,6 +108,20 @@ pmca_is_times_hundred_army = {
             army_type = pmca_hundred_cybrex_warform
             army_type = pmca_hundred_imperial_legion
 			"
+        }
+
+        # Extra Ship Components NEXT x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @has_esc_next
+            CONTENT = "
+            army_type = pmca_hundred_esc_psionic_avatar_army
+            army_type = pmca_hundred_esc_erasure_squad_army
+            army_type = pmca_hundred_esc_eradicator_droids_army
+            army_type = pmca_hundred_esc_tesla_troopers_army
+            army_type = pmca_hundred_esc_tesla_droids_army
+            army_type = pmca_hundred_esc_biohorror_army
+            "
         }
     }
 }
