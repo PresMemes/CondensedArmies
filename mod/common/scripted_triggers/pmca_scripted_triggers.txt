@@ -82,6 +82,91 @@ pmca_is_times_ten_army = {
             army_type = pmca_ten_ag_psionic_army_no_morale
             "
         }
+
+        # Ground Command x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_ground_command_compat
+            CONTENT = "
+            army_type = pmca_ten_infantry_army
+            army_type = pmca_ten_armor_division
+            army_type = pmca_ten_gravity_armor_division
+            army_type = pmca_ten_mechanized_division
+            army_type = pmca_ten_airborne_division
+            army_type = pmca_ten_marine_division
+            army_type = pmca_ten_fighter_wing
+            army_type = pmca_ten_close_air_support_wing
+            army_type = pmca_ten_strategic_bomber_wing
+            army_type = pmca_ten_titan_army
+            army_type = pmca_ten_chivalric_army
+            army_type = pmca_ten_mecha_chivalric_army
+            army_type = pmca_ten_republican_guard
+            army_type = pmca_ten_naval_infantry
+            army_type = pmca_ten_esoteric_army
+            army_type = pmca_ten_void_warband
+            army_type = pmca_ten_ideological_army
+            army_type = pmca_ten_imperial_guard
+            army_type = pmca_ten_conscript_army
+            army_type = pmca_ten_penal_army
+            army_type = pmca_ten_sacraficial_army
+            army_type = pmca_ten_sacraficial_nerve_army
+            army_type = pmca_ten_archaeo_army
+            army_type = pmca_ten_archaeo_army_better
+            army_type = pmca_ten_milita_army
+            army_type = pmca_ten_men_army
+            army_type = pmca_ten_ranger_army
+            army_type = pmca_ten_knight_army
+            army_type = pmca_ten_knight_air_army
+            army_type = pmca_ten_treb_army
+            army_type = pmca_ten_grail_army
+            army_type = pmca_ten_house_army
+            army_type = pmca_ten_royal_guard
+            army_type = pmca_ten_royal_men_army
+            army_type = pmca_ten_royal_knight_army
+            army_type = pmca_ten_psi_knight_army
+            army_type = pmca_ten_royal_air_army
+            army_type = pmca_ten_knight_walker_army
+            army_type = pmca_ten_pilgram_army
+            army_type = pmca_ten_security_army
+            army_type = pmca_ten_private_army
+            army_type = pmca_ten_gravity_private_army
+            army_type = pmca_ten_aero_wing
+            army_type = pmca_ten_permanent_army
+            army_type = pmca_ten_renegade_army
+            army_type = pmca_ten_executive_army
+            army_type = pmca_ten_gravity_executive_army
+            army_type = pmca_ten_strike_army
+            army_type = pmca_ten_security_army_merc
+            army_type = pmca_ten_private_army_merc
+            army_type = pmca_ten_gravity_private_army_merc
+            army_type = pmca_ten_aero_wing_merc
+            army_type = pmca_ten_strike_army_merc
+            army_type = pmca_ten_renegade_army_merc
+            army_type = pmca_ten_battle_bot
+            army_type = pmca_ten_war_bot
+            army_type = pmca_ten_synth_commandos
+            army_type = pmca_ten_nano_army
+            army_type = pmca_ten_hazard_army
+            army_type = pmca_ten_hazard_army_2
+            army_type = pmca_ten_hazard_army_3
+            army_type = pmca_ten_robo_commandos
+            army_type = pmca_ten_bohemoth_army
+            army_type = pmca_ten_eradicator_army
+            army_type = pmca_ten_auxillary_army
+            army_type = pmca_ten_perfected_army
+            army_type = pmca_ten_drone_combat_army
+            army_type = pmca_ten_clockwork_army
+            army_type = pmca_ten_sentinel_army
+            army_type = pmca_ten_cataphract_army
+            army_type = pmca_ten_hover_lance_army
+            army_type = pmca_ten_automata_army
+            army_type = pmca_ten_code_army
+            army_type = pmca_ten_eternal_army
+            army_type = pmca_ten_relic_guardians
+            army_type = pmca_ten_archon_army
+            army_type = pmca_ten_cybretic_corps
+            "
+        }
     }
 }
 
@@ -147,5 +232,91 @@ pmca_is_times_hundred_army = {
             army_type = pmca_hundred_esc_biohorror_army
             "
         }
+
+        # Ground Command x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_ground_command_compat
+            CONTENT = "
+            army_type = pmca_hundred_infantry_army
+            army_type = pmca_hundred_armor_division
+            army_type = pmca_hundred_gravity_armor_division
+            army_type = pmca_hundred_mechanized_division
+            army_type = pmca_hundred_airborne_division
+            army_type = pmca_hundred_marine_division
+            army_type = pmca_hundred_fighter_wing
+            army_type = pmca_hundred_close_air_support_wing
+            army_type = pmca_hundred_strategic_bomber_wing
+            army_type = pmca_hundred_titan_army
+            army_type = pmca_hundred_chivalric_army
+            army_type = pmca_hundred_mecha_chivalric_army
+            army_type = pmca_hundred_republican_guard
+            army_type = pmca_hundred_naval_infantry
+            army_type = pmca_hundred_esoteric_army
+            army_type = pmca_hundred_void_warband
+            army_type = pmca_hundred_ideological_army
+            army_type = pmca_hundred_imperial_guard
+            army_type = pmca_hundred_conscript_army
+            army_type = pmca_hundred_penal_army
+            army_type = pmca_hundred_sacraficial_army
+            army_type = pmca_hundred_sacraficial_nerve_army
+            army_type = pmca_hundred_archaeo_army
+            army_type = pmca_hundred_archaeo_army_better
+            army_type = pmca_hundred_milita_army
+            army_type = pmca_hundred_men_army
+            army_type = pmca_hundred_ranger_army
+            army_type = pmca_hundred_knight_army
+            army_type = pmca_hundred_knight_air_army
+            army_type = pmca_hundred_treb_army
+            army_type = pmca_hundred_grail_army
+            army_type = pmca_hundred_house_army
+            army_type = pmca_hundred_royal_guard
+            army_type = pmca_hundred_royal_men_army
+            army_type = pmca_hundred_royal_knight_army
+            army_type = pmca_hundred_psi_knight_army
+            army_type = pmca_hundred_royal_air_army
+            army_type = pmca_hundred_knight_walker_army
+            army_type = pmca_hundred_pilgram_army
+            army_type = pmca_hundred_security_army
+            army_type = pmca_hundred_private_army
+            army_type = pmca_hundred_gravity_private_army
+            army_type = pmca_hundred_aero_wing
+            army_type = pmca_hundred_permanent_army
+            army_type = pmca_hundred_renegade_army
+            army_type = pmca_hundred_executive_army
+            army_type = pmca_hundred_gravity_executive_army
+            army_type = pmca_hundred_strike_army
+            army_type = pmca_hundred_security_army_merc
+            army_type = pmca_hundred_private_army_merc
+            army_type = pmca_hundred_gravity_private_army_merc
+            army_type = pmca_hundred_aero_wing_merc
+            army_type = pmca_hundred_strike_army_merc
+            army_type = pmca_hundred_renegade_army_merc
+            army_type = pmca_hundred_battle_bot
+            army_type = pmca_hundred_war_bot
+            army_type = pmca_hundred_synth_commandos
+            army_type = pmca_hundred_nano_army
+            army_type = pmca_hundred_hazard_army
+            army_type = pmca_hundred_hazard_army_2
+            army_type = pmca_hundred_hazard_army_3
+            army_type = pmca_hundred_robo_commandos
+            army_type = pmca_hundred_bohemoth_army
+            army_type = pmca_hundred_eradicator_army
+            army_type = pmca_hundred_auxillary_army
+            army_type = pmca_hundred_perfected_army
+            army_type = pmca_hundred_drone_combat_army
+            army_type = pmca_hundred_clockwork_army
+            army_type = pmca_hundred_sentinel_army
+            army_type = pmca_hundred_cataphract_army
+            army_type = pmca_hundred_hover_lance_army
+            army_type = pmca_hundred_automata_army
+            army_type = pmca_hundred_code_army
+            army_type = pmca_hundred_eternal_army
+            army_type = pmca_hundred_relic_guardians
+            army_type = pmca_hundred_archon_army
+            army_type = pmca_hundred_cybretic_corps
+            "
+        }
+
     }
 }

@@ -42,7 +42,7 @@
  pmca_patches_acot: "§BAncient Cache of Technologies§!: $pmca_pending$"
  pmca_patches_acot_aot: "$t$§rAcquisition of Technology§!: $pmca_pending$"
  pmca_patches_acot_sbtg: "$t$§MSecrets Beyond The Gates§!: $pmca_pending$"
- pmca_patches_ground_command: "§CGround Command§!: $pmca_pending$"
+ pmca_patches_ground_command: "§CGround Command§!: [root.pmca_get_ground_command_status]"
  pmca_patches_halo_portraits: "§PHalo Portrait Series§!:"
  pmca_patches_halo_portraits_unsc: "$t$§rUNSC§!: $pmca_pending$"
  pmca_patches_halo_portraits_covenant: "$t$§MCovenant§!: $pmca_pending$"
@@ -52,7 +52,6 @@
  pmca_patches_ancient_empire: "§BAncient Empire§!: [root.pmca_get_ancient_empire_status]"
  pmca_patches_slgt: "§CSensible Late Game Techs§!: $pmca_pending$"
  pmca_patches_stellaris_evolved: "§BStellaris Evolved§!: $pmca_pending$"
-
 
  # Common Army Strings
  pmca_ten: "§Mx10§!"
