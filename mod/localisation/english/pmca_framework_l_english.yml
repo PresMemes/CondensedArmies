@@ -24,17 +24,35 @@
 
  # AI Settings
  pmca_calm_ai_header: "§YHOST ONLY§! - AI Settings"
- pmca_calm_ai_desc: "§LControl if the AI is allowed to construct new §UCondensed Armies§!.\n\nChanging this setting §Rwill not§! disband or cancel any existing or mid-recruitment §UCondensed Armies§!.\n\nAI usage of §UCondensed Armies§! is only checked every ~5 years, so this setting may not take effect immediately.§!"
+ pmca_calm_ai_desc: "§LEnable/Disable if the AI is allowed to construct new §UCondensed Armies§!.\n\nChanging this setting §Rwill not§! disband or cancel any existing or mid-recruitment §UCondensed Armies§!.\n\nAI usage of §UCondensed Armies§! is only checked every ~5 years, so this setting may not take effect immediately.§!"
  pmca_calm_ai_disable: "Disabled"
  pmca_calm_ai_enable: "Enabled"
  pmca_calm_ai_host_only: "Only the §YHost§! can change this setting!"
 
  # Integrated Patches
  pmca_calm_integrated_patches_header: "Integrated Patches"
- pmca_calm_integrated_patches_desc: "$pmca_pending$"
+ pmca_calm_integrated_patches_desc: "$pmca_patches_gigas$\n$pmca_patches_esc$\n$pmca_patches_acot$\n$pmca_patches_acot_aot$\n$pmca_patches_acot_sbtg$\n$pmca_patches_ground_command$\n$pmca_patches_halo_portraits$\n$pmca_patches_halo_portraits_unsc$\n$pmca_patches_halo_portraits_covenant$\n$pmca_patches_halo_portraits_flood$\n$pmca_patches_halo_portraits_banished$\n$pmca_patches_halo_portraits_forerunner$\n$pmca_patches_ancient_empire$\n$pmca_patches_slgt$\n$pmca_patches_stellaris_evolved$\n"
  pmca_active: "§GActive§!"
  pmca_pending: "§YPending...§!"
  pmca_inactive: "§RInactive§!"
+
+ # Integrated Patches - Mod Names
+ pmca_patches_gigas: "§BGigastructural Engineering & More§!: $pmca_pending$"
+ pmca_patches_esc: "§CExtra Ship Components NEXT§!: $pmca_pending$"
+ pmca_patches_acot: "§BAncient Cache of Technologies§!: $pmca_pending$"
+ pmca_patches_acot_aot: "$t$§rAcquisition of Technology§!: $pmca_pending$"
+ pmca_patches_acot_sbtg: "$t$§MSecrets Beyond The Gates§!: $pmca_pending$"
+ pmca_patches_ground_command: "§CGround Command§!: $pmca_pending$"
+ pmca_patches_halo_portraits: "§PHalo Portrait Series§!:"
+ pmca_patches_halo_portraits_unsc: "$t$§rUNSC§!: $pmca_pending$"
+ pmca_patches_halo_portraits_covenant: "$t$§MCovenant§!: $pmca_pending$"
+ pmca_patches_halo_portraits_flood: "$t$§rThe Flood§!: $pmca_pending$"
+ pmca_patches_halo_portraits_banished: "$t$§MThe Banished§!: $pmca_pending$"
+ pmca_patches_halo_portraits_forerunner: "$t$§rForerunner§!: $pmca_pending$"
+ pmca_patches_ancient_empire: "§BAncient Empire§!: $pmca_pending$"
+ pmca_patches_slgt: "§CSensible Late Game Techs§!: $pmca_pending$"
+ pmca_patches_stellaris_evolved: "§BStellaris Evolved§!: $pmca_pending$"
+
 
  # Common Army Strings
  pmca_ten: "§Mx10§!"

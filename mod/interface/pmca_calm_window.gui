@@ -263,7 +263,7 @@ guiTypes = {
                     containerWindowType = {
                         name = pmca_calm_patch_list
                         size = { width = 300 height = 450 }
-                        position = { x = 0 y = 30 }
+                        position = { x = 10 y = 30 }
                         verticalScrollbar = right_vertical_slider
                         smooth_scrolling = yes
 
@@ -273,7 +273,7 @@ guiTypes = {
                         }
 
                         effectButtonType = {
-                            name = test
+                            name = patch_scroll_list
                             effect = pmca_patches_list_dummy
                             spriteType = GFX_tiled_window_transparent
                             buttonFont = cg_16b
