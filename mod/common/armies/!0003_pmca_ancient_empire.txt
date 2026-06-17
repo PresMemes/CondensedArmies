@@ -1,0 +1,351 @@
+# Dear Irony please fallback to simple parser
+# x10 and x100 army definition(s) generated via Rust
+# Last Updated: Wednesday, June 17, 2026
+# Number of Armies in file: 4 * 2
+
+inline_script = {
+    script = compatibility/pmca_conditional_inline_1_input
+    MOD_VARIABLE_1 = @ag_tech_cost_1_1
+    CONTENT = "
+    pmca_ten_ag_player_shroud_army = {
+        use_armynames_from = ag_player_shroud_army
+        health = 70
+        damage = 50
+        morale_damage = 2
+        collateral_damage = 12.5
+        war_exhaustion = 10
+        time = 300
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_psionic
+        prerequisites = {
+            tech_ag_psionic_avatar_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 15000
+                unity = 15000
+            }
+            upkeep = {
+                energy = 80
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 1000
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ag_player_shroud_army = {
+        use_armynames_from = ag_player_shroud_army
+        health = 700
+        damage = 500
+        morale_damage = 2
+        collateral_damage = 125
+        war_exhaustion = 100
+        time = 300
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_psionic
+        prerequisites = {
+            tech_ag_psionic_avatar_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 150000
+                unity = 150000
+            }
+            upkeep = {
+                energy = 800
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 1000
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ag_psionic_xeno_army = {
+        use_armynames_from = ag_psionic_xeno_army
+        health = 30
+        damage = 30
+        morale_damage = 2
+        collateral_damage = 50
+        war_exhaustion = 10
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_ag_psionic_xeno_army
+        prerequisites = {
+            tech_ag_psionic_xeno_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                    }
+                }
+                minerals = 2500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 3125
+            }
+            upkeep = {
+                energy = 25
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 20
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ag_psionic_xeno_army = {
+        use_armynames_from = ag_psionic_xeno_army
+        health = 300
+        damage = 300
+        morale_damage = 2
+        collateral_damage = 500
+        war_exhaustion = 100
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_ag_psionic_xeno_army
+        prerequisites = {
+            tech_ag_psionic_xeno_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                    }
+                }
+                minerals = 25000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 31250
+            }
+            upkeep = {
+                energy = 250
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 20
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ag_adv_psionic_avatar_army = {
+        use_armynames_from = ag_adv_psionic_avatar_army
+        health = 70
+        damage = 75
+        morale_damage = 2
+        collateral_damage = 7.5
+        war_exhaustion = 10
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_ag_adv_psionic_avatar_army
+        prerequisites = {
+            tech_ag_adv_psionic_avatar_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 18000
+                unity = 18000
+            }
+            upkeep = {
+                energy = 80
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 1500
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ag_adv_psionic_avatar_army = {
+        use_armynames_from = ag_adv_psionic_avatar_army
+        health = 700
+        damage = 750
+        morale_damage = 2
+        collateral_damage = 75
+        war_exhaustion = 100
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_ag_adv_psionic_avatar_army
+        prerequisites = {
+            tech_ag_adv_psionic_avatar_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 180000
+                unity = 180000
+            }
+            upkeep = {
+                energy = 800
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 1500
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ag_psionic_army_no_morale = {
+        use_armynames_from = ag_psionic_army_no_morale
+        health = 17.5
+        damage = 20
+        morale_damage = 2
+        collateral_damage = 5
+        war_exhaustion = 30
+        time = 120
+        has_morale = no
+        icon = GFX_army_type_psionic
+        prerequisites = {
+            tech_ag_psionic_army_no_morale
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                    }
+                }
+                minerals = 2500
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 3125
+            }
+            upkeep = {
+                energy = 25
+            }
+        }
+        potential = {
+            from = {
+                has_psionic_species_trait = yes
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+            OR = {
+                is_machine_empire = no
+                has_origin = origin_shroud_forged
+            }
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 200
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_spiritualist
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ag_psionic_army_no_morale = {
+        use_armynames_from = ag_psionic_army_no_morale
+        health = 175
+        damage = 200
+        morale_damage = 2
+        collateral_damage = 50
+        war_exhaustion = 300
+        time = 120
+        has_morale = no
+        icon = GFX_army_type_psionic
+        prerequisites = {
+            tech_ag_psionic_army_no_morale
+        }
+        resources = {
+            category = armies
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = no
+                    }
+                }
+                minerals = 25000
+            }
+            cost = {
+                trigger = {
+                    from = {
+                        country_uses_bio_ships = yes
+                    }
+                }
+                food = 31250
+            }
+            upkeep = {
+                energy = 250
+            }
+        }
+        potential = {
+            from = {
+                has_psionic_species_trait = yes
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+            OR = {
+                is_machine_empire = no
+                has_origin = origin_shroud_forged
+            }
+            is_wilderness_empire = no
+        }
+        ai_weight = {
+            base = 200
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_spiritualist
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    "
+}

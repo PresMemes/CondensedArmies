@@ -49,7 +49,7 @@
  pmca_patches_halo_portraits_flood: "$t$§rThe Flood§!: $pmca_pending$"
  pmca_patches_halo_portraits_banished: "$t$§MThe Banished§!: $pmca_pending$"
  pmca_patches_halo_portraits_forerunner: "$t$§rForerunner§!: $pmca_pending$"
- pmca_patches_ancient_empire: "§BAncient Empire§!: $pmca_pending$"
+ pmca_patches_ancient_empire: "§BAncient Empire§!: [root.pmca_get_ancient_empire_status]"
  pmca_patches_slgt: "§CSensible Late Game Techs§!: $pmca_pending$"
  pmca_patches_stellaris_evolved: "§BStellaris Evolved§!: $pmca_pending$"
 

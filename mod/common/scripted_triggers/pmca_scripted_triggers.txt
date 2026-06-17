@@ -70,6 +70,18 @@ pmca_is_times_ten_army = {
             army_type = pmca_ten_esc_biohorror_army
             "
         }
+
+        # Ancient Empire x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @ag_tech_cost_1_1
+            CONTENT = "
+            army_type = pmca_ten_ag_player_shroud_army
+            army_type = pmca_ten_ag_psionic_xeno_army
+            army_type = pmca_ten_ag_adv_psionic_avatar_army
+            army_type = pmca_ten_ag_psionic_army_no_morale
+            "
+        }
     }
 }
 
@@ -108,6 +120,18 @@ pmca_is_times_hundred_army = {
             army_type = pmca_hundred_cybrex_warform
             army_type = pmca_hundred_imperial_legion
 			"
+        }
+
+        # Ancient Empire x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @ag_tech_cost_1_1
+            CONTENT = "
+            army_type = pmca_hundred_ag_player_shroud_army
+            army_type = pmca_hundred_ag_psionic_xeno_army
+            army_type = pmca_hundred_ag_adv_psionic_avatar_army
+            army_type = pmca_hundred_ag_psionic_army_no_morale
+            "
         }
 
         # Extra Ship Components NEXT x100

@@ -2,3 +2,7 @@
 
 # Extra Ship Components NEXT
 @has_esc_next = 0
+
+# Ancient Empire
+## PM: Ancient Empire has ~15,000 scripeted variables but none of them are ID variables ;_;
+@ag_tech_cost_1_1 = 0

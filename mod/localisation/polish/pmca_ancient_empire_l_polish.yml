@@ -1,0 +1,44 @@
+﻿l_polish:
+
+ # Localisation generated using Rust
+
+ #############################
+ ### AG_PLAYER_SHROUD_ARMY ###
+ #############################
+ pmca_ten_ag_player_shroud_army: "$pmca_ten$ $ag_player_shroud_army$"
+ pmca_ten_ag_player_shroud_army_plural: "$ag_player_shroud_army_plural$"
+ pmca_ten_ag_player_shroud_army_desc: "$ag_player_shroud_army_desc$"
+ pmca_hundred_ag_player_shroud_army: "$pmca_hundred$ $ag_player_shroud_army$"
+ pmca_hundred_ag_player_shroud_army_plural: "$ag_player_shroud_army_plural$"
+ pmca_hundred_ag_player_shroud_army_desc: "$ag_player_shroud_army_desc$"
+
+ ############################
+ ### AG_PSIONIC_XENO_ARMY ###
+ ############################
+ pmca_ten_ag_psionic_xeno_army: "$pmca_ten$ $ag_psionic_xeno_army$"
+ pmca_ten_ag_psionic_xeno_army_plural: "$ag_psionic_xeno_army_plural$"
+ pmca_ten_ag_psionic_xeno_army_desc: "$ag_psionic_xeno_army_desc$"
+ pmca_hundred_ag_psionic_xeno_army: "$pmca_hundred$ $ag_psionic_xeno_army$"
+ pmca_hundred_ag_psionic_xeno_army_plural: "$ag_psionic_xeno_army_plural$"
+ pmca_hundred_ag_psionic_xeno_army_desc: "$ag_psionic_xeno_army_desc$"
+
+ ##################################
+ ### AG_ADV_PSIONIC_AVATAR_ARMY ###
+ ##################################
+ pmca_ten_ag_adv_psionic_avatar_army: "$pmca_ten$ $ag_adv_psionic_avatar_army$"
+ pmca_ten_ag_adv_psionic_avatar_army_plural: "$ag_adv_psionic_avatar_army_plural$"
+ pmca_ten_ag_adv_psionic_avatar_army_desc: "$ag_adv_psionic_avatar_army_desc$"
+ pmca_hundred_ag_adv_psionic_avatar_army: "$pmca_hundred$ $ag_adv_psionic_avatar_army$"
+ pmca_hundred_ag_adv_psionic_avatar_army_plural: "$ag_adv_psionic_avatar_army_plural$"
+ pmca_hundred_ag_adv_psionic_avatar_army_desc: "$ag_adv_psionic_avatar_army_desc$"
+
+ #################################
+ ### AG_PSIONIC_ARMY_NO_MORALE ###
+ #################################
+ pmca_ten_ag_psionic_army_no_morale: "$pmca_ten$ $ag_psionic_army_no_morale$"
+ pmca_ten_ag_psionic_army_no_morale_plural: "$ag_psionic_army_no_morale_plural$"
+ pmca_ten_ag_psionic_army_no_morale_desc: "$ag_psionic_army_no_morale_desc$"
+ pmca_hundred_ag_psionic_army_no_morale: "$pmca_hundred$ $ag_psionic_army_no_morale$"
+ pmca_hundred_ag_psionic_army_no_morale_plural: "$ag_psionic_army_no_morale_plural$"
+ pmca_hundred_ag_psionic_army_no_morale_desc: "$ag_psionic_army_no_morale_desc$"
+

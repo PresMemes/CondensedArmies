@@ -11,3 +11,17 @@ defined_text = {
     }
     default = pmca_active
 }
+
+defined_text = {
+    name = pmca_get_ancient_empire_status
+    text = {
+        trigger = {
+            check_variable_arithmetic = {
+                which = @ag_tech_cost_1_1
+                value = 0
+            }
+        }
+        localization_key = pmca_inactive
+    }
+    default = pmca_active
+}
