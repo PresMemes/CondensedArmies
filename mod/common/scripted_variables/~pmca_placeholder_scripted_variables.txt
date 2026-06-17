@@ -11,3 +11,10 @@
 ## PM: Had to personally edit some of Ground Command's armies ince they
 ## use outdated syntax (e.g. icon_frame, land_army) and the script doesn't like that
 @pmca_has_ground_command_compat = 0
+
+# Halo Portrait Series
+@pmca_has_halo_portraits_unsc_compat = 0
+@pmca_has_halo_portraits_covenant_compat = 0
+@pmca_has_halo_portraits_flood_compat = 0
+@pmca_has_halo_portraits_banished_compat = 0
+@pmca_has_halo_portraits_forerunners_compat = 0

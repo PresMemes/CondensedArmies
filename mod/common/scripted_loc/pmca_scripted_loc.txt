@@ -40,3 +40,73 @@ defined_text = {
     }
     default = pmca_active
 }
+
+defined_text = {
+    name = pmca_get_halo_unsc_status
+    text = {
+        trigger = {
+            check_variable_arithmetic = {
+                which = @pmca_has_halo_portraits_unsc_compat
+                value = 0
+            }
+        }
+        localization_key = pmca_inactive
+    }
+    default = pmca_active
+}
+
+defined_text = {
+    name = pmca_get_halo_covenant_status
+    text = {
+        trigger = {
+            check_variable_arithmetic = {
+                which = @pmca_has_halo_portraits_covenant_compat
+                value = 0
+            }
+        }
+        localization_key = pmca_inactive
+    }
+    default = pmca_active
+}
+
+defined_text = {
+    name = pmca_get_halo_flood_status
+    text = {
+        trigger = {
+            check_variable_arithmetic = {
+                which = @pmca_has_halo_portraits_flood_compat
+                value = 0
+            }
+        }
+        localization_key = pmca_inactive
+    }
+    default = pmca_active
+}
+
+defined_text = {
+    name = pmca_get_halo_banished_status
+    text = {
+        trigger = {
+            check_variable_arithmetic = {
+                which = @pmca_has_halo_portraits_banished_compat
+                value = 0
+            }
+        }
+        localization_key = pmca_inactive
+    }
+    default = pmca_active
+}
+
+defined_text = {
+    name = pmca_get_halo_forerunner_status
+    text = {
+        trigger = {
+            check_variable_arithmetic = {
+                which = @pmca_has_halo_portraits_forerunners_compat
+                value = 0
+            }
+        }
+        localization_key = pmca_inactive
+    }
+    default = pmca_active
+}

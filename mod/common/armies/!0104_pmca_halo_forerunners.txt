@@ -1,0 +1,1739 @@
+# Dear Irony please fallback to simple parser
+# x10 and x100 army definition(s) generated via Rust
+# Last Updated: Wednesday, June 17, 2026
+# Number of Armies in file: 16 * 2
+
+inline_script = {
+    script = compatibility/pmca_conditional_inline_1_input
+    MOD_VARIABLE_1 = @pmca_has_halo_portraits_forerunners_compat
+    CONTENT = "
+    pmca_ten_forerunner_aggressor_sentinels = {
+        use_armynames_from = forerunner_aggressor_sentinels
+        health = 7.5
+        damage = 12.5
+        morale_damage = 1.1
+        collateral_damage = 10
+        war_exhaustion = 2
+        time = 60
+        has_morale = no
+        icon = GFX_army_type_forerunner
+        prerequisites = {
+            tech_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 750
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_sentinel_factory
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_sentinel_factory
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 125
+            modifier = {
+                set = 0
+                OR = {
+                    NOT = {
+                        has_policy_flag = robots_outlawed
+                    }
+                    NAND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_materialist
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_forerunner_aggressor_sentinels = {
+        use_armynames_from = forerunner_aggressor_sentinels
+        health = 75
+        damage = 125
+        morale_damage = 1.1
+        collateral_damage = 100
+        war_exhaustion = 20
+        time = 60
+        has_morale = no
+        icon = GFX_army_type_forerunner
+        prerequisites = {
+            tech_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 7500
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_sentinel_factory
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_sentinel_factory
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 125
+            modifier = {
+                set = 0
+                OR = {
+                    NOT = {
+                        has_policy_flag = robots_outlawed
+                    }
+                    NAND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_materialist
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_forerunner_protector_sentinels = {
+        use_armynames_from = forerunner_protector_sentinels
+        health = 20
+        damage = 17.5
+        morale_damage = 1
+        collateral_damage = 20
+        war_exhaustion = 14
+        time = 130
+        has_morale = no
+        icon = GFX_army_type_forerunner
+        prerequisites = {
+            tech_advanced_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2750
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_forerunner_protector_sentinels = {
+        use_armynames_from = forerunner_protector_sentinels
+        health = 200
+        damage = 175
+        morale_damage = 1
+        collateral_damage = 200
+        war_exhaustion = 140
+        time = 130
+        has_morale = no
+        icon = GFX_army_type_forerunner
+        prerequisites = {
+            tech_advanced_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 27500
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_forerunner_onyx_sentinels = {
+        use_armynames_from = forerunner_onyx_sentinels
+        health = 25
+        damage = 25
+        morale_damage = 1.25
+        collateral_damage = 20
+        war_exhaustion = 15
+        time = 180
+        has_morale = no
+        icon = GFX_army_type_forerunner_offensive_bias
+        prerequisites = {
+            tech_advanced_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3000
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_forerunner_onyx_sentinels = {
+        use_armynames_from = forerunner_onyx_sentinels
+        health = 250
+        damage = 250
+        morale_damage = 1.25
+        collateral_damage = 200
+        war_exhaustion = 150
+        time = 180
+        has_morale = no
+        icon = GFX_army_type_forerunner_offensive_bias
+        prerequisites = {
+            tech_advanced_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 30000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_forerunner_strato_sentinel = {
+        use_armynames_from = forerunner_strato_sentinel
+        health = 45
+        damage = 40
+        morale_damage = 2
+        collateral_damage = 50
+        war_exhaustion = 30
+        time = 360
+        has_morale = no
+        icon = GFX_army_type_forerunner_offensive_bias
+        prerequisites = {
+            tech_advanced_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 7000
+            }
+            upkeep = {
+                energy = 70
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 200
+            modifier = {
+                set = 0
+                OR = {
+                    NOT = {
+                        has_policy_flag = robots_outlawed
+                    }
+                    NAND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_materialist
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_forerunner_strato_sentinel = {
+        use_armynames_from = forerunner_strato_sentinel
+        health = 450
+        damage = 400
+        morale_damage = 2
+        collateral_damage = 500
+        war_exhaustion = 300
+        time = 360
+        has_morale = no
+        icon = GFX_army_type_forerunner_offensive_bias
+        prerequisites = {
+            tech_advanced_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 70000
+            }
+            upkeep = {
+                energy = 700
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 200
+            modifier = {
+                set = 0
+                OR = {
+                    NOT = {
+                        has_policy_flag = robots_outlawed
+                    }
+                    NAND = {
+                        has_ai_personality_behaviour = robot_liberator
+                        has_technology = tech_droid_workers
+                    }
+                }
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_materialist
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_forerunner_armiger_army = {
+        use_armynames_from = forerunner_armiger_army
+        health = 18
+        damage = 18
+        morale_damage = 1
+        collateral_damage = 10
+        war_exhaustion = 10
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_forerunner
+        prerequisites = {
+            tech_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2500
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_sentinel_factory
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_sentinel_factory
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_forerunner_armiger_army = {
+        use_armynames_from = forerunner_armiger_army
+        health = 180
+        damage = 180
+        morale_damage = 1
+        collateral_damage = 100
+        war_exhaustion = 100
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_forerunner
+        prerequisites = {
+            tech_forerunner_sentinels
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 25000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+            planet = {
+                OR = {
+                    has_active_building = building_sentinel_factory
+                    has_active_building = building_advanced_sentinel_factory
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+            OR = {
+                has_building = building_sentinel_factory
+                has_building = building_advanced_sentinel_factory
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_forerunner_warrior_servant_army = {
+        use_armynames_from = forerunner_warrior_servant_army
+        health = 35
+        damage = 35
+        morale = 40
+        morale_damage = 1.5
+        collateral_damage = 15
+        war_exhaustion = 30
+        time = 200
+        icon = GFX_army_type_forerunner_isodidact
+        prerequisites = {
+            tech_forerunner_combat_suits
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 5000
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_forerunner_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 15
+                has_trait = trait_forerunner_species
+            }
+            modifier = {
+                set = 0
+                OR = {
+                    has_technology = tech_promethean_combat_suits
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_forerunner_warrior_servant_army = {
+        use_armynames_from = forerunner_warrior_servant_army
+        health = 350
+        damage = 350
+        morale = 400
+        morale_damage = 1.5
+        collateral_damage = 150
+        war_exhaustion = 300
+        time = 200
+        icon = GFX_army_type_forerunner_isodidact
+        prerequisites = {
+            tech_forerunner_combat_suits
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 50000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_forerunner_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 15
+                has_trait = trait_forerunner_species
+            }
+            modifier = {
+                set = 0
+                OR = {
+                    has_technology = tech_promethean_combat_suits
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_forerunner_war_sphinx = {
+        use_armynames_from = forerunner_war_sphinx
+        health = 80
+        damage = 80
+        morale_damage = 3
+        collateral_damage = 50
+        war_exhaustion = 40
+        time = 480
+        has_morale = no
+        icon = GFX_army_type_forerunner_isodidact
+        prerequisites = {
+            tech_promethean_weapon_craft
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 10000
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_forerunner_species
+            }
+            planet = {
+                has_active_building = building_promethean_factory
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_forerunner_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_forerunner_war_sphinx = {
+        use_armynames_from = forerunner_war_sphinx
+        health = 800
+        damage = 800
+        morale_damage = 3
+        collateral_damage = 500
+        war_exhaustion = 400
+        time = 480
+        has_morale = no
+        icon = GFX_army_type_forerunner_isodidact
+        prerequisites = {
+            tech_promethean_weapon_craft
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 100000
+            }
+            upkeep = {
+                energy = 1000
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_forerunner_species
+            }
+            planet = {
+                has_active_building = building_promethean_factory
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_forerunner_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_promethean_warrior_servant_army = {
+        use_armynames_from = promethean_warrior_servant_army
+        health = 40
+        damage = 40
+        morale = 50
+        morale_damage = 4
+        collateral_damage = 20
+        war_exhaustion = 40
+        time = 360
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_promethean_combat_suits
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 7500
+            }
+            upkeep = {
+                energy = 50
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_forerunner_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 150
+                has_trait = trait_forerunner_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_promethean_warrior_servant_army = {
+        use_armynames_from = promethean_warrior_servant_army
+        health = 400
+        damage = 400
+        morale = 500
+        morale_damage = 4
+        collateral_damage = 200
+        war_exhaustion = 400
+        time = 360
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_promethean_combat_suits
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 75000
+            }
+            upkeep = {
+                energy = 500
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_forerunner_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 150
+                has_trait = trait_forerunner_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_promethean_seekers = {
+        use_armynames_from = promethean_seekers
+        health = 95
+        damage = 95
+        morale_damage = 4
+        collateral_damage = 60
+        war_exhaustion = 50
+        time = 540
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_promethean_combat_suits
+            tech_promethean_weapon_craft
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 15000
+            }
+            upkeep = {
+                energy = 120
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_forerunner_species
+            }
+            planet = {
+                has_active_building = building_promethean_factory
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 200
+                has_trait = trait_forerunner_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_promethean_seekers = {
+        use_armynames_from = promethean_seekers
+        health = 950
+        damage = 950
+        morale_damage = 4
+        collateral_damage = 600
+        war_exhaustion = 500
+        time = 540
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_promethean_combat_suits
+            tech_promethean_weapon_craft
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 150000
+            }
+            upkeep = {
+                energy = 1200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_forerunner_species
+            }
+            planet = {
+                has_active_building = building_promethean_factory
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 200
+                has_trait = trait_forerunner_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_promethean_crawler_army = {
+        use_armynames_from = promethean_crawler_army
+        health = 10
+        damage = 12
+        morale_damage = 1.2
+        collateral_damage = 10
+        war_exhaustion = 2
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_composer
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 1000
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = {
+                factor = 150
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_promethean_crawler_army = {
+        use_armynames_from = promethean_crawler_army
+        health = 100
+        damage = 120
+        morale_damage = 1.2
+        collateral_damage = 100
+        war_exhaustion = 20
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_composer
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 10000
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = {
+                factor = 150
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_promethean_soldier_army = {
+        use_armynames_from = promethean_soldier_army
+        health = 22
+        damage = 22
+        morale_damage = 1
+        collateral_damage = 15
+        war_exhaustion = 10
+        time = 140
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3000
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = {
+                factor = 150
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_promethean_soldier_army = {
+        use_armynames_from = promethean_soldier_army
+        health = 220.00000000000003
+        damage = 220.00000000000003
+        morale_damage = 1
+        collateral_damage = 150
+        war_exhaustion = 100
+        time = 140
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        resources = {
+            category = armies
+            cost = {
+                minerals = 30000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = {
+                factor = 150
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_promethean_knight_army = {
+        use_armynames_from = promethean_knight_army
+        health = 30
+        damage = 30
+        morale_damage = 1.5
+        collateral_damage = 15
+        war_exhaustion = 15
+        time = 150
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_composer
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4250
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_promethean_knight_army = {
+        use_armynames_from = promethean_knight_army
+        health = 300
+        damage = 300
+        morale_damage = 1.5
+        collateral_damage = 150
+        war_exhaustion = 150
+        time = 150
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_composer
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 42500
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_promethean_lancer_army = {
+        use_armynames_from = promethean_lancer_army
+        health = 25
+        damage = 30
+        morale_damage = 3
+        collateral_damage = 5
+        war_exhaustion = 15
+        time = 180
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_composer
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4500
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_promethean_lancer_army = {
+        use_armynames_from = promethean_lancer_army
+        health = 250
+        damage = 300
+        morale_damage = 3
+        collateral_damage = 50
+        war_exhaustion = 150
+        time = 180
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_composer
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 45000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_promethean_battlewagon_army = {
+        use_armynames_from = promethean_battlewagon_army
+        health = 35
+        damage = 32
+        morale_damage = 2
+        collateral_damage = 30
+        war_exhaustion = 20
+        time = 240
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_composer
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 5500
+            }
+            upkeep = {
+                energy = 50
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_promethean_battlewagon_army = {
+        use_armynames_from = promethean_battlewagon_army
+        health = 350
+        damage = 320
+        morale_damage = 2
+        collateral_damage = 300
+        war_exhaustion = 200
+        time = 240
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_composer
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 55000
+            }
+            upkeep = {
+                energy = 500
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_promethean_phaetons = {
+        use_armynames_from = promethean_phaetons
+        health = 25
+        damage = 25
+        morale_damage = 2.5
+        collateral_damage = 25
+        war_exhaustion = 17.5
+        time = 200
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_promethean_weapon_craft
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4500
+            }
+            upkeep = {
+                energy = 45
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = {
+                factor = 150
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_promethean_phaetons = {
+        use_armynames_from = promethean_phaetons
+        health = 250
+        damage = 250
+        morale_damage = 2.5
+        collateral_damage = 250
+        war_exhaustion = 175
+        time = 200
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_promethean_weapon_craft
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 45000
+            }
+            upkeep = {
+                energy = 450
+            }
+        }
+        potential = {
+            from = {
+                OR = {
+                    has_trait = trait_robot_sentinel_ai
+                    has_trait = trait_robot_promethean_ai
+                    has_trait = trait_robot_created_ai
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_active_building = building_promethean_factory
+            owner = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 100
+                has_trait = trait_robot_sentinel_ai
+            }
+            modifier = {
+                factor = 150
+                has_trait = trait_robot_promethean_ai
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_created_executors = {
+        use_armynames_from = created_executors
+        health = 30
+        damage = 30
+        morale_damage = 2
+        collateral_damage = 7.5
+        war_exhaustion = 30
+        time = 360
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_forerunner_warden_eternal
+        prerequisites = {
+            tech_created_firewall_contingency
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 6000
+            }
+            upkeep = {
+                energy = 50
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+            has_civic = civic_machine_the_created
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_created_executors = {
+        use_armynames_from = created_executors
+        health = 300
+        damage = 300
+        morale_damage = 2
+        collateral_damage = 75
+        war_exhaustion = 300
+        time = 360
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_forerunner_warden_eternal
+        prerequisites = {
+            tech_created_firewall_contingency
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 60000
+            }
+            upkeep = {
+                energy = 500
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+            has_civic = civic_machine_the_created
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    "
+}

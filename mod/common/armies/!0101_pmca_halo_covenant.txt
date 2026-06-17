@@ -1,0 +1,2705 @@
+# Dear Irony please fallback to simple parser
+# x10 and x100 army definition(s) generated via Rust
+# Last Updated: Wednesday, June 17, 2026
+# Number of Armies in file: 28 * 2
+
+inline_script = {
+    script = compatibility/pmca_conditional_inline_1_input
+    MOD_VARIABLE_1 = @pmca_has_halo_portraits_covenant_compat
+    CONTENT = "
+    pmca_ten_cov_sangheili_legion = {
+        use_armynames_from = cov_sangheili_legion
+        health = 15
+        damage = 15
+        morale = 30
+        morale_damage = 1.1
+        collateral_damage = 11
+        war_exhaustion = 15
+        time = 150
+        icon = GFX_army_type_covenant
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2000
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            owner = {
+                has_civic = civic_covenant_hegemony
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_hall
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sangheili_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_sangheili_legion = {
+        use_armynames_from = cov_sangheili_legion
+        health = 150
+        damage = 150
+        morale = 300
+        morale_damage = 1.1
+        collateral_damage = 110.00000000000001
+        war_exhaustion = 150
+        time = 150
+        icon = GFX_army_type_covenant
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 20000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            owner = {
+                has_civic = civic_covenant_hegemony
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_hall
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sangheili_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_sos_sangheili_legion = {
+        use_armynames_from = sos_sangheili_legion
+        health = 15
+        damage = 15
+        morale = 30
+        morale_damage = 1.1
+        collateral_damage = 11
+        war_exhaustion = 15
+        time = 150
+        icon = GFX_army_type_swords_of_sanghelios
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2000
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            owner = {
+                has_civic = civic_swords_of_sanghelios
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_hall
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sangheili_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_sos_sangheili_legion = {
+        use_armynames_from = sos_sangheili_legion
+        health = 150
+        damage = 150
+        morale = 300
+        morale_damage = 1.1
+        collateral_damage = 110.00000000000001
+        war_exhaustion = 150
+        time = 150
+        icon = GFX_army_type_swords_of_sanghelios
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 20000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            owner = {
+                has_civic = civic_swords_of_sanghelios
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_hall
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sangheili_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_jiralhanae_legion = {
+        use_armynames_from = cov_jiralhanae_legion
+        health = 15
+        damage = 15
+        morale = 15
+        morale_damage = 1.3
+        collateral_damage = 13
+        war_exhaustion = 10
+        time = 150
+        icon = GFX_army_type_covenant
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2000
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+            owner = {
+                has_civic = civic_covenant_hegemony
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_hall
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_jiralhanae_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_jiralhanae_legion = {
+        use_armynames_from = cov_jiralhanae_legion
+        health = 150
+        damage = 150
+        morale = 150
+        morale_damage = 1.3
+        collateral_damage = 130
+        war_exhaustion = 100
+        time = 150
+        icon = GFX_army_type_covenant
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 20000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+            owner = {
+                has_civic = civic_covenant_hegemony
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_hall
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_jiralhanae_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_honor_guard = {
+        use_armynames_from = cov_honor_guard
+        health = 25
+        damage = 25
+        morale = 35
+        morale_damage = 1
+        collateral_damage = 7.5
+        war_exhaustion = 30
+        time = 180
+        icon = GFX_army_type_covenant
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3000
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            owner = {
+                has_civic = civic_covenant_hegemony
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sangheili_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_honor_guard = {
+        use_armynames_from = cov_honor_guard
+        health = 250
+        damage = 250
+        morale = 350
+        morale_damage = 1
+        collateral_damage = 75
+        war_exhaustion = 300
+        time = 180
+        icon = GFX_army_type_covenant
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 30000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            owner = {
+                has_civic = civic_covenant_hegemony
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sangheili_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_prelate = {
+        use_armynames_from = cov_prelate
+        health = 28
+        damage = 28
+        morale = 35
+        morale_damage = 1
+        collateral_damage = 7.5
+        war_exhaustion = 40
+        time = 240
+        icon = GFX_army_type_covenant
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_sanshyuum_species
+            }
+            owner = {
+                has_civic = civic_covenant_hegemony
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sanshyuum_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_prelate = {
+        use_armynames_from = cov_prelate
+        health = 280
+        damage = 280
+        morale = 350
+        morale_damage = 1
+        collateral_damage = 75
+        war_exhaustion = 400
+        time = 240
+        icon = GFX_army_type_covenant
+        prerequisites = {
+            tech_covenant_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_hall
+            }
+            from = {
+                has_trait = trait_sanshyuum_species
+            }
+            owner = {
+                has_civic = civic_covenant_hegemony
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sanshyuum_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_warrior_creche = {
+        use_armynames_from = cov_warrior_creche
+        health = 14
+        damage = 14
+        morale = 30
+        morale_damage = 1
+        collateral_damage = 10
+        war_exhaustion = 30
+        time = 120
+        icon = GFX_army_type_sangheili
+        resources = {
+            category = armies
+            cost = {
+                minerals = 1750
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sangheili_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_warrior_creche = {
+        use_armynames_from = cov_warrior_creche
+        health = 140
+        damage = 140
+        morale = 300
+        morale_damage = 1
+        collateral_damage = 100
+        war_exhaustion = 300
+        time = 120
+        icon = GFX_army_type_sangheili
+        resources = {
+            category = armies
+            cost = {
+                minerals = 17500
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_sangheili_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_brute_skein = {
+        use_armynames_from = cov_brute_skein
+        health = 14
+        damage = 14
+        morale = 15
+        morale_damage = 1.2
+        collateral_damage = 12
+        war_exhaustion = 15
+        time = 120
+        icon = GFX_army_type_jiralhanae
+        resources = {
+            category = armies
+            cost = {
+                minerals = 1750
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_jiralhanae_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_brute_skein = {
+        use_armynames_from = cov_brute_skein
+        health = 140
+        damage = 140
+        morale = 150
+        morale_damage = 1.2
+        collateral_damage = 120
+        war_exhaustion = 150
+        time = 120
+        icon = GFX_army_type_jiralhanae
+        resources = {
+            category = armies
+            cost = {
+                minerals = 17500
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_jiralhanae_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_hunter_warform = {
+        use_armynames_from = cov_hunter_warform
+        health = 50
+        damage = 30
+        morale_damage = 1.5
+        collateral_damage = 40
+        war_exhaustion = 40
+        time = 500
+        has_morale = no
+        icon = GFX_army_type_mgalekgolo
+        resources = {
+            category = armies
+            cost = {
+                minerals = 8000
+            }
+            upkeep = {
+                energy = 80
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_mgalekgolo_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_mgalekgolo_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_hunter_warform = {
+        use_armynames_from = cov_hunter_warform
+        health = 500
+        damage = 300
+        morale_damage = 1.5
+        collateral_damage = 400
+        war_exhaustion = 400
+        time = 500
+        has_morale = no
+        icon = GFX_army_type_mgalekgolo
+        resources = {
+            category = armies
+            cost = {
+                minerals = 80000
+            }
+            upkeep = {
+                energy = 800
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_mgalekgolo_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_mgalekgolo_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_kigyar_mercenaries = {
+        use_armynames_from = cov_kigyar_mercenaries
+        health = 12
+        damage = 12
+        morale = 8
+        morale_damage = 2
+        collateral_damage = 7.5
+        war_exhaustion = 9
+        time = 90
+        icon = GFX_army_type_kig_yar
+        resources = {
+            category = armies
+            cost = {
+                energy = 1200
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_kigyar_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_kigyar_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_kigyar_mercenaries = {
+        use_armynames_from = cov_kigyar_mercenaries
+        health = 120
+        damage = 120
+        morale = 80
+        morale_damage = 2
+        collateral_damage = 75
+        war_exhaustion = 90
+        time = 90
+        icon = GFX_army_type_kig_yar
+        resources = {
+            category = armies
+            cost = {
+                energy = 12000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_kigyar_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_kigyar_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_tvaoan_skirmishers = {
+        use_armynames_from = cov_tvaoan_skirmishers
+        health = 14
+        damage = 14
+        morale = 10
+        morale_damage = 1.2
+        collateral_damage = 7.5
+        war_exhaustion = 12
+        time = 120
+        icon = GFX_army_type_kig_yar
+        resources = {
+            category = armies
+            cost = {
+                energy = 2000
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_kigyar_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_kigyar_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_tvaoan_skirmishers = {
+        use_armynames_from = cov_tvaoan_skirmishers
+        health = 140
+        damage = 140
+        morale = 100
+        morale_damage = 1.2
+        collateral_damage = 75
+        war_exhaustion = 120
+        time = 120
+        icon = GFX_army_type_kig_yar
+        resources = {
+            category = armies
+            cost = {
+                energy = 20000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_kigyar_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_kigyar_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_drone_swarm = {
+        use_armynames_from = cov_drone_swarm
+        health = 8
+        damage = 12
+        morale_damage = 1.5
+        collateral_damage = 12.5
+        war_exhaustion = 5
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_yanmee
+        resources = {
+            category = armies
+            cost = {
+                minerals = 1200
+            }
+            upkeep = {
+                energy = 15
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_yanmee_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_yanmee_species
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_drone_swarm = {
+        use_armynames_from = cov_drone_swarm
+        health = 80
+        damage = 120
+        morale_damage = 1.5
+        collateral_damage = 125
+        war_exhaustion = 50
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_yanmee
+        resources = {
+            category = armies
+            cost = {
+                minerals = 12000
+            }
+            upkeep = {
+                energy = 150
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_yanmee_species
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_yanmee_species
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_ghost_company = {
+        use_armynames_from = cov_ghost_company
+        health = 18
+        damage = 18
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 10
+        war_exhaustion = 5
+        time = 120
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ghost
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2000
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_ghost_company = {
+        use_armynames_from = cov_ghost_company
+        health = 180
+        damage = 180
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 100
+        war_exhaustion = 50
+        time = 120
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ghost
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 20000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_spectre_company = {
+        use_armynames_from = cov_spectre_company
+        health = 25
+        damage = 25
+        morale = 25
+        morale_damage = 1.25
+        collateral_damage = 12.5
+        war_exhaustion = 7.5
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_spectre
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3500
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_spectre_company = {
+        use_armynames_from = cov_spectre_company
+        health = 250
+        damage = 250
+        morale = 250
+        morale_damage = 1.25
+        collateral_damage = 125
+        war_exhaustion = 75
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_spectre
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 35000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_locust_company = {
+        use_armynames_from = cov_locust_company
+        health = 20
+        damage = 22
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 40
+        war_exhaustion = 7.5
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_spectre
+        prerequisites = {
+            tech_covenant_light_vehicles
+            tech_covenant_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_locust_company = {
+        use_armynames_from = cov_locust_company
+        health = 200
+        damage = 220.00000000000003
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 400
+        war_exhaustion = 75
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_spectre
+        prerequisites = {
+            tech_covenant_light_vehicles
+            tech_covenant_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_revenant_company = {
+        use_armynames_from = cov_revenant_company
+        health = 30
+        damage = 30
+        morale = 30
+        morale_damage = 1.25
+        collateral_damage = 30
+        war_exhaustion = 25
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_spectre
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_revenant_company = {
+        use_armynames_from = cov_revenant_company
+        health = 300
+        damage = 300
+        morale = 300
+        morale_damage = 1.25
+        collateral_damage = 300
+        war_exhaustion = 250
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_spectre
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_wraith_tank = {
+        use_armynames_from = cov_wraith_tank
+        health = 45
+        damage = 40
+        morale = 30
+        morale_damage = 1.25
+        collateral_damage = 40
+        war_exhaustion = 30
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_wraith
+        prerequisites = {
+            tech_covenant_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 7500
+            }
+            upkeep = {
+                energy = 50
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_wraith_tank = {
+        use_armynames_from = cov_wraith_tank
+        health = 450
+        damage = 400
+        morale = 300
+        morale_damage = 1.25
+        collateral_damage = 400
+        war_exhaustion = 300
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_wraith
+        prerequisites = {
+            tech_covenant_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 75000
+            }
+            upkeep = {
+                energy = 500
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_banshee_squadron = {
+        use_armynames_from = cov_banshee_squadron
+        health = 18
+        damage = 25
+        morale = 18
+        morale_damage = 1.25
+        collateral_damage = 18
+        war_exhaustion = 7.5
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_banshee
+        prerequisites = {
+            tech_covenant_air_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3750
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_summit
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_banshee_squadron = {
+        use_armynames_from = cov_banshee_squadron
+        health = 180
+        damage = 250
+        morale = 180
+        morale_damage = 1.25
+        collateral_damage = 180
+        war_exhaustion = 75
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_banshee
+        prerequisites = {
+            tech_covenant_air_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 37500
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_summit
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_phantom_gunship = {
+        use_armynames_from = cov_phantom_gunship
+        health = 35
+        damage = 35
+        morale = 20
+        morale_damage = 1.5
+        collateral_damage = 17.5
+        war_exhaustion = 8
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_banshee
+        prerequisites = {
+            tech_covenant_air_vehicles
+            tech_covenant_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 5000
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_summit
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_phantom_gunship = {
+        use_armynames_from = cov_phantom_gunship
+        health = 350
+        damage = 350
+        morale = 200
+        morale_damage = 1.5
+        collateral_damage = 175
+        war_exhaustion = 80
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_banshee
+        prerequisites = {
+            tech_covenant_air_vehicles
+            tech_covenant_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 50000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_summit
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_lich_gunship = {
+        use_armynames_from = cov_lich_gunship
+        health = 60
+        damage = 55
+        morale = 30
+        morale_damage = 2
+        collateral_damage = 30
+        war_exhaustion = 30
+        time = 360
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_banshee
+        prerequisites = {
+            tech_covenant_air_vehicles
+            tech_covenant_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 12000
+            }
+            upkeep = {
+                energy = 80
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_summit
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_lich_gunship = {
+        use_armynames_from = cov_lich_gunship
+        health = 600
+        damage = 550
+        morale = 300
+        morale_damage = 2
+        collateral_damage = 300
+        war_exhaustion = 300
+        time = 360
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_banshee
+        prerequisites = {
+            tech_covenant_air_vehicles
+            tech_covenant_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 120000
+            }
+            upkeep = {
+                energy = 800
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_summit
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_scarab = {
+        use_armynames_from = cov_scarab
+        health = 80
+        damage = 85
+        morale_damage = 4
+        collateral_damage = 60
+        war_exhaustion = 60
+        time = 540
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_scarab
+        prerequisites = {
+            tech_covenant_excavators
+            tech_covenant_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 20000
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_assembly_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_scarab = {
+        use_armynames_from = cov_scarab
+        health = 800
+        damage = 850
+        morale_damage = 4
+        collateral_damage = 600
+        war_exhaustion = 600
+        time = 540
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_scarab
+        prerequisites = {
+            tech_covenant_excavators
+            tech_covenant_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 200000
+            }
+            upkeep = {
+                energy = 1000
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_assembly_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_draugr = {
+        use_armynames_from = cov_draugr
+        health = 100
+        damage = 100
+        morale_damage = 4
+        collateral_damage = 80
+        war_exhaustion = 60
+        time = 600
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_scarab
+        prerequisites = {
+            tech_covenant_heavy_vehicles
+            tech_covenant_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 30000
+            }
+            upkeep = {
+                energy = 120
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_assembly_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_draugr = {
+        use_armynames_from = cov_draugr
+        health = 1000
+        damage = 1000
+        morale_damage = 4
+        collateral_damage = 800
+        war_exhaustion = 600
+        time = 600
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_scarab
+        prerequisites = {
+            tech_covenant_heavy_vehicles
+            tech_covenant_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 300000
+            }
+            upkeep = {
+                energy = 1200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_assembly_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_cov_kraken = {
+        use_armynames_from = cov_kraken
+        health = 140
+        damage = 60
+        morale_damage = 4
+        collateral_damage = 100
+        war_exhaustion = 80
+        time = 600
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_scarab
+        prerequisites = {
+            tech_covenant_heavy_vehicles
+            tech_covenant_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 30000
+            }
+            upkeep = {
+                energy = 120
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_assembly_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_cov_kraken = {
+        use_armynames_from = cov_kraken
+        health = 1400
+        damage = 600
+        morale_damage = 4
+        collateral_damage = 1000
+        war_exhaustion = 800
+        time = 600
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_scarab
+        prerequisites = {
+            tech_covenant_heavy_vehicles
+            tech_covenant_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 300000
+            }
+            upkeep = {
+                energy = 1200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_cov_assembly_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_citadel
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                owner = {
+                    OR = {
+                        has_civic = civic_covenant_hegemony
+                        has_civic = civic_swords_of_sanghelios
+                        has_civic = civic_storm_covenant
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_brute_chopper_company = {
+        use_armynames_from = brute_chopper_company
+        health = 22
+        damage = 22
+        morale = 20
+        morale_damage = 1.5
+        collateral_damage = 20
+        war_exhaustion = 7.5
+        time = 180
+        pop_limited = no
+        icon = GFX_army_type_ghost
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2500
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_factory
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_jiralhanae_species
+            }
+            modifier = {
+                factor = 10
+                owner = {
+                    has_civic = civic_covenant_hegemony
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_brute_chopper_company = {
+        use_armynames_from = brute_chopper_company
+        health = 220.00000000000003
+        damage = 220.00000000000003
+        morale = 200
+        morale_damage = 1.5
+        collateral_damage = 200
+        war_exhaustion = 75
+        time = 180
+        pop_limited = no
+        icon = GFX_army_type_ghost
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 25000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_factory
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_jiralhanae_species
+            }
+            modifier = {
+                factor = 10
+                owner = {
+                    has_civic = civic_covenant_hegemony
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_brute_prowler_company = {
+        use_armynames_from = brute_prowler_company
+        health = 25
+        damage = 25
+        morale = 25
+        morale_damage = 1.5
+        collateral_damage = 22.5
+        war_exhaustion = 10
+        time = 240
+        pop_limited = no
+        icon = GFX_army_type_spectre
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3750
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_cov_factory
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_jiralhanae_species
+            }
+            modifier = {
+                factor = 10
+                owner = {
+                    has_civic = civic_covenant_hegemony
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_brute_prowler_company = {
+        use_armynames_from = brute_prowler_company
+        health = 250
+        damage = 250
+        morale = 250
+        morale_damage = 1.5
+        collateral_damage = 225
+        war_exhaustion = 100
+        time = 240
+        pop_limited = no
+        icon = GFX_army_type_spectre
+        prerequisites = {
+            tech_covenant_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 37500
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                OR = {
+                    has_active_building = building_cov_factory
+                    has_active_building = building_cov_assembly_forge
+                }
+            }
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_cov_factory
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                has_trait = trait_jiralhanae_species
+            }
+            modifier = {
+                factor = 10
+                owner = {
+                    has_civic = civic_covenant_hegemony
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_didact_promethean_crawler_army = {
+        use_armynames_from = didact_promethean_crawler_army
+        health = 10
+        damage = 12
+        morale_damage = 1.2
+        collateral_damage = 10
+        war_exhaustion = 5
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_prometheans_of_requiem
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 1000
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_robot_requiem_promethean
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 5
+            modifier = {
+                factor = 20
+                owner = {
+                    OR = {
+                        has_civic = civic_didact
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_didact_promethean_crawler_army = {
+        use_armynames_from = didact_promethean_crawler_army
+        health = 100
+        damage = 120
+        morale_damage = 1.2
+        collateral_damage = 100
+        war_exhaustion = 50
+        time = 90
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_prometheans_of_requiem
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 10000
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_robot_requiem_promethean
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 5
+            modifier = {
+                factor = 20
+                owner = {
+                    OR = {
+                        has_civic = civic_didact
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_didact_promethean_soldier_army = {
+        use_armynames_from = didact_promethean_soldier_army
+        health = 22
+        damage = 22
+        morale_damage = 1
+        collateral_damage = 15
+        war_exhaustion = 10
+        time = 140
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_prometheans_of_requiem
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3000
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_robot_requiem_promethean
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 5
+            modifier = {
+                factor = 20
+                owner = {
+                    OR = {
+                        has_civic = civic_didact
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_didact_promethean_soldier_army = {
+        use_armynames_from = didact_promethean_soldier_army
+        health = 220.00000000000003
+        damage = 220.00000000000003
+        morale_damage = 1
+        collateral_damage = 150
+        war_exhaustion = 100
+        time = 140
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_prometheans_of_requiem
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 30000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_robot_requiem_promethean
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 5
+            modifier = {
+                factor = 20
+                owner = {
+                    OR = {
+                        has_civic = civic_didact
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_didact_promethean_knight_army = {
+        use_armynames_from = didact_promethean_knight_army
+        health = 30
+        damage = 30
+        morale_damage = 2.5
+        collateral_damage = 25
+        war_exhaustion = 30
+        time = 150
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_prometheans_of_requiem
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_robot_requiem_promethean
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 5
+            modifier = {
+                factor = 20
+                owner = {
+                    OR = {
+                        has_civic = civic_didact
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_didact_promethean_knight_army = {
+        use_armynames_from = didact_promethean_knight_army
+        health = 300
+        damage = 300
+        morale_damage = 2.5
+        collateral_damage = 250
+        war_exhaustion = 300
+        time = 150
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_prometheans_of_requiem
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_robot_requiem_promethean
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 5
+            modifier = {
+                factor = 20
+                owner = {
+                    OR = {
+                        has_civic = civic_didact
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_didact_promethean_phaetons = {
+        use_armynames_from = didact_promethean_phaetons
+        health = 40
+        damage = 35
+        morale_damage = 3
+        collateral_damage = 30
+        war_exhaustion = 20
+        time = 250
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_prometheans_of_requiem
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 5000
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_robot_requiem_promethean
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 5
+            modifier = {
+                factor = 20
+                owner = {
+                    OR = {
+                        has_civic = civic_didact
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_didact_promethean_phaetons = {
+        use_armynames_from = didact_promethean_phaetons
+        health = 400
+        damage = 350
+        morale_damage = 3
+        collateral_damage = 300
+        war_exhaustion = 200
+        time = 250
+        has_morale = no
+        icon = GFX_army_type_forerunner_promethean
+        prerequisites = {
+            tech_prometheans_of_requiem
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 50000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_robot_requiem_promethean
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 5
+            modifier = {
+                factor = 20
+                owner = {
+                    OR = {
+                        has_civic = civic_didact
+                    }
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    "
+}

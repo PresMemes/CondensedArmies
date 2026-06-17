@@ -167,6 +167,146 @@ pmca_is_times_ten_army = {
             army_type = pmca_ten_cybretic_corps
             "
         }
+
+        # Halo Portraits: UNSC x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_unsc_compat
+            CONTENT = "
+            army_type = pmca_ten_unsc_marine_company
+            army_type = pmca_ten_unsc_odst_company
+            army_type = pmca_ten_unsc_spartan_IV_company
+            army_type = pmca_ten_unsc_jackrabbit_company
+            army_type = pmca_ten_unsc_warthog_company
+            army_type = pmca_ten_unsc_cobra_company
+            army_type = pmca_ten_unsc_mantis_company
+            army_type = pmca_ten_unsc_colossus
+            army_type = pmca_ten_unsc_scorpion_tank
+            army_type = pmca_ten_unsc_grizly_tank
+            army_type = pmca_ten_unsc_hornet_squadron
+            army_type = pmca_ten_unsc_sparrowhawk_squadron
+            army_type = pmca_ten_unsc_pelican_gunship
+            army_type = pmca_ten_unsc_shortsword_bomber
+            army_type = pmca_ten_unsc_broadsword_fighter_squadron
+            army_type = pmca_ten_unsc_vulture_gunship
+            army_type = pmca_ten_unsc_longsword_fighter
+            army_type = pmca_ten_unsc_condor_gunship
+            army_type = pmca_ten_ancient_human_warriors
+            army_type = pmca_ten_ancient_sanshyuum_warriors
+            army_type = pmca_ten_ancient_human_fibril_tanks
+            army_type = pmca_ten_ancient_human_fibril_artillery
+            army_type = pmca_ten_ancient_human_combat_suit
+            army_type = pmca_ten_ancient_human_sanshyuum_tuned_siege_platform
+            "
+        }
+
+        # Halo Portraits: Covenant x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_covenant_compat
+            CONTENT = "
+            army_type = pmca_ten_cov_sangheili_legion
+            army_type = pmca_ten_sos_sangheili_legion
+            army_type = pmca_ten_cov_jiralhanae_legion
+            army_type = pmca_ten_cov_honor_guard
+            army_type = pmca_ten_cov_prelate
+            army_type = pmca_ten_cov_warrior_creche
+            army_type = pmca_ten_cov_brute_skein
+            army_type = pmca_ten_cov_hunter_warform
+            army_type = pmca_ten_cov_kigyar_mercenaries
+            army_type = pmca_ten_cov_tvaoan_skirmishers
+            army_type = pmca_ten_cov_drone_swarm
+            army_type = pmca_ten_cov_ghost_company
+            army_type = pmca_ten_cov_spectre_company
+            army_type = pmca_ten_cov_locust_company
+            army_type = pmca_ten_cov_revenant_company
+            army_type = pmca_ten_cov_wraith_tank
+            army_type = pmca_ten_cov_banshee_squadron
+            army_type = pmca_ten_cov_phantom_gunship
+            army_type = pmca_ten_cov_lich_gunship
+            army_type = pmca_ten_cov_scarab
+            army_type = pmca_ten_cov_draugr
+            army_type = pmca_ten_cov_kraken
+            army_type = pmca_ten_brute_chopper_company
+            army_type = pmca_ten_brute_prowler_company
+            army_type = pmca_ten_didact_promethean_crawler_army
+            army_type = pmca_ten_didact_promethean_soldier_army
+            army_type = pmca_ten_didact_promethean_knight_army
+            army_type = pmca_ten_didact_promethean_phaetons
+            "
+        }
+
+        # Halo Portraits: Flood x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_flood_compat
+            CONTENT = "
+            army_type = pmca_ten_flood_infection_forms
+            army_type = pmca_ten_flood_carrier_forms
+            army_type = pmca_ten_flood_combat_forms
+            army_type = pmca_ten_flood_thrasher_forms
+            army_type = pmca_ten_flood_pure_stalker_forms
+            army_type = pmca_ten_flood_pure_ranged_forms
+            army_type = pmca_ten_flood_pure_tank_form
+            army_type = pmca_ten_flood_pure_infestor_forms
+            army_type = pmca_ten_flood_seeder_forms
+            army_type = pmca_ten_flood_bomber_forms
+            army_type = pmca_ten_flood_hellion
+            army_type = pmca_ten_flood_blightstalkers
+            army_type = pmca_ten_flood_juggernaut
+            army_type = pmca_ten_flood_abomination
+            "
+        }
+
+        # Halo Portraits: Banished x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_banished_compat
+            CONTENT = "
+            army_type = pmca_ten_banished_legion
+            army_type = pmca_ten_banished_goliaths
+            army_type = pmca_ten_banished_atriox_chosen
+            army_type = pmca_ten_banished_jackal_mercenaries
+            army_type = pmca_ten_banished_honor_guards
+            army_type = pmca_ten_banished_ghosts
+            army_type = pmca_ten_banished_choppers
+            army_type = pmca_ten_banished_skitterers
+            army_type = pmca_ten_banished_goblins
+            army_type = pmca_ten_banished_locusts
+            army_type = pmca_ten_banished_reavers
+            army_type = pmca_ten_banished_marauders
+            army_type = pmca_ten_banished_wraiths
+            army_type = pmca_ten_banished_banshee_squadron
+            army_type = pmca_ten_banished_blisterbacks
+            army_type = pmca_ten_banished_phantom
+            army_type = pmca_ten_banished_lich
+            army_type = pmca_ten_banished_scarab
+            "
+        }
+
+        # Halo Portraits: Forerunners x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_forerunners_compat
+            CONTENT = "
+            army_type = pmca_ten_forerunner_aggressor_sentinels
+            army_type = pmca_ten_forerunner_protector_sentinels
+            army_type = pmca_ten_forerunner_onyx_sentinels
+            army_type = pmca_ten_forerunner_strato_sentinel
+            army_type = pmca_ten_forerunner_armiger_army
+            army_type = pmca_ten_forerunner_warrior_servant_army
+            army_type = pmca_ten_forerunner_war_sphinx
+            army_type = pmca_ten_promethean_warrior_servant_army
+            army_type = pmca_ten_promethean_seekers
+            army_type = pmca_ten_promethean_crawler_army
+            army_type = pmca_ten_promethean_soldier_army
+            army_type = pmca_ten_promethean_knight_army
+            army_type = pmca_ten_promethean_lancer_army
+            army_type = pmca_ten_promethean_battlewagon_army
+            army_type = pmca_ten_promethean_phaetons
+            army_type = pmca_ten_created_executors
+            "
+        }
     }
 }
 
@@ -233,7 +373,7 @@ pmca_is_times_hundred_army = {
             "
         }
 
-        # Ground Command x10
+        # Ground Command x100
         inline_script = {
             script = compatibility/pmca_conditional_inline_1_input
             MOD_VARIABLE_1 = @pmca_has_ground_command_compat
@@ -318,5 +458,144 @@ pmca_is_times_hundred_army = {
             "
         }
 
+        # Halo Portraits: UNSC x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_unsc_compat
+            CONTENT = "
+            army_type = pmca_hundred_unsc_marine_company
+            army_type = pmca_hundred_unsc_odst_company
+            army_type = pmca_hundred_unsc_spartan_IV_company
+            army_type = pmca_hundred_unsc_jackrabbit_company
+            army_type = pmca_hundred_unsc_warthog_company
+            army_type = pmca_hundred_unsc_cobra_company
+            army_type = pmca_hundred_unsc_mantis_company
+            army_type = pmca_hundred_unsc_colossus
+            army_type = pmca_hundred_unsc_scorpion_tank
+            army_type = pmca_hundred_unsc_grizly_tank
+            army_type = pmca_hundred_unsc_hornet_squadron
+            army_type = pmca_hundred_unsc_sparrowhawk_squadron
+            army_type = pmca_hundred_unsc_pelican_gunship
+            army_type = pmca_hundred_unsc_shortsword_bomber
+            army_type = pmca_hundred_unsc_broadsword_fighter_squadron
+            army_type = pmca_hundred_unsc_vulture_gunship
+            army_type = pmca_hundred_unsc_longsword_fighter
+            army_type = pmca_hundred_unsc_condor_gunship
+            army_type = pmca_hundred_ancient_human_warriors
+            army_type = pmca_hundred_ancient_sanshyuum_warriors
+            army_type = pmca_hundred_ancient_human_fibril_tanks
+            army_type = pmca_hundred_ancient_human_fibril_artillery
+            army_type = pmca_hundred_ancient_human_combat_suit
+            army_type = pmca_hundred_ancient_human_sanshyuum_tuned_siege_platform
+            "
+        }
+
+        # Halo Portraits: Covenant x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_covenant_compat
+            CONTENT = "
+            army_type = pmca_hundred_cov_sangheili_legion
+            army_type = pmca_hundred_sos_sangheili_legion
+            army_type = pmca_hundred_cov_jiralhanae_legion
+            army_type = pmca_hundred_cov_honor_guard
+            army_type = pmca_hundred_cov_prelate
+            army_type = pmca_hundred_cov_warrior_creche
+            army_type = pmca_hundred_cov_brute_skein
+            army_type = pmca_hundred_cov_hunter_warform
+            army_type = pmca_hundred_cov_kigyar_mercenaries
+            army_type = pmca_hundred_cov_tvaoan_skirmishers
+            army_type = pmca_hundred_cov_drone_swarm
+            army_type = pmca_hundred_cov_ghost_company
+            army_type = pmca_hundred_cov_spectre_company
+            army_type = pmca_hundred_cov_locust_company
+            army_type = pmca_hundred_cov_revenant_company
+            army_type = pmca_hundred_cov_wraith_tank
+            army_type = pmca_hundred_cov_banshee_squadron
+            army_type = pmca_hundred_cov_phantom_gunship
+            army_type = pmca_hundred_cov_lich_gunship
+            army_type = pmca_hundred_cov_scarab
+            army_type = pmca_hundred_cov_draugr
+            army_type = pmca_hundred_cov_kraken
+            army_type = pmca_hundred_brute_chopper_company
+            army_type = pmca_hundred_brute_prowler_company
+            army_type = pmca_hundred_didact_promethean_crawler_army
+            army_type = pmca_hundred_didact_promethean_soldier_army
+            army_type = pmca_hundred_didact_promethean_knight_army
+            army_type = pmca_hundred_didact_promethean_phaetons
+            "
+        }
+
+        # Halo Portraits: Flood x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_flood_compat
+            CONTENT = "
+            army_type = pmca_hundred_flood_infection_forms
+            army_type = pmca_hundred_flood_carrier_forms
+            army_type = pmca_hundred_flood_combat_forms
+            army_type = pmca_hundred_flood_thrasher_forms
+            army_type = pmca_hundred_flood_pure_stalker_forms
+            army_type = pmca_hundred_flood_pure_ranged_forms
+            army_type = pmca_hundred_flood_pure_tank_form
+            army_type = pmca_hundred_flood_pure_infestor_forms
+            army_type = pmca_hundred_flood_seeder_forms
+            army_type = pmca_hundred_flood_bomber_forms
+            army_type = pmca_hundred_flood_hellion
+            army_type = pmca_hundred_flood_blightstalkers
+            army_type = pmca_hundred_flood_juggernaut
+            army_type = pmca_hundred_flood_abomination
+            "
+        }
+
+        # Halo Portraits: Banished x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_banished_compat
+            CONTENT = "
+            army_type = pmca_hundred_banished_legion
+            army_type = pmca_hundred_banished_goliaths
+            army_type = pmca_hundred_banished_atriox_chosen
+            army_type = pmca_hundred_banished_jackal_mercenaries
+            army_type = pmca_hundred_banished_honor_guards
+            army_type = pmca_hundred_banished_ghosts
+            army_type = pmca_hundred_banished_choppers
+            army_type = pmca_hundred_banished_skitterers
+            army_type = pmca_hundred_banished_goblins
+            army_type = pmca_hundred_banished_locusts
+            army_type = pmca_hundred_banished_reavers
+            army_type = pmca_hundred_banished_marauders
+            army_type = pmca_hundred_banished_wraiths
+            army_type = pmca_hundred_banished_banshee_squadron
+            army_type = pmca_hundred_banished_blisterbacks
+            army_type = pmca_hundred_banished_phantom
+            army_type = pmca_hundred_banished_lich
+            army_type = pmca_hundred_banished_scarab
+            "
+        }
+
+        # Halo Portraits: Forerunners x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_forerunners_compat
+            CONTENT = "
+            army_type = pmca_hundred_forerunner_aggressor_sentinels
+            army_type = pmca_hundred_forerunner_protector_sentinels
+            army_type = pmca_hundred_forerunner_onyx_sentinels
+            army_type = pmca_hundred_forerunner_strato_sentinel
+            army_type = pmca_hundred_forerunner_armiger_army
+            army_type = pmca_hundred_forerunner_warrior_servant_army
+            army_type = pmca_hundred_forerunner_war_sphinx
+            army_type = pmca_hundred_promethean_warrior_servant_army
+            army_type = pmca_hundred_promethean_seekers
+            army_type = pmca_hundred_promethean_crawler_army
+            army_type = pmca_hundred_promethean_soldier_army
+            army_type = pmca_hundred_promethean_knight_army
+            army_type = pmca_hundred_promethean_lancer_army
+            army_type = pmca_hundred_promethean_battlewagon_army
+            army_type = pmca_hundred_promethean_phaetons
+            army_type = pmca_hundred_created_executors
+            "
+        }
     }
 }

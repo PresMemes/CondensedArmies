@@ -1,0 +1,1429 @@
+# Dear Irony please fallback to simple parser
+# x10 and x100 army definition(s) generated via Rust
+# Last Updated: Wednesday, June 17, 2026
+# Number of Armies in file: 18 * 2
+
+inline_script = {
+    script = compatibility/pmca_conditional_inline_1_input
+    MOD_VARIABLE_1 = @pmca_has_halo_portraits_banished_compat
+    CONTENT = "
+    pmca_ten_banished_legion = {
+        use_armynames_from = banished_legion
+        health = 15
+        damage = 15
+        morale = 20
+        morale_damage = 1.2
+        collateral_damage = 12
+        war_exhaustion = 15
+        time = 150
+        has_species = no
+        icon = GFX_army_type_the_banished
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 2000
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+    pmca_hundred_banished_legion = {
+        use_armynames_from = banished_legion
+        health = 150
+        damage = 150
+        morale = 200
+        morale_damage = 1.2
+        collateral_damage = 120
+        war_exhaustion = 150
+        time = 150
+        has_species = no
+        icon = GFX_army_type_the_banished
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 20000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+
+    pmca_ten_banished_goliaths = {
+        use_armynames_from = banished_goliaths
+        health = 26
+        damage = 24
+        morale_damage = 2
+        collateral_damage = 50
+        war_exhaustion = 3
+        time = 150
+        has_morale = no
+        icon = GFX_army_type_the_banished
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 2750
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_mgalekgolo_species
+            }
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+    pmca_hundred_banished_goliaths = {
+        use_armynames_from = banished_goliaths
+        health = 260
+        damage = 240
+        morale_damage = 2
+        collateral_damage = 500
+        war_exhaustion = 30
+        time = 150
+        has_morale = no
+        icon = GFX_army_type_the_banished
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 27500
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_mgalekgolo_species
+            }
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+
+    pmca_ten_banished_atriox_chosen = {
+        use_armynames_from = banished_atriox_chosen
+        health = 26
+        damage = 26
+        morale = 35
+        morale_damage = 1
+        collateral_damage = 15
+        war_exhaustion = 30
+        time = 150
+        icon = GFX_army_type_banished_elite
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 3250
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+    pmca_hundred_banished_atriox_chosen = {
+        use_armynames_from = banished_atriox_chosen
+        health = 260
+        damage = 260
+        morale = 350
+        morale_damage = 1
+        collateral_damage = 150
+        war_exhaustion = 300
+        time = 150
+        icon = GFX_army_type_banished_elite
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 32500
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_jiralhanae_species
+            }
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+
+    pmca_ten_banished_jackal_mercenaries = {
+        use_armynames_from = banished_jackal_mercenaries
+        health = 12
+        damage = 13
+        morale = 10
+        morale_damage = 1.7
+        collateral_damage = 7.5
+        war_exhaustion = 10
+        time = 120
+        icon = GFX_army_type_rebel
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 1750
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_kigyar_species
+            }
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+    pmca_hundred_banished_jackal_mercenaries = {
+        use_armynames_from = banished_jackal_mercenaries
+        health = 120
+        damage = 130
+        morale = 100
+        morale_damage = 1.7
+        collateral_damage = 75
+        war_exhaustion = 100
+        time = 120
+        icon = GFX_army_type_rebel
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 17500
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_kigyar_species
+            }
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+
+    pmca_ten_banished_honor_guards = {
+        use_armynames_from = banished_honor_guards
+        health = 25
+        damage = 25
+        morale = 35
+        morale_damage = 1
+        collateral_damage = 7.5
+        war_exhaustion = 30
+        time = 180
+        icon = GFX_army_type_banished_elite
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 3000
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+    pmca_hundred_banished_honor_guards = {
+        use_armynames_from = banished_honor_guards
+        health = 250
+        damage = 250
+        morale = 350
+        morale_damage = 1
+        collateral_damage = 75
+        war_exhaustion = 300
+        time = 180
+        icon = GFX_army_type_banished_elite
+        prerequisites = {
+            tech_banished_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 30000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_sangheili_species
+            }
+            planet = {
+                has_active_building = building_banished_raid_camp
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_raid_camp
+        }
+    }
+
+    pmca_ten_banished_ghosts = {
+        use_armynames_from = banished_ghosts
+        health = 20
+        damage = 20
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 10
+        war_exhaustion = 5
+        time = 120
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2250
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+    pmca_hundred_banished_ghosts = {
+        use_armynames_from = banished_ghosts
+        health = 200
+        damage = 200
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 100
+        war_exhaustion = 50
+        time = 120
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 22500
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+
+    pmca_ten_banished_choppers = {
+        use_armynames_from = banished_choppers
+        health = 24
+        damage = 24
+        morale = 20
+        morale_damage = 1.5
+        collateral_damage = 25
+        war_exhaustion = 7.5
+        time = 180
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2750
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+    pmca_hundred_banished_choppers = {
+        use_armynames_from = banished_choppers
+        health = 240
+        damage = 240
+        morale = 200
+        morale_damage = 1.5
+        collateral_damage = 250
+        war_exhaustion = 75
+        time = 180
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 27500
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+
+    pmca_ten_banished_skitterers = {
+        use_armynames_from = banished_skitterers
+        health = 15
+        damage = 12
+        morale_damage = 1.25
+        collateral_damage = 15
+        war_exhaustion = 7.5
+        time = 120
+        has_morale = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+            tech_banished_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2250
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_mgalekgolo_species
+            }
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+    pmca_hundred_banished_skitterers = {
+        use_armynames_from = banished_skitterers
+        health = 150
+        damage = 120
+        morale_damage = 1.25
+        collateral_damage = 150
+        war_exhaustion = 75
+        time = 120
+        has_morale = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+            tech_banished_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 22500
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_mgalekgolo_species
+            }
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+
+    pmca_ten_banished_goblins = {
+        use_armynames_from = banished_goblins
+        health = 30
+        damage = 32
+        morale = 15
+        morale_damage = 1.5
+        collateral_damage = 25
+        war_exhaustion = 25
+        time = 240
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 5000
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_unggoy_species
+            }
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+    pmca_hundred_banished_goblins = {
+        use_armynames_from = banished_goblins
+        health = 300
+        damage = 320
+        morale = 150
+        morale_damage = 1.5
+        collateral_damage = 250
+        war_exhaustion = 250
+        time = 240
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 50000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_unggoy_species
+            }
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+            owner = {
+                has_civic = civic_banished
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+
+    pmca_ten_banished_locusts = {
+        use_armynames_from = banished_locusts
+        health = 22
+        damage = 24
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 40
+        war_exhaustion = 7.5
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+            tech_banished_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4250
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+    pmca_hundred_banished_locusts = {
+        use_armynames_from = banished_locusts
+        health = 220.00000000000003
+        damage = 240
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 400
+        war_exhaustion = 75
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+            tech_banished_excavators
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 42500
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+
+    pmca_ten_banished_reavers = {
+        use_armynames_from = banished_reavers
+        health = 24
+        damage = 25
+        morale = 20
+        morale_damage = 1.4
+        collateral_damage = 10
+        war_exhaustion = 7.5
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4250
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+    pmca_hundred_banished_reavers = {
+        use_armynames_from = banished_reavers
+        health = 240
+        damage = 250
+        morale = 200
+        morale_damage = 1.4
+        collateral_damage = 100
+        war_exhaustion = 75
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 42500
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+
+    pmca_ten_banished_marauders = {
+        use_armynames_from = banished_marauders
+        health = 32
+        damage = 32
+        morale = 30
+        morale_damage = 1.25
+        collateral_damage = 30
+        war_exhaustion = 25
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4250
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+    pmca_hundred_banished_marauders = {
+        use_armynames_from = banished_marauders
+        health = 320
+        damage = 320
+        morale = 300
+        morale_damage = 1.25
+        collateral_damage = 300
+        war_exhaustion = 250
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 42500
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+
+    pmca_ten_banished_wraiths = {
+        use_armynames_from = banished_wraiths
+        health = 47
+        damage = 42
+        morale = 30
+        morale_damage = 1.25
+        collateral_damage = 45
+        war_exhaustion = 30
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 7750
+            }
+            upkeep = {
+                energy = 50
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+    pmca_hundred_banished_wraiths = {
+        use_armynames_from = banished_wraiths
+        health = 470
+        damage = 420
+        morale = 300
+        morale_damage = 1.25
+        collateral_damage = 450
+        war_exhaustion = 300
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 77500
+            }
+            upkeep = {
+                energy = 500
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_foundry
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_foundry
+        }
+    }
+
+    pmca_ten_banished_banshee_squadron = {
+        use_armynames_from = banished_banshee_squadron
+        health = 20
+        damage = 25
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 20
+        war_exhaustion = 7.5
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_air_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_apex
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_apex
+        }
+    }
+    pmca_hundred_banished_banshee_squadron = {
+        use_armynames_from = banished_banshee_squadron
+        health = 200
+        damage = 250
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 200
+        war_exhaustion = 75
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_air_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_apex
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_apex
+        }
+    }
+
+    pmca_ten_banished_blisterbacks = {
+        use_armynames_from = banished_blisterbacks
+        health = 25
+        damage = 40
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 40
+        war_exhaustion = 8
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_air_vehicles
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4750
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_apex
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_apex
+        }
+    }
+    pmca_hundred_banished_blisterbacks = {
+        use_armynames_from = banished_blisterbacks
+        health = 250
+        damage = 400
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 400
+        war_exhaustion = 80
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_air_vehicles
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 47500
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_apex
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_apex
+        }
+    }
+
+    pmca_ten_banished_phantom = {
+        use_armynames_from = banished_phantom
+        health = 37
+        damage = 37
+        morale = 20
+        morale_damage = 1.5
+        collateral_damage = 17.5
+        war_exhaustion = 8
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_air_vehicles
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 5250
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_apex
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_apex
+        }
+    }
+    pmca_hundred_banished_phantom = {
+        use_armynames_from = banished_phantom
+        health = 370
+        damage = 370
+        morale = 200
+        morale_damage = 1.5
+        collateral_damage = 175
+        war_exhaustion = 80
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_air_vehicles
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 52500
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_apex
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_apex
+        }
+    }
+
+    pmca_ten_banished_lich = {
+        use_armynames_from = banished_lich
+        health = 62
+        damage = 57
+        morale = 30
+        morale_damage = 2
+        collateral_damage = 32
+        war_exhaustion = 30
+        time = 360
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_air_vehicles
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 12000
+            }
+            upkeep = {
+                energy = 80
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_apex
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_apex
+        }
+    }
+    pmca_hundred_banished_lich = {
+        use_armynames_from = banished_lich
+        health = 620
+        damage = 570
+        morale = 300
+        morale_damage = 2
+        collateral_damage = 320
+        war_exhaustion = 300
+        time = 360
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_air_vehicles
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 120000
+            }
+            upkeep = {
+                energy = 800
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_apex
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_apex
+        }
+    }
+
+    pmca_ten_banished_scarab = {
+        use_armynames_from = banished_scarab
+        health = 100
+        damage = 90
+        morale_damage = 4
+        collateral_damage = 70
+        war_exhaustion = 60
+        time = 540
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_excavators
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 15000
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_assembly_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_banished_assembly_forge
+        }
+    }
+    pmca_hundred_banished_scarab = {
+        use_armynames_from = banished_scarab
+        health = 1000
+        damage = 900
+        morale_damage = 4
+        collateral_damage = 700
+        war_exhaustion = 600
+        time = 540
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_the_banished_alt
+        prerequisites = {
+            tech_banished_excavators
+            tech_banished_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 150000
+            }
+            upkeep = {
+                energy = 1000
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_banished_assembly_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_banished_assembly_forge
+        }
+    }
+
+    "
+}
