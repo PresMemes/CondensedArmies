@@ -55,4 +55,8 @@ Anywhere should be fine. Load any submods after Condensed Armies.
 English: Done
 ---
 # Source
-You're already at the source.
+[Steam Workshop - Condensed Armies](https://steamcommunity.com/sharedfiles/filedetails/?id=2797565369)
+
+[GitHub - PresMemes/CondensedArmies](https://github.com/PresMemes/CondensedArmies)
+
+[GitHub - PresMemes/CondensedArmiesPatches](https://github.com/PresMemes/CondensedArmiesPatches)
