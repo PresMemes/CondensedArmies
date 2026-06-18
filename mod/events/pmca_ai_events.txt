@@ -2,85 +2,75 @@ namespace = pmca_ai_events
 
 # Gatekeeper event
 event = {
-	id = pmca_ai_events.100
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_ai_events.1
+    hide_window = yes
+    is_triggered_only = yes
 
-	trigger = {
-		has_global_flag = pmca_ai_allowed
-	}
+    trigger = {
+        has_global_flag = pmca_ai_allowed
+    }
 
-	immediate = {
-		every_playable_country = {
-			limit = { is_ai = yes }
-			remove_country_flag = pmca_times_ten_set
-			remove_country_flag = pmca_times_hundred_set
-			country_event = { id = pmca_ai_events.101 days = 14 random = 59 } # Delay for some better performance
-		}
-	}
+    immediate = {
+        every_playable_country = {
+            limit = { is_ai = yes }
+            country_event = {
+                id = pmca_ai_events.2
+                days = 14
+                random = 59 # Delay for some better performance
+            }
+        }
+    }
 }
 
 # Enable/disable AI usage of Condensed Armies based on income
 country_event = {
-	id = pmca_ai_events.101
-	hide_window = yes
-	is_triggered_only = yes
+    id = pmca_ai_events.2
+    hide_window = yes
+    is_triggered_only = yes
 
-	trigger = {
-		is_ai = yes
-		is_country_type = default
-		count_owned_army = {
-			count >= @armies_for_declaring_war
-			limit = { is_defensive_army = no }
-		}
-	}
+    trigger = {
+        count_owned_army = {
+            count >= @armies_for_declaring_war
+            limit = { is_defensive_army = no }
+        }
+    }
 
-	immediate = {
-		country_event = { id = pmca_ai_events.102 }
-		country_event = { id = pmca_ai_events.103 }
-	}
-}
+    immediate = {
+        if = {
+            limit = {
+                resource_income_compare = {
+                    resource = energy
+                    value >= 3500
+                }
+                resource_income_compare = {
+                    resource = minerals
+                    value >= 1250
+                }
+            }
+            set_timed_country_flag = {
+                flag = pmca_times_hundred_set
+                years = 5
+            }
 
-# Set x10 Flag
-country_event = {
-	id = pmca_ai_events.102
-	hide_window = yes
-	is_triggered_only = yes
+            # log = "[Country.GetName] hit x100 threshhold on [GetDate]"
+        }
+        else_if = {
+            limit = {
+                resource_income_compare = {
+                    resource = energy
+                    value >= 250
+                }
+                resource_income_compare = {
+                    resource = minerals
+                    value >= 175
+                }
+            }
+            set_timed_country_flag = {
+                flag = pmca_times_ten_set
+                years = 5
+            }
 
-	trigger = {
-		resource_income_compare = {
-			resource = energy
-			value >= 250
-		}
-		resource_income_compare = {
-			resource = minerals
-			value >= 175
-		}
-	}
-
-	immediate = {
-		set_country_flag = pmca_times_ten_set
-	}
-}
-
-# Set x100 Flag
-country_event = {
-	id = pmca_ai_events.103
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		resource_income_compare = {
-			resource = energy
-			value >= 3500
-		}
-		resource_income_compare = {
-			resource = minerals
-			value >= 1250
-		}
-	}
-
-	immediate = {
-		set_country_flag = pmca_times_hundred_set
-	}
+            # log = "[Country.GetName] hit x10 threshhold on [GetDate]"
+        }
+    }
 }

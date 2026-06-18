@@ -1,6 +1,6 @@
 ﻿l_german:
 
- # Localisation generated using Python
+ # Localisation generated using Rust
 
  ###############################
  ### ESC_PSIONIC_AVATAR_ARMY ###
@@ -12,7 +12,6 @@
  pmca_hundred_esc_psionic_avatar_army_plural: "$esc_psionic_avatar_army_plural$"
  pmca_hundred_esc_psionic_avatar_army_desc: "$esc_psionic_avatar_army_desc$"
 
-
  ##############################
  ### ESC_ERASURE_SQUAD_ARMY ###
  ##############################
@@ -22,7 +21,6 @@
  pmca_hundred_esc_erasure_squad_army: "$pmca_hundred$ $esc_erasure_squad_army$"
  pmca_hundred_esc_erasure_squad_army_plural: "$esc_erasure_squad_army_plural$"
  pmca_hundred_esc_erasure_squad_army_desc: "$esc_erasure_squad_army_desc$"
-
 
  ##################################
  ### ESC_ERADICATOR_DROIDS_ARMY ###
@@ -34,7 +32,6 @@
  pmca_hundred_esc_eradicator_droids_army_plural: "$esc_eradicator_droids_army_plural$"
  pmca_hundred_esc_eradicator_droids_army_desc: "$esc_eradicator_droids_army_desc$"
 
-
  ###############################
  ### ESC_TESLA_TROOPERS_ARMY ###
  ###############################
@@ -45,7 +42,6 @@
  pmca_hundred_esc_tesla_troopers_army_plural: "$esc_tesla_troopers_army_plural$"
  pmca_hundred_esc_tesla_troopers_army_desc: "$esc_tesla_troopers_army_desc$"
 
-
  #############################
  ### ESC_TESLA_DROIDS_ARMY ###
  #############################
@@ -55,7 +51,6 @@
  pmca_hundred_esc_tesla_droids_army: "$pmca_hundred$ $esc_tesla_droids_army$"
  pmca_hundred_esc_tesla_droids_army_plural: "$esc_tesla_droids_army_plural$"
  pmca_hundred_esc_tesla_droids_army_desc: "$esc_tesla_droids_army_desc$"
-
 
  ##########################
  ### ESC_BIOHORROR_ARMY ###

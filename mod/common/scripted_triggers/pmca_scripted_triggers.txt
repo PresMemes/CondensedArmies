@@ -1,738 +1,601 @@
 # ID Trigger
 has_condensed_armies = {
-	always = yes
+    always = yes
 }
 
-# This bit of script allows me to check for various conditions so I can hide condensed armies, preventing them from cluttering the army screen
-# This is also used to keep the AI from spamming nothing but condensed armies and for the mod menu
-# Scope: this = country
-# Parameters: PMCA_MULT (ten, hundred), PMCA_RESOURCE, PMCA_VALUE
-pmca_materiel_policy_check = {
-	# optimize_memory
-	OR = {
-		is_ai = no
-		has_global_flag = pmca_ai_allowed
-	}
-	has_country_flag = pmca_times_$PMCA_MULT$_set
-	OR = {
-		has_country_flag = pmca_unbeautify_army_recruitment_view
-		resource_stockpile_compare = {
-			resource = $PMCA_RESOURCE$
-			value >= $PMCA_VALUE$
-		}
-	}
+# Hides the given army if a given flag is not set
+pmca_flag_check = {
+    # optimize_memory
+    has_country_flag = pmca_times_$MULT$_set
 }
 
-# Check if the army is a PMCA army
-# Scopes: this = army
+# Check if the army is a Condensed Army
 pmca_is_condensed_army = {
-	optimize_memory
-	OR = {
-		has_army_flag = pmca_times_ten_army
-		has_army_flag = pmca_times_hundred_army
-		pmca_is_times_ten_army = yes
-		pmca_is_times_hundred_army = yes
-	}
+    optimize_memory
+    OR = {
+        has_army_flag = pmca_times_ten_army
+        has_army_flag = pmca_times_hundred_army
+        pmca_is_times_ten_army = yes
+        pmca_is_times_hundred_army = yes
+    }
 }
 
-# Scopes: this = army
+# Check if the army is a x10 Condensed Army
 pmca_is_times_ten_army = {
-	optimize_memory
-	OR = {
-		has_army_flag = pmca_times_ten_army
+    optimize_memory
+    OR = {
+        has_army_flag = pmca_times_ten_army
 
-		# Vanilla x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_condensed_armies
-			CONTENT = "
-			army_type = pmca_ten_assault_army
-			army_type = pmca_ten_slave_army
-			army_type = pmca_ten_clone_army
-			army_type = pmca_ten_robotic_army
-			army_type = pmca_ten_psionic_army
-			army_type = pmca_ten_xenomorph_army
-			army_type = pmca_ten_gene_warrior_army
-			army_type = pmca_ten_wilderness_pre_sapient_assault_army
-			army_type = pmca_ten_machine_assault_1
-			army_type = pmca_ten_machine_assault_2
-			army_type = pmca_ten_machine_assault_3
-			army_type = pmca_ten_undead_army
-			army_type = pmca_ten_warpling_army
-			army_type = pmca_ten_flamestorm_troopers_army
-			army_type = pmca_ten_individual_machine_assault_1
-			army_type = pmca_ten_individual_machine_assault_2
-			army_type = pmca_ten_individual_machine_assault_3
-			army_type = pmca_ten_perfected_clone_army
-			army_type = pmca_ten_cybrex_warform
+        # Vanilla x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @has_condensed_armies
+            CONTENT = "
+            army_type = pmca_ten_assault_army
+            army_type = pmca_ten_slave_army
+            army_type = pmca_ten_clone_army
+            army_type = pmca_ten_robotic_army
+            army_type = pmca_ten_psionic_army
+            army_type = pmca_ten_xenomorph_army
+            army_type = pmca_ten_gene_warrior_army
+            army_type = pmca_ten_wilderness_pre_sapient_assault_army
+            army_type = pmca_ten_abomination_army
+            army_type = pmca_ten_machine_assault_1
+            army_type = pmca_ten_machine_assault_2
+            army_type = pmca_ten_machine_assault_3
+            army_type = pmca_ten_undead_army
+            army_type = pmca_ten_warpling_army
+            army_type = pmca_ten_flamestorm_troopers_army
+            army_type = pmca_ten_individual_machine_assault_1
+            army_type = pmca_ten_individual_machine_assault_2
+            army_type = pmca_ten_individual_machine_assault_3
+            army_type = pmca_ten_perfected_clone_army
+            army_type = pmca_ten_ember_legion
+            army_type = pmca_ten_lm_imbued_army
+            army_type = pmca_ten_cybrex_warform
+            army_type = pmca_ten_imperial_legion
 			"
-		}
+        }
 
-		# ESC x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-			CONTENT = "
-			army_type = pmca_ten_esc_psionic_avatar_army
-			army_type = pmca_ten_esc_erasure_squad_army
-			army_type = pmca_ten_esc_eradicator_droids_army
-			army_type = pmca_ten_esc_tesla_troopers_army
-			army_type = pmca_ten_esc_tesla_droids_army
-			army_type = pmca_ten_esc_biohorror_army
-			"
-		}
+        # Extra Ship Components NEXT x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @has_esc_next
+            CONTENT = "
+            army_type = pmca_ten_esc_psionic_avatar_army
+            army_type = pmca_ten_esc_erasure_squad_army
+            army_type = pmca_ten_esc_eradicator_droids_army
+            army_type = pmca_ten_esc_tesla_troopers_army
+            army_type = pmca_ten_esc_tesla_droids_army
+            army_type = pmca_ten_esc_biohorror_army
+            "
+        }
 
-		# Gigastructures x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_gigastructures
-			CONTENT = "
-			army_type = pmca_ten_riesigerkatzenpanzer_assault
-			army_type = pmca_ten_giga_eaw_crystal_army
-			army_type = pmca_ten_giga_eaw_crystal_army_drone
-			army_type = pmca_ten_shroud_summoned_army
-			army_type = pmca_ten_maginot_assault_unit
-			army_type = pmca_ten_maginot_machine_assault_unit
-			"
-		}
+        # Ancient Empire x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @ag_tech_cost_1_1
+            CONTENT = "
+            army_type = pmca_ten_ag_player_shroud_army
+            army_type = pmca_ten_ag_psionic_xeno_army
+            army_type = pmca_ten_ag_adv_psionic_avatar_army
+            army_type = pmca_ten_ag_psionic_army_no_morale
+            "
+        }
 
-		# ACOT x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_ancient_caches
-			CONTENT = "
-			army_type = pmca_ten_acot_infantry_dm
-			army_type = pmca_ten_acot_infantry_ae
-			army_type = pmca_ten_acot_infantry_se
-			army_type = pmca_ten_acot_infantry_autoarmor
-			army_type = pmca_ten_acot_infantry_autoarmor_se
-			army_type = pmca_ten_acot_infantry_medium_autoarmor
-			army_type = pmca_ten_acot_infantry_medium_autoarmor_se
-			army_type = pmca_ten_acot_infantry_heavy_autoarmor
-			army_type = pmca_ten_acot_infantry_heavy_autoarmor_se
-			army_type = pmca_ten_acot_slave_army_dm
-			army_type = pmca_ten_acot_undead_army_dm
-			army_type = pmca_ten_acot_light_armor
-			army_type = pmca_ten_acot_light_armor_pilot
-			army_type = pmca_ten_acot_light_armor_dm
-			army_type = pmca_ten_acot_light_armor_pilot_dm
-			army_type = pmca_ten_acot_light_armor_ae
-			army_type = pmca_ten_acot_light_armor_pilot_ae
-			army_type = pmca_ten_acot_light_armor_se
-			army_type = pmca_ten_acot_light_armor_pilot_se
-			army_type = pmca_ten_acot_heavy_armor
-			army_type = pmca_ten_acot_heavy_armor_pilot
-			army_type = pmca_ten_acot_heavy_armor_dm
-			army_type = pmca_ten_acot_heavy_armor_pilot_dm
-			army_type = pmca_ten_acot_heavy_armor_ae
-			army_type = pmca_ten_acot_heavy_armor_pilot_ae
-			army_type = pmca_ten_acot_heavy_armor_se
-			army_type = pmca_ten_acot_heavy_armor_pilot_se
-			army_type = pmca_ten_acot_drone_army
-			army_type = pmca_ten_acot_drone_army_dm
-			army_type = pmca_ten_acot_drone_army_ae
-			army_type = pmca_ten_acot_drone_army_se
-			army_type = pmca_ten_acot_droid_army_dm
-			army_type = pmca_ten_acot_droid_army_ae
-			army_type = pmca_ten_acot_droid_army_se
-			army_type = pmca_ten_acot_droid_army_torso
-			army_type = pmca_ten_acot_droid_army_torso_dm
-			army_type = pmca_ten_acot_droid_army_torso_ae
-			army_type = pmca_ten_acot_droid_army_torso_se
-			army_type = pmca_ten_acot_droid_mech
-			army_type = pmca_ten_acot_droid_mech_dm
-			army_type = pmca_ten_acot_droid_mech_ae
-			army_type = pmca_ten_acot_droid_mech_se
-			army_type = pmca_ten_acot_special_force
-			army_type = pmca_ten_acot_special_force_dm
-			army_type = pmca_ten_acot_special_force_ae
-			army_type = pmca_ten_acot_special_force_se
-			army_type = pmca_ten_acot_army_mat
-			army_type = pmca_ten_acot_army_mat_pilot
-			army_type = pmca_ten_acot_army_mat_se
-			army_type = pmca_ten_acot_army_mat_pilot_se
-			army_type = pmca_ten_acot_army_spirit
-			army_type = pmca_ten_acot_army_spirit_se
-			army_type = pmca_ten_acot_army_phobe
-			army_type = pmca_ten_acot_army_phobe_se
-			army_type = pmca_ten_acot_army_phile
-			army_type = pmca_ten_acot_army_phile_se
-			army_type = pmca_ten_acot_army_ega
-			army_type = pmca_ten_acot_army_ega_pilot
-			army_type = pmca_ten_acot_army_ega_se
-			army_type = pmca_ten_acot_army_ega_pilot_se
-			army_type = pmca_ten_acot_army_auth
-			army_type = pmca_ten_acot_army_auth_se
-			army_type = pmca_ten_acot_army_paci
-			army_type = pmca_ten_acot_army_paci_se
-			army_type = pmca_ten_acot_army_mili
-			army_type = pmca_ten_acot_army_mili_se
-			army_type = pmca_ten_acot_army_cyborg
-			army_type = pmca_ten_acot_army_cyborg_se
-			army_type = pmca_ten_acot_army_cyborg_torso
-			army_type = pmca_ten_acot_army_cyborg_torso_se
-			army_type = pmca_ten_acot_army_synth
-			army_type = pmca_ten_acot_army_synth_se
-			army_type = pmca_ten_acot_army_synth_torso
-			army_type = pmca_ten_acot_army_synth_torso_se
-			army_type = pmca_ten_acot_army_psi
-			army_type = pmca_ten_acot_army_psi_se
-			army_type = pmca_ten_acot_army_clone_dm
-			army_type = pmca_ten_acot_army_gene
-			army_type = pmca_ten_acot_army_gene_se
-			army_type = pmca_ten_acot_army_machine_dm
-			army_type = pmca_ten_acot_army_machine_individual_dm
-			army_type = pmca_ten_acot_army_machine_ae
-			army_type = pmca_ten_acot_army_machine_individual_ae
-			army_type = pmca_ten_acot_army_machine_se
-			army_type = pmca_ten_acot_army_machine_individual_se
-			army_type = pmca_ten_acot_army_machine_torso
-			army_type = pmca_ten_acot_army_machine_individual_torso
-			army_type = pmca_ten_acot_army_machine_torso_dm
-			army_type = pmca_ten_acot_army_machine_individual_torso_dm
-			army_type = pmca_ten_acot_army_machine_torso_ae
-			army_type = pmca_ten_acot_army_machine_individual_torso_ae
-			army_type = pmca_ten_acot_army_machine_torso_se
-			army_type = pmca_ten_acot_army_machine_individual_torso_se
-			army_type = pmca_ten_acot_army_machine_spm
-			army_type = pmca_ten_acot_army_machine_spm_dm
-			army_type = pmca_ten_acot_army_machine_spm_ae
-			army_type = pmca_ten_acot_army_machine_spm_se
-			army_type = pmca_ten_acot_army_machine_light_dm
-			army_type = pmca_ten_acot_army_machine_individual_light_dm
-			army_type = pmca_ten_acot_army_machine_light_ae
-			army_type = pmca_ten_acot_army_machine_individual_light_ae
-			army_type = pmca_ten_acot_army_machine_light_se
-			army_type = pmca_ten_acot_army_machine_individual_light_se
-			army_type = pmca_ten_acot_army_machine_light_torso
-			army_type = pmca_ten_acot_army_machine_light_torso_dm
-			army_type = pmca_ten_acot_army_machine_light_torso_ae
-			army_type = pmca_ten_acot_army_machine_light_torso_se
-			army_type = pmca_ten_acot_army_machine_heavy_dm
-			army_type = pmca_ten_acot_army_machine_individual_heavy_dm
-			army_type = pmca_ten_acot_army_machine_heavy_ae
-			army_type = pmca_ten_acot_army_machine_individual_heavy_ae
-			army_type = pmca_ten_acot_army_machine_heavy_se
-			army_type = pmca_ten_acot_army_machine_individual_heavy_se
-			army_type = pmca_ten_acot_army_machine_cyborg
-			army_type = pmca_ten_acot_army_machine_cyborg_dm
-			army_type = pmca_ten_acot_army_machine_cyborg_ae
-			army_type = pmca_ten_acot_army_machine_cyborg_se
-			army_type = pmca_ten_acot_army_machine_cyborg_torso
-			army_type = pmca_ten_acot_army_machine_cyborg_torso_dm
-			army_type = pmca_ten_acot_army_machine_cyborg_torso_ae
-			army_type = pmca_ten_acot_army_machine_cyborg_torso_se
-			army_type = pmca_ten_acot_army_machine_special
-			army_type = pmca_ten_acot_army_machine_special_se
-			army_type = pmca_ten_acot_army_machine_special_torso
-			army_type = pmca_ten_acot_army_machine_special_torso_se
-			army_type = pmca_ten_acot_army_indie_machine_special
-			army_type = pmca_ten_acot_army_indie_machine_special_se
-			army_type = pmca_ten_acot_hive_infantry_1
-			army_type = pmca_ten_acot_hive_infantry_dm
-			army_type = pmca_ten_acot_hive_infantry_ae
-			army_type = pmca_ten_acot_hive_infantry_se
-			army_type = pmca_ten_acot_hive_clone_infantry_1
-			army_type = pmca_ten_acot_hive_clone_infantry_dm
-			army_type = pmca_ten_acot_hive_swarmer_1
-			army_type = pmca_ten_acot_hive_swarmer_dm
-			army_type = pmca_ten_acot_hive_swarmer_ae
-			army_type = pmca_ten_acot_hive_swarmer_se
-			army_type = pmca_ten_acot_hive_broodling_1
-			army_type = pmca_ten_acot_hive_broodling_dm
-			army_type = pmca_ten_acot_hive_broodling_ae
-			army_type = pmca_ten_acot_hive_broodling_se
-			army_type = pmca_ten_acot_hive_clone_swarmer_1
-			army_type = pmca_ten_acot_hive_light_1
-			army_type = pmca_ten_acot_hive_light_dm
-			army_type = pmca_ten_acot_hive_light_ae
-			army_type = pmca_ten_acot_hive_light_se
-			army_type = pmca_ten_acot_hive_clone_light_1
-			army_type = pmca_ten_acot_hive_clone_light_dm
-			army_type = pmca_ten_acot_hive_heavy_1
-			army_type = pmca_ten_acot_hive_heavy_dm
-			army_type = pmca_ten_acot_hive_heavy_ae
-			army_type = pmca_ten_acot_hive_heavy_se
-			army_type = pmca_ten_acot_hive_heavy_cocoon_1
-			army_type = pmca_ten_acot_hive_heavy_cocoon_dm
-			army_type = pmca_ten_acot_hive_heavy_cocoon_ae
-			army_type = pmca_ten_acot_hive_heavy_cocoon_se
-			army_type = pmca_ten_acot_army_hive_gene
-			army_type = pmca_ten_acot_army_hive_gene_ae
-			army_type = pmca_ten_acot_army_hive_gene_se
-			army_type = pmca_ten_acot_army_hive_gene_cocoon
-			army_type = pmca_ten_acot_army_hive_gene_cocoon_dm
-			army_type = pmca_ten_acot_army_hive_gene_cocoon_ae
-			army_type = pmca_ten_acot_army_hive_gene_cocoon_se
-			army_type = pmca_ten_acot_army_hive_control
-			army_type = pmca_ten_acot_army_hive_control_se
-			army_type = pmca_ten_acot_army_hive_control_cocoon
-			army_type = pmca_ten_acot_army_hive_control_cocoon_se
-			army_type = pmca_ten_acot_army_stellarite_bomber
-			"
-		}
+        # Ground Command x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_ground_command_compat
+            CONTENT = "
+            army_type = pmca_ten_infantry_army
+            army_type = pmca_ten_armor_division
+            army_type = pmca_ten_gravity_armor_division
+            army_type = pmca_ten_mechanized_division
+            army_type = pmca_ten_airborne_division
+            army_type = pmca_ten_marine_division
+            army_type = pmca_ten_fighter_wing
+            army_type = pmca_ten_close_air_support_wing
+            army_type = pmca_ten_strategic_bomber_wing
+            army_type = pmca_ten_titan_army
+            army_type = pmca_ten_chivalric_army
+            army_type = pmca_ten_mecha_chivalric_army
+            army_type = pmca_ten_republican_guard
+            army_type = pmca_ten_naval_infantry
+            army_type = pmca_ten_esoteric_army
+            army_type = pmca_ten_void_warband
+            army_type = pmca_ten_ideological_army
+            army_type = pmca_ten_imperial_guard
+            army_type = pmca_ten_conscript_army
+            army_type = pmca_ten_penal_army
+            army_type = pmca_ten_sacraficial_army
+            army_type = pmca_ten_sacraficial_nerve_army
+            army_type = pmca_ten_archaeo_army
+            army_type = pmca_ten_archaeo_army_better
+            army_type = pmca_ten_milita_army
+            army_type = pmca_ten_men_army
+            army_type = pmca_ten_ranger_army
+            army_type = pmca_ten_knight_army
+            army_type = pmca_ten_knight_air_army
+            army_type = pmca_ten_treb_army
+            army_type = pmca_ten_grail_army
+            army_type = pmca_ten_house_army
+            army_type = pmca_ten_royal_guard
+            army_type = pmca_ten_royal_men_army
+            army_type = pmca_ten_royal_knight_army
+            army_type = pmca_ten_psi_knight_army
+            army_type = pmca_ten_royal_air_army
+            army_type = pmca_ten_knight_walker_army
+            army_type = pmca_ten_pilgram_army
+            army_type = pmca_ten_security_army
+            army_type = pmca_ten_private_army
+            army_type = pmca_ten_gravity_private_army
+            army_type = pmca_ten_aero_wing
+            army_type = pmca_ten_permanent_army
+            army_type = pmca_ten_renegade_army
+            army_type = pmca_ten_executive_army
+            army_type = pmca_ten_gravity_executive_army
+            army_type = pmca_ten_strike_army
+            army_type = pmca_ten_security_army_merc
+            army_type = pmca_ten_private_army_merc
+            army_type = pmca_ten_gravity_private_army_merc
+            army_type = pmca_ten_aero_wing_merc
+            army_type = pmca_ten_strike_army_merc
+            army_type = pmca_ten_renegade_army_merc
+            army_type = pmca_ten_battle_bot
+            army_type = pmca_ten_war_bot
+            army_type = pmca_ten_synth_commandos
+            army_type = pmca_ten_nano_army
+            army_type = pmca_ten_hazard_army
+            army_type = pmca_ten_hazard_army_2
+            army_type = pmca_ten_hazard_army_3
+            army_type = pmca_ten_robo_commandos
+            army_type = pmca_ten_bohemoth_army
+            army_type = pmca_ten_eradicator_army
+            army_type = pmca_ten_auxillary_army
+            army_type = pmca_ten_perfected_army
+            army_type = pmca_ten_drone_combat_army
+            army_type = pmca_ten_clockwork_army
+            army_type = pmca_ten_sentinel_army
+            army_type = pmca_ten_cataphract_army
+            army_type = pmca_ten_hover_lance_army
+            army_type = pmca_ten_automata_army
+            army_type = pmca_ten_code_army
+            army_type = pmca_ten_eternal_army
+            army_type = pmca_ten_relic_guardians
+            army_type = pmca_ten_archon_army
+            army_type = pmca_ten_cybretic_corps
+            "
+        }
 
-		# SBTG x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_sbtg_mod
-			CONTENT = "
-			army_type = pmca_ten_origin_assault_guardian
-			army_type = pmca_ten_origin_autarch_guardian
-			army_type = pmca_ten_sofe_psionic_dark_archon
-			army_type = pmca_ten_sofe_omega_mech
-			"
-		}
+        # Halo Portraits: UNSC x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_unsc_compat
+            CONTENT = "
+            army_type = pmca_ten_unsc_marine_company
+            army_type = pmca_ten_unsc_odst_company
+            army_type = pmca_ten_unsc_spartan_IV_company
+            army_type = pmca_ten_unsc_jackrabbit_company
+            army_type = pmca_ten_unsc_warthog_company
+            army_type = pmca_ten_unsc_cobra_company
+            army_type = pmca_ten_unsc_mantis_company
+            army_type = pmca_ten_unsc_colossus
+            army_type = pmca_ten_unsc_scorpion_tank
+            army_type = pmca_ten_unsc_grizly_tank
+            army_type = pmca_ten_unsc_hornet_squadron
+            army_type = pmca_ten_unsc_sparrowhawk_squadron
+            army_type = pmca_ten_unsc_pelican_gunship
+            army_type = pmca_ten_unsc_shortsword_bomber
+            army_type = pmca_ten_unsc_broadsword_fighter_squadron
+            army_type = pmca_ten_unsc_vulture_gunship
+            army_type = pmca_ten_unsc_longsword_fighter
+            army_type = pmca_ten_unsc_condor_gunship
+            army_type = pmca_ten_ancient_human_warriors
+            army_type = pmca_ten_ancient_sanshyuum_warriors
+            army_type = pmca_ten_ancient_human_fibril_tanks
+            army_type = pmca_ten_ancient_human_fibril_artillery
+            army_type = pmca_ten_ancient_human_combat_suit
+            army_type = pmca_ten_ancient_human_sanshyuum_tuned_siege_platform
+            "
+        }
 
-		# AOT x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_acquisition_of_tech
-			CONTENT = "
-			army_type = pmca_ten_acot_phanon_army
-			army_type = pmca_ten_acot_phanon_army_sniper
-			army_type = pmca_ten_acot_phanon_elite
-			army_type = pmca_ten_acot_phanon_tank
-			army_type = pmca_ten_acot_phanon_attack_dog
-			army_type = pmca_ten_acot_phanon_attack_mammoth
-			army_type = pmca_ten_acot_phanon_operative
-			army_type = pmca_ten_acot_phanon_operative_type_b
-			"
-		}
+        # Halo Portraits: Covenant x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_covenant_compat
+            CONTENT = "
+            army_type = pmca_ten_cov_sangheili_legion
+            army_type = pmca_ten_sos_sangheili_legion
+            army_type = pmca_ten_cov_jiralhanae_legion
+            army_type = pmca_ten_cov_honor_guard
+            army_type = pmca_ten_cov_prelate
+            army_type = pmca_ten_cov_warrior_creche
+            army_type = pmca_ten_cov_brute_skein
+            army_type = pmca_ten_cov_hunter_warform
+            army_type = pmca_ten_cov_kigyar_mercenaries
+            army_type = pmca_ten_cov_tvaoan_skirmishers
+            army_type = pmca_ten_cov_drone_swarm
+            army_type = pmca_ten_cov_ghost_company
+            army_type = pmca_ten_cov_spectre_company
+            army_type = pmca_ten_cov_locust_company
+            army_type = pmca_ten_cov_revenant_company
+            army_type = pmca_ten_cov_wraith_tank
+            army_type = pmca_ten_cov_banshee_squadron
+            army_type = pmca_ten_cov_phantom_gunship
+            army_type = pmca_ten_cov_lich_gunship
+            army_type = pmca_ten_cov_scarab
+            army_type = pmca_ten_cov_draugr
+            army_type = pmca_ten_cov_kraken
+            army_type = pmca_ten_brute_chopper_company
+            army_type = pmca_ten_brute_prowler_company
+            army_type = pmca_ten_didact_promethean_crawler_army
+            army_type = pmca_ten_didact_promethean_soldier_army
+            army_type = pmca_ten_didact_promethean_knight_army
+            army_type = pmca_ten_didact_promethean_phaetons
+            "
+        }
 
-		# Evolved x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_stellaris_evolved
-			CONTENT = "
-			army_type = pmca_ten_tec_ascended_nanite_army
-			army_type = pmca_ten_tec_shambling_robot
-			army_type = pmca_ten_tec_husk
-			army_type = pmca_ten_tec_zombified_army
-			army_type = pmca_ten_tec_siegecraft_army
-			"
-		}
+        # Halo Portraits: Flood x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_flood_compat
+            CONTENT = "
+            army_type = pmca_ten_flood_infection_forms
+            army_type = pmca_ten_flood_carrier_forms
+            army_type = pmca_ten_flood_combat_forms
+            army_type = pmca_ten_flood_thrasher_forms
+            army_type = pmca_ten_flood_pure_stalker_forms
+            army_type = pmca_ten_flood_pure_ranged_forms
+            army_type = pmca_ten_flood_pure_tank_form
+            army_type = pmca_ten_flood_pure_infestor_forms
+            army_type = pmca_ten_flood_seeder_forms
+            army_type = pmca_ten_flood_bomber_forms
+            army_type = pmca_ten_flood_hellion
+            army_type = pmca_ten_flood_blightstalkers
+            army_type = pmca_ten_flood_juggernaut
+            army_type = pmca_ten_flood_abomination
+            "
+        }
 
-		# SLGT x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @slgt_mod
-			CONTENT = "
-			army_type = pmca_ten_slgt_gene_titan_army
-			army_type = pmca_ten_slgt_immortal_titan_army
-			army_type = pmca_ten_slgt_shroud_touched_army
-			army_type = pmca_ten_slgt_shroud_host_army
-			army_type = pmca_ten_slgt_cyborg_siege_army
-			army_type = pmca_ten_slgt_self_replicating_army
-			army_type = pmca_ten_slgt_synth_warform
-			army_type = pmca_ten_slgt_omnivirus_army
-			army_type = pmca_ten_slgt_dark_assault_army
-			army_type = pmca_ten_slgt_specter_assault_army
-			army_type = pmca_ten_slgt_undead_chimera_army
-			army_type = pmca_ten_slgt_flux_abomination_army
-			army_type = pmca_ten_slgt_undead_brute_army
-			"
-		}
+        # Halo Portraits: Banished x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_banished_compat
+            CONTENT = "
+            army_type = pmca_ten_banished_legion
+            army_type = pmca_ten_banished_goliaths
+            army_type = pmca_ten_banished_atriox_chosen
+            army_type = pmca_ten_banished_jackal_mercenaries
+            army_type = pmca_ten_banished_honor_guards
+            army_type = pmca_ten_banished_ghosts
+            army_type = pmca_ten_banished_choppers
+            army_type = pmca_ten_banished_skitterers
+            army_type = pmca_ten_banished_goblins
+            army_type = pmca_ten_banished_locusts
+            army_type = pmca_ten_banished_reavers
+            army_type = pmca_ten_banished_marauders
+            army_type = pmca_ten_banished_wraiths
+            army_type = pmca_ten_banished_banshee_squadron
+            army_type = pmca_ten_banished_blisterbacks
+            army_type = pmca_ten_banished_phantom
+            army_type = pmca_ten_banished_lich
+            army_type = pmca_ten_banished_scarab
+            "
+        }
 
-		# Military Enhancements 2.0 x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_military_enhancements
-			CONTENT = "
-			army_type = pmca_ten_heavy_assault_army
-			army_type = pmca_ten_special_forces_army
-			army_type = pmca_ten_advanced_tank_army
-			army_type = pmca_ten_purge_squads_army
-			army_type = pmca_ten_mech_trooper_army
-			army_type = pmca_ten_psionic_army_2
-			army_type = pmca_ten_clone_army2
-			army_type = pmca_ten_hive_assault_army
-			army_type = pmca_ten_hive_heavy_assault_army
-			army_type = pmca_ten_hive_gene_warrior_army
-			army_type = pmca_ten_ind_mach_heavy_assault_army
-			army_type = pmca_ten_ind_mach_commando_army
-			army_type = pmca_ten_ind_mach_integrated_armor_army
-			army_type = pmca_ten_ind_mach_advanced_infantry
-			army_type = pmca_ten_ind_mach_autonomous_war_droid
-			army_type = pmca_ten_ind_mach_purge_squads_army
-			"
-		}
-
-		# Playable Katzenartig Imperium x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_pki_mod
-			CONTENT = "
-			army_type = pmca_ten_katzensoldaten_army
-			army_type = pmca_ten_angriffskatze_army
-			army_type = pmca_ten_gepanzertertank_army
-			army_type = pmca_ten_atmospharischekatzenbomber_army
-			army_type = pmca_ten_luftkatzenvernichter_army
-			army_type = pmca_ten_pki_riesigerkatzenpanzer_assault
-			"
-		}
-
-		# EUTAB Unofficial x10
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_eutab_unofficial
-			CONTENT = "
-			army_type = pmca_ten_eutab_mindlink_commando_army
-			army_type = pmca_ten_eutab_terror_drones
-			army_type = pmca_ten_eutab_janissary_army
-			army_type = pmca_ten_eutab_clone_commando_pod
-			"
-		}
-	}
+        # Halo Portraits: Forerunners x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_forerunners_compat
+            CONTENT = "
+            army_type = pmca_ten_forerunner_aggressor_sentinels
+            army_type = pmca_ten_forerunner_protector_sentinels
+            army_type = pmca_ten_forerunner_onyx_sentinels
+            army_type = pmca_ten_forerunner_strato_sentinel
+            army_type = pmca_ten_forerunner_armiger_army
+            army_type = pmca_ten_forerunner_warrior_servant_army
+            army_type = pmca_ten_forerunner_war_sphinx
+            army_type = pmca_ten_promethean_warrior_servant_army
+            army_type = pmca_ten_promethean_seekers
+            army_type = pmca_ten_promethean_crawler_army
+            army_type = pmca_ten_promethean_soldier_army
+            army_type = pmca_ten_promethean_knight_army
+            army_type = pmca_ten_promethean_lancer_army
+            army_type = pmca_ten_promethean_battlewagon_army
+            army_type = pmca_ten_promethean_phaetons
+            army_type = pmca_ten_created_executors
+            "
+        }
+    }
 }
 
-# Scopes: this = army
+# Check if the army is a x100 Condensed Army
 pmca_is_times_hundred_army = {
-	optimize_memory
-	OR = {
-		has_army_flag = pmca_times_hundred_army
+    optimize_memory
+    OR = {
+        has_army_flag = pmca_times_hundred_army
 
-		# Vanilla x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_condensed_armies
-			CONTENT = "
-			army_type = pmca_hundred_assault_army
-			army_type = pmca_hundred_slave_army
-			army_type = pmca_hundred_clone_army
-			army_type = pmca_hundred_robotic_army
-			army_type = pmca_hundred_psionic_army
-			army_type = pmca_hundred_xenomorph_army
-			army_type = pmca_hundred_gene_warrior_army
-			army_type = pmca_hundred_wilderness_pre_sapient_assault_army
-			army_type = pmca_hundred_machine_assault_1
-			army_type = pmca_hundred_machine_assault_2
-			army_type = pmca_hundred_machine_assault_3
-			army_type = pmca_hundred_undead_army
-			army_type = pmca_hundred_warpling_army
-			army_type = pmca_hundred_flamestorm_troopers_army
-			army_type = pmca_hundred_individual_machine_assault_1
-			army_type = pmca_hundred_individual_machine_assault_2
-			army_type = pmca_hundred_individual_machine_assault_3
-			army_type = pmca_hundred_perfected_clone_army
-			army_type = pmca_hundred_cybrex_warform
+        # Vanilla x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @has_condensed_armies
+            CONTENT = "
+            army_type = pmca_hundred_assault_army
+            army_type = pmca_hundred_slave_army
+            army_type = pmca_hundred_clone_army
+            army_type = pmca_hundred_robotic_army
+            army_type = pmca_hundred_psionic_army
+            army_type = pmca_hundred_xenomorph_army
+            army_type = pmca_hundred_gene_warrior_army
+            army_type = pmca_hundred_wilderness_pre_sapient_assault_army
+            army_type = pmca_hundred_abomination_army
+            army_type = pmca_hundred_machine_assault_1
+            army_type = pmca_hundred_machine_assault_2
+            army_type = pmca_hundred_machine_assault_3
+            army_type = pmca_hundred_undead_army
+            army_type = pmca_hundred_warpling_army
+            army_type = pmca_hundred_flamestorm_troopers_army
+            army_type = pmca_hundred_individual_machine_assault_1
+            army_type = pmca_hundred_individual_machine_assault_2
+            army_type = pmca_hundred_individual_machine_assault_3
+            army_type = pmca_hundred_perfected_clone_army
+            army_type = pmca_hundred_ember_legion
+            army_type = pmca_hundred_lm_imbued_army
+            army_type = pmca_hundred_cybrex_warform
+            army_type = pmca_hundred_imperial_legion
 			"
-		}
+        }
 
-		# ESC x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @ESC_WEAPON_crystalline_s_t6_cost_crystals
-			CONTENT = "
-			army_type = pmca_hundred_esc_psionic_avatar_army
-			army_type = pmca_hundred_esc_erasure_squad_army
-			army_type = pmca_hundred_esc_eradicator_droids_army
-			army_type = pmca_hundred_esc_tesla_troopers_army
-			army_type = pmca_hundred_esc_tesla_droids_army
-			army_type = pmca_hundred_esc_biohorror_army
-			"
-		}
+        # Ancient Empire x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @ag_tech_cost_1_1
+            CONTENT = "
+            army_type = pmca_hundred_ag_player_shroud_army
+            army_type = pmca_hundred_ag_psionic_xeno_army
+            army_type = pmca_hundred_ag_adv_psionic_avatar_army
+            army_type = pmca_hundred_ag_psionic_army_no_morale
+            "
+        }
 
-		# Gigastructures x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_gigastructures
-			CONTENT = "
-			army_type = pmca_hundred_riesigerkatzenpanzer_assault
-			army_type = pmca_hundred_giga_eaw_crystal_army
-			army_type = pmca_hundred_giga_eaw_crystal_army_drone
-			army_type = pmca_hundred_shroud_summoned_army
-			army_type = pmca_hundred_maginot_assault_unit
-			army_type = pmca_hundred_maginot_machine_assault_unit
-			"
-		}
+        # Extra Ship Components NEXT x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @has_esc_next
+            CONTENT = "
+            army_type = pmca_hundred_esc_psionic_avatar_army
+            army_type = pmca_hundred_esc_erasure_squad_army
+            army_type = pmca_hundred_esc_eradicator_droids_army
+            army_type = pmca_hundred_esc_tesla_troopers_army
+            army_type = pmca_hundred_esc_tesla_droids_army
+            army_type = pmca_hundred_esc_biohorror_army
+            "
+        }
 
-		# ACOT x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_ancient_caches
-			CONTENT = "
-			army_type = pmca_hundred_acot_infantry_dm
-			army_type = pmca_hundred_acot_infantry_ae
-			army_type = pmca_hundred_acot_infantry_se
-			army_type = pmca_hundred_acot_infantry_autoarmor
-			army_type = pmca_hundred_acot_infantry_autoarmor_se
-			army_type = pmca_hundred_acot_infantry_medium_autoarmor
-			army_type = pmca_hundred_acot_infantry_medium_autoarmor_se
-			army_type = pmca_hundred_acot_infantry_heavy_autoarmor
-			army_type = pmca_hundred_acot_infantry_heavy_autoarmor_se
-			army_type = pmca_hundred_acot_slave_army_dm
-			army_type = pmca_hundred_acot_undead_army_dm
-			army_type = pmca_hundred_acot_light_armor
-			army_type = pmca_hundred_acot_light_armor_pilot
-			army_type = pmca_hundred_acot_light_armor_dm
-			army_type = pmca_hundred_acot_light_armor_pilot_dm
-			army_type = pmca_hundred_acot_light_armor_ae
-			army_type = pmca_hundred_acot_light_armor_pilot_ae
-			army_type = pmca_hundred_acot_light_armor_se
-			army_type = pmca_hundred_acot_light_armor_pilot_se
-			army_type = pmca_hundred_acot_heavy_armor
-			army_type = pmca_hundred_acot_heavy_armor_pilot
-			army_type = pmca_hundred_acot_heavy_armor_dm
-			army_type = pmca_hundred_acot_heavy_armor_pilot_dm
-			army_type = pmca_hundred_acot_heavy_armor_ae
-			army_type = pmca_hundred_acot_heavy_armor_pilot_ae
-			army_type = pmca_hundred_acot_heavy_armor_se
-			army_type = pmca_hundred_acot_heavy_armor_pilot_se
-			army_type = pmca_hundred_acot_drone_army
-			army_type = pmca_hundred_acot_drone_army_dm
-			army_type = pmca_hundred_acot_drone_army_ae
-			army_type = pmca_hundred_acot_drone_army_se
-			army_type = pmca_hundred_acot_droid_army_dm
-			army_type = pmca_hundred_acot_droid_army_ae
-			army_type = pmca_hundred_acot_droid_army_se
-			army_type = pmca_hundred_acot_droid_army_torso
-			army_type = pmca_hundred_acot_droid_army_torso_dm
-			army_type = pmca_hundred_acot_droid_army_torso_ae
-			army_type = pmca_hundred_acot_droid_army_torso_se
-			army_type = pmca_hundred_acot_droid_mech
-			army_type = pmca_hundred_acot_droid_mech_dm
-			army_type = pmca_hundred_acot_droid_mech_ae
-			army_type = pmca_hundred_acot_droid_mech_se
-			army_type = pmca_hundred_acot_special_force
-			army_type = pmca_hundred_acot_special_force_dm
-			army_type = pmca_hundred_acot_special_force_ae
-			army_type = pmca_hundred_acot_special_force_se
-			army_type = pmca_hundred_acot_army_mat
-			army_type = pmca_hundred_acot_army_mat_pilot
-			army_type = pmca_hundred_acot_army_mat_se
-			army_type = pmca_hundred_acot_army_mat_pilot_se
-			army_type = pmca_hundred_acot_army_spirit
-			army_type = pmca_hundred_acot_army_spirit_se
-			army_type = pmca_hundred_acot_army_phobe
-			army_type = pmca_hundred_acot_army_phobe_se
-			army_type = pmca_hundred_acot_army_phile
-			army_type = pmca_hundred_acot_army_phile_se
-			army_type = pmca_hundred_acot_army_ega
-			army_type = pmca_hundred_acot_army_ega_pilot
-			army_type = pmca_hundred_acot_army_ega_se
-			army_type = pmca_hundred_acot_army_ega_pilot_se
-			army_type = pmca_hundred_acot_army_auth
-			army_type = pmca_hundred_acot_army_auth_se
-			army_type = pmca_hundred_acot_army_paci
-			army_type = pmca_hundred_acot_army_paci_se
-			army_type = pmca_hundred_acot_army_mili
-			army_type = pmca_hundred_acot_army_mili_se
-			army_type = pmca_hundred_acot_army_cyborg
-			army_type = pmca_hundred_acot_army_cyborg_se
-			army_type = pmca_hundred_acot_army_cyborg_torso
-			army_type = pmca_hundred_acot_army_cyborg_torso_se
-			army_type = pmca_hundred_acot_army_synth
-			army_type = pmca_hundred_acot_army_synth_se
-			army_type = pmca_hundred_acot_army_synth_torso
-			army_type = pmca_hundred_acot_army_synth_torso_se
-			army_type = pmca_hundred_acot_army_psi
-			army_type = pmca_hundred_acot_army_psi_se
-			army_type = pmca_hundred_acot_army_clone_dm
-			army_type = pmca_hundred_acot_army_gene
-			army_type = pmca_hundred_acot_army_gene_se
-			army_type = pmca_hundred_acot_army_machine_dm
-			army_type = pmca_hundred_acot_army_machine_individual_dm
-			army_type = pmca_hundred_acot_army_machine_ae
-			army_type = pmca_hundred_acot_army_machine_individual_ae
-			army_type = pmca_hundred_acot_army_machine_se
-			army_type = pmca_hundred_acot_army_machine_individual_se
-			army_type = pmca_hundred_acot_army_machine_torso
-			army_type = pmca_hundred_acot_army_machine_individual_torso
-			army_type = pmca_hundred_acot_army_machine_torso_dm
-			army_type = pmca_hundred_acot_army_machine_individual_torso_dm
-			army_type = pmca_hundred_acot_army_machine_torso_ae
-			army_type = pmca_hundred_acot_army_machine_individual_torso_ae
-			army_type = pmca_hundred_acot_army_machine_torso_se
-			army_type = pmca_hundred_acot_army_machine_individual_torso_se
-			army_type = pmca_hundred_acot_army_machine_spm
-			army_type = pmca_hundred_acot_army_machine_spm_dm
-			army_type = pmca_hundred_acot_army_machine_spm_ae
-			army_type = pmca_hundred_acot_army_machine_spm_se
-			army_type = pmca_hundred_acot_army_machine_light_dm
-			army_type = pmca_hundred_acot_army_machine_individual_light_dm
-			army_type = pmca_hundred_acot_army_machine_light_ae
-			army_type = pmca_hundred_acot_army_machine_individual_light_ae
-			army_type = pmca_hundred_acot_army_machine_light_se
-			army_type = pmca_hundred_acot_army_machine_individual_light_se
-			army_type = pmca_hundred_acot_army_machine_light_torso
-			army_type = pmca_hundred_acot_army_machine_light_torso_dm
-			army_type = pmca_hundred_acot_army_machine_light_torso_ae
-			army_type = pmca_hundred_acot_army_machine_light_torso_se
-			army_type = pmca_hundred_acot_army_machine_heavy_dm
-			army_type = pmca_hundred_acot_army_machine_individual_heavy_dm
-			army_type = pmca_hundred_acot_army_machine_heavy_ae
-			army_type = pmca_hundred_acot_army_machine_individual_heavy_ae
-			army_type = pmca_hundred_acot_army_machine_heavy_se
-			army_type = pmca_hundred_acot_army_machine_individual_heavy_se
-			army_type = pmca_hundred_acot_army_machine_cyborg
-			army_type = pmca_hundred_acot_army_machine_cyborg_dm
-			army_type = pmca_hundred_acot_army_machine_cyborg_ae
-			army_type = pmca_hundred_acot_army_machine_cyborg_se
-			army_type = pmca_hundred_acot_army_machine_cyborg_torso
-			army_type = pmca_hundred_acot_army_machine_cyborg_torso_dm
-			army_type = pmca_hundred_acot_army_machine_cyborg_torso_ae
-			army_type = pmca_hundred_acot_army_machine_cyborg_torso_se
-			army_type = pmca_hundred_acot_army_machine_special
-			army_type = pmca_hundred_acot_army_machine_special_se
-			army_type = pmca_hundred_acot_army_machine_special_torso
-			army_type = pmca_hundred_acot_army_machine_special_torso_se
-			army_type = pmca_hundred_acot_army_indie_machine_special
-			army_type = pmca_hundred_acot_army_indie_machine_special_se
-			army_type = pmca_hundred_acot_hive_infantry_1
-			army_type = pmca_hundred_acot_hive_infantry_dm
-			army_type = pmca_hundred_acot_hive_infantry_ae
-			army_type = pmca_hundred_acot_hive_infantry_se
-			army_type = pmca_hundred_acot_hive_clone_infantry_1
-			army_type = pmca_hundred_acot_hive_clone_infantry_dm
-			army_type = pmca_hundred_acot_hive_swarmer_1
-			army_type = pmca_hundred_acot_hive_swarmer_dm
-			army_type = pmca_hundred_acot_hive_swarmer_ae
-			army_type = pmca_hundred_acot_hive_swarmer_se
-			army_type = pmca_hundred_acot_hive_broodling_1
-			army_type = pmca_hundred_acot_hive_broodling_dm
-			army_type = pmca_hundred_acot_hive_broodling_ae
-			army_type = pmca_hundred_acot_hive_broodling_se
-			army_type = pmca_hundred_acot_hive_clone_swarmer_1
-			army_type = pmca_hundred_acot_hive_light_1
-			army_type = pmca_hundred_acot_hive_light_dm
-			army_type = pmca_hundred_acot_hive_light_ae
-			army_type = pmca_hundred_acot_hive_light_se
-			army_type = pmca_hundred_acot_hive_clone_light_1
-			army_type = pmca_hundred_acot_hive_clone_light_dm
-			army_type = pmca_hundred_acot_hive_heavy_1
-			army_type = pmca_hundred_acot_hive_heavy_dm
-			army_type = pmca_hundred_acot_hive_heavy_ae
-			army_type = pmca_hundred_acot_hive_heavy_se
-			army_type = pmca_hundred_acot_hive_heavy_cocoon_1
-			army_type = pmca_hundred_acot_hive_heavy_cocoon_dm
-			army_type = pmca_hundred_acot_hive_heavy_cocoon_ae
-			army_type = pmca_hundred_acot_hive_heavy_cocoon_se
-			army_type = pmca_hundred_acot_army_hive_gene
-			army_type = pmca_hundred_acot_army_hive_gene_ae
-			army_type = pmca_hundred_acot_army_hive_gene_se
-			army_type = pmca_hundred_acot_army_hive_gene_cocoon
-			army_type = pmca_hundred_acot_army_hive_gene_cocoon_dm
-			army_type = pmca_hundred_acot_army_hive_gene_cocoon_ae
-			army_type = pmca_hundred_acot_army_hive_gene_cocoon_se
-			army_type = pmca_hundred_acot_army_hive_control
-			army_type = pmca_hundred_acot_army_hive_control_se
-			army_type = pmca_hundred_acot_army_hive_control_cocoon
-			army_type = pmca_hundred_acot_army_hive_control_cocoon_se
-			army_type = pmca_hundred_acot_army_stellarite_bomber
-			"
-		}
+        # Ground Command x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_ground_command_compat
+            CONTENT = "
+            army_type = pmca_hundred_infantry_army
+            army_type = pmca_hundred_armor_division
+            army_type = pmca_hundred_gravity_armor_division
+            army_type = pmca_hundred_mechanized_division
+            army_type = pmca_hundred_airborne_division
+            army_type = pmca_hundred_marine_division
+            army_type = pmca_hundred_fighter_wing
+            army_type = pmca_hundred_close_air_support_wing
+            army_type = pmca_hundred_strategic_bomber_wing
+            army_type = pmca_hundred_titan_army
+            army_type = pmca_hundred_chivalric_army
+            army_type = pmca_hundred_mecha_chivalric_army
+            army_type = pmca_hundred_republican_guard
+            army_type = pmca_hundred_naval_infantry
+            army_type = pmca_hundred_esoteric_army
+            army_type = pmca_hundred_void_warband
+            army_type = pmca_hundred_ideological_army
+            army_type = pmca_hundred_imperial_guard
+            army_type = pmca_hundred_conscript_army
+            army_type = pmca_hundred_penal_army
+            army_type = pmca_hundred_sacraficial_army
+            army_type = pmca_hundred_sacraficial_nerve_army
+            army_type = pmca_hundred_archaeo_army
+            army_type = pmca_hundred_archaeo_army_better
+            army_type = pmca_hundred_milita_army
+            army_type = pmca_hundred_men_army
+            army_type = pmca_hundred_ranger_army
+            army_type = pmca_hundred_knight_army
+            army_type = pmca_hundred_knight_air_army
+            army_type = pmca_hundred_treb_army
+            army_type = pmca_hundred_grail_army
+            army_type = pmca_hundred_house_army
+            army_type = pmca_hundred_royal_guard
+            army_type = pmca_hundred_royal_men_army
+            army_type = pmca_hundred_royal_knight_army
+            army_type = pmca_hundred_psi_knight_army
+            army_type = pmca_hundred_royal_air_army
+            army_type = pmca_hundred_knight_walker_army
+            army_type = pmca_hundred_pilgram_army
+            army_type = pmca_hundred_security_army
+            army_type = pmca_hundred_private_army
+            army_type = pmca_hundred_gravity_private_army
+            army_type = pmca_hundred_aero_wing
+            army_type = pmca_hundred_permanent_army
+            army_type = pmca_hundred_renegade_army
+            army_type = pmca_hundred_executive_army
+            army_type = pmca_hundred_gravity_executive_army
+            army_type = pmca_hundred_strike_army
+            army_type = pmca_hundred_security_army_merc
+            army_type = pmca_hundred_private_army_merc
+            army_type = pmca_hundred_gravity_private_army_merc
+            army_type = pmca_hundred_aero_wing_merc
+            army_type = pmca_hundred_strike_army_merc
+            army_type = pmca_hundred_renegade_army_merc
+            army_type = pmca_hundred_battle_bot
+            army_type = pmca_hundred_war_bot
+            army_type = pmca_hundred_synth_commandos
+            army_type = pmca_hundred_nano_army
+            army_type = pmca_hundred_hazard_army
+            army_type = pmca_hundred_hazard_army_2
+            army_type = pmca_hundred_hazard_army_3
+            army_type = pmca_hundred_robo_commandos
+            army_type = pmca_hundred_bohemoth_army
+            army_type = pmca_hundred_eradicator_army
+            army_type = pmca_hundred_auxillary_army
+            army_type = pmca_hundred_perfected_army
+            army_type = pmca_hundred_drone_combat_army
+            army_type = pmca_hundred_clockwork_army
+            army_type = pmca_hundred_sentinel_army
+            army_type = pmca_hundred_cataphract_army
+            army_type = pmca_hundred_hover_lance_army
+            army_type = pmca_hundred_automata_army
+            army_type = pmca_hundred_code_army
+            army_type = pmca_hundred_eternal_army
+            army_type = pmca_hundred_relic_guardians
+            army_type = pmca_hundred_archon_army
+            army_type = pmca_hundred_cybretic_corps
+            "
+        }
 
-		# SBTG x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_sbtg_mod
-			CONTENT = "
-			army_type = pmca_hundred_origin_assault_guardian
-			army_type = pmca_hundred_origin_autarch_guardian
-			army_type = pmca_hundred_sofe_psionic_dark_archon
-			army_type = pmca_hundred_sofe_omega_mech
-			"
-		}
+        # Halo Portraits: UNSC x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_unsc_compat
+            CONTENT = "
+            army_type = pmca_hundred_unsc_marine_company
+            army_type = pmca_hundred_unsc_odst_company
+            army_type = pmca_hundred_unsc_spartan_IV_company
+            army_type = pmca_hundred_unsc_jackrabbit_company
+            army_type = pmca_hundred_unsc_warthog_company
+            army_type = pmca_hundred_unsc_cobra_company
+            army_type = pmca_hundred_unsc_mantis_company
+            army_type = pmca_hundred_unsc_colossus
+            army_type = pmca_hundred_unsc_scorpion_tank
+            army_type = pmca_hundred_unsc_grizly_tank
+            army_type = pmca_hundred_unsc_hornet_squadron
+            army_type = pmca_hundred_unsc_sparrowhawk_squadron
+            army_type = pmca_hundred_unsc_pelican_gunship
+            army_type = pmca_hundred_unsc_shortsword_bomber
+            army_type = pmca_hundred_unsc_broadsword_fighter_squadron
+            army_type = pmca_hundred_unsc_vulture_gunship
+            army_type = pmca_hundred_unsc_longsword_fighter
+            army_type = pmca_hundred_unsc_condor_gunship
+            army_type = pmca_hundred_ancient_human_warriors
+            army_type = pmca_hundred_ancient_sanshyuum_warriors
+            army_type = pmca_hundred_ancient_human_fibril_tanks
+            army_type = pmca_hundred_ancient_human_fibril_artillery
+            army_type = pmca_hundred_ancient_human_combat_suit
+            army_type = pmca_hundred_ancient_human_sanshyuum_tuned_siege_platform
+            "
+        }
 
-		# AOT x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_acquisition_of_tech
-			CONTENT = "
-			army_type = pmca_hundred_acot_phanon_army
-			army_type = pmca_hundred_acot_phanon_army_sniper
-			army_type = pmca_hundred_acot_phanon_elite
-			army_type = pmca_hundred_acot_phanon_tank
-			army_type = pmca_hundred_acot_phanon_attack_dog
-			army_type = pmca_hundred_acot_phanon_attack_mammoth
-			army_type = pmca_hundred_acot_phanon_operative
-			army_type = pmca_hundred_acot_phanon_operative_type_b
-			"
-		}
+        # Halo Portraits: Covenant x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_covenant_compat
+            CONTENT = "
+            army_type = pmca_hundred_cov_sangheili_legion
+            army_type = pmca_hundred_sos_sangheili_legion
+            army_type = pmca_hundred_cov_jiralhanae_legion
+            army_type = pmca_hundred_cov_honor_guard
+            army_type = pmca_hundred_cov_prelate
+            army_type = pmca_hundred_cov_warrior_creche
+            army_type = pmca_hundred_cov_brute_skein
+            army_type = pmca_hundred_cov_hunter_warform
+            army_type = pmca_hundred_cov_kigyar_mercenaries
+            army_type = pmca_hundred_cov_tvaoan_skirmishers
+            army_type = pmca_hundred_cov_drone_swarm
+            army_type = pmca_hundred_cov_ghost_company
+            army_type = pmca_hundred_cov_spectre_company
+            army_type = pmca_hundred_cov_locust_company
+            army_type = pmca_hundred_cov_revenant_company
+            army_type = pmca_hundred_cov_wraith_tank
+            army_type = pmca_hundred_cov_banshee_squadron
+            army_type = pmca_hundred_cov_phantom_gunship
+            army_type = pmca_hundred_cov_lich_gunship
+            army_type = pmca_hundred_cov_scarab
+            army_type = pmca_hundred_cov_draugr
+            army_type = pmca_hundred_cov_kraken
+            army_type = pmca_hundred_brute_chopper_company
+            army_type = pmca_hundred_brute_prowler_company
+            army_type = pmca_hundred_didact_promethean_crawler_army
+            army_type = pmca_hundred_didact_promethean_soldier_army
+            army_type = pmca_hundred_didact_promethean_knight_army
+            army_type = pmca_hundred_didact_promethean_phaetons
+            "
+        }
 
-		# Evolved x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_stellaris_evolved
-			CONTENT = "
-			army_type = pmca_hundred_tec_ascended_nanite_army
-			army_type = pmca_hundred_tec_shambling_robot
-			army_type = pmca_hundred_tec_husk
-			army_type = pmca_hundred_tec_zombified_army
-			army_type = pmca_hundred_tec_siegecraft_army
-			"
-		}
+        # Halo Portraits: Flood x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_flood_compat
+            CONTENT = "
+            army_type = pmca_hundred_flood_infection_forms
+            army_type = pmca_hundred_flood_carrier_forms
+            army_type = pmca_hundred_flood_combat_forms
+            army_type = pmca_hundred_flood_thrasher_forms
+            army_type = pmca_hundred_flood_pure_stalker_forms
+            army_type = pmca_hundred_flood_pure_ranged_forms
+            army_type = pmca_hundred_flood_pure_tank_form
+            army_type = pmca_hundred_flood_pure_infestor_forms
+            army_type = pmca_hundred_flood_seeder_forms
+            army_type = pmca_hundred_flood_bomber_forms
+            army_type = pmca_hundred_flood_hellion
+            army_type = pmca_hundred_flood_blightstalkers
+            army_type = pmca_hundred_flood_juggernaut
+            army_type = pmca_hundred_flood_abomination
+            "
+        }
 
-		# SLGT x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @slgt_mod
-			CONTENT = "
-			army_type = pmca_hundred_slgt_gene_titan_army
-			army_type = pmca_hundred_slgt_immortal_titan_army
-			army_type = pmca_hundred_slgt_shroud_touched_army
-			army_type = pmca_hundred_slgt_shroud_host_army
-			army_type = pmca_hundred_slgt_cyborg_siege_army
-			army_type = pmca_hundred_slgt_self_replicating_army
-			army_type = pmca_hundred_slgt_synth_warform
-			army_type = pmca_hundred_slgt_omnivirus_army
-			army_type = pmca_hundred_slgt_dark_assault_army
-			army_type = pmca_hundred_slgt_specter_assault_army
-			army_type = pmca_hundred_slgt_undead_chimera_army
-			army_type = pmca_hundred_slgt_flux_abomination_army
-			army_type = pmca_hundred_slgt_undead_brute_army
-			"
-		}
+        # Halo Portraits: Banished x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_banished_compat
+            CONTENT = "
+            army_type = pmca_hundred_banished_legion
+            army_type = pmca_hundred_banished_goliaths
+            army_type = pmca_hundred_banished_atriox_chosen
+            army_type = pmca_hundred_banished_jackal_mercenaries
+            army_type = pmca_hundred_banished_honor_guards
+            army_type = pmca_hundred_banished_ghosts
+            army_type = pmca_hundred_banished_choppers
+            army_type = pmca_hundred_banished_skitterers
+            army_type = pmca_hundred_banished_goblins
+            army_type = pmca_hundred_banished_locusts
+            army_type = pmca_hundred_banished_reavers
+            army_type = pmca_hundred_banished_marauders
+            army_type = pmca_hundred_banished_wraiths
+            army_type = pmca_hundred_banished_banshee_squadron
+            army_type = pmca_hundred_banished_blisterbacks
+            army_type = pmca_hundred_banished_phantom
+            army_type = pmca_hundred_banished_lich
+            army_type = pmca_hundred_banished_scarab
+            "
+        }
 
-		# Military Enhancements 2.0 x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_military_enhancements
-			CONTENT = "
-			army_type = pmca_hundred_heavy_assault_army
-			army_type = pmca_hundred_special_forces_army
-			army_type = pmca_hundred_advanced_tank_army
-			army_type = pmca_hundred_purge_squads_army
-			army_type = pmca_hundred_mech_trooper_army
-			army_type = pmca_hundred_psionic_army_2
-			army_type = pmca_hundred_clone_army2
-			army_type = pmca_hundred_hive_assault_army
-			army_type = pmca_hundred_hive_heavy_assault_army
-			army_type = pmca_hundred_hive_gene_warrior_army
-			army_type = pmca_hundred_ind_mach_heavy_assault_army
-			army_type = pmca_hundred_ind_mach_commando_army
-			army_type = pmca_hundred_ind_mach_integrated_armor_army
-			army_type = pmca_hundred_ind_mach_advanced_infantry
-			army_type = pmca_hundred_ind_mach_autonomous_war_droid
-			army_type = pmca_hundred_ind_mach_purge_squads_army
-			"
-		}
-
-		# Playable Katzenartig Imperium x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_pki_mod
-			CONTENT = "
-			army_type = pmca_hundred_katzensoldaten_army
-			army_type = pmca_hundred_angriffskatze_army
-			army_type = pmca_hundred_gepanzertertank_army
-			army_type = pmca_hundred_atmospharischekatzenbomber_army
-			army_type = pmca_hundred_luftkatzenvernichter_army
-			army_type = pmca_hundred_pki_riesigerkatzenpanzer_assault
-			"
-		}
-
-		# EUTAB Unofficial x100
-		inline_script = {
-			script = compatibility/pmca_conditional_inline_1_input
-			MOD_VARIABLE_1 = @has_eutab_unofficial
-			CONTENT = "
-			army_type = pmca_hundred_eutab_mindlink_commando_army
-			army_type = pmca_hundred_eutab_terror_drones
-			army_type = pmca_hundred_eutab_janissary_army
-			army_type = pmca_hundred_eutab_clone_commando_pod
-			"
-		}
-	}
+        # Halo Portraits: Forerunners x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @pmca_has_halo_portraits_forerunners_compat
+            CONTENT = "
+            army_type = pmca_hundred_forerunner_aggressor_sentinels
+            army_type = pmca_hundred_forerunner_protector_sentinels
+            army_type = pmca_hundred_forerunner_onyx_sentinels
+            army_type = pmca_hundred_forerunner_strato_sentinel
+            army_type = pmca_hundred_forerunner_armiger_army
+            army_type = pmca_hundred_forerunner_warrior_servant_army
+            army_type = pmca_hundred_forerunner_war_sphinx
+            army_type = pmca_hundred_promethean_warrior_servant_army
+            army_type = pmca_hundred_promethean_seekers
+            army_type = pmca_hundred_promethean_crawler_army
+            army_type = pmca_hundred_promethean_soldier_army
+            army_type = pmca_hundred_promethean_knight_army
+            army_type = pmca_hundred_promethean_lancer_army
+            army_type = pmca_hundred_promethean_battlewagon_army
+            army_type = pmca_hundred_promethean_phaetons
+            army_type = pmca_hundred_created_executors
+            "
+        }
+    }
 }

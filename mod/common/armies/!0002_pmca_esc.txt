@@ -1,0 +1,619 @@
+# Dear Irony please fallback to simple parser
+# x10 and x100 army definition(s) generated via Rust
+# Last Updated: Wednesday, June 17, 2026
+# Number of Armies in file: 6 * 2
+
+inline_script = {
+    script = compatibility/pmca_conditional_inline_1_input
+    MOD_VARIABLE_1 = @has_esc_next
+    CONTENT = "
+    pmca_ten_esc_psionic_avatar_army = {
+        use_armynames_from = esc_psionic_avatar_army
+        health = 70
+        damage = 50
+        morale_damage = 2
+        collateral_damage = 10
+        war_exhaustion = 50
+        time = 25
+        has_morale = no
+        has_species = no
+        icon = GFX_esc_army_psi_avatar
+        prerequisites = {
+            esc_tech_psi_avatar_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 25000
+                sr_zro = 1000
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden
+            }
+        }
+        potential = {
+            custom_tooltip = {
+                planet = {
+                    is_capital = yes
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+            OR = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+                has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
+                has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_spiritualist
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_esc_psionic_avatar_army = {
+        use_armynames_from = esc_psionic_avatar_army
+        health = 700
+        damage = 500
+        morale_damage = 2
+        collateral_damage = 100
+        war_exhaustion = 500
+        time = 25
+        has_morale = no
+        has_species = no
+        icon = GFX_esc_army_psi_avatar
+        prerequisites = {
+            esc_tech_psi_avatar_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 250000
+                sr_zro = 10000
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden
+            }
+        }
+        potential = {
+            custom_tooltip = {
+                planet = {
+                    is_capital = yes
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+            OR = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+                has_country_flag = ESC_COUNTRY_FLAG_machine_psionics
+                has_country_flag = ESC_COUNTRY_FLAG_mod_allow_basic_psionic_weapons
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_spiritualist
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_esc_erasure_squad_army = {
+        use_armynames_from = esc_erasure_squad_army
+        health = 20
+        damage = 70
+        morale = 20
+        morale_damage = 3
+        collateral_damage = 10
+        war_exhaustion = 30
+        time = 360
+        icon = GFX_esc_army_chrono_trooper
+        prerequisites = {
+            esc_tech_chrono_spatial_weapons
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 2500
+                minerals = 5000
+                sr_dark_matter = 100
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden
+            }
+            NOR = {
+                has_authority = auth_machine_intelligence
+                is_individual_machine = yes
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+            NOR = {
+                has_authority = auth_machine_intelligence
+                is_individual_machine = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_esc_erasure_squad_army = {
+        use_armynames_from = esc_erasure_squad_army
+        health = 200
+        damage = 700
+        morale = 200
+        morale_damage = 3
+        collateral_damage = 100
+        war_exhaustion = 300
+        time = 360
+        icon = GFX_esc_army_chrono_trooper
+        prerequisites = {
+            esc_tech_chrono_spatial_weapons
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 25000
+                minerals = 50000
+                sr_dark_matter = 1000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden
+            }
+            NOR = {
+                has_authority = auth_machine_intelligence
+                is_individual_machine = yes
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+            NOR = {
+                has_authority = auth_machine_intelligence
+                is_individual_machine = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_esc_eradicator_droids_army = {
+        use_armynames_from = esc_eradicator_droids_army
+        health = 20
+        damage = 70
+        morale_damage = 3
+        collateral_damage = 10
+        war_exhaustion = 30
+        time = 360
+        has_morale = no
+        has_species = no
+        icon = GFX_esc_army_chrono_trooper
+        prerequisites = {
+            esc_tech_chrono_spatial_weapons
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 2500
+                alloys = 2000
+                sr_dark_matter = 100
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden
+            }
+            has_authority = auth_machine_intelligence
+            is_individual_machine = yes
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+            OR = {
+                has_authority = auth_machine_intelligence
+                has_tradition = tr_synthetics_transubstatiation_synthesis
+                is_individual_machine = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_esc_eradicator_droids_army = {
+        use_armynames_from = esc_eradicator_droids_army
+        health = 200
+        damage = 700
+        morale_damage = 3
+        collateral_damage = 100
+        war_exhaustion = 300
+        time = 360
+        has_morale = no
+        has_species = no
+        icon = GFX_esc_army_chrono_trooper
+        prerequisites = {
+            esc_tech_chrono_spatial_weapons
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 25000
+                alloys = 20000
+                sr_dark_matter = 1000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden
+            }
+            has_authority = auth_machine_intelligence
+            is_individual_machine = yes
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+            OR = {
+                has_authority = auth_machine_intelligence
+                has_tradition = tr_synthetics_transubstatiation_synthesis
+                is_individual_machine = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_esc_tesla_troopers_army = {
+        use_armynames_from = esc_tesla_troopers_army
+        health = 40
+        damage = 35
+        morale = 20
+        morale_damage = 2
+        collateral_damage = 10
+        war_exhaustion = 15
+        time = 360
+        icon = GFX_esc_army_tesla_trooper
+        prerequisites = {
+            esc_tech_tesla_weapons
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 1500
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden
+            }
+            NOR = {
+                has_authority = auth_machine_intelligence
+                is_individual_machine = yes
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+            NOR = {
+                has_authority = auth_machine_intelligence
+                is_individual_machine = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_esc_tesla_troopers_army = {
+        use_armynames_from = esc_tesla_troopers_army
+        health = 400
+        damage = 350
+        morale = 200
+        morale_damage = 2
+        collateral_damage = 100
+        war_exhaustion = 150
+        time = 360
+        icon = GFX_esc_army_tesla_trooper
+        prerequisites = {
+            esc_tech_tesla_weapons
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 15000
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden
+            }
+            NOR = {
+                has_authority = auth_machine_intelligence
+                is_individual_machine = yes
+            }
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    is_sapient = no
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+            NOR = {
+                has_authority = auth_machine_intelligence
+                is_individual_machine = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_esc_tesla_droids_army = {
+        use_armynames_from = esc_tesla_droids_army
+        health = 40
+        damage = 35
+        morale_damage = 2
+        collateral_damage = 10
+        war_exhaustion = 15
+        time = 360
+        has_morale = no
+        has_species = no
+        icon = GFX_esc_army_tesla_trooper
+        prerequisites = {
+            esc_tech_tesla_weapons
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 1500
+                alloys = 1000
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden
+            }
+            has_authority = auth_machine_intelligence
+            is_individual_machine = yes
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+            OR = {
+                has_authority = auth_machine_intelligence
+                has_tradition = tr_synthetics_transubstatiation_synthesis
+                is_individual_machine = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_esc_tesla_droids_army = {
+        use_armynames_from = esc_tesla_droids_army
+        health = 400
+        damage = 350
+        morale_damage = 2
+        collateral_damage = 100
+        war_exhaustion = 150
+        time = 360
+        has_morale = no
+        has_species = no
+        icon = GFX_esc_army_tesla_trooper
+        prerequisites = {
+            esc_tech_tesla_weapons
+        }
+        resources = {
+            category = armies
+            cost = {
+                energy = 15000
+                alloys = 10000
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        show_tech_unlock_if = {
+            NOT = {
+                has_global_flag = ESC_GLOBAL_FLAG_tesla_weapons_forbidden
+            }
+            has_authority = auth_machine_intelligence
+            is_individual_machine = yes
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+            OR = {
+                has_authority = auth_machine_intelligence
+                has_tradition = tr_synthetics_transubstatiation_synthesis
+                is_individual_machine = yes
+            }
+        }
+        ai_weight = {
+            base = 100
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_esc_biohorror_army = {
+        use_armynames_from = esc_biohorror_army
+        health = 40
+        damage = 40
+        morale_damage = 2.5
+        collateral_damage = 40
+        war_exhaustion = 2.5
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_xenomorph
+        prerequisites = {
+            esc_tech_bio_horror_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3500
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+            ESC_TRIGGER_may_research_biological_weapons_advanced = yes
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                is_xenophobe = yes
+            }
+            modifier = {
+                set = 0
+                OR = {
+                    is_pacifist = yes
+                    is_xenophile = yes
+                }
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_xenophobe
+                }
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_esc_biohorror_army = {
+        use_armynames_from = esc_biohorror_army
+        health = 400
+        damage = 400
+        morale_damage = 2.5
+        collateral_damage = 400
+        war_exhaustion = 25
+        time = 100
+        has_morale = no
+        has_species = no
+        icon = GFX_army_type_xenomorph
+        prerequisites = {
+            esc_tech_bio_horror_army
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 35000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+            ESC_TRIGGER_may_research_biological_weapons_advanced = yes
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 10
+                is_xenophobe = yes
+            }
+            modifier = {
+                set = 0
+                OR = {
+                    is_pacifist = yes
+                    is_xenophile = yes
+                }
+            }
+            modifier = {
+                set = 0
+                is_fallen_empire = yes
+                NOT = {
+                    has_ethic = ethic_fanatic_xenophobe
+                }
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    "
+}

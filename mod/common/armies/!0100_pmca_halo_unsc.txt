@@ -1,0 +1,2217 @@
+# Dear Irony please fallback to simple parser
+# x10 and x100 army definition(s) generated via Rust
+# Last Updated: Wednesday, June 17, 2026
+# Number of Armies in file: 24 * 2
+
+inline_script = {
+    script = compatibility/pmca_conditional_inline_1_input
+    MOD_VARIABLE_1 = @pmca_has_halo_portraits_unsc_compat
+    CONTENT = "
+    pmca_ten_unsc_marine_company = {
+        use_armynames_from = unsc_marine_company
+        health = 12
+        damage = 12
+        morale = 12
+        morale_damage = 1
+        collateral_damage = 10
+        war_exhaustion = 12
+        time = 90
+        icon = GFX_army_type_unsc_marine
+        prerequisites = {
+            tech_unsc_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 1200
+            }
+            upkeep = {
+                energy = 10
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_barracks
+            }
+            owner = {
+                has_civic = civic_unsc_government
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_barracks
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_marine_company = {
+        use_armynames_from = unsc_marine_company
+        health = 120
+        damage = 120
+        morale = 120
+        morale_damage = 1
+        collateral_damage = 100
+        war_exhaustion = 120
+        time = 90
+        icon = GFX_army_type_unsc_marine
+        prerequisites = {
+            tech_unsc_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 12000
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_barracks
+            }
+            owner = {
+                has_civic = civic_unsc_government
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_barracks
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_odst_company = {
+        use_armynames_from = unsc_odst_company
+        health = 14
+        damage = 14
+        morale = 14
+        morale_damage = 1.25
+        collateral_damage = 15
+        war_exhaustion = 15
+        time = 120
+        icon = GFX_army_type_unsc_odst
+        prerequisites = {
+            tech_unsc_odst_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 1500
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_barracks
+            }
+            owner = {
+                has_civic = civic_unsc_government
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_odst_company = {
+        use_armynames_from = unsc_odst_company
+        health = 140
+        damage = 140
+        morale = 140
+        morale_damage = 1.25
+        collateral_damage = 150
+        war_exhaustion = 150
+        time = 120
+        icon = GFX_army_type_unsc_odst
+        prerequisites = {
+            tech_unsc_odst_infantry
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 15000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_barracks
+            }
+            owner = {
+                has_civic = civic_unsc_government
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_spartan_IV_company = {
+        use_armynames_from = unsc_spartan_IV_company
+        health = 28
+        damage = 28
+        morale = 25
+        morale_damage = 1.25
+        collateral_damage = 9
+        war_exhaustion = 25
+        time = 180
+        icon = GFX_army_type_unsc_spartan
+        prerequisites = {
+            tech_spartan_program
+            tech_unsc_post_war
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3500
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        army_modifier = {
+            army_morale = 0.15
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    is_sapient = no
+                }
+            }
+            planet = {
+                has_active_building = building_unsc_barracks
+            }
+            owner = {
+                has_civic = civic_unsc_government
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+            NOT = {
+                has_authority = auth_machine_intelligence
+            }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_spartan_IV_company = {
+        use_armynames_from = unsc_spartan_IV_company
+        health = 280
+        damage = 280
+        morale = 250
+        morale_damage = 1.25
+        collateral_damage = 90
+        war_exhaustion = 250
+        time = 180
+        icon = GFX_army_type_unsc_spartan
+        prerequisites = {
+            tech_spartan_program
+            tech_unsc_post_war
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 35000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        army_modifier = {
+            army_morale = 0.15
+        }
+        potential = {
+            from = {
+                NOR = {
+                    has_trait = trait_mechanical
+                    has_trait = trait_machine_unit
+                    is_sapient = no
+                }
+            }
+            planet = {
+                has_active_building = building_unsc_barracks
+            }
+            owner = {
+                has_civic = civic_unsc_government
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+            NOT = {
+                has_authority = auth_machine_intelligence
+            }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_jackrabbit_company = {
+        use_armynames_from = unsc_jackrabbit_company
+        health = 18
+        damage = 18
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 10
+        war_exhaustion = 5
+        time = 120
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2200
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_jackrabbit_company = {
+        use_armynames_from = unsc_jackrabbit_company
+        health = 180
+        damage = 180
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 100
+        war_exhaustion = 50
+        time = 120
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 22000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_warthog_company = {
+        use_armynames_from = unsc_warthog_company
+        health = 22
+        damage = 22
+        morale = 22
+        morale_damage = 1.25
+        collateral_damage = 12.5
+        war_exhaustion = 7.5
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 2500
+            }
+            upkeep = {
+                energy = 20
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_warthog_company = {
+        use_armynames_from = unsc_warthog_company
+        health = 220.00000000000003
+        damage = 220.00000000000003
+        morale = 220.00000000000003
+        morale_damage = 1.25
+        collateral_damage = 125
+        war_exhaustion = 75
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_light_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 25000
+            }
+            upkeep = {
+                energy = 200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_cobra_company = {
+        use_armynames_from = unsc_cobra_company
+        health = 20
+        damage = 22
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 40
+        war_exhaustion = 7.5
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_cobra_company = {
+        use_armynames_from = unsc_cobra_company
+        health = 200
+        damage = 220.00000000000003
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 400
+        war_exhaustion = 75
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_mantis_company = {
+        use_armynames_from = unsc_mantis_company
+        health = 32
+        damage = 32
+        morale = 32
+        morale_damage = 1.25
+        collateral_damage = 30
+        war_exhaustion = 30
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_mantis_company = {
+        use_armynames_from = unsc_mantis_company
+        health = 320
+        damage = 320
+        morale = 320
+        morale_damage = 1.25
+        collateral_damage = 300
+        war_exhaustion = 300
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_colossus = {
+        use_armynames_from = unsc_colossus
+        health = 50
+        damage = 55
+        morale = 20
+        morale_damage = 2
+        collateral_damage = 60
+        war_exhaustion = 40
+        time = 420
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 9000
+            }
+            upkeep = {
+                energy = 60
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_colossus = {
+        use_armynames_from = unsc_colossus
+        health = 500
+        damage = 550
+        morale = 200
+        morale_damage = 2
+        collateral_damage = 600
+        war_exhaustion = 400
+        time = 420
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 90000
+            }
+            upkeep = {
+                energy = 600
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_scorpion_tank = {
+        use_armynames_from = unsc_scorpion_tank
+        health = 48
+        damage = 48
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 40
+        war_exhaustion = 40
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 5500
+            }
+            upkeep = {
+                energy = 50
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_scorpion_tank = {
+        use_armynames_from = unsc_scorpion_tank
+        health = 480
+        damage = 480
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 400
+        war_exhaustion = 400
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 55000
+            }
+            upkeep = {
+                energy = 500
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_garage
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_grizly_tank = {
+        use_armynames_from = unsc_grizly_tank
+        health = 54
+        damage = 54
+        morale = 20
+        morale_damage = 1.5
+        collateral_damage = 50
+        war_exhaustion = 45
+        time = 360
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 8500
+            }
+            upkeep = {
+                energy = 60
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_grizly_tank = {
+        use_armynames_from = unsc_grizly_tank
+        health = 540
+        damage = 540
+        morale = 200
+        morale_damage = 1.5
+        collateral_damage = 500
+        war_exhaustion = 450
+        time = 360
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_vehicle
+        prerequisites = {
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 85000
+            }
+            upkeep = {
+                energy = 600
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_garage
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_hornet_squadron = {
+        use_armynames_from = unsc_hornet_squadron
+        health = 18
+        damage = 24
+        morale = 18
+        morale_damage = 1.25
+        collateral_damage = 15
+        war_exhaustion = 7.5
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 3750
+            }
+            upkeep = {
+                energy = 30
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_hornet_squadron = {
+        use_armynames_from = unsc_hornet_squadron
+        health = 180
+        damage = 240
+        morale = 180
+        morale_damage = 1.25
+        collateral_damage = 150
+        war_exhaustion = 75
+        time = 180
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 37500
+            }
+            upkeep = {
+                energy = 300
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_sparrowhawk_squadron = {
+        use_armynames_from = unsc_sparrowhawk_squadron
+        health = 24
+        damage = 28
+        morale = 20
+        morale_damage = 1.5
+        collateral_damage = 17.5
+        war_exhaustion = 8
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_sparrowhawk_squadron = {
+        use_armynames_from = unsc_sparrowhawk_squadron
+        health = 240
+        damage = 280
+        morale = 200
+        morale_damage = 1.5
+        collateral_damage = 175
+        war_exhaustion = 80
+        time = 240
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_pelican_gunship = {
+        use_armynames_from = unsc_pelican_gunship
+        health = 35
+        damage = 35
+        morale = 20
+        morale_damage = 1.5
+        collateral_damage = 17.5
+        war_exhaustion = 8
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 5000
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_pelican_gunship = {
+        use_armynames_from = unsc_pelican_gunship
+        health = 350
+        damage = 350
+        morale = 200
+        morale_damage = 1.5
+        collateral_damage = 175
+        war_exhaustion = 80
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 50000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_shortsword_bomber = {
+        use_armynames_from = unsc_shortsword_bomber
+        health = 20
+        damage = 15
+        morale = 10
+        morale_damage = 1.5
+        collateral_damage = 40
+        war_exhaustion = 5
+        time = 250
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_navy
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4000
+            }
+            upkeep = {
+                energy = 40
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_shortsword_bomber = {
+        use_armynames_from = unsc_shortsword_bomber
+        health = 200
+        damage = 150
+        morale = 100
+        morale_damage = 1.5
+        collateral_damage = 400
+        war_exhaustion = 50
+        time = 250
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_navy
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 40000
+            }
+            upkeep = {
+                energy = 400
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_broadsword_fighter_squadron = {
+        use_armynames_from = unsc_broadsword_fighter_squadron
+        health = 30
+        damage = 35
+        morale = 20
+        morale_damage = 2
+        collateral_damage = 20
+        war_exhaustion = 5
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_navy
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4500
+            }
+            upkeep = {
+                energy = 45
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_broadsword_fighter_squadron = {
+        use_armynames_from = unsc_broadsword_fighter_squadron
+        health = 300
+        damage = 350
+        morale = 200
+        morale_damage = 2
+        collateral_damage = 200
+        war_exhaustion = 50
+        time = 300
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_navy
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_medium_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 45000
+            }
+            upkeep = {
+                energy = 450
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_airpad
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_vulture_gunship = {
+        use_armynames_from = unsc_vulture_gunship
+        health = 45
+        damage = 45
+        morale = 20
+        morale_damage = 1.25
+        collateral_damage = 25
+        war_exhaustion = 8
+        time = 360
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 7500
+            }
+            upkeep = {
+                energy = 75
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_vulture_gunship = {
+        use_armynames_from = unsc_vulture_gunship
+        health = 450
+        damage = 450
+        morale = 200
+        morale_damage = 1.25
+        collateral_damage = 250
+        war_exhaustion = 80
+        time = 360
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 75000
+            }
+            upkeep = {
+                energy = 750
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_longsword_fighter = {
+        use_armynames_from = unsc_longsword_fighter
+        health = 35
+        damage = 40
+        morale = 20
+        morale_damage = 2
+        collateral_damage = 80
+        war_exhaustion = 9
+        time = 400
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_navy
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 8500
+            }
+            upkeep = {
+                energy = 85
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_longsword_fighter = {
+        use_armynames_from = unsc_longsword_fighter
+        health = 350
+        damage = 400
+        morale = 200
+        morale_damage = 2
+        collateral_damage = 800
+        war_exhaustion = 90
+        time = 400
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_navy
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 85000
+            }
+            upkeep = {
+                energy = 850
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_unsc_condor_gunship = {
+        use_armynames_from = unsc_condor_gunship
+        health = 70
+        damage = 80
+        morale_damage = 4
+        collateral_damage = 80
+        war_exhaustion = 60
+        time = 540
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 20000
+            }
+            upkeep = {
+                energy = 100
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_unsc_condor_gunship = {
+        use_armynames_from = unsc_condor_gunship
+        health = 700
+        damage = 800
+        morale_damage = 4
+        collateral_damage = 800
+        war_exhaustion = 600
+        time = 540
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_unsc_air_vehicle
+        prerequisites = {
+            tech_unsc_air_vehicles
+            tech_unsc_heavy_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 200000
+            }
+            upkeep = {
+                energy = 1000
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_unsc_airpad
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_unsc_firebase
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 5
+                has_civic = civic_unsc_government
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ancient_human_warriors = {
+        use_armynames_from = ancient_human_warriors
+        health = 30
+        damage = 30
+        morale = 30
+        morale_damage = 2
+        collateral_damage = 15
+        war_exhaustion = 30
+        time = 175
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_combat_suits
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 4500
+            }
+            upkeep = {
+                energy = 45
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_ancient_human
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 10
+                has_trait = trait_ancient_human
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ancient_human_warriors = {
+        use_armynames_from = ancient_human_warriors
+        health = 300
+        damage = 300
+        morale = 300
+        morale_damage = 2
+        collateral_damage = 150
+        war_exhaustion = 300
+        time = 175
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_combat_suits
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 45000
+            }
+            upkeep = {
+                energy = 450
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_ancient_human
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 100
+            modifier = {
+                factor = 10
+                has_trait = trait_ancient_human
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ancient_sanshyuum_warriors = {
+        use_armynames_from = ancient_sanshyuum_warriors
+        health = 25
+        damage = 35
+        morale = 30
+        morale_damage = 2.5
+        collateral_damage = 10
+        war_exhaustion = 20
+        time = 200
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancestor_sanshyuum_alliance
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 5500
+            }
+            upkeep = {
+                energy = 50
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_ancient_sanshyuum
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ancient_sanshyuum_warriors = {
+        use_armynames_from = ancient_sanshyuum_warriors
+        health = 250
+        damage = 350
+        morale = 300
+        morale_damage = 2.5
+        collateral_damage = 100
+        war_exhaustion = 200
+        time = 200
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancestor_sanshyuum_alliance
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 55000
+            }
+            upkeep = {
+                energy = 500
+            }
+        }
+        potential = {
+            from = {
+                has_trait = trait_ancient_sanshyuum
+            }
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ancient_human_fibril_tanks = {
+        use_armynames_from = ancient_human_fibril_tanks
+        health = 65
+        damage = 65
+        morale_damage = 2
+        collateral_damage = 50
+        war_exhaustion = 20
+        time = 240
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 7500
+            }
+            upkeep = {
+                energy = 75
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_ancestor_nano_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_ancestor_nano_forge
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ancient_human_fibril_tanks = {
+        use_armynames_from = ancient_human_fibril_tanks
+        health = 650
+        damage = 650
+        morale_damage = 2
+        collateral_damage = 500
+        war_exhaustion = 200
+        time = 240
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 75000
+            }
+            upkeep = {
+                energy = 750
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_ancestor_nano_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_ancestor_nano_forge
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ancient_human_fibril_artillery = {
+        use_armynames_from = ancient_human_fibril_artillery
+        health = 40
+        damage = 50
+        morale_damage = 4
+        collateral_damage = 80
+        war_exhaustion = 30
+        time = 360
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 8500
+            }
+            upkeep = {
+                energy = 85
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_ancestor_nano_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_ancestor_nano_forge
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ancient_human_fibril_artillery = {
+        use_armynames_from = ancient_human_fibril_artillery
+        health = 400
+        damage = 500
+        morale_damage = 4
+        collateral_damage = 800
+        war_exhaustion = 300
+        time = 360
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_vehicles
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 85000
+            }
+            upkeep = {
+                energy = 850
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_ancestor_nano_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_ancestor_nano_forge
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ancient_human_combat_suit = {
+        use_armynames_from = ancient_human_combat_suit
+        health = 55
+        damage = 65
+        morale_damage = 3
+        collateral_damage = 40
+        war_exhaustion = 20
+        time = 300
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_vehicles
+            tech_ancestor_strike_craft
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 6000
+            }
+            upkeep = {
+                energy = 60
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_ancestor_nano_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_ancestor_nano_forge
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ancient_human_combat_suit = {
+        use_armynames_from = ancient_human_combat_suit
+        health = 550
+        damage = 650
+        morale_damage = 3
+        collateral_damage = 400
+        war_exhaustion = 200
+        time = 300
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_vehicles
+            tech_ancestor_strike_craft
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 60000
+            }
+            upkeep = {
+                energy = 600
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_ancestor_nano_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_ancestor_nano_forge
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    pmca_ten_ancient_human_sanshyuum_tuned_siege_platform = {
+        use_armynames_from = ancient_human_sanshyuum_tuned_siege_platform
+        health = 100
+        damage = 95
+        morale_damage = 4
+        collateral_damage = 60
+        war_exhaustion = 50
+        time = 540
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_vehicles
+            tech_ancestor_sanshyuum_alliance
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 15000
+            }
+            upkeep = {
+                energy = 120
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_ancestor_nano_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = ten }
+        }
+        allow = {
+            has_building = building_ancestor_nano_forge
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_ten_ai_weight }
+        }
+    }
+    pmca_hundred_ancient_human_sanshyuum_tuned_siege_platform = {
+        use_armynames_from = ancient_human_sanshyuum_tuned_siege_platform
+        health = 1000
+        damage = 950
+        morale_damage = 4
+        collateral_damage = 600
+        war_exhaustion = 500
+        time = 540
+        has_morale = no
+        has_species = no
+        pop_limited = no
+        icon = GFX_army_type_ancient_human
+        prerequisites = {
+            tech_ancient_human_vehicles
+            tech_ancestor_sanshyuum_alliance
+        }
+        resources = {
+            category = armies
+            cost = {
+                minerals = 150000
+            }
+            upkeep = {
+                energy = 1200
+            }
+        }
+        potential = {
+            planet = {
+                has_active_building = building_ancestor_nano_forge
+            }
+        }
+        potential_country = {
+            pmca_flag_check = { MULT = hundred }
+        }
+        allow = {
+            has_building = building_ancestor_nano_forge
+        }
+        ai_weight = {
+            base = 10
+            modifier = {
+                factor = 5
+                has_civic = civic_ancient_humanity
+            }
+            modifier = { mult = @pmca_times_hundred_ai_weight }
+        }
+    }
+
+    "
+}

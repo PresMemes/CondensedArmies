@@ -1,6 +1,6 @@
 ﻿l_german:
 
- # Localisation generated using Python
+ # Localisation generated using Rust
 
  ####################
  ### ASSAULT_ARMY ###
@@ -12,7 +12,6 @@
  pmca_hundred_assault_army_plural: "$assault_army_plural$"
  pmca_hundred_assault_army_desc: "$assault_army_desc$"
 
-
  ##################
  ### SLAVE_ARMY ###
  ##################
@@ -22,7 +21,6 @@
  pmca_hundred_slave_army: "$pmca_hundred$ $slave_army$"
  pmca_hundred_slave_army_plural: "$slave_army_plural$"
  pmca_hundred_slave_army_desc: "$slave_army_desc$"
-
 
  ##################
  ### CLONE_ARMY ###
@@ -34,7 +32,6 @@
  pmca_hundred_clone_army_plural: "$clone_army_plural$"
  pmca_hundred_clone_army_desc: "$clone_army_desc$"
 
-
  ####################
  ### ROBOTIC_ARMY ###
  ####################
@@ -44,7 +41,6 @@
  pmca_hundred_robotic_army: "$pmca_hundred$ $robotic_army$"
  pmca_hundred_robotic_army_plural: "$robotic_army_plural$"
  pmca_hundred_robotic_army_desc: "$robotic_army_desc$"
-
 
  ####################
  ### PSIONIC_ARMY ###
@@ -56,7 +52,6 @@
  pmca_hundred_psionic_army_plural: "$psionic_army_plural$"
  pmca_hundred_psionic_army_desc: "$psionic_army_desc$"
 
-
  ######################
  ### XENOMORPH_ARMY ###
  ######################
@@ -66,7 +61,6 @@
  pmca_hundred_xenomorph_army: "$pmca_hundred$ $xenomorph_army$"
  pmca_hundred_xenomorph_army_plural: "$xenomorph_army_plural$"
  pmca_hundred_xenomorph_army_desc: "$xenomorph_army_desc$"
-
 
  #########################
  ### GENE_WARRIOR_ARMY ###
@@ -78,7 +72,6 @@
  pmca_hundred_gene_warrior_army_plural: "$gene_warrior_army_plural$"
  pmca_hundred_gene_warrior_army_desc: "$gene_warrior_army_desc$"
 
-
  ###########################################
  ### WILDERNESS_PRE_SAPIENT_ASSAULT_ARMY ###
  ###########################################
@@ -88,7 +81,6 @@
  pmca_hundred_wilderness_pre_sapient_assault_army: "$pmca_hundred$ $wilderness_pre_sapient_assault_army$"
  pmca_hundred_wilderness_pre_sapient_assault_army_plural: "$wilderness_pre_sapient_assault_army_plural$"
  pmca_hundred_wilderness_pre_sapient_assault_army_desc: "$wilderness_pre_sapient_assault_army_desc$"
-
 
  ########################
  ### ABOMINATION_ARMY ###
@@ -100,7 +92,6 @@
  pmca_hundred_abomination_army_plural: "$abomination_army_plural$"
  pmca_hundred_abomination_army_desc: "$abomination_army_desc$"
 
-
  #########################
  ### MACHINE_ASSAULT_1 ###
  #########################
@@ -110,7 +101,6 @@
  pmca_hundred_machine_assault_1: "$pmca_hundred$ $machine_assault_1$"
  pmca_hundred_machine_assault_1_plural: "$machine_assault_1_plural$"
  pmca_hundred_machine_assault_1_desc: "$machine_assault_1_desc$"
-
 
  #########################
  ### MACHINE_ASSAULT_2 ###
@@ -122,7 +112,6 @@
  pmca_hundred_machine_assault_2_plural: "$machine_assault_2_plural$"
  pmca_hundred_machine_assault_2_desc: "$machine_assault_2_desc$"
 
-
  #########################
  ### MACHINE_ASSAULT_3 ###
  #########################
@@ -132,7 +121,6 @@
  pmca_hundred_machine_assault_3: "$pmca_hundred$ $machine_assault_3$"
  pmca_hundred_machine_assault_3_plural: "$machine_assault_3_plural$"
  pmca_hundred_machine_assault_3_desc: "$machine_assault_3_desc$"
-
 
  ###################
  ### UNDEAD_ARMY ###
@@ -144,7 +132,6 @@
  pmca_hundred_undead_army_plural: "$undead_army_plural$"
  pmca_hundred_undead_army_desc: "$undead_army_desc$"
 
-
  #####################
  ### WARPLING_ARMY ###
  #####################
@@ -154,7 +141,6 @@
  pmca_hundred_warpling_army: "$pmca_hundred$ $warpling_army$"
  pmca_hundred_warpling_army_plural: "$warpling_army_plural$"
  pmca_hundred_warpling_army_desc: "$warpling_army_desc$"
-
 
  ################################
  ### FLAMESTORM_TROOPERS_ARMY ###
@@ -166,7 +152,6 @@
  pmca_hundred_flamestorm_troopers_army_plural: "$flamestorm_troopers_army_plural$"
  pmca_hundred_flamestorm_troopers_army_desc: "$flamestorm_troopers_army_desc$"
 
-
  ####################################
  ### INDIVIDUAL_MACHINE_ASSAULT_1 ###
  ####################################
@@ -176,7 +161,6 @@
  pmca_hundred_individual_machine_assault_1: "$pmca_hundred$ $individual_machine_assault_1$"
  pmca_hundred_individual_machine_assault_1_plural: "$individual_machine_assault_1_plural$"
  pmca_hundred_individual_machine_assault_1_desc: "$individual_machine_assault_1_desc$"
-
 
  ####################################
  ### INDIVIDUAL_MACHINE_ASSAULT_2 ###
@@ -188,7 +172,6 @@
  pmca_hundred_individual_machine_assault_2_plural: "$individual_machine_assault_2_plural$"
  pmca_hundred_individual_machine_assault_2_desc: "$individual_machine_assault_2_desc$"
 
-
  ####################################
  ### INDIVIDUAL_MACHINE_ASSAULT_3 ###
  ####################################
@@ -198,7 +181,6 @@
  pmca_hundred_individual_machine_assault_3: "$pmca_hundred$ $individual_machine_assault_3$"
  pmca_hundred_individual_machine_assault_3_plural: "$individual_machine_assault_3_plural$"
  pmca_hundred_individual_machine_assault_3_desc: "$individual_machine_assault_3_desc$"
-
 
  ############################
  ### PERFECTED_CLONE_ARMY ###
@@ -210,6 +192,25 @@
  pmca_hundred_perfected_clone_army_plural: "$perfected_clone_army_plural$"
  pmca_hundred_perfected_clone_army_desc: "$perfected_clone_army_desc$"
 
+ ####################
+ ### EMBER_LEGION ###
+ ####################
+ pmca_ten_ember_legion: "$pmca_ten$ $ember_legion$"
+ pmca_ten_ember_legion_plural: "$ember_legion_plural$"
+ pmca_ten_ember_legion_desc: "$ember_legion_desc$"
+ pmca_hundred_ember_legion: "$pmca_hundred$ $ember_legion$"
+ pmca_hundred_ember_legion_plural: "$ember_legion_plural$"
+ pmca_hundred_ember_legion_desc: "$ember_legion_desc$"
+
+ ######################
+ ### LM_IMBUED_ARMY ###
+ ######################
+ pmca_ten_lm_imbued_army: "$pmca_ten$ $lm_imbued_army$"
+ pmca_ten_lm_imbued_army_plural: "$lm_imbued_army_plural$"
+ pmca_ten_lm_imbued_army_desc: "$lm_imbued_army_desc$"
+ pmca_hundred_lm_imbued_army: "$pmca_hundred$ $lm_imbued_army$"
+ pmca_hundred_lm_imbued_army_plural: "$lm_imbued_army_plural$"
+ pmca_hundred_lm_imbued_army_desc: "$lm_imbued_army_desc$"
 
  ######################
  ### CYBREX_WARFORM ###
@@ -220,4 +221,14 @@
  pmca_hundred_cybrex_warform: "$pmca_hundred$ $cybrex_warform$"
  pmca_hundred_cybrex_warform_plural: "$cybrex_warform_plural$"
  pmca_hundred_cybrex_warform_desc: "$cybrex_warform_desc$"
+
+ #######################
+ ### IMPERIAL_LEGION ###
+ #######################
+ pmca_ten_imperial_legion: "$pmca_ten$ $imperial_legion$"
+ pmca_ten_imperial_legion_plural: "$imperial_legion_plural$"
+ pmca_ten_imperial_legion_desc: "$imperial_legion_desc$"
+ pmca_hundred_imperial_legion: "$pmca_hundred$ $imperial_legion$"
+ pmca_hundred_imperial_legion_plural: "$imperial_legion_plural$"
+ pmca_hundred_imperial_legion_desc: "$imperial_legion_desc$"
 

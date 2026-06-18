@@ -1,31 +1,20 @@
 # Irony this is a placeholder file please ignore it
 
 # Extra Ship Components NEXT
-@ESC_WEAPON_crystalline_s_t6_cost_crystals = 0
+@has_esc_next = 0
 
-# Sensible Late Game Techs
-@slgt_mod = 0
+# Ancient Empire
+## PM: Ancient Empire has ~15,000 scripeted variables but none of them are ID variables ;_;
+@ag_tech_cost_1_1 = 0
 
-# Gigastuctural Engineering & More
-@has_gigastructures = 0
+# Ground Command
+## PM: Had to personally edit some of Ground Command's armies ince they
+## use outdated syntax (e.g. icon_frame, land_army) and the script doesn't like that
+@pmca_has_ground_command_compat = 0
 
-# Playable Katzenartig Imperium
-@has_pki_mod = 0
-
-# Stellaris Evolved - Alpha
-@has_stellaris_evolved = 0
-
-# Military Enhancements
-@has_military_enhancements = 0
-
-# Ancient Cache of Technologies
-@has_ancient_caches = 0
-
-# ACOT: Acquisition of Technology
-@has_acquisition_of_tech = 0
-
-# ACOT: Secrets Beyond The Gates
-@has_sbtg_mod = 0
-
-# Ethos Unique Techs and Buildings Unofficial
-@has_eutab_unofficial = 0
+# Halo Portrait Series
+@pmca_has_halo_portraits_unsc_compat = 0
+@pmca_has_halo_portraits_covenant_compat = 0
+@pmca_has_halo_portraits_flood_compat = 0
+@pmca_has_halo_portraits_banished_compat = 0
+@pmca_has_halo_portraits_forerunners_compat = 0

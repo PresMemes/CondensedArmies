@@ -1,64 +1,57 @@
 ﻿l_polish:
 
  # Localized Flags (Only for debugging, never seen in-game)
- pmca_times_ten_set: "§SPMCA§! $pmca_ten$"
- pmca_times_hundred_set: "§SPMCA§! $pmca_hundred$"
+ pmca_times_ten_set: "§UPMCA§! $pmca_ten$"
+ pmca_times_hundred_set: "§UPMCA§! $pmca_hundred$"
 
  # Edicts
  edict_pmca_logistics_manager: "Condensed Armies Logistics Manager"
- edict_pmca_logistics_manager_desc: "Access Condensed Armies' mod menu and enable/disable the various features the mod adds."
+ edict_pmca_logistics_manager_desc: "Access Condensed Armies' mod menu."
 
  # Decisions
  decision_pmca_acot_rebuild_condensed_armies: "Rebuild/Repair §MCondensed§! Armies"
  decision_pmca_acot_rebuild_condensed_armies_desc: "All-in-one decision that simulates ACOT's decisions for regular armies. Costs nothing, but takes twice as long due to logistical constraints."
 
  # Condensed Armies Logistics Manager
- pmca_calm_header_text: "Condensed Armies Logistics Manager"
+ pmca_events.999.title: "Condensed Armies Logistics Manager"
 
- pmca_calm_patches_text: "§BPATCHES§!"
- pmca_calm_patches_tooltip: "§LIntegrated Patch Data:§!\n\n$pmca_calm_patches_main$\n$pmca_calm_patches_esc$\n$pmca_calm_patches_slgt$\n$pmca_calm_patches_gigas$\n$pmca_calm_patches_pki$\n$pmca_calm_patches_evolved$\n$pmca_calm_patches_ground_command$\n$pmca_calm_patches_military_enhancements$\n$pmca_calm_patches_acot$§!\n$pmca_calm_patches_acot_sbtg$\n$pmca_calm_patches_acot_aot$\n$pmca_calm_patches_eutabu$"
- pmca_calm_patches_main: "§lCondensed Armies:§! §GActive§!"
- pmca_calm_patches_esc: "§rExtra Ship Components NEXT:§! [root.pmca_get_esc_status]"
- pmca_calm_patches_slgt: "§MSensible Late Game Techs:§! [root.pmca_get_slgt_status]"
- pmca_calm_patches_gigas: "§rGigastructural Engineering & More:§! [root.pmca_get_gigas_status]"
- pmca_calm_patches_pki: "$t$§c- Playable Katzenartig Imperium:§! [root.pmca_get_pki_status]"
- pmca_calm_patches_evolved: "§MStellaris Evolved - Alpha:§! [root.pmca_get_evolved_status]"
- pmca_calm_patches_ground_command: "§rGround Command:§! $pmca_pending$"
- pmca_calm_patches_military_enhancements: "§MMilitary Enhancements 2.0:§! [root.pmca_get_military_enhancements_status]"
- pmca_calm_patches_acot: "§rAncient Cache of Technologies:§! [root.pmca_get_acot_status]"
- pmca_calm_patches_acot_sbtg: "$t$§C- Secrets Beyond The Gates:§! [root.pmca_get_acot_sbtg_status]" # STOP INHERITING COLORS FROM PREVIOUS STRINGS
- pmca_calm_patches_acot_aot: "$t$§c- Acquisition of Technology:§! [root.pmca_get_acot_aot_status]"
- pmca_calm_patches_eutabu: "§MEUTAB Unofficial:§! [root.pmca_get_eutabu_status]"
+ # Condenser Settings
+ pmca_calm_condenser_header: "Condenser Settings"
+ pmca_calm_condenser_desc: "§LSwitch between building §Wnormal§!, $pmca_ten$, or $pmca_hundred$ armies.\n\nAll §UCondensed Armies§!, including those mid-recuitment, §Gwill not§! be disbanded or canceled by this setting changing.§!"
+ pmca_calm_condenser_off: "Off"
+ pmca_calm_condenser_x10: "x10"
+ pmca_calm_condenser_x100: "x100"
+
+ # AI Settings
+ pmca_calm_ai_header: "§YHOST ONLY§! - AI Settings"
+ pmca_calm_ai_desc: "§LEnable/Disable if the AI is allowed to construct new §UCondensed Armies§!.\n\nChanging this setting §Rwill not§! disband or cancel any existing or mid-recruitment §UCondensed Armies§!.\n\nAI usage of §UCondensed Armies§! is only checked every ~5 years, so this setting may not take effect immediately.§!"
+ pmca_calm_ai_disable: "Disabled"
+ pmca_calm_ai_enable: "Enabled"
+ pmca_calm_ai_host_only: "Only the §YHost§! can change this setting!"
+
+ # Integrated Patches
+ pmca_calm_integrated_patches_header: "Integrated Patches"
+ pmca_calm_integrated_patches_desc: "$pmca_patches_gigas$\n$pmca_patches_esc$\n$pmca_patches_acot$\n$pmca_patches_acot_aot$\n$pmca_patches_acot_sbtg$\n$pmca_patches_ground_command$\n$pmca_patches_halo_portraits$\n$pmca_patches_halo_portraits_unsc$\n$pmca_patches_halo_portraits_covenant$\n$pmca_patches_halo_portraits_flood$\n$pmca_patches_halo_portraits_banished$\n$pmca_patches_halo_portraits_forerunner$\n$pmca_patches_ancient_empire$\n$pmca_patches_slgt$\n$pmca_patches_stellaris_evolved$\n"
  pmca_active: "§GActive§!"
- pmca_pending: "§YPending Integration...§!"
+ pmca_pending: "§YPending...§!"
  pmca_inactive: "§RInactive§!"
 
- pmca_calm_body_text: "$pmca_calm_intro_text$\n\n$pmca_calm_helpful_text$\n\n$pmca_calm_leaving_text$\n--------------------\n\n$pmca_calm_accessibility_tooltips$"
- pmca_calm_intro_text: "Welcome to the Condensed Armies Logistics Manager (§rC.A.L.M.§!)."
- pmca_calm_helpful_text: "If you are confused about what a certain toggle may do, try hovering over it or the text near it for more details. §HFor accessibility§!, all of the relevant tooltips have been attached to the bottom of this message."
- pmca_calm_leaving_text: "§rC.A.L.M.§! exists for all customers."
- pmca_calm_accessibility_tooltips: "$pmca_calm_ai_toggle_header_text$:\n$pmca_calm_ai_toggle_tooltip$\n$pmca_calm_ai_toggle_tooltip_delayed$\n--------------------\n\n$pmca_calm_condensed_toggle_x0_text$:\n$pmca_calm_condensed_toggle_x0_tooltip$\n$pmca_calm_condensed_toggle_x0_tooltip_delayed$\n--------------------\n\n$pmca_calm_condensed_toggle_x10_text$:\n$pmca_calm_condensed_toggle_x10_tooltip$\n$pmca_calm_condensed_toggle_x10_tooltip_delayed$\n--------------------\n\n$pmca_calm_condensed_toggle_x100_text$:\n$pmca_calm_condensed_toggle_x100_tooltip$\n$pmca_calm_condensed_toggle_x100_tooltip_delayed$\n--------------------\n\n$pmca_calm_beautify_header_text$:\n$pmca_calm_beautify_tooltip$\n$pmca_calm_beautify_tooltip_delayed$"
-
- pmca_calm_ai_toggle_header_text: "AI Usage"
- pmca_calm_ai_toggle_tooltip: "§LDetermines if the AI can use the mod's features.§!"
- pmca_calm_ai_toggle_tooltip_delayed: "§L$TRIGGER_PASS$= AI §Gcan§! build Condensed Armies.\n\n$TRIGGER_FAIL$= AI §Rcannot§! build Condensed Armies (This will not delete any existing armies).§!"
- pmca_not_host: "$TRIGGER_FAIL$§ROnly the §YHost§! can change this setting!§!"
-
- pmca_calm_condensed_toggle_header_text: "Armies"
- pmca_calm_condensed_toggle_header_tooltip: "§LHover over the OFF/x10/x100 text to see more details.§!"
- pmca_calm_condensed_toggle_x0_text: "OFF"
- pmca_calm_condensed_toggle_x0_tooltip: "§LEnable/disable the construction of Condensed Armies in your empire.§!"
- pmca_calm_condensed_toggle_x0_tooltip_delayed: "§L$TRIGGER_PASS$= Condensed Armies are §Rdisabled.§!\n\n$TRIGGER_FAIL$= Condensed Armies are §Genabled.§!§!"
- pmca_calm_condensed_toggle_x10_text: "x10"
- pmca_calm_condensed_toggle_x10_tooltip: "§LEnable/disable construction of x10 Condensed Armies in your empire.§!"
- pmca_calm_condensed_toggle_x10_tooltip_delayed: "§L$TRIGGER_PASS$= x10 armies are §Genabled.§!\n\n$TRIGGER_FAIL$= x10 armies are §Rdisabled.§!§!"
- pmca_calm_condensed_toggle_x100_text: "x100"
- pmca_calm_condensed_toggle_x100_tooltip: "§LEnable/disable construction of x100 Condensed Armies in your empire.§!"
- pmca_calm_condensed_toggle_x100_tooltip_delayed: "§L$TRIGGER_PASS$= x100 armies are §Genabled.§!\n\n$TRIGGER_FAIL$= x100 armies are §Rdisabled.§!§!"
-
- pmca_calm_beautify_header_text: "Beautify"
- pmca_calm_beautify_tooltip: "§LCondensed Armies defaults to hiding x10/x100 armies in the army recruitment view to reduce clutter if you can't afford them.\nYou may disable this function if it's misbehaving. (In which case please report it)\n\n§ENOTE:§! Disabling this §Pmight§! increase performance; however, my tests have shown nothing conclusive, so don't expect it to make your game buttery smooth again.§!"
- pmca_calm_beautify_tooltip_delayed: "§L$TRIGGER_PASS$= Condensed Armies should §Gnot§! appear in the recruitment view if you don't have enough resources.\n\n$TRIGGER_FAIL$= Condensed Armies should §Ralways§! appear in the recruitment view regardless of resources.§!"
+ # Integrated Patches - Mod Names
+ pmca_patches_gigas: "§BGigastructural Engineering & More§!: $pmca_pending$"
+ pmca_patches_esc: "§CExtra Ship Components NEXT§!: [root.pmca_get_esc_status]"
+ pmca_patches_acot: "§BAncient Cache of Technologies§!: $pmca_pending$"
+ pmca_patches_acot_aot: "$t$§rAcquisition of Technology§!: $pmca_pending$"
+ pmca_patches_acot_sbtg: "$t$§MSecrets Beyond The Gates§!: $pmca_pending$"
+ pmca_patches_ground_command: "§CGround Command§!: [root.pmca_get_ground_command_status]"
+ pmca_patches_halo_portraits: "§PHalo Portrait Series§!:"
+ pmca_patches_halo_portraits_unsc: "$t$§rUNSC§!: [root.pmca_get_halo_unsc_status]"
+ pmca_patches_halo_portraits_covenant: "$t$§MCovenant§!: [root.pmca_get_halo_covenant_status]"
+ pmca_patches_halo_portraits_flood: "$t$§rThe Flood§!: [root.pmca_get_halo_flood_status]"
+ pmca_patches_halo_portraits_banished: "$t$§MThe Banished§!: [root.pmca_get_halo_banished_status]"
+ pmca_patches_halo_portraits_forerunner: "$t$§rForerunner§!: [root.pmca_get_halo_forerunner_status]"
+ pmca_patches_ancient_empire: "§BAncient Empire§!: [root.pmca_get_ancient_empire_status]"
+ pmca_patches_slgt: "§CSensible Late Game Techs§!: $pmca_pending$"
+ pmca_patches_stellaris_evolved: "§BStellaris Evolved§!: $pmca_pending$"
 
  # Common Army Strings
  pmca_ten: "§Mx10§!"

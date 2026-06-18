@@ -1,2 +1,6 @@
 # ID Variable
 @has_condensed_armies = 1
+
+# AI Weight Variables
+@pmca_times_ten_ai_weight = 1.5
+@pmca_times_hundred_ai_weight = 2.0

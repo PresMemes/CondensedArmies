@@ -1,6 +1,4 @@
 # Spawns an army with a flag so Condensed Armies knows what it is
-# Scopes: this = planet
-# Parameters: OWNER = target | TYPE = army | MULT = ten/hundred
 pmca_spawn_condensed_army = {
 	create_army = {
 		owner = $OWNER|root.owner$
