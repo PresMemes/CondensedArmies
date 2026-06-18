@@ -40,7 +40,7 @@ Anywhere should be fine. Load any submods after Condensed Armies.
 - Extra Ship Components NEXT
 - Ancient Empire
 ### External Patches/Submods
-*See 'Condensed Armies Patches' collection for downloads, load after Condensed Armies*
+*See 'Condensed Armies Patches' collection for downloads, load after Condensed Armies.*
 - Ground Command
 - Halo Portraits (UNSC, Covenant, Flood, Banished, and Forerunner)
 ### Work-In-Progress
