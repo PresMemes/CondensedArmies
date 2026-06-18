@@ -12,6 +12,7 @@ Condensed Armies adds duplicates of existing armies with most of their stats mul
 - Cost
 - Upkeep
 - Production
+
 Recruitment/Build Time is unchanged as waiting 25 years for a single x100 Assault Army is a bit much.
 ## What armies get Condensed variants?
 Generally speaking:
