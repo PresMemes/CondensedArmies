@@ -1,0 +1,72 @@
+[h1]For Stellaris 4.4.X 'Pegasus'[/h1]
+Condensed Armies is a (relatively) small mod that aims to make dealing with fortress worlds slightly less tedious (Looking at you, Phanon Vault).
+[h1]Features[/h1]
+Condensed Armies adds duplicates of existing armies with most of their stats multiplier by x10/x100.
+[h2]What stats are multiplied?[/h2]
+[list]
+[*]Health
+[*]Damage
+[*]Morale
+[*]Morale Damage
+[*]Collateral Damage
+[*]War Exhaustion
+[*]Cost
+[*]Upkeep
+[*]Production
+[/list]
+Recruitment/Build Time is unchanged as waiting 25 years for a single x100 Assault Army is a bit much.
+[h2]What armies get Condensed variants?[/h2]
+Generally speaking:
+[list]
+[*]Can't be a defensive or occupation army
+[*]No unique mechanics (e.g. only 3 per empire or only spawned through events)
+[/list]
+Then it'll probably get added to Condensed Armies' roster.
+[h2]How do I build them?[/h2]
+Currently three methods:
+[olist]
+[*]Edicts -> Condensed Armies Logistics Manager
+[*]Console -> `event pmca_events.999`
+[*]Dynamic Mod Menu -> Condensed Armies Logistics Manager
+[/olist]
+[h2]Does the AI build them?[/h2]
+Yes. This can be disabled in the mod menu.
+Caveat: The AI does need a pretty strong economy to consider building Condensed Armies, so you probably won't see any unless you're super late game and/or on higher difficulties.
+Caveat #2: Nomadic AI empires are currently not allowed to build Condensed Armies due to bureaucratic issues.
+[h2]How's the performance?[/h2]
+On Grand Admiral with a default medium galaxy:
+Of the 128.088 seconds it took to go from 2340.03.11 to 2341.03.11, Condensed Armies took up ~0.341% of that (7.315 milliseconds).
+[h1]Compatibility[/h1]
+[h2]Overwrites[/h2]
+None.
+[h2]Load Order[/h2]
+Anywhere should be fine. Load any submods after Condensed Armies.
+[h3]Integrated Patches[/h3]
+[i]The following mods only need to be active the current playset for their patches to activate.[/i]
+[list]
+[*]Extra Ship Components NEXT
+[*]Ancient Empire
+[/list]
+[h3]External Patches/Submods[/h3]
+[i]The following mods only need to be active the current playset for their patches to activate.[/i]
+[list]
+[*]Ground Command
+[*]Halo Portraits (UNSC, Covenant, Flood, Banished, and Forerunner)
+[/list]
+[h3]Work-In-Progress[/h3]
+[i]The following mods only need to be active the current playset for their patches to activate.[/i]
+[list]
+[*]Gigastructural Engineering & More
+[*]Ancient Cache of Technolgies
+[*]Aquisition of Techology
+[*]Secrets Beyond the Gates
+[*]Sensible Late Game Technologies
+[*]Stellaris Evolved
+[/list]
+[h1]Translations[/h1]
+English: Done
+[hr]
+[h1]Source[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2797565369]Steam Workshop - Condensed Armies[/url]
+[url=https://github.com/PresMemes/CondensedArmies]GitHub - PresMemes/CondensedArmies[/url]
+[url=https://github.com/PresMemes/CondensedArmiesPatches]GitHub - PresMemes/CondensedArmiesPatches[/url]

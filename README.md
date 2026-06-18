@@ -53,6 +53,7 @@ Anywhere should be fine. Load any submods after Condensed Armies.
 - Stellaris Evolved
 # Translations
 English: Done
+
 ---
 # Source
 [Steam Workshop - Condensed Armies](https://steamcommunity.com/sharedfiles/filedetails/?id=2797565369)
