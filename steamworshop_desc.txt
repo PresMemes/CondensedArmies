@@ -54,11 +54,11 @@ Anywhere should be fine. Load any submods after Condensed Armies.
 [list]
 [*]Ground Command
 [*]Halo Portraits (UNSC, Covenant, Flood, Banished, and Forerunner)
+[*]Gigastructural Engineering & More
 [/list]
 [h3]Work-In-Progress[/h3]
 [i]Support will be added once they update.[/i]
 [list]
-[*]Gigastructural Engineering & More
 [*]Ancient Cache of Technolgies
 [*]Aquisition of Techology
 [*]Secrets Beyond the Gates

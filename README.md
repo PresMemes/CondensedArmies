@@ -18,7 +18,7 @@ Recruitment/Build Time is unchanged as waiting 25 years for a single x100 Assaul
 Generally speaking:
 - Can't be a defensive or occupation army
 - No unique mechanics (e.g. only 3 per empire or only spawned through events)
-Then it'll probably get added to Condensed Armies' roster.
+  Then it'll probably get added to Condensed Armies' roster.
 ## How do I build them?
 Currently three methods:
 1. Edicts -> Condensed Armies Logistics Manager
@@ -44,9 +44,9 @@ Anywhere should be fine. Load any submods after Condensed Armies.
 *See 'Condensed Armies Patches' collection for downloads, load after Condensed Armies.*
 - Ground Command
 - Halo Portraits (UNSC, Covenant, Flood, Banished, and Forerunner)
+- Gigastructural Engineering & More
 ### Work-In-Progress
 *Support will be added once they update.*
-- Gigastructural Engineering & More
 - Ancient Cache of Technolgies
 - Aquisition of Techology
 - Secrets Beyond the Gates

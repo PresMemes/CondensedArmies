@@ -1,0 +1,10 @@
+text = {
+    trigger = {
+        check_variable_arithmetic = {
+            which = $VALUE$
+            value = 0
+        }
+    }
+    localization_key = pmca_inactive
+}
+default = pmca_active

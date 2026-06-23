@@ -307,6 +307,20 @@ pmca_is_times_ten_army = {
             army_type = pmca_ten_created_executors
             "
         }
+
+        # Gigasturctural Engineering & More x10
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @has_gigastructures
+            CONTENT = "
+            army_type = pmca_ten_riesigerkatzenpanzer_assault
+            army_type = pmca_ten_giga_eaw_crystal_army
+            army_type = pmca_ten_giga_eaw_crystal_army_drone
+            army_type = pmca_ten_shroud_summoned_army
+            army_type = pmca_ten_maginot_assault_unit
+            army_type = pmca_ten_maginot_machine_assault_unit
+            "
+        }
     }
 }
 
@@ -595,6 +609,20 @@ pmca_is_times_hundred_army = {
             army_type = pmca_hundred_promethean_battlewagon_army
             army_type = pmca_hundred_promethean_phaetons
             army_type = pmca_hundred_created_executors
+            "
+        }
+
+        # Gigasturctural Engineering & More x100
+        inline_script = {
+            script = compatibility/pmca_conditional_inline_1_input
+            MOD_VARIABLE_1 = @has_gigastructures
+            CONTENT = "
+            army_type = pmca_hundred_riesigerkatzenpanzer_assault
+            army_type = pmca_hundred_giga_eaw_crystal_army
+            army_type = pmca_hundred_giga_eaw_crystal_army_drone
+            army_type = pmca_hundred_shroud_summoned_army
+            army_type = pmca_hundred_maginot_assault_unit
+            army_type = pmca_hundred_maginot_machine_assault_unit
             "
         }
     }
