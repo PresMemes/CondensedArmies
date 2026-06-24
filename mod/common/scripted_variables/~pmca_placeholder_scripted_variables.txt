@@ -21,3 +21,6 @@
 
 # Gigastructural Engineering & More
 @has_gigastructures = 0
+
+# Ancient Cache of Technologies
+@has_ancient_caches = 0

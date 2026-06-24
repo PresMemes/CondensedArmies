@@ -40,14 +40,14 @@ Anywhere should be fine. Load any submods after Condensed Armies.
 *The following mods only need to be active the current playset for their patches to activate.*
 - Extra Ship Components NEXT
 - Ancient Empire
+- Gigastructural Engineering & More
+- Ancient Cache of Technolgies
 ### External Patches/Submods
 *See 'Condensed Armies Patches' collection for downloads, load after Condensed Armies.*
 - Ground Command
 - Halo Portraits (UNSC, Covenant, Flood, Banished, and Forerunner)
-- Gigastructural Engineering & More
 ### Work-In-Progress
 *Support will be added once they update.*
-- Ancient Cache of Technolgies
 - Aquisition of Techology
 - Secrets Beyond the Gates
 - Sensible Late Game Technologies

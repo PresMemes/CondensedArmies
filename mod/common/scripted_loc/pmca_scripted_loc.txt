@@ -70,3 +70,11 @@ defined_text = {
         VALUE = @has_gigastructures
     }
 }
+
+defined_text = {
+    name = pmca_get_acot_status
+    inline_script = {
+        script = blueprints/pmca_loc_blueprint
+        VALUE = @has_ancient_caches
+    }
+}
