@@ -1,4 +1,4 @@
-# For Stellaris 4.4.X 'Pegasus'
+# For Stellaris 4.5.X 'Cygnus'
 Condensed Armies is a (relatively) small mod that aims to make dealing with fortress worlds slightly less tedious (Looking at you, Phanon Vault).
 # Features
 Condensed Armies adds duplicates of existing armies with most of their stats multiplier by x10/x100.
